@@ -10,8 +10,8 @@ const initialState = {1:true, 2:true, 3:true, 4:true, 5:true, 6:true, 7:true, 8:
 const Homepage = () => {
 	const[ value, setValue] = useState(initialState)
 
-	const changeHandlerCheckbox = (event) => {
-	  setValue(current =>({...current, [event.target.value]:event.target.checked}))
+	const changeHandlerCheckbox = ({ currentTarget: { value, checked } }) => {
+	  setValue(current =>({...current, [value]: checked}))
 
 	}
 	const filteredDataText = DataText(value).filter((item) =>{
