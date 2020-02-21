@@ -1,0 +1,21 @@
+
+li button{
+	display: flex;
+	width: 60vw;
+}
+li button p:first-of-type{
+	width: 30vw;
+	
+}
+li button p:nth-of-type(2){
+	width: 15vw;
+}
+li button p:nth-of-type(2){
+	width: 15vw;
+}
+li button p{
+	text-align: left;
+}
+li{
+	list-style: none;
+}

@@ -1,8 +1,25 @@
-import React from "react"
+import React, { Component, useState } from "react"
 
-function LetterUI(){
+
+function LetterUI(value){
 	return (
-		<h1>Dit is de letterUI component</h1>
+		<div>
+			
+			
+
+
+			
+			{value.filteredDataText.map(item => (
+		    <div key={item.id}>
+		      <div>
+		        <p>{item.sentence}</p> 
+		      </div>  
+		    </div>       
+		      ))}
+			
+
+
+		</div>
 		)
 }
 export default LetterUI
