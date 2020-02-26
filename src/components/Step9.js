@@ -1,7 +1,13 @@
 import React, { Component, useState } from "react"
+import LetterUI from "./LetterUI"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-
-function Step9(){
+function Step9({changeHandlerCheckbox, value, filteredDataText}){
 	return(
 			<div>
 			<h2>Alles over je onderwerp - Welke documenttypes?</h2>
@@ -15,13 +21,14 @@ function Step9(){
 			        <input onChange={changeHandlerCheckbox} id="subjectReports" type="checkbox" checked={value.subjectReports} name="checkSubjectType" value="subjectAll" /> Anders<br/>
 
       			 </form>	
-      			 <LetterUI value={value} 
+      			 
+      			<p>Welke informatie moet de overheid openbaar maken.<button>ietje</button></p>
+      			<p>Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.<button>ietje</button></p>
+				<Link to="/Step8">vorige pagina</Link>
+				<Link to="/Step10">volgende pagina</Link>
+				<LetterUI value={value} 
       			 		   filteredDataText={filteredDataText}
       			 		   />
-      			<p>Welke informatie moet de overheid openbaar maken.<link>ietje</link></p>
-      			<p>Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.<link>ietje</link></p>
-				<link>vorige pagina</link>
-				<link>volgende pagina</link>
 			</div>
 		)
 }

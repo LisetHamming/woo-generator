@@ -1,27 +1,34 @@
 import React, { Component, useState } from "react"
+import LetterUI from "./LetterUI"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-
-function Step8(){
+function Step8({value, filteredDataText, changeHandlerUser, clickHandlerSubjectPeriod}){
 	return(
 			<div>
 			<h2>Alles over je onderwerp - Periode</h2>
-			<p>Selecteer hier de periode waarbinnen je denkt dat er voor jou interessante informatie beschikbaar is. Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de wob-ambtenaren nodeloos lang bezig zijn met je verzoek. Je kunt ook meerdere periodes kiezen. <link>ietje</link></p>
+			<p>Selecteer hier de periode waarbinnen je denkt dat er voor jou interessante informatie beschikbaar is. Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de wob-ambtenaren nodeloos lang bezig zijn met je verzoek. Je kunt ook meerdere periodes kiezen. <button>ietje</button></p>
 				 <form>
 				 	
 				 	<label> Van
-			           <input value={value.subjectDateStart} onChange={changeHandlerUser} id="subjectDateStart" type="date" name="subjectDate" placeholder="22-11-2019" /><br/>
+			           <input value={value.subjectDateStart} onChange={changeHandlerUser} id="subjectDateStart" type="date" name="subjectDate" onfocus="(this.type='date')" placeholder="22-11-2019" /><br/>
 			        </label>
 			        <label> Tot
 			           <input value={value.subjectDateEnd} onChange={changeHandlerUser}id="subjectDateEnd" type="date" name="subjectDate" placeholder="31-12-2019"/><br/>
 			        </label>
-			        <button onclick={clickHandlerSubjectPeriod}>Voeg periode toe</button> 
+			        <button onClick={clickHandlerSubjectPeriod}>Voeg periode toe</button> 
       			 </form>	
-      			 <LetterUI value={value} 
-      			 		   filteredDataText={filteredDataText}
-      			 		   />
-      			<p>Denk goed na welke periodes wel of niet nuttig zijn.<link>ietje</link></p>
-				<link>vorige pagina</link>
-				<link>volgende pagina</link>
+      			
+
+      			<p>Denk goed na welke periodes wel of niet nuttig zijn.<button>ietje</button></p>
+				<Link to="/Step7">vorige pagina</Link>
+				<Link to="/Step9">volgende pagina</Link>
+				 <LetterUI value={value} 
+      			 		   filteredDataText={filteredDataText} />
 			</div>
 		)
 }

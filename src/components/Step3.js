@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 
-function Step3(){
+function Step3({value, changeHandlerUser}){
 	return(
 			<div>
 			<h2>Contactgegevens</h2>
@@ -36,7 +36,7 @@ function Step3(){
 			        </label>
 
       			 </form>
-      			 <p>Hoe gaat deze app om met mijn gegevens?<link>ietje</link></p>
+      			 <p>Hoe gaat deze app om met mijn gegevens?<button>ietje</button></p>
 				<Link to="/Step2">vorige pagina</Link>
 				<Link to="/Step4">volgende pagina</Link>
 			</div>

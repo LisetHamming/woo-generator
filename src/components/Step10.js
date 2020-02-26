@@ -1,7 +1,13 @@
 import React, { Component, useState } from "react"
+import LetterUI from "./LetterUI"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-
-function Step10(){
+function Step10({value, changeHandlerCheckbox, filteredDataText}){
 	return(
 			<div>
 				<h2>Extra opties</h2>
@@ -18,8 +24,11 @@ function Step10(){
 			           <input onChange={changeHandlerCheckbox} id="text8" type="checkbox" checked={value[8]} name="checkText" value="8" /> Mondelinge toelichting<br/>
 			           <input onChange={changeHandlerCheckbox} id="text9" type="checkbox" checked={value[9]} name="checkText" value="9" /> Bevestiging beslistermijn<br/>
       			 </form>	
-				<link to="/Step9">vorige pagina</link>
-				<link to="/LetterUI">volgende pagina</link>
+				<Link to="/Step9">vorige pagina</Link>
+				<Link to="/Step11">volgende pagina</Link>
+								<LetterUI value={value} 
+      			 		   filteredDataText={filteredDataText}
+      			 		   />
 			</div>
 		)
 }

@@ -6,7 +6,7 @@ import {
   Link
 } from "react-router-dom";
 
-function Step2({value, changeHandlerUser, changeHandlerCheckbox}){
+function Step2({value, changeHandlerUser, changeHandlerCheckbox, changeHandlerCompanyName}){
 
 	return(
 			<div>
@@ -16,7 +16,7 @@ function Step2({value, changeHandlerUser, changeHandlerCheckbox}){
 						<input id="userJournalist" value="userJournalist" checked={value.userJournalist} onChange={changeHandlerCheckbox} type="checkbox" /><br/>
 					</label>
 					<label>Ik Wob namens een (media-) organisatie
-						<input id="userCompany" value="userCompanyName" checked={value.userCompanyName} onChange={changeHandlerCheckbox} type="checkbox" /><br/>
+						<input id="userCompany" value="userCompanyName" checked={value.userCompanyName} onChange={changeHandlerCompanyName} type="checkbox" /><br/>
 					</label>
 					{value.userCompanyName&&
 					<label>Naam organisatie
@@ -36,6 +36,6 @@ function Step2({value, changeHandlerUser, changeHandlerCheckbox}){
 				<Link to="/Step3">volgende pagina</Link>
 			</div>
 		)
-	}
+	
 }
 export default Step2

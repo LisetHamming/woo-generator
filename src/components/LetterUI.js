@@ -3,7 +3,7 @@ import React, { Component, useState } from "react"
 
 function LetterUI({value, filteredDataText}){
 	return (
-		<div>
+		<div id="letterUI">
 			
 			<div className="adressAuthority">
 				{console.log(value.selectedAuthority, "dit is de geselecteerde instantie")}
@@ -12,15 +12,15 @@ function LetterUI({value, filteredDataText}){
 			        <p>
 			          {value.selectedAuthority.naam} 
 			        </p>
-			        <p>{value.selectedAuthority.postAdres?value.selectedAuthority.postAdres.postbus:value.selectedAuthority.bezoekAdres.straat}</p>
-					<p>{value.selectedAuthority.postAdres?value.selectedAuthority.postAdres.postcode + " " + value.selectedAuthority.postAdres.plaats:value.selectedAuthority.bezoekAdres.postcode + " " + value.selectedAuthority.bezoekAdres.plaats}</p>
+			        <p>{value.selectedAuthority.adres.postbus??value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}</p>
+					<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
 					</div>
 			      }
 					
 					
 			</div>
 			<div>
-					<p>Betreft: Wob-verzoek inzake {value.subjectShort}</p>
+					<p>Betreft: Wob-verzoek inzake {value.subjectShort.join(", ")}</p>
             		<p>Zeer geachte heer/mevrouw,</p>
             		<p>Met een beroep op de Wet openbaarheid van bestuur (hierna: Wob) verzoek ik, {value.userName}, {value.userJournalist?"journalist,":""} {value.userCompanyNameInput.length?`u namens ${value.userCompanyNameInput}`:""} om openbaarmaking van of inzage in hieronder nader te specificeren documenten of informatie bij of onder u{value.userGoalInput.length?` over ${value.userGoalInput}`:""}.`</p>
     				<p>In de afhandeling van dit verzoek vraag ik u rekening te houden met het publieke belang van de journalistiek als controleur van een goede en democratische bestuursvoering.</p>
