@@ -34,5 +34,25 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "organize-imports-cli": "^0.7.0",
+    "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "organize-imports-cli",
+      "prettier --write"
+    ],
+    "**/*.{css,less,scss}": [
+      "prettier --write"
+    ]
   }
 }
