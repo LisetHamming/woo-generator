@@ -50,8 +50,8 @@ function LetterUI({ value, filteredDataText }) {
 		     		<p className="userSignature"></p>
 		     		<p>{value.userName}</p>
 		     		<p>{value.userCompanyName}</p>
-		     		<p>{value.userAdress}{value.userAdressNumber}</p>
-		     		<p>{value.userZipcode}{value.userCityName}</p>
+		     		<p>{value.userAdress} {value.userAdressNumber}</p>
+		     		<p>{value.userZipcode} {value.userCityName}</p>
 		     		<p>{value.userEmail}</p>
 		     		<p>{value.userPhoneNumber}</p>
      		</div>

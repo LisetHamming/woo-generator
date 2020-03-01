@@ -14,7 +14,7 @@ import Step7 from "./Step7"
 import Step8 from "./Step8"
 import Step9 from "./Step9"
 import Step10 from "./Step10"
-import Step11 from "./Step11"
+import machine from "../assets/machine.png"
 import DataText from "./DataText"
 import {
     BrowserRouter as Router,
@@ -117,11 +117,12 @@ const Homepage = (props) => {
     return (
         <Switch>
         <Route exact path="/">
-            <div>
-				<h1>Schrijf in 3 simpele stappen je eigen Wob-verzoek</h1>
-				<p>Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat noemen we een Wob-verzoek. Met de Wob-generator is dat een koud kunstje.</p>
-				<Link to="/Step1">Start je Wob-verzoek</Link>
- 			</div>	
+            <div className="homepageBlock">
+				      <h1>Schrijf in 3 simpele stappen je eigen Wob-verzoek</h1>
+				      <p>Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat noemen we een Wob-verzoek. Met de Wob-generator is dat een koud kunstje.</p>
+				      <Link to="/Step1">Start je Wob-verzoek</Link>
+ 			      </div>	
+            <div><img src={machine}/></div>
           </Route>
              <Route path="/Step1" >
               <Step1 />
@@ -143,16 +144,16 @@ const Homepage = (props) => {
               <Step6 value={value} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox}/>
              </Route> 
             <Route path="/Step7" >
-              <Step8 value={value} filteredDataText={filteredDataText} changeHandlerUser={changeHandlerUser} clickHandlerSubjectPeriod={clickHandlerSubjectPeriod}/>
+              <Step7 value={value} filteredDataText={filteredDataText} changeHandlerUser={changeHandlerUser} clickHandlerSubjectPeriod={clickHandlerSubjectPeriod}/>
              </Route> 
             <Route path="/Step8" >
-              <Step9 value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
+              <Step8 value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
              </Route> 
             <Route path="/Step9" >
-              <Step10 value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
+              <Step9 value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
              </Route> 
             <Route path="/Step10" >
-              <Step11 value={value} filteredDataText={filteredDataText} exportHTMLDoc={exportHTMLDoc}/>
+              <Step10 value={value} filteredDataText={filteredDataText} exportHTMLDoc={exportHTMLDoc}/>
              </Route>
         </Switch>
 

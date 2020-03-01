@@ -1,21 +1,69 @@
+li button {
+    display: flex;
+    width: 60vw;
+}
 
-li button{
-	display: flex;
-	width: 60vw;
+li button p:first-of-type {
+    width: 30vw;
+
 }
-li button p:first-of-type{
-	width: 30vw;
-	
+
+li button p:nth-of-type(2) {
+    width: 15vw;
 }
-li button p:nth-of-type(2){
-	width: 15vw;
+
+li button p:nth-of-type(2) {
+    width: 15vw;
 }
-li button p:nth-of-type(2){
-	width: 15vw;
+
+li button p {
+    text-align: left;
 }
-li button p{
-	text-align: left;
+
+li {
+    list-style: none;
 }
-li{
-	list-style: none;
+
+a {
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    border-radius: 3em;
+    text-decoration: none;
+
+
+}
+
+form {
+    margin-bottom: 25px;
+}
+
+body {
+    background-color: #FFDB62;
+}
+
+#letterUI h3 {
+    margin: 10px 0 1px 0;
+    font-size: 1em;
+
+}
+
+#letterUI p {
+    margin: 0;
+}
+
+#letterUI {
+    margin-top: 40px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 1%;
+}
+
+#root div {
+    display: flex;
+}
+
+.homepageBlock {
+    background-color: white;
+    display: block;
 }
