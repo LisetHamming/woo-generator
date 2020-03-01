@@ -1,35 +1,35 @@
 import React, { Component, useState } from "react"
 import LetterUI from "./LetterUI"
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
 } from "react-router-dom";
 
-function Step8({value, filteredDataText, changeHandlerUser, clickHandlerSubjectPeriod}){
-	return(
-			<div>
-			<h2>Alles over je onderwerp - Periode</h2>
-			<p>Selecteer hier de periode waarbinnen je denkt dat er voor jou interessante informatie beschikbaar is. Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de wob-ambtenaren nodeloos lang bezig zijn met je verzoek. Je kunt ook meerdere periodes kiezen. <button>ietje</button></p>
+function Step8({ changeHandlerCheckbox, value, filteredDataText }) {
+    return (
+        <div>
+			<h2>Alles over je onderwerp - Welke documenttypes?</h2>
 				 <form>
-				 	
-				 	<label> Van
-			           <input value={value.subjectDateStart} onChange={changeHandlerUser} id="subjectDateStart" type="date" name="subjectDate" onfocus="(this.type='date')" placeholder="22-11-2019" /><br/>
-			        </label>
-			        <label> Tot
-			           <input value={value.subjectDateEnd} onChange={changeHandlerUser}id="subjectDateEnd" type="date" name="subjectDate" placeholder="31-12-2019"/><br/>
-			        </label>
-			        <button onClick={clickHandlerSubjectPeriod}>Voeg periode toe</button> 
-      			 </form>	
-      			
+				 	     			 	
+      			 	<input onChange={changeHandlerCheckbox} id="subjectMeeting" type="checkbox" checked={value.subjectMeeting} name="checkSubjectType" value="subjectSpecific" /> Vergaderstukken<br/>
+			        <input onChange={changeHandlerCheckbox} id="subjectReports" type="checkbox" checked={value.subjectReports} name="checkSubjectType" value="subjectAll" /> Rapporten & presentaties<br/>
+ 			    		<input onChange={changeHandlerCheckbox} id="subjectMeeting" type="checkbox" checked={value.subjectMeeting} name="checkSubjectType" value="subjectSpecific" /> Correspondentie en gespreksverslagen<br/>
+			        <input onChange={changeHandlerCheckbox} id="subjectReports" type="checkbox" checked={value.subjectReports} name="checkSubjectType" value="subjectAll" /> Financiele documenten<br/>
+ 			    		<input onChange={changeHandlerCheckbox} id="subjectMeeting" type="checkbox" checked={value.subjectMeeting} name="checkSubjectType" value="subjectSpecific" /> Datasets<br/>
+			        <input onChange={changeHandlerCheckbox} id="subjectReports" type="checkbox" checked={value.subjectReports} name="checkSubjectType" value="subjectAll" /> Anders<br/>
 
-      			<p>Denk goed na welke periodes wel of niet nuttig zijn.<button>ietje</button></p>
+      		</form>	
+      			 
+      	<p>Welke informatie moet de overheid openbaar maken.<button>ietje</button></p>
+      	<p>Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.<button>ietje</button></p>
 				<Link to="/Step7">vorige pagina</Link>
 				<Link to="/Step9">volgende pagina</Link>
-				 <LetterUI value={value} 
-      			 		   filteredDataText={filteredDataText} />
+				<LetterUI value={value} 
+      			 		   filteredDataText={filteredDataText}
+      			 		   />
 			</div>
-		)
+    )
 }
 export default Step8

@@ -1,37 +1,35 @@
 import React, { Component, useState } from "react"
 import LetterUI from "./LetterUI"
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
 } from "react-router-dom";
 
-function Step7({value, changeHandlerUser, changeHandlerCheckbox, filteredDataText}){
-	return(
-			<div>
-			<h2>Welke informatie zoek je?</h2>
-			<p>Begin met het kort en bondig omschrijven van het onderwerp waarover je informatie vraagt. Let op: je kunt alleen informatie over overheidstaken opvragen. <button>ietje</button></p>
-			<p>Omschrijf je onderwerp eerst in enkele trefwoorden, dit komt bovenaan de brief te staan. Omschrijf vervolgens je onderwerp in een of enkele zinnen. Dit komt in de lopende tekst van je brief.</p>	
+function Step7({ value, filteredDataText, changeHandlerUser, clickHandlerSubjectPeriod }) {
+    return (
+        <div>
+			<h2>Alles over je onderwerp - Periode</h2>
+			<p>Selecteer hier de periode waarbinnen je denkt dat er voor jou interessante informatie beschikbaar is. Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de wob-ambtenaren nodeloos lang bezig zijn met je verzoek. Je kunt ook meerdere periodes kiezen. <button>ietje</button></p>
 				 <form>
 				 	
-				 	<label> Onderwerp in trefwoorden (verplicht)
-			           <input value={value.subjectShort} onChange={changeHandlerUser} id="subjectShort" type="text" name="subjectinfo" placeholder="trefwoord 1" /><br/>
+				 	<label> Van
+			           <input value={value.subjectDateStart} onChange={changeHandlerUser} id="subjectDateStart" type="date" name="subjectDate" onfocus="(this.type='date')" placeholder="22-11-2019" /><br/>
 			        </label>
-			        <label> Onderwerp in lopende tekst (verplicht)
-			           <input value={value.subjectLong} onChange={changeHandlerUser}id="subjectLong" type="text" name="subjectinfo" placeholder="Vul hier je onderwerp kort en bondig in, bijvoorbeeld 'boetes voor snelheidsovertredingen in Friesland'  "/><br/>
+			        <label> Tot
+			           <input value={value.subjectDateEnd} onChange={changeHandlerUser}id="subjectDateEnd" type="date" name="subjectDate" placeholder="31-12-2019"/><br/>
 			        </label>
-			        <label>
-			        	<input onChange={changeHandlerCheckbox} id="subjectMilieu" type="checkbox" checked={value.subjectMilieu} name="subjectInfo" value="subjectMilieu" /> Dit onderwerp gaat over milieu<br/>
-			        </label>   
+			        <button onClick={clickHandlerSubjectPeriod}>Voeg periode toe</button> 
       			 </form>	
       			
+
+      			<p>Denk goed na welke periodes wel of niet nuttig zijn.<button>ietje</button></p>
 				<Link to="/Step6">vorige pagina</Link>
 				<Link to="/Step8">volgende pagina</Link>
 				 <LetterUI value={value} 
-      			 		   filteredDataText={filteredDataText}
-      			 		   />
+      			 		   filteredDataText={filteredDataText} />
 			</div>
-		)
+    )
 }
 export default Step7

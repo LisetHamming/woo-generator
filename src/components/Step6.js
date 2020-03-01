@@ -1,15 +1,15 @@
 import React, { Component, useState } from "react"
 import LetterUI from "./LetterUI"
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
 } from "react-router-dom";
 
-function Step6({value, filteredDataText, changeHandlerCheckbox}){
-	return(
-			<div>
+function Step6({ value, filteredDataText, changeHandlerCheckbox }) {
+    return (
+        <div>
 			<h2>Alles of specifiek?</h2>
 			<p>Wil je alle documenten die de overheidsinstantie heeft over je onderwerp? Of weet je al precies welke documenten je wilt hebben. Maak je keuze. <button>ietje</button> </p>
 				<form>
@@ -24,6 +24,6 @@ function Step6({value, filteredDataText, changeHandlerCheckbox}){
       			 		   filteredDataText={filteredDataText}
       			 		   />
 			</div>
-		)
+    )
 }
 export default Step6

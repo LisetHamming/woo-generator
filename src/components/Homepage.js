@@ -143,18 +143,15 @@ const Homepage = (props) => {
               <Step6 value={value} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox}/>
              </Route> 
             <Route path="/Step7" >
-              <Step7 value={value} changeHandlerUser={changeHandlerUser} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
-             </Route> 
-            <Route path="/Step8" >
               <Step8 value={value} filteredDataText={filteredDataText} changeHandlerUser={changeHandlerUser} clickHandlerSubjectPeriod={clickHandlerSubjectPeriod}/>
              </Route> 
-            <Route path="/Step9" >
+            <Route path="/Step8" >
               <Step9 value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
              </Route> 
-            <Route path="/Step10" >
+            <Route path="/Step9" >
               <Step10 value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
              </Route> 
-            <Route path="/Step11" >
+            <Route path="/Step10" >
               <Step11 value={value} filteredDataText={filteredDataText} exportHTMLDoc={exportHTMLDoc}/>
              </Route>
         </Switch>
