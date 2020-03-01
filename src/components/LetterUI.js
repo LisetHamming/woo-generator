@@ -1,9 +1,9 @@
 import React, { Component, useState } from "react"
 
 
-function LetterUI({value, filteredDataText}){
-	return (
-		<div id="letterUI">
+function LetterUI({ value, filteredDataText }) {
+    return (
+        <div id="letterUI">
 			
 			<div className="adressAuthority">
 				{console.log(value.selectedAuthority, "dit is de geselecteerde instantie")}
@@ -23,9 +23,10 @@ function LetterUI({value, filteredDataText}){
 					<p>Betreft: Wob-verzoek inzake {value.subjectShort.join(", ")}</p>
             		<p>Zeer geachte heer/mevrouw,</p>
             		<p>Met een beroep op de Wet openbaarheid van bestuur (hierna: Wob) verzoek ik, {value.userName}, {value.userJournalist?"journalist,":""} {value.userCompanyNameInput.length?`u namens ${value.userCompanyNameInput}`:""} om openbaarmaking van of inzage in hieronder nader te specificeren documenten of informatie bij of onder u{value.userGoalInput.length?` over ${value.userGoalInput}`:""}.`</p>
+            		<p>Met documenten bedoel ik vastlegging ongeacht de gegevensdrager: dus naast klassieke papieren documenten bijvoorbeeld ook digitale (data-)bestanden, sms'jes, WhatsApp-berichten en audio- en videobestanden.</p>
     				<p>In de afhandeling van dit verzoek vraag ik u rekening te houden met het publieke belang van de journalistiek als controleur van een goede en democratische bestuursvoering.</p>
     				<p>Concreet vraag ik u om:</p>
-    				{/*<p>1.{titel document 1} OF {omschrijving} EN/OF, {datum}, alsmede: alle {voorbereidende stukken en concepten met betrekking tot dit document}; {interne correspondentie} (incl./excl. brieven, e-mails, memo’s en gespreksnotities, smsjes en WhatsAppjes) met betrekking tot dit document; {externe correspondentie} (incl./excl. E-mails, memo’s en gespreksnotities, smsjes en WhatsAppjes) met betrekking tot dit document tussen {bestuursorgaan} en derden, waaronder in ieder geval de navolgende partijen (personen, organisaties): i. {partij 1} ii. {partij 2} iii. {partij enz}</p>*/}
+    				{/*<p>1.{titel document 1} OF {value.subjectLong} EN/OF, {datum}, alsmede: alle {voorbereidende stukken en concepten met betrekking tot dit document}; {interne correspondentie} (incl./excl. brieven, e-mails, memo’s en gespreksnotities, smsjes en WhatsAppjes) met betrekking tot dit document; {externe correspondentie} (incl./excl. E-mails, memo’s en gespreksnotities, smsjes en WhatsAppjes) met betrekking tot dit document tussen {bestuursorgaan} en derden, waaronder in ieder geval de navolgende partijen (personen, organisaties): i. {partij 1} ii. {partij 2} iii. {partij enz}</p>*/}
     				{/*<p>2.{titel doc 2} opgesteld op <datum>, alsmede (enz</p>
     				<p>3.{titel doc 3} (enz)</p> */}
     				{/*<p>Een overzicht van {eenheid waar de dataset over gaat} in de periode {jaartal}. Een overzicht zou minstens de volgende velden moeten bevatten: o {datum} o {locatie} o {gemeten snelheid} o {enzovoorts} Indien zo’n overzicht niet bestaat dan zou ik graag kopieën willen ontvangen van brondocumenten zodat ik zelf een overzicht kan maken.</p>
@@ -38,6 +39,7 @@ function LetterUI({value, filteredDataText}){
 			{filteredDataText.map(item => (
 		    <div key={item.id}>
 		      <div>
+		      	<h3>{item.title}</h3>
 		        <p>{item.sentence}</p> 
 		      </div>  
 		    </div>       
@@ -55,6 +57,6 @@ function LetterUI({value, filteredDataText}){
      		</div>
 
 		</div>
-		)
+    )
 }
 export default LetterUI

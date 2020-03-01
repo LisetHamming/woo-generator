@@ -1,16 +1,16 @@
 import React, { Component, useState } from "react"
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
 } from "react-router-dom";
 
-function Step2({value, changeHandlerUser, changeHandlerCheckbox, changeHandlerCompanyName}){
+function Step2({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerCompanyName }) {
 
-	return(
-			<div>
-			<h2>Voor wie en waarom WOB je?</h2>
+    return (
+        <div>
+				<h2>Voor wie en waarom WOB je?</h2>
 				<form>	
 					<label>Ik ben een journalist
 						<input id="userJournalist" value="userJournalist" checked={value.userJournalist} onChange={changeHandlerCheckbox} type="checkbox" /><br/>
@@ -35,7 +35,7 @@ function Step2({value, changeHandlerUser, changeHandlerCheckbox, changeHandlerCo
 				<Link to="/Step1">vorige pagina</Link>
 				<Link to="/Step3">volgende pagina</Link>
 			</div>
-		)
-	
+    )
+
 }
 export default Step2

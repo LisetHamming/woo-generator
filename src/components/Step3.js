@@ -1,14 +1,14 @@
 import React, { Component, useState } from "react"
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
 } from "react-router-dom";
 
-function Step3({value, changeHandlerUser}){
-	return(
-			<div>
+function Step3({ value, changeHandlerUser }) {
+    return (
+        <div>
 			<h2>Contactgegevens</h2>
 			<p>Als je een Wob-verzoek verstuurt, moet de overheid weten van wie het verzoek komt en waar hun besluit op je verzoek naartoe moet worden gestuurd. Vul daarom hier je contactgegevens en, als je het</p>
 				<form>
@@ -36,10 +36,10 @@ function Step3({value, changeHandlerUser}){
 			        </label>
 
       			 </form>
-      			 <p>Hoe gaat deze app om met mijn gegevens?<button>ietje</button></p>
+      				<p>Hoe gaat deze app om met mijn gegevens?<button>ietje</button></p>
 				<Link to="/Step2">vorige pagina</Link>
 				<Link to="/Step4">volgende pagina</Link>
 			</div>
-		)
+    )
 }
 export default Step3

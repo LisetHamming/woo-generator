@@ -1,15 +1,15 @@
 import React, { Component, useState } from "react"
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
 } from "react-router-dom";
 
-function Step4({value, clickHandlerAuthority, clickHandlerClearSelectedAuthority, authorities}){
-	const [searchValue, setSearchValue] = useState("") 
-	return(
-			<div>
+function Step4({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthority, authorities }) {
+    const [searchValue, setSearchValue] = useState("")
+    return (
+        <div>
 				<h2>Welke overheidsinstantie wil je om informatie vragen?</h2>
 				<p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden <button>ietje</button></p>
 				<form>
@@ -20,7 +20,7 @@ function Step4({value, clickHandlerAuthority, clickHandlerClearSelectedAuthority
 							 		<p>{value.selectedAuthority.types}</p>
 						       		<p>{value.selectedAuthority.naam}</p>
 						       		<p>{value.selectedAuthority.url}</p>
-									<p>{value.selectedAuthority.adres.postbus??value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}</p>
+									{value.selectedAuthority.adres?<p>{value.selectedAuthority.adres.postbus??value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}</p>:<p>Er is helaas geen adres bekend bij ons, beschik je zelf wel over een adres van deze instantie, dan kun je het invoeren zodra je de brief als .doc hebt gedownload</p>}
 									<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
 									<p>{value.selectedAuthority.value}</p>
 									<div>
@@ -45,6 +45,6 @@ function Step4({value, clickHandlerAuthority, clickHandlerClearSelectedAuthority
 				<Link to="/Step3">vorige pagina</Link>
 				<Link to="/Step5">volgende pagina</Link>
 			</div>
-		)
+    )
 }
 export default Step4
