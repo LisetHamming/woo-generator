@@ -27,9 +27,10 @@ li {
 a {
     background-color: black;
     color: white;
-    padding: 0.5em;
-    border-radius: 3em;
+    padding: 0.2em 0.5em 0.4em 0.5em;
+    border-radius: 0.3em;
     text-decoration: none;
+    margin-right: 1em;
 
 
 }
@@ -59,11 +60,30 @@ body {
     border-radius: 1%;
 }
 
-#root div {
+.container {
     display: flex;
 }
 
 .homepageBlock {
     background-color: white;
     display: block;
+}
+
+.popup {
+    background-color: white;
+    padding: 15px;
+}
+
+.popupI {
+    background-color: rgba(250, 250, 250, 0);
+    border: none;
+}
+
+.fontIcon {
+    color: white;
+}
+
+.popupClose {
+    background-color: rgba(250, 250, 250, 0);
+    border: none;
 }

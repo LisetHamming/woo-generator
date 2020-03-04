@@ -1,0 +1,22 @@
+import React, { Component, useState } from "react"
+import DataPopup from "./DataPopup"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+
+
+function Popup({ clickHandler, number }) {
+    const popup = DataPopup[number]
+
+    return (
+        <div className="popup">	
+        <button className="popupClose" type="button"onClick={clickHandler}><FontAwesomeIcon icon={faTimes} /></button>
+			<span>
+
+				<h1>{popup.h1}</h1>
+				<p>{popup.p}</p>
+			</span>
+			
+		</div>
+    )
+}
+export default Popup

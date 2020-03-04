@@ -16,6 +16,7 @@ import Step9 from "./Step9"
 import Step10 from "./Step10"
 import machine from "../assets/machine.png"
 import DataText from "./DataText"
+import Popup from "./popups/Popup"
 import {
     BrowserRouter as Router,
     Switch,
@@ -46,13 +47,41 @@ const initialState = {
     userCompanyName: false,
     userNeedsGoal: false,
     selectedAuthority: null,
-    subjectShort: [],
-    subjectLong: "",
     subjectMilieu: false,
-    subjectSpecific: false,
-    subjectAll: false,
+    subjectLong: "",
+    subjectShort: [],
+    subjectState: {},
+
+
+    subjectSpecific: "subjectSpecific",
     subjectDateStart: false,
     subjectDateEnd: false,
+    subjectMeeting: false,
+    subjectReports: false,
+    subjectCorrespondance: false,
+    subjectFinancial: false,
+    subjectDataset: false,
+    subjectElse: false,
+    subjectInvitations: true,
+    subjectDetermines: true,
+    subjectMinutes: true,
+    subjectInside: false,
+    subjectOutside: false,
+    subjectInside1: true,
+    subjectInside2: true,
+    subjectInside3: true,
+    subjectInside4: true,
+    subjectInside5: true,
+    subjectInside6: true,
+    subjectCorrespondanceName: [],
+    subjectFinancial1: true,
+    subjectFinancial2: true,
+    subjectFinancial3: true,
+    subjectDataset1: true,
+    subjectDataset2: true,
+    subjectDataset3: [],
+    subectElse: [],
+
 }
 const Homepage = (props) => {
     const [value, setValue] = useState(initialState)
@@ -77,17 +106,91 @@ const Homepage = (props) => {
 
     }
 
+    const changeHandlerRadio = ({ currentTarget: { value, name, dataset: { subject } } }) => {
+        setValue(current => ({ ...current,
+            subjectState: { ...current.subjectState,
+                [subject]: {
+                    ...current.subjectState[subject],
+                    [name]: value
+                }
+            }
+        }))
+
+    }
+
+    const changeHandlerSubjectCheckbox = ({ currentTarget: { checked, name, dataset: { subject } } }) => {
+        setValue(current => ({ ...current,
+            subjectState: { ...current.subjectState,
+                [subject]: {
+                    ...current.subjectState[subject],
+                    [name]: checked
+                }
+            }
+        }))
+
+    }
+
+    const changeHandlerSubjectText = ({ currentTarget: { value, name, dataset: { subject } } }) => {
+        setValue(current => ({ ...current,
+            subjectState: { ...current.subjectState,
+                [subject]: {
+                    ...current.subjectState[subject],
+                    [name]: value
+                }
+            }
+        }))
+
+    }
+
     const changeHandlerUser = ({ currentTarget: { value, id } }) => {
         setValue(current => ({ ...current, [id]: value }))
     }
     const changeHandlerSubject = ({ currentTarget: { value, id } }) => {
         setValue(current => ({ ...current, [id]: value }))
+
     }
     const changeHandlerCompanyName = ({ currentTarget: { checked } }) => {
         setValue(current => ({ ...current, userCompanyName: checked, userCompanyNameInput: "" }))
     }
     const handleAddSubjectShort = (subject) => {
-        setValue(current => ({ ...current, subjectShort: current.subjectShort.concat(subject) }))
+        setValue(current => ({ ...current,
+            subjectShort: current.subjectShort.concat(subject),
+            subjectState: { ...current.subjectState,
+                [subject]: {
+                    subjectSpecific: "subjectSpecific",
+                    subjectDateStart: false,
+                    subjectDateEnd: false,
+                    subjectMeeting: false,
+                    subjectReports: false,
+                    subjectCorrespondance: false,
+                    subjectFinancial: false,
+                    subjectDataset: false,
+                    subjectElse: false,
+                    subjectInvitations: true,
+                    subjectDetermines: true,
+                    subjectMinutes: true,
+                    subjectInside: false,
+                    subjectOutside: false,
+                    subjectInside1: true,
+                    subjectInside2: true,
+                    subjectInside3: true,
+                    subjectInside4: true,
+                    subjectInside5: true,
+                    subjectInside6: true,
+                    subjectCorrespondanceName: [],
+                    subjectFinancial1: true,
+                    subjectFinancial2: true,
+                    subjectFinancial3: true,
+                    subjectDataset1: true,
+                    subjectDataset2: true,
+                    subjectDataset3: [],
+                    subectElse: [],
+                }
+            }
+        }))
+
+
+
     }
     const clickHandlerRemoveSubject = ({ currentTarget: { id } }) => {
         setValue(current => ({ ...current, subjectShort: current.subjectShort.filter((subject, index) => index != id) }))
@@ -107,7 +210,7 @@ const Homepage = (props) => {
         var fileDownload = document.createElement("a");
         document.body.appendChild(fileDownload);
         fileDownload.href = source;
-        fileDownload.download = 'wob-verzoek0.doc';
+        fileDownload.download = `wob-verzoek-${value.selectedAuthority.naam}.doc`;
         fileDownload.click();
         document.body.removeChild(fileDownload);
     }
@@ -118,10 +221,10 @@ const Homepage = (props) => {
         <Switch>
         <Route exact path="/">
             <div className="homepageBlock">
-				      <h1>Schrijf in 3 simpele stappen je eigen Wob-verzoek</h1>
-				      <p>Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat noemen we een Wob-verzoek. Met de Wob-generator is dat een koud kunstje.</p>
-				      <Link to="/Step1">Start je Wob-verzoek</Link>
- 			      </div>	
+                      <h1>Schrijf in 3 simpele stappen je eigen Wob-verzoek</h1>
+                      <p>Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat noemen we een Wob-verzoek. Met de Wob-generator is dat een koud kunstje.</p>
+                      <Link to="/Step1">Start je Wob-verzoek</Link>
+                  </div>    
             <div><img src={machine}/></div>
           </Route>
              <Route path="/Step1" >
@@ -141,13 +244,13 @@ const Homepage = (props) => {
             </Route> 
 
             <Route path="/Step6" >
-              <Step6 value={value} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox}/>
+              <Step6 value={value} filteredDataText={filteredDataText} changeHandlerRadio={changeHandlerRadio}/>
              </Route> 
             <Route path="/Step7" >
               <Step7 value={value} filteredDataText={filteredDataText} changeHandlerUser={changeHandlerUser} clickHandlerSubjectPeriod={clickHandlerSubjectPeriod}/>
              </Route> 
             <Route path="/Step8" >
-              <Step8 value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
+              <Step8 value={value} changeHandlerSubjectCheckbox={changeHandlerSubjectCheckbox} changeHandlerSubjectText={changeHandlerSubjectText} filteredDataText={filteredDataText}/>
              </Route> 
             <Route path="/Step9" >
               <Step9 value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>

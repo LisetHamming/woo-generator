@@ -31,8 +31,7 @@ function Step4({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 						<ul id="authorities">
 							
 							{authorities.filter(item=>item.naam.toLowerCase().includes(searchValue.toLowerCase())||
-												   item.postAdres?.plaats?.toLowerCase().includes(searchValue.toLowerCase())||
-												   item.bezoekAdres?.plaats?.toLowerCase().includes(searchValue.toLowerCase()) ||
+												   item.adres?.plaats?.toLowerCase().includes(searchValue.toLowerCase())||
 												   item.types.some(type=>type.toLowerCase().includes(searchValue.toLowerCase()))
 													).map(item => (	
 							<li key={item.systemid}><button type="button" onClick={()=>clickHandlerAuthority(item)}><p>{item.naam}</p><p>{item.postAdres?.plaats||item.bezoekAdres?.plaats}</p><p>{item.types}</p></button></li>	                      

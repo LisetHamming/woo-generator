@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 function Step7({ value, filteredDataText, changeHandlerUser, clickHandlerSubjectPeriod }) {
+    const shouldGoToStep8 = value.subjectShort.some(subject => value.subjectState[subject].subjectSpecific === "subjectSpecific")
     return (
         <div>
 			<h2>Alles over je onderwerp - Periode</h2>
@@ -26,7 +27,9 @@ function Step7({ value, filteredDataText, changeHandlerUser, clickHandlerSubject
 
       			<p>Denk goed na welke periodes wel of niet nuttig zijn.<button>ietje</button></p>
 				<Link to="/Step6">vorige pagina</Link>
-				<Link to="/Step8">volgende pagina</Link>
+				 {shouldGoToStep8?
+				<Link to="/Step8">volgende pagina</Link>:
+				<Link to="/Step9">volgende pagina</Link>}
 				 <LetterUI value={value} 
       			 		   filteredDataText={filteredDataText} />
 			</div>
