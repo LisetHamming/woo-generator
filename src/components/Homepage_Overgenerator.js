@@ -9,7 +9,7 @@ import {
 
 function Homepage_Overgenerator() {
     return (
-        <div>
+        <div className="sectionWaarom">
 				<div>
 					<h1>Over deze generator</h1>
 					<p>De Wob-generator is een project van de Wob-werkgroep van de Vlaams-Nederlandse Vereniging van Onderzoeksjournalisten (VVOJ) en financieel mogelijk gemaakt door Stichting Lira.</p>
@@ -20,7 +20,7 @@ function Homepage_Overgenerator() {
 						<img src="logo_RA" alt="logo RA" /> */}
 					</div>
 					<div>
-						<Link to="/Step9">Privacy Policy </Link>
+						<Link to="/PrivacyVoorwaarden">Privacy Policy </Link>
 						<Link to="/Step9">Algemene voorwaarden</Link>
 					</div>
 				</div>

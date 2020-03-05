@@ -1,8 +1,8 @@
 import React, { Component, useState } from "react"
-import Homepage_Wat from "./Homepage_Wat"
+import Homepage_Waarom_Tool from "./Homepage_Waarom_Tool"
 import Homepage_Waarom from "./Homepage_Waarom"
-import Homepage_Opgeslagen from "./Homepage_Opgeslagen"
 import Homepage_Overgenerator from "./Homepage_Overgenerator"
+import PrivacyVoorwaarden from "./PrivacyVoorwaarden"
 import LetterUI from "./LetterUI"
 import Step1 from "./Step1"
 import Step2 from "./Step2"
@@ -226,6 +226,9 @@ const Homepage = (props) => {
                       <Link to="/Step1">Start je Wob-verzoek</Link>
                   </div>    
             <div><img src={machine}/></div>
+            <Homepage_Waarom />
+            <Homepage_Waarom_Tool />
+            <Homepage_Overgenerator />
           </Route>
              <Route path="/Step1" >
               <Step1 />
@@ -257,6 +260,9 @@ const Homepage = (props) => {
              </Route> 
             <Route path="/Step10" >
               <Step10 value={value} filteredDataText={filteredDataText} exportHTMLDoc={exportHTMLDoc}/>
+             </Route>
+            <Route path="/PrivacyVoorwaarden" >
+              <PrivacyVoorwaarden />
              </Route>
         </Switch>
 

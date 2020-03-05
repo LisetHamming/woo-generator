@@ -87,3 +87,14 @@ body {
     background-color: rgba(250, 250, 250, 0);
     border: none;
 }
+
+.sectionWaarom {
+    width: 100%;
+    display: block;
+    background-color: white;
+    padding: 25px;
+}
+
+.sectionBlock {
+    display: flex;
+}
