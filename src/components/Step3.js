@@ -1,4 +1,8 @@
 import React, { Component, useState } from "react"
+import Popup from "./popups/Popup"
+import PopupButton from "./popups/PopupButton"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,6 +11,7 @@ import {
 } from "react-router-dom";
 
 function Step3({ value, changeHandlerUser }) {
+    const [popUp, setPopUp] = useState(false)
     return (
         <div>
 			<h2>Contactgegevens</h2>
@@ -36,7 +41,7 @@ function Step3({ value, changeHandlerUser }) {
 			        </label>
 
       			 </form>
-      				<p>Hoe gaat deze app om met mijn gegevens?<button>ietje</button></p>
+      				<p>Hoe gaat deze app om met mijn gegevens?</p><PopupButton number="4" /><br />
 				<Link to="/Step2">vorige pagina</Link>
 				<Link to="/Step4">volgende pagina</Link>
 			</div>

@@ -3,6 +3,7 @@ import Homepage_Waarom_Tool from "./Homepage_Waarom_Tool"
 import Homepage_Waarom from "./Homepage_Waarom"
 import Homepage_Overgenerator from "./Homepage_Overgenerator"
 import PrivacyVoorwaarden from "./PrivacyVoorwaarden"
+import AlgemeneVoorwaarden from "./AlgemeneVoorwaarden"
 import LetterUI from "./LetterUI"
 import Step1 from "./Step1"
 import Step2 from "./Step2"
@@ -34,6 +35,14 @@ const initialState = {
     7: true,
     8: true,
     9: true,
+    10: true,
+    11: true,
+    12: true,
+    13: true,
+    14: true,
+    15: true,
+    16: true,
+    17: false,
     userName: "",
     userAdress: "",
     userAdressNumber: "",
@@ -49,14 +58,15 @@ const initialState = {
     selectedAuthority: null,
     subjectMilieu: false,
     subjectLong: "",
-    subjectShort: [],
-    subjectState: {},
-
-
-    subjectSpecific: "subjectSpecific",
+    subjectType: "all",
+    subjectSpecificDate: "",
+    subjectSpecificText: "",
+    subjectAllDate: "",
+    subjectAllText: "",
     subjectDateStart: false,
     subjectDateEnd: false,
     subjectMeeting: false,
+    subjectLongOrganisation: "",
     subjectReports: false,
     subjectCorrespondance: false,
     subjectFinancial: false,
@@ -105,7 +115,10 @@ const Homepage = (props) => {
 
 
     }
+    const changeHandlerSubjectType = ({ currentTarget: { value } }) => {
+        setValue(current => ({ ...current, subjectType: value }))
 
+    }
     const changeHandlerRadio = ({ currentTarget: { value, name, dataset: { subject } } }) => {
         setValue(current => ({ ...current,
             subjectState: { ...current.subjectState,
@@ -152,49 +165,8 @@ const Homepage = (props) => {
     const changeHandlerCompanyName = ({ currentTarget: { checked } }) => {
         setValue(current => ({ ...current, userCompanyName: checked, userCompanyNameInput: "" }))
     }
-    const handleAddSubjectShort = (subject) => {
-        setValue(current => ({ ...current,
-            subjectShort: current.subjectShort.concat(subject),
-            subjectState: { ...current.subjectState,
-                [subject]: {
-                    subjectSpecific: "subjectSpecific",
-                    subjectDateStart: false,
-                    subjectDateEnd: false,
-                    subjectMeeting: false,
-                    subjectReports: false,
-                    subjectCorrespondance: false,
-                    subjectFinancial: false,
-                    subjectDataset: false,
-                    subjectElse: false,
-                    subjectInvitations: true,
-                    subjectDetermines: true,
-                    subjectMinutes: true,
-                    subjectInside: false,
-                    subjectOutside: false,
-                    subjectInside1: true,
-                    subjectInside2: true,
-                    subjectInside3: true,
-                    subjectInside4: true,
-                    subjectInside5: true,
-                    subjectInside6: true,
-                    subjectCorrespondanceName: [],
-                    subjectFinancial1: true,
-                    subjectFinancial2: true,
-                    subjectFinancial3: true,
-                    subjectDataset1: true,
-                    subjectDataset2: true,
-                    subjectDataset3: [],
-                    subectElse: [],
-                }
-            }
-        }))
 
 
-
-    }
-    const clickHandlerRemoveSubject = ({ currentTarget: { id } }) => {
-        setValue(current => ({ ...current, subjectShort: current.subjectShort.filter((subject, index) => index != id) }))
-    }
     const clickHandlerSubjectPeriod = () => {}
 
 
@@ -214,6 +186,7 @@ const Homepage = (props) => {
         fileDownload.click();
         document.body.removeChild(fileDownload);
     }
+
 
 
 
@@ -243,11 +216,11 @@ const Homepage = (props) => {
               <Step4 value={value} authorities={props.authorities} clickHandlerAuthority={clickHandlerAuthority} clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}/>
              </Route> 
             <Route path="/Step5" >
-              <Step5 value={value} clickHandlerRemoveSubject={clickHandlerRemoveSubject} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser} handleAddSubjectShort={handleAddSubjectShort}/>
+              <Step5 value={value} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser}/>
             </Route> 
 
             <Route path="/Step6" >
-              <Step6 value={value} filteredDataText={filteredDataText} changeHandlerRadio={changeHandlerRadio}/>
+              <Step6 value={value} changeHandlerSubjectType={changeHandlerSubjectType} changeHandlerUser={changeHandlerUser} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox}/>
              </Route> 
             <Route path="/Step7" >
               <Step7 value={value} filteredDataText={filteredDataText} changeHandlerUser={changeHandlerUser} clickHandlerSubjectPeriod={clickHandlerSubjectPeriod}/>
@@ -264,6 +237,9 @@ const Homepage = (props) => {
             <Route path="/PrivacyVoorwaarden" >
               <PrivacyVoorwaarden />
              </Route>
+            <Route path="/AlgemeneVoorwaarden" >
+              <AlgemeneVoorwaarden />
+            </Route>
         </Switch>
 
 

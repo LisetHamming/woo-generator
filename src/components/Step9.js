@@ -1,4 +1,8 @@
 import React, { Component, useState } from "react"
+import Popup from "./popups/Popup"
+import PopupButton from "./popups/PopupButton"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import LetterUI from "./LetterUI"
 import {
     BrowserRouter as Router,

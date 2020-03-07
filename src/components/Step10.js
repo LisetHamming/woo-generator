@@ -1,4 +1,8 @@
 import React, { Component, useState } from "react"
+import Popup from "./popups/Popup"
+import PopupButton from "./popups/PopupButton"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import LetterUI from "./LetterUI"
 import {
     BrowserRouter as Router,
@@ -11,7 +15,7 @@ function Step10({ value, filteredDataText, exportHTMLDoc }) {
     return (
         <div>
 				<h2>Laatste check!</h2>
-				 <p>{value.subjectShort.map((subject, index) => subject)}</p>
+				 <p>{value.subjectLong}</p>
 	
 				<Link to="/Step9">vorige pagina</Link>
 				<div> 		

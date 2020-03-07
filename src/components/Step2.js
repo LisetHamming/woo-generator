@@ -1,5 +1,6 @@
 import React, { Component, useState } from "react"
 import Popup from "./popups/Popup"
+import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import {
@@ -18,18 +19,18 @@ function Step2({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerC
 				<form>	
 					<label>Ik ben een journalist 
 						<input id="userJournalist" value="userJournalist" checked={value.userJournalist} onChange={changeHandlerCheckbox} type="checkbox" />
-					</label><button type="button" className="popupI" onClick={()=>setPopUp(curr=>!curr)}><FontAwesomeIcon className="fontIcon" icon={faInfoCircle} /></button>{popUp&& <Popup number={"1"} clickHandler={()=>setPopUp(false)} />}<br />
+					</label><PopupButton number="1" />
 					<label>Ik Wob namens een (media-) organisatie
-						<input id="userCompany" value="userCompanyName" checked={value.userCompanyName} onChange={changeHandlerCompanyName} type="checkbox" /><br/>
-					</label>
+						<input id="userCompany" value="userCompanyName" checked={value.userCompanyName} onChange={changeHandlerCompanyName} type="checkbox" />
+					</label><PopupButton number="3" />
 					{value.userCompanyName&&
 					<label>Naam organisatie
 						<input id="userCompanyNameInput" value={value.userCompanyNameInput} onChange={changeHandlerUser} type="text"/><br/>
 					</label>
 					}
 					<label>Ik wil mijn doel toelichten
-						<input id="userNeedsGoal" value="userNeedsGoal" checked={value.userNeedsGoal} onChange={changeHandlerCheckbox} type="checkbox" /><br/>
-					</label>
+						<input id="userNeedsGoal" value="userNeedsGoal" checked={value.userNeedsGoal} onChange={changeHandlerCheckbox} type="checkbox" />
+					</label><PopupButton number="2" />
 					{value.userNeedsGoal&&		
 					<label>Journalistieke doel (verplicht)
 						<input id="userGoalInput" value={value.userGoalInput} onChange={changeHandlerUser} type="text"/><br/>

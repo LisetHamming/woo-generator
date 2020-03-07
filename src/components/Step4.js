@@ -1,4 +1,8 @@
 import React, { Component, useState } from "react"
+import Popup from "./popups/Popup"
+import PopupButton from "./popups/PopupButton"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import {
     BrowserRouter as Router,
     Switch,
@@ -11,7 +15,7 @@ function Step4({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
     return (
         <div>
 				<h2>Welke overheidsinstantie wil je om informatie vragen?</h2>
-				<p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden <button>ietje</button></p>
+				<p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden</p><PopupButton number="5" />
 				<form>
 						<input id="searchBarAuthority" type="search" value={searchValue} placeholder="zoek op naam of plaats" onChange={event=>setSearchValue(event.target.value)}/>
 						{value.selectedAuthority?
@@ -39,8 +43,8 @@ function Step4({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 				      	</ul>
 				      }
 	      		 </form>
-	      		 <p>Hoe kies ik de juiste overheidsinstantie?<button>ietje</button></p>
-	      		 <p>Aan wie adresseer ik mijn verzoek?<button>ietje</button></p>
+	      		 <p>Hoe kies ik de juiste overheidsinstantie?</p><PopupButton number="6" />
+	      		 <p>Aan wie adresseer ik mijn verzoek?</p><PopupButton number="7" />
 				<Link to="/Step3">vorige pagina</Link>
 				<Link to="/Step5">volgende pagina</Link>
 			</div>

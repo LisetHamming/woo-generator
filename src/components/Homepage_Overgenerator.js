@@ -21,7 +21,7 @@ function Homepage_Overgenerator() {
 					</div>
 					<div>
 						<Link to="/PrivacyVoorwaarden">Privacy Policy </Link>
-						<Link to="/Step9">Algemene voorwaarden</Link>
+						<Link to="/AlgemeneVoorwaarden">Algemene voorwaarden</Link>
 					</div>
 				</div>
 				<div>
