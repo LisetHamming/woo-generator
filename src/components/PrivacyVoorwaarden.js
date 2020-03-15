@@ -52,7 +52,7 @@ function PrivacyVoorwaarden() {
                     <h2>Bewaartermijn</h2>
                     <p>In overeenstemming met de AVG en de overige relevante wetgeving, bewaart VVOJ persoonsgegevens niet langer dan noodzakelijk is voor de verwezenlijking van de doeleinden waarvoor zij verzameld of verwerkt worden. Indien u meer informatie wil over hoe lang uw specifieke persoonsgegevens bewaard blijven, kunt u contact opnemen met notdefined@example.com.</p>
                     <p>Recht op inzage, correcties, recht op bezwaar en recht op dataportabiliteit</p>
-                    <p>Wanneer u inzage wil in uw persoonsgegevens, als u uw gegevens wilt wijzigingen of verwijderen of als u uw persoonsgegevens geheel of gedeeltelijk wilt laten overdragen aan u of aan een derde dan kunt u contact opnemen met VVOJ door een e-mail te sturen naar notdefined@example.com of een brief sturen aan:</p>
+                    <p>Wanneer u inzage wil in uw persoonsgegevens, als u uw gegevens wilt wijzigingen of verwijderen of als u uw persoonsgegevens geheel of gedeeltelijk wilt laten overdragen aan u of aan een derde dan kunt u contact opnemen met VVOJ door een e-mail te sturen naar wobvvoj@gmail.com of een brief sturen aan:</p>
                     <p>Vereniging van Onderzoeksjournalisten<br />
                     De Lairessestraat 125<br />
                     1075HH, Amsterdam <br /></p>

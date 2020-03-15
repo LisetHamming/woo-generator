@@ -12,7 +12,6 @@ import Step4 from "./Step4"
 import Step5 from "./Step5"
 import Step6 from "./Step6"
 import Step7 from "./Step7"
-import Step8 from "./Step8"
 import Step9 from "./Step9"
 import Step10 from "./Step10"
 import machine from "../assets/machine.png"
@@ -91,6 +90,8 @@ const initialState = {
     subjectDataset2: true,
     subjectDataset3: [],
     subectElse: [],
+    step6: false,
+    step9: false,
 
 }
 const Homepage = (props) => {
@@ -154,6 +155,9 @@ const Homepage = (props) => {
         }))
 
     }
+    const clickHandlerStep = (value) => {
+        setValue(current => ({ ...current, [value]: true }))
+    }
 
     const changeHandlerUser = ({ currentTarget: { value, id } }) => {
         setValue(current => ({ ...current, [id]: value }))
@@ -166,8 +170,6 @@ const Homepage = (props) => {
         setValue(current => ({ ...current, userCompanyName: checked, userCompanyNameInput: "" }))
     }
 
-
-    const clickHandlerSubjectPeriod = () => {}
 
 
     const exportHTMLDoc = () => {
@@ -213,20 +215,17 @@ const Homepage = (props) => {
               <Step3 value={value} changeHandlerUser={changeHandlerUser}/>
              </Route> 
              <Route path="/Step4" >
-              <Step4 value={value} authorities={props.authorities} clickHandlerAuthority={clickHandlerAuthority} clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}/>
+              <Step4 value={value} changeHandlerUser={changeHandlerUser} authorities={props.authorities} clickHandlerAuthority={clickHandlerAuthority} clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}/>
              </Route> 
             <Route path="/Step5" >
-              <Step5 value={value} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser}/>
+              <Step5 value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser}/>
             </Route> 
 
             <Route path="/Step6" >
               <Step6 value={value} changeHandlerSubjectType={changeHandlerSubjectType} changeHandlerUser={changeHandlerUser} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox}/>
              </Route> 
             <Route path="/Step7" >
-              <Step7 value={value} filteredDataText={filteredDataText} changeHandlerUser={changeHandlerUser} clickHandlerSubjectPeriod={clickHandlerSubjectPeriod}/>
-             </Route> 
-            <Route path="/Step8" >
-              <Step8 value={value} changeHandlerSubjectCheckbox={changeHandlerSubjectCheckbox} changeHandlerSubjectText={changeHandlerSubjectText} filteredDataText={filteredDataText}/>
+              <Step7 value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerUser={changeHandlerUser} />
              </Route> 
             <Route path="/Step9" >
               <Step9 value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>

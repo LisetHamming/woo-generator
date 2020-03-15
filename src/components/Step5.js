@@ -11,7 +11,7 @@ import {
     Link
 } from "react-router-dom";
 
-function Step5({ value, changeHandlerCheckbox, changeHandlerUser, filteredDataText }) {
+function Step5({ value, changeHandlerCheckbox, changeHandlerUser, filteredDataText, clickHandlerStep }) {
 
     return (
         <div>
@@ -28,7 +28,7 @@ function Step5({ value, changeHandlerCheckbox, changeHandlerUser, filteredDataTe
       			 	</form>
       			
 				<Link to="/Step4">vorige pagina</Link>
-				<Link to="/Step6">volgende pagina</Link>
+				<Link to="/Step6" onClick={()=>clickHandlerStep("step6")}>volgende pagina</Link>
 				 <LetterUI value={value} 
       			 		   filteredDataText={filteredDataText}
       			 		   />

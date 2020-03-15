@@ -8,7 +8,7 @@ function App() {
     useEffect(() => {
         fetch("https://rest-api.allmanak.nl/v1/overheidsorganisatie?types=cd.{Gemeente,Ministerie,Zelfstandig bestuursorgaan, Provincie, Rechterlijke macht,Politie en brandweer}&select=url:contact->internet->value, contact->postAdres,contact->bezoekAdres,naam,types,systemid,contact->emailadres->value")
             .then(response => response.json())
-            .then(data => data.map(({ postAdres, bezoekAdres, ...item }) => ({ ...item, adres: postAdres.postcode?.length>6?postAdres:bezoekAdres})))
+            .then(data => data.map(({ postAdres, bezoekAdres, ...item }) => ({ ...item, adres: postAdres.postcode?.length>6?postAdres : bezoekAdres })))
             .then(data => setAuthorities(data))
             .catch(error => setAuthorities(error))
     }, [])

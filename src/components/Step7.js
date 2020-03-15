@@ -11,7 +11,7 @@ import {
     Link
 } from "react-router-dom";
 
-function Step7({ value, filteredDataText, changeHandlerUser, clickHandlerSubjectPeriod }) {
+function Step7({ value, filteredDataText, changeHandlerUser, clickHandlerSubjectPeriod, clickHandlerStep }) {
     return (
         <div>
 			<h2>Alles over je onderwerp - Periode</h2>
@@ -19,7 +19,7 @@ function Step7({ value, filteredDataText, changeHandlerUser, clickHandlerSubject
 				 <form>
 				 	
 				 	<label> Van
-			           <input value={value.subjectDateStart} onChange={changeHandlerUser} id="subjectDateStart" type="date" name="subjectDate" onfocus="(this.type='date')" placeholder="22-11-2019" /><br/>
+			           <input value={value.subjectDateStart} onChange={changeHandlerUser} id="subjectDateStart" type="date" name="subjectDate" placeholder="22-11-2019" /><br/>
 			        </label>
 			        <label> Tot
 			           <input value={value.subjectDateEnd} onChange={changeHandlerUser}id="subjectDateEnd" type="date" name="subjectDate" placeholder="31-12-2019"/><br/>
@@ -30,7 +30,7 @@ function Step7({ value, filteredDataText, changeHandlerUser, clickHandlerSubject
 
       			<p>Denk goed na welke periodes wel of niet nuttig zijn.</p><PopupButton number="15" />
 				<Link to="/Step6">vorige pagina</Link>
-				<Link to="/Step9">volgende pagina</Link>
+				<Link to="/Step9" onClick={()=>clickHandlerStep("step8")}>volgende pagina</Link>
 				 <LetterUI value={value} 
       			 		   filteredDataText={filteredDataText} />
 			</div>

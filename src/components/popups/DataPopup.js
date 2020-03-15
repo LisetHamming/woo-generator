@@ -79,8 +79,8 @@
      },
      16: {
          id: "16",
-         h1: "",
-         p: "",
+         h1: "De instantie staat niet in de lijst",
+         p: "Natuurlijk kun je ook andere instanties een Wob-verzoek sturen. Als je een mailtje stuurt naar wobvvoj@gmail.com met alle gegevens van de instantie, dan zorgen wij dat de instantie wordt toegevoegd aan de lijst",
      }
 
 

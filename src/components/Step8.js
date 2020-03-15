@@ -86,7 +86,7 @@ function Step8({ changeHandlerSubjectCheckbox, changeHandlerSubjectText, value, 
         <p>Welke informatie moet de overheid openbaar maken.<button>ietje</button></p>
         <p>Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.<button>ietje</button></p>
         <Link to="/Step7">vorige pagina</Link>
-        <Link to="/Step9">volgende pagina</Link>
+        <Link to="/Step9" onClick={()=>clickHandlerStep("step9")}>volgende pagina</Link>
         <LetterUI value={value} 
                    filteredDataText={filteredDataText}
                    />

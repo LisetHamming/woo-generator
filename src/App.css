@@ -99,3 +99,20 @@ body {
 .sectionBlock {
     display: flex;
 }
+
+#authorities {
+    height: 20em;
+    overflow-y: scroll;
+    max-width: 61.5vw;
+}
+
+
+@media print {
+
+    aside#sidebar,
+    footer,
+    #comments,
+    #respond {
+        display: none;
+    }
+}

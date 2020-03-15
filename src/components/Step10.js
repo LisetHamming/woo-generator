@@ -22,7 +22,7 @@ function Step10({ value, filteredDataText, exportHTMLDoc }) {
       				<h2>Exporteren!</h2>
       				<p>Download je bestand hier!</p>   
 	      			<button onClick={exportHTMLDoc}>Opslaan als DOC</button> 
-	      			<button>Opslaan als PDF</button>
+	      			<button onClick={window.print}>Opslaan als PDF</button>
 	      		</div>	
 
 				

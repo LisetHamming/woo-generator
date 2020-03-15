@@ -3,6 +3,7 @@ import Popup from "./popups/Popup"
 import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual"
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,8 +11,9 @@ import {
     Link
 } from "react-router-dom";
 
-function Step4({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthority, authorities }) {
+function Step4({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthority, authorities, changeHandlerUser }) {
     const [searchValue, setSearchValue] = useState("")
+    const [manualAuthority, setManualAuthority] = useState(false)
     return (
         <div>
 				<h2>Welke overheidsinstantie wil je om informatie vragen?</h2>
@@ -39,10 +41,18 @@ function Step4({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 												   item.types.some(type=>type.toLowerCase().includes(searchValue.toLowerCase()))
 													).map(item => (	
 							<li key={item.systemid}><button type="button" onClick={()=>clickHandlerAuthority(item)}><p>{item.naam}</p><p>{item.postAdres?.plaats||item.bezoekAdres?.plaats}</p><p>{item.types}</p></button></li>	                      
-					          ))} 
-				      	</ul>
-				      }
+					          ))}
+    							
+				      	</ul>}
+		      			<div>
+					 		<p>Staat de juiste instantie er niet tussen maar beschik je zelf wel over de juiste gegevens?</p><PopupButton number="16" />
+					 		<button type="button" value="true" onClick={event=>setManualAuthority(event.target.value)}>Vul dan hier de gegevens in</button>
+					 	</div>
+				      
 	      		 </form>
+	      		{manualAuthority&&
+    				<SetSelectedAuthorityManual value={value} clickHandlerAuthority={clickHandlerAuthority}/>
+    			}
 	      		 <p>Hoe kies ik de juiste overheidsinstantie?</p><PopupButton number="6" />
 	      		 <p>Aan wie adresseer ik mijn verzoek?</p><PopupButton number="7" />
 				<Link to="/Step3">vorige pagina</Link>
