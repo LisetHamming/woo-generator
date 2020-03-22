@@ -11,21 +11,21 @@ import {
     Link
 } from "react-router-dom";
 
-function Step4({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthority, authorities, changeHandlerUser }) {
+function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthority, authorities, changeHandlerUser }) {
     const [searchValue, setSearchValue] = useState("")
     const [manualAuthority, setManualAuthority] = useState(false)
     return (
         <div>
-				<h2>Welke overheidsinstantie wil je om informatie vragen?</h2>
+				<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
 				<p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden</p><PopupButton number="5" />
 				<form>
 						<input id="searchBarAuthority" type="search" value={searchValue} placeholder="zoek op naam of plaats" onChange={event=>setSearchValue(event.target.value)}/>
 						{value.selectedAuthority?
 							 	<div>
 							 		<p>Controleer de instantie aan wie je Wobt</p>	
-							 		<p>{value.selectedAuthority.types}</p>
 						       		<p>{value.selectedAuthority.naam}</p>
 						       		<p>{value.selectedAuthority.url}</p>
+						       		<br/><br/>
 									{value.selectedAuthority.adres?<p>{value.selectedAuthority.adres.postbus??value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}</p>:<p>Er is helaas geen adres bekend bij ons, beschik je zelf wel over een adres van deze instantie, dan kun je het invoeren zodra je de brief als .doc hebt gedownload</p>}
 									<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
 									<p>{value.selectedAuthority.value}</p>
@@ -55,9 +55,9 @@ function Step4({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
     			}
 	      		 <p>Hoe kies ik de juiste overheidsinstantie?</p><PopupButton number="6" />
 	      		 <p>Aan wie adresseer ik mijn verzoek?</p><PopupButton number="7" />
-				<Link to="/Step3">vorige pagina</Link>
-				<Link to="/Step5">volgende pagina</Link>
+				<Link to="/Stap1_2">Terug</Link>
+				<Link to="/Stap3">Stap 3</Link>
 			</div>
     )
 }
-export default Step4
+export default Stap2

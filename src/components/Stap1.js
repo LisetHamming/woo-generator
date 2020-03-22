@@ -10,14 +10,34 @@ import {
     Link
 } from "react-router-dom";
 
-function Step3({ value, changeHandlerUser }) {
+function Stap1({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerCompanyName }) {
     const [popUp, setPopUp] = useState(false)
+
     return (
         <div>
-			<h2>Contactgegevens</h2>
-			<p>Als je een Wob-verzoek verstuurt, moet de overheid weten van wie het verzoek komt en waar hun besluit op je verzoek naartoe moet worden gestuurd. Vul daarom hier je contactgegevens en, als je het</p>
-				<form>
-					
+				<h2>Stap 1: Over jezelf</h2>
+				<form>	
+					<label>Ik ben een journalist 
+						<input id="userJournalist" value="userJournalist" checked={value.userJournalist} onChange={changeHandlerCheckbox} type="checkbox" />
+					</label><PopupButton number="1" />
+					<label>Ik Wob namens een (media-) organisatie
+						<input id="userCompany" value="userCompanyName" checked={value.userCompanyName} onChange={changeHandlerCompanyName} type="checkbox" />
+					</label><PopupButton number="3" />
+					{value.userCompanyName&&
+					<label>Naam organisatie
+						<input id="userCompanyNameInput" value={value.userCompanyNameInput} onChange={changeHandlerUser} type="text"/><br/>
+					</label>
+					}
+					<label>Ik wil mijn doel toelichten
+						<input id="userNeedsGoal" value="userNeedsGoal" checked={value.userNeedsGoal} onChange={changeHandlerCheckbox} type="checkbox" />
+					</label><PopupButton number="2" />
+					{value.userNeedsGoal&&		
+					<label>Journalistieke doel (verplicht)
+						<input id="userGoalInput" value={value.userGoalInput} onChange={changeHandlerUser} type="text"/><br/>
+					</label>
+					}
+
+							
 					<label> Naam (verplicht)
 			           <input value={value.userName} onChange={changeHandlerUser} id="userName" type="text" name="userInfo" placeholder="vul hier je naam in" /><br/>
 			        </label>
@@ -38,13 +58,13 @@ function Step3({ value, changeHandlerUser }) {
 			        </label>
 			        <label> Telefoon
 			           <input value={value.userPhoneNumber} onChange={changeHandlerUser} id="userPhoneNumber" type="text" name="userInfo" placeholder="Vul hier je telefoonnummer in" /><br/>
-			        </label>
-
-      			 </form>
-      				<p>Hoe gaat deze app om met mijn gegevens?</p><PopupButton number="4" /><br />
-				<Link to="/Step2">vorige pagina</Link>
-				<Link to="/Step4">volgende pagina</Link>
+			        </label>								
+				</form>
+				
+				<Link to="/">Terug</Link>
+				<Link to="/Stap1_2">Volgende</Link>
 			</div>
     )
+
 }
-export default Step3
+export default Stap1

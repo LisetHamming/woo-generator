@@ -27,7 +27,7 @@ li {
 a {
     background-color: black;
     color: white;
-    padding: 0.2em 0.5em 0.4em 0.5em;
+    padding: 0.8em 3em;
     border-radius: 0.3em;
     text-decoration: none;
     margin-right: 1em;
@@ -41,6 +41,17 @@ form {
 
 body {
     background-color: #FFDB62;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    line-height: 25px;
+    color: grey;
+}
+
+h1 {
+    line-height: 45px;
+    font-weight: bold;
 }
 
 #letterUI h3 {
@@ -60,15 +71,76 @@ body {
     border-radius: 1%;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
 
 .homepageBlock {
     background-color: white;
-    display: block;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
 }
+
+.homepageBlock img {
+    padding-right: 40px;
+    width: 95%;
+}
+
+.extra_content {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.extra_content p {
+    margin-right: 15px;
+}
+
+.extra_content img {
+    width: 100px;
+}
+
+.extra_content .horizontalRule {
+    width: 100%;
+}
+
+.blockText {
+    width: 35%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.blockText h1 {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+
+
+}
+
+.blockText p {
+    margin-bottom: 10px;
+    color: grey;
+    font-size: 1.1em;
+}
+
+.blockText ol {
+    margin-bottom: 10px;
+    color: grey;
+    line-height: 25px;
+    font-size: 1.1em;
+}
+
+.blockText img {
+    margin-bottom: 2em;
+    width: 80px;
+}
+
 
 .popup {
     background-color: white;
@@ -90,14 +162,74 @@ body {
 }
 
 .sectionWaarom {
-    width: 100%;
+    padding-top: 40px;
+    width: 90%;
+    margin: 0 auto;
     display: block;
     background-color: white;
-    padding: 25px;
+
+}
+
+.sectionWaarom img {
+    display: block;
+    margin: 0 auto;
 }
 
 .sectionBlock {
     display: flex;
+    padding: 40px;
+    justify-content: space-around;
+
+}
+
+.sectionBlock div {
+    width: 40%;
+
+}
+
+.sectionBlock div h1,
+.sectionBlock2 div h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.sectionBlock2 {
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+}
+
+.sectionBlock2 .projectTeam h2 {
+    font-weight: bold;
+    margin: 30px 0 10px;
+}
+
+.sectionBlock2 .projectTeam p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.sectionBlock2 .block1 {
+    width: 60%;
+}
+
+.sectionBlock2 .spanLinks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.sectionBlock2 .spanLinks img {
+    margin: 20px;
+}
+
+.sectionBlock2 .spanLinks a {
+    background-color: white;
+    border-radius: 0;
+    color: grey;
+    margin: 0;
+    padding: 20px;
 }
 
 #authorities {

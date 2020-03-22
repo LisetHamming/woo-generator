@@ -23,7 +23,8 @@
      {
          id: 5,
          title: "Insluiting alle formaten",
-         sentence: "Dit verzoek wordt gedaan op basis van de Wet openbaarheid van bestuur. Daaruit vloeit voort dat u binnen 4 weken een besluit moet nemen op dit verzoek. "
+         sentence: "Met documenten bedoel ik vastlegging ongeacht de gegevensdrager: dus naast klassieke papieren documenten bijvoorbeeld ook digitale bestanden, sms-jes, WhatsApp-berichten en audio- en videobestanden. Bovendien gaat het inhoudelijk mij dan niet alleen om officiële rapportages en onderzoeksverslagen, maar ook om onder andere presentaties, gespreksverslagen, e-mailwisselingen en notulen van vergaderingen met betrekking tot deze kwestie."
+
      },
      {
          id: 6,

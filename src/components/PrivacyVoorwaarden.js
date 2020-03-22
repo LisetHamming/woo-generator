@@ -17,7 +17,8 @@ function PrivacyVoorwaarden() {
 					<h1>Privacy beleid</h1>
                     <p>Privacy is er belangrijk voor ons. Daarom hebben we deze pagina opgesteld om duidelijk te maken wat we met je gegevens doen.</p>
 					<Link to="/" >Ga terug</Link>
-					<Link to="/Step1">Start een Wob-verzoek</Link>
+					<Link to="/Stap1">Start een Wob-verzoek</Link>
+                    <div class="textLongConditions">
                     <p>Dit is de Privacy Policy van Vereniging van Onderzoeksjournalisten (hierna te noemen “VVOJ”, "wij," "ons" of "onze"), een onderneming met adres De Lairessestraat 125, Amsterdam. VVOJ is ingeschreven bij de Kamer van Koophandel onder nummer 34171208. Deze Privacy Policy legt uit hoe wij gegevens verzamelen, gebruiken, delen en beschermen in relatie tot onze website wobgenerator.nl (de “Website”). Wij verzamelen deze gegevens wanneer u onze Website bezoekt met uw computer, tablet of mobiele telefoon (“Computer”). Wij verwerken persoonsgegevens op een manier die in overeenstemming is met de Algemene Verordening Gegevensbescherming (de “AVG”), de op de AVG gebaseerde uitvoeringswetgeving en de andere op dit moment geldende privacywetgeving. </p>
                     <p>Onze Privacy Policy is van toepassing op alle bezoekers, gebruikers en alle anderen die de toegang hebben tot de Website ("Gebruikers"). Door het gebruiken van onze Website, begrijpt u en gaat u akkoord dat VVOJ een platform biedt voor het plaatsen van inhoud, inclusief foto’s, reacties en andere materialen (“Gebruikers Inhoud”). Dit betekent dat andere Gebruikers kunnen zoeken naar uw openbare Gebruikers Inhoud en dat zij deze kunnen bekijken, gebruiken of delen.</p>
                     <h2>Wat voor gegevens verzamelen wij?</h2>
@@ -64,7 +65,7 @@ function PrivacyVoorwaarden() {
                     <p>VVOJ kan van tijd tot tijd deze Privacy Policy aanpassen of updaten. U wordt daarom geadviseerd om deze Privacy Policy regelmatig te raadplegen. Aanpassingen van deze Privacy Policy treden in werking op het moment dat deze zijn gepubliceerd op deze pagina. </p>
                     <h2>Contact</h2>
                     <p>Wanneer u vragen heeft over deze Privacy Policy, dan kunt u contact opnemen met VVOJ door een e-mail te sturen naar wobvvoj@gmail.com.</p>
-
+                    </div>
 
 				</div> 
 				

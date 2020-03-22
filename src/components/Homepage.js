@@ -5,11 +5,11 @@ import Homepage_Overgenerator from "./Homepage_Overgenerator"
 import PrivacyVoorwaarden from "./PrivacyVoorwaarden"
 import AlgemeneVoorwaarden from "./AlgemeneVoorwaarden"
 import LetterUI from "./LetterUI"
-import Step1 from "./Step1"
-import Step2 from "./Step2"
-import Step3 from "./Step3"
-import Step4 from "./Step4"
-import Step5 from "./Step5"
+import Start from "./Start"
+import Stap1 from "./Stap1"
+import Stap1_2 from "./Stap1_2"
+import Stap2 from "./Stap2"
+import Stap3 from "./Stap3"
 import Step6 from "./Step6"
 import Step7 from "./Step7"
 import Step9 from "./Step9"
@@ -17,6 +17,10 @@ import Step10 from "./Step10"
 import machine from "../assets/machine.png"
 import DataText from "./DataText"
 import Popup from "./popups/Popup"
+import logo from "../assets/logo.png"
+import logo_vvoj from "../assets/logo_vvoj.png"
+import line_yellow from "../assets/line_yellow.png"
+import line_black from "../assets/line_black.png"
 import {
     BrowserRouter as Router,
     Switch,
@@ -196,29 +200,47 @@ const Homepage = (props) => {
         <Switch>
         <Route exact path="/">
             <div className="homepageBlock">
+            <div className="blockText">
+                      <img src={logo}/>
                       <h1>Schrijf in 3 simpele stappen je eigen Wob-verzoek</h1>
                       <p>Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat noemen we een Wob-verzoek. Met de Wob-generator is dat een koud kunstje.</p>
-                      <Link to="/Step1">Start je Wob-verzoek</Link>
-                  </div>    
-            <div><img src={machine}/></div>
+
+                      <ol>
+                          <li>1. Je vult een aantal gegevens over jezelf in</li>
+                          <li>2. Je selecteert een overheidsinstantie.</li>
+                          <li>3. Je kiest wat voor documenten of informatie je zoekt.</li>
+
+
+                      </ol>
+
+                      <p>Voilà!</p>
+                      <Link to="/Stap1">Start je Wob-verzoek</Link>
+                  </div>  
+                  <div><img src={machine}/></div>
+
+           </div>
+           <div className="extra_content"><p>Een initiatief van de   </p><img src={logo_vvoj} className="logo_vvoj"/></div> 
+           <div className="extra_content"> <img src={line_yellow} className="horizontalRule"/></div>
             <Homepage_Waarom />
+            <div className="extra_content"> <img src={line_black} className="horizontalRule"/></div>
             <Homepage_Waarom_Tool />
+            <div className="extra_content"> <img src={line_yellow} className="horizontalRule"/></div>
             <Homepage_Overgenerator />
           </Route>
-             <Route path="/Step1" >
-              <Step1 />
+             <Route path="/start" >
+              <Start />
              </Route>  
-             <Route path="/Step2" >
-              <Step2 value={value} changeHandlerUser={changeHandlerUser} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerCompanyName={changeHandlerCompanyName}/>
+             <Route path="/Stap1" >
+              <Stap1 value={value} changeHandlerUser={changeHandlerUser} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerCompanyName={changeHandlerCompanyName}/>
              </Route> 
-             <Route path="/Step3" >
-              <Step3 value={value} changeHandlerUser={changeHandlerUser}/>
+             <Route path="/Stap1_2" >
+              <Stap1_2 value={value} changeHandlerUser={changeHandlerUser}/>
              </Route> 
-             <Route path="/Step4" >
-              <Step4 value={value} changeHandlerUser={changeHandlerUser} authorities={props.authorities} clickHandlerAuthority={clickHandlerAuthority} clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}/>
+             <Route path="/Stap2" >
+              <Stap2 value={value} changeHandlerUser={changeHandlerUser} authorities={props.authorities} clickHandlerAuthority={clickHandlerAuthority} clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}/>
              </Route> 
-            <Route path="/Step5" >
-              <Step5 value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser}/>
+            <Route path="/Stap3" >
+              <Stap3 value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser}/>
             </Route> 
 
             <Route path="/Step6" >
