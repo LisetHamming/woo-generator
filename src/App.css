@@ -4,7 +4,7 @@ li button {
 }
 
 li button p:first-of-type {
-    width: 30vw;
+    width: 25vw;
 
 }
 
@@ -123,7 +123,8 @@ h1 {
 
 }
 
-.blockText p {
+.blockText p,
+.conditions p {
     margin-bottom: 10px;
     color: grey;
     font-size: 1.1em;
@@ -136,7 +137,8 @@ h1 {
     font-size: 1.1em;
 }
 
-.blockText img {
+.blockText img,
+.logoWob {
     margin-bottom: 2em;
     width: 80px;
 }
@@ -161,7 +163,9 @@ h1 {
     border: none;
 }
 
-.sectionWaarom {
+.sectionWaarom,
+.conditions,
+.textLongConditions {
     padding-top: 40px;
     width: 90%;
     margin: 0 auto;
@@ -175,7 +179,8 @@ h1 {
     margin: 0 auto;
 }
 
-.sectionBlock {
+.sectionBlock,
+.sectionBlock2 {
     display: flex;
     padding: 40px;
     justify-content: space-around;
@@ -188,16 +193,12 @@ h1 {
 }
 
 .sectionBlock div h1,
-.sectionBlock2 div h1 {
+.sectionBlock2 div h1,
+.conditions .block2 h1 {
     font-size: 1.5em;
     margin-bottom: 0.2em;
 }
 
-.sectionBlock2 {
-    display: flex;
-    padding: 40px;
-    justify-content: space-around;
-}
 
 .sectionBlock2 .projectTeam h2 {
     font-weight: bold;
@@ -221,7 +222,7 @@ h1 {
 }
 
 .sectionBlock2 .spanLinks img {
-    margin: 20px;
+    margin: 20px 20px 20px 0;
 }
 
 .sectionBlock2 .spanLinks a {
@@ -229,15 +230,76 @@ h1 {
     border-radius: 0;
     color: grey;
     margin: 0;
-    padding: 20px;
+    padding: 20px 20px 20px 0;
+}
+
+.conditions .block2,
+.textLongConditions {
+    padding: 40px;
+    width: 60%;
+
+}
+
+.conditions .horizontalRule:nth-of-type(1) {
+    margin-top: 100px;
+}
+
+.textLongConditions h2 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.conditions .block2 div p:first-of-type {
+    margin: 40px 0;
+}
+
+.textLongConditions {
+    margin: 0;
 }
 
 #authorities {
-    height: 20em;
+    max-height: 20em;
     overflow-y: scroll;
-    max-width: 61.5vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-top: 20px;
 }
 
+.formLetter {
+    padding: 40px;
+    width: 40%;
+}
+
+.formLetter h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.formLetter h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.formLetter p {
+    color: black;
+}
+
+.formLetter .lastOfType {
+    margin-bottom: 40px;
+}
+
+.formLetter span {
+    display: flex;
+}
+
+.formLetter .selectedAuthority {
+    border: 1px dashed grey;
+    padding: 20px;
+    margin-top: 20px;
+}
 
 @media print {
 

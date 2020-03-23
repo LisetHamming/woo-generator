@@ -14,23 +14,26 @@ function Stap1({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerC
     const [popUp, setPopUp] = useState(false)
 
     return (
-        <div>
+        <div className="formLetter">
 				<h2>Stap 1: Over jezelf</h2>
+				<p>Je hoeft geen journalist te zijn om te wobben, maar als je het wel bent kan het handig zijn om dat kenbaar te maken. Je hoeft ook het (journalistieke) doel van je verzoek niet toe te lichten, maar ook hier geldt dat er redenen kunnen zijn om dat wel te doen. Tot slot kun je uit eigen naam of namens een organisatie wobben. Klik op de i’tjes voor meer informatie.</p>
 				<form>	
+					<span>
 					<label>Ik ben een journalist 
 						<input id="userJournalist" value="userJournalist" checked={value.userJournalist} onChange={changeHandlerCheckbox} type="checkbox" />
-					</label><PopupButton number="1" />
+					</label><PopupButton number="1" /></span>
+					<span>
 					<label>Ik Wob namens een (media-) organisatie
 						<input id="userCompany" value="userCompanyName" checked={value.userCompanyName} onChange={changeHandlerCompanyName} type="checkbox" />
-					</label><PopupButton number="3" />
+					</label><PopupButton number="3" /></span>
 					{value.userCompanyName&&
 					<label>Naam organisatie
 						<input id="userCompanyNameInput" value={value.userCompanyNameInput} onChange={changeHandlerUser} type="text"/><br/>
 					</label>
 					}
-					<label>Ik wil mijn doel toelichten
+					<span><label>Ik wil mijn doel toelichten
 						<input id="userNeedsGoal" value="userNeedsGoal" checked={value.userNeedsGoal} onChange={changeHandlerCheckbox} type="checkbox" />
-					</label><PopupButton number="2" />
+					</label><PopupButton number="2" /></span>
 					{value.userNeedsGoal&&		
 					<label>Journalistieke doel (verplicht)
 						<input id="userGoalInput" value={value.userGoalInput} onChange={changeHandlerUser} type="text"/><br/>
@@ -62,7 +65,7 @@ function Stap1({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerC
 				</form>
 				
 				<Link to="/">Terug</Link>
-				<Link to="/Stap1_2">Volgende</Link>
+				<Link to="/Stap2">Volgende</Link>
 			</div>
     )
 

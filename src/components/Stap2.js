@@ -15,17 +15,17 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
     const [searchValue, setSearchValue] = useState("")
     const [manualAuthority, setManualAuthority] = useState(false)
     return (
-        <div>
+        <div className="formLetter">
 				<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
-				<p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden</p><PopupButton number="5" />
+				<span><p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden</p><PopupButton number="5" /></span>
 				<form>
 						<input id="searchBarAuthority" type="search" value={searchValue} placeholder="zoek op naam of plaats" onChange={event=>setSearchValue(event.target.value)}/>
 						{value.selectedAuthority?
-							 	<div>
-							 		<p>Controleer de instantie aan wie je Wobt</p>	
-						       		<p>{value.selectedAuthority.naam}</p>
+							 	<div className="selectedAuthority">
+							 		<p>Controleer de instantie aan wie je Wobt:</p>	
+						       		<h3>{value.selectedAuthority.naam}</h3>
 						       		<p>{value.selectedAuthority.url}</p>
-						       		<br/><br/>
+						       		<br/>
 									{value.selectedAuthority.adres?<p>{value.selectedAuthority.adres.postbus??value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}</p>:<p>Er is helaas geen adres bekend bij ons, beschik je zelf wel over een adres van deze instantie, dan kun je het invoeren zodra je de brief als .doc hebt gedownload</p>}
 									<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
 									<p>{value.selectedAuthority.value}</p>
@@ -45,7 +45,7 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
     							
 				      	</ul>}
 		      			<div>
-					 		<p>Staat de juiste instantie er niet tussen maar beschik je zelf wel over de juiste gegevens?</p><PopupButton number="16" />
+					 		<span><p>Staat de juiste instantie er niet tussen maar beschik je zelf wel over de juiste gegevens?</p><PopupButton number="16" /></span>
 					 		<button type="button" value="true" onClick={event=>setManualAuthority(event.target.value)}>Vul dan hier de gegevens in</button>
 					 	</div>
 				      
@@ -53,9 +53,9 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 	      		{manualAuthority&&
     				<SetSelectedAuthorityManual value={value} clickHandlerAuthority={clickHandlerAuthority}/>
     			}
-	      		 <p>Hoe kies ik de juiste overheidsinstantie?</p><PopupButton number="6" />
-	      		 <p>Aan wie adresseer ik mijn verzoek?</p><PopupButton number="7" />
-				<Link to="/Stap1_2">Terug</Link>
+	      		 <span><p>Hoe kies ik de juiste overheidsinstantie?</p><PopupButton number="6" /></span>
+	      		 <span className="lastOfType"><p>Aan wie adresseer ik mijn verzoek?</p><PopupButton number="7" /></span>
+				<Link to="/Stap1">Terug</Link>
 				<Link to="/Stap3">Stap 3</Link>
 			</div>
     )

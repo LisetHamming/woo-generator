@@ -201,7 +201,7 @@ const Homepage = (props) => {
         <Route exact path="/">
             <div className="homepageBlock">
             <div className="blockText">
-                      <img src={logo}/>
+                      <img className="logoWob" src={logo}/>
                       <h1>Schrijf in 3 simpele stappen je eigen Wob-verzoek</h1>
                       <p>Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat noemen we een Wob-verzoek. Met de Wob-generator is dat een koud kunstje.</p>
 

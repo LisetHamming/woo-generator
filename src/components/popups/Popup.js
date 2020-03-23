@@ -10,7 +10,7 @@ function Popup({ clickHandler, number }) {
     return (
         <div className="popup">	
         <button className="popupClose" type="button"onClick={clickHandler}><FontAwesomeIcon icon={faTimes} /></button>
-			<span>
+			<div>
 
 				<h1>{popup.h1}</h1>
 				<p>{popup.p}</p>
@@ -18,7 +18,7 @@ function Popup({ clickHandler, number }) {
 				<p>{popup.p3}</p>
 				<p>{popup.p4}</p>
 				<p>{popup.p5}</p>
-			</span>
+			</div>
 			
 		</div>
     )
