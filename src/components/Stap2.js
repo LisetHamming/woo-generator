@@ -4,6 +4,7 @@ import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual"
+import logo from "../assets/logo.png"
 import {
     BrowserRouter as Router,
     Switch,
@@ -16,6 +17,7 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
     const [manualAuthority, setManualAuthority] = useState(false)
     return (
         <div className="formLetter">
+         <img className="logoWob" src={logo}/>
 				<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
 				<span><p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden</p><PopupButton number="5" /></span>
 				<form>

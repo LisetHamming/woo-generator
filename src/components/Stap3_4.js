@@ -4,6 +4,7 @@ import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import LetterUI from "./LetterUI"
+import logo from "../assets/logo.png"
 import {
     BrowserRouter as Router,
     Switch,
@@ -11,11 +12,12 @@ import {
     Link
 } from "react-router-dom";
 
-function Step8({ changeHandlerSubjectCheckbox, changeHandlerSubjectText, value, filteredDataText }) {
+function Stap3_4({ changeHandlerSubjectCheckbox, changeHandlerSubjectText, value, clickHandlerStep, filteredDataText }) {
 
 
     return (
-        <div>
+        <div className="formLetter">
+         <img className="logoWob" src={logo}/>
       <h2>Alles over je onderwerp - Welke documenttypes?</h2>
        
          <form>
@@ -85,12 +87,12 @@ function Step8({ changeHandlerSubjectCheckbox, changeHandlerSubjectText, value, 
              
         <p>Welke informatie moet de overheid openbaar maken.<button>ietje</button></p>
         <p>Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.<button>ietje</button></p>
-        <Link to="/Step7">vorige pagina</Link>
-        <Link to="/Step9" onClick={()=>clickHandlerStep("step9")}>volgende pagina</Link>
+        <Link to="/Stap3_3">vorige pagina</Link>
+        <Link to="/StapExtra" onClick={()=>clickHandlerStep("step9")}>volgende pagina</Link>
         <LetterUI value={value} 
                    filteredDataText={filteredDataText}
                    />
       </div>
     )
 }
-export default Step8
+export default Stap3_4

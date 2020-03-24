@@ -4,6 +4,7 @@ import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import LetterUI from "./LetterUI"
+import logo from "../assets/logo.png"
 import {
     BrowserRouter as Router,
     Switch,
@@ -11,9 +12,10 @@ import {
     Link
 } from "react-router-dom";
 
-function Step7({ value, filteredDataText, changeHandlerUser, clickHandlerSubjectPeriod, clickHandlerStep }) {
+function Stap3_3({ value, filteredDataText, changeHandlerUser, clickHandlerSubjectPeriod, clickHandlerStep }) {
     return (
-        <div>
+        <div className="formLetter">
+         <img className="logoWob" src={logo}/>
 			<h2>Alles over je onderwerp - Periode</h2>
 			<p>Selecteer hier de periode waarbinnen je denkt dat er voor jou interessante informatie beschikbaar is. Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de wob-ambtenaren nodeloos lang bezig zijn met je verzoek. </p>
 				 <form>
@@ -29,11 +31,11 @@ function Step7({ value, filteredDataText, changeHandlerUser, clickHandlerSubject
       			
 
       			<p>Denk goed na welke periodes wel of niet nuttig zijn.</p><PopupButton number="15" />
-				<Link to="/Step6">vorige pagina</Link>
-				<Link to="/Step9" onClick={()=>clickHandlerStep("step8")}>volgende pagina</Link>
+				<Link to="/Stap3_2">vorige pagina</Link>
+				<Link to="/StapExtra" onClick={()=>clickHandlerStep("step9")}>volgende pagina</Link>
 				 <LetterUI value={value} 
       			 		   filteredDataText={filteredDataText} />
 			</div>
     )
 }
-export default Step7
+export default Stap3_3

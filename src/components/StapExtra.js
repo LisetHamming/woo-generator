@@ -4,6 +4,7 @@ import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import LetterUI from "./LetterUI"
+import logo from "../assets/logo.png"
 import {
     BrowserRouter as Router,
     Switch,
@@ -11,9 +12,10 @@ import {
     Link
 } from "react-router-dom";
 
-function Step9({ value, changeHandlerCheckbox, filteredDataText }) {
+function StapExtra({ value, changeHandlerCheckbox, filteredDataText }) {
     return (
-        <div>
+        <div className="formLetter">
+         <img className="logoWob" src={logo}/>
 				<h2>Extra opties</h2>
 				<p>Schakel eventueel opties uit waarvan je denkt dat ze niet van toepassing zijn op jouw verzoek.</p>
 				<form>
@@ -28,12 +30,12 @@ function Step9({ value, changeHandlerCheckbox, filteredDataText }) {
 			           <input onChange={changeHandlerCheckbox} id="text8" type="checkbox" checked={value[8]} name="checkText" value="8" /> Mondelinge toelichting<br/>
 			           <input onChange={changeHandlerCheckbox} id="text9" type="checkbox" checked={value[9]} name="checkText" value="9" /> Bevestiging beslistermijn<br/>
       			 </form>	
-				<Link to="/Step8">vorige pagina</Link>
-				<Link to="/Step10">volgende pagina</Link>
+				<Link to="/Stap3_4">vorige pagina</Link>
+				<Link to="/StapEinde">volgende pagina</Link>
 								<LetterUI value={value} 
       			 		   filteredDataText={filteredDataText}
       			 		   />
 			</div>
     )
 }
-export default Step9
+export default StapExtra

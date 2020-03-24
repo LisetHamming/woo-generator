@@ -4,6 +4,7 @@ import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import LetterUI from "./LetterUI"
+import logo from "../assets/logo.png"
 import {
     BrowserRouter as Router,
     Switch,
@@ -11,13 +12,14 @@ import {
     Link
 } from "react-router-dom";
 
-function Step10({ value, filteredDataText, exportHTMLDoc }) {
+function StapEinde({ value, filteredDataText, exportHTMLDoc }) {
     return (
-        <div>
+        <div className="formLetter">
+         <img className="logoWob" src={logo}/>
 				<h2>Laatste check!</h2>
 				 <p>{value.subjectLong}</p>
 	
-				<Link to="/Step9">vorige pagina</Link>
+				<Link to="/StapExtra">vorige pagina</Link>
 				<div> 		
       				<h2>Exporteren!</h2>
       				<p>Download je bestand hier!</p>   
@@ -33,4 +35,4 @@ function Step10({ value, filteredDataText, exportHTMLDoc }) {
 			</div>
     )
 }
-export default Step10
+export default StapEinde
