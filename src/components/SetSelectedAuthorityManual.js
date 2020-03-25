@@ -18,30 +18,27 @@ function SetSelectedAuthorityManual({ clickHandlerAuthority }) {
     return (
         <div>	
 
-			<span>
+			<div>
 					<p>Vul hier de gegevens in van de instantie waar je je verzoek aan wilt richten.</p>
 					<form>
-						<label> Naam instantie
-							<input onChange={changeHandlerManualNaam} id="selectedAuthorityNaam"  name="ManualAuthority" type="text" value={manualAuthorityNaam} placeholder="Vul de naam van de instantie in"/>
-						</label><br />
-						<label> Straatnaam
-							<input onChange={changeHandlerManualAdres} id="straat" name="ManualAuthority"type="text" value={manualAuthorityAdres.straat} placeholder="Vul de straatnaam of postbus in"/>
-						</label><br />
-						<label> Huisnummer
-							<input onChange={changeHandlerManualAdres} id="huisnummer" name="ManualAuthority" type="text" value={manualAuthorityAdres.huisnummer} placeholder="Huisnummer of postbus nummer" />
-						</label><br />
-						<label> Postcode
-							<input onChange={changeHandlerManualAdres} id="postcode" name="ManualAuthority" type="text" value={manualAuthorityAdres.postcode} placeholder="Postcode"/>
-						</label><br />
-						<label> Plaats
-							<input onChange={changeHandlerManualAdres} id="plaats" name="ManualAuthority" type="text" value={manualAuthorityAdres.plaats} placeholder="Plaatnaam"/>
-						</label><br />
+						<span><label> Naam instantie
+							<input size="50" onChange={changeHandlerManualNaam} id="selectedAuthorityNaam"  name="ManualAuthority" type="text" value={manualAuthorityNaam} placeholder="Vul de naam van de instantie in"/>
+						</label></span>
+						<span><label> Straatnaam
+							<input size="40" onChange={changeHandlerManualAdres} id="straat" name="ManualAuthority"type="text" value={manualAuthorityAdres.straat} placeholder="Vul de straatnaam of postbus in"/>
+						</label><label> Huisnummer
+							<input size="5" onChange={changeHandlerManualAdres} id="huisnummer" name="ManualAuthority" type="text" value={manualAuthorityAdres.huisnummer} placeholder="nr" />
+						</label></span>
 
-
+						<span><label> Postcode
+							<input size="15" onChange={changeHandlerManualAdres} id="postcode" name="ManualAuthority" type="text" value={manualAuthorityAdres.postcode} placeholder="Postcode"/>
+						</label><label> Plaats
+							<input size="30" onChange={changeHandlerManualAdres} id="plaats" name="ManualAuthority" type="text" value={manualAuthorityAdres.plaats} placeholder="Plaatnaam"/>
+						</label></span>
 			
 			<button type="button" onClick={()=>clickHandlerAuthority({naam: manualAuthorityNaam, adres: manualAuthorityAdres})}>Gebruik gegevens</button>
 			</form>
-			</span>
+			</div>
 		</div>
     )
 }

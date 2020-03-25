@@ -21,7 +21,7 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 				<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
 				<span><p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden</p><PopupButton number="5" /></span>
 				<form>
-						<input id="searchBarAuthority" type="search" value={searchValue} placeholder="zoek op naam of plaats" onChange={event=>setSearchValue(event.target.value)}/>
+						<input size="50" id="searchBarAuthority" type="search" value={searchValue} placeholder="zoek op naam of plaats" onChange={event=>setSearchValue(event.target.value)}/>
 						{value.selectedAuthority?
 							 	<div className="selectedAuthority">
 							 		<p>Controleer de instantie aan wie je Wobt:</p>	

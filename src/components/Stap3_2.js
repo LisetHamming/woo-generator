@@ -18,24 +18,27 @@ function Stap3_2({ value, filteredDataText, changeHandlerCheckbox, changeHandler
         <div className="formLetter">
          <img className="logoWob" src={logo}/>
       <h2>Alles of specifiek?</h2>
-      <p>Wil je alle documenten die de overheidsinstantie heeft over je onderwerp? Of weet je al precies welke documenten je wilt hebben. Maak je keuze.</p><PopupButton number="10" />
+      <span><p>Wil je alle documenten die de overheidsinstantie heeft over je onderwerp? Of weet je al precies welke documenten je wilt hebben. Maak je keuze.</p><PopupButton number="10" /></span>
         
         
 
         <form>  
-              
-              <input onChange={changeHandlerSubjectType} id="subjectSpecific" type="radio" checked={value.subjectType==="specific"} name="subjectSpecific" value="specific" /> Ik wil specifieke documenten opvragen <PopupButton number="11" /><br/>
+              <span>
+              <input onChange={changeHandlerSubjectType} id="subjectSpecific" type="radio" checked={value.subjectType==="specific"} name="subjectSpecific" value="specific" /> Ik wil specifieke documenten opvragen <PopupButton number="11" /></span>
             {value.subjectType==="specific"&&
               <div>
+              <span>
                 <label>Omschrijving van document
                   <input id="subjectSpecificText" value={value.subjectSpecificText} onChange={changeHandlerUser} type="textarea"/><br/>
-                </label>
+                </label></span>
+                <span>
                 <label>Datum van document
                   <input id="subjectSpecificDate" value={value.subjectSpecificDate} onChange={changeHandlerUser} type="date"/><br/>
                 </label>
+                </span>
               </div>
           }
-             <input onChange={changeHandlerSubjectType} id="subjectAll" type="radio" checked={value.subjectType==="all"} name="subjectSpecific" value="all" /> Ik wil alles over het onderwerp<PopupButton number="12" /><br/>
+            <span> <input onChange={changeHandlerSubjectType} id="subjectAll" type="radio" checked={value.subjectType==="all"} name="subjectSpecific" value="all" /> Ik wil alles over het onderwerp<PopupButton number="12" /></span>
             {value.subjectType==="all"&&
               <div>
                   <input onChange={changeHandlerCheckbox} id="text1" type="checkbox" checked={value[10]} name="checkText" value="10" />Vergaderstukken<br/>

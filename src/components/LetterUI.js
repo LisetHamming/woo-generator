@@ -3,8 +3,9 @@ import formatDate from "./FormatDate"
 
 function LetterUI({ value, filteredDataText }) {
     return (
-        <div id="letterUI" style={{fontFamily: "Arial"}}>
-			
+        <div className="letterComplete">
+			<h1>Voorbeeld van je eindresultaat</h1>
+			<div id="letterUI" style={{fontFamily: "Arial"}}>
 			<div className="adressAuthority" >
 				 {value.selectedAuthority &&
 				 	<div >
@@ -70,6 +71,7 @@ function LetterUI({ value, filteredDataText }) {
 		     		<p>{value.userZipcode} {value.userCityName}</p>
 		     		<p>{value.userEmail}</p>
 		     		<p>{value.userPhoneNumber}</p>
+     		</div>
      		</div>
 
 		</div>

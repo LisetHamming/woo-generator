@@ -18,20 +18,23 @@ function Stap3({ value, changeHandlerCheckbox, changeHandlerUser, filteredDataTe
         <div className="formLetter">
         	<img className="logoWob" src={logo}/>
 			<h2>Stap 3: Welke informatie zoek je?</h2>
-			<p>Begin met het kort en bondig omschrijven van het onderwerp waarover je informatie vraagt. Let op: je kunt alleen informatie over overheidstaken opvragen.</p><PopupButton number="8" /><br />
-			<p>Omschrijf je onderwerp eerst in enkele trefwoorden, dit komt bovenaan de brief te staan. Omschrijf vervolgens je onderwerp in een of enkele zinnen. Dit komt in de lopende tekst van je brief.</p>	
+			<span><p>Begin met het kort en bondig omschrijven van het onderwerp waarover je informatie vraagt. Let op: je kunt alleen informatie over overheidstaken opvragen.</p><PopupButton number="8" /></span><br/>
+			<span><p>Omschrijf je onderwerp eerst in enkele trefwoorden, dit komt bovenaan de brief te staan. Omschrijf vervolgens je onderwerp in een of enkele zinnen. Dit komt in de lopende tekst van je brief.</p>	</span>
 			       	<form>
-			        <label> Onderwerp in lopende tekst (verplicht)
-			           <input value={value.subjectLong} onChange={changeHandlerUser}id="subjectLong" type="text" name="subjectinfo" placeholder="Vul hier je onderwerp kort en bondig in, bijvoorbeeld 'boetes voor snelheidsovertredingen in Friesland'  "/><br/>
-			        </label>
-			        <label>
+			       <span> <label> Onderwerp in lopende tekst (verplicht)
+			           <input size="50" value={value.subjectLong} onChange={changeHandlerUser}id="subjectLong" type="text" name="subjectinfo" placeholder="Vul hier je onderwerp kort en bondig in, bijvoorbeeld 'boetes voor snelheidsovertredingen in Friesland'  "/><br/>
+			        </label></span>
+			        <span>
+			        <label className="container">
 			        	<input onChange={changeHandlerCheckbox} id="subjectMilieu" type="checkbox" checked={value.subjectMilieu} name="subjectInfo" value="subjectMilieu" /> Dit onderwerp gaat over milieu<br/>
-			        </label>  <PopupButton number="9" /><br /> 
+			     		<div class="checkmark"></div>
+			       </label>  <PopupButton number="9" />
+			       </span>
       			 	</form>
       			
 				<Link to="/Stap2">Terug</Link>
 				<Link to="/Stap3_2" onClick={()=>clickHandlerStep("step6")}>Volgende pagina</Link>
-				 <LetterUI value={value} 
+				 <LetterUI className="letterText" value={value} 
       			 		   filteredDataText={filteredDataText}
       			 		   />
 			</div>

@@ -68,12 +68,7 @@ h1 {
     margin: 0;
 }
 
-#letterUI {
-    margin-top: 40px;
-    background-color: white;
-    padding: 25px;
-    border-radius: 1%;
-}
+
 
 
 .homepageBlock {
@@ -150,13 +145,33 @@ h1 {
 
 .popup {
     background-color: white;
-
     position: absolute;
     width: 30%;
-    height: 50%;
+    height: 60%;
     overflow-y: scroll;
     right: 0;
     top: 300px;
+    z-index: 20;
+    border: 1px solid black;
+
+}
+
+.letterComplete {
+    position: absolute;
+    width: 40%;
+    max-height: 600px;
+    overflow-y: scroll;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    margin-top: 40px;
+}
+
+#letterUI {
+    background-color: white;
+    padding: 25px;
+    border-radius: 1%;
+
 }
 
 .popup h1 {
