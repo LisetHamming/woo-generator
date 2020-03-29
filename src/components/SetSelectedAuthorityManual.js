@@ -27,7 +27,7 @@ function SetSelectedAuthorityManual({ clickHandlerAuthority }) {
 						<span><label> Straatnaam
 							<input size="40" onChange={changeHandlerManualAdres} id="straat" name="ManualAuthority"type="text" value={manualAuthorityAdres.straat} placeholder="Vul de straatnaam of postbus in"/>
 						</label><label> Huisnummer
-							<input size="5" onChange={changeHandlerManualAdres} id="huisnummer" name="ManualAuthority" type="text" value={manualAuthorityAdres.huisnummer} placeholder="nr" />
+							<input size="5" onChange={changeHandlerManualAdres} id="huisnummer" name="ManualAuthority" type="text" value={manualAuthorityAdres.huisnummer} placeholder="Nr" />
 						</label></span>
 
 						<span><label> Postcode
@@ -36,7 +36,7 @@ function SetSelectedAuthorityManual({ clickHandlerAuthority }) {
 							<input size="30" onChange={changeHandlerManualAdres} id="plaats" name="ManualAuthority" type="text" value={manualAuthorityAdres.plaats} placeholder="Plaatnaam"/>
 						</label></span>
 			
-			<button type="button" onClick={()=>clickHandlerAuthority({naam: manualAuthorityNaam, adres: manualAuthorityAdres})}>Gebruik gegevens</button>
+			<button type="button" className="buttonStyle"  onClick={()=>clickHandlerAuthority({naam: manualAuthorityNaam, adres: manualAuthorityAdres})}>Gebruik gegevens</button>
 			</form>
 			</div>
 		</div>

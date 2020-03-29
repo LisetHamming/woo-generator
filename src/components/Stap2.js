@@ -21,7 +21,7 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 				<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
 				<span><p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden</p><PopupButton number="5" /></span>
 				<form>
-						<input size="50" id="searchBarAuthority" type="search" value={searchValue} placeholder="zoek op naam of plaats" onChange={event=>setSearchValue(event.target.value)}/>
+						<input size="50" id="searchBarAuthority" type="search" value={searchValue} placeholder="Zoek op naam of plaats" onChange={event=>setSearchValue(event.target.value)}/>
 						{value.selectedAuthority?
 							 	<div className="selectedAuthority">
 							 		<p>Controleer de instantie aan wie je Wobt:</p>	
@@ -32,7 +32,7 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 									<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
 									<p>{value.selectedAuthority.value}</p>
 									<div>
-										<button type="button" onClick={()=>{setSearchValue("");clickHandlerClearSelectedAuthority(value.selectedAuthority)}}>zoek opnieuw</button>
+										<button className="buttonStyle" type="button" onClick={()=>{setSearchValue("");clickHandlerClearSelectedAuthority(value.selectedAuthority)}}>Zoek opnieuw</button>
 									</div>
 								</div>
 								:
@@ -48,7 +48,7 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 				      	</ul>}
 		      			<div>
 					 		<span><p>Staat de juiste instantie er niet tussen maar beschik je zelf wel over de juiste gegevens?</p><PopupButton number="16" /></span>
-					 		<button type="button" value="true" onClick={event=>setManualAuthority(event.target.value)}>Vul dan hier de gegevens in</button>
+					 		<button className="buttonStyle" type="button" value="true" onClick={event=>setManualAuthority(event.target.value)}>Vul dan hier de gegevens in</button>
 					 	</div>
 				      
 	      		 </form>

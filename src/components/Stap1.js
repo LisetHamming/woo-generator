@@ -32,18 +32,20 @@ function Stap1({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerC
 						<div class="checkmark"></div>
 					</label><PopupButton number="3" /></span>
 					{value.userCompanyName&&
+						<span className="subForm">
 					<label className="formInputs" >Naam organisatie
-						<input id="userCompanyNameInput" size="50" value={value.userCompanyNameInput} onChange={changeHandlerUser} type="text"/><br/>
-					</label>
+						<input id="userCompanyNameInput" size="46" value={value.userCompanyNameInput} onChange={changeHandlerUser} type="text"/><br/>
+					</label></span>
 					}
 					<span><label className="container">Ik wil mijn doel toelichten
 						<input id="userNeedsGoal" value="userNeedsGoal" checked={value.userNeedsGoal} onChange={changeHandlerCheckbox} type="checkbox" />
 					<div class="checkmark"></div>
 					</label><PopupButton number="2" /></span>
-					{value.userNeedsGoal&&		
+					{value.userNeedsGoal&&	
+					<span className="subForm">	
 					<label className="formInputs">Journalistieke doel (verplicht)
-						<input id="userGoalInput" size="50" value={value.userGoalInput} onChange={changeHandlerUser} type="text"/><br/>
-					</label>
+						<input id="userGoalInput" size="46" value={value.userGoalInput} onChange={changeHandlerUser} type="text"/><br/>
+					</label></span>
 					}
 
 					<div className="formInputs">		

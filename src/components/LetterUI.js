@@ -4,7 +4,7 @@ import formatDate from "./FormatDate"
 function LetterUI({ value, filteredDataText }) {
     return (
         <div className="letterComplete">
-			<h1>Voorbeeld van je eindresultaat</h1>
+			<h1>Voorbeeld van je eindresultaat:</h1>
 			<div id="letterUI" style={{fontFamily: "Arial"}}>
 			<div className="adressAuthority" >
 				 {value.selectedAuthority &&
@@ -24,7 +24,7 @@ function LetterUI({ value, filteredDataText }) {
             		<p>Zeer geachte heer/mevrouw,</p><br />
             		<p>Met een beroep op de Wet openbaarheid van bestuur (hierna: Wob) verzoek ik, {value.userName}, {value.userJournalist?"journalist,":""} {value.userCompanyNameInput.length?`u namens ${value.userCompanyNameInput}`:""} om openbaarmaking van of inzage in hieronder nader te specificeren documenten of informatie bij of onder u{value.userGoalInput.length?` over ${value.userGoalInput}`:""}.</p>
             		<p>Het betreft documenten of informatie in het kader van de bestuurlijke aangelegenheid: {value.subjectLong}.</p>
-            		<p>Dit verzoek wordt gedaan op basis van de Wet openbaarheid van bestuur. Daaruit vloeit voort dat u binnen 4 weken een besluit moet nemen op dit verzoek. </p>
+            		<p>Dit verzoek wordt gedaan op basis van de Wet openbaarheid van bestuur. Daaruit vloeit voort dat u binnen {value.subjectMilieu?"2":"4"} weken een besluit moet nemen op dit verzoek. </p>
     				<p>In de afhandeling van dit verzoek vraag ik u rekening te houden met het publieke belang van de journalistiek als controleur van een goede en democratische bestuursvoering.</p>
     				
     				{value.step6&&

@@ -16,7 +16,6 @@ function Stap3({ value, changeHandlerCheckbox, changeHandlerUser, filteredDataTe
 
     return (
         <div className="formLetter">
-        	<img className="logoWob" src={logo}/>
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<span><p>Begin met het kort en bondig omschrijven van het onderwerp waarover je informatie vraagt. Let op: je kunt alleen informatie over overheidstaken opvragen.</p><PopupButton number="8" /></span><br/>
 			<span><p>Omschrijf je onderwerp eerst in enkele trefwoorden, dit komt bovenaan de brief te staan. Omschrijf vervolgens je onderwerp in een of enkele zinnen. Dit komt in de lopende tekst van je brief.</p>	</span>

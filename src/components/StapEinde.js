@@ -17,14 +17,14 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc }) {
         <div className="formLetter">
          <img className="logoWob" src={logo}/>
 				<h2>Laatste check!</h2>
-				 <p>{value.subjectLong}</p>
+				 <p className="extraPadding">Wob-verzoek met onderwerp: {value.subjectLong}</p>
 	
 				<Link to="/StapExtra">vorige pagina</Link>
 				<div> 		
-      				<h2>Exporteren!</h2>
+      				<h2 className="extraPaddingh2">Exporteren!</h2>
       				<p>Download je bestand hier!</p>   
-	      			<button onClick={exportHTMLDoc}>Opslaan als DOC</button> 
-	      			<button onClick={window.print}>Opslaan als PDF</button>
+	      			<button className="buttonStyle" onClick={exportHTMLDoc}>Opslaan als DOC</button> 
+	      			<button className="buttonStyle" onClick={window.print}>Opslaan als PDF</button>
 	      		</div>	
 
 				

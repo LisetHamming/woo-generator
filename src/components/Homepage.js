@@ -5,13 +5,11 @@ import Homepage_Overgenerator from "./Homepage_Overgenerator"
 import PrivacyVoorwaarden from "./PrivacyVoorwaarden"
 import AlgemeneVoorwaarden from "./AlgemeneVoorwaarden"
 import LetterUI from "./LetterUI"
-import Start from "./Start"
 import Stap1 from "./Stap1"
 import Stap2 from "./Stap2"
 import Stap3 from "./Stap3"
 import Stap3_2 from "./Stap3_2"
 import Stap3_3 from "./Stap3_3"
-import Stap3_4 from "./Stap3_4"
 import StapExtra from "./StapExtra"
 import StapEinde from "./StapEinde"
 import machine from "../assets/machine.png"
@@ -38,13 +36,13 @@ const initialState = {
     7: true,
     8: true,
     9: true,
-    10: true,
-    11: true,
-    12: true,
-    13: true,
-    14: true,
-    15: true,
-    16: true,
+    10: false,
+    11: false,
+    12: false,
+    13: false,
+    14: false,
+    15: false,
+    16: false,
     17: false,
     userName: "",
     userAdress: "",
@@ -75,6 +73,7 @@ const initialState = {
     subjectFinancial: false,
     subjectDataset: false,
     subjectElse: false,
+    subjectElseText: "",
     subjectInvitations: true,
     subjectDetermines: true,
     subjectMinutes: true,
@@ -227,10 +226,7 @@ const Homepage = (props) => {
             <div className="extra_content"> <img src={line_yellow} className="horizontalRule"/></div>
             <Homepage_Overgenerator />
           </Route>
-             <Route path="/start" >
-              <Start />
-             </Route>  
-             <Route path="/Stap1" >
+            <Route path="/Stap1" >
               <Stap1 value={value} changeHandlerUser={changeHandlerUser} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerCompanyName={changeHandlerCompanyName}/>
              </Route> 
              <Route path="/Stap2" >
@@ -244,11 +240,8 @@ const Homepage = (props) => {
               <Stap3_2 value={value} changeHandlerSubjectType={changeHandlerSubjectType} changeHandlerUser={changeHandlerUser} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox}/>
              </Route> 
             <Route path="/Stap3_3" >
-              <Stap3_3 value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerUser={changeHandlerUser} />
-             </Route>
-             <Route path="/Stap3_4" >
-              <Stap3_4 value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerUser={changeHandlerUser} />
-             </Route>  
+              <Stap3_3 value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser} />
+             </Route> 
             <Route path="/StapExtra" >
               <StapExtra value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
              </Route> 

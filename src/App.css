@@ -147,7 +147,7 @@ h1 {
     background-color: white;
     position: absolute;
     width: 30%;
-    height: 60%;
+
     overflow-y: scroll;
     right: 0;
     top: 300px;
@@ -158,9 +158,9 @@ h1 {
 
 .letterComplete {
     position: absolute;
-    width: 40%;
-    max-height: 600px;
-    overflow-y: scroll;
+    width: 60%;
+
+
     right: 0;
     top: 0;
     z-index: 10;
@@ -368,6 +368,23 @@ form {
     padding: 0 0 40px 0;
 }
 
+.extraPaddingh2 {
+    padding-top: 40px;
+}
+
+.buttonStyle {
+    color: white;
+    background-color: black;
+    padding: 0.8em;
+    border: 0;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.subForm {
+    margin-left: 2.3em;
+}
 
 @media print {
 
