@@ -2,7 +2,7 @@ import React from "react"
 import waarom from "../assets/waaromTool.png"
 
 
-function Homepage_Waarom_Tool() {
+function HomepageWaaromTool() {
     return (
 
         <div className="sectionWaarom">
@@ -20,4 +20,4 @@ function Homepage_Waarom_Tool() {
 			</div>
     )
 }
-export default Homepage_Waarom_Tool
+export default HomepageWaaromTool

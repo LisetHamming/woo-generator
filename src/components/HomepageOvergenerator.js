@@ -9,7 +9,7 @@ import {
     Link
 } from "react-router-dom";
 
-function Homepage_Overgenerator() {
+function HomepageOvergenerator() {
     return (
         <div className="sectionWaarom">
 
@@ -47,4 +47,4 @@ function Homepage_Overgenerator() {
 			</div>
     )
 }
-export default Homepage_Overgenerator
+export default HomepageOvergenerator

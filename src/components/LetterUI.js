@@ -1,7 +1,7 @@
-import React, { Component, useState } from "react"
+import React from "react"
 import formatDate from "./FormatDate"
 
-function LetterUI({ value, filteredDataText }) {
+function LetterUI({ value, filteredDataText, getCurrentDate }) {
     return (
         <div className="letterComplete">
 			<h1>Voorbeeld van je eindresultaat:</h1>
@@ -14,12 +14,15 @@ function LetterUI({ value, filteredDataText }) {
 			        </p>
 			        <p>{value.selectedAuthority.adres.postbus??value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}</p>
 					<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
+					<br/>
 					</div>
+
 			      }
 					
 					
 			</div>
 			<div>
+					<p>{value.userCityName}, {getCurrentDate()}</p><br/>
 					<p>Betreft: Wob-verzoek</p><br />
             		<p>Zeer geachte heer/mevrouw,</p><br />
             		<p>Met een beroep op de Wet openbaarheid van bestuur (hierna: Wob) verzoek ik, {value.userName}, {value.userJournalist?"journalist,":""} {value.userCompanyNameInput.length?`u namens ${value.userCompanyNameInput}`:""} om openbaarmaking van of inzage in hieronder nader te specificeren documenten of informatie bij of onder u{value.userGoalInput.length?` over ${value.userGoalInput}`:""}.</p>
@@ -61,9 +64,9 @@ function LetterUI({ value, filteredDataText }) {
 
 		      ))
 			}
-			<div> 
+			<div> <br/>
 					
-	            	<p>Met vriendelijke groet, </p>
+	            	<p>Met vriendelijke groet, </p><br/>
 		     		<p className="userSignature"></p>
 		     		<p>{value.userName}</p>
 		     		<p>{value.userCompanyName}</p>

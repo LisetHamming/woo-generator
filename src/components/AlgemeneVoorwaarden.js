@@ -1,7 +1,7 @@
 import React from "react"
 import logo from "../assets/logo.png"
 import line_yellow from "../assets/line_yellow.png"
-import Homepage_Overgenerator from "./Homepage_Overgenerator"
+import HomepageOvergenerator from "./HomepageOvergenerator"
 
 import {
     BrowserRouter as Router,
@@ -67,7 +67,7 @@ function AlgemeneVoorwaarden() {
                     </div>
                     
             <div className = "extra_content" > <img src={line_yellow} className="horizontalRule"/> </div>
-            <Homepage_Overgenerator / >
+            <HomepageOvergenerator / >
         </div>
     )
 }

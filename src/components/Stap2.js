@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"
+import React, { useState } from "react"
 import Popup from "./popups/Popup"
 import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

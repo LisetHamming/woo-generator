@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"
+import React from "react"
 import Popup from "./popups/Popup"
 import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,7 +12,7 @@ import {
     Link
 } from "react-router-dom";
 
-function Stap3_2({ value, filteredDataText, changeHandlerCheckbox, changeHandlerUser, changeHandlerSubjectType }) {
+function Stap3_2({ value, filteredDataText, changeHandlerCheckbox, changeHandlerUser, changeHandlerSubjectType, getCurrentDate }) {
 
     return (
         <div className="formLetter">
@@ -46,6 +46,7 @@ function Stap3_2({ value, filteredDataText, changeHandlerCheckbox, changeHandler
         <Link to="/Stap3_3">volgende pagina</Link>        
         <LetterUI value={value} 
                    filteredDataText={filteredDataText}
+                   getCurrentDate={getCurrentDate}
                    />
       </div>
     )

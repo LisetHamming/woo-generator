@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"
+import React, { useState } from "react"
 import Popup from "./popups/Popup"
 import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -23,13 +23,13 @@ function Stap1({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerC
 					<span>
 					<label className="container">Ik ben een journalist 
 						<input id="userJournalist" value="userJournalist" checked={value.userJournalist} onChange={changeHandlerCheckbox} type="checkbox" />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label><PopupButton number="1" /></span>
 					<span>
 					
 					<label className="container">Ik Wob namens een (media-) organisatie
 						<input id="userCompany" value="userCompanyName" checked={value.userCompanyName} onChange={changeHandlerCompanyName} type="checkbox" />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label><PopupButton number="3" /></span>
 					{value.userCompanyName&&
 						<span className="subForm">
@@ -39,7 +39,7 @@ function Stap1({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerC
 					}
 					<span><label className="container">Ik wil mijn doel toelichten
 						<input id="userNeedsGoal" value="userNeedsGoal" checked={value.userNeedsGoal} onChange={changeHandlerCheckbox} type="checkbox" />
-					<div class="checkmark"></div>
+					<div className="checkmark"></div>
 					</label><PopupButton number="2" /></span>
 					{value.userNeedsGoal&&	
 					<span className="subForm">	

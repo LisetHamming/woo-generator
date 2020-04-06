@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"
+import React, { useState } from "react"
 import DataPopup from "./popups/DataPopup"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'

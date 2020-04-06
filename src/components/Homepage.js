@@ -1,10 +1,9 @@
-import React, { Component, useState } from "react"
-import Homepage_Waarom_Tool from "./Homepage_Waarom_Tool"
-import Homepage_Waarom from "./Homepage_Waarom"
-import Homepage_Overgenerator from "./Homepage_Overgenerator"
+import React, { useState } from "react"
+import HomepageWaaromTool from "./HomepageWaaromTool"
+import HomepageWaarom from "./HomepageWaarom"
+import HomepageOvergenerator from "./HomepageOvergenerator"
 import PrivacyVoorwaarden from "./PrivacyVoorwaarden"
 import AlgemeneVoorwaarden from "./AlgemeneVoorwaarden"
-import LetterUI from "./LetterUI"
 import Stap1 from "./Stap1"
 import Stap2 from "./Stap2"
 import Stap3 from "./Stap3"
@@ -14,7 +13,7 @@ import StapExtra from "./StapExtra"
 import StapEinde from "./StapEinde"
 import machine from "../assets/machine.png"
 import DataText from "./DataText"
-import Popup from "./popups/Popup"
+
 import logo from "../assets/logo.png"
 import logo_vvoj from "../assets/logo_vvoj.png"
 import line_yellow from "../assets/line_yellow.png"
@@ -96,10 +95,12 @@ const initialState = {
     step6: false,
     step9: false,
 
+
 }
 const Homepage = (props) => {
     const [value, setValue] = useState(initialState)
     const [searchValue, setSearchValue] = useState("")
+    const [dateToday, setDateToday] = useState("")
 
     const changeHandlerCheckbox = ({ currentTarget: { value, checked } }) => {
         setValue(current => ({ ...current, [value]: checked }))
@@ -112,7 +113,7 @@ const Homepage = (props) => {
 
     const clickHandlerAuthority = (selectedAuthority) => {
         setValue(current => ({ ...current, selectedAuthority }))
-        console.log(selectedAuthority)
+
     }
     const clickHandlerClearSelectedAuthority = () => {
         setValue(current => ({ ...current, selectedAuthority: null }))
@@ -193,7 +194,15 @@ const Homepage = (props) => {
     }
 
 
+    const getCurrentDate = () => {
 
+        let monthNames = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
+        let date = new Date().getDate(); //Current Date
+        let month = monthNames[new Date().getMonth()]; //Current Month
+        let year = new Date().getFullYear(); //Current Year
+        let dateToday = date + " " + month + " " + year
+        return dateToday
+    }
 
     return (
         <Switch>
@@ -216,15 +225,15 @@ const Homepage = (props) => {
                       <Link to="/Stap1">Start je Wob-verzoek</Link>
                   </div>  
                   <div><img src={machine}/></div>
-
+                  
            </div>
            <div className="extra_content"><p>Een initiatief van de   </p><img src={logo_vvoj} className="logo_vvoj"/></div> 
            <div className="extra_content"> <img src={line_yellow} className="horizontalRule"/></div>
-            <Homepage_Waarom />
+            <HomepageWaarom />
             <div className="extra_content"> <img src={line_black} className="horizontalRule"/></div>
-            <Homepage_Waarom_Tool />
+            <HomepageWaaromTool />
             <div className="extra_content"> <img src={line_yellow} className="horizontalRule"/></div>
-            <Homepage_Overgenerator />
+            <HomepageOvergenerator />
           </Route>
             <Route path="/Stap1" >
               <Stap1 value={value} changeHandlerUser={changeHandlerUser} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerCompanyName={changeHandlerCompanyName}/>
@@ -233,20 +242,20 @@ const Homepage = (props) => {
               <Stap2 value={value} changeHandlerUser={changeHandlerUser} authorities={props.authorities} clickHandlerAuthority={clickHandlerAuthority} clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}/>
              </Route> 
             <Route path="/Stap3" >
-              <Stap3 value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser}/>
+              <Stap3 getCurrentDate={getCurrentDate} value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser}/>
             </Route> 
 
             <Route path="/Stap3_2" >
-              <Stap3_2 value={value} changeHandlerSubjectType={changeHandlerSubjectType} changeHandlerUser={changeHandlerUser} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox}/>
+              <Stap3_2 getCurrentDate={getCurrentDate} value={value} changeHandlerSubjectType={changeHandlerSubjectType} changeHandlerUser={changeHandlerUser} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox}/>
              </Route> 
             <Route path="/Stap3_3" >
-              <Stap3_3 value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser} />
+              <Stap3_3 getCurrentDate={getCurrentDate} value={value} clickHandlerStep={clickHandlerStep} filteredDataText={filteredDataText} changeHandlerCheckbox={changeHandlerCheckbox} changeHandlerUser={changeHandlerUser} />
              </Route> 
             <Route path="/StapExtra" >
-              <StapExtra value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
+              <StapExtra getCurrentDate={getCurrentDate} value={value} changeHandlerCheckbox={changeHandlerCheckbox} filteredDataText={filteredDataText}/>
              </Route> 
             <Route path="/StapEinde" >
-              <StapEinde value={value} filteredDataText={filteredDataText} exportHTMLDoc={exportHTMLDoc}/>
+              <StapEinde getCurrentDate={getCurrentDate} value={value} filteredDataText={filteredDataText} exportHTMLDoc={exportHTMLDoc}/>
              </Route>
             <Route path="/PrivacyVoorwaarden" >
               <PrivacyVoorwaarden />

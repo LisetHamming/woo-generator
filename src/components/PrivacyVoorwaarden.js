@@ -1,5 +1,5 @@
 import React from "react"
-import Homepage_Overgenerator from "./Homepage_Overgenerator"
+import HomepageOvergenerator from "./HomepageOvergenerator"
 import logo from "../assets/logo.png"
 import line_yellow from "../assets/line_yellow.png"
 
@@ -78,7 +78,7 @@ function PrivacyVoorwaarden() {
              
                 
             <div className = "extra_content" > <img src={line_yellow} className="horizontalRule"/> </div>
-            <Homepage_Overgenerator / >
+            <HomepageOvergenerator / >
         </div>
     )
 }

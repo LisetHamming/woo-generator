@@ -1,8 +1,6 @@
-import React, { Component, useState } from "react"
+import React from "react"
 import Popup from "./popups/Popup"
 import PopupButton from "./popups/PopupButton"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import LetterUI from "./LetterUI"
 import logo from "../assets/logo.png"
 import {
@@ -12,7 +10,7 @@ import {
     Link
 } from "react-router-dom";
 
-function Stap3_3({ value, filteredDataText, changeHandlerCheckbox, changeHandlerUser, changeHandlerSubjectType, clickHandlerStep }) {
+function Stap3_3({ value, filteredDataText, changeHandlerCheckbox, changeHandlerUser, changeHandlerSubjectType, clickHandlerStep, getCurrentDate }) {
 
 
     return (
@@ -180,6 +178,7 @@ function Stap3_3({ value, filteredDataText, changeHandlerCheckbox, changeHandler
         <Link to="/StapExtra" onClick={()=>clickHandlerStep("step9")}>volgende pagina</Link>
         <LetterUI value={value} 
                    filteredDataText={filteredDataText}
+                   getCurrentDate={getCurrentDate}
                    />
       </div>
     )

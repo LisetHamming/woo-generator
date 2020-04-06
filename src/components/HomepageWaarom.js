@@ -1,7 +1,7 @@
 import React from "react"
 import waarom from "../assets/waarom.png"
 
-function Homepage_Waarom() {
+function HomepageWaarom() {
     return (
         <div className="sectionWaarom">
         	<img src={waarom}/>
@@ -19,4 +19,4 @@ function Homepage_Waarom() {
 		</div>
     )
 }
-export default Homepage_Waarom
+export default HomepageWaarom

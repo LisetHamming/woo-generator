@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"
+import React from "react"
 import Popup from "./popups/Popup"
 import PopupButton from "./popups/PopupButton"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -12,7 +12,7 @@ import {
     Link
 } from "react-router-dom";
 
-function StapEinde({ value, filteredDataText, exportHTMLDoc }) {
+function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate }) {
     return (
         <div className="formLetter">
          <img className="logoWob" src={logo}/>
@@ -30,6 +30,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc }) {
 				
 								<LetterUI value={value} 
       			 		   filteredDataText={filteredDataText}
+      			 		   getCurrentDate={getCurrentDate}
       			 		   />
 		   
 			</div>
