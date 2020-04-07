@@ -27,13 +27,13 @@ function Stap3_2({ value, filteredDataText, changeHandlerCheckbox, changeHandler
               <span>
               <label  className="container">
               <input onChange={changeHandlerSubjectType} id="subjectSpecific" type="radio" checked={value.subjectType==="specific"} name="subjectSpecific" value="specific" /> Ik wil specifieke documenten opvragen 
-               <div class="checkmark"></div>
+               <div className="checkmark"></div>
               </label><PopupButton number="11" />
              
               </span>
           
             <span><label className="container"> <input onChange={changeHandlerSubjectType} id="subjectAll" type="radio" checked={value.subjectType==="all"} name="subjectSpecific" value="all" /> Ik wil alles over het onderwerp
-             <div class="checkmark"></div></label><PopupButton number="12" /></span>
+             <div className="checkmark"></div></label><PopupButton number="12" /></span>
            
 
 

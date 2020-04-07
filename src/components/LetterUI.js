@@ -36,13 +36,14 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
     				{value.subjectType==="specific" ?<React.Fragment>{value.subjectSpecificText} {value.subjectSpecificDate? ` met datum ${formatDate(new Date(value.subjectSpecificDate))} <p>Bovendien wil ik graag de onderliggende documenten behorende bij dit document, namelijk:</p>`:""}</React.Fragment> :
     				<React.Fragment>
     				<p>Alle bij of onder u rustende documenten inzake {value.subjectLong} {value.subjectDateStart?"over de periode" + formatDate(new Date(value.subjectDateStart)):""} {value.subjectDateEnd?"tot "+ formatDate(new Date(value.subjectDateEnd)):""}, waaronder:</p>
-    				<p>{value[10]?"Vergaderstukken, waaronder: uitnodigingen, agenda’s, presentielijsten, ingekomen stukken, adviezen, besluiten, besluitenlijsten en notulen;": ""}</p>
-					{ value[12] ? "Gespreksverslagen;" : "" } 
-					{ value[11] ? "Rapporten, waaronder: project- en programmaplannen; adviezen, zowel extern als intern; onderzoeksrapporten en auditrapportages; voortgangsrapportages; evaluaties;" : "" } 
-					{ value[11] ? "Presentaties;" : "" } 
-					{ value[15] ? "Begrotingen, jaarverslagen en andere financiële documentatie;" : "" } 
-					{ value[16] ? "Dataset;" : "" } 
-					{ value[13] ? `Alle interne correspondentie (incl./excl. brieven, e-mails, memo’s en gespreksnotities, smsjes en WhatsAppjes) met betrekking tot ${value.subjectLong};` : "" } { value[14] ? `Alle correspondentie (e-mails, brieven, memo’s, nota’s, notities en anderszins schriftelijk gewisselde stukken) met derden met betrekking tot ${value.subjectLong} tussen u en in ieder geval de navolgende partijen ${value.subjectLongOrganisation};` : "" }
+    				<p>{value[10]? "Vergaderstukken, waaronder: uitnodigingen, agenda’s, presentielijsten, ingekomen stukken, adviezen, besluiten, besluitenlijsten en notulen;": ""}</p>
+					<p>{ value[12] ? "Gespreksverslagen;" : "" } </p>
+					<p>{ value[11] ? "Rapporten, waaronder: project- en programmaplannen; adviezen, zowel extern als intern; onderzoeksrapporten en auditrapportages; voortgangsrapportages; evaluaties;" : "" } </p>
+					<p>{ value[11] ? "Presentaties;" : "" } </p>
+					<p>{ value[15] ? "Begrotingen, jaarverslagen en andere financiële documentatie;" : "" } </p>
+					<p>{ value[16] ? "Dataset;" : "" } </p>
+					<p>{ value[13] ? `Alle interne correspondentie (incl./excl. brieven, e-mails, memo’s en gespreksnotities, smsjes en WhatsAppjes) met betrekking tot ${value.subjectLong};` : "" } { value[14] ? `Alle correspondentie (e-mails, brieven, memo’s, nota’s, notities en anderszins schriftelijk gewisselde stukken) met derden met betrekking tot ${value.subjectLong} tussen u en in ieder geval de navolgende partijen ${value.subjectLongOrganisation};` : "" }</p>
+					<p>{ value[17] ? `${value.subjectElseText}`: "" }</p> 
     				</React.Fragment> }
 
 
