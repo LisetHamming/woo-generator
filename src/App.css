@@ -1,401 +1,381 @@
 #root {
-    position: relative;
+	position: relative;
 }
 
 li button {
-    display: flex;
-    width: 60vw;
+	display: flex;
+	width: 32.5vw;
+	border: 1px dashed grey;
+	background-color: #ffdb62;
+	margin-top: 5px;
+	align-items: center;
 }
 
 li button p:first-of-type {
-    width: 25vw;
-
+	width: 25vw;
 }
 
 li button p:nth-of-type(2) {
-    width: 15vw;
+	width: 15vw;
 }
 
 li button p:nth-of-type(2) {
-    width: 15vw;
+	width: 15vw;
 }
 
 li button p {
-    text-align: left;
+	text-align: left;
 }
 
 li {
-    list-style: none;
+	list-style: none;
 }
 
 a {
-    background-color: black;
-    color: white;
-    padding: 0.8em 3em;
-    border-radius: 0.3em;
-    text-decoration: none;
-    margin-right: 1em;
-
-
+	background-color: black;
+	color: white;
+	padding: 0.8em 3em;
+	border-radius: 0.3em;
+	text-decoration: none;
+	margin-right: 1em;
 }
 
 form {
-    margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 body {
-    background-color: #FFDB62;
-    font-family: 'Source Sans Pro', sans-serif;
+	background-color: #ffdb62;
+	font-family: "Source Sans Pro", sans-serif;
 }
 
 p {
-    line-height: 25px;
-    color: grey;
+	line-height: 25px;
+	color: grey;
 }
 
 h1 {
-    line-height: 45px;
-    font-weight: bold;
+	line-height: 45px;
+	font-weight: bold;
 }
 
 #letterUI h3 {
-    margin: 10px 0 1px 0;
-    font-size: 1em;
-
+	margin: 10px 0 1px 0;
+	font-size: 1em;
 }
 
 #letterUI p {
-    margin: 0;
+	margin: 0;
 }
 
-
-
-
 .homepageBlock {
-    background-color: white;
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
+	background-color: white;
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .homepageBlock img {
-    padding-right: 40px;
-    width: 95%;
+	padding-right: 40px;
+	width: 95%;
 }
 
 .extra_content {
-    background-color: white;
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 40px;
-    display: flex;
-    justify-content: center;
-
+	background-color: white;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 40px;
+	display: flex;
+	justify-content: center;
 }
 
 .extra_content p {
-    margin-right: 15px;
+	margin-right: 15px;
 }
 
 .extra_content img {
-    width: 100px;
+	width: 100px;
 }
 
 .extra_content .horizontalRule {
-    width: 100%;
+	width: 100%;
 }
 
 .blockText {
-    width: 35%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap
+	width: 35%;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .blockText h1 {
-    font-size: 2.2em;
-    margin-bottom: 1em;
-
-
+	font-size: 2.2em;
+	margin-bottom: 1em;
 }
 
 .blockText p,
 .conditions p {
-    margin-bottom: 10px;
-    color: grey;
-    font-size: 1.1em;
+	margin-bottom: 10px;
+	color: grey;
+	font-size: 1.1em;
 }
 
 .blockText ol {
-    margin-bottom: 10px;
-    color: grey;
-    line-height: 25px;
-    font-size: 1.1em;
+	margin-bottom: 10px;
+	color: grey;
+	line-height: 25px;
+	font-size: 1.1em;
 }
 
 .blockText img,
 .logoWob {
-    margin-bottom: 2em;
-    width: 80px;
+	margin-bottom: 2em;
+	width: 80px;
 }
 
-
 .popup {
-    background-color: white;
-    position: absolute;
-    width: 30%;
+	background-color: white;
+	position: absolute;
+	width: 30%;
 
-    overflow-y: scroll;
-    right: 0;
-    top: 300px;
-    z-index: 20;
-    border: 1px solid black;
-
+	overflow-y: scroll;
+	right: 0;
+	top: 300px;
+	z-index: 20;
+	border: 1px solid black;
 }
 
 .letterComplete {
-    position: absolute;
-    width: 60%;
+	position: absolute;
+	width: 60%;
 
-
-    right: 0;
-    top: 0;
-    z-index: 10;
-    margin-top: 40px;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	margin-top: 40px;
 }
 
 #letterUI {
-    background-color: white;
-    padding: 25px;
-    border-radius: 1%;
-
+	background-color: white;
+	padding: 25px;
+	border-radius: 1%;
 }
 
 .popup h1 {
-    margin: 60px 0 15px 25px;
-    font-size: 1.5em;
+	margin: 60px 0 15px 25px;
+	font-size: 1.5em;
 }
 
 .popup p {
-    padding: 0 0 25px 25px;
+	padding: 0 0 25px 25px;
 }
 
 .popupI {
-    background-color: rgba(250, 250, 250, 0);
-    border: none;
+	background-color: rgba(250, 250, 250, 0);
+	border: none;
 }
 
 .fontIcon {
-    color: white;
+	color: white;
 }
 
 .popupClose {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 0.5em;
-    font-size: 2em;
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 0.5em;
+	font-size: 2em;
 }
 
 .sectionWaarom,
 .conditions,
 .textLongConditions {
-    padding-top: 40px;
-    width: 90%;
-    margin: 0 auto;
-    display: block;
-    background-color: white;
-
+	padding-top: 40px;
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	background-color: white;
 }
 
 .sectionWaarom img {
-    display: block;
-    margin: 0 auto;
+	display: block;
+	margin: 0 auto;
 }
 
 .sectionBlock,
 .sectionBlock2 {
-    display: flex;
-    padding: 40px;
-    justify-content: space-around;
-
+	display: flex;
+	padding: 40px;
+	justify-content: space-around;
 }
 
 .sectionBlock div {
-    width: 40%;
-
+	width: 40%;
 }
 
 .sectionBlock div h1,
 .sectionBlock2 div h1,
 .conditions .block2 h1 {
-    font-size: 1.5em;
-    margin-bottom: 0.2em;
+	font-size: 1.5em;
+	margin-bottom: 0.2em;
 }
 
-
 .sectionBlock2 .projectTeam h2 {
-    font-weight: bold;
-    margin: 30px 0 10px;
+	font-weight: bold;
+	margin: 30px 0 10px;
 }
 
 .sectionBlock2 .projectTeam p {
-    margin-bottom: 10px;
-    font-size: 18px;
+	margin-bottom: 10px;
+	font-size: 18px;
 }
 
 .sectionBlock2 .block1 {
-    width: 60%;
+	width: 60%;
 }
 
 .sectionBlock2 .spanLinks {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .sectionBlock2 .spanLinks img {
-    margin: 20px 20px 20px 0;
+	margin: 20px 20px 20px 0;
 }
 
 .sectionBlock2 .spanLinks a {
-    background-color: white;
-    border-radius: 0;
-    color: grey;
-    margin: 0;
-    padding: 20px 20px 20px 0;
+	background-color: white;
+	border-radius: 0;
+	color: grey;
+	margin: 0;
+	padding: 20px 20px 20px 0;
 }
 
 .conditions .block2,
 .textLongConditions {
-    padding: 40px;
-    width: 60%;
-
+	padding: 40px;
+	width: 60%;
 }
 
 .conditions .horizontalRule:nth-of-type(1) {
-    margin-top: 100px;
+	margin-top: 100px;
 }
 
 .textLongConditions h2 {
-    font-weight: bold;
-    margin-top: 20px;
+	font-weight: bold;
+	margin-top: 20px;
 }
 
-
 .conditions .block2 div p:first-of-type {
-    margin: 40px 0;
+	margin: 40px 0;
 }
 
 .textLongConditions {
-    margin: 0;
+	margin: 0;
 }
 
 #authorities {
-    max-height: 20em;
-    overflow-y: scroll;
-    max-width: 100%;
-    overflow-x: hidden;
-    margin-top: 20px;
+	max-height: 20em;
+	overflow-y: scroll;
+	max-width: 100%;
+	overflow-x: hidden;
+	margin-top: 20px;
 }
 
 .formLetter {
-    padding: 40px;
+	padding: 40px;
 
-    width: 35%;
-
+	width: 35%;
 }
 
 .formLetter h2 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-
+	font-size: 2em;
+	margin-bottom: 0.5em;
+	font-weight: bold;
 }
 
 .formLetter h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 20px;
-
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 20px;
 }
 
 .formLetter p {
-    color: black;
-    line-height: 20px
+	color: black;
+	line-height: 20px;
 }
 
 .formLetter .lastOfType {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .formLetter span {
-    display: flex;
-    width: 60%;
+	display: flex;
+	width: 60%;
 }
 
 .formLetter .selectedAuthority {
-    border: 1px dashed grey;
-    padding: 20px;
-    margin-top: 20px;
+	border: 1px dashed grey;
+	padding: 20px;
+	margin-top: 20px;
 }
 
-
 .formLetter label {
-    padding-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .formInputs input {
-    display: block;
+	display: block;
 }
 
 .formInputs input,
 input {
-    padding: 2px;
-    font-size: 1.1em;
+	padding: 2px;
+	font-size: 1.1em;
 }
 
 form {
-    margin-top: 40px;
-
+	margin-top: 40px;
 }
 
 .extraPadding {
-    padding: 0 0 40px 0;
+	padding: 0 0 40px 0;
 }
 
 .extraPaddingh2 {
-    padding-top: 40px;
+	padding-top: 40px;
 }
 
 .buttonStyle {
-    color: white;
-    background-color: black;
-    padding: 0.8em;
-    border: 0;
-    margin-right: 40px;
-    margin-top: 20px;
-    border-radius: 3px;
+	color: white;
+	background-color: black;
+	padding: 0.8em;
+	border: 0;
+	margin-right: 40px;
+	margin-top: 20px;
+	border-radius: 3px;
 }
 
 .subForm {
-    margin-left: 2.3em;
+	margin-left: 2.3em;
+}
+
+.subsubForm {
+	margin-left: 4.6em;
 }
 
 @media print {
-
-    aside#sidebar,
-    footer,
-    #comments,
-    #respond {
-        display: none;
-    }
+	aside#sidebar,
+	footer,
+	#comments,
+	#respond {
+		display: none;
+	}
 }
-
 
 /************************************************************
 
@@ -405,71 +385,119 @@ Checkbox styles
 
 /* The container */
 .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
 
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
-
 
 /* Hide the browser's default checkbox */
 .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
 }
 
 /* Create a custom checkbox */
 .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: lightGrey;
-    border: 1px solid grey;
-    border-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: lightGrey;
+	border: 1px solid grey;
+	border-radius: 3px;
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input~.checkmark {
-    background-color: #ccc;
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked~.checkmark {
-    background-color: black;
+.container input:checked ~ .checkmark {
+	background-color: black;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+	content: "";
+	position: absolute;
+	display: none;
 }
 
 /* Show the checkmark when checked */
-.container input:checked~.checkmark:after {
-    display: block;
+.container input:checked ~ .checkmark:after {
+	display: block;
 }
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#error {
+	color: red;
+	margin-top: -15px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#smallError {
+	margin-top: 0px;
+	color: red;
+	font-weight: bold;
+}
+
+.object {
+	align-items: center;
+	justify-content: space-between;
+	border: 1px dashed grey;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.object button {
+	margin: 0px;
+}
+
+.object p {
+	padding-left: 5px;
+}
+
+.objectInput button {
+	margin: 0;
+	width: 100%;
+	padding: 6.5px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	display: block;
+}
+
+.objectInput {
+	align-items: center;
+	width: 70%;
+}
+
+#authorities .fontIcon {
+	background-color: black;
+	padding: 1.2em;
+	margin-left: 10px;
 }

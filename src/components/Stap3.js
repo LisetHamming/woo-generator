@@ -29,13 +29,11 @@ function Stap3({
 				<p>
 					Omschrijf je onderwerp eerst in enkele trefwoorden, dit komt bovenaan de brief te staan. Omschrijf vervolgens
 					je onderwerp in een of enkele zinnen. Dit komt in de lopende tekst van je brief.
-				</p>{" "}
+				</p>
 			</span>
 			<form>
 				<span>
-					{" "}
 					<label>
-						{" "}
 						Onderwerp in lopende tekst (verplicht)
 						<input
 							size="50"
@@ -49,7 +47,7 @@ function Stap3({
 						<br />
 					</label>
 				</span>
-				{errors.includes("subjectLong") && <p>He ga dit eens invullen</p>}
+				{errors.includes("subjectLong") && <p id="error">Dit is een verplicht veld, graag invullen.</p>}
 				<span>
 					<label className="container">
 						<input
@@ -62,7 +60,7 @@ function Stap3({
 						/>{" "}
 						Dit onderwerp gaat over milieu
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>{" "}
 					<PopupButton number="9" />
 				</span>
@@ -74,8 +72,8 @@ function Stap3({
 				onClick={event => {
 					let errors = [];
 
-					if (value.subjectlong === "") {
-						errors.push("subjectlong");
+					if (value.subjectLong === "") {
+						errors.push("subjectLong");
 					}
 
 					if (errors.length) {

@@ -1,3 +1,5 @@
+import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
@@ -24,11 +26,11 @@ function Stap3_3({
 			<form>
 				{value.subjectType === "specific" && (
 					<div>
-						<span>
+						<span className="objectInput">
 							<label>
-								Omschrijving van het specifieke document
+								Omschrijving van specifieke document
 								<input
-									size="50"
+									size="30"
 									id="subjectSpecificText"
 									value={value.subjectSpecificText}
 									onChange={changeHandlerUser}
@@ -36,10 +38,9 @@ function Stap3_3({
 								/>
 								<br />
 							</label>
-						</span>
-						<span>
+
 							<label>
-								Datum van document <br />
+								Datum <br />
 								<input
 									id="subjectSpecificDate"
 									value={value.subjectSpecificDate}
@@ -49,19 +50,19 @@ function Stap3_3({
 								<br />
 							</label>
 							<button type="button" className="buttonStyle" onClick={clickHandlerSubjectText}>
-								Voeg toe
+								<FontAwesomeIcon className="fontIcon" icon={faPlus} />
 							</button>
-							{value.subjectTextObject.map((item, index) => (
-								<div key={index}>
-									<p>
-										{item.subjectText} {formatDate(new Date(item.subjectDate))}
-									</p>
-									<button type="button" className="buttonStyle" value={index} onClick={clickHandlerEmptySubjectText}>
-										Verwijder
-									</button>
-								</div>
-							))}
 						</span>
+						{value.subjectTextObject.map((item, index) => (
+							<span className="object" key={index}>
+								<p>
+									{item.subjectText} {formatDate(new Date(item.subjectDate))}
+								</p>
+								<button type="button" className="buttonStyle" value={index} onClick={clickHandlerEmptySubjectText}>
+									<FontAwesomeIcon className="fontIcon" icon={faTimes} />
+								</button>
+							</span>
+						))}
 					</div>
 				)}
 
@@ -112,8 +113,25 @@ function Stap3_3({
 						</label>
 					</span>
 					{value[12] && (
+						<span className="subForm">
+							<label className="container">
+								<input
+									onChange={changeHandlerCheckbox}
+									id="text4"
+									type="checkbox"
+									checked={value[13]}
+									name="checkText"
+									value="13"
+								/>{" "}
+								Binnen de overheidsinstantie
+								<br />
+								<div className="checkmark"></div>{" "}
+							</label>
+						</span>
+					)}
+					{value[13] && value[12] && (
 						<div>
-							<span>
+							<span className="subsubForm ">
 								<label className="container">
 									<input
 										size="50"
@@ -129,7 +147,7 @@ function Stap3_3({
 									<div className="checkmark"></div>{" "}
 								</label>
 							</span>
-							<span className="subForm">
+							<span className="subsubForm">
 								<label className="container">
 									<input
 										size="50"
@@ -145,7 +163,7 @@ function Stap3_3({
 									<div className="checkmark"></div>{" "}
 								</label>
 							</span>
-							<span className="subForm">
+							<span className="subsubForm">
 								<label className="container">
 									<input
 										size="50"
@@ -161,7 +179,7 @@ function Stap3_3({
 									<div className="checkmark"></div>{" "}
 								</label>
 							</span>
-							<span className="subForm">
+							<span className="subsubForm">
 								<label className="container">
 									<input
 										size="50"
@@ -178,7 +196,7 @@ function Stap3_3({
 								</label>
 							</span>
 
-							<span className="subForm">
+							<span className="subsubForm">
 								<label className="container">
 									<input
 										size="50"
@@ -194,7 +212,7 @@ function Stap3_3({
 									<div className="checkmark"></div>{" "}
 								</label>
 							</span>
-							<span className="subForm">
+							<span className="subsubForm">
 								<label className="container">
 									<input
 										size="50"
@@ -213,43 +231,30 @@ function Stap3_3({
 						</div>
 					)}
 
-					<span>
-						<label className="container">
-							<input
-								onChange={changeHandlerCheckbox}
-								id="text4"
-								type="checkbox"
-								checked={value[13]}
-								name="checkText"
-								value="13"
-							/>{" "}
-							Binnen de overheidsinstantie
-							<br />
-							<div class="checkmark"></div>{" "}
-						</label>
-					</span>
-					<span>
-						<label className="container">
-							<input
-								onChange={changeHandlerCheckbox}
-								id="text5"
-								type="checkbox"
-								checked={value[14]}
-								name="checkText"
-								value="14"
-							/>{" "}
-							Met andere personen of organisaties
-							<br />
-							<div className="checkmark"></div>{" "}
-						</label>
-					</span>
+					{value[12] && (
+						<span className="subForm">
+							<label className="container">
+								<input
+									onChange={changeHandlerCheckbox}
+									id="text5"
+									type="checkbox"
+									checked={value[14]}
+									name="checkText"
+									value="14"
+								/>{" "}
+								Met andere personen of organisaties
+								<br />
+								<div className="checkmark"></div>{" "}
+							</label>
+						</span>
+					)}
 					{value[14] && (
 						<div>
-							<span className="subForm">
+							<span className="subsubForm">
 								<label>
 									Organisatie of persoon
 									<input
-										size="50"
+										size="40"
 										id="subjectLongOrganisation"
 										value={value.subjectLongOrganisation}
 										onChange={changeHandlerUser}
@@ -342,8 +347,7 @@ function Stap3_3({
 										placeholder="22-11-2019"
 									/>
 								</label>
-							</span>
-							<span>
+
 								<label>
 									{" "}
 									Tot <br />
@@ -362,11 +366,12 @@ function Stap3_3({
 
 					{value.subjectType === "all" && (
 						<div>
-							<span>
+							<h3>Waaronder</h3>
+							<span className="objectInput">
 								<label>
-									Waaronder: Omschrijving van document
+									Omschrijving van document
 									<input
-										size="50"
+										size="30"
 										id="subjectSpecificText"
 										value={value.subjectSpecificText}
 										onChange={changeHandlerUser}
@@ -374,10 +379,9 @@ function Stap3_3({
 									/>
 									<br />
 								</label>
-							</span>
-							<span>
+
 								<label>
-									Datum van document <br />
+									Datum <br />
 									<input
 										id="subjectSpecificDate"
 										value={value.subjectSpecificDate}
@@ -386,19 +390,20 @@ function Stap3_3({
 									/>
 									<br />
 								</label>
+
+								<button type="button" className="buttonStyle" onClick={clickHandlerSubjectText}>
+									<FontAwesomeIcon className="fontIcon" icon={faPlus} />
+								</button>
 							</span>
-							<button type="button" className="buttonStyle" onClick={clickHandlerSubjectText}>
-								Voeg toe
-							</button>
 							{value.subjectTextObject.map((item, index) => (
-								<div key={index}>
+								<span className="object" key={index}>
 									<p>
 										{item.subjectText} {formatDate(new Date(item.subjectDate))}{" "}
 									</p>
 									<button type="button" className="buttonStyle" value={index} onClick={clickHandlerEmptySubjectText}>
-										Verwijder
+										<FontAwesomeIcon className="fontIcon" icon={faTimes} />
 									</button>
-								</div>
+								</span>
 							))}
 						</div>
 					)}

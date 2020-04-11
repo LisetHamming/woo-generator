@@ -85,10 +85,20 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									<p>{value[16] ? "Dataset;" : ""} </p>
 									<p>
 										{value[13]
-											? `Alle interne correspondentie (incl./excl. brieven, e-mails, memo’s en gespreksnotities, smsjes en WhatsAppjes) met betrekking tot ${value.subjectLong};`
+											? `Alle interne correspondentie (incl./excl. ${value.subjectInside1 ? " brieven," : ""}, ${
+													value.subjectInside3 ? " e-mails," : ""
+											  }${value.subjectInside5 ? " memo’s," : ""} ${value.subjectInside6 ? "gespreksnotities," : ""} ${
+													value.subjectInside4 ? "smsjes en WhatsAppjes" : ""
+											  }) met betrekking tot ${value.subjectLong};`
 											: ""}{" "}
 										{value[14]
-											? `Alle correspondentie (e-mails, brieven, memo’s, nota’s, notities en anderszins schriftelijk gewisselde stukken) met derden met betrekking tot ${value.subjectLong} tussen u en in ieder geval de navolgende partijen ${value.subjectLongOrganisation};`
+											? `Alle correspondentie (e-mails, brieven, memo’s, nota’s, notities en anderszins schriftelijk gewisselde stukken) met derden met betrekking tot ${
+													value.subjectLong
+											  } ${
+													value.subjectLongOrganisation
+														? "tussen u en in ieder geval de navolgende partijen" + " " + value.subjectLongOrganisation
+														: ""
+											  };`
 											: ""}
 									</p>
 									<p>{value[17] ? `${value.subjectElseText}` : ""}</p>
