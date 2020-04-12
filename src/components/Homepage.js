@@ -271,8 +271,8 @@ const Homepage = props => {
 
 						<ol>
 							<li>1. Je vult een aantal gegevens over jezelf in</li>
-							<li>2. Je selecteert een overheidsinstantie.</li>
-							<li>3. Je kiest wat voor documenten of informatie je zoekt.</li>
+							<li>2. Je selecteert een overheidsinstantie</li>
+							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 						</ol>
 
 						<p>Voilà!</p>

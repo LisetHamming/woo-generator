@@ -103,7 +103,7 @@ function Stap1({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerC
 								id="userName"
 								type="text"
 								name="userInfo"
-								placeholder="vul hier je naam in"
+								placeholder="Vul hier je naam in"
 							/>
 						</label>
 					</span>

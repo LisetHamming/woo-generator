@@ -368,15 +368,6 @@ form {
 	margin-left: 4.6em;
 }
 
-@media print {
-	aside#sidebar,
-	footer,
-	#comments,
-	#respond {
-		display: none;
-	}
-}
-
 /************************************************************
 
 Checkbox styles
@@ -500,4 +491,29 @@ Checkbox styles
 	background-color: black;
 	padding: 1.2em;
 	margin-left: 10px;
+}
+
+@media print {
+	footer,
+	#comments,
+	#respond,
+	.logoWob,
+	.formLetter h2,
+	.formLetter h1,
+	button,
+	a,
+	.hidePrint {
+		display: none;
+	}
+
+	#letterUI {
+		width: 100vw;
+		display: block;
+		left: 0;
+		margin: 0;
+	}
+
+	#letterComplete {
+		width: 100vw !important;
+	}
 }

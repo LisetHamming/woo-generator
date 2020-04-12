@@ -25,15 +25,16 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 				</p>
 			)}
 			<form>
-				<input
-					size="50"
-					id="searchBarAuthority"
-					type="search"
-					value={searchValue}
-					placeholder="Zoek op naam of plaats"
-					onChange={event => setSearchValue(event.target.value)}
-				/>
-
+				{!value.selectedAuthority && (
+					<input
+						size="50"
+						id="searchBarAuthority"
+						type="search"
+						value={searchValue}
+						placeholder="Zoek op naam of plaats"
+						onChange={event => setSearchValue(event.target.value)}
+					/>
+				)}
 				{value.selectedAuthority ? (
 					<div className="selectedAuthority">
 						<p>Controleer de instantie aan wie je Wobt:</p>
@@ -87,20 +88,22 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 							))}
 					</ul>
 				)}
-				<div>
-					<span>
-						<p>Staat de juiste instantie er niet tussen maar beschik je zelf wel over de juiste gegevens?</p>
-						<PopupButton number="16" />
-					</span>
-					<button
-						className="buttonStyle"
-						type="button"
-						value="true"
-						onClick={event => setManualAuthority(event.target.value)}
-					>
-						Vul dan hier de gegevens in
-					</button>
-				</div>
+				{!value.selectedAuthority && (
+					<div>
+						<span>
+							<p>Staat de juiste instantie er niet tussen maar beschik je zelf wel over de juiste gegevens?</p>
+							<PopupButton number="16" />
+						</span>
+						<button
+							className="buttonStyle"
+							type="button"
+							value="true"
+							onClick={event => setManualAuthority(event.target.value)}
+						>
+							Vul dan hier de gegevens in
+						</button>
+					</div>
+				)}
 			</form>
 			{manualAuthority && <SetSelectedAuthorityManual value={value} clickHandlerAuthority={clickHandlerAuthority} />}
 			<span>
