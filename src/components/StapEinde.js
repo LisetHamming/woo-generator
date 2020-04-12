@@ -10,7 +10,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate }) {
 			<h2 className="hidePrint">Laatste check!</h2>
 			<p className="extraPadding hidePrint">Wob-verzoek met onderwerp: {value.subjectLong}</p>
 
-			<Link to="/StapExtra">vorige pagina</Link>
+			<Link to="/StapExtra">Terug</Link>
 			<div>
 				<h2 className="extraPaddingh2">Exporteren!</h2>
 				<p className="hidePrint">Download je bestand hier!</p>

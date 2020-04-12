@@ -3,10 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
 import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
 
-function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthority, authorities, changeHandlerUser }) {
+function Stap2({
+	value,
+	clickHandlerAuthority,
+	clickHandlerClearSelectedAuthority,
+	filteredDataText,
+	getCurrentDate,
+	authorities,
+	changeHandlerUser
+}) {
 	const [searchValue, setSearchValue] = useState("");
 	const [manualAuthority, setManualAuthority] = useState(false);
 	const [errors, setErrors] = useState([]);
@@ -133,6 +142,12 @@ function Stap2({ value, clickHandlerAuthority, clickHandlerClearSelectedAuthorit
 			>
 				Stap 3
 			</Link>
+			<LetterUI
+				className="letterText"
+				value={value}
+				filteredDataText={filteredDataText}
+				getCurrentDate={getCurrentDate}
+			/>
 		</div>
 	);
 }

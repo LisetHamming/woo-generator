@@ -21,8 +21,15 @@ function Stap3_3({
 	return (
 		<div className="formLetter">
 			<img className="logoWob" src={logo} />
-			<h2>Stap 3: Welke documenttypes?</h2>
-
+			<h2>
+				{" "}
+				Stap 3:
+				{value.subjectType === "specific" ? " Je weet wat je wilt (en ook nog...)" : " Je wilt alles (behalve...)"}
+			</h2>
+			<span>
+				<p className="extraPadding">Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
+				<PopupButton number="14" />
+			</span>
 			<form>
 				{value.subjectType === "specific" && (
 					<div>
@@ -259,6 +266,7 @@ function Stap3_3({
 										value={value.subjectLongOrganisation}
 										onChange={changeHandlerUser}
 										type="text"
+										placeholder="Bijvoorbeeld Shell of J. Jansen"
 									/>
 									<br />
 								</label>
@@ -321,6 +329,7 @@ function Stap3_3({
 										value={value.subjectElseText}
 										onChange={changeHandlerUser}
 										type="text"
+										placeholder="Bijvoorbeeld: proces-verbaal of boetes"
 									/>
 									<br />
 								</label>
@@ -329,14 +338,16 @@ function Stap3_3({
 					)}
 					{value.subjectType === "all" && (
 						<div>
-							<p>
-								Selecteer hier de periode waarbinnen je denkt dat er voor jou interessante informatie beschikbaar is.
-								Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de wob-ambtenaren
-								nodeloos lang bezig zijn met je verzoek.{" "}
-							</p>
+							<h1>Periode kiezen</h1>
+							<span>
+								<p>
+									Selecteer hier de periode waarbinnen je denkt dat er voor jou interessante informatie beschikbaar is.
+								</p>
+								<PopupButton number="17" />
+							</span>
+							<br />
 							<span>
 								<label>
-									{" "}
 									Van <br />
 									<input
 										value={value.subjectDateStart}
@@ -349,7 +360,6 @@ function Stap3_3({
 								</label>
 
 								<label>
-									{" "}
 									Tot <br />
 									<input
 										value={value.subjectDateEnd}
@@ -366,7 +376,9 @@ function Stap3_3({
 
 					{value.subjectType === "all" && (
 						<div>
-							<h3>Waaronder</h3>
+							<h3>Wil je óók een specifiek document?</h3>
+							<p>Je kan meerdere specifieke documenten toevoegen.</p>
+							<br />
 							<span className="objectInput">
 								<label>
 									Omschrijving van document
@@ -418,9 +430,9 @@ function Stap3_3({
 				<p className="extraPadding">Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
 				<PopupButton number="14" />
 			</span>
-			<Link to="/Stap3_2">vorige pagina</Link>
+			<Link to="/Stap3_2">Terug</Link>
 			<Link to="/StapExtra" onClick={() => clickHandlerStep("step9")}>
-				volgende pagina
+				Volgende
 			</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
 		</div>

@@ -230,7 +230,7 @@ const Homepage = props => {
 		var fileDownload = document.createElement("a");
 		document.body.appendChild(fileDownload);
 		fileDownload.href = source;
-		fileDownload.download = `wob-verzoek-${value.selectedAuthority.naam}.doc`;
+		fileDownload.download = `Wob-verzoek ${value.selectedAuthority.naam}.doc`;
 		fileDownload.click();
 		document.body.removeChild(fileDownload);
 	};
@@ -308,6 +308,8 @@ const Homepage = props => {
 					changeHandlerUser={changeHandlerUser}
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerCompanyName={changeHandlerCompanyName}
+					filteredDataText={filteredDataText}
+					getCurrentDate={getCurrentDate}
 				/>
 			</Route>
 			<Route path="/Stap2">
@@ -317,6 +319,8 @@ const Homepage = props => {
 					authorities={props.authorities}
 					clickHandlerAuthority={clickHandlerAuthority}
 					clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}
+					filteredDataText={filteredDataText}
+					getCurrentDate={getCurrentDate}
 				/>
 			</Route>
 			<Route path="/Stap3">

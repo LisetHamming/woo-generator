@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
 
-function Stap1({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerCompanyName }) {
+function Stap1({
+	value,
+	changeHandlerUser,
+	changeHandlerCheckbox,
+	filteredDataText,
+	getCurrentDate,
+	changeHandlerCompanyName
+}) {
 	const [errors, setErrors] = useState([]);
 	const [popUp, setPopUp] = useState(false);
 
@@ -227,6 +235,12 @@ function Stap1({ value, changeHandlerUser, changeHandlerCheckbox, changeHandlerC
 			>
 				Volgende
 			</Link>
+			<LetterUI
+				className="letterText"
+				value={value}
+				filteredDataText={filteredDataText}
+				getCurrentDate={getCurrentDate}
+			/>
 		</div>
 	);
 }
