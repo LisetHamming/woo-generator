@@ -37,6 +37,13 @@ const initialState = {
 	15: false,
 	16: false,
 	17: false,
+	18: false,
+	19: false,
+	20: false,
+	21: false,
+	22: false,
+	23: false,
+	24: false,
 	userName: "",
 	userAdress: "",
 	userAdressNumber: "",
@@ -75,7 +82,8 @@ const initialState = {
 	subjectOutside: false,
 	subjectInside1: true,
 	subjectInside2: true,
-	subjectInside3: true,
+	subjectInside2exclusive: false,
+	subjectInside2inclusive: true,
 	subjectInside4: true,
 	subjectInside5: true,
 	subjectInside6: true,
@@ -354,6 +362,7 @@ const Homepage = props => {
 					filteredDataText={filteredDataText}
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerUser={changeHandlerUser}
+					changeHandlerRadio={changeHandlerRadio}
 				/>
 			</Route>
 			<Route path="/StapExtra">
