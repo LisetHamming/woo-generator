@@ -56,12 +56,12 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							{value.subjectType === "specific" ? (
 								<React.Fragment>
 									<p>Concreet vraag ik u om:</p>
-									{value.subjectTextObject.map(
-										item =>
-											`<p>- ${item.subjectText}${
-												item.subjectDate ? ` (${formatDate(new Date(item.subjectDate))})</p>` : ""
-											}`
-									)}
+									{value.subjectTextObject.map(item => (
+										<p>
+											- {item.subjectText}
+											{item.subjectDate ? ` (${formatDate(new Date(item.subjectDate))})` : ""}
+										</p>
+									))}
 									<br />
 									{value[10] ||
 									value[11] ||
@@ -129,12 +129,12 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							{value.subjectType === "all" && value.subjectTextObject && (
 								<div>
 									<p>Bovendien wil ik graag de onderliggendedocumenten, namelijk:</p>
-									{value.subjectTextObject.map(
-										item =>
-											`<p>- ${item.subjectText}${
-												item.subjectDate ? ` (${formatDate(new Date(item.subjectDate))})</p>` : ""
-											}`
-									)}
+									{value.subjectTextObject.map(item => (
+										<p>
+											- {item.subjectText}
+											{item.subjectDate ? ` (${formatDate(new Date(item.subjectDate))})` : ""}
+										</p>
+									))}
 									<br />
 								</div>
 							)}
