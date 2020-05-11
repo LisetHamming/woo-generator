@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
 import LetterUI from "./LetterUI";
 
 function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentDate }) {
 	return (
 		<div className="formLetter">
-			<img className="logoWob" src={logo} />
+			<p className="logo">Wob-generator</p>
 			<h2>Extra opties</h2>
 			<p>Schakel eventueel opties uit waarvan je denkt dat ze niet van toepassing zijn op jouw verzoek.</p>
 			<form>

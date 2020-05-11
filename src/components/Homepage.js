@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link, Route, Switch } from "react-router-dom";
-import line_black from "../assets/line_black.png";
-import line_yellow from "../assets/line_yellow.png";
-import logo from "../assets/logo.png";
 import logo_vvoj from "../assets/logo_vvoj.png";
 import machine from "../assets/machine.png";
 import AlgemeneVoorwaarden from "./AlgemeneVoorwaarden";
@@ -286,7 +283,7 @@ const Homepage = props => {
 			<Route exact path="/">
 				<div className="homepageBlock">
 					<div className="blockText">
-						<img className="logoWob" src={logo} />
+						<p className="logo">Wob-generator</p>
 						<h1>Schrijf in 3 simpele stappen je eigen Wob-verzoek</h1>
 						<p>
 							Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat noemen we een Wob-verzoek.
@@ -312,17 +309,17 @@ const Homepage = props => {
 				</div>
 				<div className="extra_content">
 					{" "}
-					<img src={line_yellow} className="horizontalRule" />
+					<hr className="horizontalRule"></hr>
 				</div>
 				<HomepageWaarom />
 				<div className="extra_content">
 					{" "}
-					<img src={line_black} className="horizontalRule" />
+					<hr className="horizontalRule"></hr>
 				</div>
 				<HomepageWaaromTool />
 				<div className="extra_content">
 					{" "}
-					<img src={line_yellow} className="horizontalRule" />
+					<hr className="horizontalRule"></hr>
 				</div>
 				<HomepageOvergenerator />
 			</Route>

@@ -101,6 +101,10 @@ h1 {
 	width: 100%;
 }
 
+.horizontalRule {
+	border-top: 1px solid rgb(192, 43, 57);
+}
+
 .blockText {
 	width: 35%;
 	padding: 40px;
@@ -134,6 +138,18 @@ h1 {
 .logoWob {
 	margin-bottom: 2em;
 	width: 80px;
+}
+
+p.logo {
+	color: rgb(192, 43, 57) !important;
+	margin-bottom: 0.5em;
+	font-size: 2em;
+}
+
+p.header {
+	text-align: center;
+	color: rgb(192, 43, 57);
+	font-size: 2em;
 }
 
 .popup {

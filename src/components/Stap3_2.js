@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
 
@@ -14,7 +13,7 @@ function Stap3_2({
 }) {
 	return (
 		<div className="formLetter">
-			<img className="logoWob" src={logo} />
+			<p className="logo">Wob-generator</p>
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<span>
 				<p>

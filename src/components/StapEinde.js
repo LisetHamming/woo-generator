@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
 import LetterUI from "./LetterUI";
 
 function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate }) {
 	return (
 		<div className="formLetter">
-			<img className="logoWob" src={logo} />
+			<p className="logo">Wob-generator</p>
 			<h2 className="hidePrint">Laatste check!</h2>
 			<p className="extraPadding hidePrint">Wob-verzoek met onderwerp: {value.subjectLong}</p>
 

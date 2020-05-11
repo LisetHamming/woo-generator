@@ -2,7 +2,6 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
 import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
@@ -21,7 +20,7 @@ function Stap2({
 	const [errors, setErrors] = useState([]);
 	return (
 		<div className="formLetter">
-			<img className="logoWob" src={logo} />
+			<p className="logo">Wob-generator</p>
 			<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
 			<span>
 				<p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden</p>

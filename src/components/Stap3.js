@@ -16,6 +16,7 @@ function Stap3({
 
 	return (
 		<div className="formLetter">
+			<p className="logo">Wob-generator</p>
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<span>
 				<p>

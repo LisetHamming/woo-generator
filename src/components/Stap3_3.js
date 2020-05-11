@@ -2,7 +2,6 @@ import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
 import formatDate from "./FormatDate";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
@@ -22,7 +21,7 @@ function Stap3_3({
 }) {
 	return (
 		<div className="formLetter">
-			<img className="logoWob" src={logo} />
+			<p className="logo">Wob-generator</p>
 			<h2>
 				Stap 3:
 				{value.subjectType === "specific" ? " Je weet wat je wilt (en ook nog...)" : " Je wilt alles (behalve...)"}
