@@ -17,13 +17,13 @@ function Stap3_3({
 	changeHandlerSubjectType,
 	clickHandlerStep,
 	getCurrentDate,
-	changeHandlerRadio
+	changeHandlerRadio,
+	changeHandlerSubjectMeeting
 }) {
 	return (
 		<div className="formLetter">
 			<img className="logoWob" src={logo} />
 			<h2>
-				{" "}
 				Stap 3:
 				{value.subjectType === "specific" ? " Je weet wat je wilt (en ook nog...)" : " Je wilt alles (behalve...)"}
 			</h2>
@@ -64,7 +64,7 @@ function Stap3_3({
 						{value.subjectTextObject.map((item, index) => (
 							<span className="object" key={index}>
 								<p>
-									{item.subjectText} {formatDate(new Date(item.subjectDate))}
+									{item.subjectText} {item.subjectDate && formatDate(new Date(item.subjectDate))}
 								</p>
 								<button type="button" className="buttonStyle" value={index} onClick={clickHandlerEmptySubjectText}>
 									<FontAwesomeIcon className="fontIcon" icon={faTimes} />
@@ -73,7 +73,12 @@ function Stap3_3({
 						))}
 					</div>
 				)}
-
+				{value.subjectType === "specific" && (
+					<div>
+						<p>Bovendien wil ik graag de onderliggende documenten, namelijk:</p>
+						<br />
+					</div>
+				)}
 				<div>
 					<span>
 						<label className="container">
@@ -95,12 +100,11 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerCheckbox}
+										onChange={changeHandlerSubjectMeeting}
 										id="textUitnodiging"
 										type="checkbox"
-										checked={value[18]}
-										name="checkText"
-										value="18"
+										checked={value.subjectMeeting.Uitnodigingen}
+										name="Uitnodigingen"
 									/>
 									Uitnodigingen
 									<br />
@@ -110,12 +114,11 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerCheckbox}
+										onChange={changeHandlerSubjectMeeting}
 										id="textAgenda"
 										type="checkbox"
-										checked={value[19]}
-										name="checkText"
-										value="19"
+										checked={value.subjectMeeting.Agenda}
+										name="Agenda"
 									/>
 									Agenda’s
 									<br />
@@ -125,12 +128,11 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerCheckbox}
+										onChange={changeHandlerSubjectMeeting}
 										id="textPresentatieLijsten"
 										type="checkbox"
-										checked={value[20]}
-										name="checkText"
-										value="20"
+										checked={value.subjectMeeting.Presentielijsten}
+										name="Presentielijsten"
 									/>
 									Presentielijsten
 									<br />
@@ -140,12 +142,11 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerCheckbox}
+										onChange={changeHandlerSubjectMeeting}
 										id="textIngekomen"
 										type="checkbox"
-										checked={value[21]}
-										name="checkText"
-										value="21"
+										checked={value.subjectMeeting.IngekomenStukken}
+										name="IngekomenStukken"
 									/>
 									Ingekomen stukken
 									<br />
@@ -155,12 +156,11 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerCheckbox}
+										onChange={changeHandlerSubjectMeeting}
 										id="textAdviezen"
 										type="checkbox"
-										checked={value[22]}
-										name="checkText"
-										value="22"
+										checked={value.subjectMeeting.Adviezen}
+										name="Adviezen"
 									/>
 									Adviezen
 									<br />
@@ -170,12 +170,11 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerCheckbox}
+										onChange={changeHandlerSubjectMeeting}
 										id="textBesluiten"
 										type="checkbox"
-										checked={value[23]}
-										name="checkText"
-										value="23"
+										checked={value.subjectMeeting.Besluiten}
+										name="Besluiten"
 									/>
 									Besluiten
 									<br />
@@ -185,12 +184,11 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerCheckbox}
+										onChange={changeHandlerSubjectMeeting}
 										id="textBesluitenlijsten"
 										type="checkbox"
-										checked={value[24]}
-										name="checkText"
-										value="24"
+										checked={value.subjectMeeting.Besluitenlijsten}
+										name="Besluitenlijsten"
 									/>
 									Besluitenlijsten en notulen
 									<br />
@@ -287,10 +285,10 @@ function Stap3_3({
 											<input
 												size="50"
 												id="subjectInside2inclusive"
-												value="subjectInside2inclusive"
-												checked={value.subjectInside2inclusive}
-												onChange={changeHandlerRadio}
-												name="checkText"
+												checked={value.subjectInside2inclusive === "inclusief"}
+												name="subjectInside2inclusive"
+												value="inclusief"
+												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
 											Inclusief bijlagen
@@ -303,10 +301,10 @@ function Stap3_3({
 											<input
 												size="50"
 												id="subjectInside2exclusive"
-												value="subjectInside2exclusive"
-												checked={value.subjectInside2exclusive}
-												onChange={changeHandlerRadio}
-												name="checkText"
+												checked={value.subjectInside2inclusive === "exclusief"}
+												name="subjectInside2inclusive"
+												value="exclusief"
+												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
 											Exclusief bijlagen
@@ -501,52 +499,6 @@ function Stap3_3({
 									/>
 								</label>
 							</span>
-						</div>
-					)}
-
-					{value.subjectType === "all" && (
-						<div>
-							<h3>Wil je óók een specifiek document?</h3>
-							<p>Je kan meerdere specifieke documenten toevoegen.</p>
-							<br />
-							<span className="objectInput">
-								<label>
-									Omschrijving van document
-									<input
-										size="30"
-										id="subjectSpecificText"
-										value={value.subjectSpecificText}
-										onChange={changeHandlerUser}
-										type="textarea"
-									/>
-									<br />
-								</label>
-
-								<label>
-									Datum <br />
-									<input
-										id="subjectSpecificDate"
-										value={value.subjectSpecificDate}
-										onChange={changeHandlerUser}
-										type="date"
-									/>
-									<br />
-								</label>
-
-								<button type="button" className="buttonStyle" onClick={clickHandlerSubjectText}>
-									<FontAwesomeIcon className="fontIcon" icon={faPlus} />
-								</button>
-							</span>
-							{value.subjectTextObject.map((item, index) => (
-								<span className="object" key={index}>
-									<p>
-										{item.subjectText} {formatDate(new Date(item.subjectDate))}{" "}
-									</p>
-									<button type="button" className="buttonStyle" value={index} onClick={clickHandlerEmptySubjectText}>
-										<FontAwesomeIcon className="fontIcon" icon={faTimes} />
-									</button>
-								</span>
-							))}
 						</div>
 					)}
 				</div>

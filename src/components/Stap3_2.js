@@ -32,7 +32,7 @@ function Stap3_2({
 							id="subjectSpecific"
 							type="radio"
 							checked={value.subjectType === "specific"}
-							name="subjectSpecific"
+							name="subjectType"
 							value="specific"
 						/>{" "}
 						Ik wil specifieke documenten opvragen
@@ -49,7 +49,7 @@ function Stap3_2({
 							id="subjectAll"
 							type="radio"
 							checked={value.subjectType === "all"}
-							name="subjectSpecific"
+							name="subjectType"
 							value="all"
 						/>{" "}
 						Ik wil alles over het onderwerp

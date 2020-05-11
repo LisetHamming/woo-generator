@@ -50,18 +50,24 @@ function Stap2({
 						<h3>{value.selectedAuthority.naam}</h3>
 						<p>{value.selectedAuthority.url}</p>
 						<br />
-						{value.selectedAuthority.adres ? (
-							<p>
-								{value.selectedAuthority.adres.postbus ??
-									value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}
-							</p>
+						{value.selectedAuthority.adres.postcode ? (
+							<React.Fragment>
+								<p>
+									{value.selectedAuthority.adres.postbus ??
+										value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}
+								</p>
+								<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
+							</React.Fragment>
 						) : (
-							<p>
-								Er is helaas geen adres bekend bij ons, beschik je zelf wel over een adres van deze instantie, dan kun
-								je het invoeren zodra je de brief als .doc hebt gedownload
-							</p>
+							<React.Fragment>
+								<p>
+									Er is helaas geen adres bekend bij ons, beschik je zelf wel over een adres van deze instantie, vul dan
+									het onderstaande formulier in.
+								</p>
+								<SetSelectedAuthorityManual value={value} clickHandlerAuthority={clickHandlerAuthority} />
+							</React.Fragment>
 						)}
-						<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
+
 						<p>{value.selectedAuthority.value}</p>
 						<div>
 							<button

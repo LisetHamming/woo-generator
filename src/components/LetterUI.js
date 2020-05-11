@@ -1,4 +1,5 @@
 import React from "react";
+import DataCheckbox from "./DataCheckbox";
 import formatDate from "./FormatDate";
 
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
@@ -81,17 +82,16 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									<p>
 										Concreet vraag ik u om alle bij of onder u rustende documenten inzake {value.subjectLong}
 										{value.subjectDateStart ? "in de periode " + formatDate(new Date(value.subjectDateStart)) : ""}
-										{value.subjectDateEnd ? "tot " + formatDate(new Date(value.subjectDateEnd)) : ""}, waaronder:
+										{value.subjectDateEnd ? " tot " + formatDate(new Date(value.subjectDateEnd)) : ""}, waaronder:
 									</p>
 								</React.Fragment>
 							)}
 							<p>
 								{value[10]
-									? `- Vergaderstukken, waaronder:${value[18] ? " uitnodigingen," : ""} ${
-											value[19] ? " agenda’s," : ""
-									  } ${value[20] ? " presentielijsten," : ""}${value[21] ? " ingekomen stukken, " : ""}${
-											value[22] ? " adviezen," : ""
-									  }${value[23] ? " besluiten," : ""}${value[24] ? " besluitenlijsten en notulen" : ""};`
+									? `- Vergaderstukken, waaronder: ${Object.keys(value.subjectMeeting)
+											.filter(key => value.subjectMeeting[key])
+											.map(key => DataCheckbox[key])
+											.join(", ")};`
 									: ""}
 							</p>
 							<p>{value[12] ? "- Gespreksverslagen;" : ""} </p>
@@ -126,18 +126,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							<p>{value[17] ? `-  ${value.subjectElseText}` : ""}</p>
 
 							<br />
-							{value.subjectType === "all" && value.subjectTextObject && (
-								<div>
-									<p>Bovendien wil ik graag de onderliggendedocumenten, namelijk:</p>
-									{value.subjectTextObject.map(item => (
-										<p>
-											- {item.subjectText}
-											{item.subjectDate ? ` (${formatDate(new Date(item.subjectDate))})` : ""}
-										</p>
-									))}
-									<br />
-								</div>
-							)}
+
 							<p>
 								Mocht u beschikken over andere documenten die – aanvullend of in plaats van gevraagde documenten -
 								inzicht in deze bestuurlijke aangelegenheid te kunnen geven, dan verzoek ik u die documenten ook te

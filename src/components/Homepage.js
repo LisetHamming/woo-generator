@@ -67,7 +67,16 @@ const initialState = {
 	subjectAllText: "",
 	subjectDateStart: false,
 	subjectDateEnd: false,
-	subjectMeeting: false,
+	subjectMeeting: {
+		Uitnodigingen: false,
+		Agenda: false,
+		Presentielijsten: false,
+		IngekomenStukken: false,
+		Adviezen: false,
+		Besluiten: false,
+		Besluitenlijsten: false
+	},
+
 	subjectLongOrganisation: "",
 	subjectReports: false,
 	subjectCorrespondance: false,
@@ -82,8 +91,7 @@ const initialState = {
 	subjectOutside: false,
 	subjectInside1: true,
 	subjectInside2: true,
-	subjectInside2exclusive: false,
-	subjectInside2inclusive: true,
+	subjectInside2inclusive: "",
 	subjectInside4: true,
 	subjectInside5: true,
 	subjectInside6: true,
@@ -133,8 +141,8 @@ const Homepage = props => {
 	const clickHandlerClearSelectedAuthority = () => {
 		setValue(current => ({ ...current, selectedAuthority: null }));
 	};
-	const changeHandlerSubjectType = ({ currentTarget: { value } }) => {
-		setValue(current => ({ ...current, subjectType: value }));
+	const changeHandlerSubjectType = ({ currentTarget: { value, name } }) => {
+		setValue(current => ({ ...current, [name]: value }));
 	};
 	const changeHandlerRadio = ({
 		currentTarget: {
@@ -173,7 +181,15 @@ const Homepage = props => {
 			}
 		}));
 	};
-
+	const changeHandlerSubjectMeeting = ({ currentTarget: { checked, name } }) => {
+		setValue(current => ({
+			...current,
+			subjectMeeting: {
+				...current.subjectMeeting,
+				[name]: checked
+			}
+		}));
+	};
 	const changeHandlerSubjectText = ({
 		currentTarget: {
 			value,
@@ -363,6 +379,8 @@ const Homepage = props => {
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerUser={changeHandlerUser}
 					changeHandlerRadio={changeHandlerRadio}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+					changeHandlerSubjectMeeting={changeHandlerSubjectMeeting}
 				/>
 			</Route>
 			<Route path="/StapExtra">

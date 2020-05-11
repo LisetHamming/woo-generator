@@ -138,14 +138,22 @@ h1 {
 
 .popup {
 	background-color: white;
-	position: absolute;
+	position: fixed;
 	width: 30%;
-
 	overflow-y: scroll;
 	right: 0;
-	top: 300px;
-	z-index: 20;
+	bottom: 0;
 	border: 1px solid black;
+}
+
+.backgroundPopUp {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 20;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .letterComplete {
@@ -510,14 +518,14 @@ Checkbox styles
 		display: none;
 	}
 
-	#letterUI {
+	.letterUI {
 		width: 100vw;
 		display: block;
 		left: 0;
 		margin: 0;
 	}
 
-	#letterComplete {
-		width: 100vw !important;
+	.letterComplete {
+		width: 100%;
 	}
 }
