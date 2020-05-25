@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, Route, Switch } from "react-router-dom";
+import line_black from "../assets/line_black.png";
+import line_yellow from "../assets/line_yellow.png";
+import logo from "../assets/logo.png";
 import logo_vvoj from "../assets/logo_vvoj.png";
 import machine from "../assets/machine.png";
 import AlgemeneVoorwaarden from "./AlgemeneVoorwaarden";
@@ -64,16 +67,7 @@ const initialState = {
 	subjectAllText: "",
 	subjectDateStart: false,
 	subjectDateEnd: false,
-	subjectMeeting: {
-		Uitnodigingen: false,
-		Agenda: false,
-		Presentielijsten: false,
-		IngekomenStukken: false,
-		Adviezen: false,
-		Besluiten: false,
-		Besluitenlijsten: false
-	},
-
+	subjectMeeting: false,
 	subjectLongOrganisation: "",
 	subjectReports: false,
 	subjectCorrespondance: false,
@@ -88,7 +82,8 @@ const initialState = {
 	subjectOutside: false,
 	subjectInside1: true,
 	subjectInside2: true,
-	subjectInside2inclusive: "",
+	subjectInside2exclusive: false,
+	subjectInside2inclusive: true,
 	subjectInside4: true,
 	subjectInside5: true,
 	subjectInside6: true,
@@ -138,8 +133,8 @@ const Homepage = props => {
 	const clickHandlerClearSelectedAuthority = () => {
 		setValue(current => ({ ...current, selectedAuthority: null }));
 	};
-	const changeHandlerSubjectType = ({ currentTarget: { value, name } }) => {
-		setValue(current => ({ ...current, [name]: value }));
+	const changeHandlerSubjectType = ({ currentTarget: { value } }) => {
+		setValue(current => ({ ...current, subjectType: value }));
 	};
 	const changeHandlerRadio = ({
 		currentTarget: {
@@ -178,15 +173,7 @@ const Homepage = props => {
 			}
 		}));
 	};
-	const changeHandlerSubjectMeeting = ({ currentTarget: { checked, name } }) => {
-		setValue(current => ({
-			...current,
-			subjectMeeting: {
-				...current.subjectMeeting,
-				[name]: checked
-			}
-		}));
-	};
+
 	const changeHandlerSubjectText = ({
 		currentTarget: {
 			value,
@@ -283,7 +270,7 @@ const Homepage = props => {
 			<Route exact path="/">
 				<div className="homepageBlock">
 					<div className="blockText">
-						<p className="logo">Wob-generator</p>
+						<img className="logoWob" src={logo} />
 						<h1>Schrijf in 3 simpele stappen je eigen Wob-verzoek</h1>
 						<p>
 							Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat noemen we een Wob-verzoek.
@@ -309,17 +296,17 @@ const Homepage = props => {
 				</div>
 				<div className="extra_content">
 					{" "}
-					<hr className="horizontalRule"></hr>
+					<img src={line_yellow} className="horizontalRule" />
 				</div>
 				<HomepageWaarom />
 				<div className="extra_content">
 					{" "}
-					<hr className="horizontalRule"></hr>
+					<img src={line_black} className="horizontalRule" />
 				</div>
 				<HomepageWaaromTool />
 				<div className="extra_content">
 					{" "}
-					<hr className="horizontalRule"></hr>
+					<img src={line_yellow} className="horizontalRule" />
 				</div>
 				<HomepageOvergenerator />
 			</Route>
@@ -376,8 +363,6 @@ const Homepage = props => {
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerUser={changeHandlerUser}
 					changeHandlerRadio={changeHandlerRadio}
-					changeHandlerSubjectType={changeHandlerSubjectType}
-					changeHandlerSubjectMeeting={changeHandlerSubjectMeeting}
 				/>
 			</Route>
 			<Route path="/StapExtra">

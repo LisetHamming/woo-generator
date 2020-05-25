@@ -2,6 +2,7 @@ import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 import formatDate from "./FormatDate";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
@@ -16,26 +17,30 @@ function Stap3_3({
 	changeHandlerSubjectType,
 	clickHandlerStep,
 	getCurrentDate,
-	changeHandlerRadio,
-	changeHandlerSubjectMeeting
+	changeHandlerRadio
 }) {
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
+			<img className="logoWob" src={logo} />
 			<h2>
+				{" "}
 				Stap 3:
-				{value.subjectType === "specific" ? " Je weet wat je wilt (en ook nog...)" : " Je wilt alles (behalve...)"}
+				{value.subjectType === "specific"
+					? " Welke informatie zoek je? (Specifieke documenten)"
+					: " Welke informatie zoek je? (Alle documenten)"}
 			</h2>
 			<span>
-				<p className="extraPadding">Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
-				<PopupButton number="14" />
+				<p>
+					Omschrijf zo nauwkeurig mogelijk de titel, auteur en datum van het document of de documenten waar je naar op
+					zoek bent.
+				</p>
 			</span>
 			<form>
 				{value.subjectType === "specific" && (
 					<div>
 						<span className="objectInput">
 							<label>
-								Omschrijving van specifieke document
+								Titel en auteur
 								<input
 									size="30"
 									id="subjectSpecificText"
@@ -47,7 +52,7 @@ function Stap3_3({
 							</label>
 
 							<label>
-								Datum <br />
+								Datum of jaar <br />
 								<input
 									id="subjectSpecificDate"
 									value={value.subjectSpecificDate}
@@ -63,7 +68,7 @@ function Stap3_3({
 						{value.subjectTextObject.map((item, index) => (
 							<span className="object" key={index}>
 								<p>
-									{item.subjectText} {item.subjectDate && formatDate(new Date(item.subjectDate))}
+									{item.subjectText} {formatDate(new Date(item.subjectDate))}
 								</p>
 								<button type="button" className="buttonStyle" value={index} onClick={clickHandlerEmptySubjectText}>
 									<FontAwesomeIcon className="fontIcon" icon={faTimes} />
@@ -72,12 +77,18 @@ function Stap3_3({
 						))}
 					</div>
 				)}
-				{value.subjectType === "specific" && (
-					<div>
-						<p>Bovendien wil ik graag de onderliggende documenten, namelijk:</p>
-						<br />
-					</div>
-				)}
+				<span>
+					<h1>Onderliggende stukken</h1>
+					<br />
+				</span>
+				<span>
+					<p>Als je ook onderliggende stukken wil, vink dan hieronder aan welke.</p>
+				</span>
+				<br />
+				<span>
+					<p className="extraPadding">Denk goed na over welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
+					<PopupButton number="14" />
+				</span>
 				<div>
 					<span>
 						<label className="container">
@@ -99,13 +110,14 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerSubjectMeeting}
+										onChange={changeHandlerCheckbox}
 										id="textUitnodiging"
 										type="checkbox"
-										checked={value.subjectMeeting.Uitnodigingen}
-										name="Uitnodigingen"
+										checked={value[18]}
+										name="checkText"
+										value="18"
 									/>
-									Uitnodigingen
+									Uitnodigingen, presentielijsten
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -113,11 +125,12 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerSubjectMeeting}
+										onChange={changeHandlerCheckbox}
 										id="textAgenda"
 										type="checkbox"
-										checked={value.subjectMeeting.Agenda}
-										name="Agenda"
+										checked={value[19]}
+										name="checkText"
+										value="19"
 									/>
 									Agenda’s
 									<br />
@@ -127,25 +140,12 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerSubjectMeeting}
-										id="textPresentatieLijsten"
-										type="checkbox"
-										checked={value.subjectMeeting.Presentielijsten}
-										name="Presentielijsten"
-									/>
-									Presentielijsten
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
-							<span className="subForm ">
-								<label className="container">
-									<input
-										onChange={changeHandlerSubjectMeeting}
+										onChange={changeHandlerCheckbox}
 										id="textIngekomen"
 										type="checkbox"
-										checked={value.subjectMeeting.IngekomenStukken}
-										name="IngekomenStukken"
+										checked={value[21]}
+										name="checkText"
+										value="21"
 									/>
 									Ingekomen stukken
 									<br />
@@ -155,62 +155,20 @@ function Stap3_3({
 							<span className="subForm ">
 								<label className="container">
 									<input
-										onChange={changeHandlerSubjectMeeting}
-										id="textAdviezen"
-										type="checkbox"
-										checked={value.subjectMeeting.Adviezen}
-										name="Adviezen"
-									/>
-									Adviezen
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
-							<span className="subForm ">
-								<label className="container">
-									<input
-										onChange={changeHandlerSubjectMeeting}
+										onChange={changeHandlerCheckbox}
 										id="textBesluiten"
 										type="checkbox"
-										checked={value.subjectMeeting.Besluiten}
-										name="Besluiten"
+										checked={value[23]}
+										name="checkText"
+										value="23"
 									/>
-									Besluiten
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
-							<span className="subForm ">
-								<label className="container">
-									<input
-										onChange={changeHandlerSubjectMeeting}
-										id="textBesluitenlijsten"
-										type="checkbox"
-										checked={value.subjectMeeting.Besluitenlijsten}
-										name="Besluitenlijsten"
-									/>
-									Besluitenlijsten en notulen
+									Besluiten, besluitenlijsten, notulen
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
 							</span>
 						</div>
 					)}
-					<span>
-						<label className="container">
-							<input
-								onChange={changeHandlerCheckbox}
-								id="text2"
-								type="checkbox"
-								checked={value[11]}
-								name="checkText"
-								value="11"
-							/>
-							Rapporten en presentaties
-							<br />
-							<div className="checkmark"></div>{" "}
-						</label>
-					</span>
 					<span>
 						<label className="container">
 							<input
@@ -242,6 +200,41 @@ function Stap3_3({
 								<div className="checkmark"></div>{" "}
 							</label>
 						</span>
+					)}
+					{value[12] && (
+						<span className="subForm">
+							<label className="container">
+								<input
+									onChange={changeHandlerCheckbox}
+									id="text5"
+									type="checkbox"
+									checked={value[14]}
+									name="checkText"
+									value="14"
+								/>{" "}
+								Met andere personen of organisaties
+								<br />
+								<div className="checkmark"></div>{" "}
+							</label>
+						</span>
+					)}
+					{value[14] && (
+						<div>
+							<span className="subsubForm">
+								<label>
+									Organisatie of persoon (meerdere mogelijk)
+									<input
+										size="40"
+										id="subjectLongOrganisation"
+										value={value.subjectLongOrganisation}
+										onChange={changeHandlerUser}
+										type="text"
+										placeholder="Shell N.V., de heer J. Jansen, Saudische ambassade"
+									/>
+									<br />
+								</label>
+							</span>
+						</div>
 					)}
 					{value[13] && value[12] && (
 						<div>
@@ -284,10 +277,10 @@ function Stap3_3({
 											<input
 												size="50"
 												id="subjectInside2inclusive"
-												checked={value.subjectInside2inclusive === "inclusief"}
-												name="subjectInside2inclusive"
-												value="inclusief"
-												onChange={changeHandlerSubjectType}
+												value="subjectInside2inclusive"
+												checked={value.subjectInside2inclusive}
+												onChange={changeHandlerRadio}
+												name="checkText"
 												type="radio"
 											/>
 											Inclusief bijlagen
@@ -300,10 +293,10 @@ function Stap3_3({
 											<input
 												size="50"
 												id="subjectInside2exclusive"
-												checked={value.subjectInside2inclusive === "exclusief"}
-												name="subjectInside2inclusive"
-												value="exclusief"
-												onChange={changeHandlerSubjectType}
+												value="subjectInside2exclusive"
+												checked={value.subjectInside2exclusive}
+												onChange={changeHandlerRadio}
+												name="checkText"
 												type="radio"
 											/>
 											Exclusief bijlagen
@@ -313,22 +306,6 @@ function Stap3_3({
 									</span>
 								</div>
 							)}
-							<span className="subsubForm">
-								<label className="container">
-									<input
-										size="50"
-										id="subjectInside4"
-										value="subjectInside4"
-										checked={value.subjectInside4}
-										onChange={changeHandlerCheckbox}
-										name="checkText"
-										type="checkbox"
-									/>
-									SMS-jes en Whatsapp-berichten
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
 
 							<span className="subsubForm">
 								<label className="container">
@@ -365,56 +342,55 @@ function Stap3_3({
 						</div>
 					)}
 
-					{value[12] && (
-						<span className="subForm">
-							<label className="container">
-								<input
-									onChange={changeHandlerCheckbox}
-									id="text5"
-									type="checkbox"
-									checked={value[14]}
-									name="checkText"
-									value="14"
-								/>{" "}
-								Met andere personen of organisaties
-								<br />
-								<div className="checkmark"></div>{" "}
-							</label>
-						</span>
-					)}
-					{value[14] && (
-						<div>
-							<span className="subsubForm">
-								<label>
-									Organisatie of persoon
-									<input
-										size="40"
-										id="subjectLongOrganisation"
-										value={value.subjectLongOrganisation}
-										onChange={changeHandlerUser}
-										type="text"
-										placeholder="Bijvoorbeeld Shell of J. Jansen"
-									/>
-									<br />
-								</label>
-							</span>
-						</div>
-					)}
+					<span className="subsubForm">
+						<label className="container">
+							<input
+								size="50"
+								id="subjectInside4"
+								value="subjectInside4"
+								checked={value.subjectInside4}
+								onChange={changeHandlerCheckbox}
+								name="checkText"
+								type="checkbox"
+							/>
+							SMS-jes en Whatsapp-berichten
+							<br />
+							<div className="checkmark"></div>{" "}
+						</label>
+					</span>
+
 					<span>
 						<label className="container">
 							<input
 								onChange={changeHandlerCheckbox}
-								id="text6"
+								id="text7"
 								type="checkbox"
-								checked={value[15]}
+								checked={value[11]}
 								name="checkText"
-								value="15"
+								value="16"
 							/>{" "}
-							Financiele documenten
+							Rapporten en adviezen
 							<br />
 							<div className="checkmark"></div>
 						</label>
 					</span>
+
+					<span>
+						<label className="container">
+							<input
+								onChange={changeHandlerCheckbox}
+								id="text7"
+								type="checkbox"
+								checked={value[15]}
+								name="checkText"
+								value="16"
+							/>{" "}
+							Financiële documenenten
+							<br />
+							<div className="checkmark"></div>
+						</label>
+					</span>
+
 					<span>
 						<label className="container">
 							<input
@@ -449,14 +425,13 @@ function Stap3_3({
 						<div>
 							<span className="subForm">
 								<label>
-									Andere documentsoorten
 									<input
 										size="50"
 										id="subjectElseText"
 										value={value.subjectElseText}
 										onChange={changeHandlerUser}
 										type="text"
-										placeholder="Bijvoorbeeld: proces-verbaal of boetes"
+										placeholder="Bijvoorbeeld 'Jaarrekening' of 'Proces-verbaal'"
 									/>
 									<br />
 								</label>
@@ -503,14 +478,6 @@ function Stap3_3({
 				</div>
 			</form>
 
-			<span>
-				<p>Welke informatie moet de overheid openbaar maken.</p>
-				<PopupButton number="13" />
-			</span>
-			<span>
-				<p className="extraPadding">Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
-				<PopupButton number="14" />
-			</span>
 			<Link to="/Stap3_2">Terug</Link>
 			<Link to="/StapExtra" onClick={() => clickHandlerStep("step9")}>
 				Volgende

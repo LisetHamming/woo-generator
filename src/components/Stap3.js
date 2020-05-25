@@ -16,21 +16,21 @@ function Stap3({
 
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<span>
 				<p>
-					Beschrijf kort en bondig het onderwerp waarover je informatie vraagt. Let op: je kunt alleen informatie over
-					overheidstaken opvragen.
+					Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Check daarbij ook of je
+					omschrijving zoals die in de brief verschijnt goed loopt.
+					<br /> <br />
+					Let op: je kunt alleen informatie over overheidstaken opvragen.
+					<PopupButton number="8" />
 				</p>
-				<PopupButton number="8" />
 			</span>
 			<br />
-
 			<form>
 				<span>
 					<label>
-						Onderwerp in lopende tekst (verplicht)
+						Onderwerp beschrijven (verplicht)
 						<input
 							size="50"
 							value={value.subjectLong}

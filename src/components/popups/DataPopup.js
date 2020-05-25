@@ -3,18 +3,19 @@ const DataPopup = {
 		id: "1",
 		h1: "Ben je een journalist?",
 		p:
-			"Je hoeft geen journalist te zijn om een Wob-verzoek te doen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten. Bovendien is het wel zo eerlijk om je Wob-verzoek vanaf het begin met open vizier te doen."
+			"Je hoeft geen journalist te zijn om een Wob-verzoek te doen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten."
 	},
 	2: {
 		id: "2",
 		h1: "Doel van je verzoek?",
 		p:
-			"Je bent niet verplicht om het doel van je verzoek toe te lichten, maar het kan de overheidsinstantie helpen om beter te begrijpen welke documenten je zoekt. Overigens kan het verstandig zijn om juist niet te vertellen welk nieuws je op het spoor denkt te zijn. Weeg af wat slim is. Als je deze optie aanvinkt, schrijf dan hier handmatig op wat het doel van je verzoek is."
+			"Je bent niet verplicht om het doel van je verzoek toe te lichten, maar het kan de overheidsinstantie helpen om beter te begrijpen welke documenten je zoekt. Overigens kan het soms juist verstandig zijn om niet te vertellen welk nieuws je op het spoor denkt te zijn. Weeg af wat slim is."
 	},
 	3: {
 		id: "3",
-		h1: "Namen een (media) organisatie",
-		p: "Het kan handig zijn om te benoemen voor welke organisatie je wobt"
+		h1: "Namens een (media-) organisatie",
+		p:
+			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je goedkoper dan als organisatie. Op dit moment betaal je als persoon 174 euro en als organisatie 345 euro. Als je voor een bekende media-organisatie werkt kan dat ook gewicht in de schaal leggen bij de behandeling van je verzoek."
 	},
 	4: {
 		id: "4",
@@ -26,27 +27,31 @@ const DataPopup = {
 	},
 	5: {
 		id: "5",
-		h1: "Overheidsinstanties",
+		h1: "Welke instanties kan ik Wobben?",
 		p:
-			"Gemeenten, provincies, ministeries, waterschappen, de politie, inspectiediensten en tal van zelfstandige bestuursorganen (ZBO’s) die een overheidstaak uitvoeren. Hier vindt je een lijst met zogenaamde ‘publiekrechtelijke instellingen’, waarvan je misschien niet gedacht had dat ze onder de Wob zouden vallen. Dat doen ze dus wel! Anderzijds zijn er private bedrijven die wel een publieke taak hebben, maar toch niet onder de Wob vallen. Denk aan allerlei nutsbedrijven."
+			"Er zijn in Nederland tal van overheidsinstanties: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Deze instanties zijn allemaal ‘wobbaar’ en staan in de database van de Wob-generator.",
+		p2:
+			"De database van de Wob-generator is gekoppeld aan de database van de ‘Allmanak’, een initiatief van de Open State Foundation. De Allmanak is wat betreft overheidsinstanties in Nederland de meest complete databank die online beschikbaar is. Toch zijn er ook organisaties die onder de Wob vallen maar (nog) niet in de database van de Wob-generator staan. Denk aan zogeheten 'publiekrechtelijke instellingen' zoals TNO of de Wageningen Universiteit. Je kunt je verzoek dan ook sturen naar de minister onder wiens verantwoordelijkheid die organisatie valt, waarbij je in de brief benoemt dat de informatie zich bij die organisatie bevindt."
 	},
 	6: {
 		id: "6",
-		h1: "Juiste Overheid?",
+		h1: "Juiste overheid?",
 		p:
-			"Zo kies je de juiste overheidsinstantie: Locatie - Vraag je af welke instantie over het onderwerp gaat? Is het een lokale, een provinciale of rijkskwestie? Bij wie kunnen documenten over het onderwerp zijn opgeslagen? Google - Als je er niet uitkomt, Google dan je onderwerp en kijk bij welke overheidsinstanties je uit komt. Meerdere instanties - Als er meerdere overheidsinstanties over het onderwerp gaan, dan kun je meerdere verzoeken indienen. Wob ‘hoog’ of juist ‘laag’ - Als de ene instantie onder de verantwoordelijkheid van de andere instantie valt, dien je verzoek dan in bij de hoogste instantie. Denk bijvoorbeeld aan de Immigratie en Naturalisatiedienst (IND). Deze dienst valt onder het ministerie van Justitie en Veiligheid. Weet je niet zeker of de documenten bij de IND of het Ministerie liggen, wob dan het Ministerie. Daar staat tegenover dat instanties die minder onder een vergrootglas liggen soms makkelijker documenten vrijgeven. Denk na waar je de meeste kans maakt! Doorgeleiding - Wees gerust: als je toch de verkeerde instantie hebt gekozen, is die instantie verplicht om je verzoek naar de juiste instantie door te sturen. In de brief herinneren wij de overheidsinstantie aan deze verplichting. Naamsverandering - Let op: overheidsinstanties veranderen regelmatig van naam. Denk aan het Ministerie van Veiligheid en Justitie dat veranderd is in Justitie en Veiligheid. We proberen dit up-to-date te houden maar laat het ons vooral weten als onze lijst is verouderd. Voor meer tips bezoek de website van de Wob-werkgroep van de Nederlandse Vereniging voor Onderzoeksjournalistiek (VVOJ)."
+			"Vraag je allereerst af bij wie de documenten over je onderwerp te vinden zijn. Als je er niet uitkomt, Google dan je onderwerp en kijk welke overheidsinstanties tevoorschijn komen. Je kunt ook meerdere verzoeken indienen bij verschillende instanties. Weet je niet zeker of de documenten bijvoorbeeld bij de Immigratie en Naturalisatiedienst (IND) of het ministerie van Justitie en Veiligheid liggen, wob dan de ‘hoogste’ instantie, in dit geval het Ministerie. Daar staat tegenover dat instanties die minder onder een vergrootglas liggen soms makkelijker documenten vrijgeven. Denk dus ook na over waar je de meeste kans maakt!",
+		p2:
+			"En wees gerust: de instantie die je wobt is verplicht om je verzoek naar de juiste instantie door te sturen. Voor de zekerheid herinneren wij daarom in de alinea ‘doorgeleiding’ de overheidsinstantie aan deze verplichting."
 	},
 	7: {
 		id: "7",
 		h1: "Geadresseerde",
 		p:
-			"Als je de naam van de hoogstgeplaatste functionaris van de instantie kent, bijvoorbeeld van de minister, de staatssecretaris, de commissaris van de koningin, enzovoort, dan kun je die er zelf bijschrijven. Maar het is niet verplicht. Als je het niet weet, geen probleem. De brief zal dan gericht worden aan de titel van de hoogstgeplaatste functionaris van de instantie."
+			"Als je de naam van de hoogstgeplaatste functionaris van de instantie die je wobt kent, bijvoorbeeld van de minister, dan kun je die er na het downloaden van je brief zelf bijschrijven. Maar dat is niet verplicht."
 	},
 	8: {
 		id: "8",
-		h1: "Overheidstaak",
+		h1: "Alleen overheidstaken",
 		p:
-			"Je kunt alleen informatie opvragen die verband houdt met een overheidstaak, in de Wob wordt dat een ‘bestuurlijke aangelegenheid’ genoemd. De Wob werkt niet als je informatie zoekt over bijvoorbeeld de privé-aangelegenheden van een ambtenaar. Maar weer wel als je informatie wilt over declaraties voor dienstreizen. Voor informatie over jezelf is de Wob ook niet geschikt."
+			"Je kunt alleen informatie opvragen die verband houdt met een overheidstaak. De Wob stelt namelijk de eis dat een verzoek moet gaan over een ‘bestuurlijke aangelegenheid’. Privé-aangelegenheden van een ambtenaar vallen hier niet onder, informatie over declaraties voor dienstreizen weer wel. Voor informatie over jezelf is de Wob niet geschikt."
 	},
 	9: {
 		id: "9",
@@ -56,7 +61,7 @@ const DataPopup = {
 	},
 	10: {
 		id: "10",
-		h1: "Specifieke documenten én alles?",
+		h1: "NB verwijderd: Specifieke documenten én alles?",
 		p:
 			"Als je specifieke documenten wilt opvragen maar toch ook wilt weten wat de overheidsinstantie allemaal nog meer aan documenten over dit onderwerp heeft, is het verstandiger om twee aparte verzoeken te versturen. Je kunt daarom niet beide opties aanvinken."
 	},
@@ -64,29 +69,29 @@ const DataPopup = {
 		id: "11",
 		h1: "Specifieke documenten",
 		p:
-			"Kies hiervoor als je precies weet welk document of documenten je wilt hebben. Kies je voor deze optie, dan krijg je nog steeds de mogelijkheid om ook aanvullende documenten te vragen. Zelfs als je precies weet welk document je wil hebben, kan het namelijk nuttig zijn om ook andere documenten te vragen. Zo krijg je inzicht in de totstandkoming van het document, de personen of organisaties die daarbij betrokken zijn geweest, koerswijzigingen, enzovoort. "
+			"Kies hiervoor als je precies weet welk document of documenten je wilt hebben. Op de volgende pagina krijg je de mogelijkheid om ook openbaarmaking van onderliggende documenten te vragen. Zo krijg je inzicht in de totstandkoming van het document/de documenten, de personen of organisaties die daarbij betrokken zijn geweest, koerswijzigingen, enzovoort.",
+		p2:
+			"Wil je naast deze specifieke documenten echt álle documenten over dit onderwerp, dan is het verstandiger om twee aparte verzoeken te versturen. Vandaar dat je niet beide opties kan aanvinken."
 	},
 	12: {
 		id: "12",
 		h1: "Alles over dit onderwerp",
 		p:
-			"Soms weet je wel dat een bepaalde overheidsinstantie zich met een onderwerp heeft beziggehouden, maar niet wat voor documenten ze daarover hebben opgesteld. In dat geval kun je verzoeken om alle documenten over het onderwerp openbaar te maken. Dit wordt ook wel een ‘sleepnet’-wob genoemd. ",
+			"Soms weet je wél dat een bepaalde overheidsinstantie zich met een onderwerp heeft beziggehouden, maar niet welke documenten ze daarover hebben opgesteld. In dat geval kun je vragen om alle documenten over het onderwerp. Dit wordt ook wel een ‘sleepnet’-wob genoemd.",
 		p2:
-			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten. ",
-		P3:
-			"Om diezelfde redenen is het gebruikelijk om in een sleepnet-wob te schrijven dat je bereid bent om in overleg het verzoek in te perken, bijvoorbeeld door eerst een lijst met alle aanwezige stukken te ontvangen en daar een keuze uit te maken. Bij de ‘Extra opties’ aan het eind van deze tool kun je de tekstblokjes waarin je dit aanbiedt aan of uit zetten."
+			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten. Dit kun je op de volgende pagina aangeven."
 	},
 	13: {
 		id: "13",
-		h1: "Documenten",
+		h1: "Alleen 'documenten'",
 		p:
-			"‘Documenten’ zijn gelukkig wel breder dan geschreven stukken alleen. Excelsheets, databestanden, audio-opnames, sms’jes en WhatsAppjes vallen er bijvoorbeeld ook onder. Natuurlijk kun je de overheid ook om informatie vragen die niet al op een gegevensdrager staat, bijvoorbeeld wat de gemeente vindt van een bepaalde ontwikkeling of wat de gemeente van plan is daaraan te doen. Dat is dan geen Wob-verzoek, maar een gewoon informatieverzoek. Hiervoor is de Wob-generator niet bedoeld."
+			"De overheid is verplicht om overheidsinformatie vastgelegd in documenten openbaar te maken. ‘Documenten’ omvat gelukkig wel meer dan alleen geschreven stukken. Excelsheets, databestanden, audio-opnames, sms’jes en WhatsAppjes vallen er bijvoorbeeld ook onder. Natuurlijk kun je de overheid om informatie vragen die niet al op een gegevensdrager staat, bijvoorbeeld wat de gemeente vindt van een bepaalde ontwikkeling of wat de gemeente van plan is daaraan te doen. Dat is dan geen Wob-verzoek, maar een gewoon informatieverzoek. Hiervoor is de Wob-generator niet geschikt."
 	},
 	14: {
 		id: "14",
 		h1: "Welke documenten zijn nuttig?",
 		p:
-			"‘Documenten’ zijn gelukkig wel breder dan geschreven stukken alleen. Excelsheets, databestanden, audio-opnames, sms’jes en WhatsAppjes vallen er bijvoorbeeld ook onder. Natuurlijk kun je de overheid ook om informatie vragen die niet al op een gegevensdrager staat, bijvoorbeeld wat de gemeente vindt van een bepaalde ontwikkeling of wat de gemeente van plan is daaraan te doen. Dat is dan geen Wob-verzoek, maar een gewoon informatieverzoek. Hiervoor is de Wob-generator niet bedoeld."
+			"E-mails, bijvoorbeeld, kunnen veel inzicht geven in het besluitvormingsproces, de toon waarin tussen bepaalde personen gecommuniceerd wordt en de frequentie van het contact. Maar e-mails kunnen ook over volstrekt irrelevante zaken gaan, zoals de hoeveelheid broodjes die bij de vergadering zijn besteld. Bedenk dus of e-mails in het geval van jouw verzoek relevant zijn."
 	},
 	15: {
 		id: "15",
@@ -104,7 +109,7 @@ const DataPopup = {
 		id: "17",
 		h1: "Periode kiezen",
 		p:
-			"Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de wob-ambtenaren nodeloos lang bezig zijn met je verzoek."
+			"Door de periode die je verzoek betreft te beperken, voorkom je niet alleen dat de Wob-ambtenaar veel tijd kwijt is aan het opzoeken van documenten waarvan jij al weet dat je er niks mee gaat doen. Je zorgt er ook voor dat je je geen stapels irrelevante documenten op de hals haalt. Vraag je daarom ook af in welke periode jouw onderwerp speelde."
 	}
 };
 export default DataPopup;

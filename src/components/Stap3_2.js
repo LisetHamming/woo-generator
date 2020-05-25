@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
 
@@ -13,14 +14,19 @@ function Stap3_2({
 }) {
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
+			<img className="logoWob" src={logo} />
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<span>
 				<p>
-					Wil je alle documenten die de overheidsinstantie heeft over je onderwerp? Of weet je al precies welke
-					documenten je wilt hebben. Maak je keuze.
+					Maak een keuze tussen het opvragen van bepaalde, specifieke documenten of alle documenten die de
+					overheidsinstantie over dit onderwerp heeft.
 				</p>
-				<PopupButton number="10" />
+			</span>
+			<br />
+			<span>
+				{" "}
+				<p>Welke informatie moet de overheid openbaar maken?</p>
+				<PopupButton number="13" />
 			</span>
 
 			<form>
@@ -31,7 +37,7 @@ function Stap3_2({
 							id="subjectSpecific"
 							type="radio"
 							checked={value.subjectType === "specific"}
-							name="subjectType"
+							name="subjectSpecific"
 							value="specific"
 						/>{" "}
 						Ik wil specifieke documenten opvragen
@@ -48,26 +54,15 @@ function Stap3_2({
 							id="subjectAll"
 							type="radio"
 							checked={value.subjectType === "all"}
-							name="subjectType"
+							name="subjectSpecific"
 							value="all"
 						/>{" "}
-						Ik wil alles over het onderwerp
+						Ik wil alle documenten die de overheidsinstantie over dit onderwerp heeft
 						<div className="checkmark"></div>
 					</label>
 					<PopupButton number="12" />
 				</span>
 			</form>
-
-			<span>
-				{" "}
-				<p>Welke informatie moet de overheid openbaar maken</p>
-				<PopupButton number="13" />
-			</span>
-			<span className="extraPadding">
-				{" "}
-				<p>Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
-				<PopupButton number="14" />{" "}
-			</span>
 			<Link to="/Stap3">Terug</Link>
 			<Link to="/Stap3_3">Volgende</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />

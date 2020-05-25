@@ -101,10 +101,6 @@ h1 {
 	width: 100%;
 }
 
-.horizontalRule {
-	border-top: 1px solid rgb(192, 43, 57);
-}
-
 .blockText {
 	width: 35%;
 	padding: 40px;
@@ -140,36 +136,16 @@ h1 {
 	width: 80px;
 }
 
-p.logo {
-	color: rgb(192, 43, 57) !important;
-	margin-bottom: 0.5em;
-	font-size: 2em;
-}
-
-p.header {
-	text-align: center;
-	color: rgb(192, 43, 57);
-	font-size: 2em;
-}
-
 .popup {
 	background-color: white;
-	position: fixed;
+	position: absolute;
 	width: 30%;
+
 	overflow-y: scroll;
 	right: 0;
-	bottom: 0;
-	border: 1px solid black;
-}
-
-.backgroundPopUp {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
+	top: 300px;
 	z-index: 20;
-	background-color: rgba(0, 0, 0, 0.2);
+	border: 1px solid black;
 }
 
 .letterComplete {
@@ -534,14 +510,14 @@ Checkbox styles
 		display: none;
 	}
 
-	.letterUI {
+	#letterUI {
 		width: 100vw;
 		display: block;
 		left: 0;
 		margin: 0;
 	}
 
-	.letterComplete {
-		width: 100%;
+	#letterComplete {
+		width: 100vw !important;
 	}
 }

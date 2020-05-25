@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
 
@@ -16,13 +17,11 @@ function Stap1({
 
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
+			<img className="logoWob" src={logo} />
 			<h2>Stap 1: Over jezelf</h2>
 			<p>
-				Je hoeft geen journalist te zijn om te wobben, maar als je het wel bent kan het handig zijn om dat kenbaar te
-				maken. Je hoeft ook het (journalistieke) doel van je verzoek niet toe te lichten, maar ook hier geldt dat er
-				redenen kunnen zijn om dat wel te doen. Tot slot kun je uit eigen naam of namens een organisatie wobben. Klik op
-				de i’tjes voor meer informatie.
+				Vul hier een aantal gegevens in over jezelf en maak enkele keuzes over hoe je jezelf en je verzoek aan de
+				overheid presenteert.
 			</p>
 			<form>
 				<span>
@@ -41,7 +40,7 @@ function Stap1({
 				</span>
 				<span>
 					<label className="container">
-						Ik Wob namens een (media-) organisatie
+						Ik wob namens een (media-) organisatie
 						<input
 							id="userCompany"
 							value="userCompanyName"

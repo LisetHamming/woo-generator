@@ -1,13 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 import LetterUI from "./LetterUI";
 
 function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentDate }) {
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
+			<img className="logoWob" src={logo} />
 			<h2>Extra opties</h2>
-			<p>Schakel eventueel opties uit waarvan je denkt dat ze niet van toepassing zijn op jouw verzoek.</p>
+			<p>
+				Onderstaande opties vergroten in het algemeen je kans op openbaarmaking van de informatie omdat ze anticiperen
+				op belemmeringen die in het proces kunnen ontstaan. Het kan geen kwaad om ze allemaal in te sluiten maar sommige
+				opties kunnen in jouw specifieke geval niet relevant zijn. Dan kun je ze uitzetten.
+			</p>
 			<form>
 				<span>
 					<label className="container">
@@ -79,7 +84,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="5"
 						/>{" "}
-						Insluiting alle formaten
+						Insluiting alle gegevensdragers
 						<br />
 						<div class="checkmark"></div>
 					</label>
@@ -109,7 +114,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="7"
 						/>{" "}
-						Motivering bij gedaging
+						Motivering bij weigering
 						<br />
 						<div class="checkmark"></div>
 					</label>
@@ -125,21 +130,6 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							value="8"
 						/>{" "}
 						Mondelinge toelichting
-						<br />
-						<div class="checkmark"></div>
-					</label>
-				</span>
-				<span>
-					<label className="container">
-						<input
-							onChange={changeHandlerCheckbox}
-							id="text9"
-							type="checkbox"
-							checked={value[9]}
-							name="checkText"
-							value="9"
-						/>{" "}
-						Bevestiging beslistermijn
 						<br />
 						<div class="checkmark"></div>
 					</label>

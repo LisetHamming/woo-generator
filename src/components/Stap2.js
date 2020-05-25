@@ -2,6 +2,7 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
 import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
@@ -20,10 +21,10 @@ function Stap2({
 	const [errors, setErrors] = useState([]);
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
+			<img className="logoWob" src={logo} />
 			<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
 			<span>
-				<p>Wob-verzoeken kunnen alleen bij overheidsinstanties worden</p>
+				<p>Kies hier bij welke overheidsinstantie je je Wob-verzoek wilt indienen.</p>
 				<PopupButton number="5" />
 			</span>
 			{errors.includes("selectedAuthority") && (
@@ -49,24 +50,18 @@ function Stap2({
 						<h3>{value.selectedAuthority.naam}</h3>
 						<p>{value.selectedAuthority.url}</p>
 						<br />
-						{value.selectedAuthority.adres.postcode ? (
-							<React.Fragment>
-								<p>
-									{value.selectedAuthority.adres.postbus ??
-										value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}
-								</p>
-								<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
-							</React.Fragment>
+						{value.selectedAuthority.adres ? (
+							<p>
+								{value.selectedAuthority.adres.postbus ??
+									value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}
+							</p>
 						) : (
-							<React.Fragment>
-								<p>
-									Er is helaas geen adres bekend bij ons, beschik je zelf wel over een adres van deze instantie, vul dan
-									het onderstaande formulier in.
-								</p>
-								<SetSelectedAuthorityManual value={value} clickHandlerAuthority={clickHandlerAuthority} />
-							</React.Fragment>
+							<p>
+								Er is helaas geen adres bekend bij ons, beschik je zelf wel over een adres van deze instantie, dan kun
+								je het invoeren zodra je de brief als .doc hebt gedownload
+							</p>
 						)}
-
+						<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
 						<p>{value.selectedAuthority.value}</p>
 						<div>
 							<button
