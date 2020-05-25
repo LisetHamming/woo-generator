@@ -5,7 +5,7 @@ import formatDate from "./FormatDate";
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	return (
 		<div className="letterComplete">
-			<h1>Voorbeeld van je Wob-verzoek:</h1>
+			<h1>Je Wob-verzoek:</h1>
 			<div id="letterUI" style={{ fontFamily: "Arial" }}>
 				<div className="adressAuthority">
 					{value.selectedAuthority && (
@@ -85,10 +85,13 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 										{value.subjectDateEnd ? " tot " + formatDate(new Date(value.subjectDateEnd)) : ""}, waaronder:
 									</p>
 								</React.Fragment>
-							)}
+							)}{" "}
+							${console.log(value.subjectMeeting, "Dit zit er in de subjectMeeting")}
 							<p>
 								{value[10]
-									? `- Vergaderstukken, waaronder: ${Object.keys(value.subjectMeeting)
+									? `- Vergaderstukken ${value.subjectMeeting === "" ? "" : ", waaronder:"} ${Object.keys(
+											value.subjectMeeting
+									  )
 											.filter(key => value.subjectMeeting[key])
 											.map(key => DataCheckbox[key])
 											.join(", ")};`
@@ -124,9 +127,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									: ""}
 							</p>
 							<p>{value[17] ? `-  ${value.subjectElseText}` : ""}</p>
-
 							<br />
-
 							<p>
 								Mocht u beschikken over andere documenten die – aanvullend of in plaats van gevraagde documenten -
 								inzicht in deze bestuurlijke aangelegenheid te kunnen geven, dan verzoek ik u die documenten ook te
