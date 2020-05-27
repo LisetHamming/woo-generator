@@ -15,11 +15,13 @@ function Stap3_2({
 		<div className="formLetter">
 			<p className="logo">Wob-generator</p>
 			<h2>Stap 3: Welke informatie zoek je?</h2>
+			<p>
+				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Check daarbij ook of je
+				omschrijving zoals die in de brief verschijnt goed loopt.
+			</p>
+			<br />
 			<span>
-				<p>
-					Wil je alle documenten die de overheidsinstantie heeft over je onderwerp? Of weet je al precies welke
-					documenten je wilt hebben. Maak je keuze.
-				</p>
+				<p>Let op: je kunt alleen informatie over overheidstaken opvragen.</p>
 				<PopupButton number="10" />
 			</span>
 
@@ -51,7 +53,7 @@ function Stap3_2({
 							name="subjectType"
 							value="all"
 						/>{" "}
-						Ik wil alles over het onderwerp
+						ik wil alle documenten die de overheidsinstantie heeft over dit onderwerp
 						<div className="checkmark"></div>
 					</label>
 					<PopupButton number="12" />

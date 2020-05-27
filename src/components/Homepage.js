@@ -352,6 +352,7 @@ const Homepage = props => {
 					filteredDataText={filteredDataText}
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerUser={changeHandlerUser}
+					changeHandlerSubjectType={changeHandlerSubjectType}
 				/>
 			</Route>
 

@@ -43,7 +43,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<p>
 						Dit verzoek wordt gedaan op basis van de Wet openbaarheid van bestuur. Daaruit vloeit voort dat u binnen{" "}
 						{value.subjectMilieu ? "2" : "4"} weken een besluit moet nemen op dit verzoek
-						{value.subjectMilieu ? ", bla bla nieuwe zin over milieu." : "."}
+						{value.subjectMilieu ? ", omdat dit verzoek het milieu betreft." : "."}
 					</p>
 					<br />
 					<p>

@@ -51,15 +51,15 @@ const DataPopup = {
 	},
 	8: {
 		id: "8",
-		h1: "Overheidstaak",
+		h1: "Waarom je nauwkeurig moet zijn",
 		p:
-			"Je kunt alleen informatie opvragen die verband houdt met een overheidstaak, in de Wob wordt dat een ‘bestuurlijke aangelegenheid’ genoemd. De Wob werkt niet als je informatie zoekt over bijvoorbeeld de privé-aangelegenheden van een ambtenaar. Maar weer wel als je informatie wilt over declaraties voor dienstreizen. Voor informatie over jezelf is de Wob ook niet geschikt."
+			"Als het onderwerp waarover je informatie vraagt onduidelijk is of ontbreekt, kan de overheidsinstantie besluiten je verzoek niet in behandeling te nemen. Bovendien kan een te brede formulering ervoor zorgen dat de overheid om verduidelijking vraagt. Er kunnen dan weken verstrijken voordat de overheid met je verzoek aan de slag gaat."
 	},
 	9: {
 		id: "9",
 		h1: "Milieu",
 		p:
-			"Als je Wob-verzoek betrekking heeft op milieu-informatie moet een overheidsinstantie daar binnen twee weken een besluit over nemen. Met dit vinkje wijs je daarop en vraag je om een snel besluit."
+			"Als je Wob-verzoek betrekking heeft op milieu-informatie moet een overheidsinstantie daar binnen twee weken een besluit over nemen. Bij alle andere Wob-verzoeken is dit vier weken."
 	},
 	10: {
 		id: "10",
@@ -71,17 +71,17 @@ const DataPopup = {
 		id: "11",
 		h1: "Specifieke documenten",
 		p:
-			"Kies hiervoor als je precies weet welk document of documenten je wilt hebben. Kies je voor deze optie, dan krijg je nog steeds de mogelijkheid om ook aanvullende documenten te vragen. Zelfs als je precies weet welk document je wil hebben, kan het namelijk nuttig zijn om ook andere documenten te vragen. Zo krijg je inzicht in de totstandkoming van het document, de personen of organisaties die daarbij betrokken zijn geweest, koerswijzigingen, enzovoort. "
+			"Kies hiervoor als je precies weet welk document of documenten je wilt hebben. Op de volgende pagina krijg je de mogelijkheid om ook openbaarmaking van onderliggende documenten te vragen. Zo krijg je inzicht in de totstandkoming van het document/de documenten, de personen of organisaties die daarbij betrokken zijn geweest, koerswijzigingen, enzovoort.",
+		p2:
+			"Wil je naast deze specifieke documenten echt álle documenten over dit onderwerp, dan is het verstandiger om twee aparte verzoeken te versturen. Vandaar dat je niet beide opties kan aanvinken."
 	},
 	12: {
 		id: "12",
 		h1: "Alles over dit onderwerp",
 		p:
-			"Soms weet je wel dat een bepaalde overheidsinstantie zich met een onderwerp heeft beziggehouden, maar niet wat voor documenten ze daarover hebben opgesteld. In dat geval kun je verzoeken om alle documenten over het onderwerp openbaar te maken. Dit wordt ook wel een ‘sleepnet’-wob genoemd. ",
+			"Soms weet je wél dat een bepaalde overheidsinstantie zich met een onderwerp heeft beziggehouden, maar niet welke documenten ze daarover hebben opgesteld. In dat geval kun je vragen om alle documenten over het onderwerp. Dit wordt ook wel een ‘sleepnet’-wob genoemd.",
 		p2:
-			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten. ",
-		P3:
-			"Om diezelfde redenen is het gebruikelijk om in een sleepnet-wob te schrijven dat je bereid bent om in overleg het verzoek in te perken, bijvoorbeeld door eerst een lijst met alle aanwezige stukken te ontvangen en daar een keuze uit te maken. Bij de ‘Extra opties’ aan het eind van deze tool kun je de tekstblokjes waarin je dit aanbiedt aan of uit zetten."
+			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten. Dit kun je op de volgende pagina aangeven."
 	},
 	13: {
 		id: "13",
@@ -112,6 +112,12 @@ const DataPopup = {
 		h1: "Periode kiezen",
 		p:
 			"Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de wob-ambtenaren nodeloos lang bezig zijn met je verzoek."
+	},
+	18: {
+		id: "18",
+		h1: "Alleen overheidstaken",
+		p:
+			"Je kunt alleen informatie opvragen die verband houdt met een overheidstaak. De Wob stelt namelijk de eis dat een verzoek moet gaan over een ‘bestuurlijke aangelegenheid’. Privé-aangelegenheden van een ambtenaar vallen hier niet onder, informatie over declaraties voor dienstreizen weer wel. Voor informatie over jezelf is de Wob niet geschikt."
 	}
 };
 export default DataPopup;
