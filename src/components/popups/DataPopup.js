@@ -27,21 +27,27 @@ const DataPopup = {
 	},
 	5: {
 		id: "5",
-		h1: "Overheidsinstanties",
+		h1: "Welke overheidsinstanties kan ik ‘wobben’ met de Wob-generator? ",
 		p:
-			"Gemeenten, provincies, ministeries, waterschappen, de politie, inspectiediensten en tal van zelfstandige bestuursorganen (ZBO’s) die een overheidstaak uitvoeren. Hier vindt je een lijst met zogenaamde ‘publiekrechtelijke instellingen’, waarvan je misschien niet gedacht had dat ze onder de Wob zouden vallen. Dat doen ze dus wel! Anderzijds zijn er private bedrijven die wel een publieke taak hebben, maar toch niet onder de Wob vallen. Denk aan allerlei nutsbedrijven."
+			"Er zijn in Nederland tal van overheidsinstanties: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Deze instanties zijn allemaal ‘wobbaar’ en staan in de database van de Wob-generator. ",
+		p2:
+			"De database van de Wob-generator is gekoppeld aan de database van de ‘Allmanak’, een initiatief van de Open State Foundation. De Allmanak is wat betreft overheidsinstanties in Nederland de meest complete databank die online beschikbaar is.",
+		p3:
+			" Toch zijn er ook organisaties die onder de Wob vallen maar (nog) niet in de database van de Wob-generator staan. Denk aan zogeheten 'publiekrechtelijke instellingen' zoals TNO of de Wageningen Universiteit. Je kunt je verzoek dan ook sturen naar de minister onder wiens verantwoordelijkheid die organisatie valt, waarbij je in de brief benoemt dat de informatie zich bij die organisatie bevindt."
 	},
 	6: {
 		id: "6",
-		h1: "Juiste Overheid?",
+		h1: "Juiste overheid?",
 		p:
-			"Zo kies je de juiste overheidsinstantie: Locatie - Vraag je af welke instantie over het onderwerp gaat? Is het een lokale, een provinciale of rijkskwestie? Bij wie kunnen documenten over het onderwerp zijn opgeslagen? Google - Als je er niet uitkomt, Google dan je onderwerp en kijk bij welke overheidsinstanties je uit komt. Meerdere instanties - Als er meerdere overheidsinstanties over het onderwerp gaan, dan kun je meerdere verzoeken indienen. Wob ‘hoog’ of juist ‘laag’ - Als de ene instantie onder de verantwoordelijkheid van de andere instantie valt, dien je verzoek dan in bij de hoogste instantie. Denk bijvoorbeeld aan de Immigratie en Naturalisatiedienst (IND). Deze dienst valt onder het ministerie van Justitie en Veiligheid. Weet je niet zeker of de documenten bij de IND of het Ministerie liggen, wob dan het Ministerie. Daar staat tegenover dat instanties die minder onder een vergrootglas liggen soms makkelijker documenten vrijgeven. Denk na waar je de meeste kans maakt! Doorgeleiding - Wees gerust: als je toch de verkeerde instantie hebt gekozen, is die instantie verplicht om je verzoek naar de juiste instantie door te sturen. In de brief herinneren wij de overheidsinstantie aan deze verplichting. Naamsverandering - Let op: overheidsinstanties veranderen regelmatig van naam. Denk aan het Ministerie van Veiligheid en Justitie dat veranderd is in Justitie en Veiligheid. We proberen dit up-to-date te houden maar laat het ons vooral weten als onze lijst is verouderd. Voor meer tips bezoek de website van de Wob-werkgroep van de Nederlandse Vereniging voor Onderzoeksjournalistiek (VVOJ)."
+			"Vraag je allereerst af bij wie de documenten over je onderwerp te vinden zijn. Als je er niet uitkomt, Google dan je onderwerp en kijk welke overheidsinstanties tevoorschijn komen. Je kunt ook meerdere verzoeken indienen bij verschillende instanties. Weet je niet zeker of de documenten bijvoorbeeld bij de Immigratie en Naturalisatiedienst (IND) of het ministerie van Justitie en Veiligheid liggen, wob dan de ‘hoogste’ instantie, in dit geval het Ministerie. Daar staat tegenover dat instanties die minder onder een vergrootglas liggen soms makkelijker documenten vrijgeven. Denk dus ook na over waar je de meeste kans maakt! ",
+		p2:
+			"En wees gerust: de instantie die je wobt is verplicht om je verzoek naar de juiste instantie door te sturen. Voor de zekerheid herinneren wij daarom in de alinea ‘doorgeleiding’ de overheidsinstantie aan deze verplichting."
 	},
 	7: {
 		id: "7",
 		h1: "Geadresseerde",
 		p:
-			"Als je de naam van de hoogstgeplaatste functionaris van de instantie kent, bijvoorbeeld van de minister, de staatssecretaris, de commissaris van de koningin, enzovoort, dan kun je die er zelf bijschrijven. Maar het is niet verplicht. Als je het niet weet, geen probleem. De brief zal dan gericht worden aan de titel van de hoogstgeplaatste functionaris van de instantie."
+			"Als je de naam van de hoogstgeplaatste functionaris van de instantie kent, bijvoorbeeld van de minister, de staatssecretaris, de commissaris van de koningin, enzovoort, dan kun je die er zelf bijschrijven. Maar het is niet verplicht. "
 	},
 	8: {
 		id: "8",
@@ -99,7 +105,7 @@ const DataPopup = {
 		id: "16",
 		h1: "De instantie staat niet in de lijst",
 		p:
-			"Natuurlijk kun je ook andere instanties een Wob-verzoek sturen. Als je een mailtje stuurt naar wobvvoj@gmail.com met alle gegevens van de instantie, dan zorgen wij dat de instantie wordt toegevoegd aan de lijst"
+			"Ken je een ‘wobbare’ (overheids)instantie die hier niet tussen staat, stuur dan ajb een e-mail naar wobvvoj@gmail.com met de gegevens van deze instantie zodat we deze kunnen toevoegen."
 	},
 	17: {
 		id: "17",
