@@ -3,16 +3,14 @@ import React from "react";
 function HomepageWaaromTool() {
 	return (
 		<div className="sectionWaarom">
-			<p className="header">Waarom deze tool?</p>
 			<div className="sectionBlock">
 				<div>
 					<h1>Waarom deze tool?</h1>
 					<p>
-						Nogal wat journalisten denken dat ‘wobben’ een mysterieuze juridische truc is. Alleen specialisten wagen
-						zich eraan. Dat is overdreven, maar er zit een kern van waarheid in: er zijn best een paar punten waarop je
-						moet letten. Misschien is het daarom dat Nederlandse journalisten vrij weinig wobben in vergelijking met
-						andere landen. Met de Wob-generator hoef je niet bang te zijn dat je iets over het hoofd ziet. Aan de slag
-						dus!
+						Nogal wat journalisten denken dat ‘wobben’ een mysterieuze juridische truc is. Dat is overdreven, maar er
+						zit een kern van waarheid in: er zijn best een paar punten waarop je moet letten. Misschien wobben
+						Nederlandse journalisten daarom vrij weinig in vergelijking met andere landen. Met de Wob-generator hoef je
+						niet bang te zijn dat je iets over het hoofd ziet. Aan de slag dus!
 					</p>
 				</div>
 				<div>

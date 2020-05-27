@@ -159,6 +159,9 @@ const Homepage = props => {
 			}
 		}));
 	};
+	const resetState = () => {
+		setValue(initialState);
+	};
 
 	const changeHandlerSubjectCheckbox = ({
 		currentTarget: {
@@ -312,10 +315,7 @@ const Homepage = props => {
 					<hr className="horizontalRule"></hr>
 				</div>
 				<HomepageWaarom />
-				<div className="extra_content">
-					{" "}
-					<hr className="horizontalRule"></hr>
-				</div>
+				<div className="extra_content"></div>
 				<HomepageWaaromTool />
 				<div className="extra_content">
 					{" "}
@@ -390,6 +390,7 @@ const Homepage = props => {
 			</Route>
 			<Route path="/StapEinde">
 				<StapEinde
+					resetState={resetState}
 					getCurrentDate={getCurrentDate}
 					value={value}
 					filteredDataText={filteredDataText}

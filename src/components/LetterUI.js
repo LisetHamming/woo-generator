@@ -85,8 +85,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 										{value.subjectDateEnd ? " tot " + formatDate(new Date(value.subjectDateEnd)) : ""}, waaronder:
 									</p>
 								</React.Fragment>
-							)}{" "}
-							${console.log(value.subjectMeeting, "Dit zit er in de subjectMeeting")}
+							)}
+
 							<p>
 								{value[10]
 									? `- Vergaderstukken ${value.subjectMeeting === "" ? "" : ", waaronder:"} ${Object.keys(
@@ -147,6 +147,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						</div>
 					))}
 				<div>
+					<p>Ik verzoek u de ontvangst van dit verzoek schriftelijk per email of brief aan mij te bevestigen.</p>
+					<br />
 					<p>Met vriendelijke groet, </p>
 					<br />
 					<p className="userSignature"></p>
