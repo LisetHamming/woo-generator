@@ -93,7 +93,7 @@ const DataPopup = {
 		id: "14",
 		h1: "Welke documenten zijn nuttig?",
 		p:
-			"‘Documenten’ zijn gelukkig wel breder dan geschreven stukken alleen. Excelsheets, databestanden, audio-opnames, sms’jes en WhatsAppjes vallen er bijvoorbeeld ook onder. Natuurlijk kun je de overheid ook om informatie vragen die niet al op een gegevensdrager staat, bijvoorbeeld wat de gemeente vindt van een bepaalde ontwikkeling of wat de gemeente van plan is daaraan te doen. Dat is dan geen Wob-verzoek, maar een gewoon informatieverzoek. Hiervoor is de Wob-generator niet bedoeld."
+			"E-mails, bijvoorbeeld, kunnen veel inzicht geven in het besluitvormingsproces, de toon waarin tussen bepaalde personen gecommuniceerd wordt en de frequentie van het contact. Maar e-mails kunnen ook over volstrekt irrelevante zaken gaan, zoals de hoeveelheid broodjes die bij de vergadering zijn besteld. Bedenk dus of e-mails in het geval van jouw verzoek relevant zijn."
 	},
 	15: {
 		id: "15",

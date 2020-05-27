@@ -26,10 +26,25 @@ function Stap3_3({
 				Stap 3:
 				{value.subjectType === "specific" ? " Je weet wat je wilt (en ook nog...)" : " Je wilt alles (behalve...)"}
 			</h2>
-			<span>
-				<p className="extraPadding">Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
-				<PopupButton number="14" />
-			</span>
+			{value.subjectType === "specific" && (
+				<p>
+					Omschrijf zo nauwkeurig mogelijk de titel, auteur en datum van het document of de documenten waar je naar op
+					zoek bent. Geef ook aan of en zo ja welke onderliggende documenten je wilt ontvangen.
+				</p>
+			)}
+			{value.subjectType === "all" && (
+				<div>
+					<p>
+						Beperk hier het type documenten dat je over het onderwerp wilt ontvangen. Vervolgens kun je je verzoek
+						verder beperken door aan te geven in welke periode je geïnteresseerd bent.
+					</p>
+					<span>
+						<p>Waarom zou ik mijn verzoek willen beperken?</p>
+						<PopupButton number="14" />
+					</span>
+				</div>
+			)}
+
 			<form>
 				{value.subjectType === "specific" && (
 					<div>
@@ -511,7 +526,7 @@ function Stap3_3({
 				<p className="extraPadding">Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
 				<PopupButton number="14" />
 			</span>
-			<Link to="/Stap3_2">Terug</Link>
+			<Link to="/Stap3">Terug</Link>
 			<Link to="/StapExtra" onClick={() => clickHandlerStep("step9")}>
 				Volgende
 			</Link>
