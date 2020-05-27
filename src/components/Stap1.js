@@ -19,10 +19,8 @@ function Stap1({
 			<p className="logo">Wob-generator</p>
 			<h2>Stap 1: Over jezelf</h2>
 			<p>
-				Je hoeft geen journalist te zijn om te wobben, maar als je het wel bent kan het handig zijn om dat kenbaar te
-				maken. Je hoeft ook het (journalistieke) doel van je verzoek niet toe te lichten, maar ook hier geldt dat er
-				redenen kunnen zijn om dat wel te doen. Tot slot kun je uit eigen naam of namens een organisatie wobben. Klik op
-				de i’tjes voor meer informatie.
+				Vul hier een aantal gegevens in over jezelf en maak enkele keuzes over hoe je jezelf en je verzoek aan de
+				overheid presenteert. Klik op de i'tjes voor meer informatie om deze keuzes te maken.
 			</p>
 			<form>
 				<span>
@@ -61,35 +59,6 @@ function Stap1({
 								id="userCompanyNameInput"
 								size="46"
 								value={value.userCompanyNameInput}
-								onChange={changeHandlerUser}
-								type="text"
-							/>
-							<br />
-						</label>
-					</span>
-				)}
-				<span>
-					<label className="container">
-						Ik wil mijn doel toelichten
-						<input
-							id="userNeedsGoal"
-							value="userNeedsGoal"
-							checked={value.userNeedsGoal}
-							onChange={changeHandlerCheckbox}
-							type="checkbox"
-						/>
-						<div className="checkmark"></div>
-					</label>
-					<PopupButton number="2" />
-				</span>
-				{value.userNeedsGoal && (
-					<span className="subForm">
-						<label className="formInputs">
-							Journalistieke doel (verplicht)
-							<input
-								id="userGoalInput"
-								size="46"
-								value={value.userGoalInput}
 								onChange={changeHandlerUser}
 								type="text"
 							/>

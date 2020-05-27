@@ -33,8 +33,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						Met een beroep op de Wet openbaarheid van bestuur (hierna: Wob) verzoek ik, {value.userName},
 						{value.userJournalist ? " journalist, " : ""}
 						{value.userCompanyNameInput.length ? `u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van of
-						inzage in hieronder nader te specificeren documenten of informatie bij of onder u
-						{value.userGoalInput.length ? ` over ${value.userGoalInput}` : ""}.
+						inzage in hieronder nader te specificeren documenten of informatie bij of onder u.
 					</p>
 					<br />
 					<p>

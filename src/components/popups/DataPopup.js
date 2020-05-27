@@ -3,26 +3,27 @@ const DataPopup = {
 		id: "1",
 		h1: "Ben je een journalist?",
 		p:
-			"Je hoeft geen journalist te zijn om een Wob-verzoek te doen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten. Bovendien is het wel zo eerlijk om je Wob-verzoek vanaf het begin met open vizier te doen."
+			"Je hoeft geen journalist te zijn om een Wob-verzoek te doen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten."
 	},
 	2: {
 		id: "2",
 		h1: "Doel van je verzoek?",
 		p:
-			"Je bent niet verplicht om het doel van je verzoek toe te lichten, maar het kan de overheidsinstantie helpen om beter te begrijpen welke documenten je zoekt. Overigens kan het verstandig zijn om juist niet te vertellen welk nieuws je op het spoor denkt te zijn. Weeg af wat slim is. Als je deze optie aanvinkt, schrijf dan hier handmatig op wat het doel van je verzoek is."
+			"Je bent niet verplicht om het doel van je verzoek toe te lichten, maar het kan de overheidsinstantie helpen om beter te begrijpen welke documenten je zoekt. Overigens kan het soms juist verstandig zijn om niet te vertellen welk nieuws je op het spoor denkt te zijn. Weeg af wat slim is."
 	},
 	3: {
 		id: "3",
 		h1: "Namen een (media) organisatie",
-		p: "Het kan handig zijn om te benoemen voor welke organisatie je wobt"
+		p:
+			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je goedkoper dan als organisatie. Op dit moment betaal je als persoon 174 euro en als organisatie 345 euro. Als je voor een bekende media-organisatie werkt kan dat ook gewicht in de schaal leggen bij de behandeling van je verzoek."
 	},
 	4: {
 		id: "4",
 		h1: "Privacy en opslag",
 		p:
-			"De Wob-verzoeken worden lokaal in je browser opgeslagen. Waarschijnlijk ken je het begrip “cookies”,  wij gebruiken een iets geavanceerdere variant van deze techniek. De applicatie heeft alleen simpele server die geen data kan ontvangen.",
+			"De Wob-verzoeken worden lokaal in je browser opgeslagen. Waarschijnlijk ken je het begrip “cookies”, wij gebruiken een iets geavanceerdere variant van deze techniek. De applicatie heeft alleen simpele server die geen data kan ontvangen.",
 		p2:
-			"De opslag functionaliteit is bedoeld om het sluiten van een tabblad op te vangen. Het zou jammer zijn als je je Wob-verzoek onbedoeld wist. Vertrouw alleen niet teveel op deze opslagmethode. Als je de lokale data in je browser wist, wis je al je verzoeken!"
+			"De opslag functionaliteit is bedoeld om het sluiten van een tabblad op te vangen. Het zou jammer zijn als je je Wob-verzoek onbedoeld wist. Vertrouw alleen niet teveel op deze op"
 	},
 	5: {
 		id: "5",

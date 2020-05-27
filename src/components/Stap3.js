@@ -29,6 +29,35 @@ function Stap3({
 
 			<form>
 				<span>
+					<label className="container">
+						Ik wil mijn doel toelichten
+						<input
+							id="userNeedsGoal"
+							value="userNeedsGoal"
+							checked={value.userNeedsGoal}
+							onChange={changeHandlerCheckbox}
+							type="checkbox"
+						/>
+						<div className="checkmark"></div>
+					</label>
+					<PopupButton number="2" />
+				</span>
+				{value.userNeedsGoal && (
+					<span className="subForm">
+						<label className="formInputs">
+							Doel (verplicht)
+							<input
+								id="userGoalInput"
+								size="46"
+								value={value.userGoalInput}
+								onChange={changeHandlerUser}
+								type="text"
+							/>
+							<br />
+						</label>
+					</span>
+				)}
+				<span>
 					<label>
 						Onderwerp in lopende tekst (verplicht)
 						<input
