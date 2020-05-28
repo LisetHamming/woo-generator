@@ -50,7 +50,7 @@ function Stap3_3({
 					<div>
 						<span className="objectInput">
 							<label>
-								Omschrijving van specifieke document
+								Titel en auteur
 								<input
 									size="30"
 									id="subjectSpecificText"
@@ -89,8 +89,12 @@ function Stap3_3({
 				)}
 				{value.subjectType === "specific" && (
 					<div>
-						<p>Bovendien wil ik graag de onderliggende documenten, namelijk:</p>
+						<p>Als je ook onderliggende stukken wil, vink dan aan welke.</p>
 						<br />
+						<span>
+							<p>Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
+							<PopupButton number="14" />
+						</span>
 					</div>
 				)}
 				<div>
@@ -190,21 +194,7 @@ function Stap3_3({
 										checked={value.subjectMeeting.Besluiten}
 										name="Besluiten"
 									/>
-									Besluiten
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
-							<span className="subForm ">
-								<label className="container">
-									<input
-										onChange={changeHandlerSubjectMeeting}
-										id="textBesluitenlijsten"
-										type="checkbox"
-										checked={value.subjectMeeting.Besluitenlijsten}
-										name="Besluitenlijsten"
-									/>
-									Besluitenlijsten en notulen
+									Besluiten, besluitenlijsten en notulen
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -519,13 +509,10 @@ function Stap3_3({
 			</form>
 
 			<span>
-				<p>Welke informatie moet de overheid openbaar maken.</p>
+				<p className="extraPadding">Welke informatie moet de overheid openbaar maken.</p>
 				<PopupButton number="13" />
 			</span>
-			<span>
-				<p className="extraPadding">Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
-				<PopupButton number="14" />
-			</span>
+
 			<Link to="/Stap3">Terug</Link>
 			<Link to="/StapExtra" onClick={() => clickHandlerStep("step9")}>
 				Volgende

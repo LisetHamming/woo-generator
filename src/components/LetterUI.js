@@ -88,7 +88,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 
 							<p>
 								{value[10]
-									? `- Vergaderstukken ${value.subjectMeeting === "" ? "" : ", waaronder:"} ${Object.keys(
+									? `- Vergaderstukken${value.subjectMeeting === "" ? "" : ", waaronder:"} ${Object.keys(
 											value.subjectMeeting
 									  )
 											.filter(key => value.subjectMeeting[key])

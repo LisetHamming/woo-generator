@@ -25,7 +25,7 @@ const DataText = state => [
 	},
 	{
 		id: 5,
-		title: "Insluiting alle formaten",
+		title: "Insluiting alle gegevensdragers",
 		sentence:
 			"Met documenten bedoel ik vastlegging ongeacht de gegevensdrager: dus naast klassieke papieren documenten bijvoorbeeld ook digitale bestanden, sms-jes, WhatsApp-berichten en audio- en videobestanden. Bovendien gaat het inhoudelijk mij dan niet alleen om officiële rapportages en onderzoeksverslagen, maar ook om onder andere presentaties, gespreksverslagen, e-mailwisselingen en notulen van vergaderingen met betrekking tot deze kwestie."
 	},

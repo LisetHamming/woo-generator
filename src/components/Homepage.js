@@ -25,7 +25,6 @@ const initialState = {
 	6: true,
 	7: true,
 	8: true,
-	9: true,
 	10: false,
 	11: false,
 	12: false,
@@ -70,8 +69,7 @@ const initialState = {
 		Presentielijsten: false,
 		IngekomenStukken: false,
 		Adviezen: false,
-		Besluiten: false,
-		Besluitenlijsten: false
+		Besluiten: false
 	},
 
 	subjectLongOrganisation: "",
