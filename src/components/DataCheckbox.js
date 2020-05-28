@@ -1,9 +1,7 @@
 const DataCheckbox = {
-	Uitnodigingen: "uitnodigingen",
+	Uitnodigingen: "uitnodigingen, presentielijsten",
 	Agenda: "agenda’s",
-	Presentielijsten: "presentielijsten",
 	IngekomenStukken: "ingekomen stukken",
-	Adviezen: "adviezen",
 	Besluiten: "besluiten, besluitenlijsten en notulen"
 };
 export default DataCheckbox;

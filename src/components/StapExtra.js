@@ -113,7 +113,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="7"
 						/>{" "}
-						Motivering bij gedaging
+						Motivering bij weigering
 						<br />
 						<div class="checkmark"></div>
 					</label>

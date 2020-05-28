@@ -20,7 +20,7 @@ function Stap1({
 			<h2>Stap 1: Over jezelf</h2>
 			<p>
 				Vul hier een aantal gegevens in over jezelf en maak enkele keuzes over hoe je jezelf en je verzoek aan de
-				overheid presenteert. Klik op de i'tjes voor meer informatie om deze keuzes te maken.
+				overheid presenteert.
 			</p>
 			<form>
 				<span>
@@ -39,7 +39,7 @@ function Stap1({
 				</span>
 				<span>
 					<label className="container">
-						Ik Wob namens een (media-) organisatie
+						Ik wob namens een (media-)organisatie
 						<input
 							id="userCompany"
 							value="userCompanyName"
@@ -180,7 +180,7 @@ function Stap1({
 				<PopupButton number="4" />
 				<br />
 			</span>
-			<Link to="/">Terug</Link>
+			<Link to="/StapVoorAf">Terug</Link>
 			<Link
 				to="/Stap2"
 				onClick={event => {

@@ -37,7 +37,7 @@ const DataText = state => [
 	},
 	{
 		id: 7,
-		title: "Motivering bij gedaging",
+		title: "Motivering bij weigering",
 		sentence:
 			"Bij gehele of gedeeltelijke weigering van een document verzoek ik u de weigering per document respectievelijk per alinea te motiveren. Niet alleen met verwijzing naar het betreffende Wob-artikel, maar tevens met onderbouwing waarom die weigeringsgrond zwaarder weegt dan het algemeen belang van openbaarheid."
 	},

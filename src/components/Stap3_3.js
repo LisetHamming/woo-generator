@@ -24,7 +24,9 @@ function Stap3_3({
 			<p className="logo">Wob-generator</p>
 			<h2>
 				Stap 3:
-				{value.subjectType === "specific" ? " Je weet wat je wilt (en ook nog...)" : " Je wilt alles (behalve...)"}
+				{value.subjectType === "specific"
+					? " Welke informatie zoek je? (specifieke documenten)"
+					: " Welke informatie zoek je? (alle documenten)"}
 			</h2>
 			{value.subjectType === "specific" && (
 				<p>
@@ -38,6 +40,7 @@ function Stap3_3({
 						Beperk hier het type documenten dat je over het onderwerp wilt ontvangen. Vervolgens kun je je verzoek
 						verder beperken door aan te geven in welke periode je geïnteresseerd bent.
 					</p>
+					<br />
 					<span>
 						<p>Waarom zou ik mijn verzoek willen beperken?</p>
 						<PopupButton number="14" />
@@ -89,6 +92,7 @@ function Stap3_3({
 				)}
 				{value.subjectType === "specific" && (
 					<div>
+						<h1>Onderliggende stukken</h1>
 						<p>Als je ook onderliggende stukken wil, vink dan aan welke.</p>
 						<br />
 						<span>
@@ -124,7 +128,7 @@ function Stap3_3({
 										checked={value.subjectMeeting.Uitnodigingen}
 										name="Uitnodigingen"
 									/>
-									Uitnodigingen
+									Uitnodigingen, presentatielijsten
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -147,20 +151,6 @@ function Stap3_3({
 								<label className="container">
 									<input
 										onChange={changeHandlerSubjectMeeting}
-										id="textPresentatieLijsten"
-										type="checkbox"
-										checked={value.subjectMeeting.Presentielijsten}
-										name="Presentielijsten"
-									/>
-									Presentielijsten
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
-							<span className="subForm ">
-								<label className="container">
-									<input
-										onChange={changeHandlerSubjectMeeting}
 										id="textIngekomen"
 										type="checkbox"
 										checked={value.subjectMeeting.IngekomenStukken}
@@ -171,20 +161,7 @@ function Stap3_3({
 									<div className="checkmark"></div>{" "}
 								</label>
 							</span>
-							<span className="subForm ">
-								<label className="container">
-									<input
-										onChange={changeHandlerSubjectMeeting}
-										id="textAdviezen"
-										type="checkbox"
-										checked={value.subjectMeeting.Adviezen}
-										name="Adviezen"
-									/>
-									Adviezen
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
+
 							<span className="subForm ">
 								<label className="container">
 									<input
@@ -201,21 +178,7 @@ function Stap3_3({
 							</span>
 						</div>
 					)}
-					<span>
-						<label className="container">
-							<input
-								onChange={changeHandlerCheckbox}
-								id="text2"
-								type="checkbox"
-								checked={value[11]}
-								name="checkText"
-								value="11"
-							/>
-							Rapporten en presentaties
-							<br />
-							<div className="checkmark"></div>{" "}
-						</label>
-					</span>
+
 					<span>
 						<label className="container">
 							<input
@@ -409,6 +372,21 @@ function Stap3_3({
 						<label className="container">
 							<input
 								onChange={changeHandlerCheckbox}
+								id="text2"
+								type="checkbox"
+								checked={value[11]}
+								name="checkText"
+								value="11"
+							/>
+							Rapporten, adviezen
+							<br />
+							<div className="checkmark"></div>{" "}
+						</label>
+					</span>
+					<span>
+						<label className="container">
+							<input
+								onChange={changeHandlerCheckbox}
 								id="text6"
 								type="checkbox"
 								checked={value[15]}
@@ -507,11 +485,6 @@ function Stap3_3({
 					)}
 				</div>
 			</form>
-
-			<span>
-				<p className="extraPadding">Welke informatie moet de overheid openbaar maken.</p>
-				<PopupButton number="13" />
-			</span>
 
 			<Link to="/Stap3">Terug</Link>
 			<Link to="/StapExtra" onClick={() => clickHandlerStep("step9")}>

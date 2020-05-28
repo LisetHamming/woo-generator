@@ -19,52 +19,23 @@ function Stap3({
 		<div className="formLetter">
 			<p className="logo">Wob-generator</p>
 			<h2>Stap 3: Welke informatie zoek je?</h2>
-
+			<p>
+				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Check daarbij ook of je
+				omschrijving zoals die in de brief verschijnt goed loopt.
+			</p>
+			<br />
+			<br />
 			<span>
-				<p>
-					Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Check daarbij ook of je
-					omschrijving zoals die in de brief verschijnt goed loopt.
-				</p>
-				<br />
+				<p>Waarom moet ik nauwkeurig zijn?</p>
 				<PopupButton number="8" />
 			</span>
-			<br />
-			<br />
+
 			<span>
 				<p>Let op: je kunt alleen informatie over overheidstaken opvragen.</p>
 				<PopupButton number="18" />
 			</span>
-			<br />
-			<br />
-			<span>
-				<p>
-					Wil je alle documenten die de overheidsinstantie heeft over je onderwerp? Of weet je al precies welke
-					documenten je wilt hebben. Maak je keuze.
-				</p>
-				<PopupButton number="10" />
-			</span>
-			<br />
-			<span>
-				{" "}
-				<p>Welke informatie moet de overheid openbaar maken</p>
-				<PopupButton number="13" />
-			</span>
 
 			<form>
-				<span>
-					<label className="container">
-						Ik wil mijn doel toelichten
-						<input
-							id="userNeedsGoal"
-							value="userNeedsGoal"
-							checked={value.userNeedsGoal}
-							onChange={changeHandlerCheckbox}
-							type="checkbox"
-						/>
-						<div className="checkmark"></div>
-					</label>
-					<PopupButton number="2" />
-				</span>
 				{value.userNeedsGoal && (
 					<span className="subForm">
 						<label className="formInputs">
@@ -82,7 +53,7 @@ function Stap3({
 				)}
 				<span>
 					<label>
-						Onderwerp in lopende tekst (verplicht)
+						Onderwerp beschrijven (verplicht)
 						<input
 							size="50"
 							value={value.subjectLong}
@@ -112,6 +83,19 @@ function Stap3({
 					</label>{" "}
 					<PopupButton number="9" />
 				</span>
+				<h1>Specifiek document of alles?</h1>
+				<p>
+					Maak een keuze tussen het opvragen van bepaalde, specifieke documenten of alle documenten die de
+					overheidsinstantie over dit onderwerp heeft.
+				</p>
+
+				<br />
+				<span>
+					{" "}
+					<p>Welke informatie moet de overheid openbaar maken?</p>
+					<PopupButton number="13" />
+				</span>
+				<br />
 				<span>
 					<label className="container">
 						<input
@@ -146,11 +130,6 @@ function Stap3({
 				</span>
 			</form>
 
-			<span className="extraPadding">
-				{" "}
-				<p>Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
-				<PopupButton number="14" />{" "}
-			</span>
 			<Link to="/Stap2">Terug</Link>
 			<Link
 				to="/Stap3_3"

@@ -144,6 +144,7 @@ p.logo {
 	color: rgb(192, 43, 57) !important;
 	margin-bottom: 0.5em;
 	font-size: 2em;
+	font-weight: 300;
 }
 
 p.header {
@@ -232,7 +233,6 @@ p.header {
 .sectionBlock,
 .sectionBlock2 {
 	display: flex;
-	padding: 40px;
 	justify-content: space-around;
 }
 

@@ -3,7 +3,6 @@ import React from "react";
 function HomepageWaarom() {
 	return (
 		<div className="sectionWaarom">
-			<p className="header">Waarom een Wob-verzoek?</p>
 			<div className="sectionBlock">
 				<div>
 					<h1>Waarom een Wob-verzoek?</h1>

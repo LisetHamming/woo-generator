@@ -1,9 +1,9 @@
 const DataPopup = {
 	1: {
 		id: "1",
-		h1: "Ben je een journalist?",
+		h1: "Ben je journalist?",
 		p:
-			"Je hoeft geen journalist te zijn om een Wob-verzoek te doen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten."
+			"Je hoeft geen journalist te zijn om een Wob-verzoek in te dienen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten."
 	},
 	2: {
 		id: "2",
@@ -13,7 +13,7 @@ const DataPopup = {
 	},
 	3: {
 		id: "3",
-		h1: "Namen een (media) organisatie",
+		h1: "Namens een (media) organisatie",
 		p:
 			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je goedkoper dan als organisatie. Op dit moment betaal je als persoon 174 euro en als organisatie 345 euro. Als je voor een bekende media-organisatie werkt kan dat ook gewicht in de schaal leggen bij de behandeling van je verzoek."
 	},
@@ -21,7 +21,7 @@ const DataPopup = {
 		id: "4",
 		h1: "Privacy en opslag",
 		p:
-			"De Wob-verzoeken worden lokaal in je browser opgeslagen. Waarschijnlijk ken je het begrip “cookies”, wij gebruiken een iets geavanceerdere variant van deze techniek. De applicatie heeft alleen simpele server die geen data kan ontvangen.",
+			"De Wob-verzoeken worden lokaal in je browser opgeslagen. Waarschijnlijk ken je het begrip “cookies”, wij gebruiken hiervan een variant genaamd LocalStorage. LocalStorage is een functionele browseropslag methode, zonder deze functie werkt de website niet, maar jouw data wordt niet door ons opgeslagen of gezien. De applicatie heeft alleen simpele server die geen data kan ontvangen.",
 		p2:
 			"De opslag functionaliteit is bedoeld om het sluiten van een tabblad op te vangen. Het zou jammer zijn als je je Wob-verzoek onbedoeld wist. Vertrouw alleen niet teveel op deze op"
 	},
@@ -61,12 +61,7 @@ const DataPopup = {
 		p:
 			"Als je Wob-verzoek betrekking heeft op milieu-informatie moet een overheidsinstantie daar binnen twee weken een besluit over nemen. Bij alle andere Wob-verzoeken is dit vier weken."
 	},
-	10: {
-		id: "10",
-		h1: "Specifieke documenten én alles?",
-		p:
-			"Als je specifieke documenten wilt opvragen maar toch ook wilt weten wat de overheidsinstantie allemaal nog meer aan documenten over dit onderwerp heeft, is het verstandiger om twee aparte verzoeken te versturen. Je kunt daarom niet beide opties aanvinken."
-	},
+
 	11: {
 		id: "11",
 		h1: "Specifieke documenten",
@@ -118,6 +113,11 @@ const DataPopup = {
 		h1: "Alleen overheidstaken",
 		p:
 			"Je kunt alleen informatie opvragen die verband houdt met een overheidstaak. De Wob stelt namelijk de eis dat een verzoek moet gaan over een ‘bestuurlijke aangelegenheid’. Privé-aangelegenheden van een ambtenaar vallen hier niet onder, informatie over declaraties voor dienstreizen weer wel. Voor informatie over jezelf is de Wob niet geschikt."
+	},
+	19: {
+		id: "19",
+		h1: "Hier is de titel",
+		p: "Hier staat de uitleg van het ietje"
 	}
 };
 export default DataPopup;

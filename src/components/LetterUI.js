@@ -5,7 +5,7 @@ import formatDate from "./FormatDate";
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	return (
 		<div className="letterComplete">
-			<h1>Je Wob-verzoek:</h1>
+			<h1>Voorbeeld van je Wob-verzoek:</h1>
 			<div id="letterUI" style={{ fontFamily: "Arial" }}>
 				<div className="adressAuthority">
 					{value.selectedAuthority && (
@@ -37,15 +37,14 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					</p>
 					<br />
 					<p>
-						Het betreft documenten of informatie in het kader van de bestuurlijke aangelegenheid: {value.subjectLong}.
+						Het betreft documenten of informatie in het kader van de bestuurlijke aangelegenheid: {value.subjectLong}.{" "}
+						{value.subjectDateStart
+							? " Het verzoek ziet op de periode van " + formatDate(new Date(value.subjectDateStart))
+							: ""}
+						{value.subjectDateEnd ? " tot " + formatDate(new Date(value.subjectDateEnd)) + "." : ""}
 					</p>
 					<br />
-					<p>
-						Dit verzoek wordt gedaan op basis van de Wet openbaarheid van bestuur. Daaruit vloeit voort dat u binnen{" "}
-						{value.subjectMilieu ? "2" : "4"} weken een besluit moet nemen op dit verzoek
-						{value.subjectMilieu ? ", omdat dit verzoek het milieu betreft." : "."}
-					</p>
-					<br />
+
 					<p>
 						In de afhandeling van dit verzoek vraag ik u rekening te houden met het publieke belang van de journalistiek
 						als controleur van een goede en democratische bestuursvoering.
@@ -55,7 +54,9 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						<React.Fragment>
 							{value.subjectType === "specific" ? (
 								<React.Fragment>
-									<p>Concreet vraag ik u om:</p>
+									<h3>Documenten</h3>
+									<p>Concreet vraag ik u om kopie van of inzage in de volgende documenten of informatie:</p>
+									<br />
 									{value.subjectTextObject.map(item => (
 										<p>
 											- {item.subjectText}
@@ -71,15 +72,18 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									value[15] ||
 									value[16] ||
 									value[17] ? (
-										<p>Bovendien wil ik graag de onderliggende documenten, namelijk:</p>
+										<p>Bovendien wil ik graag kopie van of inzage in de onderliggende documenten, namelijk:</p>
 									) : (
 										""
 									)}
+									<br />
 								</React.Fragment>
 							) : (
 								<React.Fragment>
+									<h3>Documenten</h3>
 									<p>
-										Concreet vraag ik u om alle bij of onder u rustende documenten inzake {value.subjectLong}
+										Concreet vraag ik u om kopie van of inzage in alle documenten of informatie met betrekking tot{" "}
+										{value.subjectLong}
 										{value.subjectDateStart ? "in de periode " + formatDate(new Date(value.subjectDateStart)) : ""}
 										{value.subjectDateEnd ? " tot " + formatDate(new Date(value.subjectDateEnd)) : ""}, waaronder:
 									</p>
@@ -96,7 +100,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 											.join(", ")};`
 									: ""}
 							</p>
-							<p>{value[12] ? "- Gespreksverslagen;" : ""} </p>
+							<p>{value[12] ? "- Correspondentie, gespreksverslagen;" : ""} </p>
 							<p>
 								{value[11]
 									? "- Rapporten, waaronder: project- en programmaplannen; adviezen, zowel extern als intern; onderzoeksrapporten en auditrapportages; voortgangsrapportages; evaluaties;"
@@ -146,7 +150,16 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						</div>
 					))}
 				<div>
-					<p>Ik verzoek u de ontvangst van dit verzoek schriftelijk per email of brief aan mij te bevestigen.</p>
+					<p>
+						Graag ontvang ik schriftelijk per brief of per e-mail een bevestiging van de ontvangst van dit Wob-verzoek.
+					</p>
+					<br />
+					<p>
+						U dient binnen de termijn van
+						{value.subjectMilieu ? " 2" : " 4"} weken een besluit te nemen op dit verzoek
+						{value.subjectMilieu ? ", omdat dit verzoek het milieu betreft." : "."} Geen of een onvoldoende antwoord op
+						de vervaldatum zal worden opgevat als een afwijzing.
+					</p>
 					<br />
 					<p>Met vriendelijke groet, </p>
 					<br />

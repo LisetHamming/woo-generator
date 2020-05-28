@@ -15,6 +15,7 @@ import Stap3_2 from "./Stap3_2";
 import Stap3_3 from "./Stap3_3";
 import StapEinde from "./StapEinde";
 import StapExtra from "./StapExtra";
+import StapVoorAf from "./StapVoorAf";
 
 const initialState = {
 	1: true,
@@ -47,11 +48,9 @@ const initialState = {
 	userCityName: "",
 	userEmail: "",
 	userPhoneNumber: "",
-	userGoalInput: "",
 	userCompanyNameInput: "",
 	userJournalist: false,
 	userCompanyName: false,
-	userNeedsGoal: false,
 	selectedAuthority: null,
 	subjectMilieu: false,
 	subjectLong: "",
@@ -66,9 +65,7 @@ const initialState = {
 	subjectMeeting: {
 		Uitnodigingen: false,
 		Agenda: false,
-		Presentielijsten: false,
 		IngekomenStukken: false,
-		Adviezen: false,
 		Besluiten: false
 	},
 
@@ -87,7 +84,7 @@ const initialState = {
 	subjectInside1: true,
 	subjectInside2: true,
 	subjectInside2inclusive: "",
-	subjectInside4: true,
+	subjectInside4: false,
 	subjectInside5: true,
 	subjectInside6: true,
 	subjectCorrespondanceName: [],
@@ -298,7 +295,7 @@ const Homepage = props => {
 						</ol>
 
 						<p>Voilà!</p>
-						<Link to="/Stap1">Start je Wob-verzoek</Link>
+						<Link to="/StapVoorAf">Start je Wob-verzoek</Link>
 					</div>
 					<div>
 						<img src={machine} />
@@ -313,13 +310,18 @@ const Homepage = props => {
 					<hr className="horizontalRule"></hr>
 				</div>
 				<HomepageWaarom />
-				<div className="extra_content"></div>
 				<HomepageWaaromTool />
+
+				<div className="extra_content"></div>
+
 				<div className="extra_content">
 					{" "}
 					<hr className="horizontalRule"></hr>
 				</div>
 				<HomepageOvergenerator />
+			</Route>
+			<Route path="/StapVoorAf">
+				<StapVoorAf />
 			</Route>
 			<Route path="/Stap1">
 				<Stap1

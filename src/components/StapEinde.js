@@ -8,17 +8,12 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<p className="logo">Wob-generator</p>
 			<h2 className="hidePrint">Laatste check!</h2>
 			<p className="extraPadding hidePrint">Wob-verzoek met onderwerp: {value.subjectLong}</p>
-			<p className="hidePrint">
-				Denk nog even na over welke aanvullende informatie er nodig is om jouw verzoek te behandelen. Wijzigingen en
-				aanvullingen kun je zelf aanbrengen nadat je je Wob-verzoek hebt opgeslagen in Word.
+			<p className="hidePrint extraPadding">
+				Denk na het opslaan nog even na over welke aanvullende informatie er in jouw specifieke geval nodig is om aan
+				jouw verzoek toe te voegen. Wijzigingen en aanvullingen kun je zelf aanbrengen nadat je je Wob-verzoek hebt
+				opgeslagen in Word.
 			</p>
-
-			<Link to="/StapExtra">Terug</Link>
-			<Link to="/" onClick={resetState}>
-				Begin opnieuw
-			</Link>
-			<div>
-				<p className="hidePrint">Download je bestand hier</p>
+			<div className="extraPadding">
 				<button className="buttonStyle" onClick={exportHTMLDoc}>
 					Opslaan als DOC
 				</button>
@@ -26,6 +21,10 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 					Opslaan als PDF
 				</button>
 			</div>
+			<Link to="/StapExtra">Terug</Link>
+			<Link to="/" onClick={resetState}>
+				Begin opnieuw
+			</Link>
 
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
 		</div>

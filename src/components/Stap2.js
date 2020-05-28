@@ -22,19 +22,11 @@ function Stap2({
 		<div className="formLetter">
 			<p className="logo">Wob-generator</p>
 			<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
-			<p>Kies hier bij welke overheidsinstantie je je Wob-verzoek wilt indienen.</p>
 			<span>
-				<p>Welke instanties kan ik Wobben?</p>
+				<p>Kies hier bij welke overheidsinstantie je je Wob-verzoek wilt indienen.</p>
 				<PopupButton number="5" />
 			</span>
-			<span>
-				<p>Hoe kies ik de juiste overheidsinstantie?</p>
-				<PopupButton number="6" />
-			</span>
-			<span className="lastOfType">
-				<p>Aan wie adresseer ik mijn verzoek?</p>
-				<PopupButton number="7" />
-			</span>
+
 			{errors.includes("selectedAuthority") && (
 				<p id="smallError">
 					Kies een instantie aan wie je je verzoek wilt sturen. Staat de instantie die je zoekt er niet bij? Vul deze
@@ -130,6 +122,14 @@ function Stap2({
 			</form>
 			{manualAuthority && <SetSelectedAuthorityManual value={value} clickHandlerAuthority={clickHandlerAuthority} />}
 
+			<span>
+				<p>Hoe kies ik de juiste overheidsinstantie?</p>
+				<PopupButton number="6" />
+			</span>
+			<span className="lastOfType">
+				<p>Aan wie adresseer ik mijn verzoek?</p>
+				<PopupButton number="7" />
+			</span>
 			<Link to="/Stap1">Terug</Link>
 
 			<Link
