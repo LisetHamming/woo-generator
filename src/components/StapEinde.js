@@ -8,16 +8,16 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<p className="logo">Wob-generator</p>
 			<h2 className="hidePrint">Laatste check!</h2>
 			<p className="extraPadding hidePrint">Wob-verzoek met onderwerp: {value.subjectLong}</p>
-			<p className="hidePrint extraPadding">
+			<p className="hidePrint">
 				Denk na het opslaan nog even na over welke aanvullende informatie er in jouw specifieke geval nodig is om aan
 				jouw verzoek toe te voegen. Wijzigingen en aanvullingen kun je zelf aanbrengen nadat je je Wob-verzoek hebt
 				opgeslagen in Word.
 			</p>
 			<div className="extraPadding">
-				<button className="buttonStyle" onClick={exportHTMLDoc}>
+				<button className="buttonStyle2" onClick={exportHTMLDoc}>
 					Opslaan als DOC
 				</button>
-				<button className="buttonStyle" onClick={window.print}>
+				<button className="buttonStyle2" onClick={window.print}>
 					Opslaan als PDF
 				</button>
 			</div>

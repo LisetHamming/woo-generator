@@ -13,10 +13,12 @@ function Stap2({
 	filteredDataText,
 	getCurrentDate,
 	authorities,
-	changeHandlerUser
+	changeHandlerUser,
+	manualAuthority,
+	setManualAuthority
 }) {
 	const [searchValue, setSearchValue] = useState("");
-	const [manualAuthority, setManualAuthority] = useState(false);
+
 	const [errors, setErrors] = useState([]);
 	return (
 		<div className="formLetter">

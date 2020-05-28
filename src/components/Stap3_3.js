@@ -285,39 +285,6 @@ function Stap3_3({
 								<label className="container">
 									<input
 										size="50"
-										id="subjectInside4"
-										value="subjectInside4"
-										checked={value.subjectInside4}
-										onChange={changeHandlerCheckbox}
-										name="checkText"
-										type="checkbox"
-									/>
-									SMS-jes en Whatsapp-berichten
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
-
-							<span className="subsubForm">
-								<label className="container">
-									<input
-										size="50"
-										id="subjectInside5"
-										value="subjectInside5"
-										checked={value.subjectInside5}
-										onChange={changeHandlerCheckbox}
-										name="checkText"
-										type="checkbox"
-									/>
-									Memo's en notities
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
-							<span className="subsubForm">
-								<label className="container">
-									<input
-										size="50"
 										id="subjectInside6"
 										value="subjectInside6"
 										checked={value.subjectInside6}
@@ -326,6 +293,22 @@ function Stap3_3({
 										type="checkbox"
 									/>
 									Gespreksverslagen
+									<br />
+									<div className="checkmark"></div>{" "}
+								</label>
+							</span>
+							<span className="subsubForm">
+								<label className="container">
+									<input
+										size="50"
+										id="subjectInside4"
+										value="subjectInside4"
+										checked={value.subjectInside4}
+										onChange={changeHandlerCheckbox}
+										name="checkText"
+										type="checkbox"
+									/>
+									SMS-jes en Whatsapp-berichten
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -350,6 +333,111 @@ function Stap3_3({
 							</label>
 						</span>
 					)}
+					{value[14] && value[12] && (
+						<div>
+							<span className="subsubForm ">
+								<label className="container">
+									<input
+										size="50"
+										id="subjectOutside1"
+										value="subjectOutside1"
+										checked={value.subjectOutside1}
+										onChange={changeHandlerCheckbox}
+										name="checkText"
+										type="checkbox"
+									/>
+									Brieven
+									<br />
+									<div className="checkmark"></div>{" "}
+								</label>
+							</span>
+							<span className="subsubForm">
+								<label className="container">
+									<input
+										size="50"
+										id="subjectOutside2"
+										value="subjectOutside2"
+										checked={value.subjectOutside2}
+										onChange={changeHandlerCheckbox}
+										name="checkText"
+										type="checkbox"
+									/>
+									E-mails
+									<br />
+									<div className="checkmark"></div>{" "}
+								</label>
+							</span>
+							{value.subjectInside2 && (
+								<div>
+									<span className="subsubsubForm">
+										<label className="container">
+											<input
+												size="50"
+												id="subjectOutside2inclusive"
+												checked={value.subjectOutside2inclusive === "inclusief"}
+												name="subjectOutside2inclusive"
+												value="inclusief"
+												onChange={changeHandlerSubjectType}
+												type="radio"
+											/>
+											Inclusief bijlagen
+											<br />
+											<div className="checkmark"></div>{" "}
+										</label>
+									</span>
+									<span className="subsubsubForm">
+										<label className="container">
+											<input
+												size="50"
+												id="subjectOutside2exclusive"
+												checked={value.subjectOutside2inclusive === "exclusief"}
+												name="subjectOutside2inclusive"
+												value="exclusief"
+												onChange={changeHandlerSubjectType}
+												type="radio"
+											/>
+											Exclusief bijlagen
+											<br />
+											<div className="checkmark"></div>{" "}
+										</label>
+									</span>
+								</div>
+							)}
+							<span className="subsubForm">
+								<label className="container">
+									<input
+										size="50"
+										id="subjectOutside6"
+										value="subjectOutside6"
+										checked={value.subjectOutside6}
+										onChange={changeHandlerCheckbox}
+										name="checkText"
+										type="checkbox"
+									/>
+									Gespreksverslagen
+									<br />
+									<div className="checkmark"></div>{" "}
+								</label>
+							</span>
+							<span className="subsubForm">
+								<label className="container">
+									<input
+										size="50"
+										id="subjectOutside4"
+										value="subjectOutside4"
+										checked={value.subjectOutside4}
+										onChange={changeHandlerCheckbox}
+										name="checkText"
+										type="checkbox"
+									/>
+									SMS-jes en Whatsapp-berichten
+									<br />
+									<div className="checkmark"></div>{" "}
+								</label>
+							</span>
+						</div>
+					)}
+
 					{value[14] && (
 						<div>
 							<span className="subsubForm">
@@ -371,6 +459,22 @@ function Stap3_3({
 					<span>
 						<label className="container">
 							<input
+								size="50"
+								id="subjectInside5"
+								value="subjectInside5"
+								checked={value.subjectInside5}
+								onChange={changeHandlerCheckbox}
+								name="checkText"
+								type="checkbox"
+							/>
+							Memo's en notities
+							<br />
+							<div className="checkmark"></div>{" "}
+						</label>
+					</span>
+					<span>
+						<label className="container">
+							<input
 								onChange={changeHandlerCheckbox}
 								id="text2"
 								type="checkbox"
@@ -383,6 +487,24 @@ function Stap3_3({
 							<div className="checkmark"></div>{" "}
 						</label>
 					</span>
+					{value[11] && (
+						<div>
+							<span className="subForm">
+								<label>
+									Benoem de rapporten
+									<input
+										size="50"
+										id="subjectRapportText"
+										value={value.subjectRapportText}
+										onChange={changeHandlerUser}
+										type="text"
+										placeholder="Bijvoorbeeld: project- en programmaplannen"
+									/>
+									<br />
+								</label>
+							</span>
+						</div>
+					)}
 					<span>
 						<label className="container">
 							<input
@@ -398,6 +520,24 @@ function Stap3_3({
 							<div className="checkmark"></div>
 						</label>
 					</span>
+					{value[15] && (
+						<div>
+							<span className="subForm">
+								<label>
+									Benoem de financiele documenten
+									<input
+										size="50"
+										id="subjectFinancialText"
+										value={value.subjectFinancialText}
+										onChange={changeHandlerUser}
+										type="text"
+										placeholder="Bijvoorbeeld: begrotingen, jaarverslagen"
+									/>
+									<br />
+								</label>
+							</span>
+						</div>
+					)}
 					<span>
 						<label className="container">
 							<input

@@ -76,6 +76,8 @@ const initialState = {
 	subjectDataset: false,
 	subjectElse: false,
 	subjectElseText: "",
+	subjectRapportText: "",
+	subjectFinancialText: "",
 	subjectInvitations: true,
 	subjectDetermines: true,
 	subjectMinutes: true,
@@ -87,6 +89,12 @@ const initialState = {
 	subjectInside4: false,
 	subjectInside5: true,
 	subjectInside6: true,
+	subjectOutside1: true,
+	subjectOutside2: true,
+	subjectOutside2inclusive: "",
+	subjectOutside4: false,
+	subjectOutside5: true,
+	subjectOutside6: true,
 	subjectCorrespondanceName: [],
 	subjectFinancial1: true,
 	subjectFinancial2: true,
@@ -116,6 +124,7 @@ const useLocalStorageState = (key, initialState) => {
 };
 
 const Homepage = props => {
+	const [manualAuthority, setManualAuthority] = useState(false);
 	const [value, setValue] = useLocalStorageState("data", initialState);
 	const [searchValue, setSearchValue] = useState("");
 	const [dateToday, setDateToday] = useState("");
@@ -129,6 +138,7 @@ const Homepage = props => {
 
 	const clickHandlerAuthority = selectedAuthority => {
 		setValue(current => ({ ...current, selectedAuthority }));
+		setManualAuthority(false);
 	};
 	const clickHandlerClearSelectedAuthority = () => {
 		setValue(current => ({ ...current, selectedAuthority: null }));
@@ -335,6 +345,8 @@ const Homepage = props => {
 			</Route>
 			<Route path="/Stap2">
 				<Stap2
+					manualAuthority={manualAuthority}
+					setManualAuthority={setManualAuthority}
 					value={value}
 					changeHandlerUser={changeHandlerUser}
 					authorities={props.authorities}
