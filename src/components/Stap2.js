@@ -107,6 +107,7 @@ function Stap2({
 				)}
 				{!value.selectedAuthority && (
 					<div>
+						<br />
 						<span>
 							<p>Staat de juiste instantie er niet tussen maar beschik je zelf wel over de juiste gegevens?</p>
 							<PopupButton number="16" />

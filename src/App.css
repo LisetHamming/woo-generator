@@ -156,7 +156,7 @@ p.header {
 .popup {
 	background-color: white;
 	position: fixed;
-	width: 30%;
+	width: 35%;
 	overflow-y: scroll;
 	right: 30%;
 	bottom: 0;
@@ -326,6 +326,12 @@ p.header {
 	font-size: 1.5em;
 	font-style: italic;
 	margin-top: 20px;
+	padding-bottom: 3px;
+}
+
+.selectedAuthority h3 {
+	font-style: normal;
+	font-weight: bold;
 }
 
 .formLetter p {
@@ -339,7 +345,6 @@ p.header {
 
 .formLetter span {
 	display: flex;
-	width: 60%;
 }
 
 .formLetter .selectedAuthority {

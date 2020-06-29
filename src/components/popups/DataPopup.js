@@ -116,8 +116,8 @@ const DataPopup = {
 	},
 	19: {
 		id: "19",
-		h1: "Hier is de titel",
-		p: "Hier staat de uitleg van het ietje"
+		h1: "Dit is een voorbeeld van zo'n i'tje met informatie.",
+		p: "Hier staat dan de uitleg."
 	}
 };
 export default DataPopup;

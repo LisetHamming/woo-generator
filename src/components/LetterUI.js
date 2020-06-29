@@ -13,12 +13,12 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							<p>{value.selectedAuthority.naam}</p>
 							<p>
 								{value.selectedAuthority.adres.postbus ??
-									(value.selectedAuthority.adres.straat != undefined
+									(value.selectedAuthority.adres.straat !== undefined
 										? value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer ?? ""
 										: "")}
 							</p>
 							<p>
-								{value.selectedAuthority.adres.postcode != undefined
+								{value.selectedAuthority.adres.postcode !== undefined
 									? value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats ?? ""
 									: ""}
 							</p>
