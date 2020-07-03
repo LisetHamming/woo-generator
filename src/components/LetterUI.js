@@ -107,21 +107,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									: ""}
 							</p>
 							<p>{value[12] ? "- Correspondentie, gespreksverslagen;" : ""} </p>
-							<p>{value.subjectInside5 ? "- Memo's, notities;" : ""}</p>
 
-							<p>
-								{value[11]
-									? `- Rapporten${value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""};  `
-									: ""}{" "}
-							</p>
-							<p>
-								{value[15]
-									? `- Financiele documentatie${
-											value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
-									  };  `
-									: ""}{" "}
-							</p>
-							<p>{value[16] ? "- Datasets;" : ""} </p>
 							<p>
 								{value[13]
 									? `- Alle interne correspondentie (incl./excl. ${value.subjectInside1 ? " brieven," : ""} ${
@@ -144,7 +130,21 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									  }) met betrekking tot ${value.subjectLong};`
 									: ""}
 							</p>
+							<p>{value.subjectInside5 ? "- Memo's, notities;" : ""}</p>
 
+							<p>
+								{value[11]
+									? `- Rapporten${value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""};  `
+									: ""}{" "}
+							</p>
+							<p>
+								{value[15]
+									? `- Financiele documentatie${
+											value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
+									  };  `
+									: ""}{" "}
+							</p>
+							<p>{value[16] ? "- Datasets;" : ""} </p>
 							<p>{value[17] ? `-  ${value.subjectElseText}` : ""}</p>
 							<br />
 							<p>
