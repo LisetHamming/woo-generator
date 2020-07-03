@@ -133,7 +133,7 @@ function Stap3({
 			<Link to="/Stap2">Terug</Link>
 			<Link
 				to="/Stap3_3"
-				onClick={event => {
+				/*onClick={event => {
 					let errors = [];
 
 					if (value.subjectLong === "") {
@@ -146,7 +146,7 @@ function Stap3({
 					} else {
 						clickHandlerStep("step6");
 					}
-				}}
+				}}*/
 			>
 				Volgende
 			</Link>

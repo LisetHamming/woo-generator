@@ -183,7 +183,7 @@ function Stap1({
 			<Link to="/StapVoorAf">Terug</Link>
 			<Link
 				to="/Stap2"
-				onClick={event => {
+				/*onClick={event => {
 					let errors = [];
 
 					if (value.userName === "") {
@@ -199,7 +199,7 @@ function Stap1({
 						event.preventDefault();
 						setErrors(errors);
 					}
-				}}
+				}}*/
 			>
 				Volgende
 			</Link>

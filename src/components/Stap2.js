@@ -137,7 +137,7 @@ function Stap2({
 
 			<Link
 				to="/Stap3"
-				onClick={event => {
+				/*onClick={event => {
 					let errors = [];
 
 					if (value.selectedAuthority === null) {
@@ -148,7 +148,7 @@ function Stap2({
 						event.preventDefault();
 						setErrors(errors);
 					}
-				}}
+				}}*/
 			>
 				Stap 3
 			</Link>
