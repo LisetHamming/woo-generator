@@ -259,7 +259,9 @@ const Homepage = props => {
 		var fileDownload = document.createElement("a");
 		document.body.appendChild(fileDownload);
 		fileDownload.href = source;
-		fileDownload.download = `Wob-verzoek ${value.selectedAuthority.naam}.doc`;
+
+		fileDownload.download = "Wob-verzoek.doc";
+
 		fileDownload.click();
 		document.body.removeChild(fileDownload);
 	};
