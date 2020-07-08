@@ -133,6 +133,9 @@ function Stap3({
 			<Link to="/Stap2">Terug</Link>
 			<Link
 				to="/Stap3_3"
+				onClick={event => {
+					clickHandlerStep("step6");
+				}}
 				/*onClick={event => {
 					let errors = [];
 
