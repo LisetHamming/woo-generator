@@ -20,6 +20,8 @@ function HomepageOvergenerator() {
 						De Wob-werkgroep van de VVOJ beheert de website. De website is op geen enkele manier verbonden aan de
 						Nederlandse overheid en is volstrekt onafhankelijk.
 					</p>
+					<br></br>
+					<p>Contact: info@wob-generator.nl</p>
 					<div className="spanLinks">
 						<img src={logo_vvoj} className="logo_vvoj" />
 						<img src={logo_ra} className="logo_vvoj" />

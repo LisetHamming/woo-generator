@@ -13,17 +13,15 @@ const DataPopup = {
 	},
 	3: {
 		id: "3",
-		h1: "Namens een (media) organisatie",
+		h1: "Namens een (media-)organisatie",
 		p:
-			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je goedkoper dan als organisatie. Op dit moment betaal je als persoon 174 euro en als organisatie 345 euro. Als je voor een bekende media-organisatie werkt kan dat ook gewicht in de schaal leggen bij de behandeling van je verzoek."
+			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je flink goedkoper dan als organisatie, het kan al snel honderdvijftig euro schelen. Als je voor een bekende media-organisatie werkt kan dat ook gewicht in de schaal leggen bij de behandeling van je verzoek."
 	},
 	4: {
 		id: "4",
 		h1: "Privacy en opslag",
 		p:
-			"De Wob-verzoeken worden lokaal in je browser opgeslagen. Waarschijnlijk ken je het begrip “cookies”, wij gebruiken hiervan een variant genaamd LocalStorage. LocalStorage is een functionele browseropslag methode, zonder deze functie werkt de website niet, maar jouw data wordt niet door ons opgeslagen of gezien. De applicatie heeft alleen simpele server die geen data kan ontvangen.",
-		p2:
-			"De opslag functionaliteit is bedoeld om het sluiten van een tabblad op te vangen. Het zou jammer zijn als je je Wob-verzoek onbedoeld wist. Vertrouw alleen niet teveel op deze op"
+			"Alles wat je invult wordt via de browser die je gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet. Dit gebeurt door middel van een zogenaamde ‘functionele cookie’. Verder is op de website een Google Analytics cookie geïnstalleerd om een beeld te krijgen van het gebruik van de Wob-generator."
 	},
 	5: {
 		id: "5",
@@ -39,15 +37,15 @@ const DataPopup = {
 		id: "6",
 		h1: "Juiste overheid?",
 		p:
-			"Vraag je allereerst af bij wie de documenten over je onderwerp te vinden zijn. Als je er niet uitkomt, Google dan je onderwerp en kijk welke overheidsinstanties tevoorschijn komen. Je kunt ook meerdere verzoeken indienen bij verschillende instanties. Weet je niet zeker of de documenten bijvoorbeeld bij de Immigratie en Naturalisatiedienst (IND) of het ministerie van Justitie en Veiligheid liggen, wob dan de ‘hoogste’ instantie, in dit geval het Ministerie. Daar staat tegenover dat instanties die minder onder een vergrootglas liggen soms makkelijker documenten vrijgeven. Denk dus ook na over waar je de meeste kans maakt! ",
+			"Vraag je allereerst af bij welke overheidsinstantie de documenten over je onderwerp te vinden zijn. Als je er niet uitkomt, Google dan je onderwerp en kijk welke overheidsinstanties tevoorschijn komen. Je kunt ook eenzelfde verzoek indienen bij verschillende instanties. Weet je niet zeker of de documenten bijvoorbeeld bij de Immigratie- en Naturalisatiedienst (IND) of het ministerie van Justitie en Veiligheid liggen, wob dan de ‘hoogste’ instantie, in dit geval het ministerie. Het is wel zo dat instanties die minder onder een vergrootglas liggen soms makkelijker documenten vrijgeven. Denk dus ook na over waar je de meeste kans maakt! ",
 		p2:
-			"En wees gerust: de instantie die je wobt is verplicht om je verzoek naar de juiste instantie door te sturen. Voor de zekerheid herinneren wij daarom in de alinea ‘doorgeleiding’ de overheidsinstantie aan deze verplichting."
+			"En wees gerust: de instantie die je wobt is verplicht om je verzoek naar de juiste instantie door te sturen. Voor de zekerheid herinnert de generator daarom in de alinea ‘doorgeleiding’ de overheidsinstantie aan deze verplichting."
 	},
 	7: {
 		id: "7",
 		h1: "Geadresseerde",
 		p:
-			"Als je de naam van de hoogstgeplaatste functionaris van de instantie kent, bijvoorbeeld van de minister, de staatssecretaris, de commissaris van de koningin, enzovoort, dan kun je die er zelf bijschrijven. Maar het is niet verplicht. "
+			"Als je de naam van de hoogstgeplaatste functionaris van de instantie kent, bijvoorbeeld van de minister, de staatssecretaris, de commissaris van de koning, enzovoort, dan kun je die er zelf bijschrijven. Maar het is niet verplicht. "
 	},
 	8: {
 		id: "8",
@@ -74,7 +72,7 @@ const DataPopup = {
 		id: "12",
 		h1: "Alles over dit onderwerp",
 		p:
-			"Soms weet je wél dat een bepaalde overheidsinstantie zich met een onderwerp heeft beziggehouden, maar niet welke documenten ze daarover hebben opgesteld. In dat geval kun je vragen om alle documenten over het onderwerp. Dit wordt ook wel een ‘sleepnet’-wob genoemd.",
+			"Soms weet je wél dat een bepaalde overheidsinstantie zich met een onderwerp heeft beziggehouden, maar niet welke documenten ze daarover hebben. In dat geval kun je vragen om alle documenten over het onderwerp. Dit wordt ook wel een ‘sleepnet-wob' genoemd.",
 		p2:
 			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten. Dit kun je op de volgende pagina aangeven."
 	},
@@ -106,7 +104,7 @@ const DataPopup = {
 		id: "17",
 		h1: "Periode kiezen",
 		p:
-			"Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de wob-ambtenaren nodeloos lang bezig zijn met je verzoek."
+			"Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de Wob-ambtenaren nodeloos lang bezig zijn met je verzoek."
 	},
 	18: {
 		id: "18",
@@ -116,8 +114,8 @@ const DataPopup = {
 	},
 	19: {
 		id: "19",
-		h1: "Dit is een voorbeeld van zo'n i'tje met informatie.",
-		p: "Hier staat dan de uitleg."
+		h1: "Dit is een voorbeeld van zo'n i'tje",
+		p: "En hier staat dan de uitleg."
 	}
 };
 export default DataPopup;
