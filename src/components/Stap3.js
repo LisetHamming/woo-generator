@@ -31,10 +31,10 @@ function Stap3({
 			</span>
 
 			<span>
-				<p>Let op: je kunt alleen informatie over overheidstaken opvragen.</p>
+				<p> Let op: je kunt alleen informatie over ‘bestuurlijke aangelegenheden’ opvragen.</p>
 				<PopupButton number="18" />
 			</span>
-
+			<br />
 			<form>
 				{value.userNeedsGoal && (
 					<span className="subForm">
@@ -53,7 +53,7 @@ function Stap3({
 				)}
 				<span>
 					<label>
-						Onderwerp beschrijven (verplicht)
+						Onderwerp (verplicht)
 						<input
 							size="50"
 							value={value.subjectLong}
@@ -61,7 +61,7 @@ function Stap3({
 							id="subjectLong"
 							type="text"
 							name="subjectinfo"
-							placeholder="bijvoorbeeld 'boetes snelheidsovertredingen in Friesland'  "
+							placeholder="Bijvoorbeeld 'boetes snelheidsovertredingen Friesland'  "
 						/>
 						<br />
 					</label>

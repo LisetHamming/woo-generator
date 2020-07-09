@@ -5,7 +5,8 @@ import formatDate from "./FormatDate";
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	return (
 		<div className="letterComplete">
-			<h1>Voorbeeld van je Wob-verzoek:</h1>
+			<h1>Je Wob-verzoek in wording:</h1>
+			<br />
 			<div id="letterUI" style={{ fontFamily: "Arial" }}>
 				<div className="adressAuthority">
 					{value.selectedAuthority && (
@@ -45,7 +46,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<p>
 						Het betreft documenten of informatie in het kader van de bestuurlijke aangelegenheid: {value.subjectLong}.{" "}
 						{value.subjectDateStart
-							? " Het verzoek ziet op de periode van " + formatDate(new Date(value.subjectDateStart))
+							? " Het verzoek betreft de periode van " + formatDate(new Date(value.subjectDateStart))
 							: ""}
 						{value.subjectDateEnd ? " tot " + formatDate(new Date(value.subjectDateEnd)) + "." : ""}
 					</p>
@@ -90,7 +91,6 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									<p>
 										Concreet vraag ik u om kopie van of inzage in alle documenten of informatie met betrekking tot{" "}
 										{value.subjectLong}
-										{value.subjectDateStart ? "in de periode " + formatDate(new Date(value.subjectDateStart)) : ""}
 										{value.subjectDateEnd ? " tot " + formatDate(new Date(value.subjectDateEnd)) : ""}, waaronder:
 									</p>
 								</React.Fragment>
@@ -110,24 +110,24 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 
 							<p>
 								{value[13]
-									? `- Alle interne correspondentie (incl./excl. ${value.subjectInside1 ? " brieven," : ""} ${
+									? `- Correspondentie, gespreksverslagen intern (${value.subjectInside1 ? " brieven," : ""} ${
 											value.subjectInside2inclusive === "inclusief"
-												? " e-mails inclusief bijlages, "
-												: " e-mails exclusief bijlages, "
+												? " e-mails inclusief bijlagen, "
+												: " e-mails exclusief bijlagen, "
 									  }${value.subjectInside5 ? " memo’s," : ""} ${value.subjectInside6 ? "gespreksnotities," : ""} ${
-											value.subjectInside4 ? "smsjes en WhatsAppjes" : ""
-									  }) met betrekking tot ${value.subjectLong};`
+											value.subjectInside4 ? "SMS-jes en WhatsApp-berichten" : ""
+									  });`
 									: ""}
 							</p>
 							<p>
 								{value[14]
-									? `- Alle correspondentie (incl./excl. ${value.subjectOutside1 ? " brieven," : ""} ${
+									? `- Alle correspondentie (${value.subjectOutside1 ? " brieven," : ""} ${
 											value.subjectOutside2inclusive === "inclusief"
-												? " e-mails inclusief bijlages, "
-												: " e-mails exclusief bijlages, "
+												? " e-mails inclusief bijlagen, "
+												: " e-mails exclusief bijlagen, "
 									  }${value.subjectOutside5 ? " memo’s," : ""} ${value.subjectOutside6 ? "gespreksnotities," : ""} ${
-											value.subjectOutside4 ? "smsjes en WhatsAppjes" : ""
-									  }) met betrekking tot ${value.subjectLong};`
+											value.subjectOutside4 ? "SMS-jes en WhatsApp-berichten" : ""
+									  });`
 									: ""}
 							</p>
 							<p>{value.subjectInside5 ? "- Memo's, notities;" : ""}</p>
@@ -148,8 +148,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							<p>{value[17] ? `-  ${value.subjectElseText}` : ""}</p>
 							<br />
 							<p>
-								Mocht u beschikken over andere documenten die – aanvullend of in plaats van gevraagde documenten -
-								inzicht in deze bestuurlijke aangelegenheid te kunnen geven, dan verzoek ik u die documenten ook te
+								Mocht u beschikken over andere documenten die - aanvullend of in plaats van gevraagde documenten -
+								inzicht in deze bestuurlijke aangelegenheid kunnen geven, dan verzoek ik u die documenten ook te
 								verstrekken.
 							</p>
 						</React.Fragment>
@@ -167,7 +167,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					))}
 				<div>
 					<p>
-						Graag ontvang ik schriftelijk per brief of per e-mail een bevestiging van de ontvangst van dit Wob-verzoek.
+						Graag ontvang ik schriftelijk (per brief of per e-mail) een bevestiging van de ontvangst van dit
+						Wob-verzoek.
 					</p>
 					<br />
 					<p>

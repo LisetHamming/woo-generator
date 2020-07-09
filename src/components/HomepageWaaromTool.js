@@ -16,10 +16,14 @@ function HomepageWaaromTool() {
 				<div>
 					<h1>Wanneer geen Wob-verzoek?</h1>
 					<p>
-						Hoe handig een Wob-verzoek ook is, het is natuurlijk niet slim om te gaan wobben als de stukken al ergens
-						online staan of in stapels bij persvoorlichting liggen. Kun je de documenten op een andere manier in handen
-						krijgen, bijvoorbeeld door het gewoon te vragen of door ze ergens anders te zoeken? Sta daar even bij stil
-						voor je begint! 
+						Kun je de documenten op een andere manier in handen krijgen, bijvoorbeeld door het aan persvoorlichters te
+						vragen of door ze ergens anders te zoeken? Dan is een Wob-verzoek minder handig, omdat het langer duurt. Sta
+						daar even bij stil voor je begint!{" "}
+					</p>
+					<br></br>
+					<p>
+						Bedenk verder dat de overheid niet alle informatie openbaar hoeft te maken: de Wob kent een aantal
+						weigeringsgronden zoals bedrijfsvertrouwelijke gegevens en persoonlijke beleidsopvattingen van ambtenaren.  
 					</p>
 				</div>
 			</div>

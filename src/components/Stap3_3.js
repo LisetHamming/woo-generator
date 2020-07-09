@@ -37,8 +37,8 @@ function Stap3_3({
 			{value.subjectType === "all" && (
 				<div>
 					<p>
-						Beperk hier het type documenten dat je over het onderwerp wilt ontvangen. Vervolgens kun je je verzoek
-						verder beperken door aan te geven in welke periode je geïnteresseerd bent.
+						Kies hier het type documenten dat je over het onderwerp wilt ontvangen. Vervolgens kun je je verzoek verder
+						afbakenen door aan te geven in welke periode je geïnteresseerd bent.
 					</p>
 					<br />
 					<span>
@@ -101,6 +101,7 @@ function Stap3_3({
 						</span>
 					</div>
 				)}
+				<br />
 				<div>
 					<span>
 						<label className="container">
@@ -128,7 +129,7 @@ function Stap3_3({
 										checked={value.subjectMeeting.Uitnodigingen}
 										name="Uitnodigingen"
 									/>
-									Uitnodigingen, presentatielijsten
+									Uitnodigingen, presentielijsten
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -189,7 +190,7 @@ function Stap3_3({
 								name="checkText"
 								value="12"
 							/>
-							Correspondentie en gespreksverslagen
+							Correspondentie, gespreksverslagen
 							<br />
 							<div className="checkmark"></div>
 						</label>
@@ -442,7 +443,7 @@ function Stap3_3({
 						<div>
 							<span className="subsubForm">
 								<label>
-									Organisatie of persoon
+									Organisatie of persoon (indien gewenst)
 									<input
 										size="40"
 										id="subjectLongOrganisation"
@@ -467,7 +468,7 @@ function Stap3_3({
 								name="checkText"
 								type="checkbox"
 							/>
-							Memo's en notities
+							Memo's, notities
 							<br />
 							<div className="checkmark"></div>{" "}
 						</label>
@@ -482,7 +483,7 @@ function Stap3_3({
 								name="checkText"
 								value="11"
 							/>
-							Rapporten, adviezen
+							Rapporten, adviezen (indien bekend)
 							<br />
 							<div className="checkmark"></div>{" "}
 						</label>
@@ -498,7 +499,7 @@ function Stap3_3({
 										value={value.subjectRapportText}
 										onChange={changeHandlerUser}
 										type="text"
-										placeholder="Bijvoorbeeld: project- en programmaplannen"
+										placeholder="Bijvoorbeeld project- en programmaplannen"
 									/>
 									<br />
 								</label>
@@ -515,7 +516,7 @@ function Stap3_3({
 								name="checkText"
 								value="15"
 							/>{" "}
-							Financiele documenten
+							Financiële documenten
 							<br />
 							<div className="checkmark"></div>
 						</label>
@@ -524,14 +525,14 @@ function Stap3_3({
 						<div>
 							<span className="subForm">
 								<label>
-									Benoem de financiele documenten
+									Benoem de financiële documenten
 									<input
 										size="50"
 										id="subjectFinancialText"
 										value={value.subjectFinancialText}
 										onChange={changeHandlerUser}
 										type="text"
-										placeholder="Bijvoorbeeld: begrotingen, jaarverslagen"
+										placeholder="Bijvoorbeeld begrotingen, jaarverslagen"
 									/>
 									<br />
 								</label>

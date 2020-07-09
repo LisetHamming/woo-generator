@@ -21,7 +21,7 @@ function Stap3_2({
 			</p>
 			<br />
 			<span>
-				<p>Let op: je kunt alleen informatie over overheidstaken opvragen.</p>
+				<p>Let op: je kunt alleen informatie over ‘bestuurlijke aangelegenheden’ opvragen.</p>
 				<PopupButton number="10" />
 			</span>
 
@@ -53,7 +53,7 @@ function Stap3_2({
 							name="subjectType"
 							value="all"
 						/>{" "}
-						ik wil alle documenten die de overheidsinstantie heeft over dit onderwerp
+						Ik wil alle documenten die de overheidsinstantie heeft over dit onderwerp
 						<div className="checkmark"></div>
 					</label>
 					<PopupButton number="12" />

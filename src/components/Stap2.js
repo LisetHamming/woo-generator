@@ -48,7 +48,7 @@ function Stap2({
 				)}
 				{value.selectedAuthority ? (
 					<div className="selectedAuthority">
-						<p>Controleer de instantie aan wie je Wobt:</p>
+						<p>Controleer de instantie die je wobt:</p>
 						<h3>{value.selectedAuthority.naam}</h3>
 						<p>{value.selectedAuthority.url}</p>
 						<br />
@@ -109,7 +109,7 @@ function Stap2({
 					<div>
 						<br />
 						<span>
-							<p>Staat de juiste instantie er niet tussen maar beschik je zelf wel over de juiste gegevens?</p>
+							<p>Staat de juiste instantie er niet tussen, maar beschik je zelf wel over de juiste gegevens?</p>
 							<PopupButton number="16" />
 						</span>
 						<button

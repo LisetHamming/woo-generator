@@ -19,9 +19,10 @@ function Stap1({
 			<p className="logo">Wob-generator</p>
 			<h2>Stap 1: Over jezelf</h2>
 			<p>
-				Vul hier een aantal gegevens in over jezelf en maak enkele keuzes over hoe je jezelf en je verzoek aan de
-				overheid presenteert.
+				Vul hier je contactgegevens in zodat de overheidsinstantie je kan bereiken en maak enkele keuzes over hoe je
+				jezelf en je verzoek aan de overheid presenteert. Let op: een Wob-verzoek kan niet anoniem worden ingediend.
 			</p>
+			<br />
 			<form>
 				<span>
 					<label className="container">
@@ -79,7 +80,7 @@ function Stap1({
 								id="userName"
 								type="text"
 								name="userInfo"
-								placeholder="Vul hier je naam in"
+								placeholder=""
 							/>
 						</label>
 					</span>
@@ -96,7 +97,7 @@ function Stap1({
 								id="userAdress"
 								type="text"
 								name="userInfo"
-								placeholder="Vul hier je postadres in"
+								placeholder=""
 							/>
 						</label>
 						<label>
@@ -109,7 +110,7 @@ function Stap1({
 								id="userAdressNumber"
 								type="text"
 								name="userInfo"
-								placeholder="Nummer"
+								placeholder=""
 							/>
 						</label>
 					</span>
@@ -125,7 +126,7 @@ function Stap1({
 								id="userZipcode"
 								type="text"
 								name="userInfo"
-								placeholder="Postcode"
+								placeholder=""
 							/>
 						</label>
 						<label>
@@ -138,7 +139,7 @@ function Stap1({
 								id="userCityName"
 								type="text"
 								name="userInfo"
-								placeholder="Vul hier een plaats in Nederland in"
+								placeholder=""
 							/>
 						</label>
 					</span>
@@ -154,7 +155,7 @@ function Stap1({
 								id="userEmail"
 								type="text"
 								name="userInfo"
-								placeholder="Vul hier je e-mailadres in"
+								placeholder=""
 							/>
 						</label>
 					</span>
@@ -169,7 +170,7 @@ function Stap1({
 								id="userPhoneNumber"
 								type="text"
 								name="userInfo"
-								placeholder="Vul hier je telefoonnummer in"
+								placeholder=""
 							/>
 						</label>
 					</span>
@@ -201,7 +202,7 @@ function Stap1({
 					}
 				}}*/
 			>
-				Volgende
+				Stap 2
 			</Link>
 			<LetterUI
 				className="letterText"

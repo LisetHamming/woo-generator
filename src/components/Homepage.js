@@ -295,8 +295,10 @@ const Homepage = props => {
 					<div className="blockText">
 						<p className="logo">Wob-generator</p>
 						<h1>Schrijf in 3 simpele stappen je eigen Wob-verzoek</h1>
+						<p>Welkom bij de Wob-generator! </p>
 						<p>
-							Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat noemen we een Wob-verzoek.
+							{" "}
+							Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat kan met een Wob-verzoek.
 							Met de Wob-generator is dat een koud kunstje.
 						</p>
 
@@ -306,7 +308,6 @@ const Homepage = props => {
 							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 						</ol>
 
-						<p>Voilà!</p>
 						<Link to="/StapVoorAf">Start je Wob-verzoek</Link>
 					</div>
 					<div>

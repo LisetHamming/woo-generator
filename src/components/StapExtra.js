@@ -9,8 +9,8 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 			<h2>Extra opties</h2>
 			<p>
 				Onderstaande opties vergroten in het algemeen je kans op openbaarmaking van de informatie omdat ze anticiperen
-				op belemmeringen die in het proces kunnen ontstaan. Het kan geen kwaad om ze allemaal in te sluiten maar sommige
-				opties kunnen in jouw specifieke geval niet relevant zijn. Zet ze in dat geval uit.
+				op belemmeringen die in het proces kunnen ontstaan. Het kan geen kwaad om ze allemaal in te sluiten, maar
+				sommige opties kunnen in jouw specifieke geval niet relevant zijn. Zet ze in dat geval uit.
 			</p>
 			<form>
 				<span>
@@ -53,7 +53,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="3"
 						/>{" "}
-						Digitaal toezenden heeft mijn voorkeur
+						Digitale verstrekking
 						<br />
 						<div class="checkmark"></div>
 					</label>
@@ -68,7 +68,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="4"
 						/>{" "}
-						Informatie i.p.v. documenten
+						Inventarislijst vooraf
 						<br />
 						<div class="checkmark"></div>
 					</label>
@@ -129,6 +129,21 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							value="8"
 						/>{" "}
 						Mondelinge toelichting
+						<br />
+						<div class="checkmark"></div>
+					</label>
+				</span>
+				<span>
+					<label className="container">
+						<input
+							onChange={changeHandlerCheckbox}
+							id="text9"
+							type="checkbox"
+							checked={value[9]}
+							name="checkText"
+							value="9"
+						/>{" "}
+						Inventarislijst toevoegen
 						<br />
 						<div class="checkmark"></div>
 					</label>
