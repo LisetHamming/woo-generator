@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo_ra from "../assets/logo_ra.png";
 import logo_vvoj from "../assets/logo_vvoj.png";
 
 function HomepageOvergenerator() {
@@ -24,7 +23,6 @@ function HomepageOvergenerator() {
 					<p>Contact: info@wob-generator.nl</p>
 					<div className="spanLinks">
 						<img src={logo_vvoj} className="logo_vvoj" />
-						<img src={logo_ra} className="logo_vvoj" />
 					</div>
 					<div className="spanLinks">
 						<Link to="/PrivacyVoorwaarden">Privacy Policy </Link>

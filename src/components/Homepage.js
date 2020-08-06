@@ -69,7 +69,6 @@ const initialState = {
 		IngekomenStukken: false,
 		Besluiten: false
 	},
-
 	subjectLongOrganisation: "",
 	subjectReports: false,
 	subjectCorrespondance: false,
@@ -88,7 +87,7 @@ const initialState = {
 	subjectInside2: true,
 	subjectInside2inclusive: "",
 	subjectInside4: false,
-	subjectInside5: true,
+	subjectInside5: false,
 	subjectInside6: true,
 	subjectOutside1: true,
 	subjectOutside2: true,

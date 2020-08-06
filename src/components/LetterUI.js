@@ -38,7 +38,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<br />
 					<p>
 						Met een beroep op de Wet openbaarheid van bestuur (hierna: Wob) verzoek ik, {value.userName},
-						{value.userJournalist ? " journalist, " : ""}
+						{value.userJournalist ? " journalist, " : " "}
 						{value.userCompanyNameInput.length ? `u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van of
 						inzage in hieronder nader te specificeren documenten of informatie bij of onder u.
 					</p>
@@ -106,8 +106,6 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 											.join(", ")};`
 									: ""}
 							</p>
-							<p>{value[12] ? "- Correspondentie, gespreksverslagen;" : ""} </p>
-
 							<p>
 								{value[13]
 									? `- Correspondentie, gespreksverslagen intern (${value.subjectInside1 ? " brieven," : ""} ${
@@ -127,6 +125,10 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 												: " e-mails exclusief bijlagen, "
 									  }${value.subjectOutside5 ? " memo’s," : ""} ${value.subjectOutside6 ? "gespreksnotities," : ""} ${
 											value.subjectOutside4 ? "SMS-jes en WhatsApp-berichten" : ""
+									  }${
+											value.subjectLongOrganisation
+												? " in elk geval betreffende " + `${value.subjectLongOrganisation}`
+												: ""
 									  });`
 									: ""}
 							</p>
