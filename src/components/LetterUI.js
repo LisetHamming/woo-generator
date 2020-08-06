@@ -3,6 +3,12 @@ import DataCheckbox from "./DataCheckbox";
 import formatDate from "./FormatDate";
 
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
+	const words = [
+		value.subjectInside1 && "brieven",
+		value.subjectInside2 && `e-mails ${value.subjectInside2inclusive} bijlagen`,
+		value.subjectInside6 && "gespreksnotities",
+		value.subjectInside4 && "SMS-jes en WhatsApp-berichten"
+	].filter(Boolean);
 	return (
 		<div className="letterComplete">
 			<h1>Je Wob-verzoek in wording:</h1>
@@ -90,8 +96,9 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									<h3>Documenten</h3>
 									<p>
 										Concreet vraag ik u om kopie van of inzage in alle documenten of informatie met betrekking tot{" "}
-										{value.subjectLong}
-										{value.subjectDateEnd ? " tot " + formatDate(new Date(value.subjectDateEnd)) : ""}, waaronder:
+										{value.subjectLong}{" "}
+										{value.subjectDateStart && " van " + formatDate(new Date(value.subjectDateStart))}
+										{value.subjectDateEnd && " tot " + formatDate(new Date(value.subjectDateEnd))}, waaronder:
 									</p>
 								</React.Fragment>
 							)}
@@ -107,41 +114,27 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									: ""}
 							</p>
 							<p>
-								{value[13]
-									? `- Correspondentie, gespreksverslagen intern (${value.subjectInside1 ? " brieven," : ""} ${
-											value.subjectInside2inclusive === "inclusief"
-												? " e-mails inclusief bijlagen, "
-												: " e-mails exclusief bijlagen, "
-									  }${value.subjectInside5 ? " memo’s," : ""} ${value.subjectInside6 ? "gespreksnotities," : ""} ${
-											value.subjectInside4 ? "SMS-jes en WhatsApp-berichten" : ""
-									  });`
-									: ""}
+								{value[13] &&
+									`- Correspondentie, gespreksverslagen intern${words.length > 0 && ` (${words.join(", ")})`};`}
 							</p>
 							<p>
-								{value[14]
-									? `- Alle correspondentie (${value.subjectOutside1 ? " brieven," : ""} ${
-											value.subjectOutside2inclusive === "inclusief"
-												? " e-mails inclusief bijlagen, "
-												: " e-mails exclusief bijlagen, "
-									  }${value.subjectOutside5 ? " memo’s," : ""} ${value.subjectOutside6 ? "gespreksnotities," : ""} ${
-											value.subjectOutside4 ? "SMS-jes en WhatsApp-berichten" : ""
-									  }${
-											value.subjectLongOrganisation
-												? " in elk geval betreffende " + `${value.subjectLongOrganisation}`
-												: ""
-									  });`
-									: ""}
+								{value[14] &&
+									`- Alle externe correspondentie ${words.length > 0 && ` (${words.join(", ")})`}
+							    	${value.subjectLongOrganisation && `tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}
 							</p>
+
 							<p>{value.subjectInside5 ? "- Memo's, notities;" : ""}</p>
 
 							<p>
 								{value[11]
-									? `- Rapporten${value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""};  `
+									? `- Rapporten, adviezen (indien bekend) ${
+											value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
+									  };  `
 									: ""}{" "}
 							</p>
 							<p>
 								{value[15]
-									? `- Financiele documentatie${
+									? `- Financieële documentatie${
 											value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
 									  };  `
 									: ""}{" "}

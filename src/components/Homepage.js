@@ -102,7 +102,7 @@ const initialState = {
 	subjectDataset1: true,
 	subjectDataset2: true,
 	subjectDataset3: [],
-	subectElse: [],
+	subjectElse: [],
 	step6: false,
 	step9: false
 };

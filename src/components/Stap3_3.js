@@ -516,7 +516,7 @@ function Stap3_3({
 								name="checkText"
 								value="15"
 							/>{" "}
-							Financiële documenten
+							Financieële documenten
 							<br />
 							<div className="checkmark"></div>
 						</label>
@@ -525,7 +525,7 @@ function Stap3_3({
 						<div>
 							<span className="subForm">
 								<label>
-									Benoem de financiële documenten
+									Benoem de financieële documenten
 									<input
 										size="50"
 										id="subjectFinancialText"
