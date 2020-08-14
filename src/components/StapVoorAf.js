@@ -4,7 +4,7 @@ import PopupButton from "./popups/PopupButton";
 
 function StapVoorAf() {
 	return (
-		<div className="formLetter">
+		<div className="formLetter central">
 			<p className="logo">Wob-generator</p>
 			<h2>Goed om te weten</h2>
 			<br />
@@ -17,7 +17,7 @@ function StapVoorAf() {
 			<br />
 			<p>Aan de linkerkant staan steeds vragen om te beantwoorden.</p>
 			<p> </p>
-			<span>
+			<span className="ietje">
 				<p>Bij de meeste vragen staan ‘i-tjes’ waar je op kunt klikken met informatie over de vragen.</p>
 				<PopupButton number="19" />
 				<br />

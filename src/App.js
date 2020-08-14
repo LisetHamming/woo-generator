@@ -25,7 +25,11 @@ function App() {
 		return <div> bezig met gegevens ophalen</div>;
 	}
 	if (authorities instanceof Error) {
-		return <div>Er is iets misgegaan met ophalen van gegevens</div>;
+		return (
+			<div>
+				<Homepage />
+			</div>
+		);
 	}
 
 	return (

@@ -1,5 +1,3 @@
-import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 import formatDate from "./FormatDate";
@@ -17,7 +15,8 @@ function Stap3_3({
 	clickHandlerStep,
 	getCurrentDate,
 	changeHandlerRadio,
-	changeHandlerSubjectMeeting
+	changeHandlerSubjectMeeting,
+	clickHandlerClearPeriodDate
 }) {
 	return (
 		<div className="formLetter">
@@ -55,7 +54,7 @@ function Stap3_3({
 							<label>
 								Titel en auteur
 								<input
-									size="30"
+									size="20"
 									id="subjectSpecificText"
 									value={value.subjectSpecificText}
 									onChange={changeHandlerUser}
@@ -75,7 +74,7 @@ function Stap3_3({
 								<br />
 							</label>
 							<button type="button" className="buttonStyle" onClick={clickHandlerSubjectText}>
-								<FontAwesomeIcon className="fontIcon" icon={faPlus} />
+								Voeg toe
 							</button>
 						</span>
 						{value.subjectTextObject.map((item, index) => (
@@ -84,7 +83,7 @@ function Stap3_3({
 									{item.subjectText} {item.subjectDate && formatDate(new Date(item.subjectDate))}
 								</p>
 								<button type="button" className="buttonStyle" value={index} onClick={clickHandlerEmptySubjectText}>
-									<FontAwesomeIcon className="fontIcon" icon={faTimes} />
+									Verwijder
 								</button>
 							</span>
 						))}
@@ -597,7 +596,7 @@ function Stap3_3({
 								<PopupButton number="17" />
 							</span>
 							<br />
-							<span>
+							<span className="objectInput">
 								<label>
 									Van <br />
 									<input
@@ -621,6 +620,9 @@ function Stap3_3({
 										placeholder="31-12-2019"
 									/>
 								</label>
+								<button type="button" className="buttonStyle" onClick={clickHandlerClearPeriodDate}>
+									Verwijder
+								</button>
 							</span>
 						</div>
 					)}

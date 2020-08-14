@@ -3,11 +3,17 @@ import DataCheckbox from "./DataCheckbox";
 import formatDate from "./FormatDate";
 
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
-	const words = [
+	const wordsInside = [
 		value.subjectInside1 && "brieven",
 		value.subjectInside2 && `e-mails ${value.subjectInside2inclusive} bijlagen`,
 		value.subjectInside6 && "gespreksnotities",
 		value.subjectInside4 && "SMS-jes en WhatsApp-berichten"
+	].filter(Boolean);
+	const wordsOutside = [
+		value.subjectOutside1 && "brieven",
+		value.subjectOutside2 && `e-mails ${value.subjectOutside2inclusive} bijlagen`,
+		value.subjectOutside6 && "gespreksnotities",
+		value.subjectOutside4 && "SMS-jes en WhatsApp-berichten"
 	].filter(Boolean);
 	return (
 		<div className="letterComplete">
@@ -54,7 +60,9 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						{value.subjectDateStart
 							? " Het verzoek betreft de periode van " + formatDate(new Date(value.subjectDateStart))
 							: ""}
-						{value.subjectDateEnd ? " tot " + formatDate(new Date(value.subjectDateEnd)) + "." : ""}
+						{value.subjectDateEnd && value.subjectDateStart
+							? " tot " + formatDate(new Date(value.subjectDateEnd)) + "."
+							: "."}
 					</p>
 					<br />
 
@@ -115,11 +123,12 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							</p>
 							<p>
 								{value[13] &&
-									`- Correspondentie, gespreksverslagen intern${words.length > 0 && ` (${words.join(", ")})`};`}
+									`- Correspondentie, gespreksverslagen intern${wordsInside.length > 0 &&
+										` (${wordsInside.join(", ")})`};`}
 							</p>
 							<p>
 								{value[14] &&
-									`- Alle externe correspondentie ${words.length > 0 && ` (${words.join(", ")})`}
+									`- Alle externe correspondentie ${wordsOutside.length > 0 && ` (${wordsOutside.join(", ")})`}
 							    	${value.subjectLongOrganisation && `tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}
 							</p>
 

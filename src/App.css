@@ -2,6 +2,10 @@
 	position: relative;
 }
 
+.objectInput button {
+	min-width: 70px;
+}
+
 li button {
 	display: flex;
 	width: 32.5vw;
@@ -186,6 +190,7 @@ p.header {
 
 .popupI {
 	cursor: pointer;
+	vertical-align: bottom;
 }
 
 .letterComplete {
@@ -553,6 +558,20 @@ Checkbox styles
 	background-color: black;
 	padding: 1.2em;
 	margin-left: 10px;
+}
+
+.central {
+	background-color: white;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.central .popupI svg {
+	color: black;
+}
+
+.formLetter .ietje {
+	display: flex;
 }
 
 @media print {

@@ -72,7 +72,7 @@ function Stap1({
 					<span>
 						<label>
 							{" "}
-							Naam (verplicht)
+							Naam
 							<input
 								size="50"
 								value={value.userName}

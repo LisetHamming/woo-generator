@@ -86,23 +86,27 @@ function Stap2({
 					</div>
 				) : (
 					<ul id="authorities">
-						{authorities
-							.filter(
-								item =>
-									item.naam.toLowerCase().includes(searchValue.toLowerCase()) ||
-									item.adres?.plaats?.toLowerCase().includes(searchValue.toLowerCase()) ||
-									item.types.some(type => type.toLowerCase().includes(searchValue.toLowerCase()))
-							)
-							.map(item => (
-								<li key={item.systemid}>
-									<button type="button" onClick={() => clickHandlerAuthority(item)}>
-										<p>{item.naam}</p>
-										<p>{item.postAdres?.plaats || item.bezoekAdres?.plaats}</p>
-										<p>{item.types}</p>
-										<FontAwesomeIcon className="fontIcon" icon={faPlus} />
-									</button>
-								</li>
-							))}
+						{authorities ? (
+							authorities
+								.filter(
+									item =>
+										item.naam.toLowerCase().includes(searchValue.toLowerCase()) ||
+										item.adres?.plaats?.toLowerCase().includes(searchValue.toLowerCase()) ||
+										item.types.some(type => type.toLowerCase().includes(searchValue.toLowerCase()))
+								)
+								.map(item => (
+									<li key={item.systemid}>
+										<button type="button" onClick={() => clickHandlerAuthority(item)}>
+											<p>{item.naam}</p>
+											<p>{item.postAdres?.plaats || item.bezoekAdres?.plaats}</p>
+											<p>{item.types}</p>
+											<FontAwesomeIcon className="fontIcon" icon={faPlus} />
+										</button>
+									</li>
+								))
+						) : (
+							<li>Er is een foutmelding bij onze bron, als je zelf gegevens hebt, graag invullen.</li>
+						)}
 					</ul>
 				)}
 				{!value.selectedAuthority && (

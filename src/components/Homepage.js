@@ -86,13 +86,13 @@ const initialState = {
 	subjectInside1: true,
 	subjectInside2: true,
 	subjectInside2inclusive: "",
-	subjectInside4: false,
+	subjectInside4: true,
 	subjectInside5: false,
 	subjectInside6: true,
 	subjectOutside1: true,
 	subjectOutside2: true,
 	subjectOutside2inclusive: "",
-	subjectOutside4: false,
+	subjectOutside4: true,
 	subjectOutside5: false,
 	subjectOutside6: true,
 	subjectCorrespondanceName: [],
@@ -142,6 +142,9 @@ const Homepage = props => {
 	};
 	const clickHandlerClearSelectedAuthority = () => {
 		setValue(current => ({ ...current, selectedAuthority: null }));
+	};
+	const clickHandlerClearPeriodDate = () => {
+		setValue(current => ({ ...current, subjectDateStart: "", subjectDateEnd: "" }));
 	};
 	const changeHandlerSubjectType = ({ currentTarget: { value, name } }) => {
 		setValue(current => ({ ...current, [name]: value }));
@@ -394,6 +397,7 @@ const Homepage = props => {
 					changeHandlerRadio={changeHandlerRadio}
 					changeHandlerSubjectType={changeHandlerSubjectType}
 					changeHandlerSubjectMeeting={changeHandlerSubjectMeeting}
+					clickHandlerClearPeriodDate={clickHandlerClearPeriodDate}
 				/>
 			</Route>
 			<Route path="/StapExtra">
