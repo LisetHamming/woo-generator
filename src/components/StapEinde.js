@@ -9,13 +9,13 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<h2 className="hidePrint">Laatste check!</h2>
 			<p className="extraPadding hidePrint">Wob-verzoek met onderwerp: {value.subjectLong}</p>
 			<p className="hidePrint">
-				Hoewel de Wob-generator met de grootste zorgvuldigheid is ontwikkeld, blijft wobben maatwerk. Je blijft zelf
-				verantwoordelijk voor wat je naar het bestuursorgaan stuurt.
-				<br />
-				<br />
 				Check of de zinnen in je verzoek goed lopen. Denk ook na of er nog specifieke informatie nodig is om aan je
 				verzoek toe te voegen. Wijzigingen en aanvullingen kun je zelf aanbrengen nadat je je Wob-verzoek hebt
 				opgeslagen in als Word-document.
+				<br />
+				<br />
+				Hoewel de Wob-generator met de grootste zorgvuldigheid is ontwikkeld, blijft wobben maatwerk. Je blijft zelf
+				verantwoordelijk voor wat je naar het bestuursorgaan stuurt.
 			</p>
 			<br />
 

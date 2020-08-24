@@ -9,8 +9,8 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 			<h2>Extra opties</h2>
 			<p>
 				Onderstaande opties vergroten in het algemeen je kans op openbaarmaking van de informatie omdat ze anticiperen
-				op belemmeringen die in het proces kunnen ontstaan. Het kan geen kwaad om ze allemaal in te sluiten, maar
-				sommige opties kunnen in jouw specifieke geval niet relevant zijn. Zet ze in dat geval uit.
+				op belemmeringen die in het proces kunnen ontstaan. Het kan geen kwaad om ze allemaal op te nemen, maar sommige
+				opties kunnen in jouw specifieke geval niet relevant zijn. Zet ze in dat geval uit.
 			</p>
 			<form>
 				<span>

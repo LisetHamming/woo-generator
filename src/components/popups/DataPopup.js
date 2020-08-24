@@ -3,7 +3,7 @@ const DataPopup = {
 		id: "1",
 		h1: "Ben je journalist?",
 		p:
-			"Je hoeft geen journalist te zijn om een Wob-verzoek in te dienen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten."
+			"Je hoeft geen journalist te zijn om een Wob-verzoek in te dienen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten. In ieder geval is het belang van je verzoek hiermee direct duidelijk."
 	},
 	2: {
 		id: "2",
@@ -15,7 +15,7 @@ const DataPopup = {
 		id: "3",
 		h1: "Namens een (media-)organisatie",
 		p:
-			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je flink goedkoper dan als organisatie, het kan al snel honderdvijftig euro schelen. Als je voor een bekende media-organisatie werkt kan dat ook gewicht in de schaal leggen bij de behandeling van je verzoek."
+			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Het vakje biedt ook ruimte om de organisatie kort te omschrijven. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je flink goedkoper dan als organisatie, het kan al snel honderdvijftig euro schelen. Als je voor een bekende media-organisatie werkt kan dat daarentegen gewicht in de schaal leggen bij de behandeling van je verzoek."
 	},
 	4: {
 		id: "4",
@@ -29,9 +29,7 @@ const DataPopup = {
 		p:
 			"Er zijn in Nederland tal van overheidsinstanties: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Deze instanties zijn allemaal ‘wobbaar’ en staan in de database van de Wob-generator. ",
 		p2:
-			"De database van de Wob-generator is gekoppeld aan de database van de ‘Allmanak’, een initiatief van de Open State Foundation. De Allmanak is wat betreft overheidsinstanties in Nederland de meest complete databank die online beschikbaar is.",
-		p3:
-			" Toch zijn er ook organisaties die onder de Wob vallen maar (nog) niet in de database van de Wob-generator staan. Denk aan zogeheten 'publiekrechtelijke instellingen' zoals TNO of de Wageningen Universiteit. Je kunt je verzoek dan ook sturen naar de minister onder wiens verantwoordelijkheid die organisatie valt, waarbij je in de brief benoemt dat de informatie zich bij die organisatie bevindt."
+			"Op een paar uitzonderingen na vallen alle overheidsinstanties onder de Wob. Maar ook private rechtspersonen (bedrijven) die bepaalde publieke taken uitoefenen kunnen (deels) onder de Wob vallen. Helaas is het vaak onduidelijk of dat het geval is, totdat de rechter daarover beslist. Het valt bij grensgevallen dus altijd te proberen."
 	},
 	6: {
 		id: "6",
@@ -45,28 +43,28 @@ const DataPopup = {
 		id: "7",
 		h1: "Geadresseerde",
 		p:
-			"Als je de naam van de hoogstgeplaatste functionaris van de instantie kent, bijvoorbeeld van de minister, de staatssecretaris, de commissaris van de koning, enzovoort, dan kun je die er zelf bijschrijven. Maar het is niet verplicht. "
+			"Als je de naam van de hoogstgeplaatste functionaris van de instantie kent, bijvoorbeeld van de minister, de staatssecretaris, de commissaris van de koning, enzovoort, dan kun je die er na het downloaden van je concept Wob-verzoek zelf bijschrijven. Maar het is niet verplicht. "
 	},
 	8: {
 		id: "8",
 		h1: "Waarom je nauwkeurig moet zijn",
 		p:
-			"Als het onderwerp waarover je informatie vraagt onduidelijk is of ontbreekt, kan de overheidsinstantie besluiten je verzoek niet in behandeling te nemen. Bovendien kan een te brede formulering ervoor zorgen dat de overheid om verduidelijking vraagt. Er kunnen dan weken verstrijken voordat de overheid met je verzoek aan de slag gaat."
+			"Als het onderwerp waarover je informatie vraagt onduidelijk is of ontbreekt, kan de overheidsinstantie besluiten je verzoek niet in behandeling te nemen. Bovendien kan een te brede of onduidelijke formulering ervoor zorgen dat de overheid om verduidelijking vraagt. Er kunnen dan weken verstrijken voordat de overheid met je verzoek aan de slag gaat."
 	},
 	9: {
 		id: "9",
 		h1: "Milieu",
 		p:
-			"Als je Wob-verzoek betrekking heeft op milieu-informatie moet een overheidsinstantie daar binnen twee weken een besluit over nemen. Bij alle andere Wob-verzoeken is dit vier weken."
+			"Als je Wob-verzoek betrekking heeft op milieu-informatie moet een overheidsinstantie daar binnen twee weken een besluit over nemen, te verlengen met nog eens twee weken Bij alle andere Wob-verzoeken is dit vier weken, te verlengen met nog eens vier weken."
 	},
 
 	11: {
 		id: "11",
 		h1: "Specifieke documenten",
 		p:
-			"Kies hiervoor als je precies weet welk document of documenten je wilt hebben. Op de volgende pagina krijg je de mogelijkheid om ook openbaarmaking van onderliggende documenten te vragen. Zo krijg je inzicht in de totstandkoming van het document/de documenten, de personen of organisaties die daarbij betrokken zijn geweest, koerswijzigingen, enzovoort.",
+			"Kies hiervoor als je precies weet welk document of documenten je wilt hebben. Op de volgende pagina krijg je de mogelijkheid om ook openbaarmaking van de bij een specifiek document behorende onderliggende documenten te vragen. Zo krijg je inzicht in de totstandkoming van het document/de documenten, de personen of organisaties die daarbij betrokken zijn geweest, koerswijzigingen, enzovoort.",
 		p2:
-			"Wil je naast deze specifieke documenten echt álle documenten over dit onderwerp, dan is het verstandiger om twee aparte verzoeken te versturen. Vandaar dat je niet beide opties kan aanvinken."
+			"Wil je naast deze specifieke documenten echt álle documenten over dit onderwerp, dan is het verstandiger om twee aparte verzoeken te versturen. Vandaar dat je niet beide opties kunt aanvinken."
 	},
 	12: {
 		id: "12",
@@ -74,7 +72,7 @@ const DataPopup = {
 		p:
 			"Soms weet je wél dat een bepaalde overheidsinstantie zich met een onderwerp heeft beziggehouden, maar niet welke documenten ze daarover hebben. In dat geval kun je vragen om alle documenten over het onderwerp. Dit wordt ook wel een ‘sleepnet-wob' genoemd.",
 		p2:
-			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten. Dit kun je op de volgende pagina aangeven."
+			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten en daardoor zelf nodeloos lang op stukken moeten wachten. Dit kun je op de volgende pagina aangeven."
 	},
 	13: {
 		id: "13",
@@ -86,7 +84,7 @@ const DataPopup = {
 		id: "14",
 		h1: "Welke documenten zijn nuttig?",
 		p:
-			"E-mails, bijvoorbeeld, kunnen veel inzicht geven in het besluitvormingsproces, de toon waarin tussen bepaalde personen gecommuniceerd wordt en de frequentie van het contact. Maar e-mails kunnen ook over volstrekt irrelevante zaken gaan, zoals de hoeveelheid broodjes die bij de vergadering zijn besteld. Bedenk dus of e-mails in het geval van jouw verzoek relevant zijn."
+			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten en daardoor zelf nodeloos lang op stukken moeten wachten. E-mails, bijvoorbeeld, kunnen veel inzicht geven in het besluitvormingsproces, de toon waarin tussen bepaalde personen gecommuniceerd wordt en de frequentie van het contact. Maar e-mails kunnen ook over volstrekt irrelevante zaken gaan, zoals de hoeveelheid broodjes die bij de vergadering zijn besteld. Bedenk dus of e-mails in het geval van jouw verzoek relevant zijn."
 	},
 	15: {
 		id: "15",
