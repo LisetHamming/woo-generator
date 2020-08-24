@@ -27,9 +27,12 @@ const DataPopup = {
 		id: "5",
 		h1: "Welke overheidsinstanties kan ik ‘wobben’ met de Wob-generator? ",
 		p:
-			"Er zijn in Nederland tal van overheidsinstanties: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Deze instanties zijn allemaal ‘wobbaar’ en staan in de database van de Wob-generator. ",
+			"Er zijn in Nederland tal van overheidsinstanties: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Deze instanties zijn allemaal ‘wobbaar’ en te vinden via de Wob-generator. ",
 		p2:
-			"Op een paar uitzonderingen na vallen alle overheidsinstanties onder de Wob. Maar ook private rechtspersonen (bedrijven) die bepaalde publieke taken uitoefenen kunnen (deels) onder de Wob vallen. Helaas is het vaak onduidelijk of dat het geval is, totdat de rechter daarover beslist. Het valt bij grensgevallen dus altijd te proberen."
+			"De Wob-generator is gekoppeld aan de database van de ‘Allmanak’, een initiatief van de Open State Foundation. De Allmanak is wat betreft contactgegevens van overheidsinstanties in Nederland de meest complete databank die online beschikbaar is.",
+
+		p3:
+			"Helaas is ook de Allmanak niet volledig: er zijn overheidsinstanties die onder de Wob vallen maar niet met de Wob-generator te vinden zijn. Staat de overheidsinstantie die je zoekt of de contactgegevens er niet tussen, bekijk dan de website van de betreffende instantie."
 	},
 	6: {
 		id: "6",
