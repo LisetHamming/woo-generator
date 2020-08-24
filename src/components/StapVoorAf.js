@@ -15,24 +15,28 @@ function StapVoorAf() {
 				laptop openen.
 			</p>
 			<br />
-			<p>Aan de linkerkant staan steeds vragen om te beantwoorden.</p>
+			<p>
+				Aan de linkerkant van het scherm staat welke informatie we nodig hebben voor je verzoek en vakjes om deze
+				informatie in te vullen.
+			</p>
 			<p> </p>
 			<span className="ietje">
-				<p>Bij de meeste vragen staan ‘i-tjes’ waar je op kunt klikken met informatie over de vragen.</p>
+				<p>Voor meer uitleg kun je klikken op de i'tjes.</p>
 				<PopupButton number="19" />
 				<br />
 			</span>
 			<br />
 			<p>
 				Je antwoorden worden automatisch verwerkt en verschijnen vervolgens in het concept Wob-verzoek aan de
-				rechterkant. Alles wat je invult wordt via de browser die je gebruikt ‘lokaal’ opgeslagen. Dat betekent dat
-				niemand anders je antwoorden kan zien, ook wij niet.
+				rechterkant. Zo kun je steeds zien of de tekst goed loopt. Alles wat je invult wordt via de browser die je
+				gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet.
 			</p>
 			<br />
 			<p>Als je alle vragen hebt beantwoord, kun je je concept Wob-verzoek opslaan als Word-document of als PDF.</p>
 			<br />
 			<p className="extraPadding">
-				Wil je iets net even anders? Dan kun je in het opgeslagen Word-document je Wob-verzoek nog aanpassen.
+				Wil je iets net even anders of wil je bijvoorbeeld een extra toelichting op je verzoek toevoegen? Dan kun je in
+				het opgeslagen Word-document je Wob-verzoek nog aanpassen.
 			</p>
 			<Link to="/">Terug</Link>
 

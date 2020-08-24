@@ -136,7 +136,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 
 							<p>
 								{value[11]
-									? `- Rapporten, adviezen (indien bekend) ${
+									? `- Rapporten, adviezen${
 											value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
 									  };  `
 									: ""}{" "}

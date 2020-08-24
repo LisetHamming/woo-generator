@@ -62,12 +62,12 @@ function Stap3_2({
 
 			<span>
 				{" "}
-				<p>Welke informatie moet de overheid openbaar maken</p>
+				<p>Welke documenten moet de overheid openbaar maken</p>
 				<PopupButton number="13" />
 			</span>
 			<span className="extraPadding">
 				{" "}
-				<p>Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
+				<p>Denk goed na welke documenten wel of niet nuttig zijn.</p>
 				<PopupButton number="14" />{" "}
 			</span>
 			<Link to="/Stap3">Terug</Link>
