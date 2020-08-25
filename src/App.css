@@ -17,6 +17,7 @@ li button {
 
 li button p:first-of-type {
 	width: 25vw;
+	padding-right: 10px;
 }
 
 li button p:nth-of-type(2) {
@@ -557,7 +558,7 @@ Checkbox styles
 #authorities .fontIcon {
 	background-color: black;
 	padding: 1.2em;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 .central {
@@ -572,6 +573,12 @@ Checkbox styles
 
 .formLetter .ietje {
 	display: flex;
+}
+
+.plaintext {
+	background-color: white;
+	color: #808080;
+	padding: 0;
 }
 
 @media print {

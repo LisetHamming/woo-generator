@@ -69,7 +69,7 @@ function Stap2({
 								<SetSelectedAuthorityManual value={value} clickHandlerAuthority={clickHandlerAuthority} />
 							</React.Fragment>
 						)}
-
+						{console.log(authorities)}
 						<p>{value.selectedAuthority.value}</p>
 						<div>
 							<button
@@ -94,11 +94,12 @@ function Stap2({
 										item.adres?.plaats?.toLowerCase().includes(searchValue.toLowerCase()) ||
 										item.types.some(type => type.toLowerCase().includes(searchValue.toLowerCase()))
 								)
+								.sort((a, b) => a.naam.localeCompare(b.naam))
 								.map(item => (
 									<li key={item.systemid}>
 										<button type="button" onClick={() => clickHandlerAuthority(item)}>
 											<p>{item.naam}</p>
-											<p>{item.postAdres?.plaats || item.bezoekAdres?.plaats}</p>
+
 											<p>{item.types}</p>
 											<FontAwesomeIcon className="fontIcon" icon={faPlus} />
 										</button>

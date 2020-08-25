@@ -20,7 +20,12 @@ function HomepageOvergenerator() {
 						Nederlandse overheid en is volstrekt onafhankelijk.
 					</p>
 					<br></br>
-					<p>Contact: info@wob-generator.nl</p>
+					<p>
+						Contact:{" "}
+						<a href="mailto:info@wob-generator.nl" class="plaintext">
+							info@wob-generator.nl
+						</a>
+					</p>
 					<div className="spanLinks">
 						<img src={logo_vvoj} className="logo_vvoj" />
 					</div>

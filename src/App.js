@@ -17,6 +17,7 @@ function App() {
 						...item,
 						adres: postAdres.postcode?.length > 6 ? postAdres : bezoekAdres
 					}))
+					.sort()
 			)
 			.then(data => setAuthorities(data))
 			.catch(error => setAuthorities(error));
