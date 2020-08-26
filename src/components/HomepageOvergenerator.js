@@ -10,14 +10,37 @@ function HomepageOvergenerator() {
 					<h1>Over deze generator</h1>
 					<p>
 						De Wob-generator is een project van de Wob-werkgroep van de Vlaams-Nederlandse Vereniging van
-						Onderzoeksjournalisten (VVOJ) en financieel mogelijk gemaakt door Stichting Lira. Ontwikkeling: Tove Oegema
-						(Research Assistant) en Paulien Bouw. Inhoud: Liset Hamming, Tim Staal (VVOJ).
+						Onderzoeksjournalisten (
+						<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
+							VVOJ
+						</a>
+						) en financieel mogelijk gemaakt door{" "}
+						<a className="plaintext" href="https://www.lira.nl/" target="_blank">
+							Stichting Lira
+						</a>
+						. Ontwikkeling: Tove Oegema (
+						<a className="plaintext" href="https://researchassistant.nl/" target="_blank">
+							Research Assistant
+						</a>
+						) en{" "}
+						<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank">
+							Paulien Bouw
+						</a>
+						. Inhoud: Liset Hamming, Tim Staal{" "}
+						<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
+							(VVOJ)
+						</a>
+						.
 					</p>
 					<br />
 					<br />
 					<p>
-						De Wob-werkgroep van de VVOJ beheert de website. De website is op geen enkele manier verbonden aan de
-						Nederlandse overheid en is volstrekt onafhankelijk.
+						De Wob-werkgroep van de{" "}
+						<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
+							VVOJ
+						</a>{" "}
+						beheert de website. De website is op geen enkele manier verbonden aan de Nederlandse overheid en is
+						volstrekt onafhankelijk.
 					</p>
 					<br></br>
 					<p>
@@ -27,7 +50,9 @@ function HomepageOvergenerator() {
 						</a>
 					</p>
 					<div className="spanLinks">
-						<img src={logo_vvoj} className="logo_vvoj" />
+						<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
+							<img src={logo_vvoj} className="logo_vvoj" />
+						</a>
 					</div>
 					<div className="spanLinks">
 						<Link to="/PrivacyVoorwaarden">Privacy Policy </Link>

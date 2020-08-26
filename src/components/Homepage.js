@@ -319,7 +319,9 @@ const Homepage = props => {
 				</div>
 				<div className="extra_content">
 					<p>Een initiatief van de </p>
-					<img src={logo_vvoj} className="logo_vvoj" />
+					<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
+						<img src={logo_vvoj} className="logo_vvoj" />
+					</a>
 				</div>
 				<div className="extra_content">
 					{" "}
