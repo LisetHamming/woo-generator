@@ -62,7 +62,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							: ""}
 						{value.subjectDateEnd && value.subjectDateStart
 							? " tot " + formatDate(new Date(value.subjectDateEnd)) + "."
-							: "."}
+							: ""}
 					</p>
 					<br />
 
@@ -104,7 +104,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									<h3>Documenten</h3>
 									<p>
 										Concreet vraag ik u om kopie van of inzage in alle documenten of informatie met betrekking tot{" "}
-										{value.subjectLong}{" "}
+										{value.subjectLong}
 										{value.subjectDateStart && " van " + formatDate(new Date(value.subjectDateStart))}
 										{value.subjectDateEnd && " tot " + formatDate(new Date(value.subjectDateEnd))}, waaronder:
 									</p>
@@ -122,14 +122,17 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									: ""}
 							</p>
 							<p>
-								{value[13] &&
+								{value[12] &&
+									value[13] &&
 									`- Correspondentie, gespreksverslagen intern${wordsInside.length > 0 &&
 										` (${wordsInside.join(", ")})`};`}
 							</p>
 							<p>
-								{value[14] &&
-									`- Alle externe correspondentie ${wordsOutside.length > 0 && ` (${wordsOutside.join(", ")})`}
-							    	${value.subjectLongOrganisation && `tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}
+								{value[12] &&
+									value[14] &&
+									`- Alle externe correspondentie ${wordsOutside.length > 0 &&
+										`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
+										` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}
 							</p>
 
 							<p>{value.subjectInside5 ? "- Memo's, notities;" : ""}</p>

@@ -45,10 +45,6 @@ a {
 	margin-right: 1em;
 }
 
-form {
-	margin-bottom: 25px;
-}
-
 body {
 	background-color: #ffdb62;
 	font-family: "Source Sans Pro", sans-serif;
@@ -366,16 +362,14 @@ p.header {
 
 .formLetter span {
 	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
 }
 
 .formLetter .selectedAuthority {
 	border: 1px dashed grey;
 	padding: 20px;
 	margin-top: 20px;
-}
-
-.formLetter label {
-	padding-bottom: 15px;
 }
 
 .formInputs input {
@@ -390,6 +384,7 @@ input {
 
 form {
 	margin-top: 40px;
+	margin-bottom: 60px;
 }
 
 .extraPadding {
@@ -447,7 +442,7 @@ Checkbox styles
 	display: block;
 	position: relative;
 	padding-left: 35px;
-	margin-bottom: 12px;
+
 	cursor: pointer;
 
 	-webkit-user-select: none;
@@ -525,14 +520,6 @@ Checkbox styles
 	font-weight: bold;
 }
 
-.object {
-	align-items: center;
-	justify-content: space-between;
-	border: 1px dashed grey;
-	margin-top: 10px;
-	margin-bottom: 25px;
-}
-
 .object button {
 	margin: 0px;
 }
@@ -548,11 +535,6 @@ Checkbox styles
 	border-bottom-left-radius: 0;
 	border-top-left-radius: 0;
 	display: block;
-}
-
-.objectInput {
-	align-items: center;
-	width: 70%;
 }
 
 #authorities .fontIcon {
@@ -580,6 +562,19 @@ Checkbox styles
 	color: #808080;
 	padding: 0;
 	margin: 0;
+}
+
+.formLetter .objectInput {
+	align-items: flex-end !important;
+	width: 70%;
+}
+
+.object {
+	align-items: center;
+	justify-content: space-between;
+	border: 1px dashed grey;
+	margin-top: 10px;
+	margin-bottom: 25px;
 }
 
 @media print {
