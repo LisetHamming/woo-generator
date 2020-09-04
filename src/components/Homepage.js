@@ -125,7 +125,7 @@ const useLocalStorageState = (key, initialState) => {
 };
 
 const Homepage = props => {
-	const [manualAuthority, setManualAuthority] = useState(false);
+	const [showManualAuthority, setShowManualAuthority] = useState(false);
 	const [value, setValue] = useLocalStorageState("data", initialState);
 	// const [searchValue, setSearchValue] = useState("");
 	// const [dateToday, setDateToday] = useState("");
@@ -139,7 +139,7 @@ const Homepage = props => {
 
 	const clickHandlerAuthority = selectedAuthority => {
 		setValue(current => ({ ...current, selectedAuthority }));
-		setManualAuthority(false);
+		setShowManualAuthority(false);
 	};
 	const clickHandlerClearSelectedAuthority = () => {
 		setValue(current => ({ ...current, selectedAuthority: null }));
@@ -316,8 +316,8 @@ const Homepage = props => {
 			</Route>
 			<Route path="/Stap2">
 				<Stap2
-					manualAuthority={manualAuthority}
-					setManualAuthority={setManualAuthority}
+					showManualAuthority={showManualAuthority}
+					setShowManualAuthority={setShowManualAuthority}
 					value={value}
 					changeHandlerUser={changeHandlerUser}
 					authorities={props.authorities}

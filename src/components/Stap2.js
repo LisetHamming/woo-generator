@@ -13,12 +13,12 @@ function Stap2({
 	filteredDataText,
 	getCurrentDate,
 	authorities,
-	manualAuthority,
-	setManualAuthority
+	showManualAuthority,
+	setShowManualAuthority
 }) {
 	const [searchValue, setSearchValue] = useState("");
-
 	const [errors, setErrors] = useState([]);
+
 	return (
 		<div className="formLetter">
 			<p className="logo">Wob-generator</p>
@@ -34,17 +34,8 @@ function Stap2({
 					dan handmatig in.
 				</p>
 			)}
+
 			<form>
-				{!value.selectedAuthority && (
-					<input
-						size="50"
-						id="searchBarAuthority"
-						type="search"
-						value={searchValue}
-						placeholder="Zoek op naam of plaats"
-						onChange={event => setSearchValue(event.target.value)}
-					/>
-				)}
 				{value.selectedAuthority ? (
 					<div className="selectedAuthority">
 						<p>Controleer de instantie die je wobt:</p>
@@ -65,10 +56,9 @@ function Stap2({
 									Er is helaas geen adres bekend bij ons, beschik je zelf wel over een adres van deze instantie, vul dan
 									het onderstaande formulier in.
 								</p>
-								<SetSelectedAuthorityManual value={value} clickHandlerAuthority={clickHandlerAuthority} />
+								<SetSelectedAuthorityManual clickHandlerAuthority={clickHandlerAuthority} />
 							</React.Fragment>
 						)}
-						{console.log(authorities)}
 						<p>{value.selectedAuthority.value}</p>
 						<div>
 							<button
@@ -84,49 +74,55 @@ function Stap2({
 						</div>
 					</div>
 				) : (
-					<ul id="authorities">
-						{authorities ? (
-							authorities
-								.filter(
-									item =>
-										item.naam.toLowerCase().includes(searchValue.toLowerCase()) ||
-										item.adres?.plaats?.toLowerCase().includes(searchValue.toLowerCase()) ||
-										item.types.some(type => type.toLowerCase().includes(searchValue.toLowerCase()))
-								)
-								.sort((a, b) => a.naam.localeCompare(b.naam))
-								.map(item => (
-									<li key={item.systemid}>
-										<button type="button" onClick={() => clickHandlerAuthority(item)}>
-											<p>{item.naam}</p>
+					<>
+						<input
+							size="50"
+							id="searchBarAuthority"
+							type="search"
+							value={searchValue}
+							placeholder="Zoek op naam of plaats"
+							onChange={event => setSearchValue(event.target.value)}
+						/>
 
-											<p>{item.types}</p>
-											<FontAwesomeIcon className="fontIcon" icon={faPlus} />
-										</button>
-									</li>
-								))
-						) : (
-							<li>Er is een foutmelding bij onze bron, als je zelf gegevens hebt, graag invullen.</li>
-						)}
-					</ul>
-				)}
-				{!value.selectedAuthority && (
-					<div>
-						<br />
-						<span>
-							<p>Staat de juiste instantie er niet tussen, maar beschik je zelf wel over de juiste gegevens?</p>
-						</span>
-						<button
-							className="buttonStyle"
-							type="button"
-							value="true"
-							onClick={event => setManualAuthority(event.target.value)}
-						>
-							Vul dan hier de gegevens in
-						</button>
-					</div>
+						<ul id="authorities">
+							{authorities ? (
+								authorities
+									.filter(
+										item =>
+											item.naam.toLowerCase().includes(searchValue.toLowerCase()) ||
+											item.adres?.plaats?.toLowerCase().includes(searchValue.toLowerCase()) ||
+											item.types.some(type => type.toLowerCase().includes(searchValue.toLowerCase()))
+									)
+									.sort((a, b) => a.naam.localeCompare(b.naam))
+									.map(item => (
+										<li key={item.systemid}>
+											<button type="button" onClick={() => clickHandlerAuthority(item)}>
+												<p>{item.naam}</p>
+
+												<p>{item.types}</p>
+												<FontAwesomeIcon className="fontIcon" icon={faPlus} />
+											</button>
+										</li>
+									))
+							) : (
+								<li>Er is een foutmelding bij onze bron, als je zelf gegevens hebt, graag invullen.</li>
+							)}
+						</ul>
+
+						<div>
+							<br />
+							<span>
+								<p>Staat de juiste instantie er niet tussen, maar beschik je zelf wel over de juiste gegevens?</p>
+							</span>
+							<button className="buttonStyle" type="button" onClick={() => setShowManualAuthority(true)}>
+								Vul dan hier de gegevens in
+							</button>
+						</div>
+					</>
 				)}
 			</form>
-			{manualAuthority && <SetSelectedAuthorityManual value={value} clickHandlerAuthority={clickHandlerAuthority} />}
+
+			{showManualAuthority && <SetSelectedAuthorityManual clickHandlerAuthority={clickHandlerAuthority} />}
 
 			<span>
 				<p>Hoe kies ik de juiste overheidsinstantie?</p>
@@ -164,4 +160,5 @@ function Stap2({
 		</div>
 	);
 }
+
 export default Stap2;
