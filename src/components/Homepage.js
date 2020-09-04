@@ -1,3 +1,4 @@
+import { set } from "lodash/fp";
 import React, { useEffect, useState } from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import logo_vvoj from "../assets/logo_vvoj.png";
@@ -125,10 +126,13 @@ const useLocalStorageState = (key, initialState) => {
 };
 
 const Homepage = props => {
-	const [showManualAuthority, setShowManualAuthority] = useState(false);
 	const [value, setValue] = useLocalStorageState("data", initialState);
 	// const [searchValue, setSearchValue] = useState("");
 	// const [dateToday, setDateToday] = useState("");
+
+	const handleKeypathChange = ({ currentTarget: { type, name, value, checked } }) => {
+		setValue(set(name, type === "checkbox" ? checked : type === "number" ? Number(value) : value));
+	};
 
 	const changeHandlerCheckbox = ({ currentTarget: { value, checked } }) => {
 		setValue(current => ({ ...current, [value]: checked }));
@@ -137,9 +141,8 @@ const Homepage = props => {
 		return value[item.id];
 	});
 
-	const clickHandlerAuthority = selectedAuthority => {
+	const setAuthority = selectedAuthority => {
 		setValue(current => ({ ...current, selectedAuthority }));
-		setShowManualAuthority(false);
 	};
 	const clickHandlerClearSelectedAuthority = () => {
 		setValue(current => ({ ...current, selectedAuthority: null }));
@@ -316,15 +319,14 @@ const Homepage = props => {
 			</Route>
 			<Route path="/Stap2">
 				<Stap2
-					showManualAuthority={showManualAuthority}
-					setShowManualAuthority={setShowManualAuthority}
 					value={value}
 					changeHandlerUser={changeHandlerUser}
 					authorities={props.authorities}
-					clickHandlerAuthority={clickHandlerAuthority}
+					setAuthority={setAuthority}
 					clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}
 					filteredDataText={filteredDataText}
 					getCurrentDate={getCurrentDate}
+					handleKeypathChange={handleKeypathChange}
 				/>
 			</Route>
 			<Route path="/Stap3">

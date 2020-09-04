@@ -8,14 +8,15 @@ import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
 
 function Stap2({
 	value,
-	clickHandlerAuthority,
+	setAuthority,
 	clickHandlerClearSelectedAuthority,
 	filteredDataText,
 	getCurrentDate,
 	authorities,
-	showManualAuthority,
-	setShowManualAuthority
+	handleKeypathChange
 }) {
+	const [showManualAuthority, setShowManualAuthority] = useState(false);
+
 	const [searchValue, setSearchValue] = useState("");
 	const [errors, setErrors] = useState([]);
 
@@ -36,7 +37,7 @@ function Stap2({
 			)}
 
 			<form>
-				{value.selectedAuthority ? (
+				{value.selectedAuthority && !showManualAuthority ? (
 					<div className="selectedAuthority">
 						<p>Controleer de instantie die je wobt:</p>
 						<h3>{value.selectedAuthority.naam}</h3>
@@ -56,7 +57,11 @@ function Stap2({
 									Er is helaas geen adres bekend bij ons, beschik je zelf wel over een adres van deze instantie, vul dan
 									het onderstaande formulier in.
 								</p>
-								<SetSelectedAuthorityManual clickHandlerAuthority={clickHandlerAuthority} />
+								<SetSelectedAuthorityManual
+									value={value}
+									setAuthority={setAuthority}
+									handleKeypathChange={handleKeypathChange}
+								/>
 							</React.Fragment>
 						)}
 						<p>{value.selectedAuthority.value}</p>
@@ -96,7 +101,7 @@ function Stap2({
 									.sort((a, b) => a.naam.localeCompare(b.naam))
 									.map(item => (
 										<li key={item.systemid}>
-											<button type="button" onClick={() => clickHandlerAuthority(item)}>
+											<button type="button" onClick={() => setAuthority(item)}>
 												<p>{item.naam}</p>
 
 												<p>{item.types}</p>
@@ -114,7 +119,22 @@ function Stap2({
 							<span>
 								<p>Staat de juiste instantie er niet tussen, maar beschik je zelf wel over de juiste gegevens?</p>
 							</span>
-							<button className="buttonStyle" type="button" onClick={() => setShowManualAuthority(true)}>
+							<button
+								className="buttonStyle"
+								type="button"
+								onClick={() => {
+									setAuthority({
+										naam: "",
+										adres: {
+											straat: "",
+											huisnummer: "",
+											postcode: "",
+											plaats: ""
+										}
+									});
+									setShowManualAuthority(true);
+								}}
+							>
 								Vul dan hier de gegevens in
 							</button>
 						</div>
@@ -122,7 +142,16 @@ function Stap2({
 				)}
 			</form>
 
-			{showManualAuthority && <SetSelectedAuthorityManual clickHandlerAuthority={clickHandlerAuthority} />}
+			{showManualAuthority && (
+				<SetSelectedAuthorityManual
+					value={value}
+					setAuthority={authority => {
+						setAuthority(authority);
+						setShowManualAuthority(false);
+					}}
+					handleKeypathChange={handleKeypathChange}
+				/>
+			)}
 
 			<span>
 				<p>Hoe kies ik de juiste overheidsinstantie?</p>
