@@ -13,7 +13,6 @@ function Stap2({
 	filteredDataText,
 	getCurrentDate,
 	authorities,
-	changeHandlerUser,
 	manualAuthority,
 	setManualAuthority
 }) {

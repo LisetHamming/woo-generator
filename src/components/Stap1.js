@@ -12,7 +12,6 @@ function Stap1({
 	changeHandlerCompanyName
 }) {
 	const [errors, setErrors] = useState([]);
-	const [popUp, setPopUp] = useState(false);
 
 	return (
 		<div className="formLetter">

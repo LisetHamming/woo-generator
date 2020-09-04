@@ -102,7 +102,8 @@ const initialState = {
 	subjectDataset1: true,
 	subjectDataset2: true,
 	subjectDataset3: [],
-	subjectElse: [],
+	// deze key is dubbel
+	// subjectElse: [],
 	step6: false,
 	step9: false
 };
@@ -118,7 +119,7 @@ const useLocalStorageState = (key, initialState) => {
 
 	useEffect(() => {
 		window.localStorage.setItem(key, JSON.stringify(state));
-	}, [state]);
+	}, [key, state]);
 
 	return [state, setState];
 };
@@ -126,8 +127,8 @@ const useLocalStorageState = (key, initialState) => {
 const Homepage = props => {
 	const [manualAuthority, setManualAuthority] = useState(false);
 	const [value, setValue] = useLocalStorageState("data", initialState);
-	const [searchValue, setSearchValue] = useState("");
-	const [dateToday, setDateToday] = useState("");
+	// const [searchValue, setSearchValue] = useState("");
+	// const [dateToday, setDateToday] = useState("");
 
 	const changeHandlerCheckbox = ({ currentTarget: { value, checked } }) => {
 		setValue(current => ({ ...current, [value]: checked }));
@@ -171,48 +172,12 @@ const Homepage = props => {
 		setValue(initialState);
 	};
 
-	const changeHandlerSubjectCheckbox = ({
-		currentTarget: {
-			checked,
-			name,
-			dataset: { subject }
-		}
-	}) => {
-		setValue(current => ({
-			...current,
-			subjectState: {
-				...current.subjectState,
-				[subject]: {
-					...current.subjectState[subject],
-					[name]: checked
-				}
-			}
-		}));
-	};
 	const changeHandlerSubjectMeeting = ({ currentTarget: { checked, name } }) => {
 		setValue(current => ({
 			...current,
 			subjectMeeting: {
 				...current.subjectMeeting,
 				[name]: checked
-			}
-		}));
-	};
-	const changeHandlerSubjectText = ({
-		currentTarget: {
-			value,
-			name,
-			dataset: { subject }
-		}
-	}) => {
-		setValue(current => ({
-			...current,
-			subjectState: {
-				...current.subjectState,
-				[subject]: {
-					...current.subjectState[subject],
-					[name]: value
-				}
 			}
 		}));
 	};
@@ -242,9 +207,7 @@ const Homepage = props => {
 	const changeHandlerUser = ({ currentTarget: { value, id } }) => {
 		setValue(current => ({ ...current, [id]: value }));
 	};
-	const changeHandlerSubject = ({ currentTarget: { value, id } }) => {
-		setValue(current => ({ ...current, [id]: value }));
-	};
+
 	const changeHandlerCompanyName = ({ currentTarget: { checked } }) => {
 		setValue(current => ({ ...current, userCompanyName: checked, userCompanyNameInput: "" }));
 	};
@@ -314,13 +277,13 @@ const Homepage = props => {
 						<Link to="/StapVoorAf">Start je Wob-verzoek</Link>
 					</div>
 					<div>
-						<img src={machine} />
+						<img src={machine} alt="" />
 					</div>
 				</div>
 				<div className="extra_content">
 					<p>Een initiatief van de </p>
-					<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
-						<img src={logo_vvoj} className="logo_vvoj" />
+					<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
+						<img src={logo_vvoj} className="logo_vvoj" alt="VVOJ" />
 					</a>
 				</div>
 				<div className="extra_content">
