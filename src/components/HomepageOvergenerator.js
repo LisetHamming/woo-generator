@@ -11,23 +11,23 @@ function HomepageOvergenerator() {
 					<p>
 						De Wob-generator is een project van de Wob-werkgroep van de Vlaams-Nederlandse Vereniging van
 						Onderzoeksjournalisten (
-						<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
+						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
 							VVOJ
 						</a>
 						) en financieel mogelijk gemaakt door{" "}
-						<a className="plaintext" href="https://www.lira.nl/" target="_blank">
+						<a className="plaintext" href="https://www.lira.nl/" target="_blank" rel="noopener noreferrer">
 							Stichting Lira
 						</a>
 						. Ontwikkeling: Tove Oegema (
-						<a className="plaintext" href="https://researchassistant.nl/" target="_blank">
+						<a className="plaintext" href="https://researchassistant.nl/" target="_blank" rel="noopener noreferrer">
 							Research Assistant
 						</a>
 						) en{" "}
-						<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank">
+						<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank" rel="noopener noreferrer">
 							Paulien Bouw
 						</a>
 						. Inhoud: Liset Hamming, Tim Staal{" "}
-						<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
+						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
 							(VVOJ)
 						</a>
 						.
@@ -36,7 +36,7 @@ function HomepageOvergenerator() {
 					<br />
 					<p>
 						De Wob-werkgroep van de{" "}
-						<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
+						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
 							VVOJ
 						</a>{" "}
 						beheert de website. De website is op geen enkele manier verbonden aan de Nederlandse overheid en is
@@ -45,13 +45,13 @@ function HomepageOvergenerator() {
 					<br></br>
 					<p>
 						Contact:{" "}
-						<a href="mailto:info@wob-generator.nl" class="plaintext">
+						<a href="mailto:info@wob-generator.nl" className="plaintext">
 							info@wob-generator.nl
 						</a>
 					</p>
 					<div className="spanLinks">
-						<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
-							<img src={logo_vvoj} className="logo_vvoj" />
+						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
+							<img src={logo_vvoj} className="logo_vvoj" alt="VVOJ" />
 						</a>
 					</div>
 					<div className="spanLinks">

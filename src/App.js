@@ -17,7 +17,11 @@ function App() {
 						...item,
 						adres: postAdres.postcode?.length > 6 ? postAdres : bezoekAdres
 					}))
-					.sort()
+					.map(organisatie =>
+						organisatie.types[0] === "Ministerie"
+							? { ...organisatie, naam: `Ministerie van ${organisatie.naam}` }
+							: organisatie
+					)
 			)
 			.then(data => setAuthorities(data))
 			.catch(error => setAuthorities(error));

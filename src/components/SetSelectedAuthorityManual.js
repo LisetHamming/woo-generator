@@ -1,20 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-function SetSelectedAuthorityManual({ clickHandlerAuthority }) {
-	const [manualAuthorityNaam, setManualAuthorityNaam] = useState("");
-	const [manualAuthorityAdres, setManualAuthorityAdres] = useState({
-		straat: "",
-		husinummer: "",
-		postcode: "",
-		plaats: ""
-	});
-
-	const changeHandlerManualAdres = ({ currentTarget: { value, id } }) => {
-		setManualAuthorityAdres(current => ({ ...current, [id]: value }));
-	};
-	const changeHandlerManualNaam = ({ currentTarget: { value, id } }) => {
-		setManualAuthorityNaam(value);
-	};
+function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthorityComplete, handleKeypathChange }) {
 	return (
 		<div>
 			<div>
@@ -22,82 +8,65 @@ function SetSelectedAuthorityManual({ clickHandlerAuthority }) {
 				<form>
 					<span>
 						<label>
-							{" "}
 							Naam instantie
 							<input
 								size="50"
-								onChange={changeHandlerManualNaam}
-								id="selectedAuthorityNaam"
-								name="ManualAuthority"
 								type="text"
-								value={manualAuthorityNaam}
+								name="selectedAuthority.naam"
+								onChange={handleKeypathChange}
+								value={selectedAuthority.naam}
 							/>
 						</label>
 					</span>
 					<span>
 						<label>
-							{" "}
 							Straatnaam
 							<input
 								size="40"
-								onChange={changeHandlerManualAdres}
-								id="straat"
-								name="ManualAuthority"
 								type="text"
-								value={manualAuthorityAdres.straat}
+								name="selectedAuthority.adres.straat"
+								value={selectedAuthority.adres.straat}
+								onChange={handleKeypathChange}
 							/>
 						</label>
 						<label>
-							{" "}
 							Huisnummer
 							<input
 								size="5"
-								onChange={changeHandlerManualAdres}
-								id="huisnummer"
-								name="ManualAuthority"
+								onChange={handleKeypathChange}
+								name="selectedAuthority.adres.huisnummer"
 								type="text"
-								value={manualAuthorityAdres.huisnummer}
+								value={selectedAuthority.adres.huisnummer}
 							/>
 						</label>
 					</span>
 
 					<span>
 						<label>
-							{" "}
 							Postcode
 							<input
 								size="15"
-								onChange={changeHandlerManualAdres}
-								id="postcode"
-								name="ManualAuthority"
+								onChange={handleKeypathChange}
+								name="selectedAuthority.adres.postcode"
 								type="text"
-								value={manualAuthorityAdres.postcode}
+								value={selectedAuthority.adres.postcode}
 							/>
 						</label>
 						<label>
-							{" "}
 							Plaats
 							<input
 								size="30"
-								onChange={changeHandlerManualAdres}
-								id="plaats"
-								name="ManualAuthority"
+								onChange={handleKeypathChange}
 								type="text"
-								value={manualAuthorityAdres.plaats}
+								name="selectedAuthority.adres.plaats"
+								value={selectedAuthority.adres.plaats}
 							/>
 						</label>
 					</span>
-
-					<button
-						type="button"
-						className="buttonStyle"
-						onClick={() => clickHandlerAuthority({ naam: manualAuthorityNaam, adres: manualAuthorityAdres })}
-					>
-						Gebruik gegevens
-					</button>
 				</form>
 			</div>
 		</div>
 	);
 }
+
 export default SetSelectedAuthorityManual;

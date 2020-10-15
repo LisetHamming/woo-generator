@@ -1,3 +1,4 @@
+import { set } from "lodash/fp";
 import React, { useEffect, useState } from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import logo_vvoj from "../assets/logo_vvoj.png";
@@ -102,7 +103,8 @@ const initialState = {
 	subjectDataset1: true,
 	subjectDataset2: true,
 	subjectDataset3: [],
-	subjectElse: [],
+	// deze key is dubbel
+	// subjectElse: [],
 	step6: false,
 	step9: false
 };
@@ -118,16 +120,19 @@ const useLocalStorageState = (key, initialState) => {
 
 	useEffect(() => {
 		window.localStorage.setItem(key, JSON.stringify(state));
-	}, [state]);
+	}, [key, state]);
 
 	return [state, setState];
 };
 
 const Homepage = props => {
-	const [manualAuthority, setManualAuthority] = useState(false);
 	const [value, setValue] = useLocalStorageState("data", initialState);
-	const [searchValue, setSearchValue] = useState("");
-	const [dateToday, setDateToday] = useState("");
+	// const [searchValue, setSearchValue] = useState("");
+	// const [dateToday, setDateToday] = useState("");
+
+	const handleKeypathChange = ({ currentTarget: { type, name, value, checked } }) => {
+		setValue(set(name, type === "checkbox" ? checked : type === "number" ? Number(value) : value));
+	};
 
 	const changeHandlerCheckbox = ({ currentTarget: { value, checked } }) => {
 		setValue(current => ({ ...current, [value]: checked }));
@@ -136,9 +141,8 @@ const Homepage = props => {
 		return value[item.id];
 	});
 
-	const clickHandlerAuthority = selectedAuthority => {
+	const setAuthority = selectedAuthority => {
 		setValue(current => ({ ...current, selectedAuthority }));
-		setManualAuthority(false);
 	};
 	const clickHandlerClearSelectedAuthority = () => {
 		setValue(current => ({ ...current, selectedAuthority: null }));
@@ -171,48 +175,12 @@ const Homepage = props => {
 		setValue(initialState);
 	};
 
-	const changeHandlerSubjectCheckbox = ({
-		currentTarget: {
-			checked,
-			name,
-			dataset: { subject }
-		}
-	}) => {
-		setValue(current => ({
-			...current,
-			subjectState: {
-				...current.subjectState,
-				[subject]: {
-					...current.subjectState[subject],
-					[name]: checked
-				}
-			}
-		}));
-	};
 	const changeHandlerSubjectMeeting = ({ currentTarget: { checked, name } }) => {
 		setValue(current => ({
 			...current,
 			subjectMeeting: {
 				...current.subjectMeeting,
 				[name]: checked
-			}
-		}));
-	};
-	const changeHandlerSubjectText = ({
-		currentTarget: {
-			value,
-			name,
-			dataset: { subject }
-		}
-	}) => {
-		setValue(current => ({
-			...current,
-			subjectState: {
-				...current.subjectState,
-				[subject]: {
-					...current.subjectState[subject],
-					[name]: value
-				}
 			}
 		}));
 	};
@@ -242,9 +210,7 @@ const Homepage = props => {
 	const changeHandlerUser = ({ currentTarget: { value, id } }) => {
 		setValue(current => ({ ...current, [id]: value }));
 	};
-	const changeHandlerSubject = ({ currentTarget: { value, id } }) => {
-		setValue(current => ({ ...current, [id]: value }));
-	};
+
 	const changeHandlerCompanyName = ({ currentTarget: { checked } }) => {
 		setValue(current => ({ ...current, userCompanyName: checked, userCompanyNameInput: "" }));
 	};
@@ -314,13 +280,13 @@ const Homepage = props => {
 						<Link to="/StapVoorAf">Start je Wob-verzoek</Link>
 					</div>
 					<div>
-						<img src={machine} />
+						<img src={machine} alt="" />
 					</div>
 				</div>
 				<div className="extra_content">
 					<p>Een initiatief van de </p>
-					<a className="plaintext" href="https://www.vvoj.nl" target="_blank">
-						<img src={logo_vvoj} className="logo_vvoj" />
+					<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
+						<img src={logo_vvoj} className="logo_vvoj" alt="VVOJ" />
 					</a>
 				</div>
 				<div className="extra_content">
@@ -353,15 +319,14 @@ const Homepage = props => {
 			</Route>
 			<Route path="/Stap2">
 				<Stap2
-					manualAuthority={manualAuthority}
-					setManualAuthority={setManualAuthority}
 					value={value}
 					changeHandlerUser={changeHandlerUser}
 					authorities={props.authorities}
-					clickHandlerAuthority={clickHandlerAuthority}
+					setAuthority={setAuthority}
 					clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}
 					filteredDataText={filteredDataText}
 					getCurrentDate={getCurrentDate}
+					handleKeypathChange={handleKeypathChange}
 				/>
 			</Route>
 			<Route path="/Stap3">
