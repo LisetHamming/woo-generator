@@ -16,7 +16,7 @@ function Stap2({
 	handleKeypathChange
 }) {
 	const [showManualAuthority, setShowManualAuthority] = useState(false);
-
+	const [AuthorityComplete, setAuthorityComplete] = useState(false);
 	const [searchValue, setSearchValue] = useState("");
 	const [errors, setErrors] = useState([]);
 
@@ -43,7 +43,7 @@ function Stap2({
 						<h3>{value.selectedAuthority.naam}</h3>
 						<p>{value.selectedAuthority.url}</p>
 						<br />
-						{value.selectedAuthority.adres.postcode ? (
+						{AuthorityComplete ? (
 							<React.Fragment>
 								<p>
 									{value.selectedAuthority.adres.postbus ??
@@ -61,6 +61,7 @@ function Stap2({
 									value={value}
 									setAuthority={setAuthority}
 									handleKeypathChange={handleKeypathChange}
+									setAuthorityComplete={setAuthorityComplete}
 								/>
 							</React.Fragment>
 						)}
@@ -101,7 +102,13 @@ function Stap2({
 									.sort((a, b) => a.naam.localeCompare(b.naam))
 									.map(item => (
 										<li key={item.systemid}>
-											<button type="button" onClick={() => setAuthority(item)}>
+											<button
+												type="button"
+												onClick={() => {
+													setAuthority(item);
+													setAuthorityComplete(!!item.adres.postcode);
+												}}
+											>
 												<p>{item.naam}</p>
 
 												<p>{item.types}</p>

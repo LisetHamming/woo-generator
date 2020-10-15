@@ -1,6 +1,6 @@
 import React from "react";
 
-function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthority, handleKeypathChange }) {
+function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthorityComplete, handleKeypathChange }) {
 	return (
 		<div>
 			<div>
@@ -63,10 +63,6 @@ function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthority
 							/>
 						</label>
 					</span>
-
-					<button type="button" className="buttonStyle" onClick={() => setAuthority(selectedAuthority)}>
-						Gebruik gegevens
-					</button>
 				</form>
 			</div>
 		</div>
