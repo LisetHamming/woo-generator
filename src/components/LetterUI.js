@@ -66,7 +66,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						<React.Fragment>
 							{value.subjectType === "specific" ? (
 								<React.Fragment>
-									<h3>Documenten</h3>
+									<p className="tussenkopje">Documenten</p>
 									<p>Concreet vraag ik u om kopie van of inzage in de volgende documenten of informatie:</p>
 									<br />
 									{value.subjectTextObject.map(item => (
@@ -157,7 +157,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					filteredDataText.map(item => (
 						<div key={item.id}>
 							<div>
-								<h3>{item.title}</h3>
+								<p className="tussenkopje">{item.title}</p>
 								<p>{item.sentence}</p>
 								<br />
 							</div>

@@ -603,4 +603,7 @@ Checkbox styles
 	.letterComplete {
 		width: 100%;
 	}
+	.tussenkopje {
+		font-style: italic;
+	}
 }
