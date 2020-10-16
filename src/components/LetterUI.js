@@ -1,6 +1,5 @@
 import React from "react";
 import DataCheckbox from "./DataCheckbox";
-import formatDate from "./FormatDate";
 
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	const wordsInside = [
@@ -97,8 +96,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									<p>
 										Concreet vraag ik u om kopie van of inzage in alle documenten of informatie met betrekking tot{" "}
 										{value.subjectLong}
-										{value.subjectDateStart && " van " + formatDate(new Date(value.subjectDateStart))}
-										{value.subjectDateEnd && " tot " + formatDate(new Date(value.subjectDateEnd))}, waaronder:
+										{value.subjectDateStart && " van " + value.subjectDateStart}
+										{value.subjectDateEnd && " tot " + value.subjectDateEnd}, waaronder:
 									</p>
 								</React.Fragment>
 							)}

@@ -604,7 +604,7 @@ function Stap3_3({
 										id="subjectDateStart"
 										type="textarea"
 										name="subjectDate"
-										placeholder="22-11-2019"
+										placeholder="bijvoorbeeld 01-01-2020"
 									/>
 								</label>
 
@@ -616,7 +616,7 @@ function Stap3_3({
 										id="subjectDateEnd"
 										type="textarea"
 										name="subjectDate"
-										placeholder="31-12-2019"
+										placeholder="bijvoorbeeld 31-12-2019"
 									/>
 								</label>
 								<button type="button" className="buttonStyle" onClick={clickHandlerClearPeriodDate}>
