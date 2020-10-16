@@ -53,12 +53,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<br />
 					<p>
 						Het betreft documenten of informatie in het kader van de bestuurlijke aangelegenheid: {value.subjectLong}.{" "}
-						{value.subjectDateStart
-							? " Het verzoek betreft de periode van " + formatDate(new Date(value.subjectDateStart))
-							: ""}
-						{value.subjectDateEnd && value.subjectDateStart
-							? " tot " + formatDate(new Date(value.subjectDateEnd)) + "."
-							: ""}
+						{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
+						{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
 					</p>
 					<br />
 
@@ -77,7 +73,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									{value.subjectTextObject.map(item => (
 										<p>
 											- {item.subjectText}
-											{item.subjectDate ? ` (${formatDate(new Date(item.subjectDate))})` : ""}
+											{item.subjectDate ? ` (${item.subjectDate})` : ""}
 										</p>
 									))}
 									<br />

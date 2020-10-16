@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import formatDate from "./FormatDate";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
 
@@ -69,7 +68,7 @@ function Stap3_3({
 									id="subjectSpecificDate"
 									value={value.subjectSpecificDate}
 									onChange={changeHandlerUser}
-									type="date"
+									type="textarea"
 								/>
 								<br />
 							</label>
@@ -80,7 +79,7 @@ function Stap3_3({
 						{value.subjectTextObject.map((item, index) => (
 							<span className="object" key={index}>
 								<p>
-									{item.subjectText} {item.subjectDate && formatDate(new Date(item.subjectDate))}
+									{item.subjectText} {item.subjectDate && item.subjectDate}
 								</p>
 								<button type="button" className="buttonStyle" value={index} onClick={clickHandlerEmptySubjectText}>
 									Verwijder
@@ -603,7 +602,7 @@ function Stap3_3({
 										value={value.subjectDateStart}
 										onChange={changeHandlerUser}
 										id="subjectDateStart"
-										type="date"
+										type="textarea"
 										name="subjectDate"
 										placeholder="22-11-2019"
 									/>
@@ -615,7 +614,7 @@ function Stap3_3({
 										value={value.subjectDateEnd}
 										onChange={changeHandlerUser}
 										id="subjectDateEnd"
-										type="date"
+										type="textarea"
 										name="subjectDate"
 										placeholder="31-12-2019"
 									/>

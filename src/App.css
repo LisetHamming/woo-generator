@@ -564,6 +564,7 @@ Checkbox styles
 	color: #808080;
 	padding: 0;
 	margin: 0;
+	text-decoration: underline;
 }
 
 .formLetter .objectInput {
