@@ -125,22 +125,19 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 										`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
 										` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}
 							</p>
-
 							<p>{value.subjectInside5 ? "- Memo's, notities;" : ""}</p>
-
 							<p>
 								{value[11]
 									? `- Rapporten, adviezen${
 											value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
 									  };  `
-									: ""}{" "}
+									: ""}
 							</p>
 							<p>
-								{value[15]
-									? `- Financieële documentatie${
-											value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
-									  };  `
-									: ""}{" "}
+								{value[15] ??
+									`- Financieële documentatie${
+										value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
+									};  `}
 							</p>
 							<p>{value[16] ? "- Datasets;" : ""} </p>
 							<p>{value[17] ? `-  ${value.subjectElseText}` : ""}</p>
@@ -150,6 +147,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 								inzicht in deze bestuurlijke aangelegenheid kunnen geven, dan verzoek ik u die documenten ook te
 								verstrekken.
 							</p>
+							<br />
 						</React.Fragment>
 					)}
 				</div>
