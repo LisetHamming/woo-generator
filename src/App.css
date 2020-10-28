@@ -91,6 +91,20 @@ h1 {
 	display: flex;
 	justify-content: center;
 }
+.homepageBlock .lanceringItalic{
+	color: grey;
+	font-style: italic;
+}
+.homepageBlock .lanceringBold{
+	color: rgb(192, 43, 57);
+	font-size: 20px;
+}
+.homepageBlock .lanceringBold a{
+	color: rgb(192, 43, 57);
+}
+.homepageBlock .lanceringBoldBlack{
+	font-weight: bold;
+}
 
 .extra_content p {
 	margin-right: 15px;

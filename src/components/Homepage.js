@@ -17,6 +17,7 @@ import Stap3_3 from "./Stap3_3";
 import StapEinde from "./StapEinde";
 import StapExtra from "./StapExtra";
 import StapVoorAf from "./StapVoorAf";
+import Lancering from "./Lancering"
 
 const initialState = {
 	1: true,
@@ -306,6 +307,9 @@ const Homepage = props => {
 			</Route>
 			<Route path="/StapVoorAf">
 				<StapVoorAf />
+			</Route>
+						<Route path="/lancering">
+				<Lancering />
 			</Route>
 			<Route path="/Stap1">
 				<Stap1
