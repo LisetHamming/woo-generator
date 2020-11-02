@@ -9,16 +9,28 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<h2 className="hidePrint">Laatste check!</h2>
 			<p className="extraPadding hidePrint">Wob-verzoek met onderwerp: {value.subjectLong}</p>
 			<p className="hidePrint">
-				Check of de zinnen in je verzoek goed lopen. Denk ook na of er nog specifieke informatie nodig is om aan je
-				verzoek toe te voegen. Wijzigingen en aanvullingen kun je zelf aanbrengen nadat je je Wob-verzoek hebt
-				opgeslagen in als Word-document.
+				Hoewel de Wob-generator met de grootste zorgvuldigheid is ontwikkeld, is wobben mensenwerk en maatwerk.
+				Bovendien blijf je zelf verantwoordelijk voor wat je naar het bestuursorgaan stuurt.
 				<br />
 				<br />
-				Hoewel de Wob-generator met de grootste zorgvuldigheid is ontwikkeld, blijft wobben maatwerk. Je blijft zelf
-				verantwoordelijk voor wat je naar het bestuursorgaan stuurt.
+				Je concept Wob-verzoek
+				<br />
+				Dus check of de zinnen in je verzoek goed lopen. Denk ook na of er nog specifieke informatie nodig is om aan je
+				verzoek toe te voegen. Deze aanvullingen en wijzigingen kun je zelf aanbrengen nadat je je Wob-verzoek hebt
+				opgeslagen. Ben je tevreden, druk de brief dan af en zet je handtekening eronder. Bij een Wob-verzoek per brief
+				is dat verplicht. Vergeet niet vóór het versturen per post een kopie van je ondertekende brief te maken.
+				<br />
+				<br />
+				Digitaal verturen?
+				<br />
+				Er zijn overheidsinstanties die Wob-verzoeken die per mail verstuurd zijn accepteren. Check daarvoor de website
+				van het bestuursorgaan. Heeft het bestuursorgaan een speciaal Wob-formulier op haar website gezet, dan kun je de
+				(eventueel: ondertekende) brief ook uploaden of kopiëren en inplakken.
+				<br />
+				<br />
+				Je kunt nu hier je Wob-verzoek opslaan.
 			</p>
 			<br />
-
 			<div className="extraPadding">
 				<button className="buttonStyle2" onClick={exportHTMLDoc}>
 					Opslaan als DOC
@@ -27,19 +39,26 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 					Opslaan als PDF
 				</button>
 			</div>
-
 			<div>
 				<p>
-					Natuurlijk kan de Wob-generator altijd beter. Laat het ons daarom weten als je iets mist of graag anders ziet
-					via info@wob-generator.nl. En ook als je er blij mee bent!{" "}
+					Vragen en opmerkingen: info@wob-generator.nl
+					<br />
+					De Wob-generator is met liefde en plezier gemaakt én we zullen doorgaan met de ontwikkeling. Laat het ons
+					daarom weten als je iets mist of graag anders ziet. Maar we horen het ook graag als je er blij mee bent!{" "}
 				</p>
 				<br />
-				<p> Anderen vertellen over de Wob-generator? Graag! </p>
+				<p>
+					{" "}
+					Anderen vertellen over de Wob-generator? Graag!
+					<br /> #wobgenerator{" "}
+				</p>
+				<br />
+				<br />
 			</div>
 			<br />
 			<Link to="/StapExtra">Terug</Link>
 			<Link to="/" onClick={resetState}>
-				Begin opnieuw
+				Alles wissen
 			</Link>
 
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />

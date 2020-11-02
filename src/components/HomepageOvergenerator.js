@@ -26,25 +26,21 @@ function HomepageOvergenerator() {
 						<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank" rel="noopener noreferrer">
 							Paulien Bouw
 						</a>
-						. Inhoud: Liset Hamming, Tim Staal{" "}
-						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-							(VVOJ)
-						</a>
-						.
+						. Inhoud: onderzoeksjournlisten{" "}
+						<a className="plaintext" href="https://www.lisethamming.com/" target="_blank" rel="noopener noreferrer">
+							Liset Hamming
+						</a>{" "}
+						en Tim Staal namens de VVOJ.
 					</p>
 					<br />
 					<br />
 					<p>
-						De Wob-werkgroep van de{" "}
-						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-							VVOJ
-						</a>{" "}
-						beheert de website. De website is op geen enkele manier verbonden aan de Nederlandse overheid en is
-						volstrekt onafhankelijk.
+						De Wob-werkgroep van de VVOJ beheert de website. De website is op geen enkele manier verbonden aan de
+						Nederlandse overheid en is volstrekt onafhankelijk.
 					</p>
 					<br></br>
 					<p>
-						Contact:{" "}
+						Voor vragen en opmerkingen:{" "}
 						<a href="mailto:info@wob-generator.nl" className="plaintext">
 							info@wob-generator.nl
 						</a>
