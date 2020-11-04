@@ -17,7 +17,8 @@ import Stap3_3 from "./Stap3_3";
 import StapEinde from "./StapEinde";
 import StapExtra from "./StapExtra";
 import StapVoorAf from "./StapVoorAf";
-import Lancering from "./Lancering"
+import Lancering from "./Lancering";
+import Cookiemelding from "./Cookiemelding"
 
 const initialState = {
 	1: true,
@@ -44,6 +45,7 @@ const initialState = {
 	22: false,
 	23: false,
 	24: false,
+	showCookie: "true",
 	userName: "",
 	userAdress: "",
 	userAdressNumber: "",
@@ -134,7 +136,9 @@ const Homepage = props => {
 	const handleKeypathChange = ({ currentTarget: { type, name, value, checked } }) => {
 		setValue(set(name, type === "checkbox" ? checked : type === "number" ? Number(value) : value));
 	};
-
+	const showCookie = () =>{
+			setValue(current => ({ ...current, showCookie: false }));
+	}
 	const changeHandlerCheckbox = ({ currentTarget: { value, checked } }) => {
 		setValue(current => ({ ...current, [value]: checked }));
 	};
@@ -257,10 +261,15 @@ const Homepage = props => {
 		let dateToday = date + " " + month + " " + year;
 		return dateToday;
 	};
-
+	console.log(value)
 	return (
 		<Switch>
 			<Route exact path="/">
+				{value.showCookie && 
+					<Cookiemelding 
+						showCookie={showCookie} 
+						value={value}/>
+				}
 				<div className="homepageBlock">
 					<div className="blockText">
 						<p className="logo">Wob-generator</p>
@@ -291,7 +300,7 @@ const Homepage = props => {
 					</a>
 				</div>
 				<div className="extra_content">
-					{" "}
+					
 					<hr className="horizontalRule"></hr>
 				</div>
 				<HomepageWaarom />
@@ -300,10 +309,11 @@ const Homepage = props => {
 				<div className="extra_content"></div>
 
 				<div className="extra_content">
-					{" "}
+					
 					<hr className="horizontalRule"></hr>
 				</div>
 				<HomepageOvergenerator />
+		
 			</Route>
 			<Route path="/StapVoorAf">
 				<StapVoorAf />

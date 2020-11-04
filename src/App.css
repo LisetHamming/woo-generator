@@ -7,7 +7,20 @@
 .objectInput button {
 	min-width: 70px;
 }
-
+.cookie{
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 200vh;
+	
+}
+.cookieBlock{
+	max-width: 50%;
+	display: block;
+	margin: auto auto;
+	left: 25%;
+	background-color: white;
+	padding: 40px;
+}
 li button {
 	display: flex;
 	width: 32.5vw;

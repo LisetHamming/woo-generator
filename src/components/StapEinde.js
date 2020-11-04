@@ -23,9 +23,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<button className="buttonStyle2" onClick={exportHTMLDoc}>
 					Opslaan als DOC
 				</button>
-				<button className="buttonStyle2" onClick={window.print}>
-					Opslaan als PDF
-				</button>
+				
 			</div>
 
 			<div>

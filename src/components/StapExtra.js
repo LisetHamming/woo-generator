@@ -25,7 +25,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						/>{" "}
 						Geanonimiseerde documenten
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>
 				</span>
 				<span>
@@ -40,7 +40,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						/>{" "}
 						Samenvattingen van documenten
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>
 				</span>
 				<span>
@@ -55,7 +55,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						/>{" "}
 						Digitale verstrekking
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>
 				</span>
 				<span>
@@ -70,7 +70,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						/>{" "}
 						Inventarislijst vooraf
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>
 				</span>
 				<span>
@@ -85,7 +85,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						/>{" "}
 						Insluiting alle gegevensdragers
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>
 				</span>
 				<span>
@@ -100,7 +100,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						/>{" "}
 						Doorgeleiding
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>
 				</span>
 				<span>
@@ -115,7 +115,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						/>{" "}
 						Motivering bij weigering
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>
 				</span>
 				<span>
@@ -130,7 +130,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						/>{" "}
 						Mondelinge toelichting
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>
 				</span>
 				<span>
@@ -145,7 +145,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						/>{" "}
 						Inventarislijst toevoegen
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>
 				</span>
 			</form>
