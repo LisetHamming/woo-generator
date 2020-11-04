@@ -441,7 +441,7 @@ function Stap3_3({
 						<div>
 							<span className="subsubForm">
 								<label>
-									Organisatie of persoon (indien gewenst)
+									Organisaties of personen (indien bekend)
 									<input
 										size="40"
 										id="subjectLongOrganisation"
@@ -481,7 +481,7 @@ function Stap3_3({
 								name="checkText"
 								value="11"
 							/>
-							Rapporten, adviezen (indien bekend)
+							Rapporten, adviezen
 							<br />
 							<div className="checkmark"></div>{" "}
 						</label>
@@ -490,7 +490,7 @@ function Stap3_3({
 						<div>
 							<span className="subForm">
 								<label>
-									Benoem de rapporten
+									Benoem de rapporten, adviezen (indien bekend)
 									<input
 										size="50"
 										id="subjectRapportText"
@@ -514,7 +514,7 @@ function Stap3_3({
 								name="checkText"
 								value="15"
 							/>{" "}
-							Financieële documenten
+							Financiële documenten
 							<br />
 							<div className="checkmark"></div>
 						</label>
@@ -523,7 +523,7 @@ function Stap3_3({
 						<div>
 							<span className="subForm">
 								<label>
-									Benoem de financieële documenten
+									Benoem de financiële documenten (indien bekend)
 									<input
 										size="50"
 										id="subjectFinancialText"

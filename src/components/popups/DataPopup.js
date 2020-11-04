@@ -13,9 +13,9 @@ const DataPopup = {
 	},
 	3: {
 		id: "3",
-		h1: "Namens een (media-)organisatie",
+		h1: "Namens een (media)organisatie",
 		p:
-			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Het vakje biedt ook ruimte om de organisatie kort te omschrijven. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je flink goedkoper dan als organisatie, het kan al snel honderdvijftig euro schelen. Als je voor een bekende media-organisatie werkt kan dat daarentegen gewicht in de schaal leggen bij de behandeling van je verzoek."
+			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Het vakje biedt ook ruimte om de organisatie kort te omschrijven. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je flink goedkoper dan als organisatie, het kan al snel honderdvijftig euro schelen. Als je voor een bekende media-organisatie werkt kan dat daarentegen gewicht in de schaal leggen bij de behandeling van je verzoek. Denk er in dat geval aan dat je vanuit je organisatie gemachtigd wordt om een Wob-verzoek namens de organisatie te kunnen doen, en stuur die machtiging mee met je verzoek. Het verzoek kan afgewezen worden als je niet de juiste machtiging hebt."
 	},
 	4: {
 		id: "4",
@@ -52,7 +52,7 @@ const DataPopup = {
 		id: "8",
 		h1: "Waarom je nauwkeurig moet zijn",
 		p:
-			"Als het onderwerp waarover je informatie vraagt onduidelijk is of ontbreekt, kan de overheidsinstantie besluiten je verzoek niet in behandeling te nemen. Bovendien kan een te brede of onduidelijke formulering ervoor zorgen dat de overheid om verduidelijking vraagt. Er kunnen dan weken verstrijken voordat de overheid met je verzoek aan de slag gaat."
+			"Met ‘onderwerp’ bedoelen we het beleidsterrein waarover je verzoek gaat, juridisch is dit de 'bestuurlijke aangelegenheid'. Als deze onduidelijk is of ontbreekt, kan de overheidsinstantie besluiten je verzoek niet in behandeling te nemen. Bovendien kan een te brede of onduidelijke formulering ervoor zorgen dat de overheid om verduidelijking vraagt. Er kunnen dan weken verstrijken voordat de overheid met je verzoek aan de slag gaat."
 	},
 	9: {
 		id: "9",
@@ -67,7 +67,7 @@ const DataPopup = {
 		p:
 			"Kies hiervoor als je precies weet welk document of documenten je wilt hebben. Op de volgende pagina krijg je de mogelijkheid om ook openbaarmaking van de bij een specifiek document behorende onderliggende documenten te vragen. Zo krijg je inzicht in de totstandkoming van het document/de documenten, de personen of organisaties die daarbij betrokken zijn geweest, koerswijzigingen, enzovoort.",
 		p2:
-			"Wil je naast deze specifieke documenten echt álle documenten over dit onderwerp, dan is het verstandiger om twee aparte verzoeken te versturen. Vandaar dat je niet beide opties kunt aanvinken."
+			"Om de complexiteit van de Wob-generator te beperken is het niet mogelijk om beide opties tegelijk aan te vinken. Wil je naast deze specifieke documenten echt álle documenten over dit onderwerp, dan zul je twee aparte brieven moeten genereren en versturen. Het bestuursorgaan zal beide brieven dan mogelijk overigens toch als één verzoek opvatten. Soms is het handig om dat juist niet te willen, bijvoorbeeld omdat anders het openbaar maken van het specifieke document pas gebeurt als alles over dit onderwerp openbaar wordt gemaakt. Zorg ervoor dat je beide brieven op dezelfde dag verstuurt, als je wilt dat de termijnen gelijklopen."
 	},
 	12: {
 		id: "12",

@@ -46,12 +46,12 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<p>
 						Met een beroep op de Wet openbaarheid van bestuur (hierna: Wob) verzoek ik, {value.userName},
 						{value.userJournalist ? " journalist, " : " "}
-						{value.userCompanyNameInput.length ? `u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van of
-						inzage in hieronder nader te specificeren documenten of informatie bij of onder u.
+						{value.userCompanyNameInput.length ? `u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van
+						hieronder nader te specificeren informatie bij of onder u.
 					</p>
 					<br />
 					<p>
-						Het betreft documenten of informatie in het kader van de bestuurlijke aangelegenheid: {value.subjectLong}.{" "}
+						Het betreft informatie in het kader van de bestuurlijke aangelegenheid: {value.subjectLong}.{" "}
 						{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
 						{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
 					</p>
@@ -66,8 +66,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						<React.Fragment>
 							{value.subjectType === "specific" ? (
 								<React.Fragment>
-									<p className="tussenkopje">Documenten</p>
-									<p>Concreet vraag ik u om kopie van of inzage in de volgende documenten of informatie:</p>
+									<p className="tussenkopje">Informatie</p>
+									<p>Concreet vraag ik u om (kopie van) de volgende informatie:</p>
 									<br />
 									{value.subjectTextObject.map(item => (
 										<p>
@@ -84,7 +84,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									value[15] ||
 									value[16] ||
 									value[17] ? (
-										<p>Bovendien wil ik graag kopie van of inzage in de onderliggende documenten, namelijk:</p>
+										<p>Bovendien ontvang ik graag een kopie van de onderliggende documenten, namelijk:</p>
 									) : (
 										""
 									)}
@@ -92,10 +92,9 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 								</React.Fragment>
 							) : (
 								<React.Fragment>
-									<h3>Documenten</h3>
+									<h3>Informatie</h3>
 									<p>
-										Concreet vraag ik u om kopie van of inzage in alle documenten of informatie met betrekking tot{" "}
-										{value.subjectLong}
+										Concreet vraag ik u om (kopie van) alle informatie met betrekking tot {value.subjectLong}
 										{value.subjectDateStart && " van " + value.subjectDateStart}
 										{value.subjectDateEnd && " tot " + value.subjectDateEnd}, waaronder:
 									</p>
@@ -135,7 +134,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							</p>
 							<p>
 								{value[15] ??
-									`- Financieële documentatie${
+									`- Financiële documenten${
 										value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
 									};  `}
 							</p>

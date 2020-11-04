@@ -39,7 +39,7 @@ function Stap1({
 				</span>
 				<span>
 					<label className="container">
-						Ik wob namens een (media-)organisatie
+						Ik wob namens een (media)organisatie
 						<input
 							id="userCompany"
 							value="userCompanyName"

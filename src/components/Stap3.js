@@ -20,8 +20,11 @@ function Stap3({
 			<p className="logo">Wob-generator</p>
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<p>
-				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Check daarbij ook of je
-				omschrijving zoals die in de brief verschijnt goed loopt.
+				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Met ‘onderwerp’ bedoelen we het
+				beleidsterrein waarover je verzoek gaat. Dat kan een vrij specifiek beleidsterrein zijn, zoals ‘boetes voor
+				snelheidsovertredingen’, maar ook breder, zoals ‘de verkeersveiligheid in uw gemeente’. In beide gevallen krijg
+				je bij de volgende stap de gelegenheid verder toe te spitsen welke documenten je over het betreffende
+				beleidsterrein wilt ontvangen.
 			</p>
 			<br />
 			<br />
