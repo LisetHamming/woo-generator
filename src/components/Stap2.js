@@ -40,31 +40,14 @@ function Stap2({
 				{value.selectedAuthority && !showManualAuthority ? (
 					<div className="selectedAuthority">
 						<p>Controleer de instantie die je wobt:</p>
-						<h3>{value.selectedAuthority.naam}</h3>
-						<p>{value.selectedAuthority.url}</p>
+						<h3>{value.selectedAuthority.Bestuursorgaan}</h3>
+						<p>{value.selectedAuthority.Website}</p>
 						<br />
-						{AuthorityComplete ? (
-							<React.Fragment>
-								<p>
-									{value.selectedAuthority.adres.postbus ??
-										value.selectedAuthority.adres.straat + " " + value.selectedAuthority.adres.huisnummer}
-								</p>
-								<p>{value.selectedAuthority.adres.postcode + " " + value.selectedAuthority.adres.plaats}</p>
-							</React.Fragment>
-						) : (
-							<React.Fragment>
-								<p>
-									Er is helaas geen adres bekend bij ons, beschik je zelf wel over een adres van deze instantie, vul dan
-									het onderstaande formulier in.
-								</p>
-								<SetSelectedAuthorityManual
-									value={value}
-									setAuthority={setAuthority}
-									handleKeypathChange={handleKeypathChange}
-									setAuthorityComplete={setAuthorityComplete}
-								/>
-							</React.Fragment>
-						)}
+
+						<p>	{value.selectedAuthority.Postbus}</p>
+						<p>{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}</p>
+						
+					
 						<p>{value.selectedAuthority.value}</p>
 						<div>
 							<button
@@ -95,23 +78,20 @@ function Stap2({
 								authorities
 									.filter(
 										item =>
-											item.naam.toLowerCase().includes(searchValue.toLowerCase()) ||
-											item.adres?.plaats?.toLowerCase().includes(searchValue.toLowerCase()) ||
-											item.types.some(type => type.toLowerCase().includes(searchValue.toLowerCase()))
+											item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
+											item.Plaats.toLowerCase().includes(searchValue.toLowerCase())
+											
 									)
-									.sort((a, b) => a.naam.localeCompare(b.naam))
+									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))
 									.map(item => (
-										<li key={item.systemid}>
+										<li key={item.id}>
 											<button
 												type="button"
 												onClick={() => {
 													setAuthority(item);
-													setAuthorityComplete(!!item.adres.postcode);
 												}}
 											>
-												<p>{item.naam}</p>
-
-												<p>{item.types}</p>
+												<p>{item.Bestuursorgaan}</p>
 												<FontAwesomeIcon className="fontIcon" icon={faPlus} />
 											</button>
 										</li>
@@ -131,13 +111,13 @@ function Stap2({
 								type="button"
 								onClick={() => {
 									setAuthority({
-										naam: "",
-										adres: {
-											straat: "",
-											huisnummer: "",
-											postcode: "",
-											plaats: ""
-										}
+										Bestuursorgaan: "",
+										Postbus: "",
+										Postcode: "",
+										Plaats: "",
+										Website: "",
+										Emailadres: ""
+										
 									});
 									setShowManualAuthority(true);
 								}}

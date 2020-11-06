@@ -6,23 +6,12 @@ function App() {
 	const [authorities, setAuthorities] = useState(null);
 
 	useEffect(() => {
+		let id = 0
 		fetch(
-			"https://rest-api.allmanak.nl/v1/overheidsorganisatie?types=cd.{Gemeente,Ministerie,Zelfstandig bestuursorgaan, Provincie, Rechterlijke macht,Politie en brandweer}&select=url:contact->internet->value, contact->postAdres,contact->bezoekAdres,naam,types,systemid,contact->emailadres->value"
+			"/adreslijst.json"
 		)
 			.then(response => response.json())
-			.then(data =>
-				data
-					.filter((item, index, array) => array.findIndex(itm => itm.naam === item.naam) === index)
-					.map(({ postAdres, bezoekAdres, ...item }) => ({
-						...item,
-						adres: postAdres.postcode?.length > 6 ? postAdres : bezoekAdres
-					}))
-					.map(organisatie =>
-						organisatie.types[0] === "Ministerie"
-							? { ...organisatie, naam: `Ministerie van ${organisatie.naam}` }
-							: organisatie
-					)
-			)
+			.then(data => data.map(item => ({...item, id: id++})))
 			.then(data => setAuthorities(data))
 			.catch(error => setAuthorities(error));
 	}, []);

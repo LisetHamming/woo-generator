@@ -22,13 +22,13 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 				<div className="adressAuthority">
 					{value.selectedAuthority && (
 						<div>
-							<p>{value.selectedAuthority.naam}</p>
+							<p>{value.selectedAuthority.Bestuursorgaan}</p>
 							<p>
-								{value.selectedAuthority.adres.postbus ??
-									(value.selectedAuthority.adres.straat ?? "") + " " + (value.selectedAuthority.adres.huisnummer ?? "")}
+								{value.selectedAuthority.Postbus}
+									
 							</p>
 							<p>
-								{(value.selectedAuthority.adres.postcode ?? "") + " " + (value.selectedAuthority.adres.plaats ?? "")}
+								{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}
 							</p>
 							<br />
 						</div>
@@ -101,45 +101,49 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 								</React.Fragment>
 							)}
 							<br />
-							<p>
+							
 								{value[10]
-									? `- Vergaderstukken${
+									&&<p>{ `- Vergaderstukken${
 											Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", waaronder: " : ""
 									  }${Object.keys(value.subjectMeeting)
 											.filter(key => value.subjectMeeting[key])
 											.map(key => DataCheckbox[key])
 											.join(", ")};`
-									: ""}
-							</p>
-							<p>
+									  }</p>}
+							
+						
 								{value[12] &&
 									value[13] &&
-									`- Correspondentie, gespreksverslagen intern${wordsInside.length > 0 &&
-										` (${wordsInside.join(", ")})`};`}
-							</p>
-							<p>
+									<p>{`- Correspondentie, gespreksverslagen intern${wordsInside.length > 0 &&
+										` (${wordsInside.join(", ")})`};`}</p>}
+							
+							
 								{value[12] &&
 									value[14] &&
+									<p>{
 									`- Alle externe correspondentie ${wordsOutside.length > 0 &&
 										`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
-										` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}
-							</p>
-							<p>{value.subjectInside5 ? "- Memo's, notities;" : ""}</p>
-							<p>
-								{value[11]
-									? `- Rapporten, adviezen${
+										` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}</p>}
+							
+							{value.subjectInside5 && <p>{"- Memo's, notities;"}</p>}
+							
+								{value[11] &&
+								<p>{
+									 `- Rapporten, adviezen${
 											value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
 									  };  `
-									: ""}
-							</p>
-							<p>
-								{value[15] ??
+									 } </p>}
+							
+							
+								{value[15] &&
+								<p>{
 									`- Financiële documenten${
 										value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
-									};  `}
-							</p>
-							<p>{value[16] ? "- Datasets;" : ""} </p>
-							<p>{value[17] ? `-  ${value.subjectElseText}` : ""}</p>
+									};  `
+									}</p>}
+							
+							{value[16] && <p>{ "- Datasets;"} </p>}
+							{value[17] && <p>{ `-  ${value.subjectElseText}`} </p> }
 							<br />
 							<p>
 								Mocht u beschikken over andere documenten die - aanvullend of in plaats van gevraagde documenten -

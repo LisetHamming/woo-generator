@@ -12,31 +12,21 @@ function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthority
 							<input
 								size="50"
 								type="text"
-								name="selectedAuthority.naam"
+								name="selectedAuthority.Bestuursorgaan"
 								onChange={handleKeypathChange}
-								value={selectedAuthority.naam}
+								value={selectedAuthority.Bestuursorgaan}
 							/>
 						</label>
 					</span>
 					<span>
 						<label>
-							Straatnaam
+							Adres
 							<input
 								size="40"
 								type="text"
-								name="selectedAuthority.adres.straat"
-								value={selectedAuthority.adres.straat}
+								name="selectedAuthority.Postbus"
+								value={selectedAuthority.Postbus}
 								onChange={handleKeypathChange}
-							/>
-						</label>
-						<label>
-							Huisnummer
-							<input
-								size="5"
-								onChange={handleKeypathChange}
-								name="selectedAuthority.adres.huisnummer"
-								type="text"
-								value={selectedAuthority.adres.huisnummer}
 							/>
 						</label>
 					</span>
@@ -47,9 +37,9 @@ function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthority
 							<input
 								size="15"
 								onChange={handleKeypathChange}
-								name="selectedAuthority.adres.postcode"
+								name="selectedAuthority.Postcode"
 								type="text"
-								value={selectedAuthority.adres.postcode}
+								value={selectedAuthority.Postcode}
 							/>
 						</label>
 						<label>
@@ -58,8 +48,8 @@ function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthority
 								size="30"
 								onChange={handleKeypathChange}
 								type="text"
-								name="selectedAuthority.adres.plaats"
-								value={selectedAuthority.adres.plaats}
+								name="selectedAuthority.Plaats"
+								value={selectedAuthority.Plaats}
 							/>
 						</label>
 					</span>
