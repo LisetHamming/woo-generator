@@ -4,10 +4,12 @@ import { Link, Route, Switch } from "react-router-dom";
 import logo_vvoj from "../assets/logo_vvoj.png";
 import machine from "../assets/machine.png";
 import AlgemeneVoorwaarden from "./AlgemeneVoorwaarden";
+import Cookiemelding from "./Cookiemelding";
 import DataText from "./DataText";
 import HomepageOvergenerator from "./HomepageOvergenerator";
 import HomepageWaarom from "./HomepageWaarom";
 import HomepageWaaromTool from "./HomepageWaaromTool";
+import Lancering from "./Lancering";
 import PrivacyVoorwaarden from "./PrivacyVoorwaarden";
 import Stap1 from "./Stap1";
 import Stap2 from "./Stap2";
@@ -17,19 +19,18 @@ import Stap3_3 from "./Stap3_3";
 import StapEinde from "./StapEinde";
 import StapExtra from "./StapExtra";
 import StapVoorAf from "./StapVoorAf";
-import Lancering from "./Lancering";
-import Cookiemelding from "./Cookiemelding"
 
 const initialState = {
 	1: true,
 	2: true,
 	3: true,
-	4: true,
+	4: false,
 	5: true,
 	6: true,
 	7: true,
 	8: true,
 	9: true,
+	25: true,
 	10: false,
 	11: false,
 	12: false,
@@ -59,7 +60,7 @@ const initialState = {
 	selectedAuthority: null,
 	subjectMilieu: false,
 	subjectLong: "",
-	subjectType: "",
+	subjectType: "specific",
 	subjectSpecificDate: "",
 	subjectSpecificText: "",
 	subjectTextObject: [],
@@ -136,9 +137,9 @@ const Homepage = props => {
 	const handleKeypathChange = ({ currentTarget: { type, name, value, checked } }) => {
 		setValue(set(name, type === "checkbox" ? checked : type === "number" ? Number(value) : value));
 	};
-	const showCookie = () =>{
-			setValue(current => ({ ...current, showCookie: false }));
-	}
+	const showCookie = () => {
+		setValue(current => ({ ...current, showCookie: false }));
+	};
 	const changeHandlerCheckbox = ({ currentTarget: { value, checked } }) => {
 		setValue(current => ({ ...current, [value]: checked }));
 	};
@@ -261,15 +262,11 @@ const Homepage = props => {
 		let dateToday = date + " " + month + " " + year;
 		return dateToday;
 	};
-	console.log(value)
+	console.log(value);
 	return (
 		<Switch>
 			<Route exact path="/">
-				{value.showCookie && 
-					<Cookiemelding 
-						showCookie={showCookie} 
-						value={value}/>
-				}
+				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
 				<div className="homepageBlock">
 					<div className="blockText">
 						<p className="logo">Wob-generator</p>
@@ -300,7 +297,6 @@ const Homepage = props => {
 					</a>
 				</div>
 				<div className="extra_content">
-					
 					<hr className="horizontalRule"></hr>
 				</div>
 				<HomepageWaarom />
@@ -309,16 +305,14 @@ const Homepage = props => {
 				<div className="extra_content"></div>
 
 				<div className="extra_content">
-					
 					<hr className="horizontalRule"></hr>
 				</div>
 				<HomepageOvergenerator />
-		
 			</Route>
 			<Route path="/StapVoorAf">
 				<StapVoorAf />
 			</Route>
-						<Route path="/lancering">
+			<Route path="/lancering">
 				<Lancering />
 			</Route>
 			<Route path="/Stap1">

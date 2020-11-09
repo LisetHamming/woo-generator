@@ -23,10 +23,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					{value.selectedAuthority && (
 						<div>
 							<p>{value.selectedAuthority.Bestuursorgaan}</p>
-							<p>
-								{value.selectedAuthority.Postbus}
-									
-							</p>
+							<p>{value.selectedAuthority.Postbus}</p>
 							<p>
 								{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}
 							</p>
@@ -45,13 +42,15 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<br />
 					<p>
 						Met een beroep op de Wet openbaarheid van bestuur (hierna: Wob) verzoek ik, {value.userName},
-						{value.userJournalist ? " journalist, " : " "}{value.userJournalist && !value.userCompanyName && " op eigen titel"}
+						{value.userJournalist ? " journalist, " : " "}
+						{value.userJournalist && !value.userCompanyName && " op eigen titel"}
 						{value.userCompanyNameInput.length ? `u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van
 						hieronder nader te specificeren informatie bij of onder u.
 					</p>
 					<br />
 					<p>
-						Het betreft informatie in het kader van de bestuurlijke aangelegenheid: {value.subjectLong}.{" "}
+						De bestuurlijke aangelegenheid waarover ik informatie vraag, is uw beleid met betrekking tot:{" "}
+						{value.subjectLong}.{" "}
 						{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
 						{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
 					</p>
@@ -66,7 +65,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						<React.Fragment>
 							{value.subjectType === "specific" ? (
 								<React.Fragment>
-									<p className="tussenkopje">Informatie</p>
+									<h3 className="tussenkopje">Informatie</h3>
 									<p>Concreet vraag ik u om (kopie van) de volgende informatie:</p>
 									<br />
 									{value.subjectTextObject.map(item => (
@@ -101,49 +100,45 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 								</React.Fragment>
 							)}
 							<br />
-							
-								{value[10]
-									&&<p>{ `- Vergaderstukken${
-											Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", waaronder: " : ""
-									  }${Object.keys(value.subjectMeeting)
-											.filter(key => value.subjectMeeting[key])
-											.map(key => DataCheckbox[key])
-											.join(", ")};`
-									  }</p>}
-							
-						
-								{value[12] &&
-									value[13] &&
-									<p>{`- Correspondentie, gespreksverslagen intern${wordsInside.length > 0 &&
-										` (${wordsInside.join(", ")})`};`}</p>}
-							
-							
-								{value[12] &&
-									value[14] &&
-									<p>{
-									`- Alle externe correspondentie ${wordsOutside.length > 0 &&
-										`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
-										` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}</p>}
-							
+
+							{value[10] && (
+								<p>{`- Vergaderstukken${
+									Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", waaronder: " : ""
+								}${Object.keys(value.subjectMeeting)
+									.filter(key => value.subjectMeeting[key])
+									.map(key => DataCheckbox[key])
+									.join(", ")};`}</p>
+							)}
+
+							{value[12] && value[13] && (
+								<p>{`- Correspondentie, gespreksverslagen intern${wordsInside.length > 0 &&
+									` (${wordsInside.join(", ")})`};`}</p>
+							)}
+
+							{value[12] && value[14] && (
+								<p>{`- Alle externe correspondentie ${wordsOutside.length > 0 &&
+									`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
+									` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}</p>
+							)}
+
 							{value.subjectInside5 && <p>{"- Memo's, notities;"}</p>}
-							
-								{value[11] &&
-								<p>{
-									 `- Rapporten, adviezen${
-											value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
-									  };  `
-									 } </p>}
-							
-							
-								{value[15] &&
-								<p>{
-									`- Financiële documenten${
-										value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
-									};  `
-									}</p>}
-							
-							{value[16] && <p>{ "- Datasets;"} </p>}
-							{value[17] && <p>{ `-  ${value.subjectElseText}`} </p> }
+
+							{value[11] && (
+								<p>
+									{`- Rapporten, adviezen${
+										value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
+									};  `}{" "}
+								</p>
+							)}
+
+							{value[15] && (
+								<p>{`- Financiële documenten${
+									value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
+								};  `}</p>
+							)}
+
+							{value[16] && <p>{"- Datasets;"} </p>}
+							{value[17] && <p>{`-  ${value.subjectElseText}`} </p>}
 							<br />
 							<p>
 								Mocht u beschikken over andere documenten die - aanvullend of in plaats van gevraagde documenten -
@@ -158,7 +153,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					filteredDataText.map(item => (
 						<div key={item.id}>
 							<div>
-								<p className="tussenkopje">{item.title}</p>
+								<h3 className="tussenkopje">{item.title}</h3>
 								<p>{item.sentence}</p>
 								<br />
 							</div>

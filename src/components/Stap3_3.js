@@ -28,8 +28,8 @@ function Stap3_3({
 			</h2>
 			{value.subjectType === "specific" && (
 				<p>
-					Omschrijf zo nauwkeurig mogelijk de titel, auteur en datum van het document of de documenten waar je naar op
-					zoek bent. Geef ook aan of en zo ja welke onderliggende documenten je wilt ontvangen.
+					Omschrijf zo nauwkeurig mogelijk de titel, auteur en datum van het document waar je naar op zoek bent en voeg
+					deze toe. Je kunt meerdere documenten toevoegen.
 				</p>
 			)}
 			{value.subjectType === "all" && (
@@ -619,9 +619,6 @@ function Stap3_3({
 										placeholder="bijvoorbeeld 31-12-2019"
 									/>
 								</label>
-								<button type="button" className="buttonStyle" onClick={clickHandlerClearPeriodDate}>
-									Verwijder
-								</button>
 							</span>
 						</div>
 					)}

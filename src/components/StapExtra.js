@@ -94,11 +94,11 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 					<label className="container">
 						<input
 							onChange={changeHandlerCheckbox}
-							id="text10"
+							id="text25"
 							type="checkbox"
-							checked={value[10]}
+							checked={value[25]}
 							name="checkText"
-							value="10"
+							value="25"
 						/>{" "}
 						Persoonlijke beleidsopvattingen
 						<br />

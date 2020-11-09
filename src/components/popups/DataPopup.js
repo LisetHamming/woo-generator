@@ -15,7 +15,7 @@ const DataPopup = {
 		id: "3",
 		h1: "Namens een (media)organisatie",
 		p:
-			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Het vakje biedt ook ruimte om de organisatie kort te omschrijven. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je flink goedkoper dan als organisatie, het kan al snel honderdvijftig euro schelen. Als je voor een bekende media-organisatie werkt kan dat daarentegen gewicht in de schaal leggen bij de behandeling van je verzoek. Denk er in dat geval aan dat je vanuit je organisatie gemachtigd wordt om een Wob-verzoek namens de organisatie te kunnen doen, en stuur die machtiging mee met je verzoek. Het verzoek kan afgewezen worden als je niet de juiste machtiging hebt."
+			"Het kan handig zijn om te benoemen voor welke organisatie je wobt. Het vakje biedt ook ruimte om de organisatie kort te omschrijven. Voor personen en organisaties gelden namelijk verschillende tarieven, mocht je later bij de rechter in beroep gaan tegen het besluit van de overheid op jouw verzoek: als persoon procedeer je flink goedkoper dan als organisatie, het kan al snel honderdvijftig euro schelen. Als je voor een bekende media-organisatie werkt kan dat daarentegen gewicht in de schaal leggen bij de behandeling van je verzoek. Denk er in dat geval aan dat je vanuit je organisatie gemachtigd wordt om een Wob-verzoek namens de organisatie te kunnen doen, en stuur die machtiging mee met je verzoek. Het verzoek kan afgewezen worden als je niet de juiste machtiging hebt. Een tussenoplossing is om de media-organisatie wel te noemen maar niet officieel namens deze organisatie te wobben. Dat scheelt rompslomp."
 	},
 	4: {
 		id: "4",
@@ -27,12 +27,12 @@ const DataPopup = {
 		id: "5",
 		h1: "Welke overheidsinstanties kan ik ‘wobben’ met de Wob-generator? ",
 		p:
-			"Er zijn in Nederland tal van overheidsinstanties: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Deze instanties zijn allemaal ‘wobbaar’ en te vinden via de Wob-generator. ",
+			"Er zijn in Nederland tal van overheidsinstanties: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Deze instanties zijn allemaal ‘wobbaar’ en te vinden via de Wob-generator.",
 		p2:
-			"De Wob-generator is gekoppeld aan de database van de ‘Allmanak’, een initiatief van de Open State Foundation. De Allmanak is wat betreft contactgegevens van overheidsinstanties in Nederland de meest complete databank die online beschikbaar is.",
+			"De database met te wobben overheidsinstanties is samengesteld door de leden van de Wob-werkgroep van de VVOJ. Het is voorzover ons bekend de eerste dergelijke database in Nederland. Alle bovengenoemde instanties zijn erin opgenomen. Dat betekent niet dat de database volledig is. Zo zijn er bijvoorbeeld op gemeentelijk niveau talloze instanties die wel onder de Wob vallen maar vooralsnog niet in de database zijn opgenomen. Ook kunnen overheidsinstantie opgeheven worden of van naam veranderen. De database blijft dus continu in ontwikkeling. Suggesties en updates zijn van harte welkom: info@wob-generator.nl",
 
 		p3:
-			"Helaas is ook de Allmanak niet volledig: er zijn overheidsinstanties die onder de Wob vallen maar niet met de Wob-generator te vinden zijn. Staat de overheidsinstantie die je zoekt of de contactgegevens er niet tussen, bekijk dan de website van de betreffende instantie."
+			"Staat de overheidsinstantie die je zoekt er niet tussen, bekijk dan de website van de betreffende instantie en voer de gegevens handmatig in."
 	},
 	6: {
 		id: "6",
@@ -40,7 +40,7 @@ const DataPopup = {
 		p:
 			"Vraag je allereerst af bij welke overheidsinstantie de documenten over je onderwerp te vinden zijn. Als je er niet uitkomt, Google dan je onderwerp en kijk welke overheidsinstanties tevoorschijn komen. Je kunt ook eenzelfde verzoek indienen bij verschillende instanties. Weet je niet zeker of de documenten bijvoorbeeld bij de Immigratie- en Naturalisatiedienst (IND) of het ministerie van Justitie en Veiligheid liggen, wob dan de ‘hoogste’ instantie, in dit geval het ministerie. Het is wel zo dat instanties die minder onder een vergrootglas liggen soms makkelijker documenten vrijgeven. Denk dus ook na over waar je de meeste kans maakt! ",
 		p2:
-			"En wees gerust: de instantie die je wobt is verplicht om je verzoek naar de juiste instantie door te sturen. Voor de zekerheid herinnert de generator daarom in de alinea ‘doorgeleiding’ de overheidsinstantie aan deze verplichting."
+			"En wees gerust: de instantie die je wobt is verplicht om je verzoek naar de juiste instantie door te sturen. Voor de zekerheid herinnert de generator in de alinea ‘doorgeleiding’ de overheidsinstantie aan deze verplichting."
 	},
 	7: {
 		id: "7",
@@ -58,7 +58,7 @@ const DataPopup = {
 		id: "9",
 		h1: "Milieu",
 		p:
-			"Als je Wob-verzoek betrekking heeft op milieu-informatie moet een overheidsinstantie daar binnen twee weken een besluit over nemen, te verlengen met nog eens twee weken Bij alle andere Wob-verzoeken is dit vier weken, te verlengen met nog eens vier weken."
+			"Als je Wob-verzoek betrekking heeft op milieu-informatie moet een overheidsinstantie daar binnen twee weken een besluit over nemen, te verlengen met nog eens twee weken. Bij alle andere Wob-verzoeken is dit vier weken, te verlengen met nog eens vier weken."
 	},
 
 	11: {

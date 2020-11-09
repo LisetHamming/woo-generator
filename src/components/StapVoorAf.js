@@ -19,20 +19,21 @@ function StapVoorAf() {
 				Aan de linkerkant van het scherm staat welke informatie we nodig hebben voor je verzoek en vakjes om deze
 				informatie in te vullen.
 			</p>
-			<p> </p>
+			<br />
 			<span className="ietje">
 				<p>Voor meer uitleg kun je klikken op de i'tjes.</p>
 				<PopupButton number="19" />
 				<br />
 			</span>
-			<br />
+
 			<p>
-				Je antwoorden worden automatisch verwerkt en verschijnen vervolgens in het concept Wob-verzoek aan de
-				rechterkant. Zo kun je steeds zien of de tekst goed loopt. Alles wat je invult wordt via de browser die je
-				gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet.
+				Wat je invult en aanvinkt wordt automatisch verwerkt en verschijnt vervolgens in het concept Wob-verzoek aan de
+				rechterkant. Om dat mogelijk te maken wordt dit via de browser die je gebruikt ‘lokaal’ opgeslagen in je
+				browser. Niemand anders kan je Wob-verzoek zien, ook wij niet. Let er wel op dat dit dus ook het geval is als je
+				op een openbare computer werkt. In alle gevallen kun je als je klaar bent op de knop ‘Alles wissen’ drukken.
 			</p>
 			<br />
-			<p>Als je alle vragen hebt beantwoord, kun je je concept Wob-verzoek opslaan als Word-document of als PDF.</p>
+			<p>Als je alle vragen hebt beantwoord, kun je je concept Wob-verzoek opslaan als DOC en de tekst aanpassen.</p>
 			<br />
 			<p className="extraPadding">
 				Wil je iets net even anders of wil je bijvoorbeeld een extra toelichting op je verzoek toevoegen? Dan kun je in

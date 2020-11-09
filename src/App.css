@@ -7,13 +7,12 @@
 .objectInput button {
 	min-width: 70px;
 }
-.cookie{
+.cookie {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 200vh;
-	
 }
-.cookieBlock{
+.cookieBlock {
 	max-width: 50%;
 	display: block;
 	margin: auto auto;
@@ -104,18 +103,18 @@ h1 {
 	display: flex;
 	justify-content: center;
 }
-.homepageBlock .lanceringItalic{
+.homepageBlock .lanceringItalic {
 	color: grey;
 	font-style: italic;
 }
-.homepageBlock .lanceringBold{
+.homepageBlock .lanceringBold {
 	color: rgb(192, 43, 57);
 	font-size: 20px;
 }
-.homepageBlock .lanceringBold a{
+.homepageBlock .lanceringBold a {
 	color: rgb(192, 43, 57);
 }
-.homepageBlock .lanceringBoldBlack{
+.homepageBlock .lanceringBoldBlack {
 	font-weight: bold;
 }
 
