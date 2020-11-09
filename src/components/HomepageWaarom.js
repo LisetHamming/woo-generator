@@ -18,8 +18,9 @@ function HomepageWaarom() {
 					<p>
 						Het opstellen van een Wob-verzoek is niet moeilijk, maar het verzoek moet wel aan een aantal voorwaarden
 						voldoen. Met de Wob-generator helpen we je een goed en geldig Wob-verzoek op te stellen. Kies welke
-						documenten je wilt opvragen en bij welke overheidsinstantie. Klaar! Je kunt nu je Wob-verzoek uitprinten en
-						versturen via de post of digitaal verzenden.
+						documenten je wilt opvragen en bij welke overheidsinstantie. Hiervoor hebben we de eerste eenvoudig
+						doorzoekbare lijst met wobbare overheidsinstanties in Nederland samengesteld. Klaar! Je kunt nu je
+						Wob-verzoek uitprinten en versturen via de post of digitaal verzenden.
 					</p>
 				</div>
 			</div>

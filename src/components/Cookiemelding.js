@@ -4,29 +4,31 @@ function Cookiemelding({ showCookie, value }) {
 	return (
 		<div className="cookie">
 			<div className="cookieBlock">
-				<p className="logo">Wob-generator</p>
-				<h1>Wob-generator gebruikt geen cookies</h1>
-				<p>
-					DPG Media en derde partijen plaatsen cookies en vergelijkbare technieken (“cookies”) en verwerken gegevens
-					(zoals informatie over jouw toestel, je browser, je surfgedrag en je locatie) op onze websites en apps voor de
-					volgende doeleinden: informatie op een apparaat opslaan en/of openen, het gebruik van de sites analyseren om
-					deze te verbeteren, sociale media integreren, gepersonaliseerde advertenties en content, advertentie- en
-					contentmeting, inzichten in het publiek en productontwikkeling.
-				</p>
-				<p>
-					DPG Media deelt jouw (persoons)gegevens met Mediahuis Nederland en RTL Nederland, via ‘NLProfiel’, om
-					gezamenlijke groepsprofielen op te stellen op basis van cookies.
-				</p>
-				<p>
-					Daarnaast biedt DPG Media enkele adverteerders de mogelijkheid de door DPG Media verzamelde informatie ook
-					buiten haar websites en apps te gebruiken bij het inkopen van advertentieruimte en laat DPG Media deze
-					adverteerders bij het tonen van hun advertenties cookies plaatsen om zo zelf informatie te verzamelen.
-				</p>
-				<p>
-					Door op ‘akkoord’ te klikken, ga je hiermee akkoord. Wil je meer informatie en/of wil je niet alle soorten
-					cookies toestaan, klik dan op “Cookie-instellingen”. Toestemming kan op ieder moment weer ingetrokken worden
-					via de cookie-instellingen link onderaan elke pagina.
-				</p>
+			<p className="logo">Wob-generator</p>
+			<h1>Wob-generator gebruikt alleen functionele en analytische cookies</h1>
+			<p>
+				De Wob-generator gebruikt alleen functionele cookies en een analytische cookie. Als je de functionele cookies
+				uitzet, dan werkt de Wob-generator niet: na het aanklikken van een optie of het invullen van een invulveld
+				verschijnt dan bijvoorbeeld de bijbehorende alinea niet in de brief. Vandaar dat je de Wob-generator niet kan
+				gebruiken zonder de functionele cookies te accepteren. Met de analytische cookie kunnen we zien hoe vaak en
+				waar in Nederland de wob-generator gebruikte wordt. Wij vinden dit belangrijk voor de verbetering van de
+				Wob-generator.
+			</p>
+			<br />
+			<p>
+				Toelichting functionele cookie:
+				<br />
+				Wat je aanklikt en invult wordt door de functionele cookie in de browser opgeslagen, zodat de browser de
+				informatie kan gebruiken om de wob-generator te laten werken. Dat is voor de tijd dat je je wob-verzoek aan
+				het opstellen bent prettig, maar je kan zelfs afsluiten en als je terugkeert zie je de eerder ingevulde
+				informatie weer. Als je de ingevulde informatie wil wissen, bijvoorbeeld omdat je op een openbare computer
+				bent ingelogd, dan kan je aan het einde van de rit op ‘Alles wissen’ klikken. Maar voor de duidelijkheid
+				nogmaals: de VVOJ slaat zelf de informatie die jij hebt ingevuld of aangeklikt niet op. De VVOJ kan ook niet
+				zien wat je hebt ingevuld of aangeklikt.
+				<br />
+				<br />
+			</p>
+			<Link to="/PrivacyVoorwaarden">Privacybeleid</Link>
 				<button
 					className="buttonStyle"
 					type="button"

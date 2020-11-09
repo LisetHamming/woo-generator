@@ -22,12 +22,13 @@ const initialState = {
 	1: true,
 	2: true,
 	3: true,
-	4: true,
+	4: false,
 	5: true,
 	6: true,
 	7: true,
 	8: true,
 	9: true,
+	25: true,
 	10: false,
 	11: false,
 	12: false,
@@ -57,7 +58,7 @@ const initialState = {
 	selectedAuthority: null,
 	subjectMilieu: false,
 	subjectLong: "",
-	subjectType: "",
+	subjectType: "specific",
 	subjectSpecificDate: "",
 	subjectSpecificText: "",
 	subjectTextObject: [],
@@ -259,7 +260,6 @@ const Homepage = props => {
 		let dateToday = date + " " + month + " " + year;
 		return dateToday;
 	};
-	console.log(value);
 	return (
 		<Switch>
 			<Route exact path="/">

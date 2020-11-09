@@ -30,7 +30,7 @@ const DataText = state => [
 			"Indien u tot het oordeel komt dat het belang van bescherming van de persoonlijke levenssfeer integrale openbaarmaking van documenten in de weg staat, verzoek ik subsidiair om openbaarmaking met weglating van de persoonsgegevens, zij het dan uitsluitend van personen die niet uit hoofde van hun functie in de openbaarheid treden. Wanneer u persoonsnamen niet openbaar wilt maken verzoek ik u deze te vervangen door een nummer, zodat de betrokkenheid van eenzelfde persoon bij meerdere aspecten of situaties zichtbaar blijft, ook al is dat dan anoniem."
 	},
 	{
-		id: 10,
+		id: 25,
 		title: "Persoonlijke beleidsopvattingen",
 		sentence:
 			"Wanneer u van mening bent dat persoonlijke beleidsopvattingen in documenten opgesteld voor intern beraad integrale openbaarmaking van die documenten in de weg staan, verzoek ik subsidiair om openbaarmaking van de persoonlijke beleidsopvattingen in niet tot de betrokkene herleidbare vorm, en meer subsidiair om openbaarmaking van de feitelijke informatie die geen persoonlijke beleidsopvatting is."

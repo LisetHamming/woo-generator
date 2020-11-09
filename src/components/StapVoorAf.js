@@ -8,7 +8,7 @@ function StapVoorAf() {
 			<p className="logo">Wob-generator</p>
 			<h2>Goed om te weten</h2>
 			<br />
-			<p></p>
+			<br/>
 
 			<p>
 				De Wob-generator is niet gemaakt om op je telefoon te gebruiken. Je kunt ‘m dus het beste op je computer of
@@ -25,14 +25,14 @@ function StapVoorAf() {
 				<PopupButton number="19" />
 				<br />
 			</span>
-			<br />
+			
 			<p>
 				Je antwoorden worden automatisch verwerkt en verschijnen vervolgens in het concept Wob-verzoek aan de
 				rechterkant. Zo kun je steeds zien of de tekst goed loopt. Alles wat je invult wordt via de browser die je
 				gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet.
 			</p>
 			<br />
-			<p>Als je alle vragen hebt beantwoord, kun je je concept Wob-verzoek opslaan als Word-document of als PDF.</p>
+			<p>Als je alle vragen hebt beantwoord, kun je je concept Wob-verzoek opslaan als DOC en de tekst aanpassen.</p>
 			<br />
 			<p className="extraPadding">
 				Wil je iets net even anders of wil je bijvoorbeeld een extra toelichting op je verzoek toevoegen? Dan kun je in

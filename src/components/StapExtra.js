@@ -96,9 +96,9 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							onChange={changeHandlerCheckbox}
 							id="text10"
 							type="checkbox"
-							checked={value[10]}
+							checked={value[25]}
 							name="checkText"
-							value="10"
+							value="25"
 						/>{" "}
 						Persoonlijke beleidsopvattingen
 						<br />

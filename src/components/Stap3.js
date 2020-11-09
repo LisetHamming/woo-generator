@@ -22,9 +22,8 @@ function Stap3({
 			<p>
 				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Met ‘onderwerp’ bedoelen we het
 				beleidsterrein waarover je verzoek gaat. Dat kan een vrij specifiek beleidsterrein zijn, zoals ‘boetes voor
-				snelheidsovertredingen’, maar ook breder, zoals ‘de verkeersveiligheid in uw gemeente’. In beide gevallen krijg
-				je bij de volgende stap de gelegenheid verder toe te spitsen welke documenten je over het betreffende
-				beleidsterrein wilt ontvangen.
+				snelheidsovertredingen’, maar ook breder, zoals ‘de verkeersveiligheid in uw gemeente’. Bij de volgende stap
+				krijg je de gelegenheid verder toe te spitsen welke documenten je wilt ontvangen.
 			</p>
 			<br />
 			<br />
@@ -95,7 +94,7 @@ function Stap3({
 				<br />
 				<span>
 					{" "}
-					<p>Welke informatie moet de overheid openbaar maken?</p>
+					<p>Welke documenten moet de overheid openbaar maken?</p>
 					<PopupButton number="13" />
 				</span>
 				<br />
