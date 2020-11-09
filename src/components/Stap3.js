@@ -132,7 +132,7 @@ function Stap3({
 					<PopupButton number="12" />
 				</span>
 			</form>
-
+			<span className="extraPadding"></span>
 			<Link to="/Stap2">Terug</Link>
 			<Link
 				to="/Stap3_3"

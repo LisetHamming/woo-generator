@@ -166,6 +166,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 					</label>
 				</span>
 			</form>
+			<span className="extraPadding"></span>
 			<Link to="/Stap3_3">Terug</Link>
 			<Link to="/StapEinde">Laatste stap</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />

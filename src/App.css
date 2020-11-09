@@ -7,13 +7,12 @@
 .objectInput button {
 	min-width: 70px;
 }
-.cookie{
+.cookie {
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.5);
 	height: 200vh;
-	
 }
-.cookieBlock{
+.cookieBlock {
 	max-width: 50%;
 	display: block;
 	margin: auto auto;
@@ -51,7 +50,8 @@ li {
 	list-style: none;
 }
 
-a {
+a,
+button {
 	background-color: black;
 	color: white;
 	padding: 0.8em 3em;
@@ -104,18 +104,18 @@ h1 {
 	display: flex;
 	justify-content: center;
 }
-.homepageBlock .lanceringItalic{
+.homepageBlock .lanceringItalic {
 	color: grey;
 	font-style: italic;
 }
-.homepageBlock .lanceringBold{
+.homepageBlock .lanceringBold {
 	color: rgb(192, 43, 57);
 	font-size: 20px;
 }
-.homepageBlock .lanceringBold a{
+.homepageBlock .lanceringBold a {
 	color: rgb(192, 43, 57);
 }
-.homepageBlock .lanceringBoldBlack{
+.homepageBlock .lanceringBoldBlack {
 	font-weight: bold;
 }
 
@@ -358,7 +358,6 @@ p.header {
 
 .formLetter {
 	padding: 40px;
-
 	width: 35%;
 }
 
@@ -412,8 +411,8 @@ input {
 }
 
 form {
-	margin-top: 40px;
-	margin-bottom: 60px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .extraPadding {
@@ -446,6 +445,7 @@ form {
 	text-decoration: underline;
 	font-size: bold;
 	font-size: 16px;
+	width: 100%;
 }
 
 .subForm {

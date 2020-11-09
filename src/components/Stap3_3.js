@@ -602,8 +602,7 @@ function Stap3_3({
 										value={value.subjectDateStart}
 										onChange={changeHandlerUser}
 										id="subjectDateStart"
-										type="textarea"
-										name="subjectDate"
+										type="text"
 										placeholder="bijvoorbeeld 01-01-2020"
 									/>
 								</label>
@@ -614,8 +613,7 @@ function Stap3_3({
 										value={value.subjectDateEnd}
 										onChange={changeHandlerUser}
 										id="subjectDateEnd"
-										type="textarea"
-										name="subjectDate"
+										type="text"
 										placeholder="bijvoorbeeld 31-12-2019"
 									/>
 								</label>
@@ -627,7 +625,7 @@ function Stap3_3({
 					)}
 				</div>
 			</form>
-
+			<span className="extraPadding"></span>
 			<Link to="/Stap3">Terug</Link>
 			<Link to="/StapExtra" onClick={() => clickHandlerStep("step9")}>
 				Volgende
