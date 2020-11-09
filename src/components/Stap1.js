@@ -52,7 +52,7 @@ function Stap1({
 					<PopupButton number="3" />
 				</span>
 				{value.userCompanyName && (
-					<br/>
+					
 					<span className="subForm">
 						<label className="formInputs">
 							Naam organisatie

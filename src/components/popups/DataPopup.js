@@ -41,7 +41,7 @@ const DataPopup = {
 		p2:
 		"En wees gerust: de instantie die je wobt is verplicht om je verzoek naar de juiste instantie door te sturen. Voor de zekerheid herinnert de generator in de alinea ‘doorgeleiding’ de overheidsinstantie aan deze verplichting."
 	},
-	},
+	
 	7: {
 		id: "7",
 		h1: "Geadresseerde",
