@@ -52,6 +52,7 @@ function Stap1({
 					<PopupButton number="3" />
 				</span>
 				{value.userCompanyName && (
+					
 					<span className="subForm">
 						<label className="formInputs">
 							Naam organisatie
@@ -176,9 +177,7 @@ function Stap1({
 				</div>
 			</form>
 			<span className="extraPadding">
-				<p>Hoe gaat deze app om met mijn gegevens?</p>
-				<PopupButton number="4" />
-				<br />
+				
 			</span>
 			<Link to="/StapVoorAf">Terug</Link>
 			<Link

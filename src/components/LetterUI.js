@@ -51,7 +51,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					</p>
 					<br />
 					<p>
-						Het betreft informatie in het kader van de bestuurlijke aangelegenheid: {value.subjectLong}.{" "}
+					De bestuurlijke aangelegenheid waarover ik informatie vraag, is uw beleid met betrekking tot:{" "}
+						{value.subjectLong}.{" "}
 						{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
 						{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
 					</p>
@@ -66,7 +67,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						<React.Fragment>
 							{value.subjectType === "specific" ? (
 								<React.Fragment>
-									<p className="tussenkopje">Informatie</p>
+									<h3 className="tussenkopje">Informatie</h3>
 									<p>Concreet vraag ik u om (kopie van) de volgende informatie:</p>
 									<br />
 									{value.subjectTextObject.map(item => (
@@ -158,7 +159,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					filteredDataText.map(item => (
 						<div key={item.id}>
 							<div>
-								<p className="tussenkopje">{item.title}</p>
+								<h3 className="tussenkopje">{item.title}</h3>
 								<p>{item.sentence}</p>
 								<br />
 							</div>

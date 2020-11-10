@@ -19,7 +19,7 @@ function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthority
 				</span>
 				<span>
 					<label>
-						Adres
+						Adres of postbus
 						<input
 							size="50"
 							type="text"
