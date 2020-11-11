@@ -9,8 +9,11 @@ function HomepageWaarom() {
 					<p>
 						Iedereen heeft het recht om informatie op te vragen bij de overheid. In de Wet openbaarheid van bestuur (de
 						Wob) is geregeld waar zo’n verzoek aan moet voldoen. Een Wob-verzoek is cruciaal om toegang te krijgen tot
-						informatie die de overheid niet uit eigen beweging vrijgeeft. Kijk hier voor de Wet openbaarheid van
-						bestuur.
+						informatie die de overheid niet uit eigen beweging vrijgeeft. Kijk{" "}
+						<a href="https://wetten.overheid.nl/BWBR0005252/2018-07-28" className="plaintext" target="_blanc">
+							hier
+						</a>{" "}
+						voor de Wet openbaarheid van bestuur.
 					</p>
 				</div>
 				<div>

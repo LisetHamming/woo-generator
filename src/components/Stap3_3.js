@@ -603,7 +603,7 @@ function Stap3_3({
 										onChange={changeHandlerUser}
 										id="subjectDateStart"
 										type="text"
-										placeholder="bijvoorbeeld 01-01-2020"
+										placeholder="Bijvoorbeeld 01-01-2015"
 									/>
 								</label>
 
@@ -614,10 +614,9 @@ function Stap3_3({
 										onChange={changeHandlerUser}
 										id="subjectDateEnd"
 										type="text"
-										placeholder="bijvoorbeeld 31-12-2019"
+										placeholder="Bijvoorbeeld 31-10-2020"
 									/>
 								</label>
-								
 							</span>
 						</div>
 					)}

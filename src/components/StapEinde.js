@@ -14,11 +14,10 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<br />
 				<br />
 				<div className="extraPadding">
-				<button className="buttonStyle2" onClick={exportHTMLDoc}>
-					Opslaan als DOC
-				</button>
-				
-			</div>
+					<button className="buttonStyle2" onClick={exportHTMLDoc}>
+						Opslaan als DOC
+					</button>
+				</div>
 				Je concept Wob-verzoek
 				<br />
 				Check of de zinnen in je verzoek goed lopen. Denk ook na of er nog specifieke informatie nodig is om aan je
@@ -29,17 +28,13 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<br />
 				Digitaal versturen?
 				<br />
-				Een deel van de overheidsinstanties accepteert Wob-verzoeken per mail. Check daarvoor de website van het
-				bestuursorgaan. Heeft het bestuursorgaan een speciaal Wob-formulier op haar website gezet, dan kun je de
+				Een deel van de overheidsinstanties accepteert Wob-verzoeken per mail. Check daarvoor de website van de
+				overheidsinstantie. Heeft de overheidsinstantie een speciaal Wob-formulier op haar website gezet, dan kun je de
 				(eventueel: ondertekende) brief ook uploaden of kopiëren en inplakken.
 				<br />
 				<br />
-				Je kunt nu hier je Wob-verzoek opslaan.
 			</p>
 			<br />
-			<div className="extraPadding">
-							
-			</div>
 			<div>
 				<p>
 					Vragen en opmerkingen: info@wob-generator.nl

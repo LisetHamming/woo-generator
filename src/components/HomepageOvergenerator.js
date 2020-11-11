@@ -18,19 +18,33 @@ function HomepageOvergenerator() {
 						<a className="plaintext" href="https://www.lira.nl/" target="_blank" rel="noopener noreferrer">
 							Stichting Lira
 						</a>
-						. Ontwikkeling: Tove Oegema (
-						<a className="plaintext" href="https://researchassistant.nl/" target="_blank" rel="noopener noreferrer">
-							Research Assistant
-						</a>
-						) en{" "}
+						. Ontwikkeling:{" "}
+						<a
+							className="plaintext"
+							href="https://www.linkedin.com/in/tove-oegema-36107311b"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Tove Oegema{" "}
+						</a>{" "}
+						(Research Assistant) en{" "}
 						<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank" rel="noopener noreferrer">
 							Paulien Bouw
 						</a>
-						. Inhoud: onderzoeksjournlisten{" "}
+						. Inhoud: onderzoeksjournalisten{" "}
 						<a className="plaintext" href="https://www.lisethamming.com/" target="_blank" rel="noopener noreferrer">
 							Liset Hamming
 						</a>{" "}
-						en Tim Staal namens de VVOJ.
+						en{" "}
+						<a
+							className="plaintext"
+							href="https://www.platform-investico.nl/personen/tim-staal/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Tim Staal
+						</a>{" "}
+						namens de VVOJ.
 					</p>
 					<br />
 					<br />
@@ -51,8 +65,7 @@ function HomepageOvergenerator() {
 						</a>
 					</div>
 					<div className="spanLinks">
-						<Link to="/PrivacyVoorwaarden">Privacy Policy </Link>
-						<Link to="/AlgemeneVoorwaarden">Algemene voorwaarden</Link>
+						<Link to="/PrivacyVoorwaarden">Privacybeleid</Link>
 					</div>
 				</div>
 				<div className="projectTeam">

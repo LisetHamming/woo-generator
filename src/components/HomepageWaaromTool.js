@@ -5,7 +5,7 @@ function HomepageWaaromTool() {
 		<div className="sectionWaarom">
 			<div className="sectionBlock">
 				<div>
-					<h1>Waarom deze tool?</h1>
+					<h1>Waarom een Wob-generator?</h1>
 					<p>
 						Nogal wat journalisten denken dat ‘wobben’ een mysterieuze juridische truc is. Dat is overdreven, maar er
 						zit een kern van waarheid in: er zijn best een paar punten waarop je moet letten. Misschien wobben
