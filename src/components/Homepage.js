@@ -9,6 +9,7 @@ import HomepageOvergenerator from "./HomepageOvergenerator";
 import HomepageWaarom from "./HomepageWaarom";
 import HomepageWaaromTool from "./HomepageWaaromTool";
 import Lancering from "./Lancering";
+import PrivacyVoorwaarden from "./PrivacyVoorwaarden";
 import Stap1 from "./Stap1";
 import Stap2 from "./Stap2";
 import Stap3 from "./Stap3";
@@ -388,6 +389,9 @@ const Homepage = props => {
 					filteredDataText={filteredDataText}
 					exportHTMLDoc={exportHTMLDoc}
 				/>
+			</Route>
+			<Route path="/PrivacyVoorwaarden">
+				<PrivacyVoorwaarden />
 			</Route>
 		</Switch>
 	);
