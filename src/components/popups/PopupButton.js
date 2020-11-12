@@ -7,13 +7,13 @@ function PopupButton({ number }) {
 	const [popUp, setPopUp] = useState(false);
 
 	return (
-		<div>
+		<span>
 			<button type="button" className="popupI" onClick={() => setPopUp(curr => !curr)}>
 				<FontAwesomeIcon className="fontIcon" icon={faInfoCircle} />
 			</button>
 			{popUp && <Popup number={number} clickHandler={() => setPopUp(false)} />}
 			<br />
-		</div>
+		</span>
 	);
 }
 

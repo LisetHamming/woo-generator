@@ -13,11 +13,13 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				Bovendien blijf je zelf verantwoordelijk voor wat je naar het bestuursorgaan stuurt.
 				<br />
 				<br />
-				<div className="extraPadding">
-					<button className="buttonStyle2" onClick={exportHTMLDoc}>
-						Opslaan als DOC
-					</button>
-				</div>
+			</p>
+			<p className="extraPadding">
+				<button className="buttonStyle2" onClick={exportHTMLDoc}>
+					Opslaan als DOC
+				</button>
+			</p>
+			<p>
 				Je concept Wob-verzoek
 				<br />
 				Check of de zinnen in je verzoek goed lopen. Denk ook na of er nog specifieke informatie nodig is om aan je
@@ -31,8 +33,6 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				Een deel van de overheidsinstanties accepteert Wob-verzoeken per mail. Check daarvoor de website van de
 				overheidsinstantie. Heeft de overheidsinstantie een speciaal Wob-formulier op haar website gezet, dan kun je de
 				(eventueel: ondertekende) brief ook uploaden of kopiëren en inplakken.
-				<br />
-				<br />
 			</p>
 			<br />
 			<div>

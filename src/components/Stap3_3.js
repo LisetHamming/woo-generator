@@ -93,9 +93,11 @@ function Stap3_3({
 						<h1>Onderliggende stukken</h1>
 						<p>Als je ook onderliggende stukken wil, vink dan aan welke.</p>
 						<br />
-						<span>
-							<p>Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.</p>
-							<PopupButton number="14" />
+						<span className="nieuwietje">
+							<p>
+								Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.
+								<PopupButton number="14" />
+							</p>
 						</span>
 					</div>
 				)}

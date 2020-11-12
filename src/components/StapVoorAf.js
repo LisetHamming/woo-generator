@@ -8,7 +8,7 @@ function StapVoorAf() {
 			<p className="logo">Wob-generator</p>
 			<h2>Goed om te weten</h2>
 			<br />
-			<br/>
+			<br />
 
 			<p>
 				De Wob-generator is niet gemaakt om op je telefoon te gebruiken. Je kunt ‘m dus het beste op je computer of
@@ -19,13 +19,14 @@ function StapVoorAf() {
 				Aan de linkerkant van het scherm staat welke informatie we nodig hebben voor je verzoek en vakjes om deze
 				informatie in te vullen.
 			</p>
-			<p> </p>
-			<span className="ietje">
-				<p>Voor meer uitleg kun je klikken op de i'tjes.</p>
-				<PopupButton number="19" />
+			<span className="nieuwietje">
+				<p>
+					Voor meer uitleg kun je klikken op de i'tjes.
+					<PopupButton number="19" />
+				</p>
 				<br />
 			</span>
-			
+
 			<p>
 				Je antwoorden worden automatisch verwerkt en verschijnen vervolgens in het concept Wob-verzoek aan de
 				rechterkant. Zo kun je steeds zien of de tekst goed loopt. Alles wat je invult wordt via de browser die je

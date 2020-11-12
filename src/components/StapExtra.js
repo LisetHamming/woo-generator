@@ -102,7 +102,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						/>{" "}
 						Persoonlijke beleidsopvattingen
 						<br />
-						<div class="checkmark"></div>
+						<div className="checkmark"></div>
 					</label>
 				</span>
 				<span>

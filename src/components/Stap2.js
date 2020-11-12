@@ -24,9 +24,11 @@ function Stap2({
 		<div className="formLetter">
 			<p className="logo">Wob-generator</p>
 			<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
-			<span>
-				<p>Kies hier bij welke overheidsinstantie je je Wob-verzoek wilt indienen.</p>
-				<PopupButton number="5" />
+			<span className="nieuwietje">
+				<p>
+					Kies hier bij welke overheidsinstantie je je Wob-verzoek wilt indienen.
+					<PopupButton number="5" />
+				</p>
 			</span>
 
 			{errors.includes("selectedAuthority") && (
@@ -44,10 +46,11 @@ function Stap2({
 						<p>{value.selectedAuthority.Website}</p>
 						<br />
 
-						<p>	{value.selectedAuthority.Postbus}</p>
-						<p>{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}</p>
-						
-					
+						<p> {value.selectedAuthority.Postbus}</p>
+						<p>
+							{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}
+						</p>
+
 						<p>{value.selectedAuthority.value}</p>
 						<div>
 							<button
@@ -80,7 +83,6 @@ function Stap2({
 										item =>
 											item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
 											item.Plaats.toLowerCase().includes(searchValue.toLowerCase())
-											
 									)
 									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))
 									.map(item => (
@@ -117,7 +119,6 @@ function Stap2({
 										Plaats: "",
 										Website: "",
 										Emailadres: ""
-										
 									});
 									setShowManualAuthority(true);
 								}}
@@ -140,13 +141,17 @@ function Stap2({
 				/>
 			)}
 
-			<span>
-				<p>Hoe kies ik de juiste overheidsinstantie?</p>
-				<PopupButton number="6" />
+			<span className="nieuwietje">
+				<p>
+					Hoe kies ik de juiste overheidsinstantie?
+					<PopupButton number="6" />
+				</p>
 			</span>
-			<span className="lastOfType">
-				<p>Aan wie adresseer ik mijn verzoek?</p>
-				<PopupButton number="7" />
+			<span className="lastOfType nieuwietje">
+				<p>
+					Aan wie adresseer ik mijn verzoek?
+					<PopupButton number="7" />
+				</p>
 			</span>
 			<Link to="/Stap1">Terug</Link>
 

@@ -27,14 +27,19 @@ function Stap3({
 			</p>
 			<br />
 			<br />
-			<span>
-				<p>Waarom moet ik nauwkeurig zijn?</p>
-				<PopupButton number="8" />
+			<span className="nieuwietje">
+				<p>
+					Waarom moet ik nauwkeurig zijn?
+					<PopupButton number="8" />
+				</p>
 			</span>
 
-			<span>
-				<p> Let op: je kunt alleen informatie over ‘bestuurlijke aangelegenheden’ opvragen.</p>
-				<PopupButton number="18" />
+			<span className="nieuwietje">
+				<p>
+					{" "}
+					Let op: je kunt alleen informatie over ‘bestuurlijke aangelegenheden’ opvragen.
+					<PopupButton number="18" />
+				</p>
 			</span>
 			<br />
 			<form>
@@ -70,7 +75,7 @@ function Stap3({
 				</span>
 				{errors.includes("subjectLong") && <p id="error">Dit is een verplicht veld, graag invullen.</p>}
 				<span>
-					<label className="container">
+					<label className="container nieuwietje">
 						<input
 							onChange={changeHandlerCheckbox}
 							id="subjectMilieu"
@@ -78,12 +83,11 @@ function Stap3({
 							checked={value.subjectMilieu}
 							name="subjectInfo"
 							value="subjectMilieu"
-						/>{" "}
-						Dit onderwerp gaat over milieu
+						/>
+						Dit onderwerp gaat over milieu <PopupButton number="9" />
 						<br />
 						<div className="checkmark"></div>
-					</label>{" "}
-					<PopupButton number="9" />
+					</label>
 				</span>
 				<h1>Specifiek document of alles?</h1>
 				<p>
@@ -92,14 +96,15 @@ function Stap3({
 				</p>
 
 				<br />
-				<span>
+				<span className="nieuwietje">
 					{" "}
-					<p>Welke documenten moet de overheid openbaar maken?</p>
-					<PopupButton number="13" />
+					<p>
+						Welke documenten moet de overheid openbaar maken? <PopupButton number="13" />
+					</p>
 				</span>
 				<br />
 				<span>
-					<label className="container">
+					<label className="container nieuwietje">
 						<input
 							onChange={changeHandlerSubjectType}
 							id="subjectSpecific"
@@ -110,13 +115,12 @@ function Stap3({
 						/>{" "}
 						Ik wil specifieke documenten
 						<div className="checkmark"></div>
+						<PopupButton number="11" />
 					</label>
-					<PopupButton number="11" />
 				</span>
 
 				<span>
-					<label className="container">
-						{" "}
+					<label className="container nieuwietje">
 						<input
 							onChange={changeHandlerSubjectType}
 							id="subjectAll"
@@ -124,11 +128,11 @@ function Stap3({
 							checked={value.subjectType === "all"}
 							name="subjectType"
 							value="all"
-						/>{" "}
+						/>
 						Ik wil alle documenten die de overheidsinstantie heeft over dit onderwerp
 						<div className="checkmark"></div>
+						<PopupButton number="12" />
 					</label>
-					<PopupButton number="12" />
 				</span>
 			</form>
 			<span className="extraPadding"></span>

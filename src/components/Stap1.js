@@ -24,7 +24,7 @@ function Stap1({
 			<br />
 			<form>
 				<span>
-					<label className="container">
+					<label className="container nieuwietje">
 						Ik ben een journalist
 						<input
 							id="userJournalist"
@@ -34,11 +34,11 @@ function Stap1({
 							type="checkbox"
 						/>
 						<div className="checkmark"></div>
+						<PopupButton number="1" />
 					</label>
-					<PopupButton number="1" />
 				</span>
 				<span>
-					<label className="container">
+					<label className="container nieuwietje">
 						Ik wob namens een (media)organisatie
 						<input
 							id="userCompany"
@@ -48,11 +48,10 @@ function Stap1({
 							type="checkbox"
 						/>
 						<div className="checkmark"></div>
+						<PopupButton number="3" />
 					</label>
-					<PopupButton number="3" />
 				</span>
 				{value.userCompanyName && (
-					
 					<span className="subForm">
 						<label className="formInputs">
 							Naam organisatie
@@ -176,9 +175,7 @@ function Stap1({
 					</span>
 				</div>
 			</form>
-			<span className="extraPadding">
-				
-			</span>
+			<span className="extraPadding"></span>
 			<Link to="/StapVoorAf">Terug</Link>
 			<Link
 				to="/Stap2"

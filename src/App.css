@@ -210,7 +210,7 @@ p.header {
 }
 
 .popupI:hover {
-	font-size: 25px;
+	font-size: 19px;
 	transition: ease-in-out, font-size 0.35s ease-in-out;
 }
 
@@ -358,7 +358,7 @@ p.header {
 
 .formLetter {
 	padding: 40px;
-	width: 35%;
+	width: 33%;
 }
 
 .formLetter h2 {
@@ -684,4 +684,11 @@ Checkbox styles
 		left: 5%;
 		right: 0;
 	}
+}
+.nieuwietje p,
+.nieuwietje span {
+	display: inline-block;
+}
+.nieuwietje .popupI {
+	padding: 0 0 2px 5px;
 }
