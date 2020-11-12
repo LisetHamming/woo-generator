@@ -634,3 +634,54 @@ Checkbox styles
 		font-style: italic;
 	}
 }
+@media only screen and (min-width: 300px) and (max-width: 1080px) {
+	.blockText {
+		width: 90%;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+
+	.homepageBlock {
+		background-color: white;
+		display: flex;
+		flex-wrap: wrap;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.sectionBlock2 .block1 {
+		width: 90%;
+	}
+	.sectionBlock div {
+		width: 90%;
+	}
+	.sectionBlock,
+	.sectionBlock2 {
+		flex-wrap: wrap;
+	}
+	.extra_content {
+		padding-bottom: 0;
+	}
+	.central {
+		width: 80%;
+	}
+	.formLetter {
+		padding: 20px;
+		width: 90%;
+	}
+	a,
+	button {
+		padding: 0.8em 2em;
+	}
+	.letterComplete {
+		display: none;
+	}
+	.popup {
+		width: 70%;
+		left: 5%;
+		right: 0;
+	}
+}

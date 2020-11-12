@@ -56,8 +56,7 @@ const DataText = state => [
 	{
 		id: 9,
 		title: "Inventarislijst",
-		sentence:
-			"Ik verzoek u, gebaseerd op het zorgvuldigheidsbeginsel uit de Algemene wet bestuursrecht (Awb) en in overeenstemming met een groeiend gebruik in de verstrekkingspraktijk, om als onderdeel van de beslissing een inventarislijst op te nemen."
+		sentence: "Ik verzoek u om als onderdeel van de beslissing een inventarislijst op te nemen."
 	}
 ];
 export default DataText;
