@@ -1,4 +1,5 @@
 import React from "react";
+import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
@@ -11,6 +12,15 @@ function Stap3_2({
 	changeHandlerSubjectType,
 	getCurrentDate
 }) {
+	const tagManagerArgs = {
+		dataLayer: {
+			page: "Stap3_2"
+		},
+		dataLayerName: "PageDataLayer"
+	};
+	{
+		TagManager.dataLayer(tagManagerArgs);
+	}
 	return (
 		<div className="formLetter">
 			<p className="logo">Wob-generator</p>

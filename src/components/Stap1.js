@@ -1,8 +1,14 @@
 import React, { useState } from "react";
+import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
-
+const tagManagerArgs = {
+	dataLayer: {
+		page: "Stap1"
+	},
+	dataLayerName: "PageDataLayer"
+};
 function Stap1({
 	value,
 	changeHandlerUser,
@@ -13,9 +19,11 @@ function Stap1({
 }) {
 	const [errors, setErrors] = useState([]);
 
+	TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Wob-generator</p>
+
 			<h2>Stap 1: Over jezelf</h2>
 			<p>
 				Vul hier je contactgegevens in zodat de overheidsinstantie je kan bereiken en maak enkele keuzes over hoe je

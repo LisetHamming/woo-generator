@@ -1,11 +1,17 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
+import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
 import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
-
+const tagManagerArgs = {
+	dataLayer: {
+		page: "Stap2"
+	},
+	dataLayerName: "PageDataLayer"
+};
 function Stap2({
 	value,
 	setAuthority,
@@ -20,9 +26,11 @@ function Stap2({
 	const [searchValue, setSearchValue] = useState("");
 	const [errors, setErrors] = useState([]);
 
+	TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Wob-generator</p>
+
 			<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
 			<span className="nieuwietje">
 				<p>

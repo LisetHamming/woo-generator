@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
@@ -14,10 +15,17 @@ function Stap3({
 }) {
 	//  error state
 	const [errors, setErrors] = useState([]);
-
+	const tagManagerArgs = {
+		dataLayer: {
+			page: "Stap3"
+		},
+		dataLayerName: "PageDataLayer"
+	};
+	TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Wob-generator</p>
+
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<p>
 				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Met ‘onderwerp’ bedoelen we het
