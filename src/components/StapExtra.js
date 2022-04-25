@@ -15,7 +15,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 	}
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
+			<p className="logo">Woo-generator</p>
 
 			<h2>Extra opties</h2>
 			<p>
@@ -30,88 +30,13 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 					<label className="container">
 						<input
 							onChange={changeHandlerCheckbox}
-							id="text6"
-							type="checkbox"
-							checked={value[6]}
-							name="checkText"
-							value="6"
-						/>{" "}
-						Doorgeleiding
-						<br />
-						<div className="checkmark"></div>
-					</label>
-				</span>
-				<span>
-					<label className="container">
-						<input
-							onChange={changeHandlerCheckbox}
-							id="text8"
-							type="checkbox"
-							checked={value[8]}
-							name="checkText"
-							value="8"
-						/>{" "}
-						Mondelinge toelichting
-						<br />
-						<div className="checkmark"></div>
-					</label>
-				</span>
-				<span>
-					<label className="container">
-						<input
-							onChange={changeHandlerCheckbox}
-							id="text5"
-							type="checkbox"
-							checked={value[5]}
-							name="checkText"
-							value="5"
-						/>{" "}
-						Insluiting alle gegevensdragers
-						<br />
-						<div className="checkmark"></div>
-					</label>
-				</span>
-				<span>
-					<label className="container">
-						<input
-							onChange={changeHandlerCheckbox}
-							id="text4"
-							type="checkbox"
-							checked={value[4]}
-							name="checkText"
-							value="4"
-						/>{" "}
-						Index vooraf
-						<br />
-						<div className="checkmark"></div>
-					</label>
-				</span>
-				<span>
-					<label className="container">
-						<input
-							onChange={changeHandlerCheckbox}
 							id="text1"
 							type="checkbox"
 							checked={value[1]}
 							name="checkText"
 							value="1"
 						/>{" "}
-						Bescherming persoonlijke levenssfeer
-						<br />
-						<div className="checkmark"></div>
-					</label>
-				</span>
-				<span>
-					<label className="container">
-						<input
-							onChange={changeHandlerCheckbox}
-							id="text10"
-							type="checkbox"
-							checked={value[25]}
-							name="checkText"
-							value="25"
-						/>{" "}
-						Persoonlijke beleidsopvattingen
+						Doorgeleiding
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -126,22 +51,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="2"
 						/>{" "}
-						Samenvattingen van documenten
-						<br />
-						<div className="checkmark"></div>
-					</label>
-				</span>
-				<span>
-					<label className="container">
-						<input
-							onChange={changeHandlerCheckbox}
-							id="text7"
-							type="checkbox"
-							checked={value[7]}
-							name="checkText"
-							value="7"
-						/>{" "}
-						Motivering bij weigering
+						Mondelinge toelichting
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -156,7 +66,82 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="3"
 						/>{" "}
-						Voorkeur digitale verstrekking
+						Reeds openbare informatie
+						<br />
+						<div className="checkmark"></div>
+					</label>
+				</span>
+				<span>
+					<label className="container">
+						<input
+							onChange={changeHandlerCheckbox}
+							id="text4"
+							type="checkbox"
+							checked={value[4]}
+							name="checkText"
+							value="4"
+						/>{" "}
+						Mogelijk omvangrijk verzoek
+						<br />
+						<div className="checkmark"></div>
+					</label>
+				</span>
+				<span>
+					<label className="container">
+						<input
+							onChange={changeHandlerCheckbox}
+							id="text5"
+							type="checkbox"
+							checked={value[5]}
+							name="checkText"
+							value="5"
+						/>{" "}
+						Geanonimiseerd verstrekken
+						<br />
+						<div className="checkmark"></div>
+					</label>
+				</span>
+				<span>
+					<label className="container">
+						<input
+							onChange={changeHandlerCheckbox}
+							id="text6"
+							type="checkbox"
+							checked={value[6]}
+							name="checkText"
+							value="6"
+						/>{" "}
+						Persoonlijke beleidsopvattingen
+						<br />
+						<div className="checkmark"></div>
+					</label>
+				</span>
+				<span>
+					<label className="container">
+						<input
+							onChange={changeHandlerCheckbox}
+							id="text7"
+							type="checkbox"
+							checked={value[7]}
+							name="checkText"
+							value="7"
+						/>{" "}
+						Samenvattingen van documenten
+						<br />
+						<div className="checkmark"></div>
+					</label>
+				</span>
+				<span>
+					<label className="container">
+						<input
+							onChange={changeHandlerCheckbox}
+							id="text8"
+							type="checkbox"
+							checked={value[8]}
+							name="checkText"
+							value="8"
+						/>{" "}
+						Motivering bij weigering
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -171,7 +156,22 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="9"
 						/>{" "}
-						Inventarislijst
+						Voorkeur digitale verstrekking
+						<br />
+						<div className="checkmark"></div>
+					</label>
+				</span>
+				<span>
+					<label className="container">
+						<input
+							onChange={changeHandlerCheckbox}
+							id="text10"
+							type="checkbox"
+							checked={value[10]}
+							name="checkText"
+							value="10"
+						/>{" "}
+						Inventarislijst toevoegen aan besluit
 						<br />
 						<div className="checkmark"></div>
 					</label>

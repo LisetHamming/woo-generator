@@ -5,14 +5,14 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	const wordsInside = [
 		value.subjectInside1 && "brieven",
 		value.subjectInside2 && `e-mails ${value.subjectInside2inclusive} bijlagen`,
-		value.subjectInside6 && "gespreksnotities",
-		value.subjectInside4 && "SMS-jes en WhatsApp-berichten"
+		//value.subjectInside6 && "gespreksverslagen",
+		value.subjectInside4 && "sms'jes en WhatsApp-berichten"
 	].filter(Boolean);
 	const wordsOutside = [
 		value.subjectOutside1 && "brieven",
 		value.subjectOutside2 && `e-mails ${value.subjectOutside2inclusive} bijlagen`,
-		value.subjectOutside6 && "gespreksnotities",
-		value.subjectOutside4 && "SMS-jes en WhatsApp-berichten"
+		//value.subjectOutside6 && "gespreksverslagen",
+		value.subjectOutside4 && "sms'jes en WhatsApp-berichten"
 	].filter(Boolean);
 	return (
 		<div className="letterComplete">
@@ -39,36 +39,31 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						{value.userCityName}, {getCurrentDate()}
 					</p>
 					<br />
-					<p>Betreft: Wob-verzoek</p>
+					<p>Betreft: indiening Woo-verzoek</p>
 					<br />
 					<p>Zeer geachte heer/mevrouw,</p>
 					<br />
 					<p>
-						Met een beroep op de Wet openbaarheid van bestuur (hierna: Wob) verzoek ik, {value.userName},
-						{value.userJournalist ? " journalist, " : " "}{value.userJournalist && !value.userCompanyName && " op eigen titel"}
+						Met een beroep op de Wet open overheid (hierna: Woo) verzoek ik, {value.userName},
+						{value.userJournalist ? " journalist, " : " "}{value.userOnBehalfInput.length ? `werkzaam voor/in opdracht van ${value.userOnBehalfInput}, ` : ""}
 						{value.userCompanyNameInput.length ? `u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van
 						hieronder nader te specificeren informatie bij of onder u.
 					</p>
 					<br />
 					<p>
-					De bestuurlijke aangelegenheid waarover ik informatie vraag, is uw beleid met betrekking tot:{" "}
+					Het onderwerp waarover ik informatie vraag, is:{" "}
 						{value.subjectLong}.{" "}
 						{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
 						{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
 					</p>
 					<br />
 
-					<p>
-						In de afhandeling van dit verzoek vraag ik u rekening te houden met het publieke belang van de journalistiek
-						als controleur van een goede en democratische bestuursvoering.
-					</p>
-					<br />
 					{value.step6 && (
 						<React.Fragment>
 							{value.subjectType === "specific" ? (
 								<React.Fragment>
 									<h3 className="tussenkopje">Informatie</h3>
-									<p>Concreet vraag ik u om (kopie van) de volgende informatie:</p>
+									<p>Concreet vraag ik u om (kopie van) de volgende documenten:</p>
 									<br />
 									{value.subjectTextObject.map(item => (
 										<p>
@@ -85,7 +80,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									value[15] ||
 									value[16] ||
 									value[17] ? (
-										<p>Bovendien ontvang ik graag een kopie van de onderliggende documenten, namelijk:</p>
+										<p>Bovendien ontvang ik graag (kopie van) de volgende onderliggende documenten:</p>
 									) : (
 										""
 									)}
@@ -95,9 +90,9 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 								<React.Fragment>
 									<h3>Informatie</h3>
 									<p>
-										Concreet vraag ik u om (kopie van) alle informatie met betrekking tot {value.subjectLong}
+										Concreet vraag ik u om (kopie van) informatie met betrekking tot het onderwerp van dit verzoek neergelegd in de volgende documenten{value.subjectLong}
 										{value.subjectDateStart && " van " + value.subjectDateStart}
-										{value.subjectDateEnd && " tot " + value.subjectDateEnd}, waaronder:
+										{value.subjectDateEnd && " tot " + value.subjectDateEnd}:
 									</p>
 								</React.Fragment>
 							)}
@@ -115,14 +110,14 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						
 								{value[12] &&
 									value[13] &&
-									<p>{`- Correspondentie, gespreksverslagen intern${wordsInside.length > 0 &&
+									<p>{`- Interne correspondentie en gespreksverslagen ${wordsInside &&
 										` (${wordsInside.join(", ")})`};`}</p>}
 							
 							
 								{value[12] &&
 									value[14] &&
 									<p>{
-									`- Alle externe correspondentie ${wordsOutside.length > 0 &&
+									`- Externe correspondentie en gespreksverslagen ${wordsOutside &&
 										`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
 										` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}</p>}
 							
@@ -146,12 +141,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							{value[16] && <p>{ "- Datasets;"} </p>}
 							{value[17] && <p>{ `-  ${value.subjectElseText}`} </p> }
 							<br />
-							<p>
-								Mocht u beschikken over andere documenten die - aanvullend of in plaats van gevraagde documenten -
-								inzicht in deze bestuurlijke aangelegenheid kunnen geven, dan verzoek ik u die documenten ook te
-								verstrekken.
-							</p>
-							<br />
+				
+	
 						</React.Fragment>
 					)}
 				</div>
@@ -168,14 +159,16 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 				<div>
 					<p>
 						Graag ontvang ik schriftelijk (per brief of per e-mail) een bevestiging van de ontvangst van dit
-						Wob-verzoek.
+						Woo-verzoek. 
+						<br />
+						<br />
+						Mocht u belanghebbenden de gelegenheid gaan bieden tot het geven van zienswijzen dan ontvang ik daarvan graag vooraf schriftelijk of per e-mail bericht.
 					</p>
 					<br />
 					<p>
 						U dient binnen de termijn van
-						{value.subjectMilieu ? " 2" : " 4"} weken een besluit te nemen op dit verzoek
-						{value.subjectMilieu ? ", omdat dit verzoek het milieu betreft." : "."} Geen of een onvoldoende antwoord op
-						de vervaldatum zal worden opgevat als een afwijzing.
+						{value.subjectMilieu ? " 4" : " 4"} weken een besluit te nemen op dit verzoek
+						{value.subjectMilieu ? ". Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen." : "."} Geen of onvoldoende antwoord op de vervaldatum zal aanleiding geven tot beroep bij de bestuursrechter wegens het niet tijdig nemen van een beslissing.
 					</p>
 					<br />
 					<p>Met vriendelijke groet, </p>

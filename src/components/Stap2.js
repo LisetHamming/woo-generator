@@ -29,12 +29,12 @@ function Stap2({
 	TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
+			<p className="logo">Woo-generator</p>
 
 			<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
 			<span className="nieuwietje">
 				<p>
-					Kies hier bij welke overheidsinstantie je je Wob-verzoek wilt indienen.
+					Kies hier bij welke overheidsinstantie je je Woo-verzoek wilt indienen.
 					<PopupButton number="5" />
 				</p>
 			</span>
@@ -49,7 +49,7 @@ function Stap2({
 			<form>
 				{value.selectedAuthority && !showManualAuthority ? (
 					<div className="selectedAuthority">
-						<p>Controleer de instantie die je wobt:</p>
+						<p>Controleer de instantie waar je het Woo-verzoek indient:</p>
 						<h3>{value.selectedAuthority.Bestuursorgaan}</h3>
 						<p>{value.selectedAuthority.Website}</p>
 						<br />
@@ -107,7 +107,7 @@ function Stap2({
 										</li>
 									))
 							) : (
-								<li>Er is een foutmelding bij onze bron, als je zelf gegevens hebt, graag invullen.</li>
+								<li>Er gaat iets niet goed bij het ophalen van de informatie. Als je zelf gegevens hebt, kan je die invullen.</li>
 							)}
 						</ul>
 

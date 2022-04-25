@@ -24,12 +24,11 @@ function Stap3({
 	TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
+			<p className="logo">Woo-generator</p>
 
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<p>
-				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Met ‘onderwerp’ bedoelen we het
-				beleidsterrein waarover je verzoek gaat. Dat kan een vrij specifiek beleidsterrein zijn, zoals ‘boetes voor
+				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Dit kan een vrij smal onderwerp zijn, zoals ‘boetes voor
 				snelheidsovertredingen’, maar ook breder, zoals ‘de verkeersveiligheid in uw gemeente’. Bij de volgende stap
 				krijg je de gelegenheid verder toe te spitsen welke documenten je wilt ontvangen.
 			</p>
@@ -45,7 +44,7 @@ function Stap3({
 			<span className="nieuwietje">
 				<p>
 					{" "}
-					Let op: je kunt alleen informatie over ‘bestuurlijke aangelegenheden’ opvragen.
+					Let op: je kunt alleen vragen naar stukken of gegevens die verband houden met een publieke taak van de overhedsinstanties waar je je Woo-verzoek indient.
 					<PopupButton number="18" />
 				</p>
 			</span>
@@ -68,7 +67,7 @@ function Stap3({
 				)}
 				<span>
 					<label>
-						Onderwerp (verplicht)
+						Onderwerp {" "}
 						<input
 							size="50"
 							value={value.subjectLong}

@@ -9,7 +9,7 @@ function HomepageOvergenerator() {
 				<div className="block1">
 					<h1>Over deze generator</h1>
 					<p>
-						De Wob-generator is een project van de Wob-werkgroep van de Vlaams-Nederlandse Vereniging van
+						De Woo-generator is een project van de Woo-werkgroep van de Vlaams-Nederlandse Vereniging van
 						Onderzoeksjournalisten (
 						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
 							VVOJ
@@ -49,7 +49,7 @@ function HomepageOvergenerator() {
 					<br />
 					<br />
 					<p>
-						De Wob-werkgroep van de VVOJ beheert de website. De website is op geen enkele manier verbonden aan de
+						De Woo-werkgroep van de VVOJ beheert de website. De website is op geen enkele manier verbonden aan de
 						Nederlandse overheid en is volstrekt onafhankelijk.
 					</p>
 					<br></br>

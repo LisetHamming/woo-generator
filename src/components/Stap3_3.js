@@ -27,7 +27,7 @@ function Stap3_3({
 	TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
+			<p className="logo">Woo-generator</p>
 
 			<h2>
 				Stap 3:
@@ -49,7 +49,7 @@ function Stap3_3({
 					</p>
 					<br />
 					<span>
-						<p>Waarom zou ik mijn verzoek willen beperken?</p>
+						<p>Waarom zou ik aangeven in welke periode en welke documenttypen ik geïnteresseerd ben?</p>
 						<PopupButton number="14" />
 					</span>
 				</div>
@@ -268,7 +268,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Inclusief bijlagen
+											Alleen e-mails met bijlagen inclusief deze bijlagen
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
@@ -284,29 +284,13 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Exclusief bijlagen
+											Alle e-mails
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
 									</span>
 								</div>
 							)}
-							<span className="subsubForm">
-								<label className="container">
-									<input
-										size="50"
-										id="subjectInside6"
-										value="subjectInside6"
-										checked={value.subjectInside6}
-										onChange={changeHandlerCheckbox}
-										name="checkText"
-										type="checkbox"
-									/>
-									Gespreksverslagen
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
 							<span className="subsubForm">
 								<label className="container">
 									<input
@@ -318,7 +302,7 @@ function Stap3_3({
 										name="checkText"
 										type="checkbox"
 									/>
-									SMS-jes en Whatsapp-berichten
+									Berichten via andere communicatiekanalen dan e-mail (zoals sms, WhatsApp, Signal, Slack)
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -390,7 +374,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Inclusief bijlagen
+											Alleen e-mails met bijlagen inclusief deze bijlagen
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
@@ -406,29 +390,13 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Exclusief bijlagen
+											Alle e-mails
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
 									</span>
 								</div>
 							)}
-							<span className="subsubForm">
-								<label className="container">
-									<input
-										size="50"
-										id="subjectOutside6"
-										value="subjectOutside6"
-										checked={value.subjectOutside6}
-										onChange={changeHandlerCheckbox}
-										name="checkText"
-										type="checkbox"
-									/>
-									Gespreksverslagen
-									<br />
-									<div className="checkmark"></div>{" "}
-								</label>
-							</span>
 							<span className="subsubForm">
 								<label className="container">
 									<input
@@ -440,7 +408,7 @@ function Stap3_3({
 										name="checkText"
 										type="checkbox"
 									/>
-									SMS-jes en Whatsapp-berichten
+									Berichten via andere communicatiekanalen dan e-mail (zoals sms, WhatsApp, Signal, Slack)
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -477,7 +445,7 @@ function Stap3_3({
 								name="checkText"
 								type="checkbox"
 							/>
-							Memo's, notities
+							Nota's, memo's, notities
 							<br />
 							<div className="checkmark"></div>{" "}
 						</label>

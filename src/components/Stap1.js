@@ -15,19 +15,20 @@ function Stap1({
 	changeHandlerCheckbox,
 	filteredDataText,
 	getCurrentDate,
-	changeHandlerCompanyName
+	changeHandlerCompanyName,
+	changeHandlerOnBehalf
 }) {
 	const [errors, setErrors] = useState([]);
 
 	TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob-generator</p>
+			<p className="logo">Woo-generator</p>
 
 			<h2>Stap 1: Over jezelf</h2>
 			<p>
 				Vul hier je contactgegevens in zodat de overheidsinstantie je kan bereiken en maak enkele keuzes over hoe je
-				jezelf en je verzoek aan de overheid presenteert. Let op: een Wob-verzoek kan niet anoniem worden ingediend.
+				jezelf en je verzoek aan de overheid presenteert. Let op: een Woo-verzoek kan niet anoniem worden ingediend.
 			</p>
 			<br />
 			<form>
@@ -46,8 +47,37 @@ function Stap1({
 					</label>
 				</span>
 				<span>
+                    <label className="container nieuwietje">
+                        Ik werk voor/in opdracht van
+                        <input
+                            id="userOnBehalf"
+                            value="userOnBehalf"
+                            checked={value.userOnBehalf}
+                            onChange={changeHandlerOnBehalf}
+                            type="checkbox"
+                        />
+                        <div className="checkmark"></div>
+                        <PopupButton number="20" />
+                    </label>
+               		</span>
+				{value.userOnBehalf && (
+					<span className="subForm">
+						<label className="formInputs">
+							Naam organisatie
+							<input
+								id="userOnBehalfInput"
+								size="46"
+								value={value.userOnBehalfInput}
+								onChange={changeHandlerUser}
+								type="text"
+							/>
+							<br />
+						</label>
+					</span>
+				)}
+				<span>
 					<label className="container nieuwietje">
-						Ik wob namens een (media)organisatie
+						Ik dien dit Woo-verzoek in namens een (media)organisatie
 						<input
 							id="userCompany"
 							value="userCompanyName"
@@ -74,7 +104,6 @@ function Stap1({
 						</label>
 					</span>
 				)}
-
 				<div className="formInputs">
 					<span>
 						<label>

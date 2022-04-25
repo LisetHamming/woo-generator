@@ -54,8 +54,10 @@ const initialState = {
 	userEmail: "",
 	userPhoneNumber: "",
 	userCompanyNameInput: "",
+	userOnBehalfInput: "",
 	userJournalist: false,
 	userCompanyName: false,
+	userOnBehalf: false,
 	selectedAuthority: null,
 	subjectMilieu: false,
 	subjectLong: "",
@@ -220,6 +222,10 @@ const Homepage = props => {
 		setValue(current => ({ ...current, userCompanyName: checked, userCompanyNameInput: "" }));
 	};
 
+	const changeHandlerOnBehalf = ({ currentTarget: { checked } }) => {
+		setValue(current => ({ ...current, userOnBehalf: checked, userOnBehalfInput: "" }));
+	};
+
 	const exportHTMLDoc = () => {
 		var header =
 			"<html xmlns:o='urn:schemas-microsoft-com:office:office' " +
@@ -267,13 +273,13 @@ const Homepage = props => {
 				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
 				<div className="homepageBlock">
 					<div className="blockText">
-						<p className="logo">Wob-generator</p>
-						<h1>Schrijf in 3 simpele stappen je eigen Wob-verzoek</h1>
-						<p>Welkom bij de Wob-generator! </p>
+						<p className="logo">Woo-generator</p>
+						<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
+						<p>Welkom bij de Woo-generator! </p>
 						<p>
 							{" "}
-							Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat kan met een Wob-verzoek.
-							Met de Wob-generator is dat een koud kunstje.
+							Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat kan met een Woo-verzoek.
+							Met de Woo-generator is dat een koud kunstje.
 						</p>
 
 						<ol>
@@ -282,7 +288,7 @@ const Homepage = props => {
 							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 						</ol>
 
-						<Link to="/StapVoorAf">Start je Wob-verzoek</Link>
+						<Link to="/StapVoorAf">Start je Woo-verzoek</Link>
 					</div>
 					<div>
 						<img src={machine} alt="" />
@@ -319,6 +325,7 @@ const Homepage = props => {
 					changeHandlerUser={changeHandlerUser}
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerCompanyName={changeHandlerCompanyName}
+					changeHandlerOnBehalf={changeHandlerOnBehalf}
 					filteredDataText={filteredDataText}
 					getCurrentDate={getCurrentDate}
 				/>
