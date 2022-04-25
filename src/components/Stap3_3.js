@@ -268,7 +268,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Alleen e-mails met bijlagen inclusief deze bijlagen
+											E-mails inclusief bijlagen
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
@@ -284,7 +284,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Alle e-mails
+											E-mails exclusief bijlagen
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
@@ -374,7 +374,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Alleen e-mails met bijlagen inclusief deze bijlagen
+											E-mails inclusief bijlagen
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
@@ -390,7 +390,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Alle e-mails
+											E-mails exclusief bijlagen
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
