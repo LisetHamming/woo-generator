@@ -15,7 +15,7 @@ const DataPopup = {
 		id: "3",
 		h1: "Namens een (media)organisatie",
 		p:
-			"Het kan zijn dat je namens een (media)organisatie een Woo-verzoek indient. Denk er dan aan dat je daartoe gemachtigd wordt en stuur die machtiging mee met je verzoek. Het verzoek kan afgewezen worden als je niet de juiste machtiging hebt. Ook gelden bij een beroep bij de bestuursrechter voor organisaties een hoger tarief dan voor personen, dat kan al snel honderdvijftig euro schelen. Aan de andere kant, als je voor een bekende (media)organisatie werkt kan dat gewicht in de schaal leggen bij de behandeling van je verzoek. Een tussenoplossing is om wel te benoemen voor welke (media)organisatie je werkt maar het verzoek niet officieel namens deze organisatie in te dienen."
+			"Je kan je Woo-verzoek namens een (media)organisatie indienen. Denk er dan aan dat je daartoe gemachtigd wordt en stuur die machtiging mee met je verzoek. Het verzoek kan afgewezen worden als je niet de juiste machtiging hebt. Ook gelden bij een beroep bij de bestuursrechter voor organisaties een hoger tarief dan voor personen, dat kan al snel honderdvijftig euro schelen. Aan de andere kant, als je voor een bekende (media)organisatie werkt kan dat gewicht in de schaal leggen bij de behandeling van je verzoek. Een tussenoplossing is om wel te benoemen voor welke (media)organisatie je werkt maar het verzoek niet officieel namens deze organisatie in te dienen."
 	},
 	4: {
 		id: "4",
