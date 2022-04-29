@@ -46,35 +46,7 @@ function Stap1({
 						<PopupButton number="1" />
 					</label>
 				</span>
-				<span>
-                    <label className="container nieuwietje">
-                        Ik werk voor/in opdracht van
-                        <input
-                            id="userOnBehalf"
-                            value="userOnBehalf"
-                            checked={value.userOnBehalf}
-                            onChange={changeHandlerOnBehalf}
-                            type="checkbox"
-                        />
-                        <div className="checkmark"></div>
-                        <PopupButton number="20" />
-                    </label>
-               		</span>
-				{value.userOnBehalf && (
-					<span className="subForm">
-						<label className="formInputs">
-							Naam organisatie
-							<input
-								id="userOnBehalfInput"
-								size="46"
-								value={value.userOnBehalfInput}
-								onChange={changeHandlerUser}
-								type="text"
-							/>
-							<br />
-						</label>
-					</span>
-				)}
+
 				<span>
 					<label className="container nieuwietje">
 						Ik dien dit Woo-verzoek in namens een (media)organisatie
@@ -97,6 +69,35 @@ function Stap1({
 								id="userCompanyNameInput"
 								size="46"
 								value={value.userCompanyNameInput}
+								onChange={changeHandlerUser}
+								type="text"
+							/>
+							<br />
+						</label>
+					</span>
+				)}
+				<span>
+					<label className="container nieuwietje">
+						Ik werk voor/in opdracht van
+						<input
+							id="userOnBehalf"
+							value="userOnBehalf"
+							checked={value.userOnBehalf}
+							onChange={changeHandlerOnBehalf}
+							type="checkbox"
+						/>
+						<div className="checkmark"></div>
+						{/* <PopupButton number="20" /> */}
+					</label>
+				</span>
+				{value.userOnBehalf && (
+					<span className="subForm">
+						<label className="formInputs">
+							Naam organisatie
+							<input
+								id="userOnBehalfInput"
+								size="46"
+								value={value.userOnBehalfInput}
 								onChange={changeHandlerUser}
 								type="text"
 							/>
