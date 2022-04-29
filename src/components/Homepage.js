@@ -111,14 +111,22 @@ const initialState = {
 	// deze key is dubbel
 	// subjectElse: [],
 	step6: false,
-	step9: false
+	step9: false,
+	
+	// bump this number if the shape of the state changes in a way that will break compatibility with any data already in localStorage
+	version: 2,
 };
 
 const useLocalStorageState = (key, initialState) => {
 	const [state, setState] = useState(() => {
 		const fromStorage = window.localStorage.getItem(key);
 		if (fromStorage !== null) {
-			return JSON.parse(fromStorage);
+			const data = JSON.parse(fromStorage);
+			
+			// perform version check
+			if (data.version === initialState.version) {
+				return data;
+			}
 		}
 		return initialState;
 	});
