@@ -78,7 +78,7 @@ function Stap1({
 				)}
 				<span>
 					<label className="container nieuwietje">
-						Ik werk voor/in opdracht van
+						Ik werk voor/in opdracht van een (media)organisatie
 						<input
 							id="userOnBehalf"
 							value="userOnBehalf"
