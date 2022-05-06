@@ -278,7 +278,7 @@ const Homepage = props => {
 						<p>Welkom bij de Woo-generator! </p>
 						<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
 						<p>
-							Per 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
+							Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
 							Wob-generator is daarom de Woo-generator geworden en we hebben meteen de gelegenheid aangegrepen om de
 							generator te verbeteren. Vanaf nu dien je dus een Woo-verzoek in als je overheidsinformatie wilt opvragen.
 						</p>
