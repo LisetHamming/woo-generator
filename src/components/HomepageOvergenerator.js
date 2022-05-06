@@ -55,8 +55,8 @@ function HomepageOvergenerator() {
 					<br></br>
 					<p>
 						Voor vragen en opmerkingen:{" "}
-						<a href="mailto:info@wob-generator.nl" className="plaintext">
-							info@wob-generator.nl
+						<a href="mailto:woo-generator@vvoj.org" className="plaintext">
+							woo-generator@vvoj.org
 						</a>
 					</p>
 					<div className="spanLinks">

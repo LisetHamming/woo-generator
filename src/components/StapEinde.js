@@ -17,8 +17,8 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<h2 className="hidePrint">Laatste check!</h2>
 			<p className="extraPadding hidePrint">Woo-verzoek met onderwerp: {value.subjectLong}</p>
 			<p className="hidePrint">
-				Hoewel de Woo-generator met de grootste zorgvuldigheid is ontwikkeld, is het opstellen van een goed Woo-verzoek mensenwerk en maatwerk.
-				Bovendien blijf je zelf verantwoordelijk voor wat je naar het bestuursorgaan stuurt.
+				Hoewel de Woo-generator met de grootste zorgvuldigheid is ontwikkeld, is het opstellen van een goed Woo-verzoek
+				mensenwerk en maatwerk. Bovendien blijf je zelf verantwoordelijk voor wat je naar het bestuursorgaan stuurt.
 				<br />
 				<br />
 			</p>
@@ -38,13 +38,16 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<br />
 				Digitaal versturen?
 				<br />
-				Onder de Woo moeten overheidsinstanties Woo-verzoeken die digitaal zijn ingediend accepteren. Maar overheidsinstanties mogen wel aangeven via wélke digitale weg een Woo-verzoek dient te worden ingediend, bijvoorbeeld via een specifiek e-mailadres of een online Woo-formulier. Check dit dus altijd van tevoren! Heeft de overheidsinstantie een Woo-formulier op haar website gezet, dan kun je de
-				(eventueel ondertekende) brief ook uploaden of de tekst kopiëren en inplakken.
+				Onder de Woo moeten overheidsinstanties Woo-verzoeken die digitaal zijn ingediend accepteren. Maar
+				overheidsinstanties mogen wel aangeven via wélke digitale weg een Woo-verzoek dient te worden ingediend,
+				bijvoorbeeld via een specifiek e-mailadres of een online Woo-formulier. Check dit dus altijd van tevoren! Heeft
+				de overheidsinstantie een Woo-formulier op haar website gezet, dan kun je de (eventueel ondertekende) brief ook
+				uploaden of de tekst kopiëren en inplakken.
 			</p>
 			<br />
 			<div>
 				<p>
-					Vragen en opmerkingen: info@wob-generator.nl
+					Vragen en opmerkingen: woo-generator@vvoj.org
 					<br />
 					De Woo-generator is met liefde en plezier gemaakt en we zullen doorgaan met de ontwikkeling. Laat het ons
 					daarom weten als je iets mist of liever anders ziet. Maar we horen het ook graag als je er blij mee bent!{" "}

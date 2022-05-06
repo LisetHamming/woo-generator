@@ -276,11 +276,13 @@ const Homepage = props => {
 						<p className="logo">Woo-generator</p>
 						<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
 						<p>Welkom bij de Woo-generator! </p>
+						<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
 						<p>
-							{" "}
-							Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie. Dat kan met een Woo-verzoek.
-							Met de Woo-generator is dat een koud kunstje.
+							Per 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
+							Wob-generator is daarom de Woo-generator geworden en we hebben meteen de gelegenheid aangegrepen om de
+							generator te verbeteren. Vanaf nu dien je dus een Woo-verzoek in als je overheidsinformatie wilt opvragen.
 						</p>
+						<p>Met de Woo-generator is dat een koud kunstje.</p>
 
 						<ol>
 							<li>1. Je vult een aantal gegevens over jezelf in</li>
