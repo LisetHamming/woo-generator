@@ -91,13 +91,13 @@ const initialState = {
 	subjectOutside: false,
 	subjectInside1: true,
 	subjectInside2: true,
-	subjectInside2inclusive: "",
+	subjectInside2inclusive: "exclusief",
 	subjectInside4: true,
 	subjectInside5: false,
 	subjectInside6: true,
 	subjectOutside1: true,
 	subjectOutside2: true,
-	subjectOutside2inclusive: "",
+	subjectOutside2inclusive: "exclusief",
 	subjectOutside4: true,
 	subjectOutside5: false,
 	subjectOutside6: true,
@@ -112,9 +112,9 @@ const initialState = {
 	// subjectElse: [],
 	step6: false,
 	step9: false,
-	
+
 	// bump this number if the shape of the state changes in a way that will break compatibility with any data already in localStorage
-	version: 2,
+	version: 2
 };
 
 const useLocalStorageState = (key, initialState) => {
@@ -122,7 +122,7 @@ const useLocalStorageState = (key, initialState) => {
 		const fromStorage = window.localStorage.getItem(key);
 		if (fromStorage !== null) {
 			const data = JSON.parse(fromStorage);
-			
+
 			// perform version check
 			if (data.version === initialState.version) {
 				return data;
