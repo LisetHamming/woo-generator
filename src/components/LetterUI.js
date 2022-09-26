@@ -4,13 +4,17 @@ import DataCheckbox from "./DataCheckbox";
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	const wordsInside = [
 		value.subjectInside1 && "brieven",
-		value.subjectInside2 && `e-mails ${value.subjectInside2inclusive} bijlagen`,
+		value.subjectInside2 && value.subjectInside2inclusive === "inclusief"
+			? `e-mails ${value.subjectInside2inclusive} bijlagen`
+			: `alleen e-mails met bijlagen`,
 		//value.subjectInside6 && "gespreksverslagen",
 		value.subjectInside4 && "sms'jes en WhatsApp-berichten"
 	].filter(Boolean);
 	const wordsOutside = [
 		value.subjectOutside1 && "brieven",
-		value.subjectOutside2 && `e-mails ${value.subjectOutside2inclusive} bijlagen`,
+		value.subjectOutside2 && value.subjectOutside2inclusive === "inclusief"
+			? `e-mails ${value.subjectOutside2inclusive} bijlagen`
+			: `alleen e-mails met bijlagen`,
 		//value.subjectOutside6 && "gespreksverslagen",
 		value.subjectOutside4 && "sms'jes en WhatsApp-berichten"
 	].filter(Boolean);

@@ -284,7 +284,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											E-mails exclusief bijlagen
+											Alleen e-mails die een bijlage hebben
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
@@ -390,7 +390,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											E-mails exclusief bijlagen
+											Alleen e-mails die een bijlage hebben
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
