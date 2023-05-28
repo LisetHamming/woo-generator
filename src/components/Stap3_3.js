@@ -1,5 +1,4 @@
 import React from "react";
-import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
@@ -18,13 +17,13 @@ function Stap3_3({
 	changeHandlerSubjectMeeting,
 	clickHandlerClearPeriodDate
 }) {
-	const tagManagerArgs = {
-		dataLayer: {
-			page: "Stap3_3"
-		},
-		dataLayerName: "PageDataLayer"
-	};
-	TagManager.dataLayer(tagManagerArgs);
+	// const tagManagerArgs = {
+	// 	dataLayer: {
+	// 		page: "Stap3_3"
+	// 	},
+	// 	dataLayerName: "PageDataLayer"
+	// };
+	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>

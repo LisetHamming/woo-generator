@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
@@ -15,22 +14,22 @@ function Stap3({
 }) {
 	//  error state
 	const [errors, setErrors] = useState([]);
-	const tagManagerArgs = {
-		dataLayer: {
-			page: "Stap3"
-		},
-		dataLayerName: "PageDataLayer"
-	};
-	TagManager.dataLayer(tagManagerArgs);
+	// const tagManagerArgs = {
+	// 	dataLayer: {
+	// 		page: "Stap3"
+	// 	},
+	// 	dataLayerName: "PageDataLayer"
+	// };
+	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
 
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<p>
-				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Dit kan een vrij smal onderwerp zijn, zoals ‘boetes voor
-				snelheidsovertredingen’, maar ook breder, zoals ‘de verkeersveiligheid in uw gemeente’. Bij de volgende stap
-				krijg je de gelegenheid verder toe te spitsen welke documenten je wilt ontvangen.
+				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Dit kan een vrij smal onderwerp
+				zijn, zoals ‘boetes voor snelheidsovertredingen’, maar ook breder, zoals ‘de verkeersveiligheid in uw gemeente’.
+				Bij de volgende stap krijg je de gelegenheid verder toe te spitsen welke documenten je wilt ontvangen.
 			</p>
 			<br />
 			<br />
@@ -44,7 +43,8 @@ function Stap3({
 			<span className="nieuwietje">
 				<p>
 					{" "}
-					Let op: je kunt alleen vragen naar stukken of gegevens die verband houden met een publieke taak van de overhedsinstanties waar je je Woo-verzoek indient.
+					Let op: je kunt alleen vragen naar stukken of gegevens die verband houden met een publieke taak van de
+					overhedsinstanties waar je je Woo-verzoek indient.
 					<PopupButton number="18" />
 				</p>
 			</span>
@@ -67,7 +67,7 @@ function Stap3({
 				)}
 				<span>
 					<label>
-						Onderwerp {" "}
+						Onderwerp{" "}
 						<input
 							size="50"
 							value={value.subjectLong}

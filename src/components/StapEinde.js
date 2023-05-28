@@ -1,16 +1,15 @@
 import React from "react";
-import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import LetterUI from "./LetterUI";
-const tagManagerArgs = {
-	dataLayer: {
-		page: "Print-brief"
-	},
-	dataLayerName: "PageDataLayer"
-};
+// const tagManagerArgs = {
+// 	dataLayer: {
+// 		page: "Print-brief"
+// 	},
+// 	dataLayerName: "PageDataLayer"
+// };
 
 function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, resetState }) {
-	TagManager.dataLayer(tagManagerArgs);
+	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>

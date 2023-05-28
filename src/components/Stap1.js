@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
-const tagManagerArgs = {
-	dataLayer: {
-		page: "Stap1"
-	},
-	dataLayerName: "PageDataLayer"
-};
+// const tagManagerArgs = {
+// 	dataLayer: {
+// 		page: "Stap1"
+// 	},
+// 	dataLayerName: "PageDataLayer"
+// };
 function Stap1({
 	value,
 	changeHandlerUser,
@@ -20,7 +19,7 @@ function Stap1({
 }) {
 	const [errors, setErrors] = useState([]);
 
-	TagManager.dataLayer(tagManagerArgs);
+	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
