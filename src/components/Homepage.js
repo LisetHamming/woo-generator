@@ -13,8 +13,8 @@ import PrivacyVoorwaarden from "./PrivacyVoorwaarden";
 import Stap1 from "./Stap1";
 import Stap2 from "./Stap2";
 import Stap3 from "./Stap3";
-import Stap3_2 from "./Stap3_2";
-import Stap3_3 from "./Stap3_3";
+import Stap32 from "./Stap3_2";
+import Stap33 from "./Stap3_3";
 import StapEinde from "./StapEinde";
 import StapExtra from "./StapExtra";
 import StapVoorAf from "./StapVoorAf";
@@ -363,7 +363,7 @@ const Homepage = props => {
 			</Route>
 
 			<Route path="/Stap3_2">
-				<Stap3_2
+				<Stap32
 					getCurrentDate={getCurrentDate}
 					value={value}
 					changeHandlerSubjectType={changeHandlerSubjectType}
@@ -373,7 +373,7 @@ const Homepage = props => {
 				/>
 			</Route>
 			<Route path="/Stap3_3">
-				<Stap3_3
+				<Stap33
 					clickHandlerEmptySubjectText={clickHandlerEmptySubjectText}
 					clickHandlerSubjectText={clickHandlerSubjectText}
 					getCurrentDate={getCurrentDate}
