@@ -46,7 +46,7 @@ function Stap2({
 				</p>
 			)}
 
-			<form>
+			<form onSubmit={e => e.preventDefault()}>
 				{value.selectedAuthority && !showManualAuthority ? (
 					<div className="selectedAuthority">
 						<p>Controleer de instantie waar je het Woo-verzoek indient:</p>
@@ -107,7 +107,10 @@ function Stap2({
 										</li>
 									))
 							) : (
-								<li>Er gaat iets niet goed bij het ophalen van de informatie. Als je zelf gegevens hebt, kan je die invullen.</li>
+								<li>
+									Er gaat iets niet goed bij het ophalen van de informatie. Als je zelf gegevens hebt, kan je die
+									invullen.
+								</li>
 							)}
 						</ul>
 

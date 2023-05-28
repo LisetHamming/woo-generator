@@ -140,8 +140,6 @@ const useLocalStorageState = (key, initialState) => {
 
 const Homepage = props => {
 	const [value, setValue] = useLocalStorageState("data", initialState);
-	// const [searchValue, setSearchValue] = useState("");
-	// const [dateToday, setDateToday] = useState("");
 
 	const handleKeypathChange = ({ currentTarget: { type, name, value, checked } }) => {
 		setValue(set(name, type === "checkbox" ? checked : type === "number" ? Number(value) : value));
@@ -248,7 +246,7 @@ const Homepage = props => {
 		document.body.appendChild(fileDownload);
 		fileDownload.href = source;
 
-		fileDownload.download = "Wob-verzoek.doc";
+		fileDownload.download = "Woo-verzoek.doc";
 
 		fileDownload.click();
 		document.body.removeChild(fileDownload);
