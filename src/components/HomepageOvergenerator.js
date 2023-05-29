@@ -8,16 +8,32 @@ function HomepageOvergenerator() {
 				<div className="block1">
 					<h1>Over deze generator</h1>
 					<p>
-						De Woo-generator is een project van de Woo-werkgroep van de Vlaams-Nederlandse Vereniging van
-						Onderzoeksjournalisten (
+						De Wob-generator is in 2019 voor de{" "}
 						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-							VVOJ
+							Vereniging van Onderzoeksjournalisten
+						</a>{" "}
+						ontwikkeld door de oprichters van{" "}
+						<a className="plaintext" href="https://expertisecentrumspoon.nl/" target="_blank" rel="noopener noreferrer">
+							Stichting SPOON
 						</a>
-						) en financieel mogelijk gemaakt door{" "}
+						, financieel ondersteund door{" "}
 						<a className="plaintext" href="https://www.lira.nl/" target="_blank" rel="noopener noreferrer">
-							Stichting Lira
+							Stichting Literaire Rechten Auteurs
 						</a>
-						. Ontwikkeling:{" "}
+						. Toen op 1 mei 2022 de Wet openbaarheid van bestuur (Wob) werd vervangen door de Wet open overheid (Woo) is
+						ook de Wob-generator de Woo-generator geworden.
+						<br />
+					</p>
+					<br />
+					<p>
+						Bij de start van SPOON in 2023 is het beheer van de Woo-generator overgenomen door SPOON. Je kunt nu dus
+						voor al je vragen en opmerkingen over de Woo-generator bij SPOON terecht.
+						<br />
+					</p>
+					<br />
+					<p>
+						{" "}
+						Ontwikkeling:{" "}
 						<a
 							className="plaintext"
 							href="https://www.linkedin.com/in/tove-oegema-36107311b"
@@ -45,7 +61,7 @@ function HomepageOvergenerator() {
 						</a>{" "}
 						namens de VVOJ.
 					</p>
-					<br />
+
 					<br />
 					<p>
 						De Woo-generator is op geen enkele manier verbonden aan de Nederlandse overheid en is volstrekt
