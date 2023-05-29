@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import logo_vvoj from "../assets/logo_vvoj.png";
 
 function HomepageOvergenerator() {
@@ -49,14 +48,14 @@ function HomepageOvergenerator() {
 					<br />
 					<br />
 					<p>
-						De Woo-werkgroep van de VVOJ beheert de website. De website is op geen enkele manier verbonden aan de
-						Nederlandse overheid en is volstrekt onafhankelijk.
+						De Woo-generator is op geen enkele manier verbonden aan de Nederlandse overheid en is volstrekt
+						onafhankelijk.
 					</p>
 					<br></br>
 					<p>
 						Voor vragen en opmerkingen:{" "}
-						<a href="mailto:woo-generator@vvoj.org" className="plaintext">
-							woo-generator@vvoj.org
+						<a href="mailto:woo-generator@expertisecentrumspoon.nl" className="plaintext">
+							woo-generator@expertisecentrumspoon.nl
 						</a>
 					</p>
 					<div className="spanLinks">
@@ -64,9 +63,9 @@ function HomepageOvergenerator() {
 							<img src={logo_vvoj} className="logo_vvoj" alt="VVOJ" />
 						</a>
 					</div>
-					<div className="spanLinks">
+					{/* <div className="spanLinks">
 						<Link to="/PrivacyVoorwaarden">Privacybeleid</Link>
-					</div>
+					</div> */}
 				</div>
 				<div className="projectTeam">
 					<div></div>

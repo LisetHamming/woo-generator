@@ -46,7 +46,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<br />
 			<div>
 				<p>
-					Vragen en opmerkingen: woo-generator@vvoj.org
+					Vragen en opmerkingen: woo-generator@expertisecentrumspoon.nl
 					<br />
 					De Woo-generator is met liefde en plezier gemaakt en we zullen doorgaan met de ontwikkeling. Laat het ons
 					daarom weten als je iets mist of liever anders ziet. Maar we horen het ook graag als je er blij mee bent!{" "}
