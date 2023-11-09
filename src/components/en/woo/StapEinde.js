@@ -62,7 +62,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<br />
 			</div>
 			<br />
-			<Link to="/StapExtra">Terug</Link>
+			<Link to="NL/woo/StapExtra">Terug</Link>
 			<Link to="/" onClick={resetState}>
 				Alles wissen
 			</Link>

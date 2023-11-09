@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
+import PopupButton from "../../popups/PopupButton";
+import SetSelectedAuthorityManual from "../../SetSelectedAuthorityManual";
 import LetterUI from "./LetterUI";
-import PopupButton from "./popups/PopupButton";
-import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
 const tagManagerArgs = {
 	dataLayer: {
 		page: "Stap2"
@@ -107,7 +107,10 @@ function Stap2({
 										</li>
 									))
 							) : (
-								<li>Er gaat iets niet goed bij het ophalen van de informatie. Als je zelf gegevens hebt, kan je die invullen.</li>
+								<li>
+									Er gaat iets niet goed bij het ophalen van de informatie. Als je zelf gegevens hebt, kan je die
+									invullen.
+								</li>
 							)}
 						</ul>
 
@@ -161,10 +164,10 @@ function Stap2({
 					<PopupButton number="7" />
 				</p>
 			</span>
-			<Link to="/Stap1">Terug</Link>
+			<Link to="/NL/woo/Stap1">Terug</Link>
 
 			<Link
-				to="/Stap3"
+				to="/NL/woo/Stap3"
 				/*onClick={event => {
 					let errors = [];
 

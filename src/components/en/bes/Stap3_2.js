@@ -1,8 +1,8 @@
 import React from "react";
 import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
+import PopupButton from "../../popups/PopupButton";
 import LetterUI from "./LetterUI";
-import PopupButton from "./popups/PopupButton";
 
 function Stap3_2({
 	value,
@@ -80,8 +80,8 @@ function Stap3_2({
 				<p>Denk goed na welke documenten wel of niet nuttig zijn.</p>
 				<PopupButton number="14" />{" "}
 			</span>
-			<Link to="/Stap3">Terug</Link>
-			<Link to="/Stap3_3">Volgende</Link>
+			<Link to="/EN/bes/Stap3">Terug</Link>
+			<Link to="/EN/bes/Stap3_3">Volgende</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
 		</div>
 	);

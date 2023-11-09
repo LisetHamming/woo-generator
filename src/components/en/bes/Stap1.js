@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
+import PopupButton from "../../popups/PopupButton";
 import LetterUI from "./LetterUI";
-import PopupButton from "./popups/PopupButton";
 const tagManagerArgs = {
 	dataLayer: {
 		page: "Stap1"
@@ -214,9 +214,9 @@ function Stap1({
 				</div>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/StapVoorAf">Terug</Link>
+			<Link to="/EN/bes/StapVoorAf">Terug</Link>
 			<Link
-				to="/Stap2"
+				to="/EN/bes/Stap2"
 				/*onClick={event => {
 					let errors = [];
 

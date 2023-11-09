@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PopupButton from "./popups/PopupButton";
+import PopupButton from "../../popups/PopupButton";
 
 function StapVoorAf() {
 	return (
@@ -39,9 +39,9 @@ function StapVoorAf() {
 				Wil je iets net even anders of wil je bijvoorbeeld een extra toelichting op je verzoek toevoegen? Dan kun je in
 				het opgeslagen Word-document je Woo-verzoek nog aanpassen.
 			</p>
-			<Link to="/">Terug</Link>
+			<Link to="/EN/">Terug</Link>
 
-			<Link to="/Stap1">Ik snap het</Link>
+			<Link to="/EN/bes/Stap1">Ik snap het</Link>
 		</div>
 	);
 }

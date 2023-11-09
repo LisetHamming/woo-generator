@@ -1,5 +1,5 @@
 import React from "react";
-import DataCheckbox from "./DataCheckbox";
+import DataCheckbox from "../../DataCheckbox";
 
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	const wordsInside = [

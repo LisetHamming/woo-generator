@@ -26,7 +26,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 				specifieke geval niet relevant zijn. Zet ze in dat geval uit.
 			</p>
 			<form>
-				<span>
+				{/* <span>
 					<label className="container">
 						<input
 							onChange={changeHandlerCheckbox}
@@ -40,7 +40,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 						<br />
 						<div className="checkmark"></div>
 					</label>
-				</span>
+				</span> */}
 				<span>
 					<label className="container">
 						<input
@@ -178,8 +178,8 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 				</span>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/Stap3_3">Terug</Link>
-			<Link to="/StapEinde">Laatste stap</Link>
+			<Link to="/NL/woo/Stap3_3">Terug</Link>
+			<Link to="/NL/woo/StapEinde">Laatste stap</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
 		</div>
 	);

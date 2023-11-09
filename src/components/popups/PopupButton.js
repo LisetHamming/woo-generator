@@ -1,7 +1,7 @@
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import Popup from "./Popup";
+import Popup from "../nl/woo/popups/Popup";
 
 function PopupButton({ number }) {
 	const [popUp, setPopUp] = useState(false);

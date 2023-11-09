@@ -1,8 +1,8 @@
 import React from "react";
 import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
+import PopupButton from "../../popups/PopupButton";
 import LetterUI from "./LetterUI";
-import PopupButton from "./popups/PopupButton";
 
 function Stap3_3({
 	value,
@@ -602,8 +602,8 @@ function Stap3_3({
 				</div>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/Stap3">Terug</Link>
-			<Link to="/StapExtra" onClick={() => clickHandlerStep("step9")}>
+			<Link to="/EN/bes/Stap3">Terug</Link>
+			<Link to="/EN/bes/StapExtra" onClick={() => clickHandlerStep("step9")}>
 				Volgende
 			</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
