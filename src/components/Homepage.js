@@ -21,6 +21,14 @@ import EnLobStap3_3 from "./en/lob/Stap3_3";
 import EnLobStapEinde from "./en/lob/StapEinde";
 import EnLobStapExtra from "./en/lob/StapExtra";
 import EnLobStapVoorAf from "./en/lob/StapVoorAf";
+import EnStap1 from "./en/woo/Stap1";
+import EnStap2 from "./en/woo/Stap2";
+import EnStap3 from "./en/woo/Stap3";
+import EnStap3_2 from "./en/woo/Stap3_2";
+import EnStap3_3 from "./en/woo/Stap3_3";
+import EnStapEinde from "./en/woo/StapEinde";
+import EnStapExtra from "./en/woo/StapExtra";
+import EnStapVoorAf from "./en/woo/StapVoorAf";
 import HomepageOvergenerator from "./HomepageOvergenerator";
 import HomepageWaarom from "./HomepageWaarom";
 import HomepageWaaromTool from "./HomepageWaaromTool";
@@ -539,6 +547,87 @@ const Homepage = props => {
 			</Route>
 			<Route path="/NL/woo/StapEinde">
 				<StapEinde
+					resetState={resetState}
+					getCurrentDate={getCurrentDate}
+					value={value}
+					filteredDataText={filteredDataText}
+					exportHTMLDoc={exportHTMLDoc}
+				/>
+			</Route>
+			<Route path="/EN/woo/StapVoorAf">
+				<EnStapVoorAf />
+			</Route>
+			<Route path="/EN/woo/Stap1">
+				<EnStap1
+					value={value}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerCompanyName={changeHandlerCompanyName}
+					changeHandlerOnBehalf={changeHandlerOnBehalf}
+					filteredDataText={filteredDataText}
+					getCurrentDate={getCurrentDate}
+				/>
+			</Route>
+			<Route path="/EN/woo/Stap2">
+				<EnStap2
+					value={value}
+					changeHandlerUser={changeHandlerUser}
+					authorities={props.authorities}
+					setAuthority={setAuthority}
+					clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}
+					filteredDataText={filteredDataText}
+					getCurrentDate={getCurrentDate}
+					handleKeypathChange={handleKeypathChange}
+				/>
+			</Route>
+			<Route path="/EN/woo/Stap3">
+				<EnStap3
+					getCurrentDate={getCurrentDate}
+					value={value}
+					clickHandlerStep={clickHandlerStep}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+				/>
+			</Route>
+
+			<Route path="/EN/woo/Stap3_2">
+				<EnStap3_2
+					getCurrentDate={getCurrentDate}
+					value={value}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+					changeHandlerUser={changeHandlerUser}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+				/>
+			</Route>
+			<Route path="/EN/woo/Stap3_3">
+				<EnStap3_3
+					clickHandlerEmptySubjectText={clickHandlerEmptySubjectText}
+					clickHandlerSubjectText={clickHandlerSubjectText}
+					getCurrentDate={getCurrentDate}
+					value={value}
+					clickHandlerStep={clickHandlerStep}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerRadio={changeHandlerRadio}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+					changeHandlerSubjectMeeting={changeHandlerSubjectMeeting}
+					clickHandlerClearPeriodDate={clickHandlerClearPeriodDate}
+				/>
+			</Route>
+			<Route path="/EN/woo/StapExtra">
+				<EnStapExtra
+					getCurrentDate={getCurrentDate}
+					value={value}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					filteredDataText={filteredDataText}
+				/>
+			</Route>
+			<Route path="/EN/woo/StapEinde">
+				<EnStapEinde
 					resetState={resetState}
 					getCurrentDate={getCurrentDate}
 					value={value}
