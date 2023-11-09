@@ -164,10 +164,10 @@ function Stap2({
 					<PopupButton number="7" />
 				</p>
 			</span>
-			<Link to="/NL/woo/Stap1">Terug</Link>
+			<Link to="/PM/lob/Stap1">Terug</Link>
 
 			<Link
-				to="/NL/woo/Stap3"
+				to="/PM/lob/Stap3"
 				/*onClick={event => {
 					let errors = [];
 

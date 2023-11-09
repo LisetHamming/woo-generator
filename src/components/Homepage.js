@@ -303,7 +303,7 @@ const Homepage = props => {
 	};
 	return (
 		<Switch>
-			<Route exact path="/NL/WOO">
+			<Route exact path="/">
 				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
 				<div className="homepageBlock">
 					<div className="blockText">
@@ -325,11 +325,13 @@ const Homepage = props => {
 						</ol>
 						{console.log(value.wet)}
 						<Link to="/NL/woo/StapVoorAf" OnClick={clickHandlerSetLaw} value="woo">
-							Start je Woo-verzoek
+							WOO NL
 						</Link>
-						<Link to="/EN/woo/StapVoorAf">Start your Woo-request</Link>
-						<Link to="/EN/bes/StapVoorAf">Start your Woo-Bes request</Link>
-						<Link to="/PM/bes/StapVoorAf">Start your Woo-Bes Papiaments</Link>
+						<Link to="/EN/woo/StapVoorAf">WOO EN</Link>
+						<Link to="/EN/bes/StapVoorAf">WOB-BES EN</Link>
+						<Link to="/PM/bes/StapVoorAf">WOB_BES PM</Link>
+						<Link to="/EN/lob/StapVoorAf">LOB EN</Link>
+						<Link to="/PM/lob/StapVoorAf">LOB PM</Link>
 					</div>
 					<div>
 						<img src={machine} alt="" />

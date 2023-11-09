@@ -80,8 +80,8 @@ function Stap3_2({
 				<p>Denk goed na welke documenten wel of niet nuttig zijn.</p>
 				<PopupButton number="14" />{" "}
 			</span>
-			<Link to="/NL/woo/Stap3">Terug</Link>
-			<Link to="/NL/woo/Stap3_3">Volgende</Link>
+			<Link to="/EN/woo/Stap3">Terug</Link>
+			<Link to="/EN/woo/Stap3_3">Volgende</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
 		</div>
 	);

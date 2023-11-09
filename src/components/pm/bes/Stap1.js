@@ -214,9 +214,9 @@ function Stap1({
 				</div>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/NL/woo/StapVoorAf">Terug</Link>
+			<Link to="/PM/bes/StapVoorAf">Terug</Link>
 			<Link
-				to="/NL/woo/Stap2"
+				to="/PM/bes/Stap2"
 				/*onClick={event => {
 					let errors = [];
 

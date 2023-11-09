@@ -41,7 +41,7 @@ function StapVoorAf() {
 			</p>
 			<Link to="/">Terug</Link>
 
-			<Link to="/NL/woo/Stap1">Ik snap het</Link>
+			<Link to="/EN/lob/Stap1">Ik snap het</Link>
 		</div>
 	);
 }

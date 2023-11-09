@@ -602,8 +602,8 @@ function Stap3_3({
 				</div>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/NL/woo/Stap3">Terug</Link>
-			<Link to="/NL/woo/StapExtra" onClick={() => clickHandlerStep("step9")}>
+			<Link to="/PM/lob/Stap3">Terug</Link>
+			<Link to="/PM/lob/StapExtra" onClick={() => clickHandlerStep("step9")}>
 				Volgende
 			</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />

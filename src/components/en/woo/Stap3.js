@@ -144,9 +144,9 @@ function Stap3({
 				</span>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/NL/woo/Stap2">Terug</Link>
+			<Link to="/EN/woo/Stap2">Terug</Link>
 			<Link
-				to="/NL/woo/Stap3_3"
+				to="/EN/woo/Stap3_3"
 				onClick={event => {
 					clickHandlerStep("step6");
 				}}
