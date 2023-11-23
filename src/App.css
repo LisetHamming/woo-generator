@@ -23,7 +23,7 @@
 li button {
 	display: flex;
 	width: 32.5vw;
-	border: 1px dashed grey;
+	border: 1px dashed black;
 	background-color: #ffdb62;
 	margin-top: 5px;
 	align-items: center;
@@ -61,13 +61,13 @@ button {
 }
 
 body {
-	background-color: #ffdb62;
+	background-color: #83d0f5;
 	font-family: "Source Sans Pro", sans-serif;
 }
 
 p {
 	line-height: 25px;
-	color: grey;
+	color: black;
 }
 
 h1 {
@@ -83,21 +83,38 @@ h1 {
 #letterUI p {
 	margin: 0;
 }
-
+.selectLanguage {
+	display: block;
+	background-color: black;
+	height: 45px;
+	display: flex;
+	justify-content: flex-end;
+}
+.selectLanguage a {
+	background-color: #2ddd62;
+	color: black;
+	border-radius: 0;
+	font-weight: bold;
+}
+.selectLanguage a:hover {
+	background-color: #f3e600;
+}
+.selectLanguage a:last-of-type {
+	margin-right: 10vw;
+}
 .homepageBlock {
-	background-color: white;
 	display: flex;
 	width: 90%;
 	margin: 0 auto;
 }
 
 .homepageBlock img {
+	padding-top: 10vh;
 	padding-right: 40px;
 	width: 95%;
 }
 
 .extra_content {
-	background-color: white;
 	width: 90%;
 	margin: 0 auto;
 	padding-bottom: 40px;
@@ -105,7 +122,7 @@ h1 {
 	justify-content: center;
 }
 .homepageBlock .lanceringItalic {
-	color: grey;
+	color: black;
 	font-style: italic;
 }
 .homepageBlock .lanceringBold {
@@ -124,7 +141,7 @@ h1 {
 }
 
 .extra_content img {
-	width: 100px;
+	width: 300px;
 }
 
 .extra_content .horizontalRule {
@@ -132,7 +149,7 @@ h1 {
 }
 
 .horizontalRule {
-	border-top: 1px solid rgb(192, 43, 57);
+	border-top: 1px solid rgba(0, 0, 0, 0);
 }
 
 .blockText {
@@ -153,13 +170,13 @@ h1 {
 .blockText p,
 .conditions p {
 	margin-bottom: 10px;
-	color: grey;
+	color: black;
 	font-size: 1.1em;
 }
 
 .blockText ol {
 	margin-bottom: 10px;
-	color: grey;
+	color: black;
 	line-height: 25px;
 	font-size: 1.1em;
 }
@@ -320,7 +337,7 @@ p.header {
 .sectionBlock2 .spanLinks a {
 	background-color: white;
 	border-radius: 0;
-	color: grey;
+	color: black;
 	margin: 0;
 	padding: 20px 20px 20px 0;
 }
@@ -588,10 +605,14 @@ Checkbox styles
 
 .plaintext {
 	background-color: white;
-	color: #808080;
+	color: black;
 	padding: 0;
 	margin: 0;
 	text-decoration: underline;
+}
+.logoSpoonGif {
+	display: block;
+	text-align: center;
 }
 
 .formLetter .objectInput {
@@ -646,7 +667,6 @@ Checkbox styles
 	}
 
 	.homepageBlock {
-		background-color: white;
 		display: flex;
 		flex-wrap: wrap;
 		width: 90%;

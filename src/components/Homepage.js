@@ -1,10 +1,14 @@
 import { set } from "lodash/fp";
 import React, { useEffect, useState } from "react";
 import { Link, Route, Switch } from "react-router-dom";
-import logo_vvoj from "../assets/logo_vvoj.png";
+import gifLogo from "../assets/logo/Spoon_Logo_animatie_BlackonWhite_Gif.gif";
 import machine from "../assets/machine.png";
 import Cookiemelding from "./Cookiemelding";
 import DataText from "./DataText";
+import HomepageENBES from "./en/bes/Homepage";
+import HomepageOvergeneratorENBES from "./en/bes/HomepageOvergenerator";
+import HomepageWaaromENBES from "./en/bes/HomepageWaarom";
+import HomepageWaaromToolENBES from "./en/bes/HomepageWaaromTool";
 import EnBesStap1 from "./en/bes/Stap1";
 import EnBesStap2 from "./en/bes/Stap2";
 import EnBesStap3 from "./en/bes/Stap3";
@@ -13,6 +17,10 @@ import EnBesStap3_3 from "./en/bes/Stap3_3";
 import EnBesStapEinde from "./en/bes/StapEinde";
 import EnBesStapExtra from "./en/bes/StapExtra";
 import EnBesStapVoorAf from "./en/bes/StapVoorAf";
+import HomepageENLOB from "./en/lob/Homepage";
+import HomepageOvergeneratorENLOB from "./en/lob/HomepageOvergenerator";
+import HomepageWaaromENLOB from "./en/lob/HomepageWaarom";
+import HomepageWaaromToolENLOB from "./en/lob/HomepageWaaromTool";
 import EnLobStap1 from "./en/lob/Stap1";
 import EnLobStap2 from "./en/lob/Stap2";
 import EnLobStap3 from "./en/lob/Stap3";
@@ -21,6 +29,10 @@ import EnLobStap3_3 from "./en/lob/Stap3_3";
 import EnLobStapEinde from "./en/lob/StapEinde";
 import EnLobStapExtra from "./en/lob/StapExtra";
 import EnLobStapVoorAf from "./en/lob/StapVoorAf";
+import HomepageENWOO from "./en/woo/Homepage";
+import HomepageOvergeneratorENWOO from "./en/woo/HomepageOvergenerator";
+import HomepageWaaromENWOO from "./en/woo/HomepageWaarom";
+import HomepageWaaromToolENWOO from "./en/woo/HomepageWaaromTool";
 import EnStap1 from "./en/woo/Stap1";
 import EnStap2 from "./en/woo/Stap2";
 import EnStap3 from "./en/woo/Stap3";
@@ -32,6 +44,10 @@ import EnStapVoorAf from "./en/woo/StapVoorAf";
 import HomepageOvergenerator from "./HomepageOvergenerator";
 import HomepageWaarom from "./HomepageWaarom";
 import HomepageWaaromTool from "./HomepageWaaromTool";
+import HomepageNLWOO from "./nl/woo/Homepage";
+import HomepageOvergeneratorNLWOO from "./nl/woo/HomepageOvergenerator";
+import HomepageWaaromNLWOO from "./nl/woo/HomepageWaarom";
+import HomepageWaaromToolNLWOO from "./nl/woo/HomepageWaaromTool";
 import Stap1 from "./nl/woo/Stap1";
 import Stap2 from "./nl/woo/Stap2";
 import Stap3 from "./nl/woo/Stap3";
@@ -40,6 +56,14 @@ import Stap3_3 from "./nl/woo/Stap3_3";
 import StapEinde from "./nl/woo/StapEinde";
 import StapExtra from "./nl/woo/StapExtra";
 import StapVoorAf from "./nl/woo/StapVoorAf";
+import HomepagePMBES from "./pm/bes/Homepage";
+import HomepageOvergeneratorPMBES from "./pm/bes/HomepageOvergenerator";
+import HomepageWaaromPMBES from "./pm/bes/HomepageWaarom";
+import HomepageWaaromToolPMBES from "./pm/bes/HomepageWaaromTool";
+import HomepagePMLOB from "./pm/lob/Homepage";
+import HomepageOvergeneratorPMLOB from "./pm/lob/HomepageOvergenerator";
+import HomepageWaaromPMLOB from "./pm/lob/HomepageWaarom";
+import HomepageWaaromToolPMLOB from "./pm/lob/HomepageWaaromTool";
 import PmLobStap1 from "./pm/lob/Stap1";
 import PmLobStap2 from "./pm/lob/Stap2";
 import PmLobStap3 from "./pm/lob/Stap3";
@@ -313,6 +337,11 @@ const Homepage = props => {
 		<Switch>
 			<Route exact path="/">
 				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<div className="selectLanguage">
+					<Link to="/">NL</Link>
+					<Link to="/EN/">EN</Link>
+					<Link to="/PM/">PM</Link>
+				</div>
 				<div className="homepageBlock">
 					<div className="blockText">
 						<p className="logo">Woo-generator</p>
@@ -345,10 +374,15 @@ const Homepage = props => {
 						<img src={machine} alt="" />
 					</div>
 				</div>
-				<div className="extra_content">
-					<p>Een initiatief van de </p>
-					<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-						<img src={logo_vvoj} className="logo_vvoj" alt="VVOJ" />
+				<div className="extra_content logoSpoonGif">
+					<p>Een tool van: </p>
+					<a
+						className="plaintext logoSpoonGifLogo"
+						href="https://www.vvoj.nl"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img src={gifLogo} className="logo_vvoj" alt="VVOJ" />
 					</a>
 				</div>
 				<div className="extra_content">
@@ -366,6 +400,11 @@ const Homepage = props => {
 			</Route>
 			<Route exact path="/EN/">
 				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<div className="selectLanguage">
+					<Link to="/">NL</Link>
+					<Link to="/EN/">EN</Link>
+					<Link to="/PM/">PM</Link>
+				</div>
 				<div className="homepageBlock">
 					<div className="blockText">
 						<p className="logo">Lob-generator</p>
@@ -395,7 +434,7 @@ const Homepage = props => {
 				<div className="extra_content">
 					<p>Een initiatief van de </p>
 					<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-						<img src={logo_vvoj} className="logo_vvoj" alt="VVOJ" />
+						<img src={gifLogo} className="logo_vvoj" alt="VVOJ" />
 					</a>
 				</div>
 				<div className="extra_content">
@@ -413,11 +452,16 @@ const Homepage = props => {
 			</Route>
 			<Route exact path="/PM/">
 				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<div className="selectLanguage">
+					<Link to="/">NL</Link>
+					<Link to="/EN/">EN</Link>
+					<Link to="/PM/">PM</Link>
+				</div>
 				<div className="homepageBlock">
 					<div className="blockText">
-						<p className="logo">WoB-Bes-generator</p>
-						<h1>Write your own Wob-BES-Request in three simple steps</h1>
-						<p>Welkom bij de Wob-Bes-generator! </p>
+						<p className="logo">Lob-generator</p>
+						<h1>Write your own LOB request</h1>
+						<p>Welkom bij de Lob-generator! </p>
 						<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
 						<p>
 							Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
@@ -432,22 +476,8 @@ const Homepage = props => {
 							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 						</ol>
 
-						<Link
-							to="/PM/lob/StapVoorAf"
-							onClick={() => {
-								clickHandlerSetLaw("lob");
-							}}
-						>
-							Start your Lob-Request
-						</Link>
-						<Link
-							to="/PM/bes/StapVoorAf"
-							onClick={() => {
-								clickHandlerSetLaw("bes");
-							}}
-						>
-							Start your Wob-bes-request
-						</Link>
+						<Link to="/EN/lob/StapVoorAf">Start your Lob-Request</Link>
+						<Link to="/EN/bes/StapVoorAf">Start your Wob-bes-request</Link>
 					</div>
 					<div>
 						<img src={machine} alt="" />
@@ -456,7 +486,7 @@ const Homepage = props => {
 				<div className="extra_content">
 					<p>Een initiatief van de </p>
 					<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-						<img src={logo_vvoj} className="logo_vvoj" alt="VVOJ" />
+						<img src={gifLogo} className="logo_vvoj" alt="VVOJ" />
 					</a>
 				</div>
 				<div className="extra_content">
@@ -472,7 +502,84 @@ const Homepage = props => {
 				</div>
 				<HomepageOvergenerator />
 			</Route>
+			<Route exact path="/PM/LOB/">
+				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<HomepagePMLOB />
+				<HomepageWaaromPMLOB />
+				<HomepageWaaromToolPMLOB />
 
+				<div className="extra_content"></div>
+
+				<div className="extra_content">
+					<hr className="horizontalRule"></hr>
+				</div>
+				<HomepageOvergeneratorPMLOB />
+			</Route>
+			<Route exact path="/PM/BES/">
+				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<HomepagePMBES />
+				<HomepageWaaromPMBES />
+				<HomepageWaaromToolPMBES />
+
+				<div className="extra_content"></div>
+
+				<div className="extra_content">
+					<hr className="horizontalRule"></hr>
+				</div>
+				<HomepageOvergeneratorPMBES />
+			</Route>
+			<Route exact path="/EN/LOB/">
+				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<HomepageENLOB />
+				<HomepageWaaromENLOB />
+				<HomepageWaaromToolENLOB />
+
+				<div className="extra_content"></div>
+
+				<div className="extra_content">
+					<hr className="horizontalRule"></hr>
+				</div>
+				<HomepageOvergeneratorENLOB />
+			</Route>
+			<Route exact path="/EN/WOO/">
+				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<HomepageENWOO />
+				<HomepageWaaromENWOO />
+				<HomepageWaaromToolENWOO />
+
+				<div className="extra_content"></div>
+
+				<div className="extra_content">
+					<hr className="horizontalRule"></hr>
+				</div>
+				<HomepageOvergeneratorENWOO />
+			</Route>
+			<Route exact path="/NL/WOO/">
+				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<HomepageNLWOO />
+				<HomepageWaaromNLWOO />
+				<HomepageWaaromToolNLWOO />
+
+				<div className="extra_content"></div>
+
+				<div className="extra_content">
+					<hr className="horizontalRule"></hr>
+				</div>
+				<HomepageOvergeneratorNLWOO />
+			</Route>
+			<Route exact path="/EN/BES/">
+				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<HomepageENBES />
+				<HomepageWaaromENBES />
+				<HomepageWaaromToolENBES />
+
+				<div className="extra_content"></div>
+
+				<div className="extra_content">
+					<hr className="horizontalRule"></hr>
+				</div>
+				<HomepageOvergeneratorENBES />
+			</Route>
 			<Route path="/NL/woo/StapVoorAf">
 				<StapVoorAf />
 			</Route>
