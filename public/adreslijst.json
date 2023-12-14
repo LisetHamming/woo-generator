@@ -1,0 +1,91 @@
+[
+ {
+  "Bestuursorgaan": "Algemene Rekenkamer",
+  "Website": "https://www.rekenkamer.nl",
+  "Postbus": "Postbus 20015",
+  "Postcode": "2500 EA",
+  "Plaats": "Den Haag",
+  "Emailadres": "Woo@rekenkamer.nl",
+  "Land": "Nederland",
+  "Wet": "Woo",
+  "Taal 1": "Nederlands"
+ },
+ {
+  "Bestuursorgaan": "Autoriteit Financiële Markten",
+  "Website": "https://www.afm.nl",
+  "Postbus ": "Postbus 11723",
+  "Postcode": "1001 GS",
+  "Plaats": "Amsterdam",
+  "Emailadres": "wooverzoek@afm.nl",
+  "Land": "Nederland",
+  "Wet": "Woo",
+  "Taal 1": "Nederlands"
+ },
+ {
+  "Bestuursorgaan": "Test bestuursorgaan Curaçao Lob Papiaments",
+  "Website": "https:\/\/www.Test_Website_Curaçao.nl\/",
+  "Postbus ": "Postbus 123",
+  "Postcode": "1111 AA",
+  "Plaats": "Test Plaats Curaçao",
+  "Emailadres": "infor@curaçao.nl",
+  "Land": "Curaçao",
+  "Wet": "Lob",
+  "Taal 1": "Papiaments"
+ },
+ {
+  "Bestuursorgaan": "Test bestuursorgaan Aruba Lob Papiaments",
+  "Website": "https:\/\/www.Test_Website_Aruba.nl\/",
+  "Postbus ": "Postbus 124",
+  "Postcode": "1112 AA",
+  "Plaats": "Test Plaats Aruba",
+  "Emailadres": "infor@aruba.nl",
+  "Land": "Aruba",
+  "Wet": "Lob",
+  "Taal 1": "Papiaments"
+ },
+ {
+  "Bestuursorgaan": "Test bestuursorgaan Sint Maarten Lob Engels",
+  "Website": "https:\/\/www.Test_Website_Sint_Maarten.nl\/",
+  "Postbus ": "Postbus 125",
+  "Postcode": "1113 AA",
+  "Plaats": "Test Plaats Sint Maarten",
+  "Emailadres": "infor@sint_maarten.nl",
+  "Land": "Sint Maarten",
+  "Wet": "Lob",
+  "Taal 1": "Engels"
+ },
+ {
+  "Bestuursorgaan": "Test bestuursorgaan Bonaire Wob BES Papiaments",
+  "Website": "https:\/\/www.Test_Website_Bonaire.nl\/",
+  "Postbus ": "Postbus 126",
+  "Postcode": "1114 AA",
+  "Plaats": "Test Plaats Bonaire",
+  "Emailadres": "infor@bonaire.nl",
+  "Land": "Bonaire",
+  "Wet": "Wob BES",
+  "Taal 1": "Papiaments"
+ },
+ {
+  "Bestuursorgaan": "Test bestuursorgaan Sint Eustatius Wob BES Engels",
+  "Website": "https:\/\/www.Test_Website_Sint_Eustatius.nl\/",
+  "Postbus ": "Postbus 127",
+  "Postcode": "1115 AA",
+  "Plaats": "Test Plaats Sint Eustatius",
+  "Emailadres": "infor@sint_eustatius.nl",
+  "Land": "Sint Eustatius",
+  "Wet": "Wob BES",
+  "Taal 1": "Engels"
+ },
+ {
+  "Bestuursorgaan": "Test bestuursorgaan Saba Wob BES Papiaments",
+  "Website": "https:\/\/www.Test_Website_Saba.nl\/",
+  "Postbus ": "Postbus 128",
+  "Postcode": "1116 AA",
+  "Plaats": "Test Plaats Saba",
+  "Emailadres": "infor@saba.nl",
+  "Land": "Saba",
+  "Wet": "Wob BES",
+  "Taal 1": "Papiaments"
+ }
+]
+ 

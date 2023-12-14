@@ -25,6 +25,9 @@ function Stap2({
 	const [AuthorityComplete, setAuthorityComplete] = useState(false);
 	const [searchValue, setSearchValue] = useState("");
 	const [errors, setErrors] = useState([]);
+	const [selectedLand, setSelectedLand] = useState("");
+
+	const landenBes = ["Bonaire", "Saba", "Sint Eustatius"];
 
 	TagManager.dataLayer(tagManagerArgs);
 	return (
@@ -58,7 +61,7 @@ function Stap2({
 						<p>
 							{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}
 						</p>
-
+						<p>{value.selectedAuthority.Land}</p>
 						<p>{value.selectedAuthority.value}</p>
 						<div>
 							<button
@@ -83,6 +86,13 @@ function Stap2({
 							placeholder="Zoek op naam of plaats"
 							onChange={event => setSearchValue(event.target.value)}
 						/>
+						<div className="landenFilter">
+							{landenBes.map(item => (
+								<button key={item} onClick={e => setSelectedLand(item)}>
+									{item}
+								</button>
+							))}
+						</div>
 
 						<ul id="authorities">
 							{authorities ? (
@@ -92,6 +102,8 @@ function Stap2({
 											item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
 											item.Plaats.toLowerCase().includes(searchValue.toLowerCase())
 									)
+									.filter(item => item.Wet.includes("Wob BES"))
+									.filter(item => item.Land.includes(selectedLand))
 									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))
 									.map(item => (
 										<li key={item.id}>
@@ -128,6 +140,7 @@ function Stap2({
 										Postbus: "",
 										Postcode: "",
 										Plaats: "",
+										Land: "",
 										Website: "",
 										Emailadres: ""
 									});

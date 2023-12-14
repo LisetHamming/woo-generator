@@ -20,10 +20,9 @@ function StapVoorAf() {
 				informatie in te vullen.
 			</p>
 			<span className="nieuwietje">
-				<p>
-					Voor meer uitleg kun je klikken op de i'tjes.
-					<PopupButton number="19" />
-				</p>
+				<p>Voor meer uitleg kun je klikken op de i'tjes.</p>
+				<PopupButton number="19" />
+
 				<br />
 			</span>
 

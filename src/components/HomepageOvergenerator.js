@@ -4,7 +4,7 @@ import logo_vvoj from "../assets/logo_vvoj.png";
 
 function HomepageOvergenerator() {
 	return (
-		<div className="sectionWaarom">
+		<div className="footer">
 			<div className="sectionBlock2">
 				<div className="block1">
 					<h1>Over deze generator</h1>

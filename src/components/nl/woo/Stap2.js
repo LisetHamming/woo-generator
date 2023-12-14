@@ -58,6 +58,7 @@ function Stap2({
 						<p>
 							{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}
 						</p>
+						<p>{value.selectedAuthority.Land}</p>
 
 						<p>{value.selectedAuthority.value}</p>
 						<div>
@@ -83,6 +84,7 @@ function Stap2({
 							placeholder="Zoek op naam of plaats"
 							onChange={event => setSearchValue(event.target.value)}
 						/>
+						{console.log(searchValue)}
 
 						<ul id="authorities">
 							{authorities ? (
@@ -92,6 +94,7 @@ function Stap2({
 											item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
 											item.Plaats.toLowerCase().includes(searchValue.toLowerCase())
 									)
+									.filter(item => item.Land.includes("Nederland"))
 									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))
 									.map(item => (
 										<li key={item.id}>
@@ -104,6 +107,7 @@ function Stap2({
 												<p>{item.Bestuursorgaan}</p>
 												<FontAwesomeIcon className="fontIcon" icon={faPlus} />
 											</button>
+											{console.log(authorities)}
 										</li>
 									))
 							) : (
@@ -129,6 +133,7 @@ function Stap2({
 										Postcode: "",
 										Plaats: "",
 										Website: "",
+										Land: "",
 										Emailadres: ""
 									});
 									setShowManualAuthority(true);

@@ -6,12 +6,10 @@ function App() {
 	const [authorities, setAuthorities] = useState(null);
 
 	useEffect(() => {
-		let id = 0
-		fetch(
-			"/adreslijst.json"
-		)
+		let id = 0;
+		fetch("/adreslijst.json")
 			.then(response => response.json())
-			.then(data => data.map(item => ({...item, id: id++})))
+			.then(data => data.map(item => ({ ...item, id: id++ })))
 			.then(data => setAuthorities(data))
 			.catch(error => setAuthorities(error));
 	}, []);
@@ -22,6 +20,7 @@ function App() {
 		return (
 			<div>
 				<Homepage />
+				{console.log(authorities)}
 			</div>
 		);
 	}

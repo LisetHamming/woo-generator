@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo_vvoj from "../../../assets/logo_vvoj.png";
-import machine from "../../../assets/machine.png";
+import machine from "../../../assets/images/WOB_KNOP.png";
 
-function Homepage({ clickHandlerSetLaw, value }) {
+function Homepage({ clickHandlerSetLaw, wet }) {
 	return (
 		<div>
+			<div className="selectLanguage">
+				<Link to="/EN/bes/">EN</Link>
+				<Link to="/PM/bes/">PAP</Link>
+			</div>
 			<div className="homepageBlock">
-				<div className="selectLanguage">
-					<Link to="/EN/bes/">EN</Link>
-					<Link to="/PM/bes/">PM</Link>
-				</div>
 				<div className="blockText">
 					<p className="logo">Woo-generator</p>
 					<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
@@ -29,27 +28,21 @@ function Homepage({ clickHandlerSetLaw, value }) {
 						<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 					</ol>
 
-					<Link to="/NL/woo/StapVoorAf" OnClick={clickHandlerSetLaw} value="woo">
-						WOO NL
-					</Link>
-					<Link to="/EN/woo/StapVoorAf">WOO EN</Link>
-					<Link to="/EN/bes/StapVoorAf">WOB-BES EN</Link>
-					<Link to="/PM/bes/StapVoorAf">WOB_BES PM</Link>
-					<Link to="/EN/lob/StapVoorAf">LOB EN</Link>
-					<Link to="/PM/lob/StapVoorAf">LOB PM</Link>
+					<div className="nextButtons">
+						<Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
+							WOO EN
+						</Link>
+						<Link to="/PM/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
+							WOB_BES PM
+						</Link>
+						<Link to="/PM/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
+							LOB PM
+						</Link>
+					</div>
 				</div>
 				<div>
 					<img src={machine} alt="" />
 				</div>
-			</div>
-			<div className="extra_content">
-				<p>Een initiatief van de </p>
-				<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-					<img src={logo_vvoj} className="logo_vvoj" alt="VVOJ" />
-				</a>
-			</div>
-			<div className="extra_content">
-				<hr className="horizontalRule"></hr>
 			</div>
 		</div>
 	);

@@ -52,6 +52,18 @@ function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthority
 						/>
 					</label>
 				</span>
+				<span>
+					<label>
+						Land
+						<input
+							size="50"
+							onChange={handleKeypathChange}
+							type="text"
+							name="selectedAuthority.Land"
+							value={selectedAuthority.Land}
+						/>
+					</label>
+				</span>
 			</form>
 		</div>
 	);

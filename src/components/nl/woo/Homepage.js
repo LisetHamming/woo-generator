@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import machine from "../../../assets/images/WOO_KNOP.png";
 import logo_vvoj from "../../../assets/logo_vvoj.png";
-import machine from "../../../assets/machine.png";
 
-function Homepage({ clickHandlerSetLaw, value }) {
+function Homepage({ clickHandlerSetLaw, wet }) {
 	return (
 		<div>
 			<div className="selectLanguage">
@@ -29,14 +29,16 @@ function Homepage({ clickHandlerSetLaw, value }) {
 						<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 					</ol>
 
-					<Link to="/NL/woo/StapVoorAf" OnClick={clickHandlerSetLaw} value="woo">
+					<Link to="/NL/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
 						WOO NL
 					</Link>
-					<Link to="/EN/woo/StapVoorAf">WOO EN</Link>
-					<Link to="/EN/bes/StapVoorAf">WOB-BES EN</Link>
-					<Link to="/PM/bes/StapVoorAf">WOB_BES PM</Link>
-					<Link to="/EN/lob/StapVoorAf">LOB EN</Link>
-					<Link to="/PM/lob/StapVoorAf">LOB PM</Link>
+					<Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
+						WOB-BES EN
+					</Link>
+
+					<Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
+						LOB EN
+					</Link>
 				</div>
 				<div>
 					<img src={machine} alt="" />

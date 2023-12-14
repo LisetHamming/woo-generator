@@ -1,19 +1,19 @@
-import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import Popup from "../nl/woo/popups/Popup";
+import lightbulb from "./../../assets/icons/Spoon_icons_kennis pagina's.png";
+import Popup from "./Popup";
 
 function PopupButton({ number }) {
 	const [popUp, setPopUp] = useState(false);
 
 	return (
-		<span>
-			<button type="button" className="popupI" onClick={() => setPopUp(curr => !curr)}>
-				<FontAwesomeIcon className="fontIcon" icon={faInfoCircle} />
-			</button>
+		<div>
+			<span>
+				<button type="button" className="popupI" onClick={() => setPopUp(curr => !curr)}>
+					<img src={lightbulb} alt="icoon, klik voor meer informatie" />
+				</button>
+			</span>
 			{popUp && <Popup number={number} clickHandler={() => setPopUp(false)} />}
-			<br />
-		</span>
+		</div>
 	);
 }
 

@@ -1,14 +1,13 @@
 import { set } from "lodash/fp";
 import React, { useEffect, useState } from "react";
 import { Link, Route, Switch } from "react-router-dom";
+import machine from "../assets/images/WOO_knop_animatie.gif";
 import gifLogo from "../assets/logo/Spoon_Logo_animatie_BlackonWhite_Gif.gif";
-import machine from "../assets/machine.png";
 import Cookiemelding from "./Cookiemelding";
 import DataText from "./DataText";
 import HomepageENBES from "./en/bes/Homepage";
 import HomepageOvergeneratorENBES from "./en/bes/HomepageOvergenerator";
 import HomepageWaaromENBES from "./en/bes/HomepageWaarom";
-import HomepageWaaromToolENBES from "./en/bes/HomepageWaaromTool";
 import EnBesStap1 from "./en/bes/Stap1";
 import EnBesStap2 from "./en/bes/Stap2";
 import EnBesStap3 from "./en/bes/Stap3";
@@ -20,7 +19,6 @@ import EnBesStapVoorAf from "./en/bes/StapVoorAf";
 import HomepageENLOB from "./en/lob/Homepage";
 import HomepageOvergeneratorENLOB from "./en/lob/HomepageOvergenerator";
 import HomepageWaaromENLOB from "./en/lob/HomepageWaarom";
-import HomepageWaaromToolENLOB from "./en/lob/HomepageWaaromTool";
 import EnLobStap1 from "./en/lob/Stap1";
 import EnLobStap2 from "./en/lob/Stap2";
 import EnLobStap3 from "./en/lob/Stap3";
@@ -32,7 +30,6 @@ import EnLobStapVoorAf from "./en/lob/StapVoorAf";
 import HomepageENWOO from "./en/woo/Homepage";
 import HomepageOvergeneratorENWOO from "./en/woo/HomepageOvergenerator";
 import HomepageWaaromENWOO from "./en/woo/HomepageWaarom";
-import HomepageWaaromToolENWOO from "./en/woo/HomepageWaaromTool";
 import EnStap1 from "./en/woo/Stap1";
 import EnStap2 from "./en/woo/Stap2";
 import EnStap3 from "./en/woo/Stap3";
@@ -43,11 +40,9 @@ import EnStapExtra from "./en/woo/StapExtra";
 import EnStapVoorAf from "./en/woo/StapVoorAf";
 import HomepageOvergenerator from "./HomepageOvergenerator";
 import HomepageWaarom from "./HomepageWaarom";
-import HomepageWaaromTool from "./HomepageWaaromTool";
 import HomepageNLWOO from "./nl/woo/Homepage";
 import HomepageOvergeneratorNLWOO from "./nl/woo/HomepageOvergenerator";
 import HomepageWaaromNLWOO from "./nl/woo/HomepageWaarom";
-import HomepageWaaromToolNLWOO from "./nl/woo/HomepageWaaromTool";
 import Stap1 from "./nl/woo/Stap1";
 import Stap2 from "./nl/woo/Stap2";
 import Stap3 from "./nl/woo/Stap3";
@@ -59,11 +54,9 @@ import StapVoorAf from "./nl/woo/StapVoorAf";
 import HomepagePMBES from "./pm/bes/Homepage";
 import HomepageOvergeneratorPMBES from "./pm/bes/HomepageOvergenerator";
 import HomepageWaaromPMBES from "./pm/bes/HomepageWaarom";
-import HomepageWaaromToolPMBES from "./pm/bes/HomepageWaaromTool";
 import HomepagePMLOB from "./pm/lob/Homepage";
 import HomepageOvergeneratorPMLOB from "./pm/lob/HomepageOvergenerator";
 import HomepageWaaromPMLOB from "./pm/lob/HomepageWaarom";
-import HomepageWaaromToolPMLOB from "./pm/lob/HomepageWaaromTool";
 import PmLobStap1 from "./pm/lob/Stap1";
 import PmLobStap2 from "./pm/lob/Stap2";
 import PmLobStap3 from "./pm/lob/Stap3";
@@ -167,8 +160,6 @@ const initialState = {
 	// subjectElse: [],
 	step6: false,
 	step9: false,
-	location: "Nederland",
-	wet: "woo",
 	// bump this number if the shape of the state changes in a way that will break compatibility with any data already in localStorage
 	version: 2
 };
@@ -195,6 +186,8 @@ const useLocalStorageState = (key, initialState) => {
 };
 
 const Homepage = props => {
+	const [wet, setWet] = useState("Woo");
+	const [location, setLocation] = useState("Nederland");
 	const [value, setValue] = useLocalStorageState("data", initialState);
 	// const [searchValue, setSearchValue] = useState("");
 	// const [dateToday, setDateToday] = useState("");
@@ -290,7 +283,7 @@ const Homepage = props => {
 		setValue(current => ({ ...current, userOnBehalf: checked, userOnBehalfInput: "" }));
 	};
 	const clickHandlerSetLaw = value => {
-		setValue(current => ({ ...current, wet: value }));
+		setWet(value);
 	};
 	const exportHTMLDoc = () => {
 		var header =
@@ -340,11 +333,11 @@ const Homepage = props => {
 				<div className="selectLanguage">
 					<Link to="/">NL</Link>
 					<Link to="/EN/">EN</Link>
-					<Link to="/PM/">PM</Link>
+					<Link to="/PM/">PAP</Link>
 				</div>
+				<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
 				<div className="homepageBlock">
 					<div className="blockText">
-						<p className="logo">Woo-generator</p>
 						<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
 						<p>Welkom bij de Woo-generator! </p>
 						<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
@@ -360,42 +353,27 @@ const Homepage = props => {
 							<li>2. Je selecteert een overheidsinstantie</li>
 							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 						</ol>
-						{console.log(value.wet)}
-						<Link to="/NL/woo/StapVoorAf" OnClick={clickHandlerSetLaw} value="woo">
-							WOO NL
-						</Link>
-						<Link to="/EN/woo/StapVoorAf">WOO EN</Link>
-						<Link to="/EN/bes/StapVoorAf">WOB-BES EN</Link>
-						<Link to="/PM/bes/StapVoorAf">WOB_BES PM</Link>
-						<Link to="/EN/lob/StapVoorAf">LOB EN</Link>
-						<Link to="/PM/lob/StapVoorAf">LOB PM</Link>
+						<div className="nextButtons">
+							<Link to="/NL/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
+								WOO
+							</Link>
+							<Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
+								WOB-BES (EN)
+							</Link>
+							<Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
+								LOB (EN)
+							</Link>
+						</div>
 					</div>
 					<div>
 						<img src={machine} alt="" />
 					</div>
 				</div>
-				<div className="extra_content logoSpoonGif">
-					<p>Een tool van: </p>
-					<a
-						className="plaintext logoSpoonGifLogo"
-						href="https://www.vvoj.nl"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<img src={gifLogo} className="logo_vvoj" alt="VVOJ" />
-					</a>
-				</div>
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
+
 				<HomepageWaarom />
-				<HomepageWaaromTool />
 
 				<div className="extra_content"></div>
 
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
 				<HomepageOvergenerator />
 			</Route>
 			<Route exact path="/EN/">
@@ -403,13 +381,13 @@ const Homepage = props => {
 				<div className="selectLanguage">
 					<Link to="/">NL</Link>
 					<Link to="/EN/">EN</Link>
-					<Link to="/PM/">PM</Link>
+					<Link to="/PM/">PAP</Link>
 				</div>
+				<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
 				<div className="homepageBlock">
 					<div className="blockText">
-						<p className="logo">Lob-generator</p>
-						<h1>Write your own LOB request</h1>
-						<p>Welkom bij de Lob-generator! </p>
+						<h1>Write your own request</h1>
+						<p>Welkom bij de generator! </p>
 						<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
 						<p>
 							Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
@@ -423,31 +401,28 @@ const Homepage = props => {
 							<li>2. Je selecteert een overheidsinstantie</li>
 							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 						</ol>
-
-						<Link to="/EN/lob/StapVoorAf">Start your Lob-Request</Link>
-						<Link to="/EN/bes/StapVoorAf">Start your Wob-bes-request</Link>
+						<div className="nextButtons">
+							<Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
+								WOO EN
+							</Link>
+							<Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
+								LOB
+							</Link>
+							<Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
+								WOB-BES
+							</Link>
+						</div>
 					</div>
 					<div>
 						<img src={machine} alt="" />
 					</div>
 				</div>
-				<div className="extra_content">
-					<p>Een initiatief van de </p>
-					<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-						<img src={gifLogo} className="logo_vvoj" alt="VVOJ" />
-					</a>
-				</div>
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
+
 				<HomepageWaarom />
-				<HomepageWaaromTool />
 
 				<div className="extra_content"></div>
 
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
+				<div className="extra_content"></div>
 				<HomepageOvergenerator />
 			</Route>
 			<Route exact path="/PM/">
@@ -455,13 +430,13 @@ const Homepage = props => {
 				<div className="selectLanguage">
 					<Link to="/">NL</Link>
 					<Link to="/EN/">EN</Link>
-					<Link to="/PM/">PM</Link>
+					<Link to="/PM/">PAP</Link>
 				</div>
+				<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
 				<div className="homepageBlock">
 					<div className="blockText">
-						<p className="logo">Lob-generator</p>
-						<h1>Write your own LOB request</h1>
-						<p>Welkom bij de Lob-generator! </p>
+						<h1>Write your own request</h1>
+						<p>Welkom bij de generator! </p>
 						<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
 						<p>
 							Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
@@ -475,110 +450,90 @@ const Homepage = props => {
 							<li>2. Je selecteert een overheidsinstantie</li>
 							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 						</ol>
-
-						<Link to="/EN/lob/StapVoorAf">Start your Lob-Request</Link>
-						<Link to="/EN/bes/StapVoorAf">Start your Wob-bes-request</Link>
+						<div className="nextButtons">
+							<Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
+								WOO EN
+							</Link>
+							<Link to="/PM/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
+								LOB
+							</Link>
+							<Link to="/PM/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
+								WOB-BES
+							</Link>
+						</div>
 					</div>
 					<div>
 						<img src={machine} alt="" />
 					</div>
 				</div>
-				<div className="extra_content">
-					<p>Een initiatief van de </p>
-					<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-						<img src={gifLogo} className="logo_vvoj" alt="VVOJ" />
-					</a>
-				</div>
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
+
 				<HomepageWaarom />
-				<HomepageWaaromTool />
 
 				<div className="extra_content"></div>
 
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
+				<div className="extra_content"></div>
 				<HomepageOvergenerator />
 			</Route>
 			<Route exact path="/PM/LOB/">
 				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
-				<HomepagePMLOB />
+				<HomepagePMLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromPMLOB />
-				<HomepageWaaromToolPMLOB />
 
 				<div className="extra_content"></div>
 
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
+				<div className="extra_content"></div>
 				<HomepageOvergeneratorPMLOB />
 			</Route>
 			<Route exact path="/PM/BES/">
 				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
-				<HomepagePMBES />
+				<HomepagePMBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromPMBES />
-				<HomepageWaaromToolPMBES />
 
 				<div className="extra_content"></div>
 
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
+				<div className="extra_content"></div>
 				<HomepageOvergeneratorPMBES />
 			</Route>
 			<Route exact path="/EN/LOB/">
 				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
-				<HomepageENLOB />
+				<HomepageENLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromENLOB />
-				<HomepageWaaromToolENLOB />
 
 				<div className="extra_content"></div>
 
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
+				<div className="extra_content"></div>
 				<HomepageOvergeneratorENLOB />
 			</Route>
 			<Route exact path="/EN/WOO/">
 				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
-				<HomepageENWOO />
+				<HomepageENWOO wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromENWOO />
-				<HomepageWaaromToolENWOO />
 
 				<div className="extra_content"></div>
 
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
+				<div className="extra_content"></div>
 				<HomepageOvergeneratorENWOO />
+			</Route>
+
+			<Route exact path="/EN/BES/">
+				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<HomepageENBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageWaaromENBES />
+
+				<div className="extra_content"></div>
+
+				<div className="extra_content"></div>
+				<HomepageOvergeneratorENBES />
 			</Route>
 			<Route exact path="/NL/WOO/">
 				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
-				<HomepageNLWOO />
+				<HomepageNLWOO wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromNLWOO />
-				<HomepageWaaromToolNLWOO />
 
 				<div className="extra_content"></div>
 
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
+				<div className="extra_content"></div>
 				<HomepageOvergeneratorNLWOO />
-			</Route>
-			<Route exact path="/EN/BES/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
-				<HomepageENBES />
-				<HomepageWaaromENBES />
-				<HomepageWaaromToolENBES />
-
-				<div className="extra_content"></div>
-
-				<div className="extra_content">
-					<hr className="horizontalRule"></hr>
-				</div>
-				<HomepageOvergeneratorENBES />
 			</Route>
 			<Route path="/NL/woo/StapVoorAf">
 				<StapVoorAf />
@@ -586,6 +541,7 @@ const Homepage = props => {
 			<Route path="/NL/woo/Stap1">
 				<Stap1
 					value={value}
+					wet={wet}
 					changeHandlerUser={changeHandlerUser}
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerCompanyName={changeHandlerCompanyName}
@@ -597,6 +553,7 @@ const Homepage = props => {
 			<Route path="/NL/woo/Stap2">
 				<Stap2
 					value={value}
+					wet={wet}
 					changeHandlerUser={changeHandlerUser}
 					authorities={props.authorities}
 					setAuthority={setAuthority}
@@ -667,6 +624,7 @@ const Homepage = props => {
 			<Route path="/EN/woo/Stap1">
 				<EnStap1
 					value={value}
+					wet={wet}
 					changeHandlerUser={changeHandlerUser}
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerCompanyName={changeHandlerCompanyName}
@@ -678,6 +636,7 @@ const Homepage = props => {
 			<Route path="/EN/woo/Stap2">
 				<EnStap2
 					value={value}
+					wet={wet}
 					changeHandlerUser={changeHandlerUser}
 					authorities={props.authorities}
 					setAuthority={setAuthority}
@@ -748,6 +707,7 @@ const Homepage = props => {
 			<Route path="/EN/bes/Stap1">
 				<EnBesStap1
 					value={value}
+					wet={wet}
 					changeHandlerUser={changeHandlerUser}
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerCompanyName={changeHandlerCompanyName}
@@ -759,6 +719,7 @@ const Homepage = props => {
 			<Route path="/EN/bes/Stap2">
 				<EnBesStap2
 					value={value}
+					wet={wet}
 					changeHandlerUser={changeHandlerUser}
 					authorities={props.authorities}
 					setAuthority={setAuthority}
@@ -829,6 +790,7 @@ const Homepage = props => {
 			<Route path="/EN/lob/Stap1">
 				<EnLobStap1
 					value={value}
+					wet={wet}
 					changeHandlerUser={changeHandlerUser}
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerCompanyName={changeHandlerCompanyName}
@@ -840,6 +802,7 @@ const Homepage = props => {
 			<Route path="/EN/lob/Stap2">
 				<EnLobStap2
 					value={value}
+					wet={wet}
 					changeHandlerUser={changeHandlerUser}
 					authorities={props.authorities}
 					setAuthority={setAuthority}
@@ -910,6 +873,7 @@ const Homepage = props => {
 			<Route path="/PM/lob/Stap1">
 				<PmLobStap1
 					value={value}
+					wet={wet}
 					changeHandlerUser={changeHandlerUser}
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					changeHandlerCompanyName={changeHandlerCompanyName}
@@ -921,6 +885,7 @@ const Homepage = props => {
 			<Route path="/PM/lob/Stap2">
 				<PmLobStap2
 					value={value}
+					wet={wet}
 					changeHandlerUser={changeHandlerUser}
 					authorities={props.authorities}
 					setAuthority={setAuthority}

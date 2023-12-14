@@ -55,14 +55,17 @@ button {
 	background-color: black;
 	color: white;
 	padding: 0.8em 3em;
-	border-radius: 0.3em;
 	text-decoration: none;
 	margin-right: 1em;
+	overflow: hidden;
 }
 
 body {
-	background-color: #83d0f5;
+	background-color: #e8e8e8;
 	font-family: "Source Sans Pro", sans-serif;
+}
+body:has(.homepageBlock) {
+	background-color: #83d0f5;
 }
 
 p {
@@ -104,52 +107,20 @@ h1 {
 }
 .homepageBlock {
 	display: flex;
+	justify-content: center;
 	width: 90%;
 	margin: 0 auto;
+	padding-bottom: 100px;
 }
 
 .homepageBlock img {
 	padding-top: 10vh;
-	padding-right: 40px;
-	width: 95%;
+	width: 40vw;
 }
-
-.extra_content {
-	width: 90%;
-	margin: 0 auto;
-	padding-bottom: 40px;
-	display: flex;
-	justify-content: center;
-}
-.homepageBlock .lanceringItalic {
-	color: black;
-	font-style: italic;
-}
-.homepageBlock .lanceringBold {
-	color: rgb(192, 43, 57);
-	font-size: 20px;
-}
-.homepageBlock .lanceringBold a {
-	color: rgb(192, 43, 57);
-}
-.homepageBlock .lanceringBoldBlack {
-	font-weight: bold;
-}
-
-.extra_content p {
-	margin-right: 15px;
-}
-
-.extra_content img {
+.logo_SPOON {
 	width: 300px;
-}
-
-.extra_content .horizontalRule {
-	width: 100%;
-}
-
-.horizontalRule {
-	border-top: 1px solid rgba(0, 0, 0, 0);
+	display: block;
+	margin: 20px 240px;
 }
 
 .blockText {
@@ -188,7 +159,7 @@ h1 {
 }
 
 p.logo {
-	color: rgb(192, 43, 57) !important;
+	color: black !important;
 	margin-bottom: 0.5em;
 	font-size: 2em;
 	font-weight: 300;
@@ -196,50 +167,20 @@ p.logo {
 
 p.header {
 	text-align: center;
-	color: rgb(192, 43, 57);
+	color: black;
 	font-size: 2em;
 }
 
 .popup {
-	background-color: white;
-	position: fixed;
-	width: 35%;
-	overflow-y: scroll;
-	right: 30%;
-	bottom: 0;
-	border: 1px solid black;
+	background-color: rgba(235, 94, 157, 0.7);
 }
-
-.backgroundPopUp {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	z-index: 20;
-	background-color: rgba(0, 0, 0, 0.2);
-}
-
-.popupI:focus {
-	font-size: 25px;
-	outline: 0;
-	transition: ease-in-out, font-size 0.6s ease-in-out;
-}
-
-.popupI:hover {
-	font-size: 19px;
-	transition: ease-in-out, font-size 0.35s ease-in-out;
-}
-
-.popupI {
+.popupI img {
 	cursor: pointer;
-	vertical-align: bottom;
 }
 
 .letterComplete {
 	position: absolute;
 	width: 60%;
-
 	right: 0;
 	top: 0;
 	z-index: 10;
@@ -249,7 +190,26 @@ p.header {
 #letterUI {
 	background-color: white;
 	padding: 25px;
-	border-radius: 1%;
+	box-shadow: -2px 0 0.9em grey;
+}
+.letterComplete .letterUIHeading {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.letterComplete .letterUILogos {
+	margin-right: 20px;
+	display: flex;
+}
+.letterComplete .letterUIHeading img {
+	width: 100px;
+	padding-right: 10px;
+}
+#letterUI .scribble {
+	background-color: rgba(247, 166, 0, 0.7);
+}
+#letterUI .letterUIAddress p {
+	margin-bottom: 2px;
 }
 
 .popup h1 {
@@ -270,15 +230,22 @@ p.header {
 	color: white;
 }
 
-.popupClose {
-	background-color: black;
-	border: none;
-	color: white;
-	padding: 0.5em;
-	font-size: 2em;
+.sectionWaarom {
+	padding: 150px 0;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	background-color: white;
+}
+.sectionWaarom a {
+	background-color: #e8e8e8;
+}
+.sectionWaarom h1 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: -30px;
 }
 
-.sectionWaarom,
 .conditions,
 .textLongConditions {
 	padding: 20px 0;
@@ -296,11 +263,25 @@ p.header {
 .sectionBlock,
 .sectionBlock2 {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
+	width: 90%;
+	margin: 0 auto;
+}
+.footer,
+.footer .sectionBlock2,
+.footer a {
+	background-color: #e8e8e8;
+}
+.footer {
+	padding-top: 100px;
 }
 
 .sectionBlock div {
-	width: 40%;
+	width: 30vw;
+	padding: 40px;
+	margin-bottom: 40px;
+	background-color: #e8e8e8;
 }
 
 .sectionBlock div h1,
@@ -335,7 +316,7 @@ p.header {
 }
 
 .sectionBlock2 .spanLinks a {
-	background-color: white;
+	background-color: #e8e8e8;
 	border-radius: 0;
 	color: black;
 	margin: 0;
@@ -595,12 +576,11 @@ Checkbox styles
 	width: 50%;
 }
 
-.central .popupI svg {
-	color: black;
-}
-
-.formLetter .ietje {
-	display: flex;
+.popupI img {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
 }
 
 .plaintext {
@@ -699,16 +679,4 @@ Checkbox styles
 	.letterComplete {
 		display: none;
 	}
-	.popup {
-		width: 70%;
-		left: 5%;
-		right: 0;
-	}
-}
-.nieuwietje p,
-.nieuwietje span {
-	display: inline-block;
-}
-.nieuwietje .popupI {
-	padding: 0 0 2px 5px;
 }

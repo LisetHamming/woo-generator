@@ -31,6 +31,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							<p>
 								{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}
 							</p>
+							<p>{value.selectedAuthority.Land}</p>
 							<br />
 						</div>
 					)}
