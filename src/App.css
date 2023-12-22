@@ -24,7 +24,7 @@ li button {
 	display: flex;
 	width: 32.5vw;
 	border: 1px dashed black;
-	background-color: #ffdb62;
+	background-color: rgba(235, 94, 157, 0.7);
 	margin-top: 5px;
 	align-items: center;
 }
@@ -206,7 +206,7 @@ p.header {
 	padding-right: 10px;
 }
 #letterUI .scribble {
-	background-color: rgba(247, 166, 0, 0.7);
+	background-color: rgba(243, 230, 0, 0.7);
 }
 #letterUI .letterUIAddress p {
 	margin-bottom: 2px;
