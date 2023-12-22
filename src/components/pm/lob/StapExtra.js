@@ -17,13 +17,13 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
 
-			<h2>Extra opties</h2>
+			<h2>Opcionnan extra</h2>
 			<p>
-				Onderstaande opties vergroten in het algemeen je kans op openbaarmaking van de informatie omdat ze anticiperen
-				op belemmeringen die in het proces kunnen ontstaan. Bij het aan- en uitvinken van de opties kun je in je
-				Wob-verzoek in wording zien welke tekstblokjes verschijnen of verdwijnen. Lees tekstblokjes goed door om te
-				weten wat de opties inhouden. Het kan geen kwaad om ze allemaal op te nemen, maar sommige opties kunnen in jouw
-				specifieke geval niet relevant zijn. Zet ze in dat geval uit.
+				E opcionnan aki bou generalmente ta agranda e chens cu e informacion cu bo ta pidiendo ta wordo haci publico
+				pasobra nan ta anticipa riba obstaculonan cu por wordo confronta den e proceso di haci e peticion y recibi
+				contesta. Ora bo selecta e opcionnan bo por mira ki texto e ta genera den bo peticion den concepto. Lesa e
+				blokinan di texto bon pa sa kico e opcionnan ta nifica pa bo peticion. No ta mal idea pa selecta un par, pero
+				wak bon si nan ta aplicabel den bo situacion, of si e lo ta un beneficio pa bo.
 			</p>
 			<form>
 				<span>
@@ -36,7 +36,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="1"
 						/>{" "}
-						Doorgeleiding
+						Coordinacion
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -51,7 +51,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="2"
 						/>{" "}
-						Mondelinge toelichting
+						Splicacion verbal
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -66,7 +66,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="3"
 						/>{" "}
-						Reeds openbare informatie
+						Informacion cu ya ta publico
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -81,7 +81,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="4"
 						/>{" "}
-						Mogelijk omvangrijk verzoek
+						Peticion cu ta posibelmente amplio
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -96,7 +96,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="5"
 						/>{" "}
-						Geanonimiseerd verstrekken
+						Duna e informacion den forma anonimo
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -111,7 +111,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="6"
 						/>{" "}
-						Persoonlijke beleidsopvattingen
+						Opinionnan administrativo personal, loke den Hulandes yama persoonlijke beleidsopvattingen
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -126,7 +126,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="7"
 						/>{" "}
-						Samenvattingen van documenten
+						Resumen di documentonan
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -141,7 +141,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="8"
 						/>{" "}
-						Motivering bij weigering
+						Splicacion ora documentonan ta rechasa
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -156,7 +156,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="9"
 						/>{" "}
-						Voorkeur digitale verstrekking
+						Preferencia pa haci e documentonan publico den forma digital
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -171,15 +171,15 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="10"
 						/>{" "}
-						Inventarislijst toevoegen aan besluit
+						Agrega lista di documento
 						<br />
 						<div className="checkmark"></div>
 					</label>
 				</span>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/PM/lob/Stap3_3">Terug</Link>
-			<Link to="/PM/lob/StapEinde">Laatste stap</Link>
+			<Link to="/PM/lob/Stap3_3">Bay bek</Link>
+			<Link to="/PM/lob/StapEinde">Ultimo paso</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
 		</div>
 	);

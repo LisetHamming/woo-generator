@@ -26,17 +26,17 @@ function Stap3({
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
 
-			<h2>Stap 3: Welke informatie zoek je?</h2>
+			<h2>Paso 3: Ki informacion bo ta buscando?</h2>
 			<p>
-				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Dit kan een vrij smal onderwerp
-				zijn, zoals ‘boetes voor snelheidsovertredingen’, maar ook breder, zoals ‘de verkeersveiligheid in uw gemeente’.
-				Bij de volgende stap krijg je de gelegenheid verder toe te spitsen welke documenten je wilt ontvangen.
+				Describi precisamente y alabes mas corto cu ta posibel e topico di cual bo ta pidiendo informacion. Por ehempel,
+				'boetenan pa infraccionnan di velocidad’, of manera 'tereno di Isla di Oro'. Den e proximo paso bo lo haya e
+				oportunidad pa ta mas specifico riba e tipo di documentonan cu bo ta pidiendo cu ta relata na e topico.
 			</p>
 			<br />
 			<br />
 			<span className="nieuwietje">
 				<p>
-					Waarom moet ik nauwkeurig zijn?
+					Dicon mi mester ta specifico?
 					<PopupButton number="8" />
 				</p>
 			</span>
@@ -44,8 +44,8 @@ function Stap3({
 			<span className="nieuwietje">
 				<p>
 					{" "}
-					Let op: je kunt alleen vragen naar stukken of gegevens die verband houden met een publieke taak van de
-					overhedsinstanties waar je je Woo-verzoek indient.
+					Paga tino: bo por solamente pidi documentonan of informacion cu ta relata na un asunto administrativo
+					(bestuurlijke aangelegenheid) cu un organo gubernamental ta encarga cune.
 					<PopupButton number="18" />
 				</p>
 			</span>
@@ -54,7 +54,7 @@ function Stap3({
 				{value.userNeedsGoal && (
 					<span className="subForm">
 						<label className="formInputs">
-							Doel (verplicht)
+							Meta (rekiri)
 							<input
 								id="userGoalInput"
 								size="46"
@@ -68,7 +68,7 @@ function Stap3({
 				)}
 				<span>
 					<label>
-						Onderwerp{" "}
+						Tema{" "}
 						<input
 							size="50"
 							value={value.subjectLong}
@@ -76,12 +76,12 @@ function Stap3({
 							id="subjectLong"
 							type="text"
 							name="subjectinfo"
-							placeholder="Bijvoorbeeld 'boetes snelheidsovertredingen Friesland'  "
+							placeholder="Por ehempel 'corespondencia entre ministernan, ambtenaarnan y partidonan externo y consehonan tocante e incinerator presupuesta"
 						/>
 						<br />
 					</label>
 				</span>
-				{errors.includes("subjectLong") && <p id="error">Dit is een verplicht veld, graag invullen.</p>}
+				{errors.includes("subjectLong") && <p id="error">Ta rekiri pa yena e informacion aki, por favor yen'e.</p>}
 				<span>
 					<label className="container nieuwietje">
 						<input
@@ -92,22 +92,21 @@ function Stap3({
 							name="subjectInfo"
 							value="subjectMilieu"
 						/>
-						Dit onderwerp gaat over milieu <PopupButton number="9" />
+						E tema aki tin di ber cu medio ambiente <PopupButton number="9" />
 						<br />
 						<div className="checkmark"></div>
 					</label>
 				</span>
-				<h1>Specifiek document of alles?</h1>
+				<h1> Un documento specifico of tur documento cu e organo gubernamental tin riba e topico?</h1>
 				<p>
-					Maak een keuze tussen het opvragen van bepaalde, specifieke documenten of alle documenten die de
-					overheidsinstantie over dit onderwerp heeft.
+					Scoge si bo kier pidi algun documento specifico of tur documento cu e organo gubernamental tin riba e topico.
 				</p>
 
 				<br />
 				<span className="nieuwietje">
 					{" "}
 					<p>
-						Welke documenten moet de overheid openbaar maken? <PopupButton number="13" />
+						Ki documentonan e organo gubernamental tin cu haci publico? <PopupButton number="13" />
 					</p>
 				</span>
 				<br />
@@ -121,7 +120,7 @@ function Stap3({
 							name="subjectType"
 							value="specific"
 						/>{" "}
-						Ik wil specifieke documenten
+						Mi kier documentonan specifico
 						<div className="checkmark"></div>
 						<PopupButton number="11" />
 					</label>
@@ -137,14 +136,14 @@ function Stap3({
 							name="subjectType"
 							value="all"
 						/>
-						Ik wil alle documenten die de overheidsinstantie heeft over dit onderwerp
+						Mi kier tur e documentonan cu e organo gubernamental tin tocante e topico aki
 						<div className="checkmark"></div>
 						<PopupButton number="12" />
 					</label>
 				</span>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/PM/lob/Stap2">Terug</Link>
+			<Link to="/PM/lob/Stap2">Bay bek</Link>
 			<Link
 				to="/PM/lob/Stap3_3"
 				onClick={event => {
@@ -165,7 +164,7 @@ function Stap3({
 					}
 				}}*/
 			>
-				Volgende
+				Proximo paso
 			</Link>
 			<LetterUI
 				className="letterText"
