@@ -6,41 +6,42 @@ function StapVoorAf() {
 	return (
 		<div className="formLetter central">
 			<p className="logo">Woo-generator</p>
-			<h2>Goed om te weten</h2>
+			<h2>Bon pa sa</h2>
 			<br />
 			<br />
 
 			<p>
-				De Woo-generator is niet gemaakt om op je telefoon te gebruiken. Je kunt ‘m dus het beste op je computer of
-				laptop openen.
+				E Woo-generator no ta traha pa wordo uza riba bo telefon. P'esey ta miho si bo uz'e riba bo computer of laptop.
 			</p>
 			<br />
 			<p>
-				Aan de linkerkant van het scherm staat welke informatie we nodig hebben voor je verzoek en vakjes om deze
-				informatie in te vullen.
+				Riba e parti robes di e pantaya bo por wak ki informacion nos mester pa por traha bo peticion y e veldnan pa
+				yena e informacion aki.
 			</p>
 			<span className="nieuwietje">
-				<p>Voor meer uitleg kun je klikken op de i'tjes.</p>
+				<p>Pa mas splicacion bo por primi riba e icononan cu e inan riba dje.</p>
 				<PopupButton number="19" />
-
 				<br />
 			</span>
 
 			<p>
-				Je antwoorden worden automatisch verwerkt en verschijnen vervolgens in het concept Woo-verzoek aan de
-				rechterkant. Zo kun je steeds zien of de tekst goed loopt. Alles wat je invult wordt via de browser die je
-				gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet.
+				Bo contestanan riba e preguntanan ta wordo procesa automaticamente y ta aparece den e peticion riba e banda
+				drechi di e pantaya. Asina bo por wak si e texto ta core bon. Tur cos cu bo yena den bo navegador ta wordo warda
+				localmente, kiermen cu niun otro hende por wak e informacion cu bo yena, ni nos mes.
 			</p>
 			<br />
-			<p>Als je alle vragen hebt beantwoord, kun je je concept Woo-verzoek opslaan als DOC en de tekst aanpassen.</p>
+			<p>
+				Ora bo ta cla cu yena tur e informacion, bo por warda bo peticion den forma di un .doc file y cambia e texto
+				despues si bo ta desea.
+			</p>
 			<br />
 			<p className="extraPadding">
-				Wil je iets net even anders of wil je bijvoorbeeld een extra toelichting op je verzoek toevoegen? Dan kun je in
-				het opgeslagen Word-document je Woo-verzoek nog aanpassen.
+				Bo kier cambia par di cos, of duna un tiki mas splicacion den bo peticion? Bo por haci cambionan den e file cu
+				nos ta duna bo despues.
 			</p>
-			<Link to="/">Terug</Link>
+			<Link to="/">Bay bek</Link>
 
-			<Link to="/PM/lob/Stap1">Ik snap het</Link>
+			<Link to="/PM/lob/Stap1">Mi ta compronde</Link>
 		</div>
 	);
 }

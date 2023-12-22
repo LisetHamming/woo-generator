@@ -25,16 +25,17 @@ function Stap1({
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
 
-			<h2>Stap 1: Over jezelf</h2>
+			<h2>Paso 1: Yena bo informacion</h2>
 			<p>
-				Vul hier je contactgegevens in zodat de overheidsinstantie je kan bereiken en maak enkele keuzes over hoe je
-				jezelf en je verzoek aan de overheid presenteert. Let op: een Woo-verzoek kan niet anoniem worden ingediend.
+				Yena bo informacion di contacto aki pa asina e instancia gubernamental por contacta bo. Alabes bo ta scoge con
+				bo ta presenta bo peticion pa documentonan na e instancia. Ta importante pa nota cu un peticion pa documentonan
+				no por wordo entrega anonimamente.
 			</p>
 			<br />
 			<form>
 				<span>
 					<label className="container nieuwietje">
-						Ik ben een journalist
+						Mi ta un periodista
 						<input
 							id="userJournalist"
 							value="userJournalist"
@@ -49,7 +50,7 @@ function Stap1({
 
 				<span>
 					<label className="container nieuwietje">
-						Ik dien dit Woo-verzoek in namens een (media)organisatie
+						Mi ta entrega e peticion den nomber di un organisacion
 						<input
 							id="userCompany"
 							value="userCompanyName"
@@ -64,7 +65,7 @@ function Stap1({
 				{value.userCompanyName && (
 					<span className="subForm">
 						<label className="formInputs">
-							Naam organisatie
+							Nomber di organisacion
 							<input
 								id="userCompanyNameInput"
 								size="46"
@@ -78,7 +79,7 @@ function Stap1({
 				)}
 				<span>
 					<label className="container nieuwietje">
-						Ik werk voor/in opdracht van een (media)organisatie
+						Mi ta traha pa un organisacion
 						<input
 							id="userOnBehalf"
 							value="userOnBehalf"
@@ -93,7 +94,7 @@ function Stap1({
 				{value.userOnBehalf && (
 					<span className="subForm">
 						<label className="formInputs">
-							Naam organisatie
+							Nomber di organisacion
 							<input
 								id="userOnBehalfInput"
 								size="46"
@@ -109,7 +110,7 @@ function Stap1({
 					<span>
 						<label>
 							{" "}
-							Naam
+							Nomber
 							<input
 								size="50"
 								value={value.userName}
@@ -121,12 +122,12 @@ function Stap1({
 							/>
 						</label>
 					</span>
-					{errors.includes("userName") && <p id="error">Dit is een verplicht veld, graag invullen.</p>}
+					{errors.includes("userName") && <p id="error">Ta necesario pa yena e informacion pidi aki.</p>}
 					<span>
 						{" "}
 						<label>
 							{" "}
-							Postadres
+							Adres
 							<input
 								size="40"
 								value={value.userAdress}
@@ -139,7 +140,7 @@ function Stap1({
 						</label>
 						<label>
 							{" "}
-							Nr.
+							Number
 							<input
 								size="5"
 								value={value.userAdressNumber}
@@ -151,11 +152,11 @@ function Stap1({
 							/>
 						</label>
 					</span>
-					{errors.includes("userAdress") && <p id="error">Dit is een verplicht veld, graag invullen.</p>}
+					{errors.includes("userAdress") && <p id="error">Ta necesario pa yena e informacion pidi aki.</p>}
 					<span>
 						<label>
 							{" "}
-							Postcode
+							Codigo postal
 							<input
 								size="15"
 								value={value.userZipcode}
@@ -168,7 +169,7 @@ function Stap1({
 						</label>
 						<label>
 							{" "}
-							Plaats
+							Luga
 							<input
 								size="30"
 								value={value.userCityName}
@@ -180,7 +181,7 @@ function Stap1({
 							/>
 						</label>
 					</span>
-					{errors.includes("userCityName") && <p id="error">Dit is een verplicht veld, graag invullen.</p>}
+					{errors.includes("userCityName") && <p id="error">Ta necesario pa yena e informacion pidi aki.</p>}
 					<span>
 						<label>
 							{" "}
@@ -199,7 +200,7 @@ function Stap1({
 					<span>
 						<label>
 							{" "}
-							Telefoon
+							Telefon
 							<input
 								size="50"
 								value={value.userPhoneNumber}
@@ -235,7 +236,7 @@ function Stap1({
 					}
 				}}*/
 			>
-				Stap 2
+				Paso 2
 			</Link>
 			<LetterUI
 				className="letterText"

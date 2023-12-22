@@ -34,25 +34,25 @@ function Stap2({
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
 
-			<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
+			<h2>Paso 2: Cerca cua instancia gubernamental bo kier pidi documentonan?</h2>
 			<span className="nieuwietje">
 				<p>
-					Kies hier bij welke overheidsinstantie je je Woo-verzoek wilt indienen.
+					Aki bo ta scoge cerca cua instancia gubernamental bo ta entrega bo peticion.
 					<PopupButton number="5" />
 				</p>
 			</span>
 
 			{errors.includes("selectedAuthority") && (
 				<p id="smallError">
-					Kies een instantie aan wie je je verzoek wilt sturen. Staat de instantie die je zoekt er niet bij? Vul deze
-					dan handmatig in.
+					Scoge cerca cua instancia gubernamental bo kier pidi documentonan. E instancia no t'ey? Bo por yen'e
+					manualmente.
 				</p>
 			)}
 
 			<form>
 				{value.selectedAuthority && !showManualAuthority ? (
 					<div className="selectedAuthority">
-						<p>Controleer de instantie waar je het Woo-verzoek indient:</p>
+						<p>Controla e instancia unda bo kier pidi informacion:</p>
 						<h3>{value.selectedAuthority.Bestuursorgaan}</h3>
 						<p>{value.selectedAuthority.Website}</p>
 						<br />
@@ -72,7 +72,7 @@ function Stap2({
 									clickHandlerClearSelectedAuthority(value.selectedAuthority);
 								}}
 							>
-								Zoek opnieuw
+								Busca di nobo
 							</button>
 						</div>
 					</div>
@@ -83,7 +83,7 @@ function Stap2({
 							id="searchBarAuthority"
 							type="search"
 							value={searchValue}
-							placeholder="Zoek op naam of plaats"
+							placeholder="Busca uzando nomber of luga"
 							onChange={event => setSearchValue(event.target.value)}
 						/>
 						<div className="landenFilter">
@@ -118,17 +118,14 @@ function Stap2({
 										</li>
 									))
 							) : (
-								<li>
-									Er gaat iets niet goed bij het ophalen van de informatie. Als je zelf gegevens hebt, kan je die
-									invullen.
-								</li>
+								<li>Algo no a bay bon cu e buskeda. Si bo mes tin informacion, bo por yen'e aki.</li>
 							)}
 						</ul>
 
 						<div>
 							<br />
 							<span>
-								<p>Staat de juiste instantie er niet tussen, maar beschik je zelf wel over de juiste gegevens?</p>
+								<p>E instancia corecto no ta disponibel, pero bo sa unda bo kier haci e peticion?</p>
 							</span>
 							<button
 								className="buttonStyle"
@@ -146,7 +143,7 @@ function Stap2({
 									setShowManualAuthority(true);
 								}}
 							>
-								Vul dan hier de gegevens in
+								Yena e informacion di contacto aki e ora ey
 							</button>
 						</div>
 					</>
@@ -166,17 +163,17 @@ function Stap2({
 
 			<span className="nieuwietje">
 				<p>
-					Hoe kies ik de juiste overheidsinstantie?
+					Con mi ta scoge e instancia gubernamental corecto?
 					<PopupButton number="6" />
 				</p>
 			</span>
 			<span className="lastOfType nieuwietje">
 				<p>
-					Aan wie adresseer ik mijn verzoek?
+					Na ken mi ta adresa mi peticion?
 					<PopupButton number="7" />
 				</p>
 			</span>
-			<Link to="/PM/lob/Stap1">Terug</Link>
+			<Link to="/PM/lob/Stap1">Bay bek</Link>
 
 			<Link
 				to="/PM/lob/Stap3"
@@ -193,7 +190,7 @@ function Stap2({
 					}
 				}}*/
 			>
-				Stap 3
+				Paso 3
 			</Link>
 			<LetterUI
 				className="letterText"
