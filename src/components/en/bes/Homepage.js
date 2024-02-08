@@ -29,15 +29,15 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 					</ol>
 
 					<div className="nextButtons">
-						<Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
+						{/* <Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
 							WOO EN
-						</Link>
+						</Link> */}
 						<Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
-							WOB-BES EN
+							WOB-BES
 						</Link>
-						<Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
+						{/* <Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
 							LOB EN
-						</Link>
+						</Link> */}
 					</div>
 				</div>
 				<div>

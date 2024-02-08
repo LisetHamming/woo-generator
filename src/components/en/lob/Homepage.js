@@ -28,14 +28,14 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 					</ol>
 					<div className="nextButtons">
-						<Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
+						{/* <Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
 							WOO EN
 						</Link>
 						<Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
 							WOB-BES EN
-						</Link>
+						</Link> */}
 						<Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
-							LOB EN
+							LOB
 						</Link>
 					</div>
 				</div>

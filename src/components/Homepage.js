@@ -54,6 +54,12 @@ import StapVoorAf from "./nl/woo/StapVoorAf";
 import HomepagePMBES from "./pm/bes/Homepage";
 import HomepageOvergeneratorPMBES from "./pm/bes/HomepageOvergenerator";
 import HomepageWaaromPMBES from "./pm/bes/HomepageWaarom";
+import PmBesStap1 from "./pm/bes/Stap1";
+import PmBesStap2 from "./pm/bes/Stap2";
+import PmBesStap3 from "./pm/bes/Stap3";
+import PmBesStap3_2 from "./pm/bes/Stap3_2";
+import PmBesStap3_3 from "./pm/bes/Stap3_3";
+import PmBesStapVoorAf from "./pm/bes/StapVoorAf";
 import HomepagePMLOB from "./pm/lob/Homepage";
 import HomepageOvergeneratorPMLOB from "./pm/lob/HomepageOvergenerator";
 import HomepageWaaromPMLOB from "./pm/lob/HomepageWaarom";
@@ -338,29 +344,41 @@ const Homepage = props => {
 				<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
 				<div className="homepageBlock">
 					<div className="blockText">
-						<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
-						<p>Welkom bij de Woo-generator! </p>
-						<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
+						<h1>Schrijf in 3 simpele stappen je eigen verzoek om overheidsinformatie</h1>
+						<p>Welkom bij de generator om overheidsinformatie op te vragen! </p>
 						<p>
-							Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
-							Wob-generator is daarom de Woo-generator geworden en we hebben meteen de gelegenheid aangegrepen om de
-							generator te verbeteren. Vanaf nu dien je dus een Woo-verzoek in als je overheidsinformatie wilt opvragen.
+							Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie in het Koninkrijk der
+							Nederlanden.
 						</p>
-						<p>Met de Woo-generator is dat een koud kunstje.</p>
+						<p>
+							Jawel! Vanaf nu is er niet alleen de <b>Woo-generator</b> voor Nederland, maar ook een{" "}
+							<b>WOB/BES-generator</b> voor Bonaire, St. Eustatius en Saba en een <b>LOB-generator</b> voor Curacao,
+							Aruba en St. Maarten (CAS-eilanden).
+						</p>
+						<p>
+							Met onze generator is een openbaarmakingsverzoek indienen in alle delen van het Koninkrijk een koud
+							kunstje.
+						</p>
 
 						<ol>
 							<li>1. Je vult een aantal gegevens over jezelf in</li>
 							<li>2. Je selecteert een overheidsinstantie</li>
 							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
+							<li>4. Indienen maar!</li>
 						</ol>
+						<p>
+							Klik op een van de knoppen hieronder om te kiezen tussen Nederland, BES-eilanden of de CAS-eilanden.
+							Rechtsboven kun je op elk moment de taal van je voorkeur wijzigen.
+						</p>
+
 						<div className="nextButtons">
-							<Link to="/NL/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
+							<Link to="/NL/woo/" onClick={e => clickHandlerSetLaw("Woo")}>
 								WOO
 							</Link>
-							<Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
+							<Link to="/EN/bes/" onClick={e => clickHandlerSetLaw("Wob BES")}>
 								WOB-BES (EN)
 							</Link>
-							<Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
+							<Link to="/EN/lob/" onClick={e => clickHandlerSetLaw("Lob")}>
 								LOB (EN)
 							</Link>
 						</div>
@@ -371,8 +389,6 @@ const Homepage = props => {
 				</div>
 
 				<HomepageWaarom />
-
-				<div className="extra_content"></div>
 
 				<HomepageOvergenerator />
 			</Route>
@@ -919,6 +935,89 @@ const Homepage = props => {
 			</Route>
 			<Route path="/PM/lob/Stap3_3">
 				<PmLobStap3_3
+					clickHandlerEmptySubjectText={clickHandlerEmptySubjectText}
+					clickHandlerSubjectText={clickHandlerSubjectText}
+					getCurrentDate={getCurrentDate}
+					value={value}
+					clickHandlerStep={clickHandlerStep}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerRadio={changeHandlerRadio}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+					changeHandlerSubjectMeeting={changeHandlerSubjectMeeting}
+					clickHandlerClearPeriodDate={clickHandlerClearPeriodDate}
+				/>
+			</Route>
+			<Route path="/PM/lob/StapExtra">
+				<PmLobStapExtra
+					getCurrentDate={getCurrentDate}
+					value={value}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					filteredDataText={filteredDataText}
+				/>
+			</Route>
+			<Route path="/PM/lob/StapEinde">
+				<PmLobStapEinde
+					resetState={resetState}
+					getCurrentDate={getCurrentDate}
+					value={value}
+					filteredDataText={filteredDataText}
+					exportHTMLDoc={exportHTMLDoc}
+				/>
+			</Route>
+			<Route path="/PM/bes/StapVoorAf">
+				<PmBesStapVoorAf />
+			</Route>
+			<Route path="/PM/bes/Stap1">
+				<PmBesStap1
+					value={value}
+					wet={wet}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerCompanyName={changeHandlerCompanyName}
+					changeHandlerOnBehalf={changeHandlerOnBehalf}
+					filteredDataText={filteredDataText}
+					getCurrentDate={getCurrentDate}
+				/>
+			</Route>
+			<Route path="/PM/bes/Stap2">
+				<PmBesStap2
+					value={value}
+					wet={wet}
+					changeHandlerUser={changeHandlerUser}
+					authorities={props.authorities}
+					setAuthority={setAuthority}
+					clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}
+					filteredDataText={filteredDataText}
+					getCurrentDate={getCurrentDate}
+					handleKeypathChange={handleKeypathChange}
+				/>
+			</Route>
+			<Route path="/PM/bes/Stap3">
+				<PmBesStap3
+					getCurrentDate={getCurrentDate}
+					value={value}
+					clickHandlerStep={clickHandlerStep}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+				/>
+			</Route>
+
+			<Route path="/PM/bes/Stap3_2">
+				<PmBesStap3_2
+					getCurrentDate={getCurrentDate}
+					value={value}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+					changeHandlerUser={changeHandlerUser}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+				/>
+			</Route>
+			<Route path="/PM/bes/Stap3_3">
+				<PmBesStap3_3
 					clickHandlerEmptySubjectText={clickHandlerEmptySubjectText}
 					clickHandlerSubjectText={clickHandlerSubjectText}
 					getCurrentDate={getCurrentDate}

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import machine from "../../../assets/images/WOO_KNOP.png";
-import logo_vvoj from "../../../assets/logo_vvoj.png";
 
 function Homepage({ clickHandlerSetLaw, wet }) {
 	return (
@@ -28,30 +27,22 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						<li>2. Je selecteert een overheidsinstantie</li>
 						<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 					</ol>
-
-					<Link to="/NL/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
-						WOO NL
-					</Link>
-					<Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
+					<div className="nextButtons">
+						<Link to="/NL/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
+							WOO
+						</Link>
+						{/* <Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
 						WOB-BES EN
 					</Link>
 
 					<Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
 						LOB EN
-					</Link>
+					</Link> */}
+					</div>
 				</div>
 				<div>
 					<img src={machine} alt="" />
 				</div>
-			</div>
-			<div className="extra_content">
-				<p>Een initiatief van de </p>
-				<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-					<img src={logo_vvoj} className="logo_vvoj" alt="VVOJ" />
-				</a>
-			</div>
-			<div className="extra_content">
-				<hr className="horizontalRule"></hr>
 			</div>
 		</div>
 	);
