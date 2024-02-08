@@ -10,6 +10,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 				<Link to="/EN/woo/">EN</Link>
 			</div>
 			<div className="homepageBlock">
+				{/* <img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" /> */}
 				<div className="blockText">
 					<p className="logo">Woo-generator</p>
 					<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
@@ -29,7 +30,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 					</ol>
 					<div className="nextButtons">
 						<Link to="/NL/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
-							WOO
+							Start je woo-verzoek
 						</Link>
 						{/* <Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
 						WOB-BES EN

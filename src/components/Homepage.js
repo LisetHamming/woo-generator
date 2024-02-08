@@ -344,8 +344,8 @@ const Homepage = props => {
 				<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
 				<div className="homepageBlock">
 					<div className="blockText">
-						<h1>Schrijf in 3 simpele stappen je eigen verzoek om overheidsinformatie</h1>
-						<p>Welkom bij de generator om overheidsinformatie op te vragen! </p>
+						<h1>Welkom bij de generator om overheidsinformatie op te vragen!</h1>
+						<p> </p>
 						<p>
 							Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie in het Koninkrijk der
 							Nederlanden.
@@ -355,16 +355,13 @@ const Homepage = props => {
 							<b>WOB/BES-generator</b> voor Bonaire, St. Eustatius en Saba en een <b>LOB-generator</b> voor Curacao,
 							Aruba en St. Maarten (CAS-eilanden).
 						</p>
-						<p>
-							Met onze generator is een openbaarmakingsverzoek indienen in alle delen van het Koninkrijk een koud
-							kunstje.
-						</p>
-
+						<p>Met onze generator is een openbaarmakingsverzoek indienen een koud kunstje.</p>
+						<h1>Schrijf in 3 simpele stappen je eigen verzoek om overheidsinformatie</h1>
 						<ol>
 							<li>1. Je vult een aantal gegevens over jezelf in</li>
 							<li>2. Je selecteert een overheidsinstantie</li>
 							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
-							<li>4. Indienen maar!</li>
+							<li>Indienen maar!</li>
 						</ol>
 						<p>
 							Klik op een van de knoppen hieronder om te kiezen tussen Nederland, BES-eilanden of de CAS-eilanden.

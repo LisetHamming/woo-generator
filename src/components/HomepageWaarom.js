@@ -7,7 +7,7 @@ function HomepageWaarom() {
 			<div className="sectionBlock">
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Wat is een verzoek om openbaarmaking en waarom zou ik dat doen?
+						Waarom zou ik een verzoek om openbaarmaking doen?
 					</h1>
 					<p>
 						Iedereen heeft het recht om informatie neergelegd in documenten op te vragen bij de overheid. Elk deel van
