@@ -134,8 +134,12 @@ h1 {
 }
 
 .blockText h1 {
-	font-size: 2.2em;
-	margin-bottom: 1em;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	line-height: 35px;
+}
+.blockText h1:nth-of-type(2) {
+	margin-top: 10px;
 }
 
 .blockText p,
