@@ -110,7 +110,7 @@ h1 {
 	justify-content: center;
 	width: 90%;
 	margin: 0 auto;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 
 .homepageBlock img {
@@ -144,6 +144,9 @@ h1 {
 	color: black;
 	font-size: 1.1em;
 }
+.blockText b {
+	font-weight: bold;
+}
 
 .blockText ol {
 	margin-bottom: 10px;
@@ -156,6 +159,9 @@ h1 {
 .logoWob {
 	margin-bottom: 2em;
 	width: 80px;
+}
+.nextButtons {
+	margin-top: 30px;
 }
 
 p.logo {
@@ -231,7 +237,7 @@ p.header {
 }
 
 .sectionWaarom {
-	padding: 150px 0;
+	padding: 100px 0;
 	width: 100%;
 	margin: 0 auto;
 	display: block;
