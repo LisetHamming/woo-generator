@@ -215,7 +215,7 @@ function Stap1({
 				</div>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/PM/lob/StapVoorAf">Terug</Link>
+			<Link to="/PM/lob/StapVoorAf">Bay bek</Link>
 			<Link
 				to="/PM/lob/Stap2"
 				/*onClick={event => {

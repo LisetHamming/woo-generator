@@ -23,7 +23,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	return (
 		<div className="letterComplete">
 			<div className="letterUIHeading">
-				<h1>Je Woo-verzoek in wording:</h1>
+			<h1>Bo peticion pa divulga documentonan a base di e Lob den proceso:</h1>
 				<div className="letterUILogos">
 					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
@@ -49,22 +49,22 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						{value.userCityName}, {getCurrentDate()}
 					</p>
 					<br />
-					<p>Betreft: indiening Woo-verzoek</p>
+					<p>Referente: entregamento di peticion pa divulgacion a base di e Lob</p>
 					<br />
-					<p>Zeer geachte heer/mevrouw,</p>
+					<p>Apreciabel meneer/señora </p>
 					<br />
 					<p>
-						Met een beroep op de Wet open overheid (hierna: Woo) verzoek ik, {value.userName},
-						{value.userJournalist ? " journalist, " : " "}
-						{value.userOnBehalfInput.length ? `werkzaam voor/in opdracht van ${value.userOnBehalfInput}, ` : ""}
-						{value.userCompanyNameInput.length ? `u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van
-						hieronder nader te specificeren informatie bij of onder u.
+						A base di e Landsverordening openbaarheid van bestuur (Lob) ami, {value.userName},
+						{value.userJournalist ? " periodista, " : " "}
+						{value.userOnBehalfInput.length ? `trahando den servicio di/ riba encargo di ${value.userOnBehalfInput}, ` : ""}
+						{value.userCompanyNameInput.length ? `den nomber di ${value.userCompanyNameInput}` : ""} ta pidi pa divulga informacion cu bo persona tin disponibel, 
+						of cu ta resorta bou di bo persona. Mas about ta specifica ki tipo di informacion e peticion ta trata.
 					</p>
 					<br />
 					<p>
-						Het onderwerp waarover ik informatie vraag, is: {value.subjectLong}.{" "}
-						{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
-						{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
+						E informacion cu mi ta pidi tin di ber cu e tema: {value.subjectLong}.{" "}
+						{value.subjectDateStart ? " >E peticion ta trata e periodo di " + value.subjectDateStart : ""}
+						{value.subjectDateEnd && value.subjectDateStart ? " te " + value.subjectDateEnd + "." : ""}
 					</p>
 					<br />
 
@@ -72,8 +72,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						<React.Fragment>
 							{value.subjectType === "specific" ? (
 								<React.Fragment>
-									<h3 className="tussenkopje">Informatie</h3>
-									<p>Concreet vraag ik u om (kopie van) de volgende documenten:</p>
+									<h3 className="tussenkopje">Informacion</h3>
+									<p>Concretamente mi ta pidi (copia di) e documentonan siguiente: </p>
 									<br />
 									{value.subjectTextObject.map(item => (
 										<p>
@@ -90,7 +90,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									value[15] ||
 									value[16] ||
 									value[17] ? (
-										<p>Bovendien ontvang ik graag (kopie van) de volgende onderliggende documenten:</p>
+										<p>Ademas lo kier ricibi (copia di) e siguiente documentonan relaciona:</p>
 									) : (
 										""
 									)}
@@ -98,10 +98,10 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 								</React.Fragment>
 							) : (
 								<React.Fragment>
-									<h3>Informatie</h3>
+									<h3>Informacion</h3>
 									<p>
-										Concreet vraag ik u om (kopie van) informatie met betrekking tot het onderwerp van dit verzoek
-										neergelegd in de volgende documenten{value.subjectLong}
+										Concretamente mi ta pidi (un copia di) informacion cu ta relaciona cu e tema riba cual e peticion ta dirigi su mes,
+										cual por wordo haya den e siguiente documentonan {value.subjectLong}
 										{value.subjectDateStart && " van " + value.subjectDateStart}
 										{value.subjectDateEnd && " tot " + value.subjectDateEnd}:
 									</p>
@@ -111,7 +111,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 
 							{value[10] && (
 								<p>{`- Vergaderstukken${
-									Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", waaronder: " : ""
+									Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", bou cual: " : ""
 								}${Object.keys(value.subjectMeeting)
 									.filter(key => value.subjectMeeting[key])
 									.map(key => DataCheckbox[key])
@@ -119,33 +119,33 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							)}
 
 							{value[12] && value[13] && (
-								<p>{`- Interne correspondentie en gespreksverslagen ${wordsInside &&
+								<p>{`- Corespondencia interno y anotacionnan di combersacion ${wordsInside &&
 									` (${wordsInside.join(", ")})`};`}</p>
 							)}
 
 							{value[12] && value[14] && (
-								<p>{`- Externe correspondentie en gespreksverslagen ${wordsOutside &&
+								<p>{`- Corespondencia externo y anotacionnan di combersacion ${wordsOutside &&
 									`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
-									` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}</p>
+									` entre bo persona su organisacion gubernamental y ${value.subjectLongOrganisation}`};`}</p>
 							)}
 
-							{value.subjectInside5 && <p>{"- Memo's, notities;"}</p>}
+							{value.subjectInside5 && <p>{"- Memonan, anotacionnan;"}</p>}
 
 							{value[11] && (
 								<p>
-									{`- Rapporten, adviezen${
-										value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
+									{`- Rapportnan, consehonan${
+										value.subjectRapportText ? " bou cual: " + value.subjectRapportText : ""
 									};  `}{" "}
 								</p>
 							)}
 
 							{value[15] && (
 								<p>{`- Financiële documenten${
-									value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
+									value.subjectFinancialText ? " bou cual: " + value.subjectFinancialText : ""
 								};  `}</p>
 							)}
 
-							{value[16] && <p>{"- Datasets;"} </p>}
+							{value[16] && <p>{"- Setnan di dato;"} </p>}
 							{value[17] && <p>{`-  ${value.subjectElseText}`} </p>}
 							<br />
 						</React.Fragment>
@@ -163,25 +163,24 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					))}
 				<div>
 					<p>
-						Graag ontvang ik schriftelijk (per brief of per e-mail) een bevestiging van de ontvangst van dit
-						Woo-verzoek.
+						Lo mi aprecia un reaccion por escrito (via carta of e-mail) cu mi peticion pa divulga informacion a base di e Lob a wordo ricibi. 
 						<br />
 						<br />
-						Mocht u belanghebbenden de gelegenheid gaan bieden tot het geven van zienswijzen dan ontvang ik daarvan
-						graag vooraf schriftelijk of per e-mail bericht.
+						Si bo persona lo kier haci uzo di e posibilidad pa pidi interesadonan nan opinion si mag haci e informacion publico of no, 
+						lo mi pidi pa informa mi di esaki di antemano.
 					</p>
 					<br />
 					<p>
-						U dient binnen de termijn van
-						{value.subjectMilieu ? " 4" : " 4"} weken een besluit te nemen op dit verzoek
+						Bo persona lo mester tuma un decision riba e peticion denter di 
+						{value.subjectMilieu ? " 3" : " 3"} siman.
 						{value.subjectMilieu
 							? ". Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen."
 							: "."}{" "}
-						Geen of onvoldoende antwoord op de vervaldatum zal aanleiding geven tot beroep bij de bestuursrechter wegens
-						het niet tijdig nemen van een beslissing.
+						Un falta di duna contesta, of un contesta deficiente lo nifica 
+						cu mi lo mester tuma accion legal mediante bay den obheccion y eventualmente den apelacion na corte. 
 					</p>
 					<br />
-					<p>Met vriendelijke groet, </p>
+					<p>Un saludo cordial, </p>
 					<br />
 					<p className="userSignature"></p>
 					<p>{value.userName}</p>

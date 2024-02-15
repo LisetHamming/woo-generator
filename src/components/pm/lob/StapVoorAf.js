@@ -5,13 +5,13 @@ import PopupButton from "../../popups/PopupButton";
 function StapVoorAf() {
 	return (
 		<div className="formLetter central">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Lob-generator</p>
 			<h2>Bon pa sa</h2>
 			<br />
 			<br />
 
 			<p>
-				E Woo-generator no ta traha pa wordo uza riba bo telefon. P'esey ta miho si bo uz'e riba bo computer of laptop.
+				E Lob-generator no ta traha pa wordo uza riba bo telefon. P'esey ta miho si bo uz'e riba bo computer of laptop.
 			</p>
 			<br />
 			<p>
@@ -19,7 +19,7 @@ function StapVoorAf() {
 				yena e informacion aki.
 			</p>
 			<span className="nieuwietje">
-				<p>Pa mas splicacion bo por primi riba e icononan cu e inan riba dje.</p>
+				<p>Pa mas splicacion bo por primi riba e icononan cu e i'nan riba dje.</p>
 				<PopupButton number="19" />
 				<br />
 			</span>

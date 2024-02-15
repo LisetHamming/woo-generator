@@ -1,3 +1,5 @@
+// deze pagina wordt niet gebruikt, althans het wordt niet gelaad. komt dat omdat alle van deze homepages worden geëxporteerd als HomepageWaarom()?
+
 import React from "react";
 import bg from "./../assets/icons/orange-single-line.png";
 
@@ -7,16 +9,19 @@ function HomepageWaarom() {
 			<div className="sectionBlock">
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-verzoek?
+					Bo kier sa kico bo gobierno ta haciendo? Skirbi bo prome peticion pa divulga informacion gubernamental den 3 paso!
 					</h1>
 					<p>
-						Iedereen heeft het recht om informatie neergelegd in documenten op te vragen bij de overheid. In de Wet open
-						overheid (de Woo) is geregeld waar zo’n verzoek aan moet voldoen. Een Wob-verzoek is cruciaal om toegang te
-						krijgen tot informatie die de overheid niet uit eigen beweging vrijgeeft. Kijk{" "}
-						<a href="https://wetten.overheid.nl/BWBR0005252/2018-07-28" className="plaintext" target="_blanc">
-							hier
-						</a>{" "}
-						voor de Wet open overheid.
+					Bon bini na e generador pa divulga informacion gubernamental! 
+					Bo t’aki pasobra bo kier pidi informacion cerca un instancia gubernamental den Reino Hulandes. 
+					</p>
+					<p>
+					Asina mes! Desde awo, e Woo-generator no ta solamente disponibel pa pidi informacion gubernamental na Hulanda, 
+					pero bo por haci un peticion na e gobiernonan tanto na e paisnan den Reino Aruba, Kòrsou y Sint Maarten (Lob) 
+					como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint Eustatius (Wob-BES).
+
+					Cu nos generador, entrega un peticion na cualkier pais of isla den Reino Hulandes ta masha facil mes.
+ 	
 					</p>
 				</div>
 				<div>

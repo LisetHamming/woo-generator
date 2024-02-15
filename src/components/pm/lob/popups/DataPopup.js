@@ -1,31 +1,31 @@
 const DataPopup = {
 	1: {
 		id: "1",
-		h1: "Ben je journalist?",
+		h1: "Bo ta periodista?",
 		p:
-			"Je hoeft geen journalist te zijn om een Woo-verzoek in te dienen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten."
+			"No ta necesario pa bo ta periodista pa entrega un peticion pa divulga documentonan di gobierno. Si a caso bo ta, lo ta bon pa menciona esey. E Corte Europeo di Derecho Humano (ECHR) a establece cu interes periodistico ora di divulga documentonan di gobierno ta trece cune consideracion special."
 	},
 	2: {
 		id: "2",
-		h1: "Doel van je verzoek?",
+		h1: "Kico ta e meta di bo peticion?",
 		p:
-			"Je hoeft niet uit te leggen welk belang je bij je verzoek hebt en de overheidsinstantie mag er zelfs niet naar vragen. Maar het kan overheidsinstanties helpen om beter te begrijpen welke documenten je zoekt, als ze weten wat het doel is van je verzoek. Overigens kan het soms juist verstandig zijn om niet te vertellen welk nieuws je op het spoor denkt te zijn. Weeg af wat slim is."
+			"Legalmente bo no ta rekiri di splica dicon bo ta haciendo bo peticion, y e instancia gubernamental no mag di puntra pakico bo ta pidiendo divulga documentonan. Alabes den cierto casonan e por yuda e instancia pa compronde mihor ki informacion bo ta buscando, pero esey lo vario di caso pa caso. Tin biaha ta hustamente miho pa no divulga ki noticia bo ta purbando haya. Bo mes tin cu determina kico ta miho strategicamente."
 	},
 	3: {
 		id: "3",
-		h1: "Namens een (media)organisatie",
+		h1: "Den nomber di un medio",
 		p:
-			"Je kan je Woo-verzoek namens een (media)organisatie indienen. Denk er dan aan dat je daartoe gemachtigd wordt en stuur die machtiging mee met je verzoek. Het verzoek kan afgewezen worden als je niet de juiste machtiging hebt. Ook gelden bij een beroep bij de bestuursrechter voor organisaties een hoger tarief dan voor personen, dat kan al snel honderdvijftig euro schelen. Aan de andere kant, als je voor een bekende (media)organisatie werkt kan dat gewicht in de schaal leggen bij de behandeling van je verzoek. Een tussenoplossing is om wel te benoemen voor welke (media)organisatie je werkt maar het verzoek niet officieel namens deze organisatie in te dienen. Vink dan de optie hieronder aan."
+			"Bo mag di entrega bo peticion den nomber di un medio. Si esey ta e caso, bo mester tin un carta di apoderacion (machtiging) cu bo ta manda cu e peticion. E peticion por wordo rechasa si bo no ta entrega e carta di apoderacion. Entrega un peticion den nomber di un medio lo por trece cune cu e peticion lo wordo mira mas seriamente, of hustamente e lo haci cu lo no tuma e peticion hopi amenamente. Un compromiso lo ta cu bo por menciona pa ki medio bo ta traha, sin mester entreg'e oficialmente den nomber di e medio. Si esey ta e caso, selecta e opcion abou."
 	},
 	4: {
 		id: "4",
-		h1: "Privacy en opslag",
+		h1: "Privacidad",
 		p:
-			"Alles wat je invult wordt via de browser die je gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet. Dit gebeurt door middel van een zogenaamde ‘functionele cookie’. Verder is op de website een Google Analytics cookie geïnstalleerd om een beeld te krijgen van het gebruik van de Woo-generator."
+			"Tur cos cu bo yena riba e sitio aki ta wordo warda localmente. Esey kiermen cu niun hende por wak e informacion cu bo ta yena, ni anos. Un cookie funcional ta facilita esaki. Banda di esaki, riba e sitio nos tin un cookie di Google Analytics instala pa nos haya un idea di cuanto uzo e Lob-generator ta haya."
 	},
 	5: {
 		id: "5",
-		h1: "Bij welke overheidsinstanties kan ik een Woo-verzoek indienen met de Woo-generator?",
+		h1: "Cerca cua instancianan gubernamental mi por entrega un peticion pa divulga documentonan cu e Lob-generator?",
 		p:
 			"Er zijn in Nederland tal van overheidsinstanties, ook wel ‘bestuursorganen’ genoemd: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Onder de Woo zijn per 1 mei 2022 nog een aantal instanties toegevoegd, waaronder de Eerste en Tweede Kamer, de Algemene Rekenkamer en de Nationale Ombudsman. Deze instanties vallen allemaal onder de Woo en zijn te vinden via de Woo-generator.",
 		p2:

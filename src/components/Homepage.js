@@ -420,20 +420,24 @@ const Homepage = props => {
 				<div className="homepageBlock">
 					<div className="blockText">
 						<h1>Write your own request</h1>
-						<p>Welkom bij de generator! </p>
-						<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
+						<p>Welcome to the FOI generator! </p>
+						<p> You are here because you want to request information from a government agency in the Kingdom of the Netherlands. </p>
 						<p>
-							Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
-							Wob-generator is daarom de Woo-generator geworden en we hebben meteen de gelegenheid aangegrepen om de
-							generator te verbeteren. Vanaf nu dien je dus een Woo-verzoek in als je overheidsinformatie wilt opvragen.
+						Yes! From now on there is not only the Woo generator for the Netherlands, but also a WOB-BES generator for Bonaire, St. Eustatius and Saba (BES islands) and a LOB generator for Curaçao, Aruba and St. Maarten (CAS islands). 
 						</p>
-						<p>Met de Woo-generator is dat een koud kunstje.</p>
+						<p>And that's not all: the generator is available in multiple languages.
+
+						
+						</p>
+						<p>With our generator, submitting a disclosure request in all parts of the Kingdom is a breeze. </p>
 
 						<ol>
-							<li>1. Je vult een aantal gegevens over jezelf in</li>
-							<li>2. Je selecteert een overheidsinstantie</li>
-							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
+							<li>1. You fill in a number of details about yourself </li>
+							<li>2. You select a government agency </li>
+							<li>3. You choose what kind of documents or information you are looking for… </li>
+							<li>4. …file it!</li>
 						</ol>
+						<p>Click on one of the buttons below to choose between the Netherlands, BES islands or the CAS islands. At the top right, you can change your preferred language at any time. </p>
 						<div className="nextButtons">
 							<Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
 								WOO EN
@@ -463,21 +467,25 @@ const Homepage = props => {
 				<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
 				<div className="homepageBlock">
 					<div className="blockText">
-						<h1>Write your own request</h1>
-						<p>Welkom bij de generator! </p>
-						<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
+						<h1>Bo kier sa kico bo gobierno ta haciendo? Skirbi bo prome peticion pa divulga informacion gubernamental den 3 paso!</h1>
+						<p>Bon bini na e generador pa divulga informacion gubernamental! </p>
+						<p> Bo t’aki pasobra bo kier pidi informacion cerca un instancia gubernamental den Reino Hulandes. </p>
 						<p>
-							Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
-							Wob-generator is daarom de Woo-generator geworden en we hebben meteen de gelegenheid aangegrepen om de
-							generator te verbeteren. Vanaf nu dien je dus een Woo-verzoek in als je overheidsinformatie wilt opvragen.
+						Asina mes! Desde awo, e Woo-generator no ta solamente disponibel pa pidi informacion gubernamental na Hulanda, 
+						pero bo por haci un peticion na e gobiernonan tanto na e paisnan den Reino Aruba, Kòrsou y Sint Maarten (Lob) 
+						como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint Eustatius (Wob-BES). 
 						</p>
-						<p>Met de Woo-generator is dat een koud kunstje.</p>
+						<p>Cu nos generador, entrega un peticion na cualkier pais of isla den Reino Hulandes ta masha facil mes.</p>
 
 						<ol>
-							<li>1. Je vult een aantal gegevens over jezelf in</li>
-							<li>2. Je selecteert een overheidsinstantie</li>
-							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
+							<li>1. Prome, bo ta yena informacion manera bo nomber y detayenan di contacto</li>
+							<li>2. Djey bo ta selecta un instancia gubernamental</li>
+							<li>3. Finalmente, bo ta scoge ki tipo di documento of informacion bo ta buscando</li>
+							<li>4. Ki bo ta warda? Bo ta cla pa entrega e peticion!</li>
 						</ol>
+						<p>Primi riba un di e botonnan aki bou pa scoge na unda bo kier pidi pa divulga informacion gubernamental, sea cu ta na Hulanda, Aruba, Kòrsou of Sint Maarten, 
+							of Boneiro, Statia of Saba.  Ariba na banda drechi bo por scoge pa cambia di idioma. </p>
+
 						<div className="nextButtons">
 							<Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
 								WOO EN
