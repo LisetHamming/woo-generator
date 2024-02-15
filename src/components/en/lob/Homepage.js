@@ -6,6 +6,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 	return (
 		<div>
 			<div className="selectLanguage">
+				<Link to="/NL/lob/">EN</Link>
 				<Link to="/EN/lob/">EN</Link>
 				<Link to="/PM/lob/">PM</Link>
 			</div>

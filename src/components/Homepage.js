@@ -40,6 +40,28 @@ import EnStapExtra from "./en/woo/StapExtra";
 import EnStapVoorAf from "./en/woo/StapVoorAf";
 import HomepageOvergenerator from "./HomepageOvergenerator";
 import HomepageWaarom from "./HomepageWaarom";
+import HomepageNLBES from "./nl/bes/Homepage";
+import HomepageOvergeneratorNLBES from "./nl/bes/HomepageOvergenerator";
+import HomepageWaaromNLBES from "./nl/bes/HomepageWaarom";
+import NLBesStap1 from "./nl/bes/Stap1";
+import NLBesStap2 from "./nl/bes/Stap2";
+import NLBesStap3 from "./nl/bes/Stap3";
+import NLBesStap3_2 from "./nl/bes/Stap3_2";
+import NLBesStap3_3 from "./nl/bes/Stap3_3";
+import NLBesStapEinde from "./nl/bes/StapEinde";
+import NLBesStapExtra from "./nl/bes/StapExtra";
+import NLBesStapVoorAf from "./nl/bes/StapVoorAf";
+import HomepageNLLOB from "./nl/lob/Homepage";
+import HomepageOvergeneratorNLLOB from "./nl/lob/HomepageOvergenerator";
+import HomepageWaaromNLLOB from "./nl/lob/HomepageWaarom";
+import NLLobStap1 from "./nl/lob/Stap1";
+import NLLobStap2 from "./nl/lob/Stap2";
+import NLLobStap3 from "./nl/lob/Stap3";
+import NLLobStap3_2 from "./nl/lob/Stap3_2";
+import NLLobStap3_3 from "./nl/lob/Stap3_3";
+import NLLobStapEinde from "./nl/lob/StapEinde";
+import NLLobStapExtra from "./nl/lob/StapExtra";
+import NLLobStapVoorAf from "./nl/lob/StapVoorAf";
 import HomepageNLWOO from "./nl/woo/Homepage";
 import HomepageOvergeneratorNLWOO from "./nl/woo/HomepageOvergenerator";
 import HomepageWaaromNLWOO from "./nl/woo/HomepageWaarom";
@@ -372,11 +394,11 @@ const Homepage = props => {
 							<Link to="/NL/woo/" onClick={e => clickHandlerSetLaw("Woo")}>
 								WOO
 							</Link>
-							<Link to="/EN/bes/" onClick={e => clickHandlerSetLaw("Wob BES")}>
-								WOB-BES (EN)
+							<Link to="/NL/bes/" onClick={e => clickHandlerSetLaw("Wob BES")}>
+								WOB-BES
 							</Link>
-							<Link to="/EN/lob/" onClick={e => clickHandlerSetLaw("Lob")}>
-								LOB (EN)
+							<Link to="/NL/lob/" onClick={e => clickHandlerSetLaw("Lob")}>
+								LOB
 							</Link>
 						</div>
 					</div>
@@ -384,9 +406,7 @@ const Homepage = props => {
 						<img src={machine} alt="" />
 					</div>
 				</div>
-
 				<HomepageWaarom />
-
 				<HomepageOvergenerator />
 			</Route>
 			<Route exact path="/EN/">
@@ -430,12 +450,7 @@ const Homepage = props => {
 						<img src={machine} alt="" />
 					</div>
 				</div>
-
 				<HomepageWaarom />
-
-				<div className="extra_content"></div>
-
-				<div className="extra_content"></div>
 				<HomepageOvergenerator />
 			</Route>
 			<Route exact path="/PM/">
@@ -479,12 +494,7 @@ const Homepage = props => {
 						<img src={machine} alt="" />
 					</div>
 				</div>
-
 				<HomepageWaarom />
-
-				<div className="extra_content"></div>
-
-				<div className="extra_content"></div>
 				<HomepageOvergenerator />
 			</Route>
 			<Route exact path="/PM/LOB/">
@@ -493,7 +503,6 @@ const Homepage = props => {
 				<HomepageWaaromPMLOB />
 
 				<div className="extra_content"></div>
-
 				<div className="extra_content"></div>
 				<HomepageOvergeneratorPMLOB />
 			</Route>
@@ -503,7 +512,6 @@ const Homepage = props => {
 				<HomepageWaaromPMBES />
 
 				<div className="extra_content"></div>
-
 				<div className="extra_content"></div>
 				<HomepageOvergeneratorPMBES />
 			</Route>
@@ -513,7 +521,6 @@ const Homepage = props => {
 				<HomepageWaaromENLOB />
 
 				<div className="extra_content"></div>
-
 				<div className="extra_content"></div>
 				<HomepageOvergeneratorENLOB />
 			</Route>
@@ -523,7 +530,6 @@ const Homepage = props => {
 				<HomepageWaaromENWOO />
 
 				<div className="extra_content"></div>
-
 				<div className="extra_content"></div>
 				<HomepageOvergeneratorENWOO />
 			</Route>
@@ -534,7 +540,6 @@ const Homepage = props => {
 				<HomepageWaaromENBES />
 
 				<div className="extra_content"></div>
-
 				<div className="extra_content"></div>
 				<HomepageOvergeneratorENBES />
 			</Route>
@@ -544,9 +549,26 @@ const Homepage = props => {
 				<HomepageWaaromNLWOO />
 
 				<div className="extra_content"></div>
-
 				<div className="extra_content"></div>
 				<HomepageOvergeneratorNLWOO />
+			</Route>
+			<Route exact path="/NL/BES/">
+				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<HomepageNLBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageWaaromNLBES />
+
+				<div className="extra_content"></div>
+				<div className="extra_content"></div>
+				<HomepageOvergeneratorNLBES />
+			</Route>
+			<Route exact path="/NL/LOB/">
+				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				<HomepageNLLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageWaaromNLLOB />
+
+				<div className="extra_content"></div>
+				<div className="extra_content"></div>
+				<HomepageOvergeneratorNLLOB />
 			</Route>
 			<Route path="/NL/woo/StapVoorAf">
 				<StapVoorAf />
@@ -631,6 +653,175 @@ const Homepage = props => {
 					exportHTMLDoc={exportHTMLDoc}
 				/>
 			</Route>
+
+			<Route path="/NL/lob/StapVoorAf">
+				<NLLobStapVoorAf />
+			</Route>
+			<Route path="/NL/lob/Stap1">
+				<NLLobStap1
+					value={value}
+					wet={wet}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerCompanyName={changeHandlerCompanyName}
+					changeHandlerOnBehalf={changeHandlerOnBehalf}
+					filteredDataText={filteredDataText}
+					getCurrentDate={getCurrentDate}
+				/>
+			</Route>
+			<Route path="/NL/lob/Stap2">
+				<NLLobStap2
+					value={value}
+					wet={wet}
+					changeHandlerUser={changeHandlerUser}
+					authorities={props.authorities}
+					setAuthority={setAuthority}
+					clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}
+					filteredDataText={filteredDataText}
+					getCurrentDate={getCurrentDate}
+					handleKeypathChange={handleKeypathChange}
+				/>
+			</Route>
+			<Route path="/NL/lob/Stap3">
+				<NLLobStap3
+					getCurrentDate={getCurrentDate}
+					value={value}
+					clickHandlerStep={clickHandlerStep}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+				/>
+			</Route>
+
+			<Route path="/NL/lob/Stap3_2">
+				<NLLobStap3_2
+					getCurrentDate={getCurrentDate}
+					value={value}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+					changeHandlerUser={changeHandlerUser}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+				/>
+			</Route>
+			<Route path="/NL/lob/Stap3_3">
+				<NLLobStap3_3
+					clickHandlerEmptySubjectText={clickHandlerEmptySubjectText}
+					clickHandlerSubjectText={clickHandlerSubjectText}
+					getCurrentDate={getCurrentDate}
+					value={value}
+					clickHandlerStep={clickHandlerStep}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerRadio={changeHandlerRadio}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+					changeHandlerSubjectMeeting={changeHandlerSubjectMeeting}
+					clickHandlerClearPeriodDate={clickHandlerClearPeriodDate}
+				/>
+			</Route>
+			<Route path="/NL/lob/StapExtra">
+				<NLLobStapExtra
+					getCurrentDate={getCurrentDate}
+					value={value}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					filteredDataText={filteredDataText}
+				/>
+			</Route>
+			<Route path="/NL/lob/StapEinde">
+				<NLLobStapEinde
+					resetState={resetState}
+					getCurrentDate={getCurrentDate}
+					value={value}
+					filteredDataText={filteredDataText}
+					exportHTMLDoc={exportHTMLDoc}
+				/>
+			</Route>
+
+			<Route path="/NL/bes/StapVoorAf">
+				<NLBesStapVoorAf />
+			</Route>
+			<Route path="/NL/bes/Stap1">
+				<NLBesStap1
+					value={value}
+					wet={wet}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerCompanyName={changeHandlerCompanyName}
+					changeHandlerOnBehalf={changeHandlerOnBehalf}
+					filteredDataText={filteredDataText}
+					getCurrentDate={getCurrentDate}
+				/>
+			</Route>
+			<Route path="/NL/bes/Stap2">
+				<NLBesStap2
+					value={value}
+					wet={wet}
+					changeHandlerUser={changeHandlerUser}
+					authorities={props.authorities}
+					setAuthority={setAuthority}
+					clickHandlerClearSelectedAuthority={clickHandlerClearSelectedAuthority}
+					filteredDataText={filteredDataText}
+					getCurrentDate={getCurrentDate}
+					handleKeypathChange={handleKeypathChange}
+				/>
+			</Route>
+			<Route path="/NL/bes/Stap3">
+				<NLBesStap3
+					getCurrentDate={getCurrentDate}
+					value={value}
+					clickHandlerStep={clickHandlerStep}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+				/>
+			</Route>
+
+			<Route path="/NL/bes/Stap3_2">
+				<NLBesStap3_2
+					getCurrentDate={getCurrentDate}
+					value={value}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+					changeHandlerUser={changeHandlerUser}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+				/>
+			</Route>
+			<Route path="/NL/bes/Stap3_3">
+				<NLBesStap3_3
+					clickHandlerEmptySubjectText={clickHandlerEmptySubjectText}
+					clickHandlerSubjectText={clickHandlerSubjectText}
+					getCurrentDate={getCurrentDate}
+					value={value}
+					clickHandlerStep={clickHandlerStep}
+					filteredDataText={filteredDataText}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					changeHandlerUser={changeHandlerUser}
+					changeHandlerRadio={changeHandlerRadio}
+					changeHandlerSubjectType={changeHandlerSubjectType}
+					changeHandlerSubjectMeeting={changeHandlerSubjectMeeting}
+					clickHandlerClearPeriodDate={clickHandlerClearPeriodDate}
+				/>
+			</Route>
+			<Route path="/NL/bes/StapExtra">
+				<NLBesStapExtra
+					getCurrentDate={getCurrentDate}
+					value={value}
+					changeHandlerCheckbox={changeHandlerCheckbox}
+					filteredDataText={filteredDataText}
+				/>
+			</Route>
+			<Route path="/NL/bes/StapEinde">
+				<NLBesStapEinde
+					resetState={resetState}
+					getCurrentDate={getCurrentDate}
+					value={value}
+					filteredDataText={filteredDataText}
+					exportHTMLDoc={exportHTMLDoc}
+				/>
+			</Route>
+
 			<Route path="/EN/woo/StapVoorAf">
 				<EnStapVoorAf />
 			</Route>

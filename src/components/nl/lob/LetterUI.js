@@ -33,20 +33,20 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 			<div id="letterUI" style={{ fontFamily: "Arial" }}>
 				<div className="adressAuthority">
 					{value.selectedAuthority && (
-						<div>
-							<p>{value.selectedAuthority.Bestuursorgaan}</p>
-							<p>{value.selectedAuthority.Postbus}</p>
-							<p>
+						<div className="letterUIAddress">
+							<p className="scribble">{value.selectedAuthority.Bestuursorgaan}</p>
+							<p className="scribble">{value.selectedAuthority.Postbus}</p>
+							<p className="scribble">
 								{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}
 							</p>
-							<p>{value.selectedAuthority.Land}</p>
+							<p className="scribble">{value.selectedAuthority.Land}</p>
 							<br />
 						</div>
 					)}
 				</div>
 				<div>
 					<p>
-						{value.userCityName}, {getCurrentDate()}
+						<b className="scribble">{value.userCityName}</b>, {getCurrentDate()}
 					</p>
 					<br />
 					<p>Betreft: indiening Woo-verzoek</p>
@@ -54,15 +54,16 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<p>Zeer geachte heer/mevrouw,</p>
 					<br />
 					<p>
-						Met een beroep op de Wet open overheid (hierna: Woo) verzoek ik, {value.userName},
-						{value.userJournalist ? " journalist, " : " "}
+						Met een beroep op de Wet open overheid (hierna: Woo) verzoek ik,{" "}
+						<b className="scribble">{value.userName}</b>,
+						{value.userJournalist ? <b className="scribble"> journalist,</b> : " "}
 						{value.userOnBehalfInput.length ? `werkzaam voor/in opdracht van ${value.userOnBehalfInput}, ` : ""}
-						{value.userCompanyNameInput.length ? `u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van
+						{value.userCompanyNameInput.length ? ` u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van
 						hieronder nader te specificeren informatie bij of onder u.
 					</p>
 					<br />
 					<p>
-						Het onderwerp waarover ik informatie vraag, is: {value.subjectLong}.{" "}
+						Het onderwerp waarover ik informatie vraag, is: <b className="scribble">{value.subjectLong}</b>.{" "}
 						{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
 						{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
 					</p>
@@ -76,7 +77,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									<p>Concreet vraag ik u om (kopie van) de volgende documenten:</p>
 									<br />
 									{value.subjectTextObject.map(item => (
-										<p>
+										<p className="scribble">
 											- {item.subjectText}
 											{item.subjectDate ? ` (${item.subjectDate})` : ""}
 										</p>
@@ -101,9 +102,13 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									<h3>Informatie</h3>
 									<p>
 										Concreet vraag ik u om (kopie van) informatie met betrekking tot het onderwerp van dit verzoek
-										neergelegd in de volgende documenten{value.subjectLong}
-										{value.subjectDateStart && " van " + value.subjectDateStart}
-										{value.subjectDateEnd && " tot " + value.subjectDateEnd}:
+										neergelegd in de volgende documenten{" "}
+										<b className="scribble">
+											{value.subjectLong}
+											{value.subjectDateStart && " van " + value.subjectDateStart}
+											{value.subjectDateEnd && " tot " + value.subjectDateEnd}
+										</b>
+										:
 									</p>
 								</React.Fragment>
 							)}
@@ -183,17 +188,19 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<br />
 					<p>Met vriendelijke groet, </p>
 					<br />
-					<p className="userSignature"></p>
-					<p>{value.userName}</p>
-					<p>{value.userCompanyName}</p>
-					<p>
-						{value.userAdress} {value.userAdressNumber}
-					</p>
-					<p>
-						{value.userZipcode} {value.userCityName}
-					</p>
-					<p>{value.userEmail}</p>
-					<p>{value.userPhoneNumber}</p>
+					<div className="letterUIAddress">
+						<p className="userSignature"></p>
+						<p className="scribble">{value.userName}</p>
+						<p className="scribble">{value.userCompanyName}</p>
+						<p className="scribble">
+							{value.userAdress} {value.userAdressNumber}
+						</p>
+						<p className="scribble">
+							{value.userZipcode} {value.userCityName}
+						</p>
+						<p className="scribble">{value.userEmail}</p>
+						<p className="scribble">{value.userPhoneNumber}</p>
+					</div>
 				</div>
 			</div>
 		</div>

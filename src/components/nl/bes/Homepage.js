@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import machine from "../../../assets/images/WOB_KNOP.png";
+import machine from "../../../assets/images/WOO_KNOP.png";
 
 function Homepage({ clickHandlerSetLaw, wet }) {
 	return (
@@ -11,9 +11,10 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 				<Link to="/PM/bes/">PAP</Link>
 			</div>
 			<div className="homepageBlock">
+				{/* <img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" /> */}
 				<div className="blockText">
 					<p className="logo">Woo-generator</p>
-					<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
+					<h1>Schrijf in 3 simpele stappen je eigen Wob-Bes-verzoek</h1>
 					<p>Welkom bij de Woo-generator! </p>
 					<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
 					<p>
@@ -28,17 +29,17 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						<li>2. Je selecteert een overheidsinstantie</li>
 						<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 					</ol>
-
 					<div className="nextButtons">
-						{/* <Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
-							WOO EN
-						</Link> */}
-						<Link to="/PM/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
-							WOB_BES
+						<Link to="/NL/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
+							Start je bes-verzoek
 						</Link>
-						{/* <Link to="/PM/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
-							LOB PM
-						</Link> */}
+						{/* <Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
+						WOB-BES EN
+					</Link>
+
+					<Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
+						LOB EN
+					</Link> */}
 					</div>
 				</div>
 				<div>

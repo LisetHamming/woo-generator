@@ -1,4 +1,6 @@
 import React from "react";
+import spoon from "../../../assets/logo/SpoonLogo.png";
+import vvoj from "../../../assets/logo_vvoj.png";
 import DataCheckbox from "../../DataCheckbox";
 
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
@@ -20,7 +22,13 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	].filter(Boolean);
 	return (
 		<div className="letterComplete">
-			<h1>Je Woo-verzoek in wording:</h1>
+			<div className="letterUIHeading">
+				<h1>Je Woo-verzoek in wording:</h1>
+				<div className="letterUILogos">
+					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
+					<img src={spoon} alt="logo Expertisecentrum SPOON" />
+				</div>
+			</div>
 			<br />
 			<div id="letterUI" style={{ fontFamily: "Arial" }}>
 				<div className="adressAuthority">
