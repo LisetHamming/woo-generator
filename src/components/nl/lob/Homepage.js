@@ -31,7 +31,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 					</ol>
 					<div className="nextButtons">
 						<Link to="/NL/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
-							Start je woo-verzoek
+							Start je lob-verzoek
 						</Link>
 						{/* <Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
 						WOB-BES EN
