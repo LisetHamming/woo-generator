@@ -315,10 +315,14 @@ p.header {
 	width: 60%;
 }
 
-.sectionBlock2 .spanLinks {
+.sectionBlock2 .footerLogos {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+.footerLogos img:first-child {
+	height: 100px;
 }
 
 .sectionBlock2 .spanLinks img {
