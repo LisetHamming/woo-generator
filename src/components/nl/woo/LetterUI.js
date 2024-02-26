@@ -57,9 +57,22 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						Met een beroep op de Wet open overheid (hierna: Woo) verzoek ik,{" "}
 						<b className="scribble">{value.userName}</b>,
 						{value.userJournalist ? <b className="scribble"> journalist,</b> : " "}
-						{value.userOnBehalfInput.length ? `werkzaam voor/in opdracht van ${value.userOnBehalfInput}, ` : ""}
-						{value.userCompanyNameInput.length ? ` u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van
-						hieronder nader te specificeren informatie bij of onder u.
+						{value.userOnBehalfInput.length ? (
+							<>
+								werkzaam voor/in opdracht van <span className="scribble">{value.userOnBehalfInput}</span>,{" "}
+							</>
+						) : (
+							""
+						)}
+						{value.userCompanyNameInput.length ? (
+							<>
+								{" "}
+								u namens <span className="scribble">{value.userCompanyNameInput}</span>
+							</>
+						) : (
+							""
+						)}{" "}
+						om openbaarmaking van hieronder nader te specificeren informatie bij of onder u.
 					</p>
 					<br />
 					<p>

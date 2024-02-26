@@ -1,17 +1,17 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import TagManager from "react-gtm-module";
+// import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import PopupButton from "../../popups/PopupButton";
 import SetSelectedAuthorityManual from "../../SetSelectedAuthorityManual";
 import LetterUI from "./LetterUI";
-const tagManagerArgs = {
-	dataLayer: {
-		page: "Stap2"
-	},
-	dataLayerName: "PageDataLayer"
-};
+// const tagManagerArgs = {
+// 	dataLayer: {
+// 		page: "Stap2"
+// 	},
+// 	dataLayerName: "PageDataLayer"
+// };
 function Stap2({
 	value,
 	setAuthority,
@@ -25,8 +25,11 @@ function Stap2({
 	const [AuthorityComplete, setAuthorityComplete] = useState(false);
 	const [searchValue, setSearchValue] = useState("");
 	const [errors, setErrors] = useState([]);
+	const [selectedLand, setSelectedLand] = useState("");
 
-	TagManager.dataLayer(tagManagerArgs);
+	const landenBes = ["Bonaire", "Saba", "Sint Eustatius"];
+
+	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
@@ -84,17 +87,24 @@ function Stap2({
 							placeholder="Zoek op naam of plaats"
 							onChange={event => setSearchValue(event.target.value)}
 						/>
-						{console.log(searchValue)}
+						<div className="landenFilter">
+							{landenBes.map(item => (
+								<button key={item} onClick={e => setSelectedLand(item)}>
+									{item}
+								</button>
+							))}
+						</div>
 
 						<ul id="authorities">
 							{authorities ? (
 								authorities
 									.filter(
 										item =>
-											item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
-											item.Plaats.toLowerCase().includes(searchValue.toLowerCase())
+											(item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
+												item.Plaats.toLowerCase().includes(searchValue.toLowerCase())) &&
+											item.Wet.includes("Wob BES") &&
+											item.Land.includes(selectedLand)
 									)
-									.filter(item => item.Land.includes("Nederland"))
 									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))
 									.map(item => (
 										<li key={item.id}>

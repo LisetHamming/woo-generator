@@ -1,17 +1,17 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import TagManager from "react-gtm-module";
+// import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import PopupButton from "../../popups/PopupButton";
 import SetSelectedAuthorityManual from "../../SetSelectedAuthorityManual";
 import LetterUI from "./LetterUI";
-const tagManagerArgs = {
-	dataLayer: {
-		page: "Stap2"
-	},
-	dataLayerName: "PageDataLayer"
-};
+// const tagManagerArgs = {
+// 	dataLayer: {
+// 		page: "Stap2"
+// 	},
+// 	dataLayerName: "PageDataLayer"
+// };
 function Stap2({
 	value,
 	setAuthority,
@@ -26,7 +26,7 @@ function Stap2({
 	const [searchValue, setSearchValue] = useState("");
 	const [errors, setErrors] = useState([]);
 
-	TagManager.dataLayer(tagManagerArgs);
+	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>

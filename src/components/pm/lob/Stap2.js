@@ -1,17 +1,17 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import TagManager from "react-gtm-module";
+// import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import PopupButton from "../../popups/PopupButton";
 import SetSelectedAuthorityManual from "../../SetSelectedAuthorityManual";
 import LetterUI from "./LetterUI";
-const tagManagerArgs = {
-	dataLayer: {
-		page: "Stap2"
-	},
-	dataLayerName: "PageDataLayer"
-};
+// const tagManagerArgs = {
+// 	dataLayer: {
+// 		page: "Stap2"
+// 	},
+// 	dataLayerName: "PageDataLayer"
+// };
 function Stap2({
 	value,
 	setAuthority,
@@ -29,7 +29,7 @@ function Stap2({
 
 	const landenLob = ["Aruba", "Curaçao", "Sint Maarten"];
 
-	TagManager.dataLayer(tagManagerArgs);
+	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
@@ -88,7 +88,7 @@ function Stap2({
 						/>
 						<div className="landenFilter">
 							{landenLob.map(item => (
-								<button key={item} onClick={e => setSelectedLand(item)}>
+								<button key={item} type="button" onClick={e => setSelectedLand(item)}>
 									{item}
 								</button>
 							))}
@@ -98,11 +98,11 @@ function Stap2({
 								authorities
 									.filter(
 										item =>
-											item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
-											item.Plaats.toLowerCase().includes(searchValue.toLowerCase())
+											(item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
+												item.Plaats.toLowerCase().includes(searchValue.toLowerCase())) &&
+											item.Wet.includes("Lob") &&
+											item.Land.includes(selectedLand)
 									)
-									.filter(item => item.Wet.includes("Lob"))
-									.filter(item => item.Land.includes(selectedLand))
 									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))
 									.map(item => (
 										<li key={item.id}>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TagManager from "react-gtm-module";
+// import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import PopupButton from "../../popups/PopupButton";
 import LetterUI from "./LetterUI";
@@ -15,13 +15,13 @@ function Stap3({
 }) {
 	//  error state
 	const [errors, setErrors] = useState([]);
-	const tagManagerArgs = {
-		dataLayer: {
-			page: "Stap3"
-		},
-		dataLayerName: "PageDataLayer"
-	};
-	TagManager.dataLayer(tagManagerArgs);
+	// const tagManagerArgs = {
+	// 	dataLayer: {
+	// 		page: "Stap3"
+	// 	},
+	// 	dataLayerName: "PageDataLayer"
+	// };
+	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>

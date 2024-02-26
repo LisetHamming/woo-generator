@@ -216,7 +216,11 @@ p.header {
 	padding-right: 10px;
 }
 #letterUI .scribble {
-	background-color: rgba(243, 230, 0, 0.7);
+	background-image: url("/letterUISingleLine.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-bottom: 0;
 }
 #letterUI .letterUIAddress p {
 	margin-bottom: 2px;
@@ -448,14 +452,14 @@ form {
 .buttonStyle2 {
 	border: 1px dashed grey;
 	color: black;
-	background-color: #ffdb62;
+	background-color: rgba(235, 94, 157, 0.7);
 	padding: 0.8em;
 	margin-right: 16px;
 	margin-bottom: 20px;
 	margin-top: 10px;
 	cursor: pointer;
 	text-decoration: underline;
-	font-size: bold;
+	font-weight: bold;
 	font-size: 16px;
 	width: 100%;
 }

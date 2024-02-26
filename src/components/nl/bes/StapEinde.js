@@ -1,16 +1,16 @@
 import React from "react";
-import TagManager from "react-gtm-module";
+// import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import LetterUI from "./LetterUI";
-const tagManagerArgs = {
-	dataLayer: {
-		page: "Print-brief"
-	},
-	dataLayerName: "PageDataLayer"
-};
+// const tagManagerArgs = {
+// 	dataLayer: {
+// 		page: "Print-brief"
+// 	},
+// 	dataLayerName: "PageDataLayer"
+// };
 
 function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, resetState }) {
-	TagManager.dataLayer(tagManagerArgs);
+	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
@@ -23,7 +23,13 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<br />
 			</p>
 			<p className="extraPadding">
-				<button className="buttonStyle2" onClick={exportHTMLDoc}>
+				<button
+					className="buttonStyle2"
+					onClick={() => {
+						window.dataLayer.push({ event: "print bes NL brief" });
+						exportHTMLDoc();
+					}}
+				>
 					Opslaan als DOC
 				</button>
 			</p>

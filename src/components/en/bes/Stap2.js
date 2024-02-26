@@ -99,11 +99,11 @@ function Stap2({
 								authorities
 									.filter(
 										item =>
-											item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
-											item.Plaats.toLowerCase().includes(searchValue.toLowerCase())
+											(item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
+												item.Plaats.toLowerCase().includes(searchValue.toLowerCase())) &&
+											item.Wet.includes("Wob BES") &&
+											item.Land.includes(selectedLand)
 									)
-									.filter(item => item.Wet.includes("Wob BES"))
-									.filter(item => item.Land.includes(selectedLand))
 									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))
 									.map(item => (
 										<li key={item.id}>
