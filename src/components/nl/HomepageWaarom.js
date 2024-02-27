@@ -7,30 +7,28 @@ function HomepageWaarom() {
 			<div className="sectionBlock">
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						What is a FOI request and why would I submit one?
+						Waarom een verzoek om openbaarmaking?
 					</h1>
 					<p>
-						Everyone has the right to request information contained in documents from the government. Every part of the
-						Kingdom has a law that regulates what such a request must comply with. The government does not make a lot of
-						information public on its own.
+						Iedereen heeft het recht om informatie neergelegd in documenten op te vragen bij de overheid. Elk deel van
+						het Koninkrijk heeft een wet die regelt waar zo’n verzoek aan moet voldoen. Veel informatie maakt de
+						overheid niet uit zichzelf openbaar.
 					</p>
 					<p>
-						Submitting a request for government information is then crucial to hold the government accountable for the
-						consequences of policies, detect corruption or discover squandering of money.
+						{" "}
+						Een verzoek om overheidsinformatie indienen is dan cruciaal om de overheid ter verantwoording te roepen voor
+						de gevolgen van beleid, corruptie op te sporen of verkwisting van geld te ontdekken.
 					</p>
 				</div>
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Why a FOI generator?
+						Waarom een openbaarheidsgenerator?
 					</h1>
 					<p>
-						Quite a few journalists, activists, researchers and citizens think that filing a FOI request is a mysterious
-						legal trick that only a few insiders know how to do.
-					</p>
-					<p>
-						That's an exaggeration, but there's some truth to it: there are quite a few points you should pay attention
-						to in order to really get the information you're looking for. With our generator, you don't have to worry
-						about missing something. So let's get started!
+						Nogal wat journalisten, activisten, onderzoekers en maatschappelijk betrokken burgers denken dat een
+						openbaarmakingsverzoek indienen een mysterieuze juridische truc is. Dat is overdreven, maar er zit een kern
+						van waarheid in: er zijn best een paar punten waarop je moet letten om echt de informatie de bemachtigen die
+						je zoekt. Met onze generator hoef je niet bang te zijn dat je iets over het hoofd ziet. Aan de slag dus!
 					</p>
 				</div>
 			</div>

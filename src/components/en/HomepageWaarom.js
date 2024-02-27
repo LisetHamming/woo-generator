@@ -7,28 +7,24 @@ function HomepageWaarom() {
 			<div className="sectionBlock">
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-verzoek?
+						What is a FOI request and why would I submit one?
 					</h1>
 					<p>
-						Iedereen heeft het recht om informatie neergelegd in documenten op te vragen bij de overheid. In de Wet open
-						overheid (de Woo) is geregeld waar zo’n verzoek aan moet voldoen. Een Wob-verzoek is cruciaal om toegang te
-						krijgen tot informatie die de overheid niet uit eigen beweging vrijgeeft. Kijk{" "}
-						<a href="https://wetten.overheid.nl/BWBR0005252/2018-07-28" className="plaintext" target="_blanc">
-							hier
-						</a>{" "}
-						voor de Wet open overheid.
+						Everyone has the right to request information contained in documents from the government. Every part of the
+						Kingdom has a law that regulates what such a request must comply with. The government does not make a lot of
+						information public on its own. Submitting a request for government information is then crucial to hold the
+						government accountable for the consequences of policies, detect corruption or discover squandering of money.
 					</p>
 				</div>
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Hoe doe ik een Woo-verzoek?
+						Why a FOI generator?
 					</h1>
 					<p>
-						Het opstellen van een Woo-verzoek is niet moeilijk, maar het verzoek moet wel aan een aantal voorwaarden
-						voldoen. Met de Woo-generator helpen we je een goed en geldig Woo-verzoek op te stellen. Kies welke
-						documenten je wilt opvragen en bij welke overheidsinstantie. Hiervoor hebben we de eerste eenvoudig
-						doorzoekbare lijst met wobbare overheidsinstanties in Nederland samengesteld. Klaar! Je kunt nu je
-						Woo-verzoek opslaan en versturen via de post of digitaal verzenden.
+						Quite a few journalists, activists, researchers and citizens think that filing a FOI request is a mysterious
+						legal trick that only a few insiders know how to do. That's an exaggeration, but there's some truth to it:
+						there are quite a few points you should pay attention to in order to really get the information you're
+						looking for. With our generator, you don't have to worry about missing something. So let's get started!
 					</p>
 				</div>
 			</div>

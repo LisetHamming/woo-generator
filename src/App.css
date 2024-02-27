@@ -117,10 +117,15 @@ h1 {
 	padding-top: 10vh;
 	width: 40vw;
 }
-.logo_SPOON {
+.homepageLogos {
+	display: flex;
+	align-items: center;
+	padding: 20px 200px;
+}
+.homepageLogos img {
 	width: 300px;
 	display: block;
-	margin: 20px 240px;
+	padding-right: 40px;
 }
 
 .blockText {
@@ -215,7 +220,8 @@ p.header {
 	width: 100px;
 	padding-right: 10px;
 }
-#letterUI .scribble {
+#letterUI .scribble,
+.sectionWaarom .scribble {
 	background-image: url("/letterUISingleLine.png");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;

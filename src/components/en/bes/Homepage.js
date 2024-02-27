@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import machine from "../../../assets/images/WOB_KNOP.png";
+import gifLogo from "../../../assets/logo/Spoon_Logo_animatie_BlackonWhite_Gif.gif";
+import vvojLogo from "../../../assets/logo/VVOJ_Logo_RGB.png";
 
 function Homepage({ clickHandlerSetLaw, wet }) {
 	return (
@@ -8,6 +10,10 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 			<div className="selectLanguage">
 				<Link to="/EN/bes/">EN</Link>
 				<Link to="/PM/bes/">PAP</Link>
+			</div>
+			<div className="homepageLogos">
+				<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
+				<img src={vvojLogo} className="logo_VVOJ" alt="logo vvoj" />
 			</div>
 			<div className="homepageBlock">
 				<div className="blockText">
