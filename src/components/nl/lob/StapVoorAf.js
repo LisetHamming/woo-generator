@@ -11,7 +11,7 @@ function StapVoorAf() {
 			<br />
 
 			<p>
-				De Woo-generator is niet gemaakt om op je telefoon te gebruiken. Je kunt ‘m dus het beste op je computer of
+				De Lob-generator is niet gemaakt om op je telefoon te gebruiken. Je kunt ‘m dus het beste op je computer of
 				laptop openen.
 			</p>
 			<br />
@@ -33,7 +33,7 @@ function StapVoorAf() {
 				gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet.
 			</p>
 			<br />
-			<p>Als je alle vragen hebt beantwoord, kun je je concept Woo-verzoek opslaan als DOC en de tekst aanpassen.</p>
+			<p>Als je alle vragen hebt beantwoord, kun je je concept Lob-verzoek opslaan als DOC en de tekst aanpassen.</p>
 			<br />
 			<p className="extraPadding">
 				Wil je iets net even anders of wil je bijvoorbeeld een extra toelichting op je verzoek toevoegen? Dan kun je in

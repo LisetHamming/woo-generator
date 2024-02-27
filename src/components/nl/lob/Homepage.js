@@ -19,16 +19,19 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 			<div className="homepageBlock">
 				{/* <img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" /> */}
 				<div className="blockText">
-					<p className="logo">Woo-generator</p>
-					<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
-					<p>Welkom bij de Woo-generator! </p>
-					<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
+					<p className="logo">Lob-generator</p>
+					<h1>Schrijf in 3 simpele stappen je eigen Lob-verzoek</h1>
+					<p>Welkom bij de Lob-generator! </p>
+					<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie van Aruba, Curaçao of Sint Maarten.</p>
 					<p>
-						Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
-						Wob-generator is daarom de Woo-generator geworden en we hebben meteen de gelegenheid aangegrepen om de
-						generator te verbeteren. Vanaf nu dien je dus een Woo-verzoek in als je overheidsinformatie wilt opvragen.
+						Op elk van deze (ei)landen geldt er een eigen versie van de Landsverordening openbaarheid van bestuur (Lob).  
+						De Lob is inhoudelijk grotendeels op de oude Wet openbaarheid van bestuur (Wob) afgestemd.  <br></br>
+						<br></br>
+						Let op! Omdat je Nederlands hebt geselecteerd, wordt je brief in het Nederlands gegenereerd.
+						Als je je Lob-verzoek in het Engels of Papiaments wil laten opstellen, selecteer een van die talen boven. 
+						Anders kan je hier je Lob-verzoek in het Nederlands maken.
 					</p>
-					<p>Met de Woo-generator is dat een koud kunstje.</p>
+					<p>Met de Lob-generator is het maken van je verzoek makkelijk.</p>
 
 					<ol>
 						<li>1. Je vult een aantal gegevens over jezelf in</li>
