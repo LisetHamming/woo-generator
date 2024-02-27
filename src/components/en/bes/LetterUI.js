@@ -23,7 +23,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	return (
 		<div className="letterComplete">
 			<div className="letterUIHeading">
-				<h1>Je Woo-verzoek in wording:</h1>
+				<h1>Your Wob BES request in the making:</h1>
 				<div className="letterUILogos">
 					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
