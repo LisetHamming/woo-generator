@@ -456,7 +456,7 @@ const Homepage = props => {
 							<li>4. …file it!</li>
 						</ol>
 						<p>
-							Click on one of the buttons below to choose between the Netherlands, BES islands or the CAS islands. At
+							Click on one of the buttons below to choose between the Netherlands, BES islands (Wob BES) or the CAS islands (Lob). At
 							the top right, you can change your preferred language at any time.{" "}
 						</p>
 						<div className="nextButtons">
