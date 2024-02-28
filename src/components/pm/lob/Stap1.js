@@ -23,7 +23,7 @@ function Stap1({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Lob-generator</p>
 
 			<h2>Paso 1: Yena bo informacion</h2>
 			<p>
@@ -79,7 +79,7 @@ function Stap1({
 				)}
 				<span>
 					<label className="container nieuwietje">
-						Mi ta traha pa un organisacion
+						Mi ta traha pa un organisacion (of medio)
 						<input
 							id="userOnBehalf"
 							value="userOnBehalf"

@@ -49,22 +49,20 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						{value.userCityName}, {getCurrentDate()}
 					</p>
 					<br />
-					<p>Betreft: indiening Woo-verzoek</p>
+					<p>Subject: submission of Wob BES request</p>
 					<br />
-					<p>Zeer geachte heer/mevrouw,</p>
+					<p>Very Distinguished Sir/Madam,</p>
 					<br />
 					<p>
-						Met een beroep op de Wet open overheid (hierna: Woo) verzoek ik, {value.userName},
-						{value.userJournalist ? " journalist, " : " "}
-						{value.userOnBehalfInput.length ? `werkzaam voor/in opdracht van ${value.userOnBehalfInput}, ` : ""}
-						{value.userCompanyNameInput.length ? `u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van
-						hieronder nader te specificeren informatie bij of onder u.
+						Invoking the Open Government Act BES ("Wob BES"), I ({value.userName}) hereby request, {value.userJournalist ? " as a journalist, " : " "}
+						{value.userOnBehalfInput.length ? `working for/on behalf of ${value.userOnBehalfInput}, ` : ""}
+						{value.userCompanyNameInput.length ? `on behalf of ${value.userCompanyNameInput}` : ""} to disclose information in your possession or residing under you to be specified below.
 					</p>
 					<br />
 					<p>
-						Het onderwerp waarover ik informatie vraag, is: {value.subjectLong}.{" "}
-						{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
-						{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
+						The topic on which I am requesting information is: {value.subjectLong}.{" "}
+						{value.subjectDateStart ? " The request covers the period between " + value.subjectDateStart : ""}
+						{value.subjectDateEnd && value.subjectDateStart ? " until " + value.subjectDateEnd + "." : ""}
 					</p>
 					<br />
 
@@ -72,8 +70,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						<React.Fragment>
 							{value.subjectType === "specific" ? (
 								<React.Fragment>
-									<h3 className="tussenkopje">Informatie</h3>
-									<p>Concreet vraag ik u om (kopie van) de volgende documenten:</p>
+									<h3 className="tussenkopje">The requested information</h3>
+									<p>Specifically, I request (copies of) the following documents:</p>
 									<br />
 									{value.subjectTextObject.map(item => (
 										<p>
@@ -90,7 +88,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 									value[15] ||
 									value[16] ||
 									value[17] ? (
-										<p>Bovendien ontvang ik graag (kopie van) de volgende onderliggende documenten:</p>
+										<p>In addition, I would like to receive (copies of) the following underlying documents:</p>
 									) : (
 										""
 									)}
@@ -98,20 +96,19 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 								</React.Fragment>
 							) : (
 								<React.Fragment>
-									<h3>Informatie</h3>
+									<h3>Information</h3>
 									<p>
-										Concreet vraag ik u om (kopie van) informatie met betrekking tot het onderwerp van dit verzoek
-										neergelegd in de volgende documenten{value.subjectLong}
-										{value.subjectDateStart && " van " + value.subjectDateStart}
-										{value.subjectDateEnd && " tot " + value.subjectDateEnd}:
+									Specifically, I request (copy of) information relating to the subject matter of this request that lay in the following documents{value.subjectLong}
+										{value.subjectDateStart && " from " + value.subjectDateStart}
+										{value.subjectDateEnd && " until " + value.subjectDateEnd}:
 									</p>
 								</React.Fragment>
 							)}
 							<br />
 
 							{value[10] && (
-								<p>{`- Vergaderstukken${
-									Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", waaronder: " : ""
+								<p>{`- Meeting documents${
+									Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", including: " : ""
 								}${Object.keys(value.subjectMeeting)
 									.filter(key => value.subjectMeeting[key])
 									.map(key => DataCheckbox[key])
@@ -119,21 +116,21 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							)}
 
 							{value[12] && value[13] && (
-								<p>{`- Interne correspondentie en gespreksverslagen ${wordsInside &&
+								<p>{`- Internal correspondence and interview reports ${wordsInside &&
 									` (${wordsInside.join(", ")})`};`}</p>
 							)}
 
 							{value[12] && value[14] && (
-								<p>{`- Externe correspondentie en gespreksverslagen ${wordsOutside &&
+								<p>{`- External correspondence and interview reports ${wordsOutside &&
 									`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
-									` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}</p>
+									` between your government agency and ${value.subjectLongOrganisation}`};`}</p>
 							)}
 
-							{value.subjectInside5 && <p>{"- Memo's, notities;"}</p>}
+							{value.subjectInside5 && <p>{"- Memos, notes, memoranda;"}</p>}
 
 							{value[11] && (
 								<p>
-									{`- Rapporten, adviezen${
+									{`- Reports, advice${
 										value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
 									};  `}{" "}
 								</p>
@@ -155,7 +152,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					filteredDataText.map(item => (
 						<div key={item.id}>
 							<div>
-								<h3 className="tussenkopje">{item.title}</h3>
+								<h3 className="header">{item.title}</h3>
 								<p>{item.sentence}</p>
 								<br />
 							</div>
@@ -163,25 +160,24 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					))}
 				<div>
 					<p>
-						Graag ontvang ik schriftelijk (per brief of per e-mail) een bevestiging van de ontvangst van dit
-						Woo-verzoek.
+					Please acknowledge in writing (by letter or email) receipt of this Wob BES request.
 						<br />
 						<br />
-						Mocht u belanghebbenden de gelegenheid gaan bieden tot het geven van zienswijzen dan ontvang ik daarvan
-						graag vooraf schriftelijk of per e-mail bericht.
+						Should you offer interested parties the opportunity to give their views on the disclosure, I would like to be notified
+						in advance by writing or by e-mail.
 					</p>
 					<br />
 					<p>
-						U dient binnen de termijn van
-						{value.subjectMilieu ? " 4" : " 4"} weken een besluit te nemen op dit verzoek
+						You must decide on my request within 
+						{value.subjectMilieu ? " 3" : " 3"} weeks after having received it.
 						{value.subjectMilieu
-							? ". Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen."
+							? " Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen."
 							: "."}{" "}
-						Geen of onvoldoende antwoord op de vervaldatum zal aanleiding geven tot beroep bij de bestuursrechter wegens
-						het niet tijdig nemen van een beslissing.
+						No response or insufficient response by the due date will give rise to an appeal to the administrative law judge for
+						failure to make a timely decision.
 					</p>
 					<br />
-					<p>Met vriendelijke groet, </p>
+					<p>Sincerely, </p>
 					<br />
 					<p className="userSignature"></p>
 					<p>{value.userName}</p>

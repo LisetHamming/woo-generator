@@ -13,12 +13,12 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
-			<h2 className="hidePrint">Laatste check!</h2>
+			<p className="logo">Wob BES generator</p>
+			<h2 className="hidePrint">Final check!</h2>
 			<p className="extraPadding hidePrint">Woo-verzoek met onderwerp: {value.subjectLong}</p>
 			<p className="hidePrint">
-				Hoewel de Woo-generator met de grootste zorgvuldigheid is ontwikkeld, is het opstellen van een goed Woo-verzoek
-				mensenwerk en maatwerk. Bovendien blijf je zelf verantwoordelijk voor wat je naar het bestuursorgaan stuurt.
+				Although the Wob BES generator has been developed with the utmost care, preparing a good Wob BES request is
+				human work, so your mileage may vary. Moreover, you remain responsible for what you send to the governing body.
 				<br />
 				<br />
 			</p>
@@ -30,39 +30,38 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 						exportHTMLDoc();
 					}}
 				>
-					Opslaan als DOC
+					Save as .Doc file
 				</button>
 			</p>
 			<p>
-				Je concept Woo-verzoek
+				Your draft Wob BES request
 				<br />
-				Check of de zinnen in je verzoek goed lopen. Denk ook na of er nog specifieke informatie nodig is om aan je
-				verzoek toe te voegen. Deze aanvullingen en wijzigingen kun je zelf aanbrengen nadat je je Woo-verzoek hebt
-				opgeslagen. Ben je tevreden, druk de brief dan af en zet je handtekening eronder. Bij een Woo-verzoek per brief
-				is dat verplicht. Vergeet niet vóór het versturen per post een kopie van je ondertekende brief te maken.
+				Check that the sentences in your request flow well. Also think about whether any specific information is needed to add to your
+				request. You can make these additions and changes yourself after you have downloaded the .doc file. If you are satisfied, print the letter and sign it. For a Wob BES request by letter
+				this is mandatory. Don't forget to make a copy of your signed letter before sending it by mail.
 				<br />
 				<br />
-				Digitaal versturen?
+				Sending digitally?
 				<br />
-				Onder de Woo moeten overheidsinstanties Woo-verzoeken die digitaal zijn ingediend accepteren. Maar
-				overheidsinstanties mogen wel aangeven via wélke digitale weg een Woo-verzoek dient te worden ingediend,
-				bijvoorbeeld via een specifiek e-mailadres of een online Woo-formulier. Check dit dus altijd van tevoren! Heeft
-				de overheidsinstantie een Woo-formulier op haar website gezet, dan kun je de (eventueel ondertekende) brief ook
-				uploaden of de tekst kopiëren en inplakken.
+				The Wob BES does not say anything about filing a request digitally, or via email. 
+				So, you are not guaranteed that your request will be accepted if you send it via email. 
+				However, some governments will indeed have a prescribed way to file the request digitally. 
+				Make sure to check this beforehand. 
 			</p>
 			<br />
 			<div>
 				<p>
-					Vragen en opmerkingen: woo-generator@vvoj.org
+					Questions and comments: woo-generator@vvoj.org
 					<br />
-					De Woo-generator is met liefde en plezier gemaakt en we zullen doorgaan met de ontwikkeling. Laat het ons
-					daarom weten als je iets mist of liever anders ziet. Maar we horen het ook graag als je er blij mee bent!{" "}
+					The Woo generator was made with love and joy and we will continue to develop it. 
+					So please let us know if you are missing something or you prefer that we do something differently. 
+					Of course we would also love to hear if you are happy with it!{" "}
 				</p>
 				<br />
 				<p>
 					{" "}
-					Anderen vertellen over de Woo-generator?
-					<br /> #woogenerator{" "}
+					Tell others about the WoB BES generator?
+					<br /> #wobbesgenerator{" "}
 				</p>
 				<br />
 				<br />
@@ -70,7 +69,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<br />
 			<Link to="/EN/bes/StapExtra">Terug</Link>
 			<Link to="/EN/" onClick={resetState}>
-				Alles wissen
+				Clear everything
 			</Link>
 
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />

@@ -9,30 +9,37 @@ function HomepageWaarom() {
 			<div className="sectionBlock">
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Bo kier sa kico bo gobierno ta haciendo? Skirbi bo prome peticion pa divulga informacion gubernamental den 3
-						paso!
+						Pakico un peticion pa divulga informacion gubernamental?
 					</h1>
 					<p>
-						Bon bini na e generador pa divulga informacion gubernamental! Bo t’aki pasobra bo kier pidi informacion
-						cerca un instancia gubernamental den Reino Hulandes.
-					</p>
+						Tur hende tin e derecho pa pidi un instancia gubernamental pa divulga documentonan.
+						Cada pais den Reino tin un ley cu ta regla kico gobierno mester divulga y con tin cu anda cu transparencia. 
+						Maske e ley ta bisa cu gobierno tin cu activamente divulga hopi informacion publico, 
+						realidad ta mustra cu gobiernonan no ta divulga mucho riba nan mes. 
+						Asina informacion ta keda scondi sin cu e publico sa cu e informacion ta existi. 
+					</p> <br></br>
 					<p>
-						Asina mes! Desde awo, e Woo-generator no ta solamente disponibel pa pidi informacion gubernamental na
-						Hulanda, pero bo por haci un peticion na e gobiernonan tanto na e paisnan den Reino Aruba, Kòrsou y Sint
-						Maarten (Lob) como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint Eustatius (Wob-BES). Cu nos
-						generador, entrega un peticion na cualkier pais of isla den Reino Hulandes ta masha facil mes.
+					P’esey ta crucial pa pueblo ta activo den exigi transparencia di gobierno. 
+					Un peticion pa divulga informacion ta un herment cu publico por uza activamente pa exigi gobierno 
+					pa rindi cuenta riba kico su maneho ta haci, pa combati corupcion of pa haya sa unda placa publico ta disparce. </p> <br></br>
+					<p>
+					Pero con? A base di un peticion pa divulga informacion gubernamental, gobierno mester divulga emailnan, rapportnan, hasta video y potret y tur sorto di informacion
+					cu ta warda den documentonan y cu gobierno tin. 
+					</p><br></br> 
+					<p> Hasta bo mag di pidi e mensahenan di WhatsApp di ministernan a base di e ley. Kiermen bomboshi tin den pidi gobierno rindi cuenta!
 					</p>
 				</div>
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Hoe doe ik een Woo-verzoek?
+						Con mi ta haci un peticion pa divulga informacion gubernamental?
 					</h1>
 					<p>
-						Het opstellen van een Woo-verzoek is niet moeilijk, maar het verzoek moet wel aan een aantal voorwaarden
-						voldoen. Met de Woo-generator helpen we je een goed en geldig Woo-verzoek op te stellen. Kies welke
-						documenten je wilt opvragen en bij welke overheidsinstantie. Hiervoor hebben we de eerste eenvoudig
-						doorzoekbare lijst met wobbare overheidsinstanties in Nederland samengesteld. Klaar! Je kunt nu je
-						Woo-verzoek opslaan en versturen via de post of digitaal verzenden.
+						Skirbi un peticion pa divulga documentonan no ta dificil, pero e peticion mester cumpli cu un par di rekisito.
+						Cu e website aki nos ta yuda bo skirbi un peticion valido di manera facil y lihe. 
+						
+						Scoge ki documentonan of informaicon bo kier haya y cerca cua instancia gubernamental.
+						Hasta pa haya e instancianan ta facil, pasobra nos a traha un lista di nan. 
+						Kiermen cla pa bay! Bay door di tur paso y djey bo ta cla pa manda bo peticion via e-mail of fisicamente.
 					</p>
 				</div>
 			</div>

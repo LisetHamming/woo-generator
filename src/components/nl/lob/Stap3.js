@@ -24,7 +24,7 @@ function Stap3({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Lob-generator</p>
 
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<p>
@@ -45,7 +45,7 @@ function Stap3({
 				<p>
 					{" "}
 					Let op: je kunt alleen vragen naar stukken of gegevens die verband houden met een publieke taak van de
-					overhedsinstanties waar je je Woo-verzoek indient.
+					overhedsinstanties waar je je Lob-verzoek indient.
 					<PopupButton number="18" />
 				</p>
 			</span>

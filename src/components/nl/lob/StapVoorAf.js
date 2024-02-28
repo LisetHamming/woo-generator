@@ -5,7 +5,7 @@ import PopupButton from "../../popups/PopupButton";
 function StapVoorAf() {
 	return (
 		<div className="formLetter central">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Lob-generator</p>
 			<h2>Goed om te weten</h2>
 			<br />
 			<br />
@@ -28,7 +28,7 @@ function StapVoorAf() {
 			</span>
 
 			<p>
-				Je antwoorden worden automatisch verwerkt en verschijnen vervolgens in het concept Woo-verzoek aan de
+				Je antwoorden worden automatisch verwerkt en verschijnen vervolgens in het concept Lob-verzoek aan de
 				rechterkant. Zo kun je steeds zien of de tekst goed loopt. Alles wat je invult wordt via de browser die je
 				gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet.
 			</p>
@@ -37,7 +37,7 @@ function StapVoorAf() {
 			<br />
 			<p className="extraPadding">
 				Wil je iets net even anders of wil je bijvoorbeeld een extra toelichting op je verzoek toevoegen? Dan kun je in
-				het opgeslagen Word-document je Woo-verzoek nog aanpassen.
+				het opgeslagen Word-document je Lob-verzoek nog aanpassen.
 			</p>
 			<Link to="/">Terug</Link>
 

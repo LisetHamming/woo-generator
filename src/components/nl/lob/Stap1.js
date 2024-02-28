@@ -23,7 +23,7 @@ function Stap1({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Lob-generator</p>
 
 			<h2>Stap 1: Over jezelf</h2>
 			<p>
@@ -49,7 +49,7 @@ function Stap1({
 
 				<span>
 					<label className="container nieuwietje">
-						Ik dien dit Woo-verzoek in namens een (media)organisatie
+						Ik dien dit Lob-verzoek in namens een (media)organisatie
 						<input
 							id="userCompany"
 							value="userCompanyName"

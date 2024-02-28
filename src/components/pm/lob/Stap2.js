@@ -32,7 +32,7 @@ function Stap2({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Lob-generator</p>
 
 			<h2>Paso 2: Cerca cua instancia gubernamental bo kier pidi documentonan?</h2>
 			<span className="nieuwietje">
@@ -52,7 +52,7 @@ function Stap2({
 			<form>
 				{value.selectedAuthority && !showManualAuthority ? (
 					<div className="selectedAuthority">
-						<p>Controla e instancia unda bo kier pidi informacion:</p>
+						<p>Check e instancia unda bo kier pidi informacion:</p>
 						<h3>{value.selectedAuthority.Bestuursorgaan}</h3>
 						<p>{value.selectedAuthority.Website}</p>
 						<br />
@@ -125,7 +125,7 @@ function Stap2({
 						<div>
 							<br />
 							<span>
-								<p>E instancia corecto no ta disponibel, pero bo sa unda bo kier haci e peticion?</p>
+								<p>E instancia corecto no ta disponibel, pero bo mes tin e informacion di contacto unda bo kier haci e peticion?</p>
 							</span>
 							<button
 								className="buttonStyle"

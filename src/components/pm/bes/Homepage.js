@@ -18,21 +18,20 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 			</div>
 			<div className="homepageBlock">
 				<div className="blockText">
-					<p className="logo">Woo-generator</p>
-					<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
-					<p>Welkom bij de Woo-generator! </p>
-					<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
+				<p className="logo">Wob BES generator</p>
+					<h1>Bo kier sa kico bo gobierno ta haciendo? Skirbi bo prome peticion pa divulga informacion gubernamental den 3 paso!</h1>
+					<p>Bon bini na e Wob BES generator!</p>
+					<p> Bo t’aki pasobra bo kier pidi informacion cerca un instancia gubernamental riba <b>Boneiro.</b> </p>
 					<p>
-						Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
-						Wob-generator is daarom de Woo-generator geworden en we hebben meteen de gelegenheid aangegrepen om de
-						generator te verbeteren. Vanaf nu dien je dus een Woo-verzoek in als je overheidsinformatie wilt opvragen.
-					</p>
-					<p>Met de Woo-generator is dat een koud kunstje.</p>
-
+						Tene cuenta cu na Saba y Statia e gobiernonan no ta tuma peticion den Papiamento. 
+						Si bo ta pensa di haci un peticion na un isla cu no ta Boneiro, cambia pa Ingles of Hulandes ariba. 
+						Esaki ta pasobra bo peticion ta wordo traha den e idioma cu bo ta scoge di lesa e website.</p> <br></br>
+						<p>Si bo ta cla pa traha bo peticion na Boneiro, nos ta mustra bo con:</p>
 					<ol>
-						<li>1. Je vult een aantal gegevens over jezelf in</li>
-						<li>2. Je selecteert een overheidsinstantie</li>
-						<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
+						<li>1. Prome, bo ta yena informacion manera bo nomber y detayenan di contacto</li>
+						<li>2. Djey bo ta selecta un instancia gubernamental</li>
+						<li>3. Finalmente, bo ta scoge ki tipo di documento of informacion bo ta buscando</li>
+						<li>4. Ki bo ta warda? Bo ta cla pa entrega e peticion!</li>
 					</ol>
 
 					<div className="nextButtons">
@@ -40,7 +39,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 							WOO EN
 						</Link> */}
 						<Link to="/PM/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
-							WOB_BES
+							Wob BES
 						</Link>
 						{/* <Link to="/PM/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
 							LOB PM

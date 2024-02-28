@@ -32,27 +32,27 @@ function Stap2({
 	TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Wob BES generator</p>
 
-			<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
+			<h2>Step 2: Which government agency do you want to ask for information?</h2>
 			<span className="nieuwietje">
 				<p>
-					Kies hier bij welke overheidsinstantie je je Woo-verzoek wilt indienen.
+				Choose which government agency you want to submit your Wob BES request to here.
 					<PopupButton number="5" />
 				</p>
 			</span>
 
 			{errors.includes("selectedAuthority") && (
 				<p id="smallError">
-					Kies een instantie aan wie je je verzoek wilt sturen. Staat de instantie die je zoekt er niet bij? Vul deze
-					dan handmatig in.
+					Choose an agency to whom you want to send your request. Is the agency you are looking for not listed? Then
+					fill the details manually in.
 				</p>
 			)}
 
 			<form>
 				{value.selectedAuthority && !showManualAuthority ? (
 					<div className="selectedAuthority">
-						<p>Controleer de instantie waar je het Woo-verzoek indient:</p>
+						<p>Double check the agency to which you are submitting the Wob BES request:</p>
 						<h3>{value.selectedAuthority.Bestuursorgaan}</h3>
 						<p>{value.selectedAuthority.Website}</p>
 						<br />
@@ -72,7 +72,7 @@ function Stap2({
 									clickHandlerClearSelectedAuthority(value.selectedAuthority);
 								}}
 							>
-								Zoek opnieuw
+								Search again
 							</button>
 						</div>
 					</div>
@@ -83,7 +83,7 @@ function Stap2({
 							id="searchBarAuthority"
 							type="search"
 							value={searchValue}
-							placeholder="Zoek op naam of plaats"
+							placeholder="Search by name or place"
 							onChange={event => setSearchValue(event.target.value)}
 						/>
 						<div className="landenFilter">
@@ -120,8 +120,7 @@ function Stap2({
 									))
 							) : (
 								<li>
-									Er gaat iets niet goed bij het ophalen van de informatie. Als je zelf gegevens hebt, kan je die
-									invullen.
+									Oops! We couldn't find what you were looking for. If you have the details at hand, please fill them out manually here.
 								</li>
 							)}
 						</ul>
@@ -129,7 +128,7 @@ function Stap2({
 						<div>
 							<br />
 							<span>
-								<p>Staat de juiste instantie er niet tussen, maar beschik je zelf wel over de juiste gegevens?</p>
+								<p>Is the right agency not listed, but do you have the contact details yourself?</p>
 							</span>
 							<button
 								className="buttonStyle"
@@ -147,7 +146,7 @@ function Stap2({
 									setShowManualAuthority(true);
 								}}
 							>
-								Vul dan hier de gegevens in
+								Then fill in the details here
 							</button>
 						</div>
 					</>
@@ -167,17 +166,17 @@ function Stap2({
 
 			<span className="nieuwietje">
 				<p>
-					Hoe kies ik de juiste overheidsinstantie?
+					How do I choose the right government agency?
 					<PopupButton number="6" />
 				</p>
 			</span>
 			<span className="lastOfType nieuwietje">
 				<p>
-					Aan wie adresseer ik mijn verzoek?
+					To who do I address my request?
 					<PopupButton number="7" />
 				</p>
 			</span>
-			<Link to="/EN/bes/Stap1">Terug</Link>
+			<Link to="/EN/bes/Stap1">Go back</Link>
 
 			<Link
 				to="/EN/bes/Stap3"
@@ -194,7 +193,7 @@ function Stap2({
 					}
 				}}*/
 			>
-				Stap 3
+				Go to Step 3
 			</Link>
 			<LetterUI
 				className="letterText"

@@ -27,29 +27,28 @@ function Stap3_3({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Wob BES generator</p>
 
 			<h2>
-				Stap 3:
+				Step 3:
 				{value.subjectType === "specific"
-					? " Welke informatie zoek je? (specifieke documenten)"
-					: " Welke informatie zoek je? (alle documenten)"}
+					? " What information are you looking for? (specific documents)"
+					: " What information are you looking for? (all documents)"}
 			</h2>
 			{value.subjectType === "specific" && (
 				<p>
-					Omschrijf zo nauwkeurig mogelijk de titel, auteur en datum van het document waar je naar op zoek bent en voeg
-					deze toe. Je kunt meerdere documenten toevoegen.
-				</p>
+					Describe as accurately as possible the title, author and date of the document you are looking for and add
+					them. You can add multiple documents.</p>
 			)}
 			{value.subjectType === "all" && (
 				<div>
 					<p>
-						Kies hier het type documenten dat je over het onderwerp wilt ontvangen. Vervolgens kun je je verzoek verder
-						afbakenen door aan te geven in welke periode je geïnteresseerd bent.
+						Here, choose the type of documents you would like to receive on the subject. Then you can further
+						delineate your request by indicating the time period you are interested in.
 					</p>
 					<br />
 					<span>
-						<p>Waarom zou ik aangeven in welke periode en welke documenttypen ik geïnteresseerd ben?</p>
+						<p>Why would I indicate the time period and document types I am interested in?</p>
 						<PopupButton number="14" />
 					</span>
 				</div>
@@ -60,7 +59,7 @@ function Stap3_3({
 					<div>
 						<span className="objectInput">
 							<label>
-								Titel en auteur
+								Title and author
 								<input
 									size="20"
 									id="subjectSpecificText"
@@ -72,7 +71,7 @@ function Stap3_3({
 							</label>
 
 							<label>
-								Datum <br />
+								Date <br />
 								<input
 									id="subjectSpecificDate"
 									value={value.subjectSpecificDate}
@@ -82,7 +81,7 @@ function Stap3_3({
 								<br />
 							</label>
 							<button type="button" className="buttonStyle" onClick={clickHandlerSubjectText}>
-								Voeg toe
+								Add more
 							</button>
 						</span>
 						{value.subjectTextObject.map((item, index) => (
@@ -91,7 +90,7 @@ function Stap3_3({
 									{item.subjectText} {item.subjectDate && item.subjectDate}
 								</p>
 								<button type="button" className="buttonStyle" value={index} onClick={clickHandlerEmptySubjectText}>
-									Verwijder
+									Remove
 								</button>
 							</span>
 						))}
@@ -99,12 +98,12 @@ function Stap3_3({
 				)}
 				{value.subjectType === "specific" && (
 					<div>
-						<h1>Onderliggende stukken</h1>
-						<p>Als je ook onderliggende stukken wil, vink dan aan welke.</p>
+						<h1>Underlying documents</h1>
+						<p>If you also want underlying documents, check which ones.</p>
 						<br />
 						<span className="nieuwietje">
 							<p>
-								Denk goed na welke documenten, zoals e-mails, wel of niet nuttig zijn.
+								Think carefully about which documents, such as e-mails, are useful or not.
 								<PopupButton number="14" />
 							</p>
 						</span>
@@ -122,7 +121,7 @@ function Stap3_3({
 								name="checkText"
 								value="10"
 							/>
-							Vergaderstukken
+							Meeting documents
 							<br />
 							<div className="checkmark"></div>{" "}
 						</label>
@@ -138,7 +137,7 @@ function Stap3_3({
 										checked={value.subjectMeeting.Uitnodigingen}
 										name="Uitnodigingen"
 									/>
-									Uitnodigingen, presentielijsten
+									Invitations, attendance lists
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -152,7 +151,7 @@ function Stap3_3({
 										checked={value.subjectMeeting.Agenda}
 										name="Agenda"
 									/>
-									Agenda’s
+									Agendas
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -166,7 +165,7 @@ function Stap3_3({
 										checked={value.subjectMeeting.IngekomenStukken}
 										name="IngekomenStukken"
 									/>
-									Ingekomen stukken
+									Incoming documents
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -181,7 +180,7 @@ function Stap3_3({
 										checked={value.subjectMeeting.Besluiten}
 										name="Besluiten"
 									/>
-									Besluiten, besluitenlijsten en notulen
+									Decisions, decision lists and meeting minutes
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -199,7 +198,7 @@ function Stap3_3({
 								name="checkText"
 								value="12"
 							/>
-							Correspondentie, gespreksverslagen
+							Correspondence, interview/call records
 							<br />
 							<div className="checkmark"></div>
 						</label>
@@ -215,7 +214,7 @@ function Stap3_3({
 									name="checkText"
 									value="13"
 								/>
-								Binnen de overheidsinstantie
+								Within the government agency
 								<br />
 								<div className="checkmark"></div>{" "}
 							</label>
@@ -234,7 +233,7 @@ function Stap3_3({
 										name="checkText"
 										type="checkbox"
 									/>
-									Brieven
+									Letters
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -250,7 +249,7 @@ function Stap3_3({
 										name="checkText"
 										type="checkbox"
 									/>
-									E-mails
+									Emails
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -268,7 +267,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Alle e-mails, inclusief bijlagen
+											All emails, including attachments
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
@@ -284,7 +283,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Alleen de e-mails die een bijlage hebben, inclusief die bijlagen
+											Only the emails that have an attachment, including those attachments
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
@@ -302,7 +301,7 @@ function Stap3_3({
 										name="checkText"
 										type="checkbox"
 									/>
-									Berichten via andere communicatiekanalen dan e-mail (zoals sms, WhatsApp, Signal, Slack)
+									Messages through communication channels other than email (such as SMS, WhatsApp, Signal, Slack)
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -321,7 +320,7 @@ function Stap3_3({
 									name="checkText"
 									value="14"
 								/>{" "}
-								Met andere personen of organisaties
+								With other persons or organizations
 								<br />
 								<div className="checkmark"></div>{" "}
 							</label>
@@ -340,7 +339,7 @@ function Stap3_3({
 										name="checkText"
 										type="checkbox"
 									/>
-									Brieven
+									Letters
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -356,7 +355,7 @@ function Stap3_3({
 										name="checkText"
 										type="checkbox"
 									/>
-									E-mails
+									Emails
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -374,7 +373,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Alle e-mails, inclusief bijlagen
+											All emails, including attachments
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
@@ -390,7 +389,7 @@ function Stap3_3({
 												onChange={changeHandlerSubjectType}
 												type="radio"
 											/>
-											Alleen de e-mails die een bijlage hebben, inclusief die bijlagen
+											Only the emails that have an attachment, including those attachments
 											<br />
 											<div className="checkmark"></div>{" "}
 										</label>
@@ -408,7 +407,7 @@ function Stap3_3({
 										name="checkText"
 										type="checkbox"
 									/>
-									Berichten via andere communicatiekanalen dan e-mail (zoals sms, WhatsApp, Signal, Slack)
+									Messages through communication channels other than e-mail (such as SMS, WhatsApp, Signal, Slack)
 									<br />
 									<div className="checkmark"></div>{" "}
 								</label>
@@ -420,7 +419,7 @@ function Stap3_3({
 						<div>
 							<span className="subsubForm">
 								<label>
-									Organisaties of personen (indien bekend)
+								Organizations or individuals (if known)
 									<input
 										size="40"
 										id="subjectLongOrganisation"
@@ -445,7 +444,7 @@ function Stap3_3({
 								name="checkText"
 								type="checkbox"
 							/>
-							Nota's, memo's, notities
+							Notes, memos, memorandums
 							<br />
 							<div className="checkmark"></div>{" "}
 						</label>
@@ -460,7 +459,7 @@ function Stap3_3({
 								name="checkText"
 								value="11"
 							/>
-							Rapporten, adviezen
+							Reports, advices
 							<br />
 							<div className="checkmark"></div>{" "}
 						</label>
@@ -469,14 +468,14 @@ function Stap3_3({
 						<div>
 							<span className="subForm">
 								<label>
-									Benoem de rapporten, adviezen (indien bekend)
+									Name the reports or advices (if known)
 									<input
 										size="50"
 										id="subjectRapportText"
 										value={value.subjectRapportText}
 										onChange={changeHandlerUser}
 										type="text"
-										placeholder="Bijvoorbeeld project- en programmaplannen"
+										placeholder="For example, project and program plans"
 									/>
 									<br />
 								</label>
@@ -493,7 +492,7 @@ function Stap3_3({
 								name="checkText"
 								value="15"
 							/>{" "}
-							Financiële documenten
+							Financial documents
 							<br />
 							<div className="checkmark"></div>
 						</label>
@@ -502,7 +501,7 @@ function Stap3_3({
 						<div>
 							<span className="subForm">
 								<label>
-									Benoem de financiële documenten (indien bekend)
+									Name the financial documents (if known)
 									<input
 										size="50"
 										id="subjectFinancialText"
@@ -541,7 +540,7 @@ function Stap3_3({
 								name="checkText"
 								value="17"
 							/>{" "}
-							Anders
+							Other
 							<br />
 							<div className="checkmark"></div>
 						</label>
@@ -550,14 +549,14 @@ function Stap3_3({
 						<div>
 							<span className="subForm">
 								<label>
-									Andere documentsoorten
+									Other types of documents
 									<input
 										size="50"
 										id="subjectElseText"
 										value={value.subjectElseText}
 										onChange={changeHandlerUser}
 										type="text"
-										placeholder="Bijvoorbeeld: proces-verbaal of boetes"
+										placeholder="For example: court records or fines"
 									/>
 									<br />
 								</label>
@@ -566,17 +565,17 @@ function Stap3_3({
 					)}
 					{value.subjectType === "all" && (
 						<div>
-							<h1>Periode kiezen</h1>
+							<h1>Select period</h1>
 							<span>
 								<p>
-									Selecteer hier de periode waarbinnen je denkt dat er voor jou interessante informatie beschikbaar is.
+									Select here the period during which you think the information of interest to you comes from.
 								</p>
 								<PopupButton number="17" />
 							</span>
 							<br />
 							<span className="objectInput">
 								<label>
-									Van <br />
+									From <br />
 									<input
 										value={value.subjectDateStart}
 										onChange={changeHandlerUser}
@@ -587,7 +586,7 @@ function Stap3_3({
 								</label>
 
 								<label>
-									Tot <br />
+									Until <br />
 									<input
 										value={value.subjectDateEnd}
 										onChange={changeHandlerUser}
@@ -602,9 +601,9 @@ function Stap3_3({
 				</div>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/EN/bes/Stap3">Terug</Link>
+			<Link to="/EN/bes/Stap3">Go back</Link>
 			<Link to="/EN/bes/StapExtra" onClick={() => clickHandlerStep("step9")}>
-				Volgende
+				Next
 			</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
 		</div>

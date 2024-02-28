@@ -7,57 +7,78 @@ function HomepageWaarom() {
 			<div className="sectionBlock">
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-verzoek?
+						Why a disclosure request?
 					</h1>
 					<p>
-						Iedereen heeft het recht om informatie neergelegd in documenten op te vragen bij de overheid. In de Wet open
-						overheid (de Woo) is geregeld waar zo’n verzoek aan moet voldoen. Een Wob-verzoek is cruciaal om toegang te
-						krijgen tot informatie die de overheid niet uit eigen beweging vrijgeeft. Kijk{" "}
-						<a href="https://wetten.overheid.nl/BWBR0005252/2018-07-28" className="plaintext" target="_blanc">
-							hier
+						Everyone has the right to request information that lay in documents from the government. 
+						Aruba, Curaçao and Sint Maarten all have a law that regulates how the governments should disclose information. </p> <br></br>
+						
+						<p> The National Ordinance Open Government
+						Government (the Lob) regulates what such a request must meet, and each of these islands has a version of it. A Lob request is crucial in order to gain access
+						access to information that the government does not release of its own accord. </p>
+						<br></br>
+						<p> Look {""}
+						<a href="https://cuatro.sim-cdn.nl/arubaoverheid2858bd/uploads/0206ab99.012.pdf" className="plaintext" target="_blanc">
+						here  
+						</a>{" "} for the Lob of Aruba,  {" "}
+						<a href="https://gobiernu.cw/wp-content/uploads/2010/09/T.-Landsverordening-openbaarheid-van-bestuur-Cura%C3%A7ao.pdf" className="plaintext" target="_blanc">
+						here 
+						</a>{" "} for the Lob of Curaçao, {" "}
+						<a href="https://lokaleregelgeving.overheid.nl/CVDR155440/1" className="plaintext" target="_blanc">
+						and here {" "}
+						</a>{" "} for the Lob of Sint Maarten.
+					</p>
+				</div>
+				<div>
+					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+						How do I make a disclosure request?
+					</h1>
+					<p>
+					Drafting a Lob request is not difficult, but the request must meet a number of conditions. 
+					With the Lob generator, we help you draft a proper and valid Woo request. </p>
+					<br></br>
+					<p>Choose which documents you want to request and from which government agency. 
+					How do you find the government agency?</p>
+					<br></br> 
+					<p> Luckily you can search our list of government agencies in the Kingdom of the Netherlands. 
+					Done! You can now save your Lob request and send it by mail or digitally.
+					</p>
+				</div>
+				<div>
+					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+						Why a Lob generator?
+					</h1>
+					<p>
+						Quite a few journalists think filing a Woo petition is a mysterious legal trick. That is
+						exaggerated, but there is a grain of truth to it: there are quite a few points to watch out for. With the
+						Lob generator you don't have to worry about overlooking anything. </p>
+						<br></br>
+						<p>Just get started!
+					</p>
+				</div>
+				<div>
+					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+						When shouldn't I file a Lob request?
+					</h1>
+					<p>
+						You use a Lob request only for documents that are not yet public. Before
+						you submit a Woo request, you should then check if what you're looking for is already public. </p>
+						<br></br>
+						<p>For example, you can look {""}
+						<a href="https://publico.aw/" className="plaintext" target="_blanc">
+						here
 						</a>{" "}
-						voor de Wet open overheid.
-					</p>
-				</div>
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Hoe doe ik een Woo-verzoek?
-					</h1>
-					<p>
-						Het opstellen van een Woo-verzoek is niet moeilijk, maar het verzoek moet wel aan een aantal voorwaarden
-						voldoen. Met de Woo-generator helpen we je een goed en geldig Woo-verzoek op te stellen. Kies welke
-						documenten je wilt opvragen en bij welke overheidsinstantie. Hiervoor hebben we de eerste eenvoudig
-						doorzoekbare lijst met wobbare overheidsinstanties in Nederland samengesteld. Klaar! Je kunt nu je
-						Woo-verzoek opslaan en versturen via de post of digitaal verzenden.
-					</p>
-				</div>
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-generator?
-					</h1>
-					<p>
-						Nogal wat journalisten denken dat een Woo-verzoek indienen een mysterieuze juridische truc is. Dat is
-						overdreven, maar er zit een kern van waarheid in: er zijn best een paar punten waarop je moet letten. Met de
-						Woo-generator hoef je niet bang te zijn dat je iets over het hoofd ziet. Aan de slag dus!
-					</p>
-				</div>
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Wanneer geen Woo-verzoek?
-					</h1>
-					<p>
-						Een Woo-verzoek gebruik je alleen voor documenten die nog niet ergens anders vindbaar zijn. Bekijk voordat
-						je een Woo-verzoek indient daarom bijvoorbeeld{" "}
-						<a href="https://open.overheid.nl/" className="plaintext" target="_blanc">
-							hier
-						</a>{" "}
-						of de overheid de documenten al openbaar gemaakt heeft.{" "}
+						for documents which (a subset of) the Aruban government has made public. <a href="https://open.overheid.nl/" className="plaintext" target="_blanc">
+						The Dutch government also has a site where they make documents public.
+						</a>{" "}By the way, documents that have already been made public are handy compasses to find related information that isn't public yet! {""}
 					</p>
 					<br></br>
 					<p>
-						Bedenk verder dat de overheid niet alle informatie openbaar hoeft te maken: de Woo kent een aantal
-						weigeringsgronden zoals bedrijfsvertrouwelijke gegevens en de eerbiediging van de persoonlijke levenssfeer.
-						 
+						Further, keep in mind that the government does not have to disclose all information: the Woo has a number of
+						grounds for refusal such as business confidentiality and respect for privacy. 
+						Some of these exemptions require that a whole document be kept undisclosed, 
+						while others require that the government agency apply the exemption on parts of a document. 
+						These parts of the document can be redacted out while other parts are made public.
 					</p>
 				</div>
 			</div>
