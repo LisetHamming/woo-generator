@@ -6,14 +6,12 @@ function PopupButton({ number }) {
 	const [popUp, setPopUp] = useState(false);
 
 	return (
-		<div>
-			<span>
-				<button type="button" className="popupI" onClick={() => setPopUp(curr => !curr)}>
-					<img src={lightbulb} alt="icoon, klik voor meer informatie" />
-				</button>
-			</span>
+		<>
+			<button type="button" className="popupI" onClick={() => setPopUp(curr => !curr)}>
+				<img src={lightbulb} alt="icoon, klik voor meer informatie" />
+			</button>
 			{popUp && <Popup number={number} clickHandler={() => setPopUp(false)} />}
-		</div>
+		</>
 	);
 }
 
