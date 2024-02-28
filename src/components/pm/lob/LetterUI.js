@@ -1,6 +1,6 @@
 import React from "react";
 import spoon from "../../../assets/logo/SpoonLogo.png";
-import vvoj from "../../../assets/logo_vvoj.png";
+import vvoj from "../../../assets/logo/VVOJ_Logo_RGB.png";
 import DataCheckbox from "../../DataCheckbox";
 
 function LetterUI({ value, filteredDataText, getCurrentDate }) {
@@ -23,7 +23,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	return (
 		<div className="letterComplete">
 			<div className="letterUIHeading">
-			<h1>Bo peticion pa divulga documentonan a base di e Lob den proceso:</h1>
+				<h1>Bo peticion pa divulga documentonan a base di e Lob den proceso:</h1>
 				<div className="letterUILogos">
 					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
@@ -56,9 +56,12 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<p>
 						A base di e Landsverordening openbaarheid van bestuur (Lob) ami, {value.userName},
 						{value.userJournalist ? " periodista, " : " "}
-						{value.userOnBehalfInput.length ? `trahando den servicio di/ riba encargo di ${value.userOnBehalfInput}, ` : ""}
-						{value.userCompanyNameInput.length ? `den nomber di ${value.userCompanyNameInput}` : ""} ta pidi pa divulga informacion cu bo persona tin disponibel, 
-						of cu ta resorta bou di bo persona. Mas about ta specifica ki tipo di informacion e peticion ta trata.
+						{value.userOnBehalfInput.length
+							? `trahando den servicio di/ riba encargo di ${value.userOnBehalfInput}, `
+							: ""}
+						{value.userCompanyNameInput.length ? `den nomber di ${value.userCompanyNameInput}` : ""} ta pidi pa divulga
+						informacion cu bo persona tin disponibel, of cu ta resorta bou di bo persona. Mas about ta specifica ki tipo
+						di informacion e peticion ta trata.
 					</p>
 					<br />
 					<p>
@@ -100,8 +103,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 								<React.Fragment>
 									<h3>Informacion</h3>
 									<p>
-										Concretamente mi ta pidi (un copia di) informacion cu ta relaciona cu e tema riba cual e peticion ta dirigi su mes,
-										cual por wordo haya den e siguiente documentonan {value.subjectLong}
+										Concretamente mi ta pidi (un copia di) informacion cu ta relaciona cu e tema riba cual e peticion ta
+										dirigi su mes, cual por wordo haya den e siguiente documentonan {value.subjectLong}
 										{value.subjectDateStart && " van " + value.subjectDateStart}
 										{value.subjectDateEnd && " tot " + value.subjectDateEnd}:
 									</p>
@@ -163,21 +166,22 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					))}
 				<div>
 					<p>
-						Lo mi aprecia un reaccion por escrito (via carta of e-mail) cu mi peticion pa divulga informacion a base di e Lob a wordo ricibi. 
+						Lo mi aprecia un reaccion por escrito (via carta of e-mail) cu mi peticion pa divulga informacion a base di
+						e Lob a wordo ricibi.
 						<br />
 						<br />
-						Si bo persona lo kier haci uzo di e posibilidad pa pidi interesadonan nan opinion si mag haci e informacion publico of no, 
-						lo mi pidi pa informa mi di esaki di antemano.
+						Si bo persona lo kier haci uzo di e posibilidad pa pidi interesadonan nan opinion si mag haci e informacion
+						publico of no, lo mi pidi pa informa mi di esaki di antemano.
 					</p>
 					<br />
 					<p>
-						Bo persona lo mester tuma un decision riba e peticion denter di 
+						Bo persona lo mester tuma un decision riba e peticion denter di
 						{value.subjectMilieu ? " 3" : " 3"} siman.
 						{value.subjectMilieu
 							? ". Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen."
 							: "."}{" "}
-						Un falta di duna contesta, of un contesta deficiente lo nifica 
-						cu mi lo mester tuma accion legal mediante bay den obheccion y eventualmente den apelacion na corte. 
+						Un falta di duna contesta, of un contesta deficiente lo nifica cu mi lo mester tuma accion legal mediante
+						bay den obheccion y eventualmente den apelacion na corte.
 					</p>
 					<br />
 					<p>Un saludo cordial, </p>
