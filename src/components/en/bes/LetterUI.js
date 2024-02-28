@@ -39,18 +39,18 @@ function LetterUI({ value, getCurrentDate }) {
 				<div className="adressAuthority">
 					{value.selectedAuthority && (
 						<div>
-							<p>{value.selectedAuthority.Bestuursorgaan}</p>
-							<p>{value.selectedAuthority.Postbus}</p>
-							<p>
+							<p className="scribble">{value.selectedAuthority.Bestuursorgaan}</p>
+							<p className="scribble">{value.selectedAuthority.Postbus}</p>
+							<p className="scribble">
 								{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}
 							</p>
-							<p>{value.selectedAuthority.Land}</p>
+							<p className="scribble">{value.selectedAuthority.Land}</p>
 							<br />
 						</div>
 					)}
 				</div>
 				<div>
-					<p>
+					<p className="scribble">
 						{value.userCityName}, {getCurrentDate()}
 					</p>
 					<br />
@@ -60,16 +60,27 @@ function LetterUI({ value, getCurrentDate }) {
 					<br />
 					<p>
 						Invoking the Open Government Act BES ("Wob BES"), I ({value.userName}) hereby request,{" "}
-						{value.userJournalist ? " as a journalist, " : " "}
-						{value.userOnBehalfInput.length ? `working for/on behalf of ${value.userOnBehalfInput}, ` : ""}
-						{value.userCompanyNameInput.length ? `on behalf of ${value.userCompanyNameInput}` : ""} to disclose
-						information in your possession or residing under you to be specified below.
+						{value.userJournalist ? <b className="scribble"> as a journalist, </b> : " "}
+						{value.userOnBehalfInput.length ? (
+							<b className="scribble">working for/on behalf of {value.userOnBehalfInput}, </b>
+						) : (
+							""
+						)}
+						{value.userCompanyNameInput.length ? (
+							<b className="scribble">on behalf of {value.userCompanyNameInput} </b>
+						) : (
+							""
+						)}{" "}
+						to disclose information in your possession or residing under you to be specified below.
 					</p>
 					<br />
 					<p>
-						The topic on which I am requesting information is: {value.subjectLong}.{" "}
-						{value.subjectDateStart ? " The request covers the period between " + value.subjectDateStart : ""}
-						{value.subjectDateEnd && value.subjectDateStart ? " until " + value.subjectDateEnd + "." : ""}
+						The topic on which I am requesting information is:{" "}
+						<b className="scribble">
+							{value.subjectLong}.{" "}
+							{value.subjectDateStart ? " The request covers the period between " + value.subjectDateStart : ""}
+							{value.subjectDateEnd && value.subjectDateStart ? " until " + value.subjectDateEnd + "." : ""}
+						</b>
 					</p>
 					<br />
 
@@ -81,7 +92,7 @@ function LetterUI({ value, getCurrentDate }) {
 									<p>Specifically, I request (copies of) the following documents:</p>
 									<br />
 									{value.subjectTextObject.map(item => (
-										<p>
+										<p className="scribble">
 											- {item.subjectText}
 											{item.subjectDate ? ` (${item.subjectDate})` : ""}
 										</p>
@@ -106,16 +117,19 @@ function LetterUI({ value, getCurrentDate }) {
 									<h3>Information</h3>
 									<p>
 										Specifically, I request (copy of) information relating to the subject matter of this request that
-										lay in the following documents{value.subjectLong}
-										{value.subjectDateStart && " from " + value.subjectDateStart}
-										{value.subjectDateEnd && " until " + value.subjectDateEnd}:
+										lay in the following documents
+										<b className="scribble">
+											{value.subjectLong}
+											{value.subjectDateStart && " from " + value.subjectDateStart}
+											{value.subjectDateEnd && " until " + value.subjectDateEnd}:
+										</b>
 									</p>
 								</React.Fragment>
 							)}
 							<br />
 
 							{value[10] && (
-								<p>{`- Meeting documents${
+								<p className="scribble">{`- Meeting documents${
 									Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", including: " : ""
 								}${Object.keys(value.subjectMeeting)
 									.filter(key => value.subjectMeeting[key])
@@ -124,32 +138,32 @@ function LetterUI({ value, getCurrentDate }) {
 							)}
 
 							{value[12] && value[13] && (
-								<p>{`- Internal correspondence and interview reports ${wordsInside &&
+								<p className="scribble">{`- Internal correspondence and interview reports ${wordsInside &&
 									` (${wordsInside.join(", ")})`};`}</p>
 							)}
 
 							{value[12] && value[14] && (
-								<p>{`- External correspondence and interview reports ${wordsOutside &&
+								<p className="scribble">{`- External correspondence and interview reports ${wordsOutside &&
 									`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
 									` between your government agency and ${value.subjectLongOrganisation}`};`}</p>
 							)}
 
-							{value.subjectInside5 && <p>{"- Memos, notes, memoranda;"}</p>}
+							{value.subjectInside5 && <p className="scribble">{"- Memos, notes, memoranda;"}</p>}
 
 							{value[11] && (
-								<p>
+								<p className="scribble">
 									{`- Reports, advice${value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""};  `}{" "}
 								</p>
 							)}
 
 							{value[15] && (
-								<p>{`- Financiële documenten${
+								<p className="scribble">{`- Financiële documenten${
 									value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
 								};  `}</p>
 							)}
 
-							{value[16] && <p>{"- Datasets;"} </p>}
-							{value[17] && <p>{`-  ${value.subjectElseText}`} </p>}
+							{value[16] && <p className="scribble">{"- Datasets;"} </p>}
+							{value[17] && <p className="scribble">{`-  ${value.subjectElseText}`} </p>}
 							<br />
 						</React.Fragment>
 					)}
@@ -158,8 +172,8 @@ function LetterUI({ value, getCurrentDate }) {
 					filteredDataText.map(item => (
 						<div key={item.id}>
 							<div>
-								<h3 className="header">{item.title}</h3>
-								<p>{item.sentence}</p>
+								<h3 className="tussenkopje scribble">{item.title}</h3>
+								<p className="scribble">{item.sentence}</p>
 								<br />
 							</div>
 						</div>
@@ -174,28 +188,24 @@ function LetterUI({ value, getCurrentDate }) {
 					</p>
 					<br />
 					<p>
-						You must decide on my request within
-						{value.subjectMilieu ? " 3" : " 3"} weeks after having received it.
-						{value.subjectMilieu
-							? " Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen."
-							: "."}{" "}
-						No response or insufficient response by the due date will give rise to an appeal to the administrative law
-						judge for failure to make a timely decision.
+						You must decide on my request within 3 weeks after having received it. No response or insufficient response
+						by the due date will give rise to an appeal to the administrative law judge for failure to make a timely
+						decision.
 					</p>
 					<br />
 					<p>Sincerely, </p>
 					<br />
 					<p className="userSignature"></p>
-					<p>{value.userName}</p>
-					<p>{value.userCompanyName}</p>
-					<p>
+					<p className="scribble">{value.userName}</p>
+					<p className="scribble">{value.userCompanyName}</p>
+					<p className="scribble">
 						{value.userAdress} {value.userAdressNumber}
 					</p>
-					<p>
+					<p className="scribble">
 						{value.userZipcode} {value.userCityName}
 					</p>
-					<p>{value.userEmail}</p>
-					<p>{value.userPhoneNumber}</p>
+					<p className="scribble">{value.userEmail}</p>
+					<p className="scribble">{value.userPhoneNumber}</p>
 				</div>
 			</div>
 		</div>

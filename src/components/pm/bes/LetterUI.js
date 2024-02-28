@@ -39,18 +39,18 @@ function LetterUI({ value, getCurrentDate }) {
 				<div className="adressAuthority">
 					{value.selectedAuthority && (
 						<div>
-							<p>{value.selectedAuthority.Bestuursorgaan}</p>
-							<p>{value.selectedAuthority.Postbus}</p>
-							<p>
+							<p className="scribble">{value.selectedAuthority.Bestuursorgaan}</p>
+							<p className="scribble">{value.selectedAuthority.Postbus}</p>
+							<p className="scribble">
 								{value.selectedAuthority.Postcode} {value.selectedAuthority.Plaats}
 							</p>
-							<p>{value.selectedAuthority.Land}</p>
+							<p className="scribble">{value.selectedAuthority.Land}</p>
 							<br />
 						</div>
 					)}
 				</div>
 				<div>
-					<p>
+					<p className="scribble">
 						{value.userCityName}, {getCurrentDate()}
 					</p>
 					<br />
@@ -60,16 +60,23 @@ function LetterUI({ value, getCurrentDate }) {
 					<br />
 					<p>
 						Met een beroep op de Wet open overheid (hierna: Woo) verzoek ik, {value.userName},
-						{value.userJournalist ? " journalist, " : " "}
-						{value.userOnBehalfInput.length ? `werkzaam voor/in opdracht van ${value.userOnBehalfInput}, ` : ""}
-						{value.userCompanyNameInput.length ? `u namens ${value.userCompanyNameInput}` : ""} om openbaarmaking van
-						hieronder nader te specificeren informatie bij of onder u.
+						{value.userJournalist ? <b className="scribble">journalist, </b> : " "}
+						{value.userOnBehalfInput.length ? <b>werkzaam voor/in opdracht van {value.userOnBehalfInput}, </b> : ""}
+						{value.userCompanyNameInput.length ? (
+							<b className="scribble">u namens {value.userCompanyNameInput} </b>
+						) : (
+							""
+						)}{" "}
+						om openbaarmaking van hieronder nader te specificeren informatie bij of onder u.
 					</p>
 					<br />
 					<p>
-						Het onderwerp waarover ik informatie vraag, is: {value.subjectLong}.{" "}
-						{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
-						{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
+						Het onderwerp waarover ik informatie vraag, is:
+						<b className="scribble">
+							{value.subjectLong}.{" "}
+							{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
+							{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
+						</b>
 					</p>
 					<br />
 
@@ -81,7 +88,7 @@ function LetterUI({ value, getCurrentDate }) {
 									<p>Concreet vraag ik u om (kopie van) de volgende documenten:</p>
 									<br />
 									{value.subjectTextObject.map(item => (
-										<p>
+										<p className="scribble">
 											- {item.subjectText}
 											{item.subjectDate ? ` (${item.subjectDate})` : ""}
 										</p>
@@ -106,9 +113,12 @@ function LetterUI({ value, getCurrentDate }) {
 									<h3>Informatie</h3>
 									<p>
 										Concreet vraag ik u om (kopie van) informatie met betrekking tot het onderwerp van dit verzoek
-										neergelegd in de volgende documenten{value.subjectLong}
-										{value.subjectDateStart && " van " + value.subjectDateStart}
-										{value.subjectDateEnd && " tot " + value.subjectDateEnd}:
+										neergelegd in de volgende documenten
+										<b className="scribble">
+											{value.subjectLong}
+											{value.subjectDateStart && " van " + value.subjectDateStart}
+											{value.subjectDateEnd && " tot " + value.subjectDateEnd}:
+										</b>
 									</p>
 								</React.Fragment>
 							)}
@@ -124,20 +134,20 @@ function LetterUI({ value, getCurrentDate }) {
 							)}
 
 							{value[12] && value[13] && (
-								<p>{`- Interne correspondentie en gespreksverslagen ${wordsInside &&
+								<p className="scribble">{`- Interne correspondentie en gespreksverslagen ${wordsInside &&
 									` (${wordsInside.join(", ")})`};`}</p>
 							)}
 
 							{value[12] && value[14] && (
-								<p>{`- Externe correspondentie en gespreksverslagen ${wordsOutside &&
+								<p className="scribble">{`- Externe correspondentie en gespreksverslagen ${wordsOutside &&
 									`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
 									` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}</p>
 							)}
 
-							{value.subjectInside5 && <p>{"- Memo's, notities;"}</p>}
+							{value.subjectInside5 && <p className="scribble">{"- Memo's, notities;"}</p>}
 
 							{value[11] && (
-								<p>
+								<p className="scribble">
 									{`- Rapporten, adviezen${
 										value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
 									};  `}{" "}
@@ -145,13 +155,13 @@ function LetterUI({ value, getCurrentDate }) {
 							)}
 
 							{value[15] && (
-								<p>{`- Financiële documenten${
+								<p className="scribble">{`- Financiële documenten${
 									value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
 								};  `}</p>
 							)}
 
-							{value[16] && <p>{"- Datasets;"} </p>}
-							{value[17] && <p>{`-  ${value.subjectElseText}`} </p>}
+							{value[16] && <p className="scribble">{"- Datasets;"} </p>}
+							{value[17] && <p className="scribble">{`-  ${value.subjectElseText}`} </p>}
 							<br />
 						</React.Fragment>
 					)}
@@ -160,8 +170,8 @@ function LetterUI({ value, getCurrentDate }) {
 					filteredDataText.map(item => (
 						<div key={item.id}>
 							<div>
-								<h3 className="tussenkopje">{item.title}</h3>
-								<p>{item.sentence}</p>
+								<h3 className="tussenkopje scribble">{item.title}</h3>
+								<p className="scribble">{item.sentence}</p>
 								<br />
 							</div>
 						</div>
@@ -177,28 +187,24 @@ function LetterUI({ value, getCurrentDate }) {
 					</p>
 					<br />
 					<p>
-						U dient binnen de termijn van
-						{value.subjectMilieu ? " 4" : " 4"} weken een besluit te nemen op dit verzoek
-						{value.subjectMilieu
-							? ". Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen."
-							: "."}{" "}
-						Geen of onvoldoende antwoord op de vervaldatum zal aanleiding geven tot beroep bij de bestuursrechter wegens
-						het niet tijdig nemen van een beslissing.
+						U dient binnen de termijn van 4 weken een besluit te nemen op dit verzoek. Geen of onvoldoende antwoord op
+						de vervaldatum zal aanleiding geven tot beroep bij de bestuursrechter wegens het niet tijdig nemen van een
+						beslissing.
 					</p>
 					<br />
 					<p>Met vriendelijke groet, </p>
 					<br />
 					<p className="userSignature"></p>
-					<p>{value.userName}</p>
-					<p>{value.userCompanyName}</p>
-					<p>
+					<p className="scribble">{value.userName}</p>
+					<p className="scribble">{value.userCompanyName}</p>
+					<p className="scribble">
 						{value.userAdress} {value.userAdressNumber}
 					</p>
-					<p>
+					<p className="scribble">
 						{value.userZipcode} {value.userCityName}
 					</p>
-					<p>{value.userEmail}</p>
-					<p>{value.userPhoneNumber}</p>
+					<p className="scribble">{value.userEmail}</p>
+					<p className="scribble">{value.userPhoneNumber}</p>
 				</div>
 			</div>
 		</div>
