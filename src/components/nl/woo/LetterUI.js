@@ -77,8 +77,22 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<br />
 					<p>
 						Het onderwerp waarover ik informatie vraag, is: <b className="scribble">{value.subjectLong}</b>.{" "}
-						{value.subjectDateStart ? " Het verzoek betreft de periode van " + value.subjectDateStart : ""}
-						{value.subjectDateEnd && value.subjectDateStart ? " tot " + value.subjectDateEnd + "." : ""}
+						{value.subjectDateStart ? (
+							<>
+								{" "}
+								Het verzoek betreft de periode van <span className="scribble">{value.subjectDateStart}</span>{" "}
+							</>
+						) : (
+							""
+						)}
+						{value.subjectDateEnd && value.subjectDateStart ? (
+							<>
+								{" "}
+								tot <span className="scribble"> {value.subjectDateEnd} .</span>{" "}
+							</>
+						) : (
+							""
+						)}
 					</p>
 					<br />
 
@@ -128,7 +142,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							<br />
 
 							{value[10] && (
-								<p>{`- Vergaderstukken${
+								<p className="scribble">{`- Vergaderstukken${
 									Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", waaronder: " : ""
 								}${Object.keys(value.subjectMeeting)
 									.filter(key => value.subjectMeeting[key])
@@ -137,20 +151,20 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							)}
 
 							{value[12] && value[13] && (
-								<p>{`- Interne correspondentie en gespreksverslagen ${wordsInside &&
+								<p className="scribble">{`- Interne correspondentie en gespreksverslagen ${wordsInside &&
 									` (${wordsInside.join(", ")})`};`}</p>
 							)}
 
 							{value[12] && value[14] && (
-								<p>{`- Externe correspondentie en gespreksverslagen ${wordsOutside &&
+								<p className="scribble">{`- Externe correspondentie en gespreksverslagen ${wordsOutside &&
 									`(${wordsOutside.join(", ")})`}${value.subjectLongOrganisation &&
 									` tussen uw overheidsinstantie en ${value.subjectLongOrganisation}`};`}</p>
 							)}
 
-							{value.subjectInside5 && <p>{"- Memo's, notities;"}</p>}
+							{value.subjectInside5 && <p className="scribble">{"- Memo's, notities;"}</p>}
 
 							{value[11] && (
-								<p>
+								<p className="scribble">
 									{`- Rapporten, adviezen${
 										value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
 									};  `}{" "}
@@ -158,13 +172,13 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 							)}
 
 							{value[15] && (
-								<p>{`- Financiële documenten${
+								<p className="scribble">{`- Financiële documenten${
 									value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
 								};  `}</p>
 							)}
 
-							{value[16] && <p>{"- Datasets;"} </p>}
-							{value[17] && <p>{`-  ${value.subjectElseText}`} </p>}
+							{value[16] && <p className="scribble">{"- Datasets;"} </p>}
+							{value[17] && <p className="scribble">{`-  ${value.subjectElseText}`} </p>}
 							<br />
 						</React.Fragment>
 					)}
@@ -173,8 +187,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					filteredDataText.map(item => (
 						<div key={item.id}>
 							<div>
-								<h3 className="tussenkopje">{item.title}</h3>
-								<p>{item.sentence}</p>
+								<h3 className="tussenkopje scribble">{item.title}</h3>
+								<p className="scribble">{item.sentence}</p>
 								<br />
 							</div>
 						</div>
@@ -190,11 +204,15 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					</p>
 					<br />
 					<p>
-						U dient binnen de termijn van
-						{value.subjectMilieu ? " 4" : " 4"} weken een besluit te nemen op dit verzoek
-						{value.subjectMilieu
-							? ". Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen."
-							: "."}{" "}
+						U dient binnen de termijn van 4 weken een besluit te nemen op dit verzoek.{" "}
+						{value.subjectMilieu ? (
+							<span className="scribble">
+								Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele
+								verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen.
+							</span>
+						) : (
+							"."
+						)}{" "}
 						Geen of onvoldoende antwoord op de vervaldatum zal aanleiding geven tot beroep bij de bestuursrechter wegens
 						het niet tijdig nemen van een beslissing.
 					</p>
