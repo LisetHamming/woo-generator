@@ -82,7 +82,7 @@ function Stap3({
 					</label>
 				</span>
 				{errors.includes("subjectLong") && <p id="error">Dit is een verplicht veld, graag invullen.</p>}
-				<span>
+				{/* <span>
 					<label className="container nieuwietje">
 						<input
 							onChange={changeHandlerCheckbox}
@@ -96,7 +96,7 @@ function Stap3({
 						<br />
 						<div className="checkmark"></div>
 					</label>
-				</span>
+				</span> */}
 				<h1>Specifiek document of alles?</h1>
 				<p>
 					Maak een keuze tussen het opvragen van bepaalde, specifieke documenten of alle documenten die de

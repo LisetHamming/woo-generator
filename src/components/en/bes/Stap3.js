@@ -28,9 +28,10 @@ function Stap3({
 
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<p>
-				Accurately but concisely describe the topic on which you are requesting information. This can be a fairly narrow topic
-				such as "speeding fines," but also broader, such as "traffic safety in your municipality", or "the correspondence that led up to the granting of a permit for X party".
-				The next step gives you the opportunity to further narrow down what documents you want to receive.
+				Accurately but concisely describe the topic on which you are requesting information. This can be a fairly narrow
+				topic such as "speeding fines," but also broader, such as "traffic safety in your municipality", or "the
+				correspondence that led up to the granting of a permit for X party". The next step gives you the opportunity to
+				further narrow down what documents you want to receive.
 			</p>
 			<br />
 			<br />
@@ -81,7 +82,7 @@ function Stap3({
 					</label>
 				</span>
 				{errors.includes("subjectLong") && <p id="error">This is a required field, please fill it in.</p>}
-				<span>
+				{/* <span>
 					<label className="container nieuwietje">
 						<input
 							onChange={changeHandlerCheckbox}
@@ -95,11 +96,11 @@ function Stap3({
 						<br />
 						<div className="checkmark"></div>
 					</label>
-				</span>
+				</span> */}
 				<h1>Specific document or everything the agency has about a subject?</h1>
 				<p>
-					Choose between requesting certain, specific documents or all documents the
-					government agency has on the subject.
+					Choose between requesting certain, specific documents or all documents the government agency has on the
+					subject.
 				</p>
 
 				<br />

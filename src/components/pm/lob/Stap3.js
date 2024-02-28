@@ -82,7 +82,7 @@ function Stap3({
 					</label>
 				</span>
 				{errors.includes("subjectLong") && <p id="error">Ta rekiri pa yena e informacion aki, por favor yen'e.</p>}
-				<span>
+				{/* <span>
 					<label className="container nieuwietje">
 						<input
 							onChange={changeHandlerCheckbox}
@@ -96,7 +96,7 @@ function Stap3({
 						<br />
 						<div className="checkmark"></div>
 					</label>
-				</span>
+				</span> */}
 				<h1> Un documento specifico of tur documento cu e organo gubernamental tin riba e topico?</h1>
 				<p>
 					Scoge si bo kier pidi algun documento specifico of tur documento cu e organo gubernamental tin riba e topico.
