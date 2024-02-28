@@ -58,9 +58,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						<b className="scribble">{value.userName}</b>,
 						{value.userJournalist ? <b className="scribble"> journalist,</b> : " "}
 						{value.userOnBehalfInput.length ? (
-							<>
-								werkzaam voor/in opdracht van <span className="scribble">{value.userOnBehalfInput}</span>,{" "}
-							</>
+							<span className="scribble">werkzaam voor/in opdracht van {value.userOnBehalfInput}, </span>
 						) : (
 							""
 						)}
