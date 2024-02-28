@@ -8,6 +8,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 	return (
 		<div>
 			<div className="selectLanguage">
+				<Link to="/NL/bes/">NL</Link>
 				<Link to="/EN/bes/">EN</Link>
 				<Link to="/PM/bes/">PAP</Link>
 			</div>
@@ -17,20 +18,23 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 			</div>
 			<div className="homepageBlock">
 				<div className="blockText">
-				<p className="logo">Woo-generator</p>
+					<p className="logo">Woo-generator</p>
 					<h1>Write your own Woo request in 3 simple steps</h1>
 					<p>Welcome to the Wob BES generator!</p>
-					<p>You are here because you want to request information from a government institution in Bonaire, Saba or Statia.</p>
 					<p>
-					The BES islands have a special freedom of information law called the Wob BES. 
-					By invoking this law, anyone is allowed to ask that government documents are divulged by the government institutions of the BES islands.
+						You are here because you want to request information from a government institution in Bonaire, Saba or
+						Statia.
+					</p>
+					<p>
+						The BES islands have a special freedom of information law called the Wob BES. By invoking this law, anyone
+						is allowed to ask that government documents are divulged by the government institutions of the BES islands.
 					</p>
 					<p>With the Woo-generator, making a request is a breeze by following the steps below.</p>
 
 					<ol>
-					<li>1. You fill in some information about yourself</li>
-					<li>2. You select a government institution</li>
-					<li>3. You choose the type of documents or information you are looking for</li>
+						<li>1. You fill in some information about yourself</li>
+						<li>2. You select a government institution</li>
+						<li>3. You choose the type of documents or information you are looking for</li>
 					</ol>
 
 					<div className="nextButtons">

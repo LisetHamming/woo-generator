@@ -37,7 +37,7 @@ function Stap2({
 			<h2>Step 2: Which government agency do you want to ask for information?</h2>
 			<span className="nieuwietje">
 				<p>
-				Choose which government agency you want to submit your Wob BES request to here.
+					Choose which government agency you want to submit your Wob BES request to here.
 					<PopupButton number="5" />
 				</p>
 			</span>
@@ -88,7 +88,7 @@ function Stap2({
 						/>
 						<div className="landenFilter">
 							{landenBes.map(item => (
-								<button key={item} onClick={e => setSelectedLand(item)}>
+								<button key={item} type="button" onClick={e => setSelectedLand(item)}>
 									{item}
 								</button>
 							))}
@@ -120,7 +120,8 @@ function Stap2({
 									))
 							) : (
 								<li>
-									Oops! We couldn't find what you were looking for. If you have the details at hand, please fill them out manually here.
+									Oops! We couldn't find what you were looking for. If you have the details at hand, please fill them
+									out manually here.
 								</li>
 							)}
 						</ul>

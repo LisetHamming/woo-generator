@@ -89,7 +89,7 @@ function Stap2({
 						/>
 						<div className="landenFilter">
 							{landenBes.map(item => (
-								<button key={item} onClick={e => setSelectedLand(item)}>
+								<button key={item} type="button" onClick={e => setSelectedLand(item)}>
 									{item}
 								</button>
 							))}
