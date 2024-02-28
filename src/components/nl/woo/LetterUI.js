@@ -1,7 +1,7 @@
 import React from "react";
 import spoon from "../../../assets/logo/SpoonLogo.png";
 import vvoj from "../../../assets/logo/VVOJ_Logo_RGB.png";
-import DataCheckbox from "../../DataCheckbox";
+import DataCheckbox from "./DataCheckbox";
 import DataText from "./DataText";
 
 function LetterUI({ value, getCurrentDate }) {
