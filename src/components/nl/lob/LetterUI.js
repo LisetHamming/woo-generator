@@ -23,7 +23,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 	return (
 		<div className="letterComplete">
 			<div className="letterUIHeading">
-				<h1>Je Woo-verzoek in wording:</h1>
+				<h1>Je Lob-verzoek in wording:</h1>
 				<div className="letterUILogos">
 					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
@@ -49,12 +49,12 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 						<b className="scribble">{value.userCityName}</b>, {getCurrentDate()}
 					</p>
 					<br />
-					<p>Betreft: indiening Woo-verzoek</p>
+					<p>Betreft: indiening Lob-verzoek</p>
 					<br />
 					<p>Zeer geachte heer/mevrouw,</p>
 					<br />
 					<p>
-						Met een beroep op de Wet open overheid (hierna: Woo) verzoek ik,{" "}
+						Met een beroep op de Landsverordening openbaarheid van bestuur (hierna: Lob) verzoek ik,{" "}
 						<b className="scribble">{value.userName}</b>,
 						{value.userJournalist ? <b className="scribble"> journalist,</b> : " "}
 						{value.userOnBehalfInput.length ? `werkzaam voor/in opdracht van ${value.userOnBehalfInput}, ` : ""}
@@ -169,7 +169,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 				<div>
 					<p>
 						Graag ontvang ik schriftelijk (per brief of per e-mail) een bevestiging van de ontvangst van dit
-						Woo-verzoek.
+						Lob-verzoek.
 						<br />
 						<br />
 						Mocht u belanghebbenden de gelegenheid gaan bieden tot het geven van zienswijzen dan ontvang ik daarvan
@@ -178,7 +178,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<br />
 					<p>
 						U dient binnen de termijn van
-						{value.subjectMilieu ? " 4" : " 4"} weken een besluit te nemen op dit verzoek
+						{value.subjectMilieu ? " 3" : " 3"} weken een besluit te nemen op dit verzoek
 						{value.subjectMilieu
 							? ". Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen."
 							: "."}{" "}

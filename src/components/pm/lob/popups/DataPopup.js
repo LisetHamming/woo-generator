@@ -27,11 +27,11 @@ const DataPopup = {
 		id: "5",
 		h1: "Cerca cua instancianan gubernamental mi por entrega un peticion pa divulga documentonan cu e Lob-generator?",
 		p:
-			"Er zijn in Nederland tal van overheidsinstanties, ook wel ‘bestuursorganen’ genoemd: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Onder de Woo zijn per 1 mei 2022 nog een aantal instanties toegevoegd, waaronder de Eerste en Tweede Kamer, de Algemene Rekenkamer en de Nationale Ombudsman. Deze instanties vallen allemaal onder de Woo en zijn te vinden via de Woo-generator.",
+			"Den e paisnan di Reino Aruba, Kòrsou y Sint Maarten e peticion pa divulga documentonan di gobierno ta dirigi primordialmente na un minister. No ta posibel pa haya documentonan di corte ni di parlamento di e manera aki. Ora e documentonan ta bou di un minister, dus na un departamento cu ta resorta bou di e minister, mayoria biaha mester dirigi e peticion na e minister y pidi documentonan di e departamento concerni.",
 		p2:
-			"De database met onder de Woo vallende overheidsinstanties is samengesteld door de leden van de Woo-werkgroep van de VVOJ. Het is voorzover ons bekend de eerste dergelijke database in Nederland. Alle bovengenoemde instanties zijn erin opgenomen. Dat betekent niet dat de database volledig is. Het is mogelijk dat wij instanties over het hoofd hebben gezien. Ook kunnen overheidsinstanties opgeheven worden of van naam veranderen. De database blijft dus continu in ontwikkeling. Suggesties en updates zijn van harte welkom: info@woo-generator.nl",
+			"E database di instancianan gubernamental den e paisnan Aruba, Kòrsou y Sint Maarten a wordo agrega pa Luis Villegas Hernandez den colaboracion cu Exepertisecentrum SPOON. E ta e prome database di su tipo tocante e instancianan gubernamental di e islanan te cu nos sa. Esey sinembargo no kiermen cu e database ta completo. Tin instancianan cu ta cambia di nomber of ta stop di existi, y tin biaha un instancia nobo ta nace. Nos ta trahando constantemente pa por tene e database up-to-date. Si bo sa di algun departamento of instancia cu falta sugerencianan y updatenan ta agradici via e e-mail: info@woo-generator.nl",
 		p3:
-			"Staat de overheidsinstantie die je zoekt er niet tussen, bekijk dan de website van de betreffende instantie en voer de gegevens handmatig in."
+			"Si e instancia gubernamental cu bo ta buscando no ta aparece den e lista aki, busca e informacion di contacto di e instancia riba internet y yena esaki manualmente."
 	},
 	6: {
 		id: "6",
@@ -115,13 +115,13 @@ const DataPopup = {
 	},
 	19: {
 		id: "19",
-		h1: "Dit is een voorbeeld van zo'n i'tje",
-		p: "En hier staat dan de uitleg."
+		h1: "Esaki ta un ehempel di un lampi asina",
+		p: "Y aki ta e splicacion"
 	},
 	20: {
 		id: "20",
-		h1: "Uitleg over OnBehalf",
-		p: "Tekst bij de uitleg."
+		h1: "Splicacion tocante OnBehalf",
+		p: "E texto di e splicacion"
 	}
 };
 export default DataPopup;

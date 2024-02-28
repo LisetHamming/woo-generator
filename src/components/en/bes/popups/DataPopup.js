@@ -1,127 +1,127 @@
 const DataPopup = {
 	1: {
 		id: "1",
-		h1: "Ben je journalist?",
+		h1: "Are you a journalist?",
 		p:
-			"Je hoeft geen journalist te zijn om een Woo-verzoek in te dienen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten."
+			"You don't have to be a journalist to submit a Wob BES  request. However, it can be useful to mention it, as the European Court of Human Rights (ECHR) has determined that journalistic interest should be given special weight in the disclosure of documents in some cases."
 	},
 	2: {
 		id: "2",
-		h1: "Doel van je verzoek?",
+		h1: "Purpose of your request?",
 		p:
-			"Je hoeft niet uit te leggen welk belang je bij je verzoek hebt en de overheidsinstantie mag er zelfs niet naar vragen. Maar het kan overheidsinstanties helpen om beter te begrijpen welke documenten je zoekt, als ze weten wat het doel is van je verzoek. Overigens kan het soms juist verstandig zijn om niet te vertellen welk nieuws je op het spoor denkt te zijn. Weeg af wat slim is."
+			"You don't have to explain the purpose of your request, and the government agency is not allowed to ask. However, it can help government agencies better understand the documents you are looking for if they know the purpose of your request. Sometimes, it may be wise not to disclose the news you are tracking. Consider what is sensible."
 	},
 	3: {
 		id: "3",
-		h1: "Namens een (media)organisatie",
+		h1: "On behalf of an (media) organization",
 		p:
-			"Je kan je Woo-verzoek namens een (media)organisatie indienen. Denk er dan aan dat je daartoe gemachtigd wordt en stuur die machtiging mee met je verzoek. Het verzoek kan afgewezen worden als je niet de juiste machtiging hebt. Ook gelden bij een beroep bij de bestuursrechter voor organisaties een hoger tarief dan voor personen, dat kan al snel honderdvijftig euro schelen. Aan de andere kant, als je voor een bekende (media)organisatie werkt kan dat gewicht in de schaal leggen bij de behandeling van je verzoek. Een tussenoplossing is om wel te benoemen voor welke (media)organisatie je werkt maar het verzoek niet officieel namens deze organisatie in te dienen. Vink dan de optie hieronder aan."
+			"You can submit your Wob BES request on behalf of an (media) organization. Make sure you are authorized to do so and include the authorization with your request. The request may be rejected if you do not have the proper authorization. Also, organizations have a higher fee for appeals to the administrative court than individuals, which can save you a considerable amount. On the other hand, working for a well-known (media) organization can carry weight in the processing of your request. A compromise is to mention the (media) organization you work for without officially submitting the request on its behalf. Tick the option below in that case."
 	},
 	4: {
 		id: "4",
-		h1: "Privacy en opslag",
+		h1: "Privacy and storage",
 		p:
-			"Alles wat je invult wordt via de browser die je gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet. Dit gebeurt door middel van een zogenaamde ‘functionele cookie’. Verder is op de website een Google Analytics cookie geïnstalleerd om een beeld te krijgen van het gebruik van de Woo-generator."
+			"Everything you fill in is 'locally' stored through the browser you are using. That means no one else can see your answers, not even us. This is done through a so-called 'functional cookie'. Furthermore, a Google Analytics cookie is installed on the website to get an overview of the use of the Wob BES generator."
 	},
 	5: {
 		id: "5",
-		h1: "Bij welke overheidsinstanties kan ik een Woo-verzoek indienen met de Woo-generator?",
+		h1: "At which government agencies can I submit a Wob BES request with the Wob BES generator?",
 		p:
-			"Er zijn in Nederland tal van overheidsinstanties, ook wel ‘bestuursorganen’ genoemd: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Onder de Woo zijn per 1 mei 2022 nog een aantal instanties toegevoegd, waaronder de Eerste en Tweede Kamer, de Algemene Rekenkamer en de Nationale Ombudsman. Deze instanties vallen allemaal onder de Woo en zijn te vinden via de Woo-generator.",
+			"There are numerous government agencies, also called 'government bodies,' in the Netherlands: municipalities, provinces, ministries, water boards, the police and inspection services, as well as so-called 'independent administrative bodies' such as the Social Insurance Bank (SVB) and the Central Bureau for Driving Skills (CBR).",
 		p2:
-			"De database met onder de Woo vallende overheidsinstanties is samengesteld door de leden van de Woo-werkgroep van de VVOJ. Het is voorzover ons bekend de eerste dergelijke database in Nederland. Alle bovengenoemde instanties zijn erin opgenomen. Dat betekent niet dat de database volledig is. Het is mogelijk dat wij instanties over het hoofd hebben gezien. Ook kunnen overheidsinstanties opgeheven worden of van naam veranderen. De database blijft dus continu in ontwikkeling. Suggesties en updates zijn van harte welkom: info@woo-generator.nl",
+			"The database of government agencies falling under the Wob BES  has been compiled by the members of the Wob BES  working group of the VVOJ. As far as we know, it is the first such database in the Netherlands. All the mentioned agencies are included. However, this does not mean that the database is complete. It is possible that we have overlooked agencies, and government agencies can be abolished or change their names. Therefore, the database is continually evolving. Suggestions and updates are welcome: info@Wob BES -generator.nl",
 		p3:
-			"Staat de overheidsinstantie die je zoekt er niet tussen, bekijk dan de website van de betreffende instantie en voer de gegevens handmatig in."
+			"If the government agency you are looking for is not listed, check the website of the relevant agency and enter the details manually."
 	},
 	6: {
 		id: "6",
-		h1: "Juiste overheid?",
+		h1: "Correct government?",
 		p:
-			"Vraag je allereerst af bij welke overheidsinstantie de documenten over je onderwerp te vinden zijn. Als je er niet uitkomt, zoek dan online op je onderwerp en kijk welke overheidsinstanties tevoorschijn komen. Je kunt ook eenzelfde verzoek indienen bij verschillende instanties. Soms valt de ene overheidsinstantie onder verantwoordelijkheid van de andere. Weet je bijvoorbeeld niet zeker of de documenten bij de Immigratie- en Naturalisatiedienst (IND) of het ministerie van Justitie en Veiligheid liggen, kies dan de ‘hoogste’ instantie, in dit geval het ministerie. Het is wel zo dat instanties die minder onder een vergrootglas liggen soms makkelijker documenten vrijgeven. Denk dus ook na over waar je de meeste kans maakt!",
+			"First, consider which government agency the documents on your subject can be found. If you are unsure, search online for your subject and see which government agencies come up. You can also submit the same request to different agencies. Sometimes, one government agency falls under the responsibility of another. For example, if you're not sure whether the documents are with the Immigration and Naturalization Service (IND) or the Ministry of Justice and Security, choose the 'highest' agency, in this case, the ministry. It's true that agencies that are less scrutinized may release documents more easily. So, think about where you have the best chance!",
 		p2:
-			"En wees gerust: de instantie waar je je Woo-verzoek indient is verplicht om je verzoek naar de juiste instantie door te sturen. Voor de zekerheid herinnert de generator in de alinea ‘doorgeleiding’ de overheidsinstantie aan deze verplichting."
+			"And rest assured: the agency where you submit your Wob BES request is obliged to forward your request to the correct agency. For added security, the generator reminds the government agency of this obligation in the 'referral' paragraph."
 	},
 
 	7: {
 		id: "7",
-		h1: "Geadresseerde",
+		h1: "Addressee",
 		p:
-			"Als je de naam van de hoogstgeplaatste functionaris van de instantie kent, bijvoorbeeld van de minister, de staatssecretaris, de commissaris van de koning, enzovoort, dan kun je die er na het downloaden van je concept Wob-verzoek zelf bijschrijven. Maar het is niet verplicht. Volsta dan met geachte heer/mevrouw."
+			"If you know the name of the highest-ranking official of the agency, such as the minister, the state secretary, the commissioner of the king, etc., you can add it yourself after downloading your draft Wob request. But it's not mandatory. Simply use 'Dear sir/madam' if you don't have the name."
 	},
 	8: {
 		id: "8",
-		h1: "Waarom je nauwkeurig moet zijn",
+		h1: "Why you need to be precise",
 		p:
-			"Een te brede of onduidelijke formulering van je onderwerp kan er toe leiden dat de overheid om verduidelijking vraagt. Onder de Woo moet de overheidsinstantie dat binnen twee weken na ontvangst van je verzoek laten weten. Pas nadat je je verzoek hebt gepreciseerd begint de beslistermijn te lopen. Er kunnen dan onnodig weken verstrijken voordat de overheid met je verzoek aan de slag gaat."
+			"A too broad or unclear formulation of your subject may lead to the government requesting clarification. Under the Wob BES , the government agency must notify you of this within two weeks of receiving your request. Only after you have specified your request does the decision period begin. Unnecessary weeks may pass before the government processes your request."
 	},
 	9: {
 		id: "9",
-		h1: "Milieu",
+		h1: "Environment",
 		p:
-			"Als je Woo-verzoek betrekking heeft op milieu-informatie geldt een aantal bijzondere regels. Op grond van het verdrag van Aarhus zijn bepaalde redenen om milieu-informatie te weigeren niet of verminderd van toepassing. Als je twijfelt of jouw verzoek over milieu-informatie gaat, kijk dan in artikel 19.1a van de Wet Milieubeheer."
+			"If your Wob BES request concerns environmental information, there are some special rules. Based on the Aarhus Convention, certain reasons for refusing environmental information do not or are less applicable. If you are unsure whether your request concerns environmental information, check Article 19.1a of the Environmental Management Act."
 	},
 
 	11: {
 		id: "11",
-		h1: "Specifieke documenten",
+		h1: "Specific documents",
 		p:
-			"Kies hiervoor als je precies weet welk document of documenten je wilt hebben. Op de volgende pagina kun je deze documenten beschrijven en krijg je de mogelijkheid om ook openbaarmaking van de bij een specifiek document behorende onderliggende documenten te vragen. Zo krijg je inzicht in de totstandkoming van het document/de documenten, de personen of organisaties die daarbij betrokken zijn geweest, koerswijzigingen, enzovoort.",
+			"Choose this if you know exactly which document or documents you want. On the next page, you can describe these documents and also have the opportunity to request the disclosure of the underlying documents associated with a specific document. This way, you gain insight into the creation of the document(s), the individuals or organizations involved, changes in direction, etc.",
 		p2:
-			"Om de complexiteit van de Woo-generator te beperken is het niet mogelijk om beide opties tegelijk aan te vinken. Wil je naast deze specifieke documenten echt álle documenten over dit onderwerp, dan zul je twee aparte brieven moeten genereren en versturen. Het bestuursorgaan zal beide brieven dan mogelijk toch als één verzoek opvatten. Bedenk wel dat hoe meer documenten je vraagt, hoe langer het kan duren voordat je ze ontvangt. Zorg ervoor dat je beide brieven op dezelfde dag verstuurt, als je wilt dat de termijnen gelijklopen."
+			"To limit the complexity of the Wob BES generator, it is not possible to check both options at the same time. If you genuinely want all documents on this subject, you will need to generate and send two separate letters. The government body may still treat both letters as one request. Keep in mind that the more documents you request, the longer it may take to receive them. Make sure to send both letters on the same day if you want the deadlines to be the same."
 	},
 	12: {
 		id: "12",
-		h1: "Alles over dit onderwerp",
+		h1: "Everything on this subject",
 		p:
-			"Soms weet je wél dat een bepaalde overheidsinstantie zich met een onderwerp heeft beziggehouden, maar niet welke documenten ze daarover hebben. In dat geval kun je vragen om alle documenten over het onderwerp. Dit wordt ook wel een ‘sleepnet-verzoek' genoemd.",
+			"Sometimes, you do know that a specific government agency has dealt with a subject, but you don't know which documents they have on it. In that case, you can request all documents on the subject. This is also called a 'dragnet request'.",
 		p2:
-			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten en daardoor zelf nodeloos lang op stukken moeten wachten. Dit kun je op de volgende pagina aangeven."
+			"It is usually wise to limit such a request in time and exclude certain document types. After all, you don't want to be overwhelmed with irrelevant documents, nor do you want to unnecessarily burden civil servants and, as a result, wait unnecessarily long for documents. You can indicate this on the next page."
 	},
 	13: {
 		id: "13",
-		h1: "Documenten",
+		h1: "Documents",
 		p:
-			"’Documenten’ zijn gelukkig wel breder dan geschreven stukken alleen. Excelsheets, databestanden, audio-opnames, sms’jes en WhatsAppjes vallen er bijvoorbeeld ook onder. Natuurlijk kun je de overheid ook om informatie vragen die niet al op een gegevensdrager staat, bijvoorbeeld wat de gemeente vindt van een bepaalde ontwikkeling of wat de gemeente van plan is daaraan te doen. Dat is dan geen Woo-verzoek, maar een gewoon informatieverzoek. Hiervoor is de Woo-generator niet bedoeld."
+			"'Documents' are fortunately broader than just written pieces. Excel sheets, data files, audio recordings, text messages, and WhatsApp messages are also included, for example. Of course, you can also ask the government for information that is not already on a data carrier, such as what the municipality thinks about a specific development or what the municipality plans to do about it. That is not a Wob BES  request but a regular information request. The Wob BES generator is not intended for this purpose."
 	},
 	14: {
 		id: "14",
-		h1: "Welke documenten zijn nuttig?",
+		h1: "Which documents are useful?",
 		p:
-			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten en daardoor zelf nodeloos lang op stukken moeten wachten. E-mails, bijvoorbeeld, kunnen inzicht geven in het besluitvormingsproces, de toon waarin tussen bepaalde personen gecommuniceerd wordt en de frequentie van het contact. Maar e-mails kunnen ook over volstrekt irrelevante zaken gaan, zoals de hoeveelheid broodjes die bij de vergadering zijn besteld. Bedenk dus of e-mails in het geval van jouw verzoek relevant zijn en overweeg om alleen e-mails te vragen die bijlagen bevatten. Doorgaans bevatten de e-mails met bijlagen de meest interessante informatie."
+			"It is usually wise to limit such a request in time and exclude certain document types. After all, you don't want to be overwhelmed with irrelevant documents, nor do you want to unnecessarily burden civil servants and, as a result, wait unnecessarily long for documents. Emails, for example, can provide insight into the decision-making process, the tone of communication between certain individuals, and the frequency of contact. But emails can also be about entirely irrelevant matters, such as the number of sandwiches ordered for the meeting. So, consider whether emails are relevant to your request and consider asking only for emails that include attachments. Usually, emails with attachments contain the most interesting information."
 	},
 	15: {
 		id: "15",
-		h1: "Periode",
+		h1: "Period",
 		p:
-			"Hier kun je de periode waarop je verzoek betrekking heeft begrenzen (van datum X tot datum Y). Het is niet verplicht, maar zo voorkom je dat je documenten ontvangt over een periode waar je niet in geïnteresseerd bent. Dat scheelt jou werk en het scheelt de overheidsinstantie werk."
+			"Here, you can limit the period to which your request pertains (from date X to date Y). It is not mandatory, but it prevents you from receiving documents over a period you are not interested in. This saves you work and the government agency's work."
 	},
 	16: {
 		id: "16",
-		h1: "De instantie staat niet in de lijst",
+		h1: "The agency is not on the list",
 		p:
-			"Ken je een (overheids)instantie die hier niet tussen staat, stuur dan ajb een e-mail naar info@woo-generator.com met de gegevens van deze instantie zodat we deze kunnen toevoegen."
+			"If you know of a (government) agency that is not listed here, please send an email to info@woo-generator.nl with the details of this agency so that we can add it."
 	},
 	17: {
 		id: "17",
-		h1: "Periode kiezen",
+		h1: "Choosing a period",
 		p:
-			"Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de Woo-ambtenaren nodeloos lang bezig zijn met je verzoek."
+			"By limiting the period, you prevent receiving irrelevant information, and officials from being unnecessarily busy with your request."
 	},
 	18: {
 		id: "18",
-		h1: "Alleen publieke taken",
+		h1: "Only public tasks",
 		p:
-			"Je kunt alleen informatie opvragen die verband houdt met een publieke taak. Je mag daarbij ervanuit gaan dat alles waar een overheidsinstantie zich mee bezighoudt in beginsel tot de publieke taak van dat bestuursorgaan hoort. Privé-aangelegenheden van een ambtenaar vallen hier niet onder.Informatie over declaraties voor dienstreizen weer wel. Voor informatie over jezelf is de Woo niet geschikt."
+			"You can only request information related to a public task. You can assume that everything a government agency deals with initially falls under the public task of that administrative body. Private matters of a civil servant do not fall under this. Information about claims for business trips does. The Wob BES  is not suitable for information about yourself."
 	},
 	19: {
 		id: "19",
-		h1: "Dit is een voorbeeld van zo'n i'tje",
-		p: "En hier staat dan de uitleg."
+		h1: "This is an example of such an 'i'",
+		p: "And here is the explanation."
 	},
 	20: {
 		id: "20",
-		h1: "Uitleg over OnBehalf",
-		p: "Tekst bij de uitleg."
+		h1: "Explanation about OnBehalf",
+		p: "Text for the explanation."
 	}
 };
 export default DataPopup;

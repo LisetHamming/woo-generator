@@ -4,27 +4,26 @@ function Cookiemelding({ showCookie, value }) {
 	return (
 		<div className="cookie">
 			<div className="cookieBlock">
-				<p className="logo">Woo-generator</p>
-				<h1>Woo-generator gebruikt alleen functionele en analytische cookies</h1>
+				<p className="logo">Wob BES generator</p>
+				<h1>The Wob BES generator uses only functional and analytical cookies</h1>
 				<p>
-					De Woo-generator gebruikt alleen functionele cookies en een analytische cookie. Als je de functionele cookies
-					uitzet, dan werkt de Woo-generator niet: na het aanklikken van een optie of het invullen van een invulveld
-					verschijnt dan bijvoorbeeld de bijbehorende alinea niet in de brief. Vandaar dat je de Woo-generator niet kan
-					gebruiken zonder de functionele cookies te accepteren. Met de analytische cookie kunnen we zien hoe vaak en
-					waar in Nederland de Woo-generator gebruikt wordt. Wij vinden dit belangrijk voor de verbetering van de
-					Woo-generator.
+				The Wob BES Generator uses only functional cookies and an analytical cookie. If you disable the functional cookies
+				the Woo generator will not work: after clicking an option or filling in an input field
+				the corresponding paragraph does not appear in the letter, for example. Therefore, you cannot use the Woo generator
+				without accepting the functional cookies. With the analytical cookie we can see how often and
+				where in the Netherlands the Woo generator is used. We consider this important for the improvement of the
+				Woo-generator.
+
 				</p>
 				<br />
 				<p>
-					Toelichting functionele cookie:
+					Explanation about the functional cookies:
 					<br />
-					Wat je aanklikt en invult wordt door de functionele cookie in de browser opgeslagen, zodat de browser de
-					informatie kan gebruiken om de Woo-generator te laten werken. Dat is voor de tijd dat je je Woo-verzoek aan
-					het opstellen bent prettig, maar je kan zelfs afsluiten en als je terugkeert zie je de eerder ingevulde
-					informatie weer. Als je de ingevulde informatie wil wissen, bijvoorbeeld omdat je op een openbare computer
-					bent ingelogd, dan kan je aan het einde van de rit op ‘Alles wissen’ klikken. Maar voor de duidelijkheid
-					nogmaals: de VVOJ slaat zelf de informatie die jij hebt ingevuld of aangeklikt niet op. De VVOJ kan ook niet
-					zien wat je hebt ingevuld of aangeklikt.
+					What you click and enter is stored in the browser by the functional cookie, so the browser can use the
+					information to run the Woo generator. This is convenient because even if you close your browser tab, the data you entered will not be forgotten.  
+					If you want to erase the information you entered, for example, because you logged into a public computer, then you can click "Clear All" at the end. 
+					But for the sake of clarity, again: the VVOJ itself does not store the information you entered or clicked on. 
+					The VVOJ cannot see what you have entered or clicked on.
 					<br />
 					<br />
 				</p>
@@ -36,7 +35,7 @@ function Cookiemelding({ showCookie, value }) {
 						showCookie(value.showCookie);
 					}}
 				>
-					Akkoord
+					I agree to the cookies
 				</button>
 			</div>
 		</div>

@@ -15,37 +15,35 @@ function PrivacyVoorwaarden(TagManager) {
 				<div>
 					<p className="logo">Wob-generator</p>
 					{TagManager.dataLayer(tagManagerArgs)}
-					<h1>Privacy beleid</h1>
+					<h1>Privacy policy</h1>
 					<p>
-						Privacy is er belangrijk voor ons. Daarom hebben we deze pagina opgesteld om duidelijk te maken wat we met
-						je gegevens doen.
+					Privacy is very important to us. That is why we have created this page to make clear what we do with
+					your data.
 					</p>
 					<div className="extra_content"> </div>
-					<Link to="/">Ga terug</Link>
-					<Link to="/Stap1">Start een Wob-verzoek</Link>
+					<Link to="/">Go back</Link>
+					<Link to="/Stap1">Start a Wob BES request</Link>
 				</div>
 			</div>
 			<hr className="horizontalRule"></hr>
 			<div className="textLongConditions">
 				<p>
-					De Wob-generator gebruikt alleen functionele cookies en een analytische cookie. Als je de functionele cookies
-					uitzet, dan werkt de Wob-generator niet: na het aanklikken van een optie of het invullen van een invulveld
-					verschijnt dan bijvoorbeeld de bijbehorende alinea niet in de brief. Vandaar dat je de Wob-generator niet kan
-					gebruiken zonder de functionele cookies te accepteren. Met de analytische cookie kunnen we zien hoe vaak en
-					waar in Nederland de wob-generator gebruikte wordt. Wij vinden dit belangrijk voor de verbetering van de
-					Wob-generator.
+					The Wob BES generator only uses functional cookies and an analytical cookie. If you disable the functional cookies
+					the Wob BES generator will not work: after clicking an option or filling in an input field
+					the corresponding paragraph does not appear in the letter. That is why you cannot use the Wob BES generator
+					Wob-generator without accepting the functional cookies. Using the analytical cookie we can see how often and
+					where in the Kingdom of the Netherlands the Wob BES generator is used. We find this important for the improvement of the
+					Wob BES generator.
 				</p>
 				<br />
 				<p>
-					Toelichting functionele cookie:
+					Explanation functional cookie:
 					<br />
-					Wat je aanklikt en invult wordt door de functionele cookie in de browser opgeslagen, zodat de browser de
-					informatie kan gebruiken om de wob-generator te laten werken. Dat is voor de tijd dat je je wob-verzoek aan
-					het opstellen bent prettig, maar je kan zelfs afsluiten en als je terugkeert zie je de eerder ingevulde
-					informatie weer. Als je de ingevulde informatie wil wissen, bijvoorbeeld omdat je op een openbare computer
-					bent ingelogd, dan kan je aan het einde van de rit op ‘Alles wissen’ klikken. Maar voor de duidelijkheid
-					nogmaals: de VVOJ slaat zelf de informatie die jij hebt ingevuld of aangeklikt niet op. De VVOJ kan ook niet
-					zien wat je hebt ingevuld of aangeklikt.
+					What you click and the information you fill in is stored in the browser through the functional cookie, so the browser can use the
+					information to allow the wob generator to work. This is convenient if you leave while you were busy making your request, so you can always come back to it. 
+					If you want to delete the information you entered, for example, because you are on a public computer, then you can click "Clear All" at the end. But for the sake of clarity
+					it bears repeating: the VVOJ itself does not store the information you entered or clicked on. The VVOJ cannot
+					see what you have entered or clicked on through the Wob BES generator.
 					<br />
 					<br />
 				</p>

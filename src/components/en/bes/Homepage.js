@@ -17,21 +17,20 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 			</div>
 			<div className="homepageBlock">
 				<div className="blockText">
-					<p className="logo">Woo-generator</p>
-					<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
-					<p>Welkom bij de Woo-generator! </p>
-					<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
+				<p className="logo">Woo-generator</p>
+					<h1>Write your own Woo request in 3 simple steps</h1>
+					<p>Welcome to the Wob BES generator!</p>
+					<p>You are here because you want to request information from a government institution in Bonaire, Saba or Statia.</p>
 					<p>
-						Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
-						Wob-generator is daarom de Woo-generator geworden en we hebben meteen de gelegenheid aangegrepen om de
-						generator te verbeteren. Vanaf nu dien je dus een Woo-verzoek in als je overheidsinformatie wilt opvragen.
+					The BES islands have a special freedom of information law called the Wob BES. 
+					By invoking this law, anyone is allowed to ask that government documents are divulged by the government institutions of the BES islands.
 					</p>
-					<p>Met de Woo-generator is dat een koud kunstje.</p>
+					<p>With the Woo-generator, making a request is a breeze by following the steps below.</p>
 
 					<ol>
-						<li>1. Je vult een aantal gegevens over jezelf in</li>
-						<li>2. Je selecteert een overheidsinstantie</li>
-						<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
+					<li>1. You fill in some information about yourself</li>
+					<li>2. You select a government institution</li>
+					<li>3. You choose the type of documents or information you are looking for</li>
 					</ol>
 
 					<div className="nextButtons">

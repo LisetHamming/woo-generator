@@ -9,7 +9,7 @@ const DataText = state => [
 		id: 2,
 		title: "Mondelinge toelichting",
 		sentence:
-			"Mocht u vragen hebben over de precieze interpretatie of de gewenste afhandeling van dit verzoek, dan ben ik graag bereid een nadere toelichting te geven. Ik verzoek u hierover zo spoedig mogelijk maar uiterlijk binnen twee weken na ontvangst van mijn Woo-verzoek contact op te nemen."
+			"Mocht u vragen hebben over de precieze interpretatie of de gewenste afhandeling van dit verzoek, dan ben ik graag bereid een nadere toelichting te geven. Ik verzoek u hierover zo spoedig mogelijk maar uiterlijk binnen twee weken na ontvangst van mijn Lob-verzoek contact op te nemen."
 	},
 	{
 		id: 3,
@@ -45,7 +45,7 @@ const DataText = state => [
 		id: 8,
 		title: "Motivering bij weigering",
 		sentence:
-			"Bij gehele of gedeeltelijke weigering van een document verzoek ik u de weigering per document respectievelijk per alinea te motiveren. Niet alleen met verwijzing naar het betreffende Woo-artikel, maar tevens met onderbouwing waarom die weigeringsgrond zwaarder weegt dan het algemeen belang van openbaarheid."
+			"Bij gehele of gedeeltelijke weigering van een document verzoek ik u de weigering per document respectievelijk per alinea te motiveren. Niet alleen met verwijzing naar het betreffende Lob-artikel, maar tevens met onderbouwing waarom die weigeringsgrond zwaarder weegt dan het algemeen belang van openbaarheid."
 	},
 	{
 		id: 9,

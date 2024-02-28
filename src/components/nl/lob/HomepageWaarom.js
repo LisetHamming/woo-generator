@@ -7,21 +7,29 @@ function HomepageWaarom() {
 			<div className="sectionBlock">
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-verzoek?
+						Waarom een Lob-verzoek?
 					</h1>
 					<p>
-						Iedereen heeft het recht om informatie neergelegd in documenten op te vragen bij de overheid. In de Wet open
-						overheid (de Woo) is geregeld waar zo’n verzoek aan moet voldoen. Een Wob-verzoek is cruciaal om toegang te
+						Iedereen heeft het recht om informatie neergelegd in documenten op te vragen bij de overheid. 
+						In de Landsverordening openbaarheid van bestuur (de Lob) wordt dit geregeld. 
+						Elk van de (ei)landen in het Koninkrijk heeft een eigen versie van deze wet.
+						Een Lob-verzoek is cruciaal om toegang te
 						krijgen tot informatie die de overheid niet uit eigen beweging vrijgeeft. Kijk{" "}
-						<a href="https://wetten.overheid.nl/BWBR0005252/2018-07-28" className="plaintext" target="_blanc">
-							hier
-						</a>{" "}
-						voor de Wet open overheid.
+
+						<a href="https://cuatro.sim-cdn.nl/arubaoverheid2858bd/uploads/0206ab99.012.pdf" className="plaintext" target="_blanc">
+						hier  
+						</a>{" "} voor de Lob van Aruba,  {" "}
+						<a href="https://gobiernu.cw/wp-content/uploads/2010/09/T.-Landsverordening-openbaarheid-van-bestuur-Cura%C3%A7ao.pdf" className="plaintext" target="_blanc">
+						hier 
+						</a>{" "} voor de Lob van Curaçao, {" "}
+						<a href="https://lokaleregelgeving.overheid.nl/CVDR155440/1" className="plaintext" target="_blanc">
+						en hier {" "}
+						</a>{" "} voor de Lob van Sint Maarten.
 					</p>
 				</div>
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Hoe doe ik een Woo-verzoek?
+						Hoe doe ik een Lob-verzoek?
 					</h1>
 
 					<p>
@@ -34,7 +42,7 @@ function HomepageWaarom() {
 				</div>
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-generator?
+						Waarom een Lob-generator?
 					</h1>
 					<p>
 						Nogal wat journalisten denken dat een Woo-verzoek indienen een mysterieuze juridische truc is. Dat is
@@ -44,7 +52,7 @@ function HomepageWaarom() {
 				</div>
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Wanneer geen Woo-verzoek?
+						Wanneer geen Lob-verzoek?
 					</h1>
 					<p>
 						Een Woo-verzoek gebruik je alleen voor documenten die nog niet ergens anders vindbaar zijn. Bekijk voordat
@@ -52,7 +60,8 @@ function HomepageWaarom() {
 						<a href="https://open.overheid.nl/" className="plaintext" target="_blanc">
 							hier
 						</a>{" "}
-						of de overheid de documenten al openbaar gemaakt heeft.{" "}
+						of de overheid de documenten al openbaar gemaakt heeft. 
+						Tip: al openbaar gemaakte documenten kunnen je makkelijker de weg wijzen naar gerelateerd documenten die nog niet openbaar zijn gemaakt!{" "}
 					</p>
 					<br></br>
 					<p>

@@ -438,8 +438,8 @@ const Homepage = props => {
 							Netherlands.{" "}
 						</p>
 						<p>
-							Yes! From now on there is not only the Woo generator for the Netherlands, but also a WOB-BES generator for
-							Bonaire, St. Eustatius and Saba (BES islands) and a LOB generator for Curaçao, Aruba and St. Maarten (CAS
+							Yes! From now on there is not only the Woo generator for the Netherlands, but also a <b>Wob BES generator</b> for
+							Bonaire, St. Eustatius and Saba (BES islands) and a <b>Lob generator</b> for Curaçao, Aruba and St. Maarten (CAS
 							islands).
 						</p>
 						<p>And that's not all: the generator is available in multiple languages.</p>
@@ -496,15 +496,15 @@ const Homepage = props => {
 						<p>
 							Asina mes! Desde awo, e Woo-generator no ta solamente disponibel pa pidi informacion gubernamental na
 							Hulanda, pero bo por haci un peticion na e gobiernonan tanto na e paisnan den Reino Aruba, Kòrsou y Sint
-							Maarten (Lob) como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint Eustatius (Wob-BES).
+							Maarten <b>(Lob-generator)</b> como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint Eustatius <b>(Wob BES generator).</b>
 						</p>
 						<p>Cu nos generador, entrega un peticion na cualkier pais of isla den Reino Hulandes ta masha facil mes.</p>
 
 						<ol>
-							<li>1. Prome, bo ta yena informacion manera bo nomber y detayenan di contacto</li>
-							<li>2. Djey bo ta selecta un instancia gubernamental</li>
-							<li>3. Finalmente, bo ta scoge ki tipo di documento of informacion bo ta buscando</li>
-							<li>4. Ki bo ta warda? Bo ta cla pa entrega e peticion!</li>
+							<li><b>1.</b> Prome, bo ta yena informacion manera bo nomber y detayenan di contacto</li>
+							<li><b>2.</b> Djey bo ta selecta un instancia gubernamental</li>
+							<li><b>3.</b> Finalmente, bo ta scoge ki tipo di documento of informacion bo ta buscando</li>
+							<li><b>4.</b> Ki bo ta warda? Bo ta cla pa entrega e peticion!</li>
 						</ol>
 						<p>
 							Primi riba un di e botonnan aki bou pa scoge na unda bo kier pidi pa divulga informacion gubernamental,

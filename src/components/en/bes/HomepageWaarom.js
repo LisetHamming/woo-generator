@@ -7,57 +7,59 @@ function HomepageWaarom() {
 			<div className="sectionBlock">
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-verzoek?
+						Why a disclosure request?
 					</h1>
 					<p>
-						Iedereen heeft het recht om informatie neergelegd in documenten op te vragen bij de overheid. In de Wet open
-						overheid (de Woo) is geregeld waar zo’n verzoek aan moet voldoen. Een Wob-verzoek is cruciaal om toegang te
-						krijgen tot informatie die de overheid niet uit eigen beweging vrijgeeft. Kijk{" "}
-						<a href="https://wetten.overheid.nl/BWBR0005252/2018-07-28" className="plaintext" target="_blanc">
-							hier
+						Everyone has the right to request information filed in documents from the government. The Open Government
+						Government Act BES (the Wob BES) regulates what such a request must meet. A Wob request is crucial in order to gain access
+						access to information that the government does not release of its own accord. Look{""}
+						<a href="https://wetten.overheid.nl/BWBR0028154/2010-10-10" className="plaintext" target="_blanc">
+						here
 						</a>{" "}
-						voor de Wet open overheid.
+						for the Open Government Act BES .
 					</p>
 				</div>
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Hoe doe ik een Woo-verzoek?
+						How do I make a disclosure request?
 					</h1>
 					<p>
-						Het opstellen van een Woo-verzoek is niet moeilijk, maar het verzoek moet wel aan een aantal voorwaarden
-						voldoen. Met de Woo-generator helpen we je een goed en geldig Woo-verzoek op te stellen. Kies welke
-						documenten je wilt opvragen en bij welke overheidsinstantie. Hiervoor hebben we de eerste eenvoudig
-						doorzoekbare lijst met wobbare overheidsinstanties in Nederland samengesteld. Klaar! Je kunt nu je
-						Woo-verzoek opslaan en versturen via de post of digitaal verzenden.
+					Drafting a Woo request is not difficult, but the request must meet a number of conditions. 
+					With the Wob BES generator, we help you draft a proper and valid Woo request. Choose which documents you want to request and from which government agency. 
+					How do you find the government agency? 
+					Luckily you can search our list of government agencies in the Kingdom of the Netherlands. 
+					Done! You can now save your Wob BES request and send it by mail or digitally.
 					</p>
 				</div>
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-generator?
+						Why a Wob BES generator?
 					</h1>
 					<p>
-						Nogal wat journalisten denken dat een Woo-verzoek indienen een mysterieuze juridische truc is. Dat is
-						overdreven, maar er zit een kern van waarheid in: er zijn best een paar punten waarop je moet letten. Met de
-						Woo-generator hoef je niet bang te zijn dat je iets over het hoofd ziet. Aan de slag dus!
+						Quite a few journalists think filing a Woo petition is a mysterious legal trick. That is
+						exaggerated, but there is a grain of truth to it: there are quite a few points to watch out for. With the
+						Woo generator you don't have to worry about overlooking anything. Just get started!
 					</p>
 				</div>
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Wanneer geen Woo-verzoek?
+						When shouldn't I file a Wob BES request?
 					</h1>
 					<p>
-						Een Woo-verzoek gebruik je alleen voor documenten die nog niet ergens anders vindbaar zijn. Bekijk voordat
-						je een Woo-verzoek indient daarom bijvoorbeeld{" "}
+						You use a Wob BES request only for documents that are not yet public. Before
+						you submit a Woo request, you should then check if what you're looking for is already public. For example, you can look {""}
 						<a href="https://open.overheid.nl/" className="plaintext" target="_blanc">
-							hier
+						here
 						</a>{" "}
-						of de overheid de documenten al openbaar gemaakt heeft.{" "}
+						for documents which the Dutch government has made public. By the way, documents that have already been made public are handy compasses to find related information that isn't public yet! {""}
 					</p>
 					<br></br>
 					<p>
-						Bedenk verder dat de overheid niet alle informatie openbaar hoeft te maken: de Woo kent een aantal
-						weigeringsgronden zoals bedrijfsvertrouwelijke gegevens en de eerbiediging van de persoonlijke levenssfeer.
-						 
+						Further, keep in mind that the government does not have to disclose all information: the Woo has a number of
+						grounds for refusal such as business confidentiality and respect for privacy. 
+						Some of these exemptions require that a whole document be kept undisclosed, 
+						while others require that the government agency apply the exemption on parts of a document. 
+						These parts of the document can be redacted out while other parts are made public.
 					</p>
 				</div>
 			</div>
