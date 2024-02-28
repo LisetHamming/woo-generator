@@ -2,8 +2,13 @@ import React from "react";
 import spoon from "../../../assets/logo/SpoonLogo.png";
 import vvoj from "../../../assets/logo/VVOJ_Logo_RGB.png";
 import DataCheckbox from "../../DataCheckbox";
+import DataText from "./DataText";
 
-function LetterUI({ value, filteredDataText, getCurrentDate }) {
+function LetterUI({ value, getCurrentDate }) {
+	const filteredDataText = DataText(value).filter(item => {
+		return value[item.id];
+	});
+
 	const wordsInside = [
 		value.subjectInside1 && "brieven",
 		value.subjectInside2 && value.subjectInside2inclusive === "inclusief"
@@ -54,9 +59,11 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					<p>Very Distinguished Sir/Madam,</p>
 					<br />
 					<p>
-						Invoking the Open Government Act BES ("Wob BES"), I ({value.userName}) hereby request, {value.userJournalist ? " as a journalist, " : " "}
+						Invoking the Open Government Act BES ("Wob BES"), I ({value.userName}) hereby request,{" "}
+						{value.userJournalist ? " as a journalist, " : " "}
 						{value.userOnBehalfInput.length ? `working for/on behalf of ${value.userOnBehalfInput}, ` : ""}
-						{value.userCompanyNameInput.length ? `on behalf of ${value.userCompanyNameInput}` : ""} to disclose information in your possession or residing under you to be specified below.
+						{value.userCompanyNameInput.length ? `on behalf of ${value.userCompanyNameInput}` : ""} to disclose
+						information in your possession or residing under you to be specified below.
 					</p>
 					<br />
 					<p>
@@ -98,7 +105,8 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 								<React.Fragment>
 									<h3>Information</h3>
 									<p>
-									Specifically, I request (copy of) information relating to the subject matter of this request that lay in the following documents{value.subjectLong}
+										Specifically, I request (copy of) information relating to the subject matter of this request that
+										lay in the following documents{value.subjectLong}
 										{value.subjectDateStart && " from " + value.subjectDateStart}
 										{value.subjectDateEnd && " until " + value.subjectDateEnd}:
 									</p>
@@ -130,9 +138,7 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 
 							{value[11] && (
 								<p>
-									{`- Reports, advice${
-										value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""
-									};  `}{" "}
+									{`- Reports, advice${value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""};  `}{" "}
 								</p>
 							)}
 
@@ -160,21 +166,21 @@ function LetterUI({ value, filteredDataText, getCurrentDate }) {
 					))}
 				<div>
 					<p>
-					Please acknowledge in writing (by letter or email) receipt of this Wob BES request.
+						Please acknowledge in writing (by letter or email) receipt of this Wob BES request.
 						<br />
 						<br />
-						Should you offer interested parties the opportunity to give their views on the disclosure, I would like to be notified
-						in advance by writing or by e-mail.
+						Should you offer interested parties the opportunity to give their views on the disclosure, I would like to
+						be notified in advance by writing or by e-mail.
 					</p>
 					<br />
 					<p>
-						You must decide on my request within 
+						You must decide on my request within
 						{value.subjectMilieu ? " 3" : " 3"} weeks after having received it.
 						{value.subjectMilieu
 							? " Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen."
 							: "."}{" "}
-						No response or insufficient response by the due date will give rise to an appeal to the administrative law judge for
-						failure to make a timely decision.
+						No response or insufficient response by the due date will give rise to an appeal to the administrative law
+						judge for failure to make a timely decision.
 					</p>
 					<br />
 					<p>Sincerely, </p>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PopupButton from "../../popups/PopupButton";
+import PopupButton from "./popups/PopupButton";
 
 function StapVoorAf() {
 	return (

@@ -4,7 +4,6 @@ import { Link, Route, Switch } from "react-router-dom";
 import machine from "../assets/images/WOO_knop_animatie.gif";
 import gifLogo from "../assets/logo/Spoon_Logo_animatie_BlackonWhite_Gif.gif";
 import vvojLogo from "../assets/logo/VVOJ_Logo_RGB.png";
-import Cookiemelding from "./Cookiemelding";
 import DataText from "./DataText";
 import HomepageENBES from "./en/bes/Homepage";
 import HomepageOvergeneratorENBES from "./en/bes/HomepageOvergenerator";
@@ -17,6 +16,7 @@ import EnBesStap3_3 from "./en/bes/Stap3_3";
 import EnBesStapEinde from "./en/bes/StapEinde";
 import EnBesStapExtra from "./en/bes/StapExtra";
 import EnBesStapVoorAf from "./en/bes/StapVoorAf";
+import CookiemeldingEN from "./en/Cookiemelding";
 import HomepageENFooter from "./en/HomepageFooter";
 import HomepageENWaarom from "./en/HomepageWaarom";
 import HomepageENLOB from "./en/lob/Homepage";
@@ -52,6 +52,7 @@ import NLBesStap3_3 from "./nl/bes/Stap3_3";
 import NLBesStapEinde from "./nl/bes/StapEinde";
 import NLBesStapExtra from "./nl/bes/StapExtra";
 import NLBesStapVoorAf from "./nl/bes/StapVoorAf";
+import CookiemeldingNL from "./nl/Cookiemelding";
 import HomepageNLFooter from "./nl/HomepageFooter";
 import HomepageNLWaarom from "./nl/HomepageWaarom";
 import HomepageNLLOB from "./nl/lob/Homepage";
@@ -85,6 +86,7 @@ import PmBesStap3 from "./pm/bes/Stap3";
 import PmBesStap3_2 from "./pm/bes/Stap3_2";
 import PmBesStap3_3 from "./pm/bes/Stap3_3";
 import PmBesStapVoorAf from "./pm/bes/StapVoorAf";
+import CookiemeldingPM from "./pm/Cookiemelding";
 import HomepagePMFooter from "./pm/HomepageFooter";
 import HomepagePMWaarom from "./pm/HomepageWaarom";
 import HomepagePMLOB from "./pm/lob/Homepage";
@@ -362,7 +364,7 @@ const Homepage = props => {
 	return (
 		<Switch>
 			<Route exact path="/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingNL showCookie={showCookie} value={value} />}
 				<div className="selectLanguage">
 					<Link to="/">NL</Link>
 					<Link to="/EN/">EN</Link>
@@ -418,7 +420,7 @@ const Homepage = props => {
 				<HomepageNLFooter />
 			</Route>
 			<Route exact path="/EN/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingEN showCookie={showCookie} value={value} />}
 				<div className="selectLanguage">
 					<Link to="/">NL</Link>
 					<Link to="/EN/">EN</Link>
@@ -438,9 +440,9 @@ const Homepage = props => {
 							Netherlands.{" "}
 						</p>
 						<p>
-							Yes! From now on there is not only the Woo generator for the Netherlands, but also a <b>Wob BES generator</b> for
-							Bonaire, St. Eustatius and Saba (BES islands) and a <b>Lob generator</b> for Curaçao, Aruba and St. Maarten (CAS
-							islands).
+							Yes! From now on there is not only the Woo generator for the Netherlands, but also a{" "}
+							<b>Wob BES generator</b> for Bonaire, St. Eustatius and Saba (BES islands) and a <b>Lob generator</b> for
+							Curaçao, Aruba and St. Maarten (CAS islands).
 						</p>
 						<p>And that's not all: the generator is available in multiple languages.</p>
 						<p>With our generator, submitting a disclosure request in all parts of the Kingdom is a breeze. </p>
@@ -475,7 +477,7 @@ const Homepage = props => {
 				<HomepageENFooter />
 			</Route>
 			<Route exact path="/PM/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingPM showCookie={showCookie} value={value} />}
 				<div className="selectLanguage">
 					<Link to="/">NL</Link>
 					<Link to="/EN/">EN</Link>
@@ -496,15 +498,24 @@ const Homepage = props => {
 						<p>
 							Asina mes! Desde awo, e Woo-generator no ta solamente disponibel pa pidi informacion gubernamental na
 							Hulanda, pero bo por haci un peticion na e gobiernonan tanto na e paisnan den Reino Aruba, Kòrsou y Sint
-							Maarten <b>(Lob-generator)</b> como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint Eustatius <b>(Wob BES generator).</b>
+							Maarten <b>(Lob-generator)</b> como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint Eustatius{" "}
+							<b>(Wob BES generator).</b>
 						</p>
 						<p>Cu nos generador, entrega un peticion na cualkier pais of isla den Reino Hulandes ta masha facil mes.</p>
 
 						<ol>
-							<li><b>1.</b> Prome, bo ta yena informacion manera bo nomber y detayenan di contacto</li>
-							<li><b>2.</b> Djey bo ta selecta un instancia gubernamental</li>
-							<li><b>3.</b> Finalmente, bo ta scoge ki tipo di documento of informacion bo ta buscando</li>
-							<li><b>4.</b> Ki bo ta warda? Bo ta cla pa entrega e peticion!</li>
+							<li>
+								<b>1.</b> Prome, bo ta yena informacion manera bo nomber y detayenan di contacto
+							</li>
+							<li>
+								<b>2.</b> Djey bo ta selecta un instancia gubernamental
+							</li>
+							<li>
+								<b>3.</b> Finalmente, bo ta scoge ki tipo di documento of informacion bo ta buscando
+							</li>
+							<li>
+								<b>4.</b> Ki bo ta warda? Bo ta cla pa entrega e peticion!
+							</li>
 						</ol>
 						<p>
 							Primi riba un di e botonnan aki bou pa scoge na unda bo kier pidi pa divulga informacion gubernamental,
@@ -532,7 +543,7 @@ const Homepage = props => {
 				<HomepagePMFooter />
 			</Route>
 			<Route exact path="/PM/LOB/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingPM showCookie={showCookie} value={value} />}
 				<HomepagePMLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromPMLOB />
 
@@ -541,7 +552,7 @@ const Homepage = props => {
 				<HomepageOvergeneratorPMLOB />
 			</Route>
 			<Route exact path="/PM/BES/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingPM showCookie={showCookie} value={value} />}
 				<HomepagePMBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromPMBES />
 
@@ -550,7 +561,7 @@ const Homepage = props => {
 				<HomepageOvergeneratorPMBES />
 			</Route>
 			<Route exact path="/EN/LOB/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingEN showCookie={showCookie} value={value} />}
 				<HomepageENLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromENLOB />
 
@@ -559,7 +570,7 @@ const Homepage = props => {
 				<HomepageOvergeneratorENLOB />
 			</Route>
 			<Route exact path="/EN/WOO/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingEN showCookie={showCookie} value={value} />}
 				<HomepageENWOO wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromENWOO />
 
@@ -569,7 +580,7 @@ const Homepage = props => {
 			</Route>
 
 			<Route exact path="/EN/BES/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingEN showCookie={showCookie} value={value} />}
 				<HomepageENBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromENBES />
 
@@ -578,7 +589,7 @@ const Homepage = props => {
 				<HomepageOvergeneratorENBES />
 			</Route>
 			<Route exact path="/NL/WOO/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingNL showCookie={showCookie} value={value} />}
 				<HomepageNLWOO wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromNLWOO />
 
@@ -587,7 +598,7 @@ const Homepage = props => {
 				<HomepageOvergeneratorNLWOO />
 			</Route>
 			<Route exact path="/NL/BES/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingNL showCookie={showCookie} value={value} />}
 				<HomepageNLBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromNLBES />
 
@@ -596,7 +607,7 @@ const Homepage = props => {
 				<HomepageOvergeneratorNLBES />
 			</Route>
 			<Route exact path="/NL/LOB/">
-				{value.showCookie && <Cookiemelding showCookie={showCookie} value={value} />}
+				{value.showCookie && <CookiemeldingNL showCookie={showCookie} value={value} />}
 				<HomepageNLLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromNLLOB />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import DataPopup from "./DataPopup";
+import DataPopup from "../nl/woo/popups/DataPopup";
 
 function Popup({ clickHandler, number }) {
 	const popup = DataPopup[number];

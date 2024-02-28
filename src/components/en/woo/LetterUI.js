@@ -2,8 +2,13 @@ import React from "react";
 import spoon from "../../../assets/logo/SpoonLogo.png";
 import vvoj from "../../../assets/logo/VVOJ_Logo_RGB.png";
 import DataCheckbox from "../../DataCheckbox";
+import DataText from "./DataText";
 
-function LetterUI({ value, filteredDataText, getCurrentDate }) {
+function LetterUI({ value, getCurrentDate }) {
+	const filteredDataText = DataText(value).filter(item => {
+		return value[item.id];
+	});
+
 	const wordsInside = [
 		value.subjectInside1 && "brieven",
 		value.subjectInside2 && value.subjectInside2inclusive === "inclusief"
