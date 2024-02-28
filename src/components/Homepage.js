@@ -85,6 +85,8 @@ import PmBesStap2 from "./pm/bes/Stap2";
 import PmBesStap3 from "./pm/bes/Stap3";
 import PmBesStap3_2 from "./pm/bes/Stap3_2";
 import PmBesStap3_3 from "./pm/bes/Stap3_3";
+import PmBesStapEinde from "./pm/bes/StapEinde";
+import PmBesStapExtra from "./pm/bes/StapExtra";
 import PmBesStapVoorAf from "./pm/bes/StapVoorAf";
 import CookiemeldingPM from "./pm/Cookiemelding";
 import HomepagePMFooter from "./pm/HomepageFooter";
@@ -1265,16 +1267,16 @@ const Homepage = props => {
 					clickHandlerClearPeriodDate={clickHandlerClearPeriodDate}
 				/>
 			</Route>
-			<Route path="/PM/lob/StapExtra">
-				<PmLobStapExtra
+			<Route path="/PM/bes/StapExtra">
+				<PmBesStapExtra
 					getCurrentDate={getCurrentDate}
 					value={value}
 					changeHandlerCheckbox={changeHandlerCheckbox}
 					filteredDataText={filteredDataText}
 				/>
 			</Route>
-			<Route path="/PM/lob/StapEinde">
-				<PmLobStapEinde
+			<Route path="/PM/bes/StapEinde">
+				<PmBesStapEinde
 					resetState={resetState}
 					getCurrentDate={getCurrentDate}
 					value={value}
