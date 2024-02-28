@@ -62,11 +62,6 @@ function HomepageFooter() {
 					</p>
 					<div className="footerLogos">
 						<div className="spanLinks">
-							<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-								<img src={logoVvojNieuw} className="logo_vvoj" alt="VVOJ" />
-							</a>
-						</div>
-						<div className="spanLinks">
 							<a
 								className="plaintext"
 								href="https://www.expertisecentrumspoon.nl"
@@ -74,6 +69,11 @@ function HomepageFooter() {
 								rel="noopener noreferrer"
 							>
 								<img src={gifLogo} className="logo_spoon" alt="logo expertisecentrum spoon" />
+							</a>
+						</div>
+						<div className="spanLinks">
+							<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
+								<img src={logoVvojNieuw} className="logo_vvoj" alt="VVOJ" />
 							</a>
 						</div>
 					</div>

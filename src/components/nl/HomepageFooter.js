@@ -45,7 +45,7 @@ function HomepageFooter() {
 						>
 							Tim Staal
 						</a>{" "}
-						namens de VVOJ. Vertaling naar Papiaments en Engels: journalist {" "}
+						namens de VVOJ. Vertaling naar Papiaments en Engels: journalist{" "}
 						<a className="plaintext" href="https://www.<anibalism.com/" target="_blank" rel="noopener noreferrer">
 							Luis Anibal Villegas Hernandez.
 						</a>
@@ -65,11 +65,6 @@ function HomepageFooter() {
 					</p>
 					<div className="footerLogos">
 						<div className="spanLinks">
-							<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-								<img src={logoVvojNieuw} className="logo_vvoj" alt="VVOJ" />
-							</a>
-						</div>
-						<div className="spanLinks">
 							<a
 								className="plaintext"
 								href="https://www.expertisecentrumspoon.nl"
@@ -77,6 +72,11 @@ function HomepageFooter() {
 								rel="noopener noreferrer"
 							>
 								<img src={gifLogo} className="logo_spoon" alt="logo expertisecentrum spoon" />
+							</a>
+						</div>
+						<div className="spanLinks">
+							<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
+								<img src={logoVvojNieuw} className="logo_vvoj" alt="VVOJ" />
 							</a>
 						</div>
 					</div>
