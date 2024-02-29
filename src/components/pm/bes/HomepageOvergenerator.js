@@ -27,7 +27,7 @@ function HomepageOvergenerator() {
 					>
 						Tove Oegema{" "}
 					</a>{" "}
-					(Asistente di Investigacion) i{" "}
+					(Asistente di Investigacion) y{" "}
 					<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank" rel="noopener noreferrer">
 						Paulien Bouw
 					</a>
@@ -35,7 +35,7 @@ function HomepageOvergenerator() {
 					<a className="plaintext" href="https://www.lisethamming.com/" target="_blank" rel="noopener noreferrer">
 						Liset Hamming
 					</a>{" "}
-					i{" "}
+					y{" "}
 					<a
 						className="plaintext"
 						href="https://www.platform-investico.nl/personen/tim-staal/"
