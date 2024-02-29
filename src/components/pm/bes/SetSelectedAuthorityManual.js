@@ -3,11 +3,11 @@ import React from "react";
 function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthorityComplete, handleKeypathChange }) {
 	return (
 		<div className="formInputs" id="manualInput">
-			<p>Vul hier de gegevens in van de instantie waar je je verzoek aan wilt richten.</p>
+			<p>Yena aki e detayenan di e instantia na cual bo kier dirigi bo peticion.</p>
 			<form>
 				<span>
 					<label>
-						Naam instantie
+						Nomber di instancia
 						<input
 							size="50"
 							type="text"
@@ -32,7 +32,7 @@ function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthority
 
 				<span>
 					<label>
-						Postcode
+						Codigo postal
 						<input
 							size="15"
 							onChange={handleKeypathChange}
@@ -42,7 +42,7 @@ function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthority
 						/>
 					</label>
 					<label>
-						Plaats
+						Luga
 						<input
 							size="30"
 							onChange={handleKeypathChange}
@@ -54,7 +54,7 @@ function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthority
 				</span>
 				<span>
 					<label>
-						Land
+						Pais
 						<input
 							size="50"
 							onChange={handleKeypathChange}
