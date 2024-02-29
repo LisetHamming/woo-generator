@@ -26,7 +26,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						Statia. </p> 
 					<p>
 						The BES islands have a special freedom of information law called the Wob BES. By invoking this law, anyone
-						is allowed to ask that government documents are divulged by the government institutions of the BES islands.
+						is allowed to request documents that the government institutions of the BES islands possess.
 					</p>
 
 					<br></br><p><b>Please note</b> that communication with the government in Bonaire is only possible either in Dutch or Papiamento. 
