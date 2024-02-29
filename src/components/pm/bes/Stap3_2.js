@@ -23,15 +23,20 @@ function Stap3_2({
 	// }
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
-			<h2>Stap 3: Welke informatie zoek je?</h2>
+			<p className="logo">Generado Wob BES</p>
+			<h2>Paso 3: Ki informacion bo ta buscando?</h2>
 			<p>
-				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Check daarbij ook of je
-				omschrijving zoals die in de brief verschijnt goed loopt.
+				Aki bo ta describi e topico di bo peticion. 
+				Esey kiermen cu bo ta describi ki informacion bo ta buscando. 
+				Purba ta mas preciso cu ta posibel den bo descripcion di cua informacion bo ta buscando. 
+				Double check si e manera cu bo ta describi loke bo ta buscando ta un zin cu ta core bon den e carta genera.
 			</p>
 			<br />
 			<span>
-				<p>Let op: je kunt alleen informatie over ‘bestuurlijke aangelegenheden’ opvragen.</p>
+				<p>	Tene cuenta cu bo solamente por pidi informacion cu ta warda den documentonan, riba papel of digital. Un
+					documento por ta; un e-mail, un mensahe di WhatsApp, un rapport den forma di papel of un PDF. Tur loke ta
+					wordo skirbi denter di un instancia gubernamental y tin relacion cu e maneho di e organisacion, por wordo pidi
+					via e Lob. Si ta pone e condicion cu ta trata di un 'asunto administrativo' (bestuurlijke aangelegenheid)</p>
 				<PopupButton number="10" />
 			</span>
 
@@ -46,7 +51,7 @@ function Stap3_2({
 							name="subjectType"
 							value="specific"
 						/>{" "}
-						Ik wil specifieke documenten opvragen
+						Mi kier pidi documentonan specifico
 						<div className="checkmark"></div>
 					</label>
 					<PopupButton number="11" />
@@ -63,7 +68,7 @@ function Stap3_2({
 							name="subjectType"
 							value="all"
 						/>{" "}
-						Ik wil alle documenten die de overheidsinstantie heeft over dit onderwerp
+						Mi kier pidi tur e documentonan cu e instancia gubernamental tin riba e topico aki
 						<div className="checkmark"></div>
 					</label>
 					<PopupButton number="12" />
@@ -72,16 +77,16 @@ function Stap3_2({
 
 			<span>
 				{" "}
-				<p>Welke documenten moet de overheid openbaar maken</p>
+				<p>Cua documentonan gobierno mester haci publico</p>
 				<PopupButton number="13" />
 			</span>
 			<span className="extraPadding">
 				{" "}
-				<p>Denk goed na welke documenten wel of niet nuttig zijn.</p>
+				<p>Pensa bon tocante cua documentonan ta deseabel y cua no.</p>
 				<PopupButton number="14" />{" "}
 			</span>
-			<Link to="/PM/bes/Stap3">Terug</Link>
-			<Link to="/PM/bes/Stap3_3">Volgende</Link>
+			<Link to="/PM/bes/Stap3">Bay bek</Link>
+			<Link to="/PM/bes/Stap3_3">Proximo paso</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
 		</div>
 	);

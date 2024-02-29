@@ -8,9 +8,9 @@ function HomepageOvergenerator() {
 		<div className="footer">
 			<div className="sectionBlock2">
 				<div className="block1">
-					<h1>Over deze generator</h1>
+				<h1>Over deze generator</h1>
 					<p>
-						De Lob-generator is een project van de Woo-werkgroep van de Vlaams-Nederlandse Vereniging van
+						De Woo-generator is een project van de Woo-werkgroep van de Vlaams-Nederlandse Vereniging van
 						Onderzoeksjournalisten (
 						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
 							VVOJ
@@ -45,7 +45,7 @@ function HomepageOvergenerator() {
 						>
 							Tim Staal
 						</a>{" "}
-						namens de VVOJ. Vertaling naar Papiaments en Engels: journalist
+						namens de VVOJ. Vertaling naar Papiaments en Engels: journalist{" "}
 						<a className="plaintext" href="https://www.<anibalism.com/" target="_blank" rel="noopener noreferrer">
 							Luis Anibal Villegas Hernandez.
 						</a>

@@ -23,18 +23,18 @@ function Stap1({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Woo generator</p>
 
-			<h2>Stap 1: Over jezelf</h2>
+			<h2>Step 1: About Yourself</h2>
 			<p>
-				Vul hier je contactgegevens in zodat de overheidsinstantie je kan bereiken en maak enkele keuzes over hoe je
-				jezelf en je verzoek aan de overheid presenteert. Let op: een Woo-verzoek kan niet anoniem worden ingediend.
+			Fill in your contact information here so that the government agency can reach you and make some choices about how you
+    present yourself and your request to the government. Note: a Woo request cannot be submitted anonymously.
 			</p>
 			<br />
 			<form>
 				<span>
 					<label className="container nieuwietje">
-						Ik ben een journalist
+						I'm a journalist
 						<input
 							id="userJournalist"
 							value="userJournalist"
@@ -49,7 +49,7 @@ function Stap1({
 
 				<span>
 					<label className="container nieuwietje">
-						Ik dien dit Woo-verzoek in namens een (media)organisatie
+						I am submitting this Woo request on behalf of a (media) organization
 						<input
 							id="userCompany"
 							value="userCompanyName"
@@ -64,7 +64,7 @@ function Stap1({
 				{value.userCompanyName && (
 					<span className="subForm">
 						<label className="formInputs">
-							Naam organisatie
+							Organization name
 							<input
 								id="userCompanyNameInput"
 								size="46"
@@ -78,7 +78,7 @@ function Stap1({
 				)}
 				<span>
 					<label className="container nieuwietje">
-						Ik werk voor/in opdracht van een (media)organisatie
+						I work for/ am commissioned by a (media) organization
 						<input
 							id="userOnBehalf"
 							value="userOnBehalf"
@@ -109,7 +109,7 @@ function Stap1({
 					<span>
 						<label>
 							{" "}
-							Naam
+							Name
 							<input
 								size="50"
 								value={value.userName}
@@ -121,12 +121,12 @@ function Stap1({
 							/>
 						</label>
 					</span>
-					{errors.includes("userName") && <p id="error">Dit is een verplicht veld, graag invullen.</p>}
+					{errors.includes("userName") && <p id="error">This is a required field, please fill it in.</p>}
 					<span>
 						{" "}
 						<label>
 							{" "}
-							Postadres
+							Street name
 							<input
 								size="40"
 								value={value.userAdress}
@@ -151,11 +151,11 @@ function Stap1({
 							/>
 						</label>
 					</span>
-					{errors.includes("userAdress") && <p id="error">Dit is een verplicht veld, graag invullen.</p>}
+					{errors.includes("userAdress") && <p id="error">This is a required field, please fill it in.</p>}
 					<span>
 						<label>
 							{" "}
-							Postcode
+							Postal code
 							<input
 								size="15"
 								value={value.userZipcode}
@@ -168,7 +168,7 @@ function Stap1({
 						</label>
 						<label>
 							{" "}
-							Plaats
+							Place
 							<input
 								size="30"
 								value={value.userCityName}
@@ -180,7 +180,7 @@ function Stap1({
 							/>
 						</label>
 					</span>
-					{errors.includes("userCityName") && <p id="error">Dit is een verplicht veld, graag invullen.</p>}
+					{errors.includes("userCityName") && <p id="error">This is a required field, please fill it in.</p>}
 					<span>
 						<label>
 							{" "}
@@ -199,7 +199,7 @@ function Stap1({
 					<span>
 						<label>
 							{" "}
-							Telefoon
+							Phone number
 							<input
 								size="50"
 								value={value.userPhoneNumber}
@@ -214,7 +214,7 @@ function Stap1({
 				</div>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/EN/woo/StapVoorAf">Terug</Link>
+			<Link to="/EN/woo/StapVoorAf">Go back</Link>
 			<Link
 				to="/EN/woo/Stap2"
 				/*onClick={event => {
@@ -235,7 +235,7 @@ function Stap1({
 					}
 				}}*/
 			>
-				Stap 2
+				Next step
 			</Link>
 			<LetterUI
 				className="letterText"

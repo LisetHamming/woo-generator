@@ -13,12 +13,12 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
-			<h2 className="hidePrint">Laatste check!</h2>
-			<p className="extraPadding hidePrint">Woo-verzoek met onderwerp: {value.subjectLong}</p>
+			<p className="logo">Generador Lob</p>
+			<h2 className="hidePrint">Ultimo check!</h2>
+			<p className="extraPadding hidePrint">Peticion Lob cu topico: {value.subjectLong}</p>
 			<p className="hidePrint">
-				Hoewel de Woo-generator met de grootste zorgvuldigheid is ontwikkeld, is het opstellen van een goed Woo-verzoek
-				mensenwerk en maatwerk. Bovendien blijf je zelf verantwoordelijk voor wat je naar het bestuursorgaan stuurt.
+				Aunke e Woo-generator ta traha cu hopi cuido, bo mes ta keda responsabel pa kico bo ta manda un organo
+				gubernamental.
 				<br />
 				<br />
 			</p>
@@ -26,51 +26,50 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<button
 					className="buttonStyle2"
 					onClick={() => {
-						window.dataLayer.push({ event: "print bes PAP brief" });
+						window.dataLayer.push({ event: "print lob PAP brief" });
 						exportHTMLDoc();
 					}}
 				>
-					Opslaan als DOC
+					Warda como .doc file
 				</button>
 			</p>
 			<p>
-				Je concept Woo-verzoek
+				Bo peticion pa informacion
 				<br />
-				Check of de zinnen in je verzoek goed lopen. Denk ook na of er nog specifieke informatie nodig is om aan je
-				verzoek toe te voegen. Deze aanvullingen en wijzigingen kun je zelf aanbrengen nadat je je Woo-verzoek hebt
-				opgeslagen. Ben je tevreden, druk de brief dan af en zet je handtekening eronder. Bij een Woo-verzoek per brief
-				is dat verplicht. Vergeet niet vóór het versturen per post een kopie van je ondertekende brief te maken.
+				Lesa bon si e zinnan den bo peticion ta core bon. Tamabe ta bon pa bo pensa si tin mester di agrega informacion
+				mas specifico den e peticion. Bo mes por agrega e cambionan aki si ta necesario, despues cu bo a warda e file.
+				Si bo ta satisfecho, imprimi e carta y firm'e. Corda pa pidi un copia di bo carta ora bo entreg'e, of traha un copia
+				prome cu bo mand'e via post.
 				<br />
 				<br />
-				Digitaal versturen?
+				Manda digitalmente?
 				<br />
-				Onder de Woo moeten overheidsinstanties Woo-verzoeken die digitaal zijn ingediend accepteren. Maar
-				overheidsinstanties mogen wel aangeven via wélke digitale weg een Woo-verzoek dient te worden ingediend,
-				bijvoorbeeld via een specifiek e-mailadres of een online Woo-formulier. Check dit dus altijd van tevoren! Heeft
-				de overheidsinstantie een Woo-formulier op haar website gezet, dan kun je de (eventueel ondertekende) brief ook
-				uploaden of de tekst kopiëren en inplakken.
+				Aunke riba niun di e islanan ABCSSS e ley ta regla con un peticion mester wordo haci digitalmente, practica ta
+				mustra cu entrega un peticion via e-mail ta posibel. Na Kòrsou por ehempel esaki ta bay via e Lokèt di Pèrmit.
+				Semper informa di antemano na e departamento concerni con un peticion digital por wordo haci pa preveni cu e
+				peticion no ta wordo acepta.
 			</p>
 			<br />
 			<div>
 				<p>
-					Vragen en opmerkingen: woo-generator@vvoj.org
-					<br />
-					De Woo-generator is met liefde en plezier gemaakt en we zullen doorgaan met de ontwikkeling. Laat het ons
-					daarom weten als je iets mist of liever anders ziet. Maar we horen het ook graag als je er blij mee bent!{" "}
+					En caso di pregunta y comentarionan por manda un e-mail na: woo-generator@vvoj.org
+					<br />E Woo-generator ta semper den desaroyo y ta wordo traha cu placer y cuido. Laga nos sa si bo ta haya cu
+					falta algo, of si bo ta prefera pa nos haci algo diferente. Claro, si bo ta contento nos lo kier tende esey
+					tambe!{" "}
 				</p>
 				<br />
 				<p>
 					{" "}
-					Anderen vertellen over de Woo-generator?
-					<br /> #woogenerator{" "}
+					Bo kier conta otro personanan di e generador Lob?
+					<br /> #generadorlob{" "}
 				</p>
 				<br />
 				<br />
 			</div>
 			<br />
-			<Link to="/PM/bes/StapExtra">Terug</Link>
+			<Link to="/PM/bes/StapExtra">Bay bek</Link>
 			<Link to="/" onClick={resetState}>
-				Alles wissen
+				Cuminsa di nobo y deshaci tur loke m'wa yena caba
 			</Link>
 
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />

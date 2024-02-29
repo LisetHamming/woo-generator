@@ -1,48 +1,49 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PopupButton from "../../popups/PopupButton";
+import PopupButton from "./popups/PopupButton";
 
 function StapVoorAf() {
 	return (
 		<div className="formLetter central">
-			<p className="logo">Woo-generator</p>
-			<h2>Goed om te weten</h2>
+			<p className="logo">Wob BES generator</p>
+			<h2>Good to know</h2>
 			<br />
 			<br />
 
 			<p>
-				De Woo-generator is niet gemaakt om op je telefoon te gebruiken. Je kunt ‘m dus het beste op je computer of
-				laptop openen.
+				The Woo generator is not designed to be used on your phone. It is best to open it on your computer or
+				laptop.
 			</p>
 			<br />
 			<p>
-				Aan de linkerkant van het scherm staat welke informatie we nodig hebben voor je verzoek en vakjes om deze
-				informatie in te vullen.
+				On the left side of the screen, you will find the information we need for your request and boxes to fill in this
+				information.
 			</p>
 			<span className="nieuwietje">
 				<p>
-					Voor meer uitleg kun je klikken op de i'tjes.
+					For more explanation, you can click on the i's.
 					<PopupButton number="19" />
 				</p>
 				<br />
 			</span>
 
 			<p>
-				Je antwoorden worden automatisch verwerkt en verschijnen vervolgens in het concept Woo-verzoek aan de
-				rechterkant. Zo kun je steeds zien of de tekst goed loopt. Alles wat je invult wordt via de browser die je
-				gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet.
+				Your answers are automatically processed and then appear in the draft Woo request on the right side. This way,
+				you can always see if the text is flowing correctly. Everything you fill in is 'locally' saved through the
+				browser you are using. That means no one else can see your answers, not even us.
 			</p>
 			<br />
-			<p>Als je alle vragen hebt beantwoord, kun je je concept Woo-verzoek opslaan als DOC en de tekst aanpassen.</p>
+			<p>Once you have answered all the questions, you can save your draft Woo request as a DOC and edit the text.</p>
 			<br />
 			<p className="extraPadding">
-				Wil je iets net even anders of wil je bijvoorbeeld een extra toelichting op je verzoek toevoegen? Dan kun je in
-				het opgeslagen Word-document je Woo-verzoek nog aanpassen.
+				If you want something a bit different or want to add an extra explanation to your request, you can still edit
+				your Woo request in the saved Word document.
 			</p>
-			<Link to="/">Terug</Link>
+			<Link to="/EN/">Back</Link>
 
-			<Link to="/EN/woo/Stap1">Ik snap het</Link>
+			<Link to="/EN/woo/Stap1">I understand</Link>
 		</div>
 	);
 }
+
 export default StapVoorAf;

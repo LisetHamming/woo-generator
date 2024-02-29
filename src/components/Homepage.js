@@ -521,7 +521,7 @@ const Homepage = props => {
 						</ol>
 						<p>
 							Primi riba un di e botonnan aki bou pa scoge na unda bo kier pidi pa divulga informacion gubernamental,
-							sea cu ta na Hulanda, Aruba, Kòrsou of Sint Maarten, of Boneiro, Statia of Saba. Ariba na banda drechi bo
+							sea cu ta na Hulanda, Aruba, Kòrsou of Sint Maarten (Lob), of Boneiro, Statia of Saba (Wob BES). Ariba na banda drechi bo
 							por scoge pa cambia di idioma.{" "}
 						</p>
 

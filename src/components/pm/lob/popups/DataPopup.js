@@ -3,125 +3,127 @@ const DataPopup = {
 		id: "1",
 		h1: "Bo ta periodista?",
 		p:
-			"No ta necesario pa bo ta periodista pa entrega un peticion pa divulga documentonan di gobierno. Si a caso bo ta, lo ta bon pa menciona esey. E Corte Europeo di Derecho Humano (ECHR) a establece cu interes periodistico ora di divulga documentonan di gobierno ta trece cune consideracion special."
+			"Bo no mester ta periodista pa entrega un peticion Wob BES. Pero, por ta utíl pa menciona cu bo ta periodista si esaki ta e caso. Corte Europeo pa Derechonan Human a determina cu den algun caso e interes periodistico mester haya peso special na momento di publicacion di documentonan."
 	},
 	2: {
 		id: "2",
-		h1: "Kico ta e meta di bo peticion?",
+		h1: "Meta di bo peticion?",
 		p:
-			"Legalmente bo no ta rekiri di splica dicon bo ta haciendo bo peticion, y e instancia gubernamental no mag di puntra pakico bo ta pidiendo divulga documentonan. Alabes den cierto casonan e por yuda e instancia pa compronde mihor ki informacion bo ta buscando, pero esey lo vario di caso pa caso. Tin biaha ta hustamente miho pa no divulga ki noticia bo ta purbando haya. Bo mes tin cu determina kico ta miho strategicamente."
+			"Bo no mester splica kico e meta ta di bo peticion. E ta hasta prohibi pa gobierno puntra bo dicon bo ta haciendo e peticion. Na mes momento, esaki por yuda instancianan gubernamental compronde miho cua documentonan bo ta buscando, si nan sa kiko ta e meta di bo peticion. Sinembargo, tin biaha por ta prudente pa no konta cua ta e noticia cu bo tin intencion di descubri. Evalua kico ta miho den bo situacion."
 	},
 	3: {
 		id: "3",
-		h1: "Den nomber di un medio",
+		h1: "Den nomber di un medio di comunicacion",
 		p:
-			"Bo mag di entrega bo peticion den nomber di un medio. Si esey ta e caso, bo mester tin un carta di apoderacion (machtiging) cu bo ta manda cu e peticion. E peticion por wordo rechasa si bo no ta entrega e carta di apoderacion. Entrega un peticion den nomber di un medio lo por trece cune cu e peticion lo wordo mira mas seriamente, of hustamente e lo haci cu lo no tuma e peticion hopi amenamente. Un compromiso lo ta cu bo por menciona pa ki medio bo ta traha, sin mester entreg'e oficialmente den nomber di e medio. Si esey ta e caso, selecta e opcion abou."
+			"Bo por entrega bo peticion den nomber di un medio di comunicacion. Pero, no lubida cu bo mester ta apodera (gemachtigd) pa bo mag di entrega e peticion den nomber di otro, y e apoderacion aki bo mester manda hunto cu bo peticion. Bo peticion por wordo rechasa si bo no tin e poder corecto. Claro, bo no por entrega un peticion den nomber di un medio di comunicacion si nan no a autorisa bo pa haci esaki. Por ta posibel cu pa via cu e medio di comunicacion ta conoci, esaki por trece cune un presion pa trata bo peticion seriamente. Si bo no kier, of no mag entreg'e den nomber di e medio, un solushon intermedio ta pa menciona pa cual medio di comunicacion bo ta traha, pero no entrega e peticion oficialmente na nomber di e organisacion aki. Marca e opción mas abou pa e opcion ey."
 	},
 	4: {
 		id: "4",
-		h1: "Privacidad",
+		h1: "Privasidat i almasenamentu",
 		p:
-			"Tur cos cu bo yena riba e sitio aki ta wordo warda localmente. Esey kiermen cu niun hende por wak e informacion cu bo ta yena, ni anos. Un cookie funcional ta facilita esaki. Banda di esaki, riba e sitio nos tin un cookie di Google Analytics instala pa nos haya un idea di cuanto uzo e Lob-generator ta haya."
+			"Tur kos ku bo yena ta wordu almasená lokalmente via e browser ku bo ta usa. Esaki ta nifika ku no tin hende otro ku por wak bo kontestanan, tampoko nos. Esaki ta sosodé pa medio di un yamá 'cookie' funcional. Ademas, tin un 'cookie' di Google Analytics instala riba e website pa tene konta di uso di e Woo-generator."
 	},
 	5: {
 		id: "5",
-		h1: "Cerca cua instancianan gubernamental mi por entrega un peticion pa divulga documentonan cu e Lob-generator?",
+		h1: "Na ki instansianan gubernamental mi por entrega un petishon di Woo ku e Woo-generator?",
 		p:
-			"Den e paisnan di Reino Aruba, Kòrsou y Sint Maarten e peticion pa divulga documentonan di gobierno ta dirigi primordialmente na un minister. No ta posibel pa haya documentonan di corte ni di parlamento di e manera aki. Ora e documentonan ta bou di un minister, dus na un departamento cu ta resorta bou di e minister, mayoria biaha mester dirigi e peticion na e minister y pidi documentonan di e departamento concerni.",
+			" Tin hopi instansianan gubernamental na Hulanda, yamá tambe 'organonan di gobèrnu': municipionan, provinsianan, ministerionan, awa-schapnan, polis i servisio di inspekshon, pero tambe 'organonan independiente di gobèrnu' manera Sociale Verzekeringsbank (SVB) i Centraal Bureau Rijvaardigheidsbewijzen (CBR). Bao di e ley di Woo, desde 1 di mei 2022, aña aki a keda suma algun instansia mas manera Parlamentu di promé i di dos kamara, Rekenkamer General i Defensornan di Pueblo. Tur e instansianan aki ta kai bao di Woo i por wordu hanjá via e Woo-generator.",
 		p2:
-			"E database di instancianan gubernamental den e paisnan Aruba, Kòrsou y Sint Maarten a wordo agrega pa Luis Villegas Hernandez den colaboracion cu Exepertisecentrum SPOON. E ta e prome database di su tipo tocante e instancianan gubernamental di e islanan te cu nos sa. Esey sinembargo no kiermen cu e database ta completo. Tin instancianan cu ta cambia di nomber of ta stop di existi, y tin biaha un instancia nobo ta nace. Nos ta trahando constantemente pa por tene e database up-to-date. Si bo sa di algun departamento of instancia cu falta sugerencianan y updatenan ta agradici via e e-mail: info@woo-generator.nl",
+			" E base di datonan ku ta inklui e instansianan gubernamental ku ta kai bao di Woo a keda krea pa e miembronan di e grupo di trabou di Woo di VVOJ. Ñan nos komprondé, esaki ta e promé base di datonan manera esaki na Hulanda. Tur e instansianan menshoná anteriormente a keda inklui. Esaki no nifika ku e base di datonan ta kompleto. Por ta posibel ku nos por a pasa por haltu instansianan of ta posibel ku instansianan por sera of kambia di nomber. E base di datonan ta keda kambia i desaroyá kontinuamente. Sugerensianan i aktualisashon ta bon bini: info@woo-generator.nl",
 		p3:
-			"Si e instancia gubernamental cu bo ta buscando no ta aparece den e lista aki, busca e informacion di contacto di e instancia riba internet y yena esaki manualmente."
+			" Si e instansia gubernamental ku bo ta buskando no ta den e lista, wak e website di e instansia aki i yena e informashon na manera manual."
 	},
 	6: {
 		id: "6",
-		h1: "Juiste overheid?",
+		h1: "Gobernashon korekto?",
 		p:
-			"Vraag je allereerst af bij welke overheidsinstantie de documenten over je onderwerp te vinden zijn. Als je er niet uitkomt, zoek dan online op je onderwerp en kijk welke overheidsinstanties tevoorschijn komen. Je kunt ook eenzelfde verzoek indienen bij verschillende instanties. Soms valt de ene overheidsinstantie onder verantwoordelijkheid van de andere. Weet je bijvoorbeeld niet zeker of de documenten bij de Immigratie- en Naturalisatiedienst (IND) of het ministerie van Justitie en Veiligheid liggen, kies dan de ‘hoogste’ instantie, in dit geval het ministerie. Het is wel zo dat instanties die minder onder een vergrootglas liggen soms makkelijker documenten vrijgeven. Denk dus ook na over waar je de meeste kans maakt!",
+			" Preguntá promé ku tur kos, na kua instansia gubernamental bo por hanja dokumentonan relashoná ku bo topiko. Si bo no ta sigur, buska riba internet pa bo topiko i wak kua instansianan gubernamental ta aparese. Tambe bo por manda e mesun petishon na diferente instansianan. Algun bia un instansia gubernamental por ta bao responsabilidat di otro. Si bo no ta sigur, pa e ka so ku e dokumentonan ta ku e Dienst Uitvoering Onderwijs (DUO) of Ministerie van Onderwijs, Cultuur en Wetenschap, skohe e 'hoogste' instansia, den e kaso aki, e ministerio. Pero, tambe e ta keda berdat ku instansianan ku no ta riba skouder di tur hende por hende ta mas fásil pa laga dokumentonan liber. Asina, pensa tambe den unda bo tin mas chèns!",
 		p2:
-			"En wees gerust: de instantie waar je je Woo-verzoek indient is verplicht om je verzoek naar de juiste instantie door te sturen. Voor de zekerheid herinnert de generator in de alinea ‘doorgeleiding’ de overheidsinstantie aan deze verplichting."
+			" I no ta preokupá, e instansia kaminda bo manda bo petishon di Woo ta obligá pa manda bo petishon pa e instansia korekto. Pa seguridat, e generator ta yuda e instansia gubernamental den e alinea di 'doorgeleiding' riba e obligashon aki."
 	},
 
 	7: {
 		id: "7",
-		h1: "Geadresseerde",
+		h1: "Direkshonato",
 		p:
-			"Als je de naam van de hoogstgeplaatste functionaris van de instantie kent, bijvoorbeeld van de minister, de staatssecretaris, de commissaris van de koning, enzovoort, dan kun je die er na het downloaden van je concept Wob-verzoek zelf bijschrijven. Maar het is niet verplicht. Volsta dan met geachte heer/mevrouw."
+			
+
+	" Si bo sa e nòmber di e funshonario mas haltu di e instansia, manera di e minister, e sekretario di estado, e komisario di rei, i asina sigi, por skibi e nòmber aki mesora despues di bo download bo petishon Wob konsepto. Pero, esaki no ta obligatorio. Por yega ku 'stimá seño/ña'."
 	},
 	8: {
 		id: "8",
-		h1: "Waarom je nauwkeurig moet zijn",
+		h1: "Pabien presisó",
 		p:
-			"Een te brede of onduidelijke formulering van je onderwerp kan er toe leiden dat de overheid om verduidelijking vraagt. Onder de Woo moet de overheidsinstantie dat binnen twee weken na ontvangst van je verzoek laten weten. Pas nadat je je verzoek hebt gepreciseerd begint de beslistermijn te lopen. Er kunnen dan onnodig weken verstrijken voordat de overheid met je verzoek aan de slag gaat."
+			" Un formulashon muchu amplio of no kla di bo topiko por hasi ku gobèrnu ta pidi boso pa splika. Bou di e ley di Woo, e instansia gubernamental mester bisa esaki den dos siman despues di risibí bo petishon. Solamente despues ku bo a klaar splika bo petishon, e término di desishon ta kuminsá kontá. Por ta ku tin siman innofisial ku ta pasa promé ku gobèrnu ta kuminsá traha ku bo petishon."
 	},
 	9: {
 		id: "9",
-		h1: "Milieu",
+		h1: "Medio ambiente",
 		p:
-			"Als je Woo-verzoek betrekking heeft op milieu-informatie geldt een aantal bijzondere regels. Op grond van het verdrag van Aarhus zijn bepaalde redenen om milieu-informatie te weigeren niet of verminderd van toepassing. Als je twijfelt of jouw verzoek over milieu-informatie gaat, kijk dan in artikel 19.1a van de Wet Milieubeheer."
+			" Si bo petishon di Woo ta relashoná ku informashon di mediu ambiente, tin algun regla spesial. Basá riba e Tratado di Aarhus, algun motibu pa nòtifikashon di informashon di mediu ambiente no ta apliká òf ta apliká menos. Si bo ta dubidá si bo petishon ta trata tokante informashon di mediu ambiente, wak artíkulo 19.1a di Wet Milieubeheer."
 	},
 
 	11: {
 		id: "11",
-		h1: "Specifieke documenten",
+		h1: "Dokumentonan spesífiko",
 		p:
-			"Kies hiervoor als je precies weet welk document of documenten je wilt hebben. Op de volgende pagina kun je deze documenten beschrijven en krijg je de mogelijkheid om ook openbaarmaking van de bij een specifiek document behorende onderliggende documenten te vragen. Zo krijg je inzicht in de totstandkoming van het document/de documenten, de personen of organisaties die daarbij betrokken zijn geweest, koerswijzigingen, enzovoort.",
+			" Skohe esaki si bo ta sa eksaktamente kua dokumento òf dokumentonan bo ke hanja. Na e siguiente página, bo por deskribí e dokumentonan aki i bo lo hanja e posibilidat pa tambe pidi di revelá e dokumentonan subyasente relashoná ku un dokumento spesífiko. Asina bo lo haña un idea tokante kon e dokumento/dokumentonan aki a surgi, e personanan òf organisashonnan ku a partisipá, kambio den kurso, etc.",
 		p2:
-			"Om de complexiteit van de Woo-generator te beperken is het niet mogelijk om beide opties tegelijk aan te vinken. Wil je naast deze specifieke documenten echt álle documenten over dit onderwerp, dan zul je twee aparte brieven moeten genereren en versturen. Het bestuursorgaan zal beide brieven dan mogelijk toch als één verzoek opvatten. Bedenk wel dat hoe meer documenten je vraagt, hoe langer het kan duren voordat je ze ontvangt. Zorg ervoor dat je beide brieven op dezelfde dag verstuurt, als je wilt dat de termijnen gelijklopen."
+			"Pa limitá e komplejidat di e Woo-generator, no ta posibel pa tika e dos opciónnan na mes momentu. Si bo ke despues di e dokumentonan spesífiko berdaderamente tur dokumento tokante e topiko aki, bo mester krea i manda dos karta separá i manda nan. Konsehabel pa manda nan mes dianan, si bo ke pa e términonan kore. Of mas importante, kuantu mas dokumentonan bo ta pidi, mas tempu por tuma promé ku bo hanja nan. Asina ku, kuida ku bo manda nan riba mesun dia si bo ke pa e términonan kore."
 	},
 	12: {
 		id: "12",
-		h1: "Alles over dit onderwerp",
+		h1: "Tur kos tokante e topiko aki",
 		p:
-			"Soms weet je wél dat een bepaalde overheidsinstantie zich met een onderwerp heeft beziggehouden, maar niet welke documenten ze daarover hebben. In dat geval kun je vragen om alle documenten over het onderwerp. Dit wordt ook wel een ‘sleepnet-verzoek' genoemd.",
+			" Algu bia, bo sa ku un instansia gubernamental a trata un topiko spesífiko, pero no sa kua dokumentonan nan tin tokante esaki. Na e kaso aki, bo por pidi tur dokumento tokante e topiko. Esaki tambe yamá 'sleepnet-petishon.'",
 		p2:
-			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten en daardoor zelf nodeloos lang op stukken moeten wachten. Dit kun je op de volgende pagina aangeven."
+			" Normalmente ta sabio pa limitá un petishon asina den tempu i pa ekshuldi algun tìp di dokumento. Pa motibu ku bo no ke risibí un kantidat grandi di dokumentonan ku no tin importansia i pa no pone empleadonan gubernamental na trabou pa nada, pa asina bo no tin mester di warda largu pa risibí bo dokumentonan. Bo por indiká esaki na e siguiente página."
 	},
 	13: {
 		id: "13",
-		h1: "Documenten",
+		h1: "Dokumentonan",
 		p:
-			"’Documenten’ zijn gelukkig wel breder dan geschreven stukken alleen. Excelsheets, databestanden, audio-opnames, sms’jes en WhatsAppjes vallen er bijvoorbeeld ook onder. Natuurlijk kun je de overheid ook om informatie vragen die niet al op een gegevensdrager staat, bijvoorbeeld wat de gemeente vindt van een bepaalde ontwikkeling of wat de gemeente van plan is daaraan te doen. Dat is dan geen Woo-verzoek, maar een gewoon informatieverzoek. Hiervoor is de Woo-generator niet bedoeld."
+			" 'Dokumentonan' afortunadament tin un konsepto mas amplio ku solamente skirbi. Skríbimento, databestànd, grabashonnan di audio, sms i WhatsApp tambe ta konta. Sigur, bo por pidi di gobèrnu informashon ku ainda no ta skirbi riba un medionan di informashon, manera kiko e munisipio ta pensa di un desaroyo spesífiko òf kiko e munisipio tin plan pa hasi na e sentido ei. Esaki no ta un petishon di Woo, pero un simple petishon di informashon. Pa esaki, e Woo-generator no ta destiná."
 	},
 	14: {
 		id: "14",
-		h1: "Welke documenten zijn nuttig?",
+		h1: "Kua dokumentonan ta útil?",
 		p:
-			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten en daardoor zelf nodeloos lang op stukken moeten wachten. E-mails, bijvoorbeeld, kunnen inzicht geven in het besluitvormingsproces, de toon waarin tussen bepaalde personen gecommuniceerd wordt en de frequentie van het contact. Maar e-mails kunnen ook over volstrekt irrelevante zaken gaan, zoals de hoeveelheid broodjes die bij de vergadering zijn besteld. Bedenk dus of e-mails in het geval van jouw verzoek relevant zijn en overweeg om alleen e-mails te vragen die bijlagen bevatten. Doorgaans bevatten de e-mails met bijlagen de meest interessante informatie."
+			" Normalmente ta sabio pa limitá un petishon asina den tempu i pa ekshuldi algun tìp di dokumento. Pa motibu ku bo no ke risibí un kantidat grandi di dokumentonan ku no tin importansia i pa no pone empleadonan gubernamental na trabou pa nada, pa asina bo no tin mester di warda largu pa risibí bo dokumentonan. E-mail, por ehèmpel, por duna bista den e proseso di tòma desishon, e tono den kual hende ta komuniká entre nan i e frecuensia di kontakto. Pero, e-mail tambe por ta tokante kosnan totalmente sin importansia, manera kuantu sanger ku a bai kumpra pa e reunion. Konsiderá si e-mailnan ta relevante den e kaso di bo petishon i pensa pa solamente pidi e-mailnan ku anèks. Usualmente, e-mailnan ku tin anèks ta kontené e informashon mas interesante."
 	},
 	15: {
 		id: "15",
-		h1: "Periode",
+		h1: "Periodo",
 		p:
-			"Hier kun je de periode waarop je verzoek betrekking heeft begrenzen (van datum X tot datum Y). Het is niet verplicht, maar zo voorkom je dat je documenten ontvangt over een periode waar je niet in geïnteresseerd bent. Dat scheelt jou werk en het scheelt de overheidsinstantie werk."
+			" Aki bo por limitá e periodo kaminda bo petishon ta relashoná (di fecha X te fecha Y). No ta obligatorio, pero esaki por prevení bo risibí dokumentonan tokante un periodo ku no ta interesa pa bo. Esaki ta spaar bo trabou i e trabou di e instansia gubernamental."
 	},
 	16: {
 		id: "16",
-		h1: "De instantie staat niet in de lijst",
+		h1: "E instansia no ta den e lista",
 		p:
-			"Ken je een (overheids)instantie die hier niet tussen staat, stuur dan ajb een e-mail naar info@woo-generator.com met de gegevens van deze instantie zodat we deze kunnen toevoegen."
+			" Si bo sa di un instansia (gubernamental) ku no ta den e lista aki, por fabor manda un e-mail na info@woo-generator.com ku e detayenan di e instansia aki, pa nos por agrega esaki."
 	},
 	17: {
 		id: "17",
-		h1: "Periode kiezen",
+		h1: "Skoge periodo",
 		p:
-			"Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de Woo-ambtenaren nodeloos lang bezig zijn met je verzoek."
+			" Dor di skòhe e periodo, bo evita di risibí informashon ku no ta relevante i ta hasi ku e funshonarionan di Woo ta para innofisialmente ku bo petishon."
 	},
 	18: {
 		id: "18",
-		h1: "Alleen publieke taken",
+		h1: "Solamente tareanan públiko",
 		p:
-			"Je kunt alleen informatie opvragen die verband houdt met een publieke taak. Je mag daarbij ervanuit gaan dat alles waar een overheidsinstantie zich mee bezighoudt in beginsel tot de publieke taak van dat bestuursorgaan hoort. Privé-aangelegenheden van een ambtenaar vallen hier niet onder.Informatie over declaraties voor dienstreizen weer wel. Voor informatie over jezelf is de Woo niet geschikt."
+			" Bo por solamente pidi informashon ku ta relashoná ku un tarea públiko. Bo por konta ku tur kos ku un instansia gubernamental ta trata en prinsipio ta ku e tarea públiko di e orgáno di gobèrnu ei. Asuntunan privá di un funcionario no ta kuenta aki. Informashon tokante deklarashonnan pa biahe di trabou si ta konta. Pa informashon tokante bo mes, e Woo no ta apropiá."
 	},
 	19: {
 		id: "19",
-		h1: "Esaki ta un ehempel di un lampi asina",
-		p: "Y aki ta e splicacion"
+		h1: "Esaki ta un ehèmpel di un i'tje",
+		p: "I aki bo ta haña e speshifikashon."
 	},
 	20: {
 		id: "20",
-		h1: "Splicacion tocante OnBehalf",
-		p: "E texto di e splicacion"
+		h1: "Speshifikashon di OnBehalf",
+		p: "Teksto relativo na speshifikashon."
 	}
 };
 export default DataPopup;

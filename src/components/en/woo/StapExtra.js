@@ -17,13 +17,13 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
 
-			<h2>Extra opties</h2>
+			<h2>Extra options</h2>
 			<p>
-				Onderstaande opties vergroten in het algemeen je kans op openbaarmaking van de informatie omdat ze anticiperen
-				op belemmeringen die in het proces kunnen ontstaan. Bij het aan- en uitvinken van de opties kun je in je
-				Wob-verzoek in wording zien welke tekstblokjes verschijnen of verdwijnen. Lees tekstblokjes goed door om te
-				weten wat de opties inhouden. Het kan geen kwaad om ze allemaal op te nemen, maar sommige opties kunnen in jouw
-				specifieke geval niet relevant zijn. Zet ze in dat geval uit.
+				The options below generally increase your chances of disclosure because they anticipate
+				obstacles that may arise in the process. By checking and unchecking the options, you can see in your
+				Wob BES request in progress to see which text blocks appear or disappear. Read text blocks carefully to know
+				know what the options mean. It can't hurt to include them all, but some options may not be relevant in your
+				specific case may not be relevant. In that case, turn them off.
 			</p>
 			<form>
 				<span>
@@ -36,7 +36,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="1"
 						/>{" "}
-						Doorgeleiding
+						Forwarding
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -51,7 +51,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="2"
 						/>{" "}
-						Mondelinge toelichting
+						Verbal explanation
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -66,7 +66,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="3"
 						/>{" "}
-						Reeds openbare informatie
+						Already public information
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -81,7 +81,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="4"
 						/>{" "}
-						Mogelijk omvangrijk verzoek
+						Potentially sizable request
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -96,7 +96,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="5"
 						/>{" "}
-						Geanonimiseerd verstrekken
+						Provide anonymized
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -111,7 +111,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="6"
 						/>{" "}
-						Persoonlijke beleidsopvattingen
+						Personal policy opinions
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -126,7 +126,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="7"
 						/>{" "}
-						Samenvattingen van documenten
+						Document summaries
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -141,7 +141,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="8"
 						/>{" "}
-						Motivering bij weigering
+						Reasons for refusal
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -156,7 +156,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="9"
 						/>{" "}
-						Voorkeur digitale verstrekking
+						Preferred digital delivery
 						<br />
 						<div className="checkmark"></div>
 					</label>
@@ -171,15 +171,15 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 							name="checkText"
 							value="10"
 						/>{" "}
-						Inventarislijst toevoegen aan besluit
+						Add inventory list to decision
 						<br />
 						<div className="checkmark"></div>
 					</label>
 				</span>
 			</form>
 			<span className="extraPadding"></span>
-			<Link to="/EN/woo/Stap3_3">Terug</Link>
-			<Link to="/EN/woo/StapEinde">Laatste stap</Link>
+			<Link to="/EN/woo/Stap3_3">Go back</Link>
+			<Link to="/EN/woo/StapEinde">Last step!</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
 		</div>
 	);

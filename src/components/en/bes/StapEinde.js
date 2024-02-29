@@ -15,7 +15,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 		<div className="formLetter">
 			<p className="logo">Wob BES generator</p>
 			<h2 className="hidePrint">Final check!</h2>
-			<p className="extraPadding hidePrint">Woo-verzoek met onderwerp: {value.subjectLong}</p>
+			<p className="extraPadding hidePrint">Woo requet with subject: {value.subjectLong}</p>
 			<p className="hidePrint">
 				Although the Wob BES generator has been developed with the utmost care, preparing a good Wob BES request is
 				human work, so your mileage may vary. Moreover, you remain responsible for what you send to the governing body.

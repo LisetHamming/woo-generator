@@ -16,7 +16,7 @@ function HomepageWaarom() {
 						<a href="https://wetten.overheid.nl/BWBR0028154/2010-10-10" className="plaintext" target="_blanc">
 						here
 						</a>{" "}
-						for the Open Government Act BES .
+						for the Open Government Act BES.
 					</p>
 				</div>
 				<div>

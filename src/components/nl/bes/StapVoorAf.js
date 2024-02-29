@@ -5,7 +5,7 @@ import PopupButton from "../../popups/PopupButton";
 function StapVoorAf() {
 	return (
 		<div className="formLetter central">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Wob BES-generator</p>
 			<h2>Goed om te weten</h2>
 			<br />
 			<br />

@@ -18,9 +18,9 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 			</div>
 			<div className="homepageBlock">
 				<div className="blockText">
-				<p className="logo">Wob BES generator</p>
+				<p className="logo">Generado Wob BES</p>
 					<h1>Bo kier sa kico bo gobierno ta haciendo? Skirbi bo prome peticion pa divulga informacion gubernamental den 3 paso!</h1>
-					<p>Bon bini na e Wob BES generator!</p>
+					<p>Bon bini na e generado Wob BES!</p>
 					<p> Bo t’aki pasobra bo kier pidi informacion cerca un instancia gubernamental riba <b>Boneiro.</b> </p>
 					<p>
 						Tene cuenta cu na Saba y Statia e gobiernonan no ta tuma peticion den Papiamento. 

@@ -19,7 +19,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 			<div className="homepageBlock">
 				{/* <img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" /> */}
 				<div className="blockText">
-					<p className="logo">Woo-generator</p>
+					<p className="logo">Wob BES-generator</p>
 					<h1>Schrijf in 3 simpele stappen je eigen Wob BES verzoek</h1>
 					<p>Welkom bij de Wob BES generator! </p>
 					<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie van <b>Bonaire, Sint Eustatius of Saba.</b></p>

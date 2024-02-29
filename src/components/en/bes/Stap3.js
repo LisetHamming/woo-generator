@@ -26,7 +26,7 @@ function Stap3({
 		<div className="formLetter">
 			<p className="logo">Woo-generator</p>
 
-			<h2>Stap 3: Welke informatie zoek je?</h2>
+			<h2>Stap 3: What information are you looking for?</h2>
 			<p>
 				Accurately but concisely describe the topic on which you are requesting information. This can be a fairly narrow
 				topic such as "speeding fines," but also broader, such as "traffic safety in your municipality", or "the

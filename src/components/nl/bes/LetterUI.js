@@ -28,7 +28,7 @@ function LetterUI({ value, getCurrentDate }) {
 	return (
 		<div className="letterComplete">
 			<div className="letterUIHeading">
-				<h1>Je Woo-verzoek in wording:</h1>
+				<h1>Je Wob BES-verzoek in wording:</h1>
 				<div className="letterUILogos">
 					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
@@ -54,14 +54,14 @@ function LetterUI({ value, getCurrentDate }) {
 						<b className="scribble">{value.userCityName}</b>, {getCurrentDate()}
 					</p>
 					<br />
-					<p>Betreft: indiening Woo-verzoek</p>
+					<p>Betreft: indiening Wob BES-verzoek</p>
 					<br />
 					<p>Zeer geachte heer/mevrouw,</p>
 					<br />
 					<p>
-						Met een beroep op de Wet open overheid (hierna: Woo) verzoek ik,{" "}
-						<b className="scribble">{value.userName}</b>,
-						{value.userJournalist ? <b className="scribble"> journalist,</b> : " "}
+						Met een beroep op de Wet openbaarheid van bestuur BES (hierna: Wob BES) verzoek ik,{" "}
+						<b className="scribble">{value.userName}{" "} </b>, {" "}
+						{value.userJournalist ? <b className="scribble"> journalist, </b> : " "}
 						{value.userOnBehalfInput.length ? (
 							<span className="scribble">werkzaam voor/in opdracht van {value.userOnBehalfInput}, </span>
 						) : (
@@ -190,7 +190,7 @@ function LetterUI({ value, getCurrentDate }) {
 				<div>
 					<p>
 						Graag ontvang ik schriftelijk (per brief of per e-mail) een bevestiging van de ontvangst van dit
-						Woo-verzoek.
+						Wob BES-verzoek.
 						<br />
 						<br />
 						Mocht u belanghebbenden de gelegenheid gaan bieden tot het geven van zienswijzen dan ontvang ik daarvan
