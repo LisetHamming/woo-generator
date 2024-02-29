@@ -60,7 +60,7 @@ function LetterUI({ value, getCurrentDate }) {
 					<p>Very Distinguished Sir/Madam,</p>
 					<br />
 					<p>
-						Invoking the Open Government Act BES ("Wob BES"), I ({value.userName}) hereby request,{" "}
+						Invoking the National Ordinance open government ("Lob"), I ({value.userName}) hereby request,{" "}
 						{value.userJournalist ? <b className="scribble"> as a journalist, </b> : " "}
 						{value.userOnBehalfInput.length ? (
 							<b className="scribble">working for/on behalf of {value.userOnBehalfInput}, </b>

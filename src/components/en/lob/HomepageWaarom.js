@@ -13,8 +13,7 @@ function HomepageWaarom() {
 						Everyone has the right to request information that lay in documents from the government. 
 						Aruba, Curaçao and Sint Maarten all have a law that regulates how the governments should disclose information. </p> <br></br>
 						
-						<p> The National Ordinance Open Government
-						Government (the Lob) regulates what such a request must meet, and each of these islands has a version of it. A Lob request is crucial in order to gain access
+						<p> The National Ordinance open government (the Lob) regulates what such a request must meet, and each of these islands has a version of it. A Lob request is crucial in order to gain access
 						access to information that the government does not release of its own accord. </p>
 						<br></br>
 						<p> Look {""}

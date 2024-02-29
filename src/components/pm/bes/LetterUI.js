@@ -59,7 +59,7 @@ function LetterUI({ value, getCurrentDate }) {
 					<p>Apreciabel meneer/señora </p>
 					<br />
 					<p>
-						A base di e Landsverordening openbaarheid van bestuur (Lob) ami, {value.userName},
+						A base di e Wet openbaarheid van bestuur BES (Wob BES) ami, {value.userName},
 						{value.userJournalist ? <b className="scribble"> periodista, </b> : " "}
 						{value.userOnBehalfInput.length ? (
 							<b className="scribble">trahando den servicio di/ riba encargo di {value.userOnBehalfInput}, </b>
