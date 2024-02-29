@@ -45,7 +45,7 @@ function HomepageFooter() {
 						Tim Staal
 					</a>{" "}
 					na nomber di VVOJ. Traduccion na Papiamento y Ingles: periodista{" "}
-					<a className="plaintext" href="https://www.<anibalism.com/" target="_blank" rel="noopener noreferrer">
+					<a className="plaintext" href="https://www.anibalism.com/" target="_blank" rel="noopener noreferrer">
 						Luis Anibal Villegas Hernandez.
 					</a>
 				</p>
