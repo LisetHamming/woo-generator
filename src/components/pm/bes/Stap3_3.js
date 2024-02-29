@@ -27,7 +27,7 @@ function Stap3_3({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Generado Wob BES</p>
 
 			<h2>
 				Stap 3:

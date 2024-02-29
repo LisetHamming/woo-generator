@@ -6,18 +6,18 @@ function HomepageLink({ wet, clickHandlerSetLaw }) {
 		<div className="sectionLink">
 			<div className="sectionBlock">
 				<div>
-					<h1>Wist je dat?</h1>
+					<h1>Bo tabata sa?</h1>
 					<p>
-						Jawel! Vanaf nu is er niet alleen de <b>Woo-generator</b> voor Nederland, maar ook een{" "}
-						<b>WOB/BES-generator</b> voor Bonaire, St. Eustatius en Saba en een <b>LOB-generator</b> voor Curacao, Aruba
-						en St. Maarten (CAS-eilanden).
+						For di awe, no tin solamente e <b>generado Woo</b> pa Hulanda, pero tambe tin un{" "}
+						<b>generado Wob BES</b> pa Bonaire, St. Eustatius y Saba y un <b>generado Lob</b> pa Kòrsou, Aruba y St. Maarten.
 					</p>
+					<p>Si bo kier pidi documentonan cerca un instancia gubernamental na Hulanda, of na Aruba, Kòrsou of Sint Maarten, scoge aki bou unda bo kier bay.</p>
 				</div>
 				<div>
-					<Link to="/EN/woo/" onClick={e => clickHandlerSetLaw("woo")}>
+					<Link to="/PM/woo/" onClick={e => clickHandlerSetLaw("woo")}>
 						WOO
 					</Link>
-					<Link to="/PM/lob/" onClick={e => clickHandlerSetLaw("Lob")}>
+					<Link to="/PM/lob/" onClick={e => clickHandlerSetLaw("LOB")}>
 						LOB
 					</Link>
 				</div>

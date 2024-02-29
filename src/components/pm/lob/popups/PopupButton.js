@@ -8,7 +8,7 @@ function PopupButton({ number }) {
 	return (
 		<>
 			<button type="button" className="popupI" onClick={() => setPopUp(curr => !curr)}>
-				<img src={lightbulb} alt="icoon, klik voor meer informatie" />
+				<img src={lightbulb} alt="icoon, primi pa mas informacion" />
 			</button>
 			{popUp && <Popup number={number} clickHandler={() => setPopUp(false)} />}
 		</>

@@ -3,17 +3,17 @@ const DataText = state => [
 	  id: 1,
 	  title: "Referral",
 	  sentence:
-		"Where documents are not in your possession and/or you are aware that information on this subject is also held by one or more other government bodies, I request you to forward this request to the appropriate body without extending deadlines. If this indeed happens, I would appreciate receiving a notification about it."
+		"Documents that are not in your possession while you are aware that information on this subject is also held by one or more other government agencies, I request you to forward this request to the appropriate agency without extending deadlines. If this indeed happens, I would like to receive a notification about it."
 	},
 	{
 	  id: 2,
-	  title: "Oral explanation",
+	  title: "Verbal explanation",
 	  sentence:
-		"If you have any questions about the precise interpretation or the desired handling of this request, I am willing to provide further explanation. I request you to contact me as soon as possible, but no later than two weeks after receiving my FOI request."
+		"If you have any questions about the precise interpretation or the desired handling of this request, I am willing to provide further explanation. I request you to contact me as soon as possible, but no later than two weeks after receiving my request."
 	},
 	{
 	  id: 3,
-	  title: "Already public information",
+	  title: "Information that has already been made public",
 	  sentence:
 		"If the information I requested is already publicly available in an easily accessible form, I request you to refer me to the location."
 	},
@@ -27,13 +27,13 @@ const DataText = state => [
 	  id: 5,
 	  title: "Protection of personal privacy",
 	  sentence:
-		"If you determine that the protection of personal privacy hinders the integral disclosure of documents, I request alternatively for disclosure with the omission of personal data, only for individuals who do not enter the public domain due to their function. If you do not want to make personal names public, I request you to replace them with a number, so that the involvement of the same person in multiple aspects or situations remains visible, even if anonymously."
+		"If you determine that the protection of personal privacy hinders the integral disclosure of documents, I request alternatively for disclosure with the omission of personal data, only for officials who do not hold a publicly visible office due to their function. If you do not want to make personal names public, I request you to replace them with a number, so that the involvement of the same person in multiple instances remains visible, even if anonymously."
 	},
 	{
 	  id: 6,
-	  title: "Personal policy views?",
+	  title: "Personal policy opinions?",
 	  sentence:
-		"If you believe that personal policy views in documents prepared for internal consultation hinder the integral disclosure of those documents, I request alternatively for the disclosure of personal policy views in a non-attributable form, and more alternatively for the disclosure of factual information that is not a personal policy view."
+		"If you believe that personal policy opinions in documents prepared for internal consultation hinder the integral disclosure of those documents, I request alternatively for the disclosure of personal policy opinions in a non-attributable form, and more alternatively for the disclosure of factual information that is not a personal policy opinion."
 	},
 	{
 	  id: 7,
@@ -45,7 +45,7 @@ const DataText = state => [
 	  id: 8,
 	  title: "Reasoning for refusal",
 	  sentence:
-		"In case of complete or partial refusal of a document, I request you to justify the refusal per document or per paragraph. Not only with reference to the relevant FOI article but also with substantiation of why that ground for refusal outweighs the general public interest in transparency."
+		"In case of complete or partial refusal of a document, I request you to justify the refusal per document or per paragraph. Not only with reference to the relevant law article but also with substantiation of why that ground for refusal outweighs the general public interest in transparency in that specific instance."
 	},
 	{
 	  id: 9,
@@ -57,7 +57,7 @@ const DataText = state => [
 	  id: 10,
 	  title: "Inventory list",
 	  sentence: 
-	  	"I request you to include an inventory list as part of the decision."
+		"I request you to include an inventory list as part of the decision."
 	}
   ];
   export default DataText;

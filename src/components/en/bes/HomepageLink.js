@@ -11,7 +11,7 @@ function HomepageLink({ wet, clickHandlerSetLaw }) {
 					<p>
 					Yes indeed! From now on, there is not only the <b>Woo generator</b> for the Netherlands but also a <b>Wob BES generator</b> for Bonaire, St. Eustatius, and Saba (BES islands), and a <b>Lob generator</b> for Curaçao, Aruba, and St. Maarten (CAS islands).
 					</p>
-					<p>Do you want to request documents from government agencies in the European Netherlands or one of the CAS islands? Then choose one of the options below.</p>
+					<p>Instead of requesting documents from one of the BES islands, do you instead want to request from government agencies in the Netherlands or one of the CAS islands? Then choose one of the options below.</p>
 					</p>
 				</div>
 				<div>
