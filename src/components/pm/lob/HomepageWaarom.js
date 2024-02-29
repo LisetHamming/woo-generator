@@ -2,67 +2,89 @@ import React from "react";
 import bg from "./../../../assets/icons/orange-single-line.png";
 
 function HomepageWaarom() {
-	return (
-		<div className="sectionWaarom">
-			<div className="sectionBlock">
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-verzoek?
-					</h1>
-					<p>
-						Iedereen heeft het recht om informatie neergelegd in documenten op te vragen bij de overheid. In de Wet open
-						overheid (de Woo) is geregeld waar zo’n verzoek aan moet voldoen. Een Wob-verzoek is cruciaal om toegang te
-						krijgen tot informatie die de overheid niet uit eigen beweging vrijgeeft. Kijk{" "}
-						<a href="https://wetten.overheid.nl/BWBR0005252/2018-07-28" className="plaintext" target="_blanc">
-							hier
-						</a>{" "}
-						voor de Wet open overheid.
-					</p>
-				</div>
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Hoe doe ik een Woo-verzoek?
-					</h1>
+    return (
+        <div className="sectionWaarom">
+            <div className="sectionBlock">
+                <div>
+                    <h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+                        Pakico bo lo haci un peticion pa divulga documentonan gubernamental?
+                    </h1>
+                    <p>
+                        Tur hende tin e derecho pa pidi informacion cu ta den documentonan di gobierno. Aruba, Kòrsou y Sint Maarten tur tin un ley cu ta regula con gobierno mester divulga informacion y anda cu transparencia. </p> <br></br>
 
-					<p>
-						Het opstellen van een Woo-verzoek is niet moeilijk, maar het verzoek moet wel aan een aantal voorwaarden
-						voldoen. Met de Woo-generator helpen we je een goed en geldig Woo-verzoek op te stellen. Kies welke
-						documenten je wilt opvragen en bij welke overheidsinstantie. Hiervoor hebben we de eerste eenvoudig
-						doorzoekbare lijst met wobbare overheidsinstanties in Nederland samengesteld. Klaar! Je kunt nu je
-						Woo-verzoek opslaan en versturen via de post of digitaal verzenden.
-					</p>
-				</div>
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-generator?
-					</h1>
-					<p>
-						Nogal wat journalisten denken dat een Woo-verzoek indienen een mysterieuze juridische truc is. Dat is
-						overdreven, maar er zit een kern van waarheid in: er zijn best een paar punten waarop je moet letten. Met de
-						Woo-generator hoef je niet bang te zijn dat je iets over het hoofd ziet. Aan de slag dus!
-					</p>
-				</div>
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Wanneer geen Woo-verzoek?
-					</h1>
-					<p>
-						Een Woo-verzoek gebruik je alleen voor documenten die nog niet ergens anders vindbaar zijn. Bekijk voordat
-						je een Woo-verzoek indient daarom bijvoorbeeld{" "}
-						<a href="https://open.overheid.nl/" className="plaintext" target="_blanc">
-							hier
-						</a>{" "}
-						of de overheid de documenten al openbaar gemaakt heeft.{" "}
-					</p>
-					<br></br>
-					<p>
-						Bedenk verder dat de overheid niet alle informatie openbaar hoeft te maken: de Woo kent een aantal
-						weigeringsgronden zoals bedrijfsvertrouwelijke gegevens en de eerbiediging van de persoonlijke levenssfeer.
-						 
-					</p>
-				</div>
-			</div>
-		</div>
-	);
-}
-export default HomepageWaarom;
+                        <p> E Ordenansa Nacional transparencia gubernamental (Lob) ta regula kiko un peticion asina mester cumpli, y kada un di e islanan aki tin nan version. Un peticion Lob ta esensial pa haya acceso na informacion cu gobierno mes no ta divulga di su mes. </p>
+                        <br></br>
+                        <p> Mira {""}
+                            <a href="https://cuatro.sim-cdn.nl/arubaoverheid2858bd/uploads/0206ab99.012.pdf" className="plaintext" target="_blanc">
+                                aki
+                            </a>{" "} pa e Lob di Aruba, {" "}
+                            <a href="https://gobiernu.cw/wp-content/uploads/2010/09/T.-Landsverordening-openbaarheid-van-bestuur-Cura%C3%A7ao.pdf" className="plaintext" target="_blanc">
+                                aki
+                            </a>{" "} pa e Lob di Curaçao, {" "}
+                            <a href="https://lokaleregelgeving.overheid.nl/CVDR155440/1" className="plaintext" target="_blanc">
+                                y aki {" "}
+                            </a>{" "} pa e Lob di Sint Maarten.
+                        </p>
+                    </div>
+                    <div>
+                        <h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+                            Con mi por haci un peticion Lob?
+                        </h1>
+                        <p>
+                            Redacta un peticion Lob no ta dificil, pero e peticion mester cumpli cu algun condicion. Cu e generador Lob, nos ta yuda bo redacta un peticion Woo corecto y valido. </p>
+                        <br></br>
+                        <p> Scohe cua documentonan bo kier pidi y for di cual instancia di gobierno. 
+                            Con bo por haya e instante di gobièrnu? 
+                        </p>
+                        <br></br> 
+                        <p> Afortunadamente bo por busca den nos lista di instancianan di gobierno den Reino Hulandes. 
+                            Cla ta! Aki un djis bo ta cla pa download bo peticion, y mand'e e via e-mail of entreg'e fisicamente.
+                        </p>
+                    </div>
+                    <div>
+                        <h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+                            Pakico a bin cu un generado Lob?
+                        </h1>
+                        <p>
+                            Hopi hende y periodista no ta conoci cu na e islanan Caribense den Reino publico tin derecho sa tur loke nan gobierno ta haci. 
+							Esey no ta nan culpa, pasobra gobierno no ta ehecuta e derecho aki casi. Kiermen no tin casi transparencia, mientras cu e derecho si ta existi! 
+							Na Hulanda periodistanan y publico sa saca revelacion regularmente a base di Hulanda su ley di transparencia. Asina nan ta pone gobierno responsabilisa nan mes pa e maneho cu nan ta implementa. 
+							Cu e website aki nos kier traha riba emancipacion di e derecho di informacion den Caribe Hulandes. 
+							Pa facilita emancipacion di e derecho aki, e generador Lob t'ey pa percura pa bo peticion ta completo y valido.
+							</p>
+                            <br></br>
+                            <p>Kiermen haci uzo di bo derecho y cuminsa un peticion!
+                        </p>
+                    </div>
+                    <div>
+                        <h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+                            Ki ora mi no mester entrega un peticion Lob?
+                        </h1>
+                        <p>
+                            Bo por uza un peticion Lob solamente pa documentonan cu ainda no ta publico. Prome
+                            cu bo entrega un peticion Lob, bo mester revisa si kiko bo ta busca ya ta publico. </p>
+                            <br></br>
+                            <p>Por ehempel, bo por busca {""}
+                                <a href="https://publico.aw/" className="plaintext" target="_blanc">
+                                    aki
+                                </a>{" "}
+                                pa documentonan cu (un parti di) gobierno di Aruba a divulga. <a href="https://open.overheid.nl/" className="plaintext" target="_blanc">
+                                Gobierno Hulandes tambe tin un sitio unda nan ta divulga documentonan.
+                                </a>{" "}Aki un tip, documentonan cu ya a wordo divulga ta kompasnan praktiko pa haya informacion relaciona cu ainda no ta publico!
+								Por ehempel, si bo sa di existencia di otorgamento di un permiso pa construi un hotel, y bo kier sa kico e ministernan y ambtenaarnan a papia cu e desaroyadornan, bo por pidi e corespondencia cu a bin den cuadro di otorgamento di e permiso pa construi. {""}
+                            </p>
+                            <br></br>
+                            <p>
+                                Fuera di esey, tene cuenta cu gobiero no mester divulga tur informacion: e Lob tin algun
+                                motibo pa rechasa manera confidencialidad di negoshi y respet pa privacidad. 
+                                Algun di e excepcionnan aki ta exigi cu henter un dokumento keda sin divulga, 
+                                mientras cu otro exemptionnan ta exigi cu e instancia gubernamental aplica e excepcion riba parti di un documento. 
+                                Esakinan por wordo redacta mientras otro partinan ta wordo divulga. Finalmente, ora gobierno rechasa un documento a base e excepcionnan, e mester motiva esaki bon.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        
+        export default HomepageWaarom;

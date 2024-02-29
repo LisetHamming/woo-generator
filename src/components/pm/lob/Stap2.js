@@ -32,7 +32,7 @@ function Stap2({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Lob-generator</p>
+			<p className="logo">Generado Lob</p>
 
 			<h2>Paso 2: Cerca cua instancia gubernamental bo kier pidi documentonan?</h2>
 			<span className="nieuwietje">

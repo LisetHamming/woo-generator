@@ -18,17 +18,22 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 			</div>
 			<div className="homepageBlock">
 				<div className="blockText">
-					<p className="logo">Woo-generator</p>
-					<h1>Write your own Woo request in 3 simple steps</h1>
+					<p className="logo">Wob BES generator</p>
+					<h1>Write your own Wob BES request in 3 simple steps</h1>
 					<p>Welcome to the Wob BES generator!</p>
 					<p>
 						You are here because you want to request information from a government institution in Bonaire, Saba or
-						Statia.
-					</p>
+						Statia. </p> 
 					<p>
 						The BES islands have a special freedom of information law called the Wob BES. By invoking this law, anyone
 						is allowed to ask that government documents are divulged by the government institutions of the BES islands.
 					</p>
+
+					<br></br><p><b>Please note</b> that communication with the government in Bonaire is only possible either in Dutch or Papiamento. 
+						If you're considering making a request to any government institutions in Bonaire, change to one of the other languages.
+						This is required because the Wob BES generator makes your request in your chosen language. 
+					</p>
+					
 					<p>With the Woo-generator, making a request is a breeze by following the steps below.</p>
 
 					<ol>

@@ -27,11 +27,11 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						Op elk van deze (ei)landen geldt er een eigen versie van de Landsverordening openbaarheid van bestuur (Lob).  
 						De Lob is inhoudelijk grotendeels op de oude Wet openbaarheid van bestuur (Wob) afgestemd.  <br></br>
 						<br></br>
-						Let op! Omdat je Nederlands hebt geselecteerd, wordt je brief in het Nederlands gegenereerd.
+						<b>Let op!</b> Omdat je Nederlands hebt geselecteerd, wordt je brief in het Nederlands gegenereerd.
 						Als je je Lob-verzoek in het Engels of Papiaments wil laten opstellen, selecteer een van die talen boven. 
 						Anders kan je hier je Lob-verzoek in het Nederlands maken.
 					</p>
-					<p>Met de Lob-generator is het maken van je verzoek makkelijk.</p>
+					<p>Als je klaar bent, nemen we je door de stappen om makkelijk je verzoek te maken.</p>
 
 					<ol>
 						<li>1. Je vult een aantal gegevens over jezelf in</li>

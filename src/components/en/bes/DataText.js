@@ -56,7 +56,8 @@ const DataText = state => [
   {
     id: 10,
     title: "Inventory list",
-    sentence: "I request you to include an inventory list as part of the decision."
+    sentence: 
+      "I request you to include an inventory list as part of the decision."
   }
 ];
 export default DataText;

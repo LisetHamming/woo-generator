@@ -23,16 +23,19 @@ function Stap3_2({
 	// }
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Generado Lob</p>
 			<h2>Paso 3: Ki informacion bo ta buscando?</h2>
-			<p>Aki bo ta describi e topico di bo peticion. Esey kiermen cu bo ta describi ki informacion bo ta buscando.</p>
+			<p>	Aki bo ta describi e topico di bo peticion. 
+				Esey kiermen cu bo ta describi ki informacion bo ta buscando. 
+				Purba ta mas preciso cu ta posibel den bo descripcion di cua informacion bo ta buscando. 
+				Double check si e manera cu bo ta describi loke bo ta buscando ta un zin cu ta core bon den e carta genera.</p>
 			<br />
 			<span>
 				<p>
 					Tene cuenta cu bo solamente por pidi informacion cu ta warda den documentonan, riba papel of digital. Un
 					documento por ta; un e-mail, un mensahe di WhatsApp, un rapport den forma di papel of un PDF. Tur loke ta
 					wordo skirbi denter di un instancia gubernamental y tin relacion cu e maneho di e organisacion, por wordo pidi
-					via e Lob.
+					via e Lob. Si ta pone e condicion cu ta trata di un 'asunto administrativo' (bestuurlijke aangelegenheid)
 				</p>
 				<PopupButton number="10" />
 			</span>

@@ -23,15 +23,15 @@ function Stap3_2({
 	// }
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
-			<h2>Stap 3: Welke informatie zoek je?</h2>
+			<p className="logo">Woo generator</p>
+			<h2>Step 3: What information are you looking for?</h2>
 			<p>
-				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Check daarbij ook of je
-				omschrijving zoals die in de brief verschijnt goed loopt.
+				Accurately but concisely describe the topic you are requesting information about. Also check that your
+				description as it appears in the letter flows well.
 			</p>
 			<br />
 			<span>
-				<p>Let op: je kunt alleen informatie over ‘bestuurlijke aangelegenheden’ opvragen.</p>
+				<p>Please note that you can only request information on administrative matters.</p>
 				<PopupButton number="10" />
 			</span>
 
@@ -46,7 +46,7 @@ function Stap3_2({
 							name="subjectType"
 							value="specific"
 						/>{" "}
-						Ik wil specifieke documenten opvragen
+						I want to request specific documents
 						<div className="checkmark"></div>
 					</label>
 					<PopupButton number="11" />
@@ -63,7 +63,7 @@ function Stap3_2({
 							name="subjectType"
 							value="all"
 						/>{" "}
-						Ik wil alle documenten die de overheidsinstantie heeft over dit onderwerp
+						I want all documents the government agency has on this topic
 						<div className="checkmark"></div>
 					</label>
 					<PopupButton number="12" />
@@ -72,16 +72,16 @@ function Stap3_2({
 
 			<span>
 				{" "}
-				<p>Welke documenten moet de overheid openbaar maken</p>
+				<p>What documents the government should make public</p>
 				<PopupButton number="13" />
 			</span>
 			<span className="extraPadding">
 				{" "}
-				<p>Denk goed na welke documenten wel of niet nuttig zijn.</p>
+				<p>Think carefully about which documents are useful or not.</p>
 				<PopupButton number="14" />{" "}
 			</span>
-			<Link to="/EN/woo/Stap3">Terug</Link>
-			<Link to="/EN/woo/Stap3_3">Volgende</Link>
+			<Link to="/EN/woo/Stap3">Go back</Link>
+			<Link to="/EN/woo/Stap3_3">Next</Link>
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
 		</div>
 	);

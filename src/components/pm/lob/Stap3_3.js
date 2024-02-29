@@ -27,7 +27,7 @@ function Stap3_3({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Generado Lob</p>
 
 			<h2>
 				Stap 3:
@@ -100,8 +100,8 @@ function Stap3_3({
 				)}
 				{value.subjectType === "specific" && (
 					<div>
-						<h1>Onderliggende stukken</h1>
-						<p>Als je ook onderliggende stukken wil, vink dan aan welke.</p>
+						<h1>Documentonan cu ta resorta bou otro documentonan</h1>
+						<p>Si bo tambe kier documentonan cu ta resorta bou otro documentonan, marca cuanan bo kier.</p>
 						<br />
 						<span className="nieuwietje">
 							<p>

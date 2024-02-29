@@ -2,67 +2,65 @@ import React from "react";
 import bg from "./../../../assets/icons/orange-single-line.png";
 
 function HomepageWaarom() {
-	return (
-		<div className="sectionWaarom">
-			<div className="sectionBlock">
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-verzoek?
-					</h1>
-					<p>
-						Iedereen heeft het recht om informatie neergelegd in documenten op te vragen bij de overheid. In de Wet open
-						overheid (de Woo) is geregeld waar zo’n verzoek aan moet voldoen. Een Wob-verzoek is cruciaal om toegang te
-						krijgen tot informatie die de overheid niet uit eigen beweging vrijgeeft. Kijk{" "}
-						<a href="https://wetten.overheid.nl/BWBR0005252/2018-07-28" className="plaintext" target="_blanc">
-							hier
-						</a>{" "}
-						voor de Wet open overheid.
-					</p>
-				</div>
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						{" "}
-						Hoe doe ik een Woo-verzoek?
-					</h1>
-					<p>
-						Het opstellen van een Woo-verzoek is niet moeilijk, maar het verzoek moet wel aan een aantal voorwaarden
-						voldoen. Met de Woo-generator helpen we je een goed en geldig Woo-verzoek op te stellen. Kies welke
-						documenten je wilt opvragen en bij welke overheidsinstantie. Hiervoor hebben we de eerste eenvoudig
-						doorzoekbare lijst met wobbare overheidsinstanties in Nederland samengesteld. Klaar! Je kunt nu je
-						Woo-verzoek opslaan en versturen via de post of digitaal verzenden.
-					</p>
-				</div>
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een Woo-generator?
-					</h1>
-					<p>
-						Nogal wat journalisten denken dat een Woo-verzoek indienen een mysterieuze juridische truc is. Dat is
-						overdreven, maar er zit een kern van waarheid in: er zijn best een paar punten waarop je moet letten. Met de
-						Woo-generator hoef je niet bang te zijn dat je iets over het hoofd ziet. Aan de slag dus!
-					</p>
-				</div>
-				<div>
-					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Wanneer geen Woo-verzoek?
-					</h1>
-					<p>
-						Een Woo-verzoek gebruik je alleen voor documenten die nog niet ergens anders vindbaar zijn. Bekijk voordat
-						je een Woo-verzoek indient daarom bijvoorbeeld{" "}
-						<a href="https://open.overheid.nl/" className="plaintext" target="_blanc">
-							hier
-						</a>{" "}
-						of de overheid de documenten al openbaar gemaakt heeft.{" "}
-					</p>
-					<br></br>
-					<p>
-						Bedenk verder dat de overheid niet alle informatie openbaar hoeft te maken: de Woo kent een aantal
-						weigeringsgronden zoals bedrijfsvertrouwelijke gegevens en de eerbiediging van de persoonlijke levenssfeer.
-						 
-					</p>
-				</div>
-			</div>
-		</div>
-	);
+    return (
+        <div className="sectionWaarom">
+            <div className="sectionBlock">
+                <div>
+                    <h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+                        Why a Woo request?
+                    </h1>
+                    <p>
+                        Everyone has the right to request information contained in documents from the government. The Open Government Act
+                        ("Woo") regulates what such a request must meet. A Woo request is crucial to access information that the government
+                        does not disclose voluntarily. Check{" "}
+                        <a href="https://wetten.overheid.nl/BWBR0005252/2018-07-28" className="plaintext" target="_blanc">
+                            here
+                        </a>{" "}
+                        for the Open Government Act.
+                    </p>
+                </div>
+                <div>
+                    <h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+                        {" "}
+                        How do I make a Woo request?
+                    </h1>
+                    <p>
+                        Drafting a Woo request is not difficult, but the request must meet a number of conditions. With the Woo generator,
+                        we help you draft a proper and valid Woo request. Choose which documents you want to request and from which government
+                        agency. We have compiled the first easily searchable list of government agencies in the Netherlands subject to the Woo.
+                        Done! You can now save your Woo request and send it by mail or digitally.
+                    </p>
+                </div>
+                <div>
+                    <h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+                        Why a Woo generator?
+                    </h1>
+                    <p>
+                        Quite a few journalists think filing a Woo request is a mysterious legal trick. That is exaggerated, but there is a
+                        grain of truth to it: there are quite a few points to watch out for. With the Woo generator, you don't have to worry
+                        about overlooking anything. Get started!
+                    </p>
+                </div>
+                <div>
+                    <h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
+                        When shouldn't I file a Woo request?
+                    </h1>
+                    <p>
+                        You use a Woo request only for documents that are not yet public. Before you submit a Woo request, you should then
+                        check if what you're looking for is already public. For example, you can look{" "}
+                        <a href="https://open.overheid.nl/" className="plaintext" target="_blanc">
+                            here
+                        </a>{" "}
+                        for documents which (a subset of) the Dutch government has made public.
+                    </p>
+                    <br></br>
+                    <p>
+                        Further, keep in mind that the government does not have to disclose all information: the Woo has a number of grounds
+                        for refusal such as business confidentiality and respect for privacy. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    );
 }
 export default HomepageWaarom;

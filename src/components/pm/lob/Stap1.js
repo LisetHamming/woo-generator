@@ -23,7 +23,7 @@ function Stap1({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Lob-generator</p>
+			<p className="logo">Generado Lob</p>
 
 			<h2>Paso 1: Yena bo informacion</h2>
 			<p>

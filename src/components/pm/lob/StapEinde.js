@@ -13,9 +13,9 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Generado Lob</p>
 			<h2 className="hidePrint">Ultimo check!</h2>
-			<p className="extraPadding hidePrint">Lob-verzoek cu topico: {value.subjectLong}</p>
+			<p className="extraPadding hidePrint">Peticion Lob cu topico: {value.subjectLong}</p>
 			<p className="hidePrint">
 				Aunke e Woo-generator ta traha cu hopi cuido, bo mes ta keda responsabel pa kico bo ta manda un organo
 				gubernamental.
@@ -70,7 +70,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<br />
 			<Link to="/PM/lob/StapExtra">Bay bek</Link>
 			<Link to="/" onClick={resetState}>
-				Cuminsa di nobo
+				Cuminsa di nobo y deshaci tur loke m'a yena caba
 			</Link>
 
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />

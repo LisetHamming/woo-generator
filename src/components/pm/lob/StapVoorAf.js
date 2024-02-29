@@ -5,13 +5,13 @@ import PopupButton from "../../popups/PopupButton";
 function StapVoorAf() {
 	return (
 		<div className="formLetter central">
-			<p className="logo">Lob-generator</p>
+			<p className="logo">Generador Lob</p>
 			<h2>Bon pa sa</h2>
 			<br />
 			<br />
 
 			<p>
-				E Lob-generator no ta traha pa wordo uza riba bo telefon. P'esey ta miho si bo uz'e riba bo computer of laptop.
+				E generador Lob no ta traha pa wordo uza riba bo telefon. P'esey ta miho si bo uz'e riba bo computer of laptop.
 			</p>
 			<br />
 			<p>

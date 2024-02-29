@@ -13,7 +13,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Wob BES-generator</p>
 			<h2 className="hidePrint">Laatste check!</h2>
 			<p className="extraPadding hidePrint">Woo-verzoek met onderwerp: {value.subjectLong}</p>
 			<p className="hidePrint">

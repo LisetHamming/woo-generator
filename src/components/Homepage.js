@@ -464,7 +464,7 @@ const Homepage = props => {
 							<li>4. …file it!</li>
 						</ol>
 						<p>
-							Click on one of the buttons below to choose between the Netherlands, BES islands or the CAS islands. At
+							Click on one of the buttons below to choose between the Netherlands, BES islands (Wob BES) or the CAS islands (Lob). At
 							the top right, you can change your preferred language at any time.{" "}
 						</p>
 						<div className="nextButtons">
@@ -529,7 +529,7 @@ const Homepage = props => {
 						</ol>
 						<p>
 							Primi riba un di e botonnan aki bou pa scoge na unda bo kier pidi pa divulga informacion gubernamental,
-							sea cu ta na Hulanda, Aruba, Kòrsou of Sint Maarten, of Boneiro, Statia of Saba. Ariba na banda drechi bo
+							sea cu ta na Hulanda, Aruba, Kòrsou of Sint Maarten (Lob), of Boneiro, Statia of Saba (Wob BES). Ariba na banda drechi bo
 							por scoge pa cambia di idioma.{" "}
 						</p>
 

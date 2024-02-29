@@ -10,20 +10,21 @@ function LetterUI({ value, getCurrentDate }) {
 	});
 
 	const wordsInside = [
-		value.subjectInside1 && "brieven",
-		value.subjectInside2 && value.subjectInside2inclusive === "inclusief"
-			? `e-mails ${value.subjectInside2inclusive} bijlagen`
-			: `e-mails maar alleen de e-mails die een bijlage hebben inclusief die bijlagen`,
-		//value.subjectInside6 && "gespreksverslagen",
-		value.subjectInside4 && "sms'jes en WhatsApp-berichten"
+		value.subjectInside1 && "letters",
+		value.subjectInside2 && value.subjectInside2inclusive === "inclusive"
+			? `emails ${value.subjectInside2inclusive} attachments`
+			: `emails but only the emails that have an attachment including those attachments`,
+		//value.subjectInside6 && "meeting reports",
+		value.subjectInside4 && "text messages and WhatsApp messages"
 	].filter(Boolean);
+	
 	const wordsOutside = [
-		value.subjectOutside1 && "brieven",
-		value.subjectOutside2 && value.subjectOutside2inclusive === "inclusief"
-			? `e-mails ${value.subjectOutside2inclusive} bijlagen`
-			: `e-mails maar alleen de e-mails die een bijlage hebben inclusief die bijlagen`,
-		//value.subjectOutside6 && "gespreksverslagen",
-		value.subjectOutside4 && "sms'jes en WhatsApp-berichten"
+		value.subjectOutside1 && "letters",
+		value.subjectOutside2 && value.subjectOutside2inclusive === "inclusive"
+			? `emails ${value.subjectOutside2inclusive} attachments`
+			: `emails but only the emails that have an attachment including those attachments`,
+		//value.subjectOutside6 && "meeting reports",
+		value.subjectOutside4 && "text messages and WhatsApp messages"
 	].filter(Boolean);
 	return (
 		<div className="letterComplete">
@@ -152,13 +153,13 @@ function LetterUI({ value, getCurrentDate }) {
 
 							{value[11] && (
 								<p className="scribble">
-									{`- Reports, advice${value.subjectRapportText ? " waaronder: " + value.subjectRapportText : ""};  `}{" "}
+									{`- Reports, advice${value.subjectRapportText ? " including: " + value.subjectRapportText : ""};  `}{" "}
 								</p>
 							)}
 
 							{value[15] && (
-								<p className="scribble">{`- Financiële documenten${
-									value.subjectFinancialText ? " waaronder: " + value.subjectFinancialText : ""
+								<p className="scribble">{`- Financial documenten${
+									value.subjectFinancialText ? " including: " + value.subjectFinancialText : ""
 								};  `}</p>
 							)}
 

@@ -23,7 +23,7 @@ function Stap3_2({
 	// }
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Wob BES-generator</p>
 			<h2>Stap 3: Welke informatie zoek je?</h2>
 			<p>
 				Beschrijf nauwkeurig maar bondig het onderwerp waarover je informatie vraagt. Check daarbij ook of je

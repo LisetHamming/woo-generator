@@ -32,12 +32,12 @@ function Stap2({
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Wob BES-generator</p>
 
 			<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
 			<span className="nieuwietje">
 				<p>
-					Kies hier bij welke overheidsinstantie je je Woo-verzoek wilt indienen.
+					Kies hier bij welke overheidsinstantie je je Wob BES-verzoek wilt indienen.
 					<PopupButton number="5" />
 				</p>
 			</span>
@@ -52,7 +52,7 @@ function Stap2({
 			<form>
 				{value.selectedAuthority && !showManualAuthority ? (
 					<div className="selectedAuthority">
-						<p>Controleer de instantie waar je het Woo-verzoek indient:</p>
+						<p>Controleer de instantie waar je het Wob BES-verzoek indient:</p>
 						<h3>{value.selectedAuthority.Bestuursorgaan}</h3>
 						<p>{value.selectedAuthority.Website}</p>
 						<br />
