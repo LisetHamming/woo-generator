@@ -6,6 +6,7 @@ import gifLogo from "../assets/logo/Spoon_Logo_animatie_BlackonWhite_Gif.gif";
 import vvojLogo from "../assets/logo/VVOJ_Logo_RGB.png";
 import DataText from "./DataText";
 import HomepageENBES from "./en/bes/Homepage";
+import HomepageLinkENBES from "./en/bes/HomepageLink";
 import HomepageOvergeneratorENBES from "./en/bes/HomepageOvergenerator";
 import HomepageWaaromENBES from "./en/bes/HomepageWaarom";
 import EnBesStap1 from "./en/bes/Stap1";
@@ -20,6 +21,7 @@ import CookiemeldingEN from "./en/Cookiemelding";
 import HomepageENFooter from "./en/HomepageFooter";
 import HomepageENWaarom from "./en/HomepageWaarom";
 import HomepageENLOB from "./en/lob/Homepage";
+import HomepageLinkENLOB from "./en/lob/HomepageLink";
 import HomepageOvergeneratorENLOB from "./en/lob/HomepageOvergenerator";
 import HomepageWaaromENLOB from "./en/lob/HomepageWaarom";
 import EnLobStap1 from "./en/lob/Stap1";
@@ -31,6 +33,7 @@ import EnLobStapEinde from "./en/lob/StapEinde";
 import EnLobStapExtra from "./en/lob/StapExtra";
 import EnLobStapVoorAf from "./en/lob/StapVoorAf";
 import HomepageENWOO from "./en/woo/Homepage";
+import HomepageLinkENWOO from "./en/woo/HomepageLink";
 import HomepageOvergeneratorENWOO from "./en/woo/HomepageOvergenerator";
 import HomepageWaaromENWOO from "./en/woo/HomepageWaarom";
 import EnStap1 from "./en/woo/Stap1";
@@ -42,6 +45,7 @@ import EnStapEinde from "./en/woo/StapEinde";
 import EnStapExtra from "./en/woo/StapExtra";
 import EnStapVoorAf from "./en/woo/StapVoorAf";
 import HomepageNLBES from "./nl/bes/Homepage";
+import HomepageLinkNLBES from "./nl/bes/HomepageLink";
 import HomepageOvergeneratorNLBES from "./nl/bes/HomepageOvergenerator";
 import HomepageWaaromNLBES from "./nl/bes/HomepageWaarom";
 import NLBesStap1 from "./nl/bes/Stap1";
@@ -56,6 +60,7 @@ import CookiemeldingNL from "./nl/Cookiemelding";
 import HomepageNLFooter from "./nl/HomepageFooter";
 import HomepageNLWaarom from "./nl/HomepageWaarom";
 import HomepageNLLOB from "./nl/lob/Homepage";
+import HomepageLinkNLLOB from "./nl/lob/HomepageLink";
 import HomepageOvergeneratorNLLOB from "./nl/lob/HomepageOvergenerator";
 import HomepageWaaromNLLOB from "./nl/lob/HomepageWaarom";
 import NLLobStap1 from "./nl/lob/Stap1";
@@ -67,6 +72,7 @@ import NLLobStapEinde from "./nl/lob/StapEinde";
 import NLLobStapExtra from "./nl/lob/StapExtra";
 import NLLobStapVoorAf from "./nl/lob/StapVoorAf";
 import HomepageNLWOO from "./nl/woo/Homepage";
+import HomepageLinkNLWOO from "./nl/woo/HomepageLink";
 import HomepageOvergeneratorNLWOO from "./nl/woo/HomepageOvergenerator";
 import HomepageWaaromNLWOO from "./nl/woo/HomepageWaarom";
 import Stap1 from "./nl/woo/Stap1";
@@ -78,6 +84,7 @@ import StapEinde from "./nl/woo/StapEinde";
 import StapExtra from "./nl/woo/StapExtra";
 import StapVoorAf from "./nl/woo/StapVoorAf";
 import HomepagePMBES from "./pm/bes/Homepage";
+import HomepageLinkPMBES from "./pm/bes/HomepageLink";
 import HomepageOvergeneratorPMBES from "./pm/bes/HomepageOvergenerator";
 import HomepageWaaromPMBES from "./pm/bes/HomepageWaarom";
 import PmBesStap1 from "./pm/bes/Stap1";
@@ -92,6 +99,7 @@ import CookiemeldingPM from "./pm/Cookiemelding";
 import HomepagePMFooter from "./pm/HomepageFooter";
 import HomepagePMWaarom from "./pm/HomepageWaarom";
 import HomepagePMLOB from "./pm/lob/Homepage";
+import HomepageLinkPMLOB from "./pm/lob/HomepageLink";
 import HomepageOvergeneratorPMLOB from "./pm/lob/HomepageOvergenerator";
 import HomepageWaaromPMLOB from "./pm/lob/HomepageWaarom";
 import PmLobStap1 from "./pm/lob/Stap1";
@@ -547,6 +555,7 @@ const Homepage = props => {
 			<Route exact path="/PM/LOB/">
 				{value.showCookie && <CookiemeldingPM showCookie={showCookie} value={value} />}
 				<HomepagePMLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageLinkPMLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromPMLOB />
 
 				<div className="extra_content"></div>
@@ -556,6 +565,7 @@ const Homepage = props => {
 			<Route exact path="/PM/BES/">
 				{value.showCookie && <CookiemeldingPM showCookie={showCookie} value={value} />}
 				<HomepagePMBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageLinkPMBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromPMBES />
 
 				<div className="extra_content"></div>
@@ -565,6 +575,7 @@ const Homepage = props => {
 			<Route exact path="/EN/LOB/">
 				{value.showCookie && <CookiemeldingEN showCookie={showCookie} value={value} />}
 				<HomepageENLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageLinkENLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromENLOB />
 
 				<div className="extra_content"></div>
@@ -574,6 +585,7 @@ const Homepage = props => {
 			<Route exact path="/EN/WOO/">
 				{value.showCookie && <CookiemeldingEN showCookie={showCookie} value={value} />}
 				<HomepageENWOO wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageLinkENWOO wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromENWOO />
 
 				<div className="extra_content"></div>
@@ -584,6 +596,7 @@ const Homepage = props => {
 			<Route exact path="/EN/BES/">
 				{value.showCookie && <CookiemeldingEN showCookie={showCookie} value={value} />}
 				<HomepageENBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageLinkENBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromENBES />
 
 				<div className="extra_content"></div>
@@ -593,6 +606,7 @@ const Homepage = props => {
 			<Route exact path="/NL/WOO/">
 				{value.showCookie && <CookiemeldingNL showCookie={showCookie} value={value} />}
 				<HomepageNLWOO wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageLinkNLWOO wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromNLWOO />
 
 				<div className="extra_content"></div>
@@ -602,6 +616,7 @@ const Homepage = props => {
 			<Route exact path="/NL/BES/">
 				{value.showCookie && <CookiemeldingNL showCookie={showCookie} value={value} />}
 				<HomepageNLBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageLinkNLBES wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromNLBES />
 
 				<div className="extra_content"></div>
@@ -611,6 +626,7 @@ const Homepage = props => {
 			<Route exact path="/NL/LOB/">
 				{value.showCookie && <CookiemeldingNL showCookie={showCookie} value={value} />}
 				<HomepageNLLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
+				<HomepageLinkNLLOB wet={wet} clickHandlerSetLaw={clickHandlerSetLaw} />
 				<HomepageWaaromNLLOB />
 
 				<div className="extra_content"></div>

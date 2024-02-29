@@ -304,6 +304,18 @@ p.header {
 	width: 90%;
 	margin: 0 auto;
 }
+.sectionLink {
+	background-color: #e8e8e8;
+	text-align: center;
+}
+.sectionLink .sectionBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.sectionLink .sectionBlock div:first-of-type {
+	margin-bottom: 0;
+}
 .footer,
 .footer .sectionBlock2,
 .footer a {
