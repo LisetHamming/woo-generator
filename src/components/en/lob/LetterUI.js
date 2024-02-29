@@ -29,7 +29,7 @@ function LetterUI({ value, getCurrentDate }) {
 	return (
 		<div className="letterComplete">
 			<div className="letterUIHeading">
-				<h1>Your Wob BES request in the making:</h1>
+				<h1>Your Lob request in the making:</h1>
 				<div className="letterUILogos">
 					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
@@ -55,7 +55,7 @@ function LetterUI({ value, getCurrentDate }) {
 						{value.userCityName}, {getCurrentDate()}
 					</p>
 					<br />
-					<p>Subject: submission of Wob BES request</p>
+					<p>Subject: submission of Lob request</p>
 					<br />
 					<p>Very Distinguished Sir/Madam,</p>
 					<br />
@@ -181,7 +181,7 @@ function LetterUI({ value, getCurrentDate }) {
 					))}
 				<div>
 					<p>
-						Please acknowledge in writing (by letter or email) receipt of this Wob BES request.
+						Please acknowledge in writing (by letter or email) receipt of this Lob request.
 						<br />
 						<br />
 						Should you offer interested parties the opportunity to give their views on the disclosure, I would like to

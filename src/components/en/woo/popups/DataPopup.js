@@ -1,127 +1,127 @@
 const DataPopup = {
 	1: {
 		id: "1",
-		h1: "Ben je journalist?",
+		h1: "Are you a journalist?",
 		p:
-			"Je hoeft geen journalist te zijn om een Woo-verzoek in te dienen. Maar het kan nuttig zijn om dit te benoemen. Het Europese Hof voor de Rechten van de Mens (EHRM) heeft namelijk bepaald dat in sommige gevallen het journalistieke belang speciaal gewicht moet krijgen bij de openbaarmaking van documenten."
+			"You don't have to be a journalist to submit a Woo request. Still, it can be useful to mention this because the European Court of Human Rights (ECHR) has determined that, in some cases, journalistic interest should be given special weight in the disclosure of documents."
 	},
 	2: {
 		id: "2",
-		h1: "Doel van je verzoek?",
+		h1: "Purpose of your request?",
 		p:
-			"Je hoeft niet uit te leggen welk belang je bij je verzoek hebt en de overheidsinstantie mag er zelfs niet naar vragen. Maar het kan overheidsinstanties helpen om beter te begrijpen welke documenten je zoekt, als ze weten wat het doel is van je verzoek. Overigens kan het soms juist verstandig zijn om niet te vertellen welk nieuws je op het spoor denkt te zijn. Weeg af wat slim is."
+			"You don't need to explain the importance of your request, and the government agency may not even ask. However, specifying the purpose of your request can help government agencies better understand the documents you are seeking. Sometimes, it may be wise not to disclose the news you are investigating. Consider what is prudent."
 	},
 	3: {
 		id: "3",
-		h1: "Namens een (media)organisatie",
+		h1: "On behalf of an (media) organization",
 		p:
-			"Je kan je Woo-verzoek namens een (media)organisatie indienen. Denk er dan aan dat je daartoe gemachtigd wordt en stuur die machtiging mee met je verzoek. Het verzoek kan afgewezen worden als je niet de juiste machtiging hebt. Ook gelden bij een beroep bij de bestuursrechter voor organisaties een hoger tarief dan voor personen, dat kan al snel honderdvijftig euro schelen. Aan de andere kant, als je voor een bekende (media)organisatie werkt kan dat gewicht in de schaal leggen bij de behandeling van je verzoek. Een tussenoplossing is om wel te benoemen voor welke (media)organisatie je werkt maar het verzoek niet officieel namens deze organisatie in te dienen. Vink dan de optie hieronder aan."
+			"You can submit your Woo request on behalf of an (media) organization. In that case, ensure that you are authorized and include the authorization with your request. The request may be rejected if you lack the proper authorization. Organizations appealing to the administrative court also face higher fees than individuals, which can quickly differ by around one hundred and fifty euros. On the other hand, working for a well-known (media) organization can carry weight in the processing of your request. A compromise is to mention the (media) organization you work for but not officially submit the request on behalf of the organization. Check the option below in that case."
 	},
 	4: {
 		id: "4",
-		h1: "Privacy en opslag",
+		h1: "Privacy and storage",
 		p:
-			"Alles wat je invult wordt via de browser die je gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet. Dit gebeurt door middel van een zogenaamde ‘functionele cookie’. Verder is op de website een Google Analytics cookie geïnstalleerd om een beeld te krijgen van het gebruik van de Woo-generator."
+			"Everything you enter is stored 'locally' via the browser you use. This means that no one else can see your answers, including us. This is done through a so-called 'functional cookie.' Additionally, a Google Analytics cookie is installed on the website to understand the usage of the Woo generator."
 	},
 	5: {
 		id: "5",
-		h1: "Bij welke overheidsinstanties kan ik een Woo-verzoek indienen met de Woo-generator?",
+		h1: "Which government agencies can I submit a Woo request to using the Woo generator?",
 		p:
-			"Er zijn in Nederland tal van overheidsinstanties, ook wel ‘bestuursorganen’ genoemd: gemeenten, provincies, ministeries, waterschappen, de politie en inspectiediensten, maar ook zogenaamde ‘zelfstandige bestuursorganen’ zoals de Sociale Verzekeringsbank (SVB) en het Centraal Bureau Rijvaardigheidsbewijzen (CBR). Onder de Woo zijn per 1 mei 2022 nog een aantal instanties toegevoegd, waaronder de Eerste en Tweede Kamer, de Algemene Rekenkamer en de Nationale Ombudsman. Deze instanties vallen allemaal onder de Woo en zijn te vinden via de Woo-generator.",
+			"There are numerous government agencies, also called 'administrative bodies,' in the Netherlands: municipalities, provinces, ministries, water boards, the police, and inspection services. There are also so-called 'independent administrative bodies' such as the Social Insurance Bank (SVB) and the Central Bureau of Driving Certificates (CBR). As of May 1, 2022, several agencies, including the First and Second Chamber, the Court of Audit, and the National Ombudsman, have been added under the Woo. All these agencies fall under the Woo and can be found using the Woo generator.",
 		p2:
-			"De database met onder de Woo vallende overheidsinstanties is samengesteld door de leden van de Woo-werkgroep van de VVOJ. Het is voorzover ons bekend de eerste dergelijke database in Nederland. Alle bovengenoemde instanties zijn erin opgenomen. Dat betekent niet dat de database volledig is. Het is mogelijk dat wij instanties over het hoofd hebben gezien. Ook kunnen overheidsinstanties opgeheven worden of van naam veranderen. De database blijft dus continu in ontwikkeling. Suggesties en updates zijn van harte welkom: info@woo-generator.nl",
+			"The database of government agencies falling under the Woo has been compiled by the members of the VVOJ's Woo working group. To our knowledge, this is the first such database in the Netherlands. All the mentioned agencies are included, but it doesn't mean the database is exhaustive. It's possible that we've overlooked some agencies, and government agencies may be abolished or change names. The database remains in constant development. Suggestions and updates are welcome: info@woo-generator.nl",
 		p3:
-			"Staat de overheidsinstantie die je zoekt er niet tussen, bekijk dan de website van de betreffende instantie en voer de gegevens handmatig in."
+			"If the government agency you're looking for is not listed, check the website of the relevant agency and manually enter the details."
 	},
 	6: {
 		id: "6",
-		h1: "Juiste overheid?",
+		h1: "Correct government agency?",
 		p:
-			"Vraag je allereerst af bij welke overheidsinstantie de documenten over je onderwerp te vinden zijn. Als je er niet uitkomt, zoek dan online op je onderwerp en kijk welke overheidsinstanties tevoorschijn komen. Je kunt ook eenzelfde verzoek indienen bij verschillende instanties. Soms valt de ene overheidsinstantie onder verantwoordelijkheid van de andere. Weet je bijvoorbeeld niet zeker of de documenten bij de Immigratie- en Naturalisatiedienst (IND) of het ministerie van Justitie en Veiligheid liggen, kies dan de ‘hoogste’ instantie, in dit geval het ministerie. Het is wel zo dat instanties die minder onder een vergrootglas liggen soms makkelijker documenten vrijgeven. Denk dus ook na over waar je de meeste kans maakt!",
+			"First, consider which government agency holds the documents on your subject. If you're unsure, search online for your subject and see which government agencies appear. You can also submit the same request to different agencies. Sometimes, one government agency falls under the responsibility of another. For example, if you're unsure whether the documents are with the Immigration and Naturalization Service (IND) or the Ministry of Justice and Security, choose the 'highest' authority, in this case, the ministry. Keep in mind that agencies under less scrutiny might release documents more easily. So, think about where you have the best chance!",
 		p2:
-			"En wees gerust: de instantie waar je je Woo-verzoek indient is verplicht om je verzoek naar de juiste instantie door te sturen. Voor de zekerheid herinnert de generator in de alinea ‘doorgeleiding’ de overheidsinstantie aan deze verplichting."
+			"And rest assured: the agency where you submit your Woo request is obliged to forward your request to the correct agency. For added security, the generator reminds the government agency of this obligation in the 'forwarding' paragraph."
 	},
 
 	7: {
 		id: "7",
-		h1: "Geadresseerde",
+		h1: "Addressee",
 		p:
-			"Als je de naam van de hoogstgeplaatste functionaris van de instantie kent, bijvoorbeeld van de minister, de staatssecretaris, de commissaris van de koning, enzovoort, dan kun je die er na het downloaden van je concept Wob-verzoek zelf bijschrijven. Maar het is niet verplicht. Volsta dan met geachte heer/mevrouw."
+			"If you know the name of the highest-ranking official of the agency, such as the minister, the state secretary, the commissioner of the king, etc., you can add it yourself after downloading your Wob request draft. But it's not obligatory. Simply use 'Dear Sir/Madam' if you prefer."
 	},
 	8: {
 		id: "8",
-		h1: "Waarom je nauwkeurig moet zijn",
+		h1: "Why precision matters",
 		p:
-			"Een te brede of onduidelijke formulering van je onderwerp kan er toe leiden dat de overheid om verduidelijking vraagt. Onder de Woo moet de overheidsinstantie dat binnen twee weken na ontvangst van je verzoek laten weten. Pas nadat je je verzoek hebt gepreciseerd begint de beslistermijn te lopen. Er kunnen dan onnodig weken verstrijken voordat de overheid met je verzoek aan de slag gaat."
+			"A too broad or unclear formulation of your subject can lead the government to request clarification. Under the Woo, the government agency must inform you of this within two weeks of receiving your request. Only after you have clarified your request does the decision period begin. Unnecessary weeks may pass before the government starts processing your request."
 	},
 	9: {
 		id: "9",
-		h1: "Milieu",
+		h1: "Environment",
 		p:
-			"Als je Woo-verzoek betrekking heeft op milieu-informatie geldt een aantal bijzondere regels. Op grond van het verdrag van Aarhus zijn bepaalde redenen om milieu-informatie te weigeren niet of verminderd van toepassing. Als je twijfelt of jouw verzoek over milieu-informatie gaat, kijk dan in artikel 19.1a van de Wet Milieubeheer."
+			"If your Woo request pertains to environmental information, some special rules apply. Based on the Aarhus Convention, certain reasons for refusing environmental information are not or are less applicable. If you're unsure if your request concerns environmental information, check Article 19.1a of the Environmental Management Act."
 	},
 
 	11: {
 		id: "11",
-		h1: "Specifieke documenten",
+		h1: "Specific documents",
 		p:
-			"Kies hiervoor als je precies weet welk document of documenten je wilt hebben. Op de volgende pagina kun je deze documenten beschrijven en krijg je de mogelijkheid om ook openbaarmaking van de bij een specifiek document behorende onderliggende documenten te vragen. Zo krijg je inzicht in de totstandkoming van het document/de documenten, de personen of organisaties die daarbij betrokken zijn geweest, koerswijzigingen, enzovoort.",
+			"Choose this if you know exactly which document or documents you want. On the next page, you can describe these documents and have the opportunity to request the disclosure of underlying documents related to a specific document. This provides insight into the creation of the document/documents, the individuals or organizations involved, changes in direction, etc.",
 		p2:
-			"Om de complexiteit van de Woo-generator te beperken is het niet mogelijk om beide opties tegelijk aan te vinken. Wil je naast deze specifieke documenten echt álle documenten over dit onderwerp, dan zul je twee aparte brieven moeten genereren en versturen. Het bestuursorgaan zal beide brieven dan mogelijk toch als één verzoek opvatten. Bedenk wel dat hoe meer documenten je vraagt, hoe langer het kan duren voordat je ze ontvangt. Zorg ervoor dat je beide brieven op dezelfde dag verstuurt, als je wilt dat de termijnen gelijklopen."
+			"To limit the complexity of the Woo generator, it's not possible to tick both options simultaneously. If you want all documents on this subject, in addition to these specific documents, you'll need to generate and send two separate letters. The government agency may still consider both letters as one request. Keep in mind that the more documents you request, the longer it may take to receive them. Make sure to send both letters on the same day if you want the deadlines to align."
 	},
 	12: {
 		id: "12",
-		h1: "Alles over dit onderwerp",
+		h1: "Everything about this subject",
 		p:
-			"Soms weet je wél dat een bepaalde overheidsinstantie zich met een onderwerp heeft beziggehouden, maar niet welke documenten ze daarover hebben. In dat geval kun je vragen om alle documenten over het onderwerp. Dit wordt ook wel een ‘sleepnet-verzoek' genoemd.",
+			"Sometimes, you know that a particular government agency has dealt with a subject, but you don't know which documents they have. In that case, you can request all documents about the subject. This is also called a 'dragnet request.'",
 		p2:
-			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten en daardoor zelf nodeloos lang op stukken moeten wachten. Dit kun je op de volgende pagina aangeven."
+			"It's usually wise to limit such a request in time and exclude certain types of documents. After all, you don't want to be overwhelmed with irrelevant documents or unnecessarily burden government officials, causing delays in receiving the documents. You can indicate this on the next page."
 	},
 	13: {
 		id: "13",
-		h1: "Documenten",
+		h1: "Documents",
 		p:
-			"’Documenten’ zijn gelukkig wel breder dan geschreven stukken alleen. Excelsheets, databestanden, audio-opnames, sms’jes en WhatsAppjes vallen er bijvoorbeeld ook onder. Natuurlijk kun je de overheid ook om informatie vragen die niet al op een gegevensdrager staat, bijvoorbeeld wat de gemeente vindt van een bepaalde ontwikkeling of wat de gemeente van plan is daaraan te doen. Dat is dan geen Woo-verzoek, maar een gewoon informatieverzoek. Hiervoor is de Woo-generator niet bedoeld."
+			'Fortunately, "documents" are broader than just written pieces. Excel sheets, data files, audio recordings, SMS messages, and WhatsApp messages are also included. Of course, you can also ask the government for information that is not already on a data carrier, such as what the municipality thinks about a particular development or what the municipality plans to do about it. This is not a Woo request but a regular information request. The Woo generator is not intended for this purpose.'
 	},
 	14: {
 		id: "14",
-		h1: "Welke documenten zijn nuttig?",
+		h1: "Which documents are useful?",
 		p:
-			"Het is meestal verstandig om zo’n verzoek in de tijd in te perken en om sommige documenttypes uit te sluiten. Je wilt immers niet overladen worden met irrelevante documenten en ook niet ambtenaren nodeloos aan het werk zetten en daardoor zelf nodeloos lang op stukken moeten wachten. E-mails, bijvoorbeeld, kunnen inzicht geven in het besluitvormingsproces, de toon waarin tussen bepaalde personen gecommuniceerd wordt en de frequentie van het contact. Maar e-mails kunnen ook over volstrekt irrelevante zaken gaan, zoals de hoeveelheid broodjes die bij de vergadering zijn besteld. Bedenk dus of e-mails in het geval van jouw verzoek relevant zijn en overweeg om alleen e-mails te vragen die bijlagen bevatten. Doorgaans bevatten de e-mails met bijlagen de meest interessante informatie."
+			"It's usually wise to limit such a request in time and exclude certain types of documents. After all, you don't want to be overwhelmed with irrelevant documents or unnecessarily burden government officials, causing delays in receiving the documents. Emails, for example, can provide insight into the decision-making process, the tone of communication between certain individuals, and the frequency of contact. Still, emails can also be about entirely irrelevant matters, such as the quantity of sandwiches ordered for a meeting. Consider whether emails are relevant to your request and consider asking only for emails with attachments. Generally, emails with attachments contain the most interesting information."
 	},
 	15: {
 		id: "15",
-		h1: "Periode",
+		h1: "Period",
 		p:
-			"Hier kun je de periode waarop je verzoek betrekking heeft begrenzen (van datum X tot datum Y). Het is niet verplicht, maar zo voorkom je dat je documenten ontvangt over een periode waar je niet in geïnteresseerd bent. Dat scheelt jou werk en het scheelt de overheidsinstantie werk."
+			"Here, you can limit the period your request pertains to (from date X to date Y). It's not mandatory, but it prevents you from receiving documents over a period you're not interested in. This saves you work, and it saves the government agency work."
 	},
 	16: {
 		id: "16",
-		h1: "De instantie staat niet in de lijst",
+		h1: "The agency is not in the list",
 		p:
-			"Ken je een (overheids)instantie die hier niet tussen staat, stuur dan ajb een e-mail naar info@woo-generator.com met de gegevens van deze instantie zodat we deze kunnen toevoegen."
+			"If you know of a (government) agency not listed here, please send an email to info@woo-generator.com with the details of this agency so we can add it."
 	},
 	17: {
 		id: "17",
-		h1: "Periode kiezen",
+		h1: "Choosing a period",
 		p:
-			"Door de periode in te perken voorkom je dat je irrelevante informatie ontvangt en de Woo-ambtenaren nodeloos lang bezig zijn met je verzoek."
+			"By limiting the period, you avoid receiving irrelevant information, and the Woo officials spend less time on your request."
 	},
 	18: {
 		id: "18",
-		h1: "Alleen publieke taken",
+		h1: "Only public tasks",
 		p:
-			"Je kunt alleen informatie opvragen die verband houdt met een publieke taak. Je mag daarbij ervanuit gaan dat alles waar een overheidsinstantie zich mee bezighoudt in beginsel tot de publieke taak van dat bestuursorgaan hoort. Privé-aangelegenheden van een ambtenaar vallen hier niet onder.Informatie over declaraties voor dienstreizen weer wel. Voor informatie over jezelf is de Woo niet geschikt."
+			"You can only request information related to a public task. You can assume that everything a government agency deals with is, in principle, part of the public task of that administrative body. Private matters of a civil servant are not included. Information about expense claims for official trips, however, is included. The Woo is not suitable for information about yourself."
 	},
 	19: {
 		id: "19",
-		h1: "Dit is een voorbeeld van zo'n i'tje",
-		p: "En hier staat dan de uitleg."
+		h1: "This is an example of such a lightbulb",
+		p: "And here is the explanation."
 	},
 	20: {
 		id: "20",
-		h1: "Uitleg over OnBehalf",
-		p: "Tekst bij de uitleg."
+		h1: "Explanation of OnBehalf",
+		p: "Text related to the explanation."
 	}
 };
 export default DataPopup;

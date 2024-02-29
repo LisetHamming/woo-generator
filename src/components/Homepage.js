@@ -394,7 +394,7 @@ const Homepage = props => {
 						</p>
 						<p>
 							Jawel! Vanaf nu is er niet alleen de <b>Woo-generator</b> voor Nederland, maar ook een{" "}
-							<b>WOB/BES-generator</b> voor Bonaire, St. Eustatius en Saba en een <b>LOB-generator</b> voor Curacao,
+							<b>Wob BES-generator</b> voor Bonaire, St. Eustatius en Saba (BES-eilanen) en een <b>Lob-generator</b> voor Curacao,
 							Aruba en St. Maarten (CAS-eilanden).
 						</p>
 						<p>Met onze generator is een openbaarmakingsverzoek indienen een koud kunstje.</p>
@@ -501,15 +501,15 @@ const Homepage = props => {
 						<h1>
 							Bo kier sa kico bo gobierno ta haciendo? 
 						</h1>
-						<p>Bon bini na e generador pa divulga informacion gubernamental! </p>
+						<p>Bon bini na e generado pa divulga informacion gubernamental! </p>
 						<p> Bo t’aki pasobra bo kier pidi informacion cerca un instancia gubernamental den Reino Hulandes. </p>
 						<p>
-							Asina mes! Desde awo, e <b>generador Woo</b> no ta solamente disponibel pa pidi informacion gubernamental na
+							Asina mes! Desde awo, e <b>generado Woo</b> no ta solamente disponibel pa pidi informacion gubernamental na
 							Hulanda, pero bo por haci un peticion na e gobiernonan tanto na e paisnan den Reino Aruba, Kòrsou y Sint
-							Maarten <b>(generador Lob)</b> como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint Eustatius{" "}
-							<b>(generador Wob BES).</b>
+							Maarten <b>(generado Lob)</b> como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint Eustatius{" "}
+							<b>(generado Wob BES).</b>
 						</p>
-						<p>Cu nos generador, entrega un peticion na cualkier pais of isla den Reino Hulandes ta masha facil mes.</p>
+						<p>Cu nos generado, entrega un peticion na cualkier pais of isla den Reino Hulandes ta masha facil mes.</p>
 						<h1>Skirbi bo prome peticion pa divulga informacion gubernamental den
 							3 paso</h1>
 						<ol>

@@ -10,25 +10,25 @@ function LetterUI({ value, getCurrentDate }) {
 	});
 
 	const wordsInside = [
-		value.subjectInside1 && "brieven",
-		value.subjectInside2 && value.subjectInside2inclusive === "inclusief"
+		value.subjectInside1 && "cartanan",
+		value.subjectInside2 && value.subjectInside2inclusive === "incluyendo"
 			? `e-mails ${value.subjectInside2inclusive} bijlagen`
-			: `e-mails maar alleen de e-mails die een bijlage hebben inclusief die bijlagen`,
+			: `e-mailnan, pero solamente esunnan cu tin filenan adhunta, incluyendo e filenan ey`,
 		//value.subjectInside6 && "gespreksverslagen",
-		value.subjectInside4 && "sms'jes en WhatsApp-berichten"
+		value.subjectInside4 && "mensahenan di SMS, WhatsApp of otro tipo di mensahenan di texto"
 	].filter(Boolean);
 	const wordsOutside = [
-		value.subjectOutside1 && "brieven",
-		value.subjectOutside2 && value.subjectOutside2inclusive === "inclusief"
-			? `e-mails ${value.subjectOutside2inclusive} bijlagen`
-			: `e-mails maar alleen de e-mails die een bijlage hebben inclusief die bijlagen`,
+		value.subjectOutside1 && "cartanan",
+		value.subjectOutside2 && value.subjectOutside2inclusive === "incluyendo"
+			? `e-mailnan ${value.subjectOutside2inclusive} bijlagen`
+			: `e-mailnan, pero solamente esunnan cu tin filenan adhunta, incluyendo e filenan ey`,
 		//value.subjectOutside6 && "gespreksverslagen",
-		value.subjectOutside4 && "sms'jes en WhatsApp-berichten"
+		value.subjectOutside4 && "mensahenan di SMS, WhatsApp of otro tipo di mensahenan di texto"
 	].filter(Boolean);
 	return (
 		<div className="letterComplete">
 			<div className="letterUIHeading">
-				<h1>Bo peticion pa divulga documentonan a base di e Lob den proceso:</h1>
+				<h1>Bo peticion pa divulga documentonan a base di e Lob te awo:</h1>
 				<div className="letterUILogos">
 					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
@@ -130,7 +130,7 @@ function LetterUI({ value, getCurrentDate }) {
 							<br />
 
 							{value[10] && (
-								<p className="scribble">{`- Vergaderstukken${
+								<p className="scribble">{`- Documentonan di reunionnan${
 									Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", bou cual: " : ""
 								}${Object.keys(value.subjectMeeting)
 									.filter(key => value.subjectMeeting[key])
@@ -160,7 +160,7 @@ function LetterUI({ value, getCurrentDate }) {
 							)}
 
 							{value[15] && (
-								<p className="scribble">{`- Financiële documenten${
+								<p className="scribble">{`- Documentonan financiero${
 									value.subjectFinancialText ? " bou cual: " + value.subjectFinancialText : ""
 								};  `}</p>
 							)}

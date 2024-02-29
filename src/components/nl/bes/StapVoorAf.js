@@ -11,7 +11,7 @@ function StapVoorAf() {
 			<br />
 
 			<p>
-				De Woo-generator is niet gemaakt om op je telefoon te gebruiken. Je kunt ‘m dus het beste op je computer of
+				De Wob BES-generator is niet gemaakt om op je telefoon te gebruiken. Je kunt ‘m dus het beste op je computer of
 				laptop openen.
 			</p>
 			<br />
@@ -28,16 +28,16 @@ function StapVoorAf() {
 			</span>
 
 			<p>
-				Je antwoorden worden automatisch verwerkt en verschijnen vervolgens in het concept Woo-verzoek aan de
+				Je antwoorden worden automatisch verwerkt en verschijnen vervolgens in het concept Wob BES-verzoek aan de
 				rechterkant. Zo kun je steeds zien of de tekst goed loopt. Alles wat je invult wordt via de browser die je
 				gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet.
 			</p>
 			<br />
-			<p>Als je alle vragen hebt beantwoord, kun je je concept Woo-verzoek opslaan als DOC en de tekst aanpassen.</p>
+			<p>Als je alle vragen hebt beantwoord, kun je je concept Wob BES-verzoek opslaan als DOC en de tekst aanpassen.</p>
 			<br />
 			<p className="extraPadding">
 				Wil je iets net even anders of wil je bijvoorbeeld een extra toelichting op je verzoek toevoegen? Dan kun je in
-				het opgeslagen Word-document je Woo-verzoek nog aanpassen.
+				het opgeslagen Word-document je Wob BES-verzoek nog aanpassen.
 			</p>
 			<Link to="/">Terug</Link>
 

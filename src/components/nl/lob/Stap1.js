@@ -28,7 +28,7 @@ function Stap1({
 			<h2>Stap 1: Over jezelf</h2>
 			<p>
 				Vul hier je contactgegevens in zodat de overheidsinstantie je kan bereiken en maak enkele keuzes over hoe je
-				jezelf en je verzoek aan de overheid presenteert. Let op: een Woo-verzoek kan niet anoniem worden ingediend.
+				jezelf en je verzoek aan de overheid presenteert. Let op: een Lob-verzoek kan niet anoniem worden ingediend.
 			</p>
 			<br />
 			<form>

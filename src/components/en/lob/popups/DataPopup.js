@@ -115,7 +115,7 @@ const DataPopup = {
 	},
 	19: {
 		id: "19",
-		h1: "This is an example of such a 'i'tje'",
+		h1: "This is an example of such a lightbulb",
 		p: "And here is the explanation."
 	},
 	20: {

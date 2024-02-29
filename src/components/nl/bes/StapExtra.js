@@ -15,13 +15,13 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 	// }
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Wob BES-generator</p>
 
 			<h2>Extra opties</h2>
 			<p>
 				Onderstaande opties vergroten in het algemeen je kans op openbaarmaking van de informatie omdat ze anticiperen
 				op belemmeringen die in het proces kunnen ontstaan. Bij het aan- en uitvinken van de opties kun je in je
-				Wob-verzoek in wording zien welke tekstblokjes verschijnen of verdwijnen. Lees tekstblokjes goed door om te
+				Wob BES-verzoek in wording zien welke tekstblokjes verschijnen of verdwijnen. Lees tekstblokjes goed door om te
 				weten wat de opties inhouden. Het kan geen kwaad om ze allemaal op te nemen, maar sommige opties kunnen in jouw
 				specifieke geval niet relevant zijn. Zet ze in dat geval uit.
 			</p>

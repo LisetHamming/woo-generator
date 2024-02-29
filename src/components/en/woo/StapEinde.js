@@ -17,7 +17,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<h2 className="hidePrint">Final check!</h2>
 			<p className="extraPadding hidePrint">Woo request with subject: {value.subjectLong}</p>
 			<p className="hidePrint">
-				Although the Wob BES generator has been developed with the utmost care, preparing a good Wob BES request is
+				Although the Woo generator has been developed with the utmost care, preparing a good Woo request is
 				human work, so your mileage may vary. Moreover, you remain responsible for what you send to the governing body.
 				<br />
 				<br />
@@ -37,16 +37,17 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				Your draft Woo request
 				<br />
 				Check that the sentences in your request flow well. Also think about whether any specific information is needed to add to your
-				request. You can make these additions and changes yourself after you have downloaded the .doc file. If you are satisfied, print the letter and sign it. For a Wob BES request by letter
+				request. You can make these additions and changes yourself after you have downloaded the .doc file. If you are satisfied, print the letter and sign it. For a Woo request by letter
 				this is mandatory. Don't forget to make a copy of your signed letter before sending it by mail.
 				<br />
 				<br />
 				Sending digitally?
 				<br />
-				The Woo does not say anything about filing a request digitally, or via email. 
-				So, you are not guaranteed that your request will be accepted if you send it via email. 
-				However, some governments will indeed have a prescribed way to file the request digitally. 
-				Make sure to check this beforehand. 
+				Under the Woo, government agencies must accept Woo requests submitted digitally. But
+				government agencies may specify by which digital means a Woo request must be submitted,
+				For example, by using a specific e-mail address or an online Woo form. Always check this beforehand!
+				If the government body has posted a Woo form on its website, you can also upload the letter (which may have been signed) or
+				upload or copy and paste the text.
 			</p>
 			<br />
 			<div>

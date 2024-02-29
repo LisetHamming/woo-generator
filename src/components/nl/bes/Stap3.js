@@ -45,7 +45,7 @@ function Stap3({
 				<p>
 					{" "}
 					Let op: je kunt alleen vragen naar stukken of gegevens die verband houden met een publieke taak van de
-					overhedsinstanties waar je je Woo-verzoek indient.
+					overhedsinstanties waar je je Wob BES-verzoek indient.
 					<PopupButton number="18" />
 				</p>
 			</span>

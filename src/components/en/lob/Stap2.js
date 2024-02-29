@@ -27,17 +27,17 @@ function Stap2({
 	const [errors, setErrors] = useState([]);
 	const [selectedLand, setSelectedLand] = useState("");
 
-	const landenBes = ["Bonaire", "Saba", "Sint Eustatius"];
+	const landenLob = ["Aruba", "Curaçao", "Sint Maarten"];
 
 	TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Wob BES generator</p>
+			<p className="logo">Lob generator</p>
 
 			<h2>Step 2: Which government agency do you want to ask for information?</h2>
 			<span className="nieuwietje">
 				<p>
-					Choose which government agency you want to submit your Wob BES request to here.
+					Choose which government agency you want to submit your Lob request to here.
 					<PopupButton number="5" />
 				</p>
 			</span>
@@ -52,7 +52,7 @@ function Stap2({
 			<form>
 				{value.selectedAuthority && !showManualAuthority ? (
 					<div className="selectedAuthority">
-						<p>Double check the agency to which you are submitting the Wob BES request:</p>
+						<p>Double check the agency to which you are submitting the Lob request:</p>
 						<h3>{value.selectedAuthority.Bestuursorgaan}</h3>
 						<p>{value.selectedAuthority.Website}</p>
 						<br />
@@ -87,7 +87,7 @@ function Stap2({
 							onChange={event => setSearchValue(event.target.value)}
 						/>
 						<div className="landenFilter">
-							{landenBes.map(item => (
+							{landenLob.map(item => (
 								<button key={item} type="button" onClick={e => setSelectedLand(item)}>
 									{item}
 								</button>
@@ -101,7 +101,7 @@ function Stap2({
 										item =>
 											(item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
 												item.Plaats.toLowerCase().includes(searchValue.toLowerCase())) &&
-											item.Wet.includes("Wob BES") &&
+											item.Wet.includes("Lob") &&
 											item.Land.includes(selectedLand)
 									)
 									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))

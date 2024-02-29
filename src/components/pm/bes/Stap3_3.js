@@ -479,7 +479,7 @@ function Stap3_3({
 										value={value.subjectRapportText}
 										onChange={changeHandlerUser}
 										type="text"
-										placeholder="Por ehempel, plannan pa projectonan of programanan"
+										placeholder="Por ehempel, Mer-rapportnan"
 									/>
 									<br />
 								</label>
@@ -512,7 +512,7 @@ function Stap3_3({
 										value={value.subjectFinancialText}
 										onChange={changeHandlerUser}
 										type="text"
-										placeholder="Bijvoorbeeld begrotingen, jaarverslagen"
+										placeholder="Por ehempel presupuestonan, cuentanan anual"
 									/>
 									<br />
 								</label>

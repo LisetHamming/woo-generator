@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import machine from "../../../assets/images/LOB_KNOP.png";
+import machine from "../../../assets/images/WOB_KNOP.png";
 import gifLogo from "../../../assets/logo/Spoon_Logo_animatie_BlackonWhite_Gif.gif";
 import vvojLogo from "../../../assets/logo/VVOJ_Logo_RGB.png";
 
@@ -8,9 +8,9 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 	return (
 		<div>
 			<div className="selectLanguage">
-				<Link to="/NL/lob/">NL</Link>
-				<Link to="/EN/lob/">EN</Link>
-				<Link to="/PM/lob/">PM</Link>
+				<Link to="/NL/bes/">NL</Link>
+				<Link to="/EN/bes/">EN</Link>
+				<Link to="/PM/bes/">PAP</Link>
 			</div>
 			<div className="homepageLogos">
 				<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
@@ -18,32 +18,39 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 			</div>
 			<div className="homepageBlock">
 				<div className="blockText">
-					<p className="logo">Woo-generator</p>
-					<h1>Schrijf in 3 simpele stappen je eigen Woo-verzoek</h1>
-					<p>Welkom bij de Woo-generator! </p>
-					<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie.</p>
+					<p className="logo">Lob generator</p>
+					<h1>Write your own Lob request in 3 simple steps</h1>
+					<p>Welcome to the Lob generator!</p>
 					<p>
-						Op 1 mei 2022 is de Wet openbaarheid van bestuur (Wob) vervangen door de Wet open overheid (Woo). De
-						Wob-generator is daarom de Woo-generator geworden en we hebben meteen de gelegenheid aangegrepen om de
-						generator te verbeteren. Vanaf nu dien je dus een Woo-verzoek in als je overheidsinformatie wilt opvragen.
+						You are here because you want to request information from a government institution in Aruba, Curaçao or Sint Maarten. </p> 
+					<p>
+						All three of these islands have a freedom of information law called the Lob. By invoking this law, anyone
+						is allowed to request documents that the government institutions of the CAS islands possess.
 					</p>
-					<p>Met de Woo-generator is dat een koud kunstje.</p>
+
+					<br></br><p><b>Please note</b> that communication with the government in Aruba & Curaçao is only possible either in Dutch or Papiamento. 
+						If you're considering making a request to any government institutions in Aruba or Curaçao, change to one of the other languages.
+						This is required because the Lob generator makes your request in your chosen language. 
+					</p>
+					
+					<p>With the Lob generator, making a request is a breeze.</p>
 
 					<ol>
-						<li>1. Je vult een aantal gegevens over jezelf in</li>
-						<li>2. Je selecteert een overheidsinstantie</li>
-						<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
+						<li>1. You fill in some information about yourself</li>
+						<li>2. You select a government institution</li>
+						<li>3. You choose the type of documents or information you are looking for</li>
 					</ol>
+
 					<div className="nextButtons">
 						{/* <Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
 							WOO EN
-						</Link>
-						<Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
-							WOB-BES EN
 						</Link> */}
-						<Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
-							LOB
+						<Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("start your lob request")}>
+							start your lob request
 						</Link>
+						{/* <Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
+							LOB EN
+						</Link> */}
 					</div>
 				</div>
 				<div>

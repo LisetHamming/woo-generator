@@ -21,7 +21,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 				<div className="blockText">
 					<p className="logo">Wob BES-generator</p>
 					<h1>Schrijf in 3 simpele stappen je eigen Wob BES verzoek</h1>
-					<p>Welkom bij de Wob BES generator! </p>
+					<p>Welkom bij de Wob BES-generator! </p>
 					<p> Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie van <b>Bonaire, Sint Eustatius of Saba.</b></p>
 					<p>
 						Op Bonaire, Sint Eustatius en Saba geldt de Wet openbaarheid van bestuur BES voor de bestuursorganen van deze eilanden. 

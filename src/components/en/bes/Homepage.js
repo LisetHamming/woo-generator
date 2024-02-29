@@ -34,7 +34,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						This is required because the Wob BES generator makes your request in your chosen language. 
 					</p>
 					
-					<p>With the Woo-generator, making a request is a breeze by following the steps below.</p>
+					<p>With the Wob BES generator, making a request is a breeze by following the steps below.</p>
 
 					<ol>
 						<li>1. You fill in some information about yourself</li>

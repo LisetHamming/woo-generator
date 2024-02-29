@@ -5,13 +5,13 @@ import PopupButton from "./popups/PopupButton";
 function StapVoorAf() {
 	return (
 		<div className="formLetter central">
-			<p className="logo">Wob BES generator</p>
+			<p className="logo">Lob generator</p>
 			<h2>Good to know</h2>
 			<br />
 			<br />
 
 			<p>
-				The Wob BES generator is not designed to be used on your phone. It is best to open it on your computer or
+				The Lob generator is not designed to be used on your phone. It is best to open it on your computer or
 				laptop.
 			</p>
 			<br />
@@ -21,7 +21,7 @@ function StapVoorAf() {
 			</p>
 			<span className="nieuwietje">
 				<p>
-					For more explanation, you can click on the i's.
+					For more explanation, you can click on the little lightbulbs.
 					<PopupButton number="19" />
 				</p>
 				<br />

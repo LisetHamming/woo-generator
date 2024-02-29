@@ -15,7 +15,7 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 	// }
 	return (
 		<div className="formLetter">
-			<p className="logo">Woo-generator</p>
+			<p className="logo">Generado Lob</p>
 
 			<h2>Opcionnan extra</h2>
 			<p>

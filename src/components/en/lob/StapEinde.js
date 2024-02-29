@@ -43,10 +43,11 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<br />
 				Sending digitally?
 				<br />
-				The Lob does not say anything about filing a request digitally, or via email. 
-				So, you are not guaranteed that your request will be accepted if you send it via email. 
-				However, some governments will indeed have a prescribed way to file the request digitally. 
-				Make sure to check this beforehand. 
+				Although the laws of none of the ABCSSS islands say anything about filing a request digitally, practice shows that submitting a request via email is possible. 
+				In Curaçao, for example, this can be done through the <a className="plaintext" href="https://loketdigital.gobiernu.cw/vergunningen/lob-verzoek" target="_blank" rel="noopener noreferrer">
+				Permit Desk.</a> 
+				The Permit Desk receives all Lob requests in Curaçao and forwards them to the relevant ministry to come to a decision. 
+				Always inform at the relevant department in advance that a digital request can be made to prevent that your request is not considered.
 			</p>
 			<br />
 			<div>

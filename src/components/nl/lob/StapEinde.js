@@ -17,7 +17,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<h2 className="hidePrint">Laatste check!</h2>
 			<p className="extraPadding hidePrint">Lob-verzoek met onderwerp: {value.subjectLong}</p>
 			<p className="hidePrint">
-				Hoewel de Lob-generator met de grootste zorgvuldigheid is ontwikkeld, is het opstellen van een goed Lobverzoek
+				Hoewel de Lob-generator met de grootste zorgvuldigheid is ontwikkeld, is het opstellen van een goed Lob-verzoek
 				mensenwerk en maatwerk. Bovendien blijf je zelf verantwoordelijk voor wat je naar het bestuursorgaan stuurt.
 				<br />
 				<br />
@@ -34,7 +34,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				</button>
 			</p>
 			<p>
-				Je concept Lobverzoek
+				Je concept Lob-verzoek
 				<br />
 				Check of de zinnen in je verzoek goed lopen. Denk ook na of er nog specifieke informatie nodig is om aan je
 				verzoek toe te voegen. Deze aanvullingen en wijzigingen kun je zelf aanbrengen nadat je je Lobverzoek hebt
@@ -44,11 +44,10 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<br />
 				Digitaal versturen?
 				<br />
-				Onder de Woo moeten overheidsinstanties Lobverzoeken die digitaal zijn ingediend accepteren. Maar
-				overheidsinstanties mogen wel aangeven via wélke digitale weg een Lobverzoek dient te worden ingediend,
-				bijvoorbeeld via een specifiek e-mailadres of een online Lobformulier. Check dit dus altijd van tevoren! Heeft
-				de overheidsinstantie een Lobformulier op haar website gezet, dan kun je de (eventueel ondertekende) brief ook
-				uploaden of de tekst kopiëren en inplakken.
+				Hoewel op geen van de ABCSSS-eilanden de wet iets zegt over digitale indiening, blijkt uit de praktijk dat het indienen van een verzoek via e-mail mogelijk is. 
+				In Curaçao kan dit bijvoorbeeld via het <a className="plaintext" href="https://loketdigital.gobiernu.cw/vergunningen/lob-verzoek" target="_blank" rel="noopener noreferrer">Vergunningloket.</a> 
+				Het Vergunningloket ontvangt alle verzoeken in Curaçao en stuurt ze door naar het betreffende ministerie om een beslissing te nemen. 
+				Informeer altijd van tevoren bij het betreffende departement dat een digitaal verzoek kan worden ingediend om te voorkomen dat het verzoek wordt afgewezen.
 			</p>
 			<br />
 			<div>

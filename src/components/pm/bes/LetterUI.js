@@ -28,13 +28,13 @@ function LetterUI({ value, getCurrentDate }) {
 	return (
 		<div className="letterComplete">
 			<div className="letterUIHeading">
-				<h1>Bo peticion pa divulga documentonan a base di e Lob den proceso:</h1>
+				<h1>Bo peticion pa divulga documentonan a base di e Wob BES te awo:</h1>
 				<div className="letterUILogos">
 					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
 				</div>
 			</div>
-			<br />
+			<br></br>
 			<div id="letterUI" style={{ fontFamily: "Arial" }}>
 				<div className="adressAuthority">
 					{value.selectedAuthority && (
@@ -130,7 +130,7 @@ function LetterUI({ value, getCurrentDate }) {
 							<br />
 
 							{value[10] && (
-								<p className="scribble">{`- Vergaderstukken${
+								<p className="scribble">{`- Documentonan di reunionnan${
 									Object.keys(value.subjectMeeting).some(key => value.subjectMeeting[key]) ? ", bou cual: " : ""
 								}${Object.keys(value.subjectMeeting)
 									.filter(key => value.subjectMeeting[key])
@@ -160,7 +160,7 @@ function LetterUI({ value, getCurrentDate }) {
 							)}
 
 							{value[15] && (
-								<p className="scribble">{`- Financiële documenten${
+								<p className="scribble">{`- Documentonan financiero${
 									value.subjectFinancialText ? " bou cual: " + value.subjectFinancialText : ""
 								};  `}</p>
 							)}

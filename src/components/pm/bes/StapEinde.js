@@ -13,11 +13,11 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
-			<p className="logo">Generador Lob</p>
+			<p className="logo">Generado Wob BES</p>
 			<h2 className="hidePrint">Ultimo check!</h2>
 			<p className="extraPadding hidePrint">Peticion Lob cu topico: {value.subjectLong}</p>
 			<p className="hidePrint">
-				Aunke e Woo-generator ta traha cu hopi cuido, bo mes ta keda responsabel pa kico bo ta manda un organo
+				Aunke e generado Wob BES ta traha cu hopi cuido, bo mes ta keda responsabel pa kico bo ta manda un instancia
 				gubernamental.
 				<br />
 				<br />
@@ -45,7 +45,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				Manda digitalmente?
 				<br />
 				Aunke riba niun di e islanan ABCSSS e ley ta regla con un peticion mester wordo haci digitalmente, practica ta
-				mustra cu entrega un peticion via e-mail ta posibel. Na Kòrsou por ehempel esaki ta bay via e Lokèt di Pèrmit.
+				mustra cu entrega un peticion via e-mail ta posibel. 
 				Semper informa di antemano na e departamento concerni con un peticion digital por wordo haci pa preveni cu e
 				peticion no ta wordo acepta.
 			</p>
@@ -60,8 +60,8 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<br />
 				<p>
 					{" "}
-					Bo kier conta otro personanan di e generador Lob?
-					<br /> #generadorlob{" "}
+					Bo kier conta otro personanan di e generado Lob?
+					<br /> #lobgenerator{" "}
 				</p>
 				<br />
 				<br />
@@ -69,7 +69,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<br />
 			<Link to="/PM/bes/StapExtra">Bay bek</Link>
 			<Link to="/" onClick={resetState}>
-				Cuminsa di nobo y deshaci tur loke m'wa yena caba
+					Cuminsa di nobo
 			</Link>
 
 			<LetterUI value={value} filteredDataText={filteredDataText} getCurrentDate={getCurrentDate} />
