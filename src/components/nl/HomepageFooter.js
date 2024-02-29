@@ -29,17 +29,27 @@ function HomepageFooter() {
 							Tove Oegema{" "}
 						</a>{" "}
 						(Research Assistant) en{" "}
-						<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank" rel="noopener noreferrer">
+						<a
+							className="plaintext"
+							href="https://www.linkedin.com/in/paulienbouw/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Paulien Bouw
 						</a>
 						. Inhoud: onderzoeksjournalisten{" "}
-						<a className="plaintext" href="https://www.lisethamming.com/" target="_blank" rel="noopener noreferrer">
+						<a
+							className="plaintext"
+							href="https://www.linkedin.com/in/lisethamming/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Liset Hamming
 						</a>{" "}
 						en{" "}
 						<a
 							className="plaintext"
-							href="https://www.platform-investico.nl/personen/tim-staal/"
+							href="https://www.linkedin.com/in/tim-staal-00bb5810/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>

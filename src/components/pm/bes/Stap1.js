@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
-import PopupButton from "../../popups/PopupButton";
 import LetterUI from "./LetterUI";
+import PopupButton from "./popups/PopupButton";
 // const tagManagerArgs = {
 // 	dataLayer: {
 // 		page: "Stap1"
@@ -65,7 +65,7 @@ function Stap1({
 				{value.userCompanyName && (
 					<span className="subForm">
 						<label className="formInputs">
-						Nomber di organisacion
+							Nomber di organisacion
 							<input
 								id="userCompanyNameInput"
 								size="46"
@@ -94,7 +94,7 @@ function Stap1({
 				{value.userOnBehalf && (
 					<span className="subForm">
 						<label className="formInputs">
-						Nomber di organisacion
+							Nomber di organisacion
 							<input
 								id="userOnBehalfInput"
 								size="46"

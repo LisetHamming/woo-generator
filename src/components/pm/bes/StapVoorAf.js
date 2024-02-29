@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PopupButton from "../../popups/PopupButton";
+import PopupButton from "./popups/PopupButton";
 
 function StapVoorAf() {
 	return (
@@ -11,7 +11,8 @@ function StapVoorAf() {
 			<br />
 
 			<p>
-				E generador Wob BES no ta traha pa wordo uza riba bo telefon. P'esey ta miho si bo uz'e riba bo computer of laptop.
+				E generador Wob BES no ta traha pa wordo uza riba bo telefon. P'esey ta miho si bo uz'e riba bo computer of
+				laptop.
 			</p>
 			<br />
 			<p>

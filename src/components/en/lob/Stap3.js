@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
-import PopupButton from "../../popups/PopupButton";
 import LetterUI from "./LetterUI";
+import PopupButton from "./popups/PopupButton";
 
 function Stap3({
 	value,

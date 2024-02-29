@@ -1,8 +1,8 @@
 import React from "react";
 // import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
-import PopupButton from "../../popups/PopupButton";
 import LetterUI from "./LetterUI";
+import PopupButton from "./popups/PopupButton";
 
 function Stap3_3({
 	value,
@@ -38,13 +38,14 @@ function Stap3_3({
 			{value.subjectType === "specific" && (
 				<p>
 					Describe as accurately as possible the title, author and date of the document you are looking for and add
-					them. You can add multiple documents.</p>
+					them. You can add multiple documents.
+				</p>
 			)}
 			{value.subjectType === "all" && (
 				<div>
 					<p>
-						Here, choose the type of documents you would like to receive on the subject. Then you can further
-						delineate your request by indicating the time period you are interested in.
+						Here, choose the type of documents you would like to receive on the subject. Then you can further delineate
+						your request by indicating the time period you are interested in.
 					</p>
 					<br />
 					<span>
@@ -419,7 +420,7 @@ function Stap3_3({
 						<div>
 							<span className="subsubForm">
 								<label>
-								Organizations or individuals (if known)
+									Organizations or individuals (if known)
 									<input
 										size="40"
 										id="subjectLongOrganisation"
@@ -567,9 +568,7 @@ function Stap3_3({
 						<div>
 							<h1>Select period</h1>
 							<span>
-								<p>
-									Select here the period during which you think the information of interest to you comes from.
-								</p>
+								<p>Select here the period during which you think the information of interest to you comes from.</p>
 								<PopupButton number="17" />
 							</span>
 							<br />

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
-import PopupButton from "../../popups/PopupButton";
 import LetterUI from "./LetterUI";
+import PopupButton from "./popups/PopupButton";
 // const tagManagerArgs = {
 // 	dataLayer: {
 // 		page: "Stap1"
@@ -27,8 +27,9 @@ function Stap1({
 
 			<h2>Step 1: About Yourself</h2>
 			<p>
-			Fill in your contact information here so that the government agency can reach you and make some choices about how you
-    present yourself and your request to the government. Note: a Woo request cannot be submitted anonymously.
+				Fill in your contact information here so that the government agency can reach you and make some choices about
+				how you present yourself and your request to the government. Note: a Woo request cannot be submitted
+				anonymously.
 			</p>
 			<br />
 			<form>

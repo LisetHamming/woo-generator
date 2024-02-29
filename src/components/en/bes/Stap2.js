@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
-import PopupButton from "../../popups/PopupButton";
-import SetSelectedAuthorityManual from "../../SetSelectedAuthorityManual";
 import LetterUI from "./LetterUI";
+import PopupButton from "./popups/PopupButton";
+import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
 const tagManagerArgs = {
 	dataLayer: {
 		page: "Stap2"

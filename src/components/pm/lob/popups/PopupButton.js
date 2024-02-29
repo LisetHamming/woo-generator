@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import lightbulb from "./../../assets/icons/Spoon_icons_kennis pagina's.png";
+import lightbulb from "./../../../../assets/icons/Spoon_icons_kennis pagina's.png";
 import Popup from "./Popup";
 
 function PopupButton({ number }) {

@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 // import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
-import PopupButton from "../../popups/PopupButton";
-import SetSelectedAuthorityManual from "../../SetSelectedAuthorityManual";
 import LetterUI from "./LetterUI";
+import PopupButton from "./popups/PopupButton";
+import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
 // const tagManagerArgs = {
 // 	dataLayer: {
 // 		page: "Stap2"
@@ -37,7 +37,7 @@ function Stap2({
 			<h2>Paso 2: Cerca cua instancia gubernamental bo kier pidi documentonan?</h2>
 			<span className="nieuwietje">
 				<p>
-				Aki bo ta scoge cerca cua instancia gubernamental bo ta entrega bo peticion.
+					Aki bo ta scoge cerca cua instancia gubernamental bo ta entrega bo peticion.
 					<PopupButton number="5" />
 				</p>
 			</span>
@@ -119,16 +119,17 @@ function Stap2({
 										</li>
 									))
 							) : (
-								<li>
-									Algo no a bay bon cu e buskeda. Si bo mes tin informacion di contacto, bo por yen'e aki.
-								</li>
+								<li>Algo no a bay bon cu e buskeda. Si bo mes tin informacion di contacto, bo por yen'e aki.</li>
 							)}
 						</ul>
 
 						<div>
 							<br />
 							<span>
-								<p>E instancia corecto no ta disponibel, pero bo mes tin e informacion di contacto unda bo kier haci e peticion?</p>
+								<p>
+									E instancia corecto no ta disponibel, pero bo mes tin e informacion di contacto unda bo kier haci e
+									peticion?
+								</p>
 							</span>
 							<button
 								className="buttonStyle"
@@ -166,7 +167,7 @@ function Stap2({
 
 			<span className="nieuwietje">
 				<p>
-				Con mi ta scoge e instancia gubernamental corecto?
+					Con mi ta scoge e instancia gubernamental corecto?
 					<PopupButton number="6" />
 				</p>
 			</span>

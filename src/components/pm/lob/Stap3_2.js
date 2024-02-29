@@ -1,8 +1,8 @@
 import React from "react";
 // import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
-import PopupButton from "../../popups/PopupButton";
 import LetterUI from "./LetterUI";
+import PopupButton from "./popups/PopupButton";
 
 function Stap3_2({
 	value,
@@ -25,10 +25,12 @@ function Stap3_2({
 		<div className="formLetter">
 			<p className="logo">Generado Lob</p>
 			<h2>Paso 3: Ki informacion bo ta buscando?</h2>
-			<p>	Aki bo ta describi e topico di bo peticion. 
-				Esey kiermen cu bo ta describi ki informacion bo ta buscando. 
-				Purba ta mas preciso cu ta posibel den bo descripcion di cua informacion bo ta buscando. 
-				Double check si e manera cu bo ta describi loke bo ta buscando ta un zin cu ta core bon den e carta genera.</p>
+			<p>
+				{" "}
+				Aki bo ta describi e topico di bo peticion. Esey kiermen cu bo ta describi ki informacion bo ta buscando. Purba
+				ta mas preciso cu ta posibel den bo descripcion di cua informacion bo ta buscando. Double check si e manera cu
+				bo ta describi loke bo ta buscando ta un zin cu ta core bon den e carta genera.
+			</p>
 			<br />
 			<span>
 				<p>
