@@ -30,8 +30,8 @@ function LetterUI({ value, getCurrentDate }) {
 			<div className="letterUIHeading">
 				<h1>Je Lob-verzoek in wording:</h1>
 				<div className="letterUILogos">
-					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
+					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 				</div>
 			</div>
 			<br />

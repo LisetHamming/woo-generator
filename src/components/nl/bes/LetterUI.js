@@ -30,8 +30,8 @@ function LetterUI({ value, getCurrentDate }) {
 			<div className="letterUIHeading">
 				<h1>Je Wob BES-verzoek in wording:</h1>
 				<div className="letterUILogos">
-					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
+					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 				</div>
 			</div>
 			<br />
@@ -60,7 +60,7 @@ function LetterUI({ value, getCurrentDate }) {
 					<br />
 					<p>
 						Met een beroep op de Wet openbaarheid van bestuur BES (hierna: Wob BES) verzoek ik,{" "}
-						<b className="scribble">{value.userName}{" "} </b>, {" "}
+						<b className="scribble">{value.userName} </b>,{" "}
 						{value.userJournalist ? <b className="scribble"> journalist, </b> : " "}
 						{value.userOnBehalfInput.length ? (
 							<span className="scribble">werkzaam voor/in opdracht van {value.userOnBehalfInput}, </span>
@@ -189,8 +189,8 @@ function LetterUI({ value, getCurrentDate }) {
 					))}
 				<div>
 					<p>
-						Graag ontvang ik schriftelijk (per brief of per e-mail) een bevestiging van de ontvangst van dit
-						Wob BES-verzoek.
+						Graag ontvang ik schriftelijk (per brief of per e-mail) een bevestiging van de ontvangst van dit Wob
+						BES-verzoek.
 						<br />
 						<br />
 						Mocht u belanghebbenden de gelegenheid gaan bieden tot het geven van zienswijzen dan ontvang ik daarvan

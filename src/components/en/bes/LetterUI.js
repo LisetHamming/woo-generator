@@ -17,7 +17,7 @@ function LetterUI({ value, getCurrentDate }) {
 		//value.subjectInside6 && "meeting reports",
 		value.subjectInside4 && "text messages and WhatsApp messages"
 	].filter(Boolean);
-	
+
 	const wordsOutside = [
 		value.subjectOutside1 && "letters",
 		value.subjectOutside2 && value.subjectOutside2inclusive === "inclusive"
@@ -31,8 +31,8 @@ function LetterUI({ value, getCurrentDate }) {
 			<div className="letterUIHeading">
 				<h1>Your Wob BES request in the making:</h1>
 				<div className="letterUILogos">
-					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
+					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 				</div>
 			</div>
 			<br />
