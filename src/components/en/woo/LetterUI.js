@@ -17,7 +17,7 @@ function LetterUI({ value, getCurrentDate }) {
 		//value.subjectInside6 && "meeting reports",
 		value.subjectInside4 && "text messages and WhatsApp messages"
 	].filter(Boolean);
-	
+
 	const wordsOutside = [
 		value.subjectOutside1 && "letters",
 		value.subjectOutside2 && value.subjectOutside2inclusive === "inclusive"
@@ -31,8 +31,8 @@ function LetterUI({ value, getCurrentDate }) {
 			<div className="letterUIHeading">
 				<h1>Your Woo request in the making:</h1>
 				<div className="letterUILogos">
-					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
+					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 				</div>
 			</div>
 			<br />
@@ -188,11 +188,17 @@ function LetterUI({ value, getCurrentDate }) {
 						be notified in advance by writing or by e-mail.
 					</p>
 					<br />
-					<p>
-						You must decide on my request within 3 weeks after having received it. No response or insufficient response
-						by the due date will give rise to an appeal to the administrative law judge for failure to make a timely
-						decision.
-					</p>
+					{value.subjectMilieu ? (
+						<span className="scribble">
+							Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele
+							verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen.
+						</span>
+					) : (
+						"You must decide on my request within 4 weeks after having received it."
+					)}{" "}
+					No response or insufficient response by the due date will give rise to an appeal to the administrative law
+					judge for failure to make a timely decision.
+					<p></p>
 					<br />
 					<p>Sincerely, </p>
 					<br />

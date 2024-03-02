@@ -30,8 +30,8 @@ function LetterUI({ value, getCurrentDate }) {
 			<div className="letterUIHeading">
 				<h1>Je Woo-verzoek in wording:</h1>
 				<div className="letterUILogos">
-					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 					<img src={spoon} alt="logo Expertisecentrum SPOON" />
+					<img src={vvoj} alt="logo vereniging van onderzoeksjournalisten" />
 				</div>
 			</div>
 			<br />
@@ -207,14 +207,14 @@ function LetterUI({ value, getCurrentDate }) {
 					</p>
 					<br />
 					<p>
-						U dient binnen de termijn van 4 weken een besluit te nemen op dit verzoek.{" "}
+						{" "}
 						{value.subjectMilieu ? (
 							<span className="scribble">
 								Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele
 								verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen.
 							</span>
 						) : (
-							"."
+							"U dient binnen de termijn van 4 weken een besluit te nemen op dit verzoek."
 						)}{" "}
 						Geen of onvoldoende antwoord op de vervaldatum zal aanleiding geven tot beroep bij de bestuursrechter wegens
 						het niet tijdig nemen van een beslissing.
