@@ -1,17 +1,17 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
-import TagManager from "react-gtm-module";
+// import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
-import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
-import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
-const tagManagerArgs = {
-	dataLayer: {
-		page: "Stap2"
-	},
-	dataLayerName: "PageDataLayer"
-};
+import SetSelectedAuthorityManual from "../../SetSelectedAuthorityManual";
+import LetterUI from "./LetterUI";
+// const tagManagerArgs = {
+// 	dataLayer: {
+// 		page: "Stap2"
+// 	},
+// 	dataLayerName: "PageDataLayer"
+// };
 function Stap2({
 	value,
 	setAuthority,
@@ -25,11 +25,8 @@ function Stap2({
 	const [AuthorityComplete, setAuthorityComplete] = useState(false);
 	const [searchValue, setSearchValue] = useState("");
 	const [errors, setErrors] = useState([]);
-	const [selectedLand, setSelectedLand] = useState("");
 
-	const landenBes = ["Bonaire", "Saba", "Sint Eustatius"];
-
-	TagManager.dataLayer(tagManagerArgs);
+// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo generator</p>
@@ -37,7 +34,7 @@ function Stap2({
 			<h2>Step 2: Which government agency do you want to ask for information?</h2>
 			<span className="nieuwietje">
 				<p>
-					Choose which government agency you want to submit your Wob BES request to here.
+					Choose which government agency you want to submit your Woo request to here.
 					<PopupButton number="5" />
 				</p>
 			</span>
@@ -52,7 +49,7 @@ function Stap2({
 			<form>
 				{value.selectedAuthority && !showManualAuthority ? (
 					<div className="selectedAuthority">
-						<p>Double check the agency to which you are submitting the Wob BES request:</p>
+						<p>Double check the agency to which you are submitting the Woo request:</p>
 						<h3>{value.selectedAuthority.Bestuursorgaan}</h3>
 						<p>{value.selectedAuthority.Website}</p>
 						<br />
@@ -86,23 +83,15 @@ function Stap2({
 							placeholder="Search by name or place"
 							onChange={event => setSearchValue(event.target.value)}
 						/>
-						<div className="landenFilter">
-							{landenBes.map(item => (
-								<button key={item} type="button" onClick={e => setSelectedLand(item)}>
-									{item}
-								</button>
-							))}
-						</div>
+						{console.log(searchValue)}
 
 						<ul id="authorities">
 							{authorities ? (
 								authorities
 									.filter(
 										item =>
-											(item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
-												item.Plaats.toLowerCase().includes(searchValue.toLowerCase())) &&
-											item.Wet.includes("Wob BES") &&
-											item.Land.includes(selectedLand)
+											item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
+												item.Plaats.toLowerCase().includes(searchValue.toLowerCase())
 									)
 									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))
 									.map(item => (
@@ -116,6 +105,7 @@ function Stap2({
 												<p>{item.Bestuursorgaan}</p>
 												<FontAwesomeIcon className="fontIcon" icon={faPlus} />
 											</button>
+											{console.log(authorities)}
 										</li>
 									))
 							) : (
