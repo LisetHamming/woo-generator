@@ -196,17 +196,19 @@ function LetterUI({ value, getCurrentDate }) {
 					<br />
 					<p>Sincerely, </p>
 					<br />
-					<p className="userSignature"></p>
-					<p className="scribble">{value.userName}</p>
-					<p className="scribble">{value.userCompanyName}</p>
-					<p className="scribble">
-						{value.userAdress} {value.userAdressNumber}
-					</p>
-					<p className="scribble">
-						{value.userZipcode} {value.userCityName}
-					</p>
-					<p className="scribble">{value.userEmail}</p>
-					<p className="scribble">{value.userPhoneNumber}</p>
+					<div className="letterUIAddress">
+						<p className="userSignature"></p>
+						<p className="scribble">{value.userName}</p>
+						<p className="scribble">{value.userCompanyName}</p>
+						<p className="scribble">
+							{value.userAdress} {value.userAdressNumber}
+						</p>
+						<p className="scribble">
+							{value.userZipcode} {value.userCityName}
+						</p>
+						<p className="scribble">{value.userEmail}</p>
+						<p className="scribble">{value.userPhoneNumber}</p>
+					</div>
 				</div>
 			</div>
 		</div>
