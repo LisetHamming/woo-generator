@@ -54,7 +54,7 @@ function LetterUI({ value, getCurrentDate }) {
 						{value.userCityName}, {getCurrentDate()}
 					</p>
 					<br />
-					<p>Referente: entregamento di peticion pa divulgacion a base di e Lob</p>
+					<p>Referente: entregamento di peticion pa divulgacion a base di e Wob BES</p>
 					<br />
 					<p>Apreciabel meneer/señora </p>
 					<br />
@@ -184,7 +184,7 @@ function LetterUI({ value, getCurrentDate }) {
 				<div>
 					<p>
 						Lo mi aprecia un reaccion por escrito (via carta of e-mail) cu mi peticion pa divulga informacion a base di
-						e Lob a wordo ricibi.
+						e Wob BES a wordo ricibi.
 						<br />
 						<br />
 						Si bo persona lo kier haci uzo di e posibilidad pa pidi interesadonan nan opinion si mag haci e informacion

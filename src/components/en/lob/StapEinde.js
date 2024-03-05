@@ -17,7 +17,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 			<h2 className="hidePrint">Final check!</h2>
 			<p className="extraPadding hidePrint">Lob request with subject: {value.subjectLong}</p>
 			<p className="hidePrint">
-				Although the Lob generator has been developed with the utmost care, preparing a good Wob BES request is
+				Although the Lob generator has been developed with the utmost care, preparing a good request is
 				human work, so your mileage may vary. Moreover, you remain responsible for what you send to the governing body.
 				<br />
 				<br />
@@ -37,7 +37,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				Your draft Lob request
 				<br />
 				Check that the sentences in your request flow well. Also think about whether any specific information is needed to add to your
-				request. You can make these additions and changes yourself after you have downloaded the .doc file. If you are satisfied, print the letter and sign it. For a Wob BES request by letter
+				request. You can make these additions and changes yourself after you have downloaded the .doc file. If you are satisfied, print the letter and sign it. For a request by letter
 				this is mandatory. Don't forget to make a copy of your signed letter before sending it by mail.
 				<br />
 				<br />

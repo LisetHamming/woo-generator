@@ -42,7 +42,7 @@ function HomepageWaarom() {
 							Esey no ta nan culpa, pasobra gobierno no ta ehecuta e derecho aki casi. Kiermen no tin casi transparencia, mientras cu e derecho si ta existi! 
 							Na Hulanda periodistanan y publico sa saca revelacion regularmente a base di Hulanda su ley di transparencia. Asina nan ta pone gobierno responsabilisa nan mes pa e maneho cu nan ta implementa. 
 							Cu e website aki nos kier traha riba emancipacion di e derecho di informacion den Caribe Hulandes. 
-							Pa facilita emancipacion di e derecho aki, e generador Lob t'ey pa percura pa bo peticion ta completo y valido.
+							Pa facilita emancipacion di e derecho aki, e generador t'ey pa percura pa bo peticion ta completo y valido.
 							</p>
                             <br></br>
                             <p>Kiermen haci uzo di bo derecho y cuminsa un peticion!
@@ -63,11 +63,11 @@ function HomepageWaarom() {
                     </p>
                     <br></br>
                     <p>
-					Fuera di esey, tene cuenta cu gobiero no mester divulga tur informacion: e Lob tin algun
-                                motibo pa rechasa manera confidencialidad di negoshi y respet pa privacidad. 
-                                Algun di e excepcionnan aki ta exigi cu henter un dokumento keda sin divulga, 
-                                mientras cu otro exemptionnan ta exigi cu e instancia gubernamental aplica e excepcion riba parti di un documento. 
-                                Esakinan por wordo redacta mientras otro partinan ta wordo divulga. Finalmente, ora gobierno rechasa un documento a base e excepcionnan, e mester motiva esaki bon.
+					Fuera di esey, tene cuenta cu gobiero no mester divulga tur informacion: e ley tin algun
+                    motibo pa rechasa manera confidencialidad di negoshi y respet pa privacidad. 
+                    Algun di e excepcionnan aki ta exigi cu henter un dokumento keda sin divulga, 
+                    mientras cu otro exemptionnan ta exigi cu e instancia gubernamental aplica e excepcion riba parti di un documento. 
+                    Esakinan por wordo redacta mientras otro partinan ta wordo divulga. Finalmente, ora gobierno rechasa un documento a base e excepcionnan, e mester motiva esaki bon.
                     </p>
                 </div>
             </div>

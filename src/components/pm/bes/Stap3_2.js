@@ -37,7 +37,7 @@ function Stap3_2({
 					Tene cuenta cu bo solamente por pidi informacion cu ta warda den documentonan, riba papel of digital. Un
 					documento por ta; un e-mail, un mensahe di WhatsApp, un rapport den forma di papel of un PDF. Tur loke ta
 					wordo skirbi denter di un instancia gubernamental y tin relacion cu e maneho di e organisacion, por wordo pidi
-					via e Lob. Si ta pone e condicion cu ta trata di un 'asunto administrativo' (bestuurlijke aangelegenheid)
+					via e ley. Si ta pone e condicion cu ta trata di un 'asunto administrativo' (bestuurlijke aangelegenheid)
 				</p>
 				<PopupButton number="10" />
 			</span>

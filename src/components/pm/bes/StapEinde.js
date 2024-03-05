@@ -15,7 +15,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 		<div className="formLetter">
 			<p className="logo">Generado Wob BES</p>
 			<h2 className="hidePrint">Ultimo check!</h2>
-			<p className="extraPadding hidePrint">Peticion Lob cu topico: {value.subjectLong}</p>
+			<p className="extraPadding hidePrint">Peticion Wob BES cu topico: {value.subjectLong}</p>
 			<p className="hidePrint">
 				Aunke e generado Wob BES ta traha cu hopi cuido, bo mes ta keda responsabel pa kico bo ta manda un instancia
 				gubernamental.
@@ -26,7 +26,7 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<button
 					className="buttonStyle2"
 					onClick={() => {
-						window.dataLayer.push({ event: "print lob PAP brief" });
+						window.dataLayer.push({ event: "print bes PAP brief" });
 						exportHTMLDoc();
 					}}
 				>
@@ -60,8 +60,8 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<br />
 				<p>
 					{" "}
-					Bo kier conta otro personanan di e generado Lob?
-					<br /> #lobgenerator{" "}
+					Bo kier conta otro personanan di e generado?
+					<br /> #generadowobbes{" "}
 				</p>
 				<br />
 				<br />

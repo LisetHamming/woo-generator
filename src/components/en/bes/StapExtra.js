@@ -19,11 +19,10 @@ function StapExtra({ value, changeHandlerCheckbox, filteredDataText, getCurrentD
 
 			<h2>Extra options</h2>
 			<p>
-				The options below generally increase your chances of disclosure because they anticipate
-				obstacles that may arise in the process. By checking and unchecking the options, you can see in your
-				Wob BES request in progress to see which text blocks appear or disappear. Read text blocks carefully to know
-				know what the options mean. It can't hurt to include them all, but some options may not be relevant in your
-				specific case may not be relevant. In that case, turn them off.
+			The options below generally increase your chances of disclosure because they anticipate
+			obstacles that may arise in the process. By checking and unchecking the options, you can see in your request in progress which text blocks appear or disappear. Read text blocks carefully to know
+			know what the options mean. It can't hurt to include them all, but some options may not be relevant in your
+			specific case. In that case, turn them off.
 			</p>
 			<form>
 				<span>
