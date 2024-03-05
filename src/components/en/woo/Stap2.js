@@ -93,6 +93,7 @@ function Stap2({
 											item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
 												item.Plaats.toLowerCase().includes(searchValue.toLowerCase())
 									)
+									.filter(item => item.Land.includes("Nederland"))
 									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))
 									.map(item => (
 										<li key={item.id}>
