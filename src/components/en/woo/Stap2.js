@@ -4,7 +4,7 @@ import React, { useState } from "react";
 // import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
 import PopupButton from "./popups/PopupButton";
-import SetSelectedAuthorityManual from "../../SetSelectedAuthorityManual";
+import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
 import LetterUI from "./LetterUI";
 // const tagManagerArgs = {
 // 	dataLayer: {
