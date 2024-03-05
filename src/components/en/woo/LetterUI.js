@@ -190,8 +190,10 @@ function LetterUI({ value, getCurrentDate }) {
 					<br />
 					{value.subjectMilieu ? (
 						<span className="scribble">
-							Omdat dit verzoek het milieu betreft dient u, in verband met het Verdrag van Aarhus, ongeacht eventuele
-							verdaging en zienswijzen, uiterlijk binnen acht weken een finaal besluit te hebben genomen.
+							Because this request concerns the environment, in connection with the Aarhus Convention, 
+							regardless of any postponement, 
+							even when requesting the opinion of interested parties, 
+							you are required to make a final decision within eight weeks at the latest.
 						</span>
 					) : (
 						"You must decide on my request within 4 weeks after having received it."
