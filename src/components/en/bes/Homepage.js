@@ -23,17 +23,21 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 					<p>Welcome to the Wob BES generator!</p>
 					<p>
 						You are here because you want to request information from a government institution in Bonaire, Saba or
-						Statia. </p> 
+						Statia.{" "}
+					</p>
 					<p>
 						The BES islands have a special freedom of information law called the Wob BES. By invoking this law, anyone
 						is allowed to request documents that the government institutions of the BES islands possess.
 					</p>
 
-					<br></br><p><b>Please note</b> that communication with the government in Bonaire is only possible either in Dutch or Papiamento. 
-						If you're considering making a request to any government institutions in Bonaire, change to one of the other languages.
-						This is required because the Wob BES generator makes your request in your chosen language. 
+					<br></br>
+					<p>
+						<b>Please note</b> that communication with the government in Bonaire is only possible either in Dutch or
+						Papiamento. If you're considering making a request to any government institutions in Bonaire, change to one
+						of the other languages. This is required because the Wob BES generator makes your request in your chosen
+						language.
 					</p>
-					
+
 					<p>With the Wob BES generator, making a request is a breeze by following the steps below.</p>
 
 					<ol>
@@ -46,7 +50,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						{/* <Link to="/EN/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
 							WOO EN
 						</Link> */}
-						<Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
+						<Link to="/EN/bes/StapVoorAf" className="start" onClick={e => clickHandlerSetLaw("Wob BES")}>
 							WOB-BES
 						</Link>
 						{/* <Link to="/EN/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>

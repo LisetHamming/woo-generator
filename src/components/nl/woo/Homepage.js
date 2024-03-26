@@ -35,7 +35,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 					</ol>
 					<div className="nextButtons">
-						<Link to="/NL/woo/StapVoorAf" onClick={e => clickHandlerSetLaw("Woo")}>
+						<Link to="/NL/woo/StapVoorAf" className="start" onClick={e => clickHandlerSetLaw("Woo")}>
 							Start je woo-verzoek
 						</Link>
 						{/* <Link to="/EN/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>

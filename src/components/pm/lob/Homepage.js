@@ -19,20 +19,32 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 			<div className="homepageBlock">
 				<div className="blockText">
 					<p className="logo">Generado Lob</p>
-					<h1>Bo kier sa kico bo gobierno ta haciendo? Skirbi bo prome peticion pa divulga informacion gubernamental!</h1>
+					<h1>
+						Bo kier sa kico bo gobierno ta haciendo? Skirbi bo prome peticion pa divulga informacion gubernamental!
+					</h1>
 					<p>Bon bini na e Lob generator!</p>
-					<p> Bo t’aki pasobra bo kier pidi informacion cerca un instancia gubernamental na Aruba, Kòrsou of Sint Maarten.</p>
 					<p>
-					Na cada pais Caribense den Reino Hulandes tin un ley cu ta regla con gobierno tin di anda cu transparencia. 
-					Esaki yama e Landsverordening openbaarheid van bestuur (Ordenansa Nacional pa transparencia gubernamental). 
-					Cada isla tin nan version di e ley aki. Si bo kier lesa e texto di e ley, scroll abou y bo lo haya e textonan di e ley pa cada pais. 
+						{" "}
+						Bo t’aki pasobra bo kier pidi informacion cerca un instancia gubernamental na Aruba, Kòrsou of Sint Maarten.
+					</p>
+					<p>
+						Na cada pais Caribense den Reino Hulandes tin un ley cu ta regla con gobierno tin di anda cu transparencia.
+						Esaki yama e Landsverordening openbaarheid van bestuur (Ordenansa Nacional pa transparencia gubernamental).
+						Cada isla tin nan version di e ley aki. Si bo kier lesa e texto di e ley, scroll abou y bo lo haya e
+						textonan di e ley pa cada pais.
 					</p>
 
-					<p> <b>Tene cuenta</b> cu na Sint Maarten Papiamento no ta wordo papia. Kiermen si bo intencion ta pa haci un peticion na Sint Maarten,
-						 cambia idioma pa Hulandes of Ingles. 
-						 Esaki ta necesario pasobra e generador ta traha bo peticion den e idioma cu bo ta scoge pa interactua cu e aplicacion.</p>
+					<p>
+						{" "}
+						<b>Tene cuenta</b> cu na Sint Maarten Papiamento no ta wordo papia. Kiermen si bo intencion ta pa haci un
+						peticion na Sint Maarten, cambia idioma pa Hulandes of Ingles. Esaki ta necesario pasobra e generador ta
+						traha bo peticion den e idioma cu bo ta scoge pa interactua cu e aplicacion.
+					</p>
 
-					<p>Cu nos generador, entrega un peticion pa divulga informacion na cualkier di e paisnan Caribense den Reino Hulandes ta masha facil mes:</p>
+					<p>
+						Cu nos generador, entrega un peticion pa divulga informacion na cualkier di e paisnan Caribense den Reino
+						Hulandes ta masha facil mes:
+					</p>
 
 					<ol>
 						<li>1. Prome, bo ta yena informacion manera bo nomber y detayenan di contacto</li>
@@ -48,7 +60,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						<Link to="/PM/bes/StapVoorAf" onClick={e => clickHandlerSetLaw("Wob BES")}>
 							WOB_BES PAP
 						</Link> */}
-						<Link to="/PM/lob/StapVoorAf" onClick={e => clickHandlerSetLaw("Lob")}>
+						<Link to="/PM/lob/StapVoorAf" className="start" onClick={e => clickHandlerSetLaw("Lob")}>
 							Cuminsa bo peticion Lob
 						</Link>
 					</div>

@@ -394,8 +394,8 @@ const Homepage = props => {
 						</p>
 						<p>
 							Jawel! Vanaf nu is er niet alleen de <b>Woo-generator</b> voor Nederland, maar ook een{" "}
-							<b>Wob BES-generator</b> voor Bonaire, St. Eustatius en Saba (BES-eilanen) en een <b>Lob-generator</b> voor Curacao,
-							Aruba en St. Maarten (CAS-eilanden).
+							<b>Wob BES-generator</b> voor Bonaire, St. Eustatius en Saba (BES-eilanen) en een <b>Lob-generator</b>{" "}
+							voor Curacao, Aruba en St. Maarten (CAS-eilanden).
 						</p>
 						<p>Met onze generator is een openbaarmakingsverzoek indienen een koud kunstje.</p>
 						<h1>Schrijf in 3 simpele stappen je eigen verzoek om overheidsinformatie</h1>
@@ -411,13 +411,13 @@ const Homepage = props => {
 						</p>
 
 						<div className="nextButtons">
-							<Link to="/NL/woo/" onClick={e => clickHandlerSetLaw("Woo")}>
+							<Link to="/NL/woo/" className="start" onClick={e => clickHandlerSetLaw("Woo")}>
 								WOO
 							</Link>
-							<Link to="/NL/bes/" onClick={e => clickHandlerSetLaw("Wob BES")}>
+							<Link to="/NL/bes/" className="start" onClick={e => clickHandlerSetLaw("Wob BES")}>
 								WOB-BES
 							</Link>
-							<Link to="/NL/lob/" onClick={e => clickHandlerSetLaw("Lob")}>
+							<Link to="/NL/lob/" className="start" onClick={e => clickHandlerSetLaw("Lob")}>
 								LOB
 							</Link>
 						</div>
@@ -451,9 +451,12 @@ const Homepage = props => {
 						<p>
 							Yes! From now on there is not only the <b>Woo generator</b> for the Netherlands, but also a{" "}
 							<b>Wob BES generator</b> for Bonaire, St. Eustatius and Saba (BES islands) and a <b>Lob generator</b> for
-							Curaçao, Aruba and St. Maarten (CAS islands). 
+							Curaçao, Aruba and St. Maarten (CAS islands).
 						</p>
-						<p>With our generator, submitting a Freedom of Information (FOI) request in all parts of the Kingdom is a breeze. </p>
+						<p>
+							With our generator, submitting a Freedom of Information (FOI) request in all parts of the Kingdom is a
+							breeze.{" "}
+						</p>
 						<h1>Write your own request for government information in 3 simple steps</h1>
 
 						<ol>
@@ -463,17 +466,17 @@ const Homepage = props => {
 							<li>… and then you file your request!</li>
 						</ol>
 						<p>
-							Click on one of the buttons below to choose between the Netherlands (Woo), BES islands (Wob BES) or the CAS islands (Lob). At
-							the top right, you can change your preferred language at any time.{" "}
+							Click on one of the buttons below to choose between the Netherlands (Woo), BES islands (Wob BES) or the
+							CAS islands (Lob). At the top right, you can change your preferred language at any time.{" "}
 						</p>
 						<div className="nextButtons">
-							<Link to="/EN/woo/" onClick={e => clickHandlerSetLaw("Woo")}>
+							<Link to="/EN/woo/" className="start" onClick={e => clickHandlerSetLaw("Woo")}>
 								WOO
 							</Link>
-							<Link to="/EN/lob/" onClick={e => clickHandlerSetLaw("Lob")}>
+							<Link to="/EN/lob/" className="start" onClick={e => clickHandlerSetLaw("Lob")}>
 								LOB
 							</Link>
-							<Link to="/EN/bes/" onClick={e => clickHandlerSetLaw("Wob BES")}>
+							<Link to="/EN/bes/" className="start" onClick={e => clickHandlerSetLaw("Wob BES")}>
 								WOB-BES
 							</Link>
 						</div>
@@ -498,20 +501,17 @@ const Homepage = props => {
 				</div>
 				<div className="homepageBlock">
 					<div className="blockText">
-						<h1>
-							Bo kier sa kico bo gobierno ta haciendo? 
-						</h1>
+						<h1>Bo kier sa kico bo gobierno ta haciendo?</h1>
 						<p>Bon bini na e generado pa divulga informacion gubernamental! </p>
 						<p> Bo t’aki pasobra bo kier pidi informacion cerca un instancia gubernamental den Reino Hulandes. </p>
 						<p>
-							Asina mes! Desde awo, e <b>generado Woo</b> no ta solamente disponibel pa pidi informacion gubernamental na
-							Hulanda, pero bo por haci un peticion na e gobiernonan tanto na e paisnan den Reino Aruba, Kòrsou y Sint
-							Maarten <b>(generado Lob)</b> como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint Eustatius{" "}
-							<b>(generado Wob BES).</b>
+							Asina mes! Desde awo, e <b>generado Woo</b> no ta solamente disponibel pa pidi informacion gubernamental
+							na Hulanda, pero bo por haci un peticion na e gobiernonan tanto na e paisnan den Reino Aruba, Kòrsou y
+							Sint Maarten <b>(generado Lob)</b> como na e islanan cu ta parti di Hulanda; Boneiro, Saba y Sint
+							Eustatius <b>(generado Wob BES).</b>
 						</p>
 						<p>Cu nos generado, entrega un peticion na cualkier pais of isla den Reino Hulandes ta masha facil mes.</p>
-						<h1>Skirbi bo prome peticion pa divulga informacion gubernamental den
-							3 paso</h1>
+						<h1>Skirbi bo prome peticion pa divulga informacion gubernamental den 3 paso</h1>
 						<ol>
 							<li>
 								<b>1.</b> Prome, bo ta yena informacion manera bo nomber y detayenan di contacto
@@ -522,24 +522,22 @@ const Homepage = props => {
 							<li>
 								<b>3.</b> Finalmente, bo ta scoge ki tipo di documento of informacion bo ta buscando
 							</li>
-							<li>
-								Ki bo ta warda? Bo ta cla pa entrega e peticion!
-							</li>
+							<li>Ki bo ta warda? Bo ta cla pa entrega e peticion!</li>
 						</ol>
 						<p>
 							Primi riba un di e botonnan aki bou pa scoge na unda bo kier pidi pa divulga informacion gubernamental,
-							sea cu ta na Hulanda (Woo), Aruba, Kòrsou of Sint Maarten (Lob), of Boneiro, Statia of Saba (Wob BES). Ariba na banda drechi bo
-							por scoge pa cambia di idioma.{" "}
+							sea cu ta na Hulanda (Woo), Aruba, Kòrsou of Sint Maarten (Lob), of Boneiro, Statia of Saba (Wob BES).
+							Ariba na banda drechi bo por scoge pa cambia di idioma.{" "}
 						</p>
 
 						<div className="nextButtons">
-							<Link to="/EN/woo/" onClick={e => clickHandlerSetLaw("Woo")}>
+							<Link to="/EN/woo/" className="start" onClick={e => clickHandlerSetLaw("Woo")}>
 								WOO
 							</Link>
-							<Link to="/PM/lob/" onClick={e => clickHandlerSetLaw("Lob")}>
+							<Link to="/PM/lob/" className="start" onClick={e => clickHandlerSetLaw("Lob")}>
 								LOB
 							</Link>
-							<Link to="/PM/bes/" onClick={e => clickHandlerSetLaw("Wob BES")}>
+							<Link to="/PM/bes/" className="start" onClick={e => clickHandlerSetLaw("Wob BES")}>
 								WOB-BES
 							</Link>
 						</div>

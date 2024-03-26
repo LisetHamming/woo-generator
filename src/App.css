@@ -171,6 +171,18 @@ h1 {
 }
 .nextButtons {
 	margin-top: 30px;
+	display: flex;
+	align-items: center;
+}
+.nextButtons .start {
+	width: 200px;
+}
+.nextButtons a {
+	padding: 0;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	padding-top: 10px;
 }
 
 p.logo {
