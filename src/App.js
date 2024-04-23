@@ -20,6 +20,7 @@ function App() {
 		return (
 			<div>
 				<Homepage />
+				{console.log(authorities)}
 			</div>
 		);
 	}

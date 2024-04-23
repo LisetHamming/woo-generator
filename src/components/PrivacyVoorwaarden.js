@@ -2,19 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HomepageOvergenerator from "./HomepageOvergenerator";
 
-function PrivacyVoorwaarden(TagManager) {
-	const tagManagerArgs = {
-		dataLayer: {
-			page: "Privacy-voorwaarden"
-		},
-		dataLayerName: "PageDataLayer"
-	};
+function PrivacyVoorwaarden() {
 	return (
 		<div className="conditions">
 			<div className="block2">
 				<div>
 					<p className="logo">Wob-generator</p>
-					{TagManager.dataLayer(tagManagerArgs)}
+
 					<h1>Privacy beleid</h1>
 					<p>
 						Privacy is er belangrijk voor ons. Daarom hebben we deze pagina opgesteld om duidelijk te maken wat we met
@@ -22,7 +16,6 @@ function PrivacyVoorwaarden(TagManager) {
 					</p>
 					<div className="extra_content"> </div>
 					<Link to="/">Ga terug</Link>
-					<Link to="/Stap1">Start een Wob-verzoek</Link>
 				</div>
 			</div>
 			<hr className="horizontalRule"></hr>

@@ -7,8 +7,7 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import * as serviceWorker from "./serviceWorker";
 
 const tagManagerArgs = {
-	gtmId: "GTM-MZS2ZCP",
-	dataLayerName: "PageDataLayer"
+	gtmId: "G-B5TB5SSWTW"
 };
 
 TagManager.initialize(tagManagerArgs);

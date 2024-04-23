@@ -1,9 +1,10 @@
 import React from "react";
-import logo_vvoj from "../assets/logo_vvoj.png";
+import gifLogo from "../assets/logo/Spoon_Logo_animatie_BlackonWhite_Gif.gif";
+import logoVvojNieuw from "../assets/logo/VVOJ_Logo_RGB.png";
 
 function HomepageOvergenerator() {
 	return (
-		<div className="sectionWaarom">
+		<div className="footer">
 			<div className="sectionBlock2">
 				<div className="block1">
 					<h1>Over deze generator</h1>
@@ -74,10 +75,22 @@ function HomepageOvergenerator() {
 							woo-generator@expertisecentrumspoon.nl
 						</a>
 					</p>
-					<div className="spanLinks">
-						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
-							<img src={logo_vvoj} className="logo_vvoj" alt="VVOJ" />
-						</a>
+					<div className="footerLogos">
+						<div className="spanLinks">
+							<a
+								className="plaintext"
+								href="https://www.expertisecentrumspoon.nl"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img src={gifLogo} className="logo_spoon" alt="logo expertisecentrum spoon" />
+							</a>
+						</div>
+						<div className="spanLinks">
+							<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
+								<img src={logoVvojNieuw} className="logo_vvoj" alt="VVOJ" />
+							</a>
+						</div>
 					</div>
 					{/* <div className="spanLinks">
 						<Link to="/PrivacyVoorwaarden">Privacybeleid</Link>
