@@ -736,4 +736,25 @@ Checkbox styles
 	.letterComplete {
 		display: none;
 	}
+	.nextButtons {
+		flex-wrap: wrap;
+	}
+	.nextButtons .start {
+		margin-bottom: 20px;
+	}
+	.homepageLogos {
+		width: 100vw;
+		padding: 20px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.homepageLogos img {
+		width: 60%;
+		padding: 0;
+	}
+	.footerLogos {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
