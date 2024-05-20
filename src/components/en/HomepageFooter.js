@@ -8,8 +8,94 @@ function HomepageFooter() {
 		<div className="footer">
 			<div className="sectionBlock2">
 				<div className="block1">
-				<h1>About this generator</h1>
-                    <p>
+					<h1>About this generator</h1>
+					<p>
+						This generator started as an initiative of (
+						{/* 							
+						<a className="plaintext" href="https://expertisecentrumspoon.nl" target="_blank" rel="noopener noreferrer">
+						Expertisecentrum SPOON
+						</a>
+						)
+				 */}
+						the FOI working group of the Flemish-Dutch Association of Investigative Journalists (
+						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
+							VVOJ
+						</a>
+						) and financially made possible by{" "}
+						<a className="plaintext" href="https://www.lira.nl/" target="_blank" rel="noopener noreferrer">
+							Stichting Lira
+						</a>
+						. Desing and development:{" "}
+						<a
+							className="plaintext"
+							href="https://www.linkedin.com/in/tove-oegema-36107311b"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Tove Oegema{" "}
+						</a>{" "}
+						(Research Assistant) en{" "}
+						<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank" rel="noopener noreferrer">
+							Paulien Bouw
+						</a>
+						. Content:{" "}
+						{/* <a className="plaintext" href="https://www.lisethamming.com/" target="_blank" rel="noopener noreferrer"> */}
+						Liset Hamming
+						{/* </a>{" "} */}
+						en{" "}
+						{/* <a
+							className="plaintext"
+							href="https://www.platform-investico.nl/personen/tim-staal/"
+							target="_blank"
+							rel="noopener noreferrer"
+						> */}
+						Tim Staal
+						{/* </a>{" "} */}
+						first on behalf of the (
+						<a className="plaintext" href="https://www.vvoj.org" target="_blank" rel="noopener noreferrer">
+							VVOJ
+						</a>
+						) and since 2023 on behalf of (
+						<a className="plaintext" href="https://expertisecentrumspoon.nl" target="_blank" rel="noopener noreferrer">
+							SPOON
+						</a>
+						) as current developer of the tool.
+					</p>
+					<p>
+						<br />
+						{/* <p> Het initiatief voor een Antilliaanse versie van de Woo-generator komt van (
+						<a className="plaintext" href="https://www.linkedin.com/in/anibalism/" target="_blank" rel="noopener noreferrer">
+						Luis Anibal Villegas
+							</a> */}{" "}
+						Papiamento and English translation: journalist
+						<a className="plaintext" href="https://anibalism.com" target="_blank" rel="noopener noreferrer">
+							{" "}
+							Luis Anibal Villegas Hernandez.
+						</a>{" "}
+						)
+					</p>
+					<br />
+					<p>
+						{/* Sinds 2023 beheert en ontwikkelt (
+				
+				
+					
+						
+							<a className="plaintext" href="https://expertisecentrumspoon.nl" target="_blank" rel="noopener noreferrer">
+							Expertisecentrum SPOON
+							</a>
+							 de generator.  */}
+						De generator is op geen enkele manier verbonden aan de Nederlandse overheid en is volstrekt onafhankelijk.
+					</p>
+					<br></br>
+					<p>
+						Voor vragen en opmerkingen:{" "}
+						<a href="mailto:contact@expertisecentrumspoon.nl" className="plaintext">
+							contact@expertisecentrumspoon.nl
+						</a>
+					</p>
+					)
+					{/* <p>
                         The Wob BES generator is a project of the Woo Working Group of the Flemish-Dutch Association of Investigative Journalists (
                         <a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
                             VVOJ
@@ -31,7 +117,7 @@ function HomepageFooter() {
                         <a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank" rel="noopener noreferrer">
                             Paulien Bouw
                         </a>
-                        . Content: investigative journalists{" "}
+                        . Content: {" "}
                         <a className="plaintext" href="https://www.lisethamming.com/" target="_blank" rel="noopener noreferrer">
                             Liset Hamming
                         </a>{" "}
@@ -67,7 +153,7 @@ function HomepageFooter() {
                         <a href="mailto:woo-generator@vvoj.org" className="plaintext">
                             woo-generator@vvoj.org
                         </a>
-                    </p>
+                    </p> */}
 					<div className="footerLogos">
 						<div className="spanLinks">
 							<a

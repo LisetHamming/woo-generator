@@ -22,7 +22,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 					<h1>Write your own Lob request in 3 simple steps</h1>
 					<p>Welcome to the Lob generator!</p>
 					<p>
-						You are here because you want to request information from a government institution in Aruba, Curaçao or Sint
+						You are here because you want to request information from a government authority in Aruba, Curaçao or Sint
 						Maarten.{" "}
 					</p>
 					<p>
@@ -38,11 +38,11 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						in your chosen language.
 					</p>
 
-					<p>With the Lob generator, making a request is a breeze.</p>
+					<p>With the Lob generator, making a correct request for government information is a breeze.</p>
 
 					<ol>
 						<li>1. You fill in some information about yourself</li>
-						<li>2. You select a government institution</li>
+						<li>2. You select a government authority</li>
 						<li>3. You choose the type of documents or information you are looking for</li>
 					</ol>
 

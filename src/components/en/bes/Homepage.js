@@ -22,8 +22,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 					<h1>Write your own Wob BES request in 3 simple steps</h1>
 					<p>Welcome to the Wob BES generator!</p>
 					<p>
-						You are here because you want to request information from a government institution in Bonaire, Saba or
-						Statia.{" "}
+						You are here because you want to request information from a government authority in Bonaire, Saba or Statia.{" "}
 					</p>
 					<p>
 						The BES islands have a special freedom of information law called the Wob BES. By invoking this law, anyone
@@ -38,11 +37,11 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 						language.
 					</p>
 
-					<p>With the Wob BES generator, making a request is a breeze by following the steps below.</p>
+					<p>With the Wob BES generator, making a correct request is a breeze by following the steps below.</p>
 
 					<ol>
 						<li>1. You fill in some information about yourself</li>
-						<li>2. You select a government institution</li>
+						<li>2. You select a government authority</li>
 						<li>3. You choose the type of documents or information you are looking for</li>
 					</ol>
 
