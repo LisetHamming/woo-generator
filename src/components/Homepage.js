@@ -403,7 +403,8 @@ const Homepage = props => {
 							<li>1. Je vult een aantal gegevens over jezelf in</li>
 							<li>2. Je selecteert een overheidsinstantie</li>
 							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
-							<li>Indienen maar!</li>
+							<br />
+							<li>...en indienen maar!</li>
 						</ol>
 						<p>
 							Klik op een van de knoppen hieronder om te kiezen tussen Nederland, BES-eilanden of de CAS-eilanden.

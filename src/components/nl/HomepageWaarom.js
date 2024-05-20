@@ -23,7 +23,7 @@ function HomepageWaarom() {
 				</div>
 				<div>
 					<h1 className="scribble" style={{ backgroundImage: `url(${bg})` }}>
-						Waarom een openbaarheidsgenerator?
+						Waarom een generator?
 					</h1>
 					<p>
 						Nogal wat journalisten, activisten, onderzoekers en maatschappelijk betrokken burgers denken dat een

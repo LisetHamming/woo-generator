@@ -8,11 +8,14 @@ function HomepageLink({ wet, clickHandlerSetLaw }) {
 				<div>
 					<h1>Wist je dat?</h1>
 					<p>
-						Jawel! Vanaf nu is er niet alleen de <b>Woo-generator</b> voor Nederland, maar ook een{" "}
-						<b>WOB/BES-generator</b> voor Bonaire, St. Eustatius en Saba en een <b>LOB-generator</b> voor Curacao, Aruba
-						en St. Maarten (CAS-eilanden).
+						Vanaf nu is er niet alleen de <b>Woo-generator</b> voor Nederland, maar ook een <b>WOB/BES-generator</b>{" "}
+						voor Bonaire, St. Eustatius en Saba en een <b>LOB-generator</b> voor Curacao, Aruba en St. Maarten
+						(CAS-eilanden).
 					</p>
-					<p>Wil je documenten opvragen bij een van de CAS-eilanden, of bij een BES-eiland in plaats van bij Nederland? Kies dan waar je naartoe wilt hier.</p>
+					<p>
+						Wil je documenten opvragen bij een van de CAS-eilanden, of bij een BES-eiland in plaats van bij Nederland?
+						Kies dan waar je naartoe wilt hier.
+					</p>
 				</div>
 				<div>
 					<Link to="/NL/bes/" onClick={e => clickHandlerSetLaw("Wob BES")}>

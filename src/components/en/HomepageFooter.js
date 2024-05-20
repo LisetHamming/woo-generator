@@ -10,14 +10,14 @@ function HomepageFooter() {
 				<div className="block1">
 					<h1>About this generator</h1>
 					<p>
-						This generator started as an initiative of (
+						This generator started as an initiative of{" "}
 						{/* 							
 						<a className="plaintext" href="https://expertisecentrumspoon.nl" target="_blank" rel="noopener noreferrer">
 						Expertisecentrum SPOON
 						</a>
 						)
 				 */}
-						the FOI working group of the Flemish-Dutch Association of Investigative Journalists (
+						the Freedom of Information working group of the Flemish-Dutch Association of Investigative Journalists (
 						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
 							VVOJ
 						</a>
@@ -25,7 +25,7 @@ function HomepageFooter() {
 						<a className="plaintext" href="https://www.lira.nl/" target="_blank" rel="noopener noreferrer">
 							Stichting Lira
 						</a>
-						. Desing and development:{" "}
+						. Design and development:{" "}
 						<a
 							className="plaintext"
 							href="https://www.linkedin.com/in/tove-oegema-36107311b"
@@ -40,8 +40,7 @@ function HomepageFooter() {
 						</a>
 						. Content:{" "}
 						{/* <a className="plaintext" href="https://www.lisethamming.com/" target="_blank" rel="noopener noreferrer"> */}
-						Liset Hamming
-						{/* </a>{" "} */}
+						Liset Hamming {/* </a>{" "} */}
 						en{" "}
 						{/* <a
 							className="plaintext"
@@ -49,17 +48,16 @@ function HomepageFooter() {
 							target="_blank"
 							rel="noopener noreferrer"
 						> */}
-						Tim Staal
-						{/* </a>{" "} */}
-						first on behalf of the (
+						Tim Staal, {/* </a>{" "} */}
+						first on behalf of the{" "}
 						<a className="plaintext" href="https://www.vvoj.org" target="_blank" rel="noopener noreferrer">
-							VVOJ
+							VVOJ{" "}
 						</a>
-						) and since 2023 on behalf of (
+						and since 2023 on behalf of{" "}
 						<a className="plaintext" href="https://expertisecentrumspoon.nl" target="_blank" rel="noopener noreferrer">
-							SPOON
+							SPOON{" "}
 						</a>
-						) as current developer of the tool.
+						as the current developer of the tool.
 					</p>
 					<p>
 						<br />
@@ -67,12 +65,11 @@ function HomepageFooter() {
 						<a className="plaintext" href="https://www.linkedin.com/in/anibalism/" target="_blank" rel="noopener noreferrer">
 						Luis Anibal Villegas
 							</a> */}{" "}
-						Papiamento and English translation: journalist
+						Papiamento and English translation and content: journalist
 						<a className="plaintext" href="https://anibalism.com" target="_blank" rel="noopener noreferrer">
 							{" "}
 							Luis Anibal Villegas Hernandez.
 						</a>{" "}
-						)
 					</p>
 					<br />
 					<p>
@@ -94,7 +91,7 @@ function HomepageFooter() {
 							contact@expertisecentrumspoon.nl
 						</a>
 					</p>
-					)
+
 					{/* <p>
                         The Wob BES generator is a project of the Woo Working Group of the Flemish-Dutch Association of Investigative Journalists (
                         <a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
