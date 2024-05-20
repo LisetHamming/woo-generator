@@ -10,7 +10,7 @@ function HomepageFooter() {
 				<div className="block1">
 					<h1>Over deze generator</h1>
 					<p>
-						De Woo-generator is een project van de Woo-werkgroep van de Vlaams-Nederlandse Vereniging van
+						De Woo-generator was een project van de Woo-werkgroep van de Vlaams-Nederlandse Vereniging van
 						Onderzoeksjournalisten (
 						<a className="plaintext" href="https://www.vvoj.nl" target="_blank" rel="noopener noreferrer">
 							VVOJ
