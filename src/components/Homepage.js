@@ -447,16 +447,16 @@ const Homepage = props => {
 						<p>
 							{" "}
 							You are here because you want to request information from a government agency in the Kingdom of the
-							Netherlands.{" "}
+							Netherlands. In English this is called a 'Freedom of information' (FOI) request.{" "}
 						</p>
-						<p>
-							Yes! From now on there is not only the <b>Woo generator</b> for the Netherlands, but also a{" "}
+						{/* <p>
+							And from May 2024 on there is not only a <b>Woo generator</b> for requests in the Netherlands, but also a{" "}
 							<b>Wob BES generator</b> for Bonaire, St. Eustatius and Saba (BES islands) and a <b>Lob generator</b> for
 							Curaçao, Aruba and St. Maarten (CAS islands).
-						</p>
+						</p> */}
 						<p>
-							With our generator, submitting a Freedom of Information (FOI) request in all parts of the Kingdom is a
-							breeze.{" "}
+							With our FOI generator, submitting a correct request for government information in all parts of the
+							Kingdom is a breeze.{" "}
 						</p>
 						<h1>Write your own request for government information in 3 simple steps</h1>
 
