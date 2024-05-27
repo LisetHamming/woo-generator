@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 // import TagManager from "react-gtm-module";
 import { Link } from "react-router-dom";
+import LetterUI from "./LetterUI";
 import PopupButton from "./popups/PopupButton";
 import SetSelectedAuthorityManual from "./SetSelectedAuthorityManual";
-import LetterUI from "./LetterUI";
 // const tagManagerArgs = {
 // 	dataLayer: {
 // 		page: "Stap2"
@@ -26,7 +26,7 @@ function Stap2({
 	const [searchValue, setSearchValue] = useState("");
 	const [errors, setErrors] = useState([]);
 
-// TagManager.dataLayer(tagManagerArgs);
+	// TagManager.dataLayer(tagManagerArgs);
 	return (
 		<div className="formLetter">
 			<p className="logo">Woo generator</p>
@@ -91,7 +91,7 @@ function Stap2({
 									.filter(
 										item =>
 											item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
-												item.Plaats.toLowerCase().includes(searchValue.toLowerCase())
+											item.Plaats?.toLowerCase().includes(searchValue.toLowerCase())
 									)
 									.filter(item => item.Land.includes("Nederland"))
 									.sort((a, b) => a.Bestuursorgaan.localeCompare(b.Bestuursorgaan))

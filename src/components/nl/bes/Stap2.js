@@ -101,7 +101,7 @@ function Stap2({
 									.filter(
 										item =>
 											(item.Bestuursorgaan.toLowerCase().includes(searchValue.toLowerCase()) ||
-												item.Plaats.toLowerCase().includes(searchValue.toLowerCase())) &&
+												item.Plaats?.toLowerCase().includes(searchValue.toLowerCase())) &&
 											item.Wet.includes("Wob BES") &&
 											item.Land.includes(selectedLand)
 									)
