@@ -24,9 +24,12 @@ li button {
 	display: flex;
 	width: 32.5vw;
 	border: 1px dashed black;
-	background-color: rgba(235, 94, 157, 0.7);
+	background-color: white;
 	margin-top: 5px;
 	align-items: center;
+}
+.landenFilter {
+	margin-top: 10px;
 }
 
 li button p:first-of-type {
@@ -61,7 +64,7 @@ button {
 }
 
 body {
-	background-color: #e8e8e8;
+	background-color: #83d0f5;
 	font-family: "Source Sans Pro", sans-serif;
 }
 body:has(.homepageBlock) {
@@ -540,7 +543,7 @@ form {
 .buttonStyle2 {
 	border: 1px dashed grey;
 	color: black;
-	background-color: rgba(235, 94, 157, 0.7);
+	background-color: #83d0f5;
 	padding: 0.8em;
 	margin-right: 16px;
 	margin-bottom: 20px;
@@ -600,7 +603,7 @@ Checkbox styles
 	left: 0;
 	height: 25px;
 	width: 25px;
-	background-color: lightGrey;
+	background-color: white;
 	border: 1px solid grey;
 	border-radius: 3px;
 }
