@@ -415,11 +415,12 @@ const Homepage = props => {
 							<Link to="/NL/woo/" className="start" onClick={e => clickHandlerSetLaw("Woo")}>
 								WOO
 							</Link>
-							<Link to="/NL/bes/" className="start" onClick={e => clickHandlerSetLaw("Wob BES")}>
-								WOB-BES
-							</Link>
+
 							<Link to="/NL/lob/" className="start" onClick={e => clickHandlerSetLaw("Lob")}>
 								LOB
+							</Link>
+							<Link to="/NL/bes/" className="start" onClick={e => clickHandlerSetLaw("Wob BES")}>
+								WOB-BES
 							</Link>
 						</div>
 					</div>

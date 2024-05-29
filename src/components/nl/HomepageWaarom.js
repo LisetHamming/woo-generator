@@ -18,7 +18,11 @@ function HomepageWaarom() {
 						{" "}
 						Een verzoek om overheidsinformatie indienen is dan de enige manier om de overheid ter verantwoording te
 						roepen voor de totstandkoming van beleid, corruptie op te sporen of verkwisting van geld te ontdekken. In de
-						(<a href="https://expertisecentrumspoon.nl/kennisbank/">kennisbank van SPOON</a>) vindt je meer informatie.
+						<a href="https://expertisecentrumspoon.nl/kennisbank/" target="_blank">
+							{" "}
+							kennisbank van SPOON
+						</a>{" "}
+						vindt je meer informatie.
 					</p>
 				</div>
 				<div>
