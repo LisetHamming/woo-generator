@@ -334,7 +334,7 @@ p.header {
 	background-color: #e8e8e8;
 }
 .footer {
-	padding-top: 100px;
+	padding: 50px 0;
 }
 
 .sectionBlock div {
@@ -369,10 +369,20 @@ p.header {
 	font-size: 18px;
 }
 
-.sectionBlock2 .block1 {
+.footer .sectionBlock2 {
 	width: 60%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 }
-
+.footer .sectionBlock2 .block1 {
+	width: 40%;
+	padding: 10px;
+}
+.footer .sectionBlock2 .block1 .spanLinks a {
+	padding: 0;
+	background-color: none;
+}
 .sectionBlock2 .footerLogos {
 	display: flex;
 	justify-content: flex-start;
@@ -380,9 +390,12 @@ p.header {
 }
 
 .footerLogos img:first-child {
-	height: 100px;
+	height: 60px;
 }
-
+.footer h1 {
+	text-align: center;
+	font-size: 24px;
+}
 .sectionBlock2 .spanLinks img {
 	margin: 20px 20px 20px 0;
 }
@@ -717,14 +730,15 @@ Checkbox styles
 		width: 90%;
 		margin: 0 auto;
 	}
-	.sectionBlock2 .block1 {
+	.footer .sectionBlock2 .block1,
+	.footer .sectionBlock2 {
 		width: 90%;
 	}
 	.sectionBlock div {
 		width: 90%;
 	}
 	.sectionBlock,
-	.sectionBlock2 {
+	.footer .sectionBlock2 {
 		flex-wrap: wrap;
 	}
 	.extra_content {

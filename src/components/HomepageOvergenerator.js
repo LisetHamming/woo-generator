@@ -6,9 +6,9 @@ import logoVvojNieuw from "../assets/logo/VVOJ_Logo_RGB.png";
 function HomepageOvergenerator() {
 	return (
 		<div className="footer">
+			<h1>Over deze generator</h1>
 			<div className="sectionBlock2">
 				<div className="block1">
-					<h1>Over deze generator</h1>
 					<p>
 						Deze generator is onstaan vanuit een samenwerking van (
 						<a className="plaintext" href="https://expertisecentrumspoon.nl" target="_blank" rel="noopener noreferrer">
@@ -59,6 +59,8 @@ function HomepageOvergenerator() {
 						) als beheerder van de tool.
 					</p>
 					<br />
+				</div>
+				<div className="block1">
 					<p>
 						{" "}
 						Het initiatief voor een Antilliaanse versie van de Woo-generator komt van (
@@ -106,13 +108,10 @@ function HomepageOvergenerator() {
 							</a>
 						</div>
 					</div>
-					<div className="spanLinks">
-						<Link to="/PrivacyVoorwaarden">Privacybeleid</Link>
-					</div>
-				</div>
-				<div className="projectTeam">
-					<div></div>
-					<div></div>
+
+					<Link to="/PrivacyVoorwaarden" className="spanLinks">
+						Privacybeleid
+					</Link>
 				</div>
 			</div>
 		</div>

@@ -6,9 +6,9 @@ import logoVvojNieuw from "../../assets/logo/VVOJ_Logo_RGB.png";
 function HomepageFooter() {
 	return (
 		<div className="footer">
+			<h1>About this generator</h1>
 			<div className="sectionBlock2">
 				<div className="block1">
-					<h1>About this generator</h1>
 					<p>
 						This generator started as an initiative of{" "}
 						{/* 							
@@ -25,7 +25,11 @@ function HomepageFooter() {
 						<a className="plaintext" href="https://www.lira.nl/" target="_blank" rel="noopener noreferrer">
 							Stichting Lira
 						</a>
-						. Design and development:{" "}
+						.{" "}
+					</p>
+					<br />
+					<p>
+						Design and development:{" "}
 						<a
 							className="plaintext"
 							href="https://www.linkedin.com/in/tove-oegema-36107311b"
@@ -59,6 +63,8 @@ function HomepageFooter() {
 						</a>
 						as the current developer of the tool.
 					</p>
+				</div>
+				<div className="block1">
 					<p>
 						<br />
 						{/* <p> Het initiatief voor een Antilliaanse versie van de Woo-generator komt van (
@@ -171,10 +177,6 @@ function HomepageFooter() {
 					<div className="spanLinks">
 						<Link to="/PrivacyVoorwaarden">Privacy Policy</Link>
 					</div>
-				</div>
-				<div className="projectTeam">
-					<div></div>
-					<div></div>
 				</div>
 			</div>
 		</div>

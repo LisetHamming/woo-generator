@@ -8,7 +8,7 @@ function HomepageOvergenerator() {
 		<div className="footer">
 			<div className="sectionBlock2">
 				<div className="block1">
-				<h1>Over deze generator</h1>
+					<h1>Over deze generator</h1>
 					<p>
 						De Woo-generator is een project van de Woo-werkgroep van de Vlaams-Nederlandse Vereniging van
 						Onderzoeksjournalisten (
@@ -29,7 +29,12 @@ function HomepageOvergenerator() {
 							Tove Oegema{" "}
 						</a>{" "}
 						(Research Assistant) en{" "}
-						<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank" rel="noopener noreferrer">
+						<a
+							className="plaintext"
+							href="https://linkedin.com/in/paulienbouw/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Paulien Bouw
 						</a>
 						. Inhoud: onderzoeksjournalisten{" "}
