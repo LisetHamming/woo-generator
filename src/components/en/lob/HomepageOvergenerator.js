@@ -6,9 +6,9 @@ import logoVvojNieuw from "../../../assets/logo/VVOJ_Logo_RGB.png";
 function HomepageOvergenerator() {
 	return (
 		<div className="footer">
+			<h1>About this generator</h1>
 			<div className="sectionBlock2">
 				<div className="block1">
-					<h1>About this generator</h1>
 					<p>
 						The Lob generator is a project of the Woo Working Group of the Flemish-Dutch Association of Investigative
 						Journalists (
@@ -19,6 +19,9 @@ function HomepageOvergenerator() {
 						<a className="plaintext" href="https://www.lira.nl/" target="_blank" rel="noopener noreferrer">
 							Lira Foundation
 						</a>
+					</p>
+					<br />
+					<p>
 						. Development:{" "}
 						<a
 							className="plaintext"
@@ -50,7 +53,13 @@ function HomepageOvergenerator() {
 						>
 							Tim Staal
 						</a>{" "}
-						on behalf of VVOJ. Papiamento and English translation: journalist
+						on behalf of VVOJ.
+					</p>
+				</div>
+				<div className="block1">
+					<p>
+						{" "}
+						Papiamento and English translation: journalist
 						<a className="plaintext" href="https://anibalism.com" target="_blank" rel="noopener noreferrer">
 							{" "}
 							Luis Anibal Villegas Hernandez.

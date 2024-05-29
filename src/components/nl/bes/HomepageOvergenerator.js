@@ -6,9 +6,9 @@ import logoVvojNieuw from "../../../assets/logo/VVOJ_Logo_RGB.png";
 function HomepageOvergenerator() {
 	return (
 		<div className="footer">
+			<h1>Over deze generator</h1>
 			<div className="sectionBlock2">
 				<div className="block1">
-					<h1>Over deze generator</h1>
 					<p>
 						De Woo-generator is een project van de Woo-werkgroep van de Vlaams-Nederlandse Vereniging van
 						Onderzoeksjournalisten (
@@ -19,6 +19,9 @@ function HomepageOvergenerator() {
 						<a className="plaintext" href="https://www.lira.nl/" target="_blank" rel="noopener noreferrer">
 							Stichting Lira
 						</a>
+					</p>
+					<br />
+					<p>
 						. Ontwikkeling:{" "}
 						<a
 							className="plaintext"
@@ -50,7 +53,12 @@ function HomepageOvergenerator() {
 						>
 							Tim Staal
 						</a>{" "}
-						namens de VVOJ. Vertaling naar Papiaments en Engels: journalist{" "}
+						namens de VVOJ.
+					</p>
+				</div>
+				<div className="block1">
+					<p>
+						Vertaling naar Papiaments en Engels: journalist{" "}
 						<a className="plaintext" href="https://www.anibalism.com/" target="_blank" rel="noopener noreferrer">
 							Luis Anibal Villegas Hernandez.
 						</a>

@@ -6,9 +6,9 @@ import logoVvojNieuw from "../../../assets/logo/VVOJ_Logo_RGB.png";
 function HomepageOvergenerator() {
 	return (
 		<div className="footer">
+			<h1>Tocante e generado aki</h1>
 			<div className="sectionBlock2">
 				<div className="block1">
-					<h1>Tocante e generado aki</h1>
 					<p>
 						E generado Lob ta un proyecto di e grupo di trabou di Woo di e Asociacion di Periodistanan di Investigacion
 						Hulandes-Belga (
@@ -19,6 +19,9 @@ function HomepageOvergenerator() {
 						<a className="plaintext" href="https://www.lira.nl/" target="_blank" rel="noopener noreferrer">
 							Fundacion Lira
 						</a>
+					</p>
+					<br />
+					<p>
 						. Desaroyo:{" "}
 						<a
 							className="plaintext"
@@ -57,6 +60,8 @@ function HomepageOvergenerator() {
 					</p>
 					<br />
 					<br />
+				</div>
+				<div className="block1">
 					<p>
 						E grupo di trabou di Woo di VVOJ ta maneha e website. E website no ta conecta di ningun manera na gobierno
 						Hulandes y ta completamente independiente.
