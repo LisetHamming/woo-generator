@@ -397,7 +397,7 @@ const Homepage = props => {
 							<b>Wob BES-generator</b> voor Bonaire, St. Eustatius en Saba (BES-eilanen) en een <b>Lob-generator</b>{" "}
 							voor Curacao, Aruba en St. Maarten (CAS-eilanden).
 						</p>
-						<p>Met onze generator is een openbaarmakingsverzoek indienen een koud kunstje.</p>
+						{/* <p>Met onze generator is een openbaarmakingsverzoek indienen een koud kunstje.</p>
 						<h1>Schrijf in 3 simpele stappen je eigen verzoek om overheidsinformatie</h1>
 						<ol>
 							<li>1. Je vult een aantal gegevens over jezelf in</li>
@@ -405,7 +405,7 @@ const Homepage = props => {
 							<li>3. Je kiest wat voor documenten of informatie je zoekt</li>
 							<br />
 							<li>...en indienen maar!</li>
-						</ol>
+						</ol> */}
 						<p>
 							Klik op een van de knoppen hieronder om te kiezen tussen Nederland, BES-eilanden of de CAS-eilanden.
 							Rechtsboven kun je op elk moment de taal van je voorkeur wijzigen.
@@ -459,14 +459,14 @@ const Homepage = props => {
 							With our FOI generator, submitting a correct request for government information in all parts of the
 							Kingdom is a breeze.{" "}
 						</p>
-						<h1>Write your own request for government information in 3 simple steps</h1>
+						{/* <h1>Write your own request for government information in 3 simple steps</h1>
 
 						<ol>
 							<li>1. You fill in a number of details about yourself </li>
 							<li>2. You select a government agency </li>
 							<li>3. You choose what kind of documents or information you are looking for… </li>
 							<li>… and then you file your request!</li>
-						</ol>
+						</ol> */}
 						<p>
 							Click on one of the buttons below to choose between the Netherlands (Woo), BES islands (Wob BES) or the
 							CAS islands (Lob). At the top right, you can change your preferred language at any time.{" "}
@@ -513,7 +513,7 @@ const Homepage = props => {
 							Eustatius <b>(generado Wob BES).</b>
 						</p>
 						<p>Cu nos generado, entrega un peticion na cualkier pais of isla den Reino Hulandes ta masha facil mes.</p>
-						<h1>Skirbi bo prome peticion pa divulga informacion gubernamental den 3 paso</h1>
+						{/* <h1>Skirbi bo prome peticion pa divulga informacion gubernamental den 3 paso</h1>
 						<ol>
 							<li>
 								<b>1.</b> Prome, bo ta yena informacion manera bo nomber y detayenan di contacto
@@ -525,7 +525,7 @@ const Homepage = props => {
 								<b>3.</b> Finalmente, bo ta scoge ki tipo di documento of informacion bo ta buscando
 							</li>
 							<li>Ki bo ta warda? Bo ta cla pa entrega e peticion!</li>
-						</ol>
+						</ol> */}
 						<p>
 							Primi riba un di e botonnan aki bou pa scoge na unda bo kier pidi pa divulga informacion gubernamental,
 							sea cu ta na Hulanda (Woo), Aruba, Kòrsou of Sint Maarten (Lob), of Boneiro, Statia of Saba (Wob BES).

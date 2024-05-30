@@ -3,11 +3,11 @@ import React from "react";
 function SetSelectedAuthorityManual({ value: { selectedAuthority }, setAuthorityComplete, handleKeypathChange }) {
 	return (
 		<div className="formInputs" id="manualInput">
-			<p>Enter here the details of the agency to which you wish to address your request.</p>
+			<p>Enter here the details of the authority to which you wish to address your request.</p>
 			<form>
 				<span>
 					<label>
-						Name agency
+						Name authority
 						<input
 							size="50"
 							type="text"

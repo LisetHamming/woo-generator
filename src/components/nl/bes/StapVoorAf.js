@@ -21,7 +21,7 @@ function StapVoorAf() {
 			</p>
 			<span className="nieuwietje">
 				<p>
-					Voor meer uitleg kun je klikken op de i'tjes.
+					Voor meer uitleg kun je klikken op de lampjes.
 					<PopupButton number="19" />
 				</p>
 				<br />
@@ -33,7 +33,9 @@ function StapVoorAf() {
 				gebruikt ‘lokaal’ opgeslagen. Dat betekent dat niemand anders je antwoorden kan zien, ook wij niet.
 			</p>
 			<br />
-			<p>Als je alle vragen hebt beantwoord, kun je je concept Wob BES-verzoek opslaan als DOC en de tekst aanpassen.</p>
+			<p>
+				Als je alle vragen hebt beantwoord, kun je je concept Wob BES-verzoek opslaan als DOC en de tekst aanpassen.
+			</p>
 			<br />
 			<p className="extraPadding">
 				Wil je iets net even anders of wil je bijvoorbeeld een extra toelichting op je verzoek toevoegen? Dan kun je in

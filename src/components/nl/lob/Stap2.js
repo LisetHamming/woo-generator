@@ -37,7 +37,7 @@ function Stap2({
 			<h2>Stap 2: Welke overheidsinstantie wil je om informatie vragen?</h2>
 			<span className="nieuwietje">
 				<p>
-					Kies hier bij welke overheidsinstantie je je Woo-verzoek wilt indienen.
+					Kies hier bij welke overheidsinstantie je je Lob-verzoek wilt indienen.
 					<PopupButton number="5" />
 				</p>
 			</span>

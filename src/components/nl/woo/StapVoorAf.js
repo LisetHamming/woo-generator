@@ -21,7 +21,7 @@ function StapVoorAf() {
 			</p>
 			<span className="nieuwietje">
 				<p>
-					Voor meer uitleg kun je klikken op de i'tjes.
+					Voor meer uitleg kun je klikken op de lampjes.
 					<PopupButton number="19" />
 				</p>
 				<br />
