@@ -126,7 +126,7 @@ h1 {
 	padding: 20px 200px;
 }
 .homepageLogos img {
-	width: 300px;
+	width: 220px;
 	display: block;
 	padding-right: 40px;
 }
@@ -176,6 +176,7 @@ h1 {
 	margin-top: 30px;
 	display: flex;
 	align-items: center;
+	max-width: 100%;
 }
 .nextButtons .start {
 	width: 200px;
@@ -203,6 +204,7 @@ p.header {
 
 .popup {
 	background-color: rgba(235, 94, 157, 0.7);
+	margin-top: 15px;
 }
 .popupI img {
 	cursor: pointer;
@@ -406,6 +408,7 @@ p.header {
 .footer .sectionBlock2 .block1 .spanLinks a {
 	padding: 0;
 	background-color: none;
+	color: rgba(235, 94, 158, 0);
 }
 .sectionBlock2 .footerLogos {
 	display: flex;
@@ -498,7 +501,7 @@ p.header {
 .formLetter span {
 	display: flex;
 	align-items: center;
-	margin-bottom: 15px;
+	margin: 15px 0;
 }
 
 .formLetter .selectedAuthority {
@@ -754,6 +757,7 @@ Checkbox styles
 		width: 90%;
 		margin: 0 auto;
 	}
+
 	.footer .sectionBlock2 .block1,
 	.footer .sectionBlock2 {
 		width: 90%;
@@ -790,14 +794,17 @@ Checkbox styles
 	}
 	.homepageLogos {
 		width: 100vw;
-		padding: 20px 0;
+		padding: 20px 0 0 10vw;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		flex-direction: row;
+		justify-content: left;
 	}
 	.homepageLogos img {
-		width: 60%;
+		margin-right: 10px;
 		padding: 0;
+	}
+	.homepageLogos img {
+		max-width: 30vw;
 	}
 	.footerLogos {
 		display: flex;

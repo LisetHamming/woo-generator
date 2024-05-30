@@ -2,12 +2,11 @@ import { set } from "lodash/fp";
 import React, { useEffect, useState } from "react";
 import { Link, Route, Switch } from "react-router-dom";
 import machine from "../assets/images/WOO_knop_animatie.gif";
-import gifLogo from "../assets/logo/Spoon_Logo_animatie_BlackonWhite_Gif.gif";
+import spoonlogoExpertise from "../assets/logo/spoonlogoExpertisecentrum.png";
 import vvojLogo from "../assets/logo/VVOJ_Logo_RGB.png";
 import DataText from "./DataText";
 import HomepageENBES from "./en/bes/Homepage";
 import HomepageLinkENBES from "./en/bes/HomepageLink";
-import HomepageOvergeneratorENBES from "./en/bes/HomepageOvergenerator";
 import HomepageWaaromENBES from "./en/bes/HomepageWaarom";
 import EnBesStap1 from "./en/bes/Stap1";
 import EnBesStap2 from "./en/bes/Stap2";
@@ -22,7 +21,6 @@ import HomepageENFooter from "./en/HomepageFooter";
 import HomepageENWaarom from "./en/HomepageWaarom";
 import HomepageENLOB from "./en/lob/Homepage";
 import HomepageLinkENLOB from "./en/lob/HomepageLink";
-import HomepageOvergeneratorENLOB from "./en/lob/HomepageOvergenerator";
 import HomepageWaaromENLOB from "./en/lob/HomepageWaarom";
 import EnLobStap1 from "./en/lob/Stap1";
 import EnLobStap2 from "./en/lob/Stap2";
@@ -34,7 +32,6 @@ import EnLobStapExtra from "./en/lob/StapExtra";
 import EnLobStapVoorAf from "./en/lob/StapVoorAf";
 import HomepageENWOO from "./en/woo/Homepage";
 import HomepageLinkENWOO from "./en/woo/HomepageLink";
-import HomepageOvergeneratorENWOO from "./en/woo/HomepageOvergenerator";
 import HomepageWaaromENWOO from "./en/woo/HomepageWaarom";
 import EnStap1 from "./en/woo/Stap1";
 import EnStap2 from "./en/woo/Stap2";
@@ -46,7 +43,6 @@ import EnStapExtra from "./en/woo/StapExtra";
 import EnStapVoorAf from "./en/woo/StapVoorAf";
 import HomepageNLBES from "./nl/bes/Homepage";
 import HomepageLinkNLBES from "./nl/bes/HomepageLink";
-import HomepageOvergeneratorNLBES from "./nl/bes/HomepageOvergenerator";
 import HomepageWaaromNLBES from "./nl/bes/HomepageWaarom";
 import NLBesStap1 from "./nl/bes/Stap1";
 import NLBesStap2 from "./nl/bes/Stap2";
@@ -61,7 +57,6 @@ import HomepageNLFooter from "./nl/HomepageFooter";
 import HomepageNLWaarom from "./nl/HomepageWaarom";
 import HomepageNLLOB from "./nl/lob/Homepage";
 import HomepageLinkNLLOB from "./nl/lob/HomepageLink";
-import HomepageOvergeneratorNLLOB from "./nl/lob/HomepageOvergenerator";
 import HomepageWaaromNLLOB from "./nl/lob/HomepageWaarom";
 import NLLobStap1 from "./nl/lob/Stap1";
 import NLLobStap2 from "./nl/lob/Stap2";
@@ -73,7 +68,6 @@ import NLLobStapExtra from "./nl/lob/StapExtra";
 import NLLobStapVoorAf from "./nl/lob/StapVoorAf";
 import HomepageNLWOO from "./nl/woo/Homepage";
 import HomepageLinkNLWOO from "./nl/woo/HomepageLink";
-import HomepageOvergeneratorNLWOO from "./nl/woo/HomepageOvergenerator";
 import HomepageWaaromNLWOO from "./nl/woo/HomepageWaarom";
 import Stap1 from "./nl/woo/Stap1";
 import Stap2 from "./nl/woo/Stap2";
@@ -85,7 +79,6 @@ import StapExtra from "./nl/woo/StapExtra";
 import StapVoorAf from "./nl/woo/StapVoorAf";
 import HomepagePMBES from "./pm/bes/Homepage";
 import HomepageLinkPMBES from "./pm/bes/HomepageLink";
-import HomepageOvergeneratorPMBES from "./pm/bes/HomepageOvergenerator";
 import HomepageWaaromPMBES from "./pm/bes/HomepageWaarom";
 import PmBesStap1 from "./pm/bes/Stap1";
 import PmBesStap2 from "./pm/bes/Stap2";
@@ -100,7 +93,6 @@ import HomepagePMFooter from "./pm/HomepageFooter";
 import HomepagePMWaarom from "./pm/HomepageWaarom";
 import HomepagePMLOB from "./pm/lob/Homepage";
 import HomepageLinkPMLOB from "./pm/lob/HomepageLink";
-import HomepageOvergeneratorPMLOB from "./pm/lob/HomepageOvergenerator";
 import HomepageWaaromPMLOB from "./pm/lob/HomepageWaarom";
 import PmLobStap1 from "./pm/lob/Stap1";
 import PmLobStap2 from "./pm/lob/Stap2";
@@ -381,13 +373,12 @@ const Homepage = props => {
 					<Link to="/PM/">PAP</Link>
 				</div>
 				<div className="homepageLogos">
-					<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
+					<img src={spoonlogoExpertise} className="logo_SPOON" alt="logo expertisecentrum spoon" />
 					<img src={vvojLogo} className="logo_VVOJ" alt="logo vvoj" />
 				</div>
 				<div className="homepageBlock">
 					<div className="blockText">
 						<h1>Welkom bij de generator om overheidsinformatie op te vragen!</h1>
-						<p> </p>
 						<p>
 							Je bent hier omdat je informatie wilt opvragen bij een overheidsinstantie in het Koninkrijk der
 							Nederlanden.
@@ -439,7 +430,7 @@ const Homepage = props => {
 					<Link to="/PM/">PAP</Link>
 				</div>
 				<div className="homepageLogos">
-					<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
+					<img src={spoonlogoExpertise} className="logo_SPOON" alt="logo expertisecentrum spoon" />
 					<img src={vvojLogo} className="logo_VVOJ" alt="logo vvoj" />
 				</div>
 				<div className="homepageBlock">
@@ -498,7 +489,7 @@ const Homepage = props => {
 					<Link to="/PM/">PAP</Link>
 				</div>
 				<div className="homepageLogos">
-					<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
+					<img src={spoonlogoExpertise} className="logo_SPOON" alt="logo expertisecentrum spoon" />
 					<img src={vvojLogo} className="logo_VVOJ" alt="logo vvoj" />
 				</div>
 				<div className="homepageBlock">
@@ -559,7 +550,7 @@ const Homepage = props => {
 
 				<div className="extra_content"></div>
 				<div className="extra_content"></div>
-				<HomepageOvergeneratorPMLOB />
+				<HomepagePMFooter />
 			</Route>
 			<Route exact path="/PM/BES/">
 				{value.showCookie && <CookiemeldingPM showCookie={showCookie} value={value} />}
@@ -569,7 +560,7 @@ const Homepage = props => {
 
 				<div className="extra_content"></div>
 				<div className="extra_content"></div>
-				<HomepageOvergeneratorPMBES />
+				<HomepagePMFooter />
 			</Route>
 			<Route exact path="/EN/LOB/">
 				{value.showCookie && <CookiemeldingEN showCookie={showCookie} value={value} />}
@@ -579,7 +570,7 @@ const Homepage = props => {
 
 				<div className="extra_content"></div>
 				<div className="extra_content"></div>
-				<HomepageOvergeneratorENLOB />
+				<HomepageENFooter />
 			</Route>
 			<Route exact path="/EN/WOO/">
 				{value.showCookie && <CookiemeldingEN showCookie={showCookie} value={value} />}
@@ -589,7 +580,7 @@ const Homepage = props => {
 
 				<div className="extra_content"></div>
 				<div className="extra_content"></div>
-				<HomepageOvergeneratorENWOO />
+				<HomepageENFooter />
 			</Route>
 
 			<Route exact path="/EN/BES/">
@@ -600,7 +591,7 @@ const Homepage = props => {
 
 				<div className="extra_content"></div>
 				<div className="extra_content"></div>
-				<HomepageOvergeneratorENBES />
+				<HomepageENFooter />
 			</Route>
 			<Route exact path="/NL/WOO/">
 				{value.showCookie && <CookiemeldingNL showCookie={showCookie} value={value} />}
@@ -610,7 +601,7 @@ const Homepage = props => {
 
 				<div className="extra_content"></div>
 				<div className="extra_content"></div>
-				<HomepageOvergeneratorNLWOO />
+				<HomepageNLFooter />
 			</Route>
 			<Route exact path="/NL/BES/">
 				{value.showCookie && <CookiemeldingNL showCookie={showCookie} value={value} />}
@@ -620,7 +611,7 @@ const Homepage = props => {
 
 				<div className="extra_content"></div>
 				<div className="extra_content"></div>
-				<HomepageOvergeneratorNLBES />
+				<HomepageNLFooter />
 			</Route>
 			<Route exact path="/NL/LOB/">
 				{value.showCookie && <CookiemeldingNL showCookie={showCookie} value={value} />}
@@ -630,7 +621,7 @@ const Homepage = props => {
 
 				<div className="extra_content"></div>
 				<div className="extra_content"></div>
-				<HomepageOvergeneratorNLLOB />
+				<HomepageNLFooter />
 			</Route>
 			<Route path="/NL/woo/StapVoorAf">
 				<StapVoorAf />

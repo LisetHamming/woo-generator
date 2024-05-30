@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import machine from "../../../assets/images/LOB_KNOP.png";
-import gifLogo from "../../../assets/logo/Spoon_Logo_animatie_BlackonWhite_Gif.gif";
+import spoonLogo from "../../../assets/logo/spoonlogoExpertisecentrum.png";
 import vvojLogo from "../../../assets/logo/VVOJ_Logo_RGB.png";
 
 function Homepage({ clickHandlerSetLaw, wet }) {
@@ -13,7 +13,7 @@ function Homepage({ clickHandlerSetLaw, wet }) {
 				<Link to="/PM/lob/">PAP</Link>
 			</div>
 			<div className="homepageLogos">
-				<img src={gifLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
+				<img src={spoonLogo} className="logo_SPOON" alt="logo expertisecentrum spoon" />
 				<img src={vvojLogo} className="logo_VVOJ" alt="logo vvoj" />
 			</div>
 			<div className="homepageBlock">
