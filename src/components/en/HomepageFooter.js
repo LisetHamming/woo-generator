@@ -66,7 +66,6 @@ function HomepageFooter() {
 				</div>
 				<div className="block1">
 					<p>
-						<br />
 						{/* <p> Het initiatief voor een Antilliaanse versie van de Woo-generator komt van (
 						<a className="plaintext" href="https://www.linkedin.com/in/anibalism/" target="_blank" rel="noopener noreferrer">
 						Luis Anibal Villegas
