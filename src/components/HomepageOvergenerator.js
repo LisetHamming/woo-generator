@@ -32,7 +32,12 @@ function HomepageOvergenerator() {
 							Tove Oegema{" "}
 						</a>{" "}
 						(Research Assistant) en{" "}
-						<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank" rel="noopener noreferrer">
+						<a
+							className="plaintext"
+							href="https://linkedin.com/in/paulienbouw/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Paulien Bouw
 						</a>
 						. Inhoud:{" "}

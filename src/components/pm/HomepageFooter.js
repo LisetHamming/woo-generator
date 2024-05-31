@@ -33,7 +33,12 @@ function HomepageFooter() {
 							Tove Oegema{" "}
 						</a>{" "}
 						(Asistente di Investigacion) y{" "}
-						<a className="plaintext" href="https://www.paulienbouw.nl/" target="_blank" rel="noopener noreferrer">
+						<a
+							className="plaintext"
+							href="https://linkedin.com/in/paulienbouw/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Paulien Bouw
 						</a>
 						. Contenido: periodistanan di investigacion{" "}
