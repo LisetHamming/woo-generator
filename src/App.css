@@ -689,11 +689,11 @@ Checkbox styles
 }
 
 .plaintext {
-	background-color: white;
+	background-color: #83d0f5;
 	color: black;
 	padding: 0;
 	margin: 0;
-	text-decoration: underline;
+	font-weight: bold;
 }
 .logoSpoonGif {
 	display: block;

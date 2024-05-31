@@ -44,10 +44,19 @@ function StapEinde({ value, filteredDataText, exportHTMLDoc, getCurrentDate, res
 				<br />
 				Digitaal versturen?
 				<br />
-				Hoewel op geen van de ABCSSS-eilanden de wet iets zegt over digitale indiening, blijkt uit de praktijk dat het indienen van een verzoek via e-mail mogelijk is. 
-				In Curaçao kan dit bijvoorbeeld via het <a className="plaintext" href="https://loketdigital.gobiernu.cw/vergunningen/lob-verzoek" target="_blank" rel="noopener noreferrer">Vergunningloket.</a> 
-				Het Vergunningloket ontvangt alle verzoeken in Curaçao en stuurt ze door naar het betreffende ministerie om een beslissing te nemen. 
-				Informeer altijd van tevoren bij het betreffende departement dat een digitaal verzoek kan worden ingediend om te voorkomen dat het verzoek wordt afgewezen.
+				Hoewel op geen van de ABCSSS-eilanden de wet iets zegt over digitale indiening, blijkt uit de praktijk dat het
+				indienen van een verzoek via e-mail mogelijk is. In Curaçao kan dit bijvoorbeeld via het{" "}
+				<a
+					className="plaintext"
+					href="https://loketdigital.gobiernu.cw/vergunningen/lob-verzoek"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Vergunningloket
+				</a>
+				. Het Vergunningloket ontvangt alle verzoeken in Curaçao en stuurt ze door naar het betreffende ministerie om
+				een beslissing te nemen. Informeer altijd van tevoren bij het betreffende departement dat een digitaal verzoek
+				kan worden ingediend om te voorkomen dat het verzoek wordt afgewezen.
 			</p>
 			<br />
 			<div>
